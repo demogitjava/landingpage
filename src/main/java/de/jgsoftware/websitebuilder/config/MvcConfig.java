@@ -20,7 +20,7 @@ public class MvcConfig implements WebMvcConfigurer
     public void addViewControllers(ViewControllerRegistry registry)
     {
 
-        registry.addViewController("/").setViewName("de");
+        //registry.addViewController("/").setViewName("de");
 
         registry.addViewController("/en/").setViewName("en");
         registry.addViewController("/es/").setViewName("es");
@@ -28,7 +28,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/it/").setViewName("it");
         registry.addViewController("/tr/").setViewName("tr");
 
-        registry.addViewController("/demo/").setViewName("demo");
+        registry.addViewController("/").setViewName("demo");
         registry.addViewController("/header/").setViewName("header");
         registry.addViewController("/admin/").setViewName("admin");
         registry.addViewController("/profile/").setViewName("profile");

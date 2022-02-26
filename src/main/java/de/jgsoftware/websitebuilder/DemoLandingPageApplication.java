@@ -2,10 +2,6 @@ package de.jgsoftware.websitebuilder;
 
 import org.h2.tools.Server;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,20 +13,19 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
-import java.io.IOException;
 import java.sql.SQLException;
 
 
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class })
-public class DemoWebsitebuilderApplication
+public class DemoLandingPageApplication
 {
 
 
     @Autowired
     private JdbcTemplate jtm;
 
-    public DemoWebsitebuilderApplication()
+    public DemoLandingPageApplication()
     {
         startH2Server();
     }
@@ -38,7 +33,7 @@ public class DemoWebsitebuilderApplication
     public static void main(String[] args)
     {
 
-        SpringApplication.run(DemoWebsitebuilderApplication.class, args);
+        SpringApplication.run(DemoLandingPageApplication.class, args);
     }
 
 

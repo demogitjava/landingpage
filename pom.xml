@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.jgsoftware.websitebuilder</groupId>
-    <artifactId>demo_websitebuilder</artifactId>
+    <groupId>de.jgsoftware.landingpage</groupId>
+    <artifactId>landingpage</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo_websitebuilder</name>
-    <description>Demo project for Spring Boot</description>
+    <name>landingpage</name>
+    <description>Landingpage</description>
     <packaging>jar</packaging>
     <pluginRepositories>
         <pluginRepository>

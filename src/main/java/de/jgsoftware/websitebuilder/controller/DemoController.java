@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 
 @Controller
-@RequestMapping("/demo")
+@RequestMapping("/")
 public class DemoController
 {
 
@@ -29,7 +29,7 @@ public class DemoController
     HttpServletRequest request;
 
     // load default landingpage
-    @GetMapping({"demo", "/"})
+    @GetMapping({"index", "/"})
     public ModelAndView demo() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());

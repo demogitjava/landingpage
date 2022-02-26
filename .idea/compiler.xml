@@ -12,17 +12,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo_websitebuilder" />
+        <module name="landingpage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="demo_websitebuilder" target="11" />
+      <module name="landingpage" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler " />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo_websitebuilder" options="-parameters" />
+      <module name="landingpage" options="-parameters" />
     </option>
   </component>
 </project>
