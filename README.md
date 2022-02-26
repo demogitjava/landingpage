@@ -10,7 +10,8 @@ http://www.h2database.com/html/download.html
 <br/>
 
 the application port is
-https://localhost/webbuilder
+https://localhost/
+
 you can edit the port in the application.properties 
 server.port=80
 
@@ -42,7 +43,7 @@ To build the image type:
 
 docker build -f Dockerfile -t landingpage .
 
-and you create a docker image with CentOS runs in a container over port 8442.
+and you create a docker image with CentOS runs in a container over port 80.
 
 Run the application and open ports by create a new container
 
