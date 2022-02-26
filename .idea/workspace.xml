@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="update config landingpage">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -724,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645891611764</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update config landingpage">
+      <created>1645892358104</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1645892358104</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -811,10 +816,10 @@
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
     <state x="270" y="655" width="530" height="605" key="FileChooserDialogImpl/0.35.1080.1839@0.35.1080.1839" timestamp="1645795615098" />
-    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose" timestamp="1645891725448">
+    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose" timestamp="1645892440456">
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
-    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose/0.35.1080.1839@0.35.1080.1839" timestamp="1645891725448" />
+    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose/0.35.1080.1839@0.35.1080.1839" timestamp="1645892440456" />
     <state x="362" y="832" width="628" height="244" key="Github.ShareDialog" timestamp="1645886081321">
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
@@ -871,10 +876,10 @@
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
     <state x="0" y="502" width="1080" height="912" key="SettingsEditor/0.35.1080.1839@0.35.1080.1839" timestamp="1645775428806" />
-    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1645891664613">
+    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1645892381815">
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
-    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.35.1080.1839@0.35.1080.1839" timestamp="1645891664613" />
+    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.35.1080.1839@0.35.1080.1839" timestamp="1645892381815" />
     <state x="131" y="216" width="598" height="880" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1645704291242">
       <screen x="0" y="35" width="1080" height="1839" />
     </state>
