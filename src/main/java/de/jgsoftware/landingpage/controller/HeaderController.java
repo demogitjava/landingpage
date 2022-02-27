@@ -22,7 +22,7 @@ public class HeaderController {
     @Autowired
     HttpServletRequest request;
 
-    // load default landingpage
+    // load default landingpageENG_PRODUCT
     @GetMapping({"header", "/"})
     public ModelAndView header() {
 
@@ -52,7 +52,7 @@ public class HeaderController {
         mv.addObject("webtextcomp", demoPageService.getDemopreview().getPageNav());
 
 
-        System.out.print("Der DemoController wurde geladen");
+        System.out.print("Header Controller wurde geladen");
 
         return mv;
     }
