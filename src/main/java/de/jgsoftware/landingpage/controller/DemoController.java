@@ -1,7 +1,6 @@
 package de.jgsoftware.landingpage.controller;
 
 
-import de.jgsoftware.landingpage.service.DemoPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +19,6 @@ public class DemoController
 
     java.util.Locale locale;
 
-    @Autowired
-    DemoPageService demoPageService;
 
     @Autowired
     HttpServletRequest request;
@@ -45,12 +42,6 @@ public class DemoController
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
         mv.addObject("lang", languagestr);
 
-
-        /**
-         *   Bootstrap VALUES for Navigation Bar
-         *   class = navbar // Bootstrap
-         */
-        mv.addObject("webtextcomp", demoPageService.getDemopreview().getPageNav());
 
 
         System.out.print("Der DemoController wurde geladen");
