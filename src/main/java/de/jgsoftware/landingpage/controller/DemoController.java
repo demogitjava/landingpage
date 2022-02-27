@@ -5,6 +5,7 @@ import de.jgsoftware.landingpage.service.DemoPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
@@ -34,8 +35,6 @@ public class DemoController
         ModelAndView mv = new ModelAndView("demo");
 
 
-        //mv.setView("templates/startbootstrap-small-business/index.html");
-        mv.addObject("message", "TestString 123");
 
 
         /**
@@ -58,5 +57,14 @@ public class DemoController
 
         return mv;
     }
+
+    @PostMapping("/login")
+    public String index(String username, String password)
+    {
+
+        return "login";
+    }
+
+
 
 }

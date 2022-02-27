@@ -30,9 +30,8 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.dataSource(dataSource)
 				.passwordEncoder(new BCryptPasswordEncoder())
 				.authoritiesByUsernameQuery("select username, role from users where username=?")
-				.usersByUsernameQuery("select username, password, enabled from users where username=?")
+				.usersByUsernameQuery("select username, password, enabled from users where username=?");
 
-		;
 	}
 
 	@Bean
@@ -66,6 +65,9 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.loginPage("/login")
 				.usernameParameter("email")
 				.passwordParameter("password")
+				.loginProcessingUrl("/perform_login")
+				.defaultSuccessUrl("/homepage.html",true)
+				.failureUrl("/login.html?error=true")
 				.and()
 				.logout()
 				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))

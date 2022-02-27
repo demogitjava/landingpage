@@ -14,11 +14,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="th:inculde for header.html&#10;&#10;it load the header form header.html into demo.html&#10;with mvc controller mapping">
+    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="th:inculde for footer.html">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/HeaderController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +36,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="com.haulmont.jpb.JpaEntity" />
         <option value="spring-beans.schema" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -153,6 +157,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/fontawesome/css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.jgsoftware.landingpage.controller" />
       <recent name="de.jgsoftware.websitebuilder.config" />
     </key>
   </component>
@@ -399,7 +404,7 @@
       <workItem from="1645952164388" duration="893000" />
       <workItem from="1645953141951" duration="302000" />
       <workItem from="1645953746334" duration="243000" />
-      <workItem from="1645954007621" duration="3083000" />
+      <workItem from="1645954007621" duration="8402000" />
     </task>
     <task id="LOCAL-00001" summary="set up demo websitebuilder for module webshop">
       <created>1598073193332</created>
@@ -723,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645959955898</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="th:inculde for footer.html">
+      <created>1645960259247</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1645960259247</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +769,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete jar lib folder with jars.&#10;The jars are added from maven pom.xml" />
     <MESSAGE value="add a crud interface repository for table webtextlayout to save your data over the index.html" />
     <MESSAGE value="edit grapesjs.min plugin&#10;so you can export your data als zip &#10;and import a bootstrap template to your editor" />
     <MESSAGE value="add save a save option for localStorage &#10;to save to file as header.html, header.css, content.html, content.css&#10;and footer.html, footer.css to import it&#10;to the webshop and show ist as&#10;headerfragement and conentfragement and footerfragment" />
@@ -782,7 +793,8 @@
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit package" />
     <MESSAGE value="th:inculde for header.html&#10;&#10;it load the header form header.html into demo.html&#10;with mvc controller mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="th:inculde for header.html&#10;&#10;it load the header form header.html into demo.html&#10;with mvc controller mapping" />
+    <MESSAGE value="th:inculde for footer.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="th:inculde for footer.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -793,9 +805,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/HeaderController.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

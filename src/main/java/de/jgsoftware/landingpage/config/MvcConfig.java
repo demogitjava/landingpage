@@ -11,26 +11,24 @@ public class MvcConfig implements WebMvcConfigurer
 {
 
     @Autowired
-    private AppConfigLocale appConfigLocale;
+    public AppConfigLocale appConfigLocale;
 
 
     public void addViewControllers(ViewControllerRegistry registry)
     {
 
         //registry.addViewController("/").setViewName("de");
-
+        /*
         registry.addViewController("/en/").setViewName("en");
         registry.addViewController("/es/").setViewName("es");
         registry.addViewController("/fr/").setViewName("fr");
         registry.addViewController("/it/").setViewName("it");
         registry.addViewController("/tr/").setViewName("tr");
-
+        */
         registry.addViewController("/").setViewName("demo");
         registry.addViewController("/header/").setViewName("header");
-        registry.addViewController("/admin/").setViewName("admin");
-        registry.addViewController("/profile/").setViewName("profile");
-        registry.addViewController("/login/").setViewName("login");
-        registry.addViewController("/manager/").setViewName("manager");
+        registry.addViewController("/login").setViewName("login");
+
 
     }
 
