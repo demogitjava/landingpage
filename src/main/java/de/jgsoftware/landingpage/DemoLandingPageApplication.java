@@ -1,4 +1,4 @@
-package de.jgsoftware.websitebuilder;
+package de.jgsoftware.landingpage;
 
 import org.h2.tools.Server;
 

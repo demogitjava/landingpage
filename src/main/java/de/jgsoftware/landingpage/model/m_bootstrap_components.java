@@ -1,8 +1,7 @@
-package de.jgsoftware.websitebuilder.model;
+package de.jgsoftware.landingpage.model;
 
 
 import javax.persistence.*;
-import java.sql.Clob;
 
 
 @Entity

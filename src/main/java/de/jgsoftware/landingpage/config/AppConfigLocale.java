@@ -1,4 +1,4 @@
-package de.jgsoftware.websitebuilder.config;
+package de.jgsoftware.landingpage.config;
 
 
 import org.springframework.context.annotation.Bean;

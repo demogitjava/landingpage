@@ -1,7 +1,7 @@
-package de.jgsoftware.websitebuilder.controller;
+package de.jgsoftware.landingpage.controller;
 
 
-import de.jgsoftware.websitebuilder.service.DemoPageService;
+import de.jgsoftware.landingpage.service.DemoPageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

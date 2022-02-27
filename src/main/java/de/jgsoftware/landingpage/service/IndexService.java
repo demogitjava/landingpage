@@ -1,9 +1,9 @@
-package de.jgsoftware.websitebuilder.service;
+package de.jgsoftware.landingpage.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import de.jgsoftware.websitebuilder.dao.Dao_DemoPageController;
+import de.jgsoftware.landingpage.dao.Dao_DemoPageController;
 
 @Service
 public class IndexService

@@ -1,6 +1,6 @@
-package de.jgsoftware.websitebuilder.dao;
+package de.jgsoftware.landingpage.dao;
 
-import de.jgsoftware.websitebuilder.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

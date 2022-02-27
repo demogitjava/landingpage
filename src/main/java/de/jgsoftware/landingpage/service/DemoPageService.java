@@ -1,10 +1,8 @@
-package de.jgsoftware.websitebuilder.service;
+package de.jgsoftware.landingpage.service;
 
 
-import de.jgsoftware.websitebuilder.dao.Dao_DemoPageController;
-import de.jgsoftware.websitebuilder.dao.Dao_DemoPagePreview;
+import de.jgsoftware.landingpage.dao.Dao_DemoPagePreview;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 @Service

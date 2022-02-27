@@ -6,13 +6,19 @@
       <artifact name="webbuilder" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="update config landingpage">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="edit README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.eml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.eml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,12 +134,12 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/src/main/resources/static" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15743622" />
     <property name="project.structure.side.proportion" value="0.27424023" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -170,7 +176,7 @@
   </component>
   <component name="RunManager" selected="Spring Boot.Landingpage">
     <configuration name="websitebuilder" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="de.jgsoftware.websitebuilder.DemoLandingPageApplication" />
+      <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.DemoLandingPageApplication" />
       <module name="landingpage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,58 +187,11 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/demo_websitebuilder-0.0.1-SNAPSHOT.jar" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="landingpage" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="landingpage" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.websitebuilder.DemoLandingPageApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.DemoLandingPageApplication" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="graalvm-11" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,7 +212,6 @@
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="jgsoftwares/jgsoftwares:linuxgraalvmce" />
-          <option name="buildCliOptions" value="" />
           <option name="command" value="" />
           <option name="containerName" value="demowebsitebuilder" />
           <option name="entrypoint" value="" />
@@ -308,7 +266,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>true</myIsUseDefaultProxy>
@@ -434,6 +392,10 @@
       <workItem from="1645771867674" duration="3016000" />
       <workItem from="1645779179675" duration="351000" />
       <workItem from="1645779636387" duration="776000" />
+      <workItem from="1645952164388" duration="893000" />
+      <workItem from="1645953141951" duration="302000" />
+      <workItem from="1645953746334" duration="243000" />
+      <workItem from="1645954007621" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="set up demo websitebuilder for module webshop">
       <created>1598073193332</created>
@@ -729,11 +691,25 @@
       <option name="project" value="LOCAL" />
       <updated>1645892358104</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="edit README.md">
+      <created>1645892699187</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1645892699187</updated>
+    </task>
+    <task id="LOCAL-00044" summary="edit README.md">
+      <created>1645892897108</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1645892897108</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
@@ -760,11 +736,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add demo MVC Spring Boot Controller&#10;to preview page" />
     <MESSAGE value="edit javascript tag to th:inline" />
     <MESSAGE value="add clear cavas button to grapesjs website builder" />
     <MESSAGE value="delete jar lib folder with jars.&#10;The jars are added from maven pom.xml" />
@@ -789,117 +763,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit readme" />
     <MESSAGE value="update config landingpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="update config landingpage" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="146" y="479" width="777" height="958" key="#Docker_Image" timestamp="1645706651727">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="146" y="479" width="777" height="958" key="#Docker_Image/0.35.1080.1839@0.35.1080.1839" timestamp="1645706651727" />
-    <state x="0" y="430" width="1070" height="1056" key="#Project_Structure" timestamp="1645775196620">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="0" y="430" width="1070" height="1056" key="#Project_Structure/0.35.1080.1839@0.35.1080.1839" timestamp="1645775196620" />
-    <state x="242" y="566" width="585" height="606" key="#Spring_dmServer" timestamp="1645773913861">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="242" y="566" width="585" height="606" key="#Spring_dmServer/0.35.1080.1839@0.35.1080.1839" timestamp="1645773913861" />
-    <state x="0" y="518" width="1080" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645891454284">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="0" y="518" width="1080" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.35.1080.1839@0.35.1080.1839" timestamp="1645891454284" />
-    <state x="146" y="779" width="777" height="658" key="#h2_database" timestamp="1645706553573">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="146" y="779" width="777" height="658" key="#h2_database/0.35.1080.1839@0.35.1080.1839" timestamp="1645706553573" />
-    <state x="270" y="655" width="530" height="605" key="FileChooserDialogImpl" timestamp="1645795615098">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="270" y="655" width="530" height="605" key="FileChooserDialogImpl/0.35.1080.1839@0.35.1080.1839" timestamp="1645795615098" />
-    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose" timestamp="1645892440456">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="339" y="862" width="400" height="191" key="Github.Dialog.Accounts.Choose/0.35.1080.1839@0.35.1080.1839" timestamp="1645892440456" />
-    <state x="362" y="832" width="628" height="244" key="Github.ShareDialog" timestamp="1645886081321">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="362" y="832" width="628" height="244" key="Github.ShareDialog/0.35.1080.1839@0.35.1080.1839" timestamp="1645886081321" />
-    <state width="1022" height="646" key="GridCell.Tab.0.bottom" timestamp="1645892301250">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.0.bottom/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301250" />
-    <state width="1022" height="646" key="GridCell.Tab.0.center" timestamp="1645892301250">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.0.center/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301250" />
-    <state width="1022" height="646" key="GridCell.Tab.0.left" timestamp="1645892301250">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.0.left/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301250" />
-    <state width="1022" height="646" key="GridCell.Tab.0.right" timestamp="1645892301250">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.0.right/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301250" />
-    <state width="1022" height="646" key="GridCell.Tab.1.bottom" timestamp="1645892301087">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.1.bottom/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301087" />
-    <state width="1022" height="646" key="GridCell.Tab.1.center" timestamp="1645892301083">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.1.center/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301083" />
-    <state width="1022" height="646" key="GridCell.Tab.1.left" timestamp="1645892301082">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.1.left/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301082" />
-    <state width="1022" height="646" key="GridCell.Tab.1.right" timestamp="1645892301083">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.1.right/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301083" />
-    <state width="1022" height="646" key="GridCell.Tab.2.bottom" timestamp="1645892301088">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.2.bottom/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301088" />
-    <state width="1022" height="646" key="GridCell.Tab.2.center" timestamp="1645892301088">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.2.center/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301088" />
-    <state width="1022" height="646" key="GridCell.Tab.2.left" timestamp="1645892301088">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.2.left/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301088" />
-    <state width="1022" height="646" key="GridCell.Tab.2.right" timestamp="1645892301088">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state width="1022" height="646" key="GridCell.Tab.2.right/0.35.1080.1839@0.35.1080.1839" timestamp="1645892301088" />
-    <state x="0" y="502" width="1080" height="912" key="SettingsEditor" timestamp="1645775428806">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="0" y="502" width="1080" height="912" key="SettingsEditor/0.35.1080.1839@0.35.1080.1839" timestamp="1645775428806" />
-    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1645892381815">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="35" y="627" width="1000" height="661" key="Vcs.Push.Dialog.v2/0.35.1080.1839@0.35.1080.1839" timestamp="1645892381815" />
-    <state x="131" y="216" width="598" height="880" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1645704291242">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="131" y="216" width="598" height="880" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.35.1080.1839@0.35.1080.1839" timestamp="1645704291242" />
-    <state x="279" y="656" width="609" height="228" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1645706385416">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="279" y="656" width="609" height="228" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.35.1080.1839@0.35.1080.1839" timestamp="1645706385416" />
-    <state x="123" y="847" width="762" height="228" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize" timestamp="1645706526442">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="123" y="847" width="762" height="228" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize/0.35.1080.1839@0.35.1080.1839" timestamp="1645706526442" />
-    <state x="0" y="447" width="1070" height="1021" key="new project wizard" timestamp="1645775537495">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="0" y="447" width="1070" height="1021" key="new project wizard/0.35.1080.1839@0.35.1080.1839" timestamp="1645775537495" />
-    <state x="120" y="449" width="840" height="1034" key="run.anything.popup" timestamp="1645775444731">
-      <screen x="0" y="35" width="1080" height="1839" />
-    </state>
-    <state x="120" y="449" width="840" height="1034" key="run.anything.popup/0.35.1080.1839@0.35.1080.1839" timestamp="1645775444731" />
+    <MESSAGE value="edit README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
