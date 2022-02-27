@@ -14,13 +14,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ca79725b-7b41-49e3-8b63-18975550b86e" name="Default Changelist" comment="edit setup for loading IndexController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,14 +398,7 @@
       <workItem from="1645952164388" duration="893000" />
       <workItem from="1645953141951" duration="302000" />
       <workItem from="1645953746334" duration="243000" />
-      <workItem from="1645954007621" duration="9319000" />
-    </task>
-    <task id="LOCAL-00003" summary="set up demo websitebuilder for module webshop">
-      <created>1598076585254</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1598076585254</updated>
+      <workItem from="1645954007621" duration="9551000" />
     </task>
     <task id="LOCAL-00004" summary="update programm run with maven repositorys">
       <created>1601125105842</created>
@@ -747,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645966042878</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="edit setup for loading IndexController">
+      <created>1645966663645</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1645966663645</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -781,7 +777,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add bootstrap default theme" />
     <MESSAGE value="add bootstrap default theme with loading by bootstrap.min.js" />
     <MESSAGE value="add bootstrap toolbar with jquery to clear canvas &#10;becouse grapesjs plugin is not loaded correctly" />
     <MESSAGE value="change jetty webserver to tomcat &#10;becouse the javascript function &#10;are not available" />
@@ -806,7 +801,8 @@
     <MESSAGE value="clean simple dao demo controller" />
     <MESSAGE value="delete demp page serivce" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit setup for loading IndexController" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit setup for loading IndexController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
