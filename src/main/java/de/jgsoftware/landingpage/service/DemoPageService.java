@@ -1,7 +1,6 @@
 package de.jgsoftware.landingpage.service;
 
 
-import de.jgsoftware.landingpage.dao.Dao_DemoPagePreview;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
