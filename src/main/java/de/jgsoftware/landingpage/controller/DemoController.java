@@ -29,7 +29,7 @@ public class DemoController
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("demo");
+        ModelAndView mv = new ModelAndView("index");
 
 
 
