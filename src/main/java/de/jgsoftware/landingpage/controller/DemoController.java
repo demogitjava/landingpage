@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.controller;
 
 
+import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,9 @@ import javax.servlet.http.HttpServletRequest;
 public class DemoController
 {
 
+
+    @Autowired
+    IServiceIndex iServiceIndex;
 
     java.util.Locale locale;
 
