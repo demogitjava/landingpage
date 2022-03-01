@@ -13,8 +13,8 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/")
-public class DemoController
+@RequestMapping("/header")
+public class HeaderController
 {
 
 
@@ -28,12 +28,12 @@ public class DemoController
     HttpServletRequest request;
 
     // load default landingpage
-    @GetMapping({"index", "/"})
+    @GetMapping({"header", "/"})
     public ModelAndView demo() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("index");
+        ModelAndView mv = new ModelAndView("header");
 
 
 
@@ -48,24 +48,12 @@ public class DemoController
 
 
 
-        System.out.print("Der DemoController wurde geladen" + "\n");
+        System.out.print("Header Controller " + "\n");
 
         return mv;
     }
 
-    @PostMapping("/login")
-    public String index(String username, String password)
-    {
 
-        return "login";
-    }
-
-    @GetMapping("/header")
-    public String header()
-    {
-
-        return "header";
-    }
 
 
 
