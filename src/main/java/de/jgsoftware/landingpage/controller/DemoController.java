@@ -48,7 +48,7 @@ public class DemoController
 
 
 
-        System.out.print("Der DemoController wurde geladen");
+        System.out.print("Der DemoController wurde geladen" + "\n");
 
         return mv;
     }

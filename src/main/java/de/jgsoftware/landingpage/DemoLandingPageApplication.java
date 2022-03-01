@@ -30,6 +30,7 @@ public class DemoLandingPageApplication
         startH2Server();
     }
 
+
     public static void main(String[] args)
     {
 
