@@ -47,6 +47,8 @@ import java.util.Map;
 public class DemoDBConfig extends HikariConfig
 {
 
+    @Autowired
+    @Qualifier(value = "defaultJdbcTemplate")
     JdbcTemplate jtm;
 
     public DemoDBConfig()
@@ -93,7 +95,7 @@ public class DemoDBConfig extends HikariConfig
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         return builder.dataSource(dataSource).properties(properties)
-                .packages("de.jgsoftware.lanserver.model").persistenceUnit("DemoDb").build();
+                .packages("de.jgsoftware.landingpage.model").persistenceUnit("DemoDb").build();
 
     }
 
@@ -104,7 +106,7 @@ public class DemoDBConfig extends HikariConfig
         return new JpaTransactionManager(entityManagerFactory);
     }
 
-
+    @Primary
     @Bean(name = "defaultJdbcTemplate")
     public JdbcTemplate jdbcTemplate(@Qualifier("dataSource") DataSource demodb)
     {

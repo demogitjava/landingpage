@@ -5,6 +5,7 @@ import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,11 +20,10 @@ import java.io.*;
 public class Dao_DemoPageController
 {
 
-    @Autowired
-    Int_m_webtextlayout int_mwebtextlayout;
 
     @Autowired
-    private JdbcTemplate jtm;
+    @Qualifier(value = "defaultJdbcTemplate")
+    JdbcTemplate jtm;
 
     @Lazy
     @Autowired

@@ -32,11 +32,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class MaWiDBConfig extends HikariConfig
 {
     @Autowired
+    @Qualifier(value = "mawiJdbcTemplate")
     JdbcTemplate jtm1;
 
 
     @Autowired
-    DataSource dataSource;
+    DataSource dataSource1;
 
 
 
@@ -58,12 +59,12 @@ public class MaWiDBConfig extends HikariConfig
 
     @Bean(name = "mawiEntityManagerFactory")
     public LocalContainerEntityManagerFactoryBean mawiEntityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                           @Qualifier("mawidb") DataSource dataSource) {
+                                                                           @Qualifier("mawidb") DataSource dataSource1) {
         HashMap<String, Object> properties = new HashMap<>();
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-        return builder.dataSource(dataSource).properties(properties)
-                .packages("de.jgsoftware.lanserver.model.mawi").persistenceUnit("Mawi").build();
+        return builder.dataSource(dataSource1).properties(properties)
+                .packages("de.jgsoftware.landingpage.model").persistenceUnit("Mawi").build();
     }
 
     @Bean(name = "mawiTransactionManager")
@@ -73,9 +74,10 @@ public class MaWiDBConfig extends HikariConfig
     }
 
     @Bean(name = "mawiJdbcTemplate")
-    public JdbcTemplate jdbcTemplate(@Qualifier("ds2") DataSource dataSource)
+    public JdbcTemplate jdbcTemplate(@Qualifier("ds2") DataSource dataSource1)
     {
-        return new JdbcTemplate(dataSource);
+
+        return new JdbcTemplate(dataSource1);
     }
 
 

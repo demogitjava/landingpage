@@ -18,8 +18,7 @@ public class DemoController
 {
 
 
-    @Autowired
-    IServiceIndex iServiceIndex;
+
 
     java.util.Locale locale;
 
