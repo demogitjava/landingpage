@@ -21,8 +21,7 @@ import java.sql.SQLException;
 public class DemoLandingPageApplication {
 
 
-    @Autowired
-    private JdbcTemplate jtm;
+
 
     public DemoLandingPageApplication() {
 
