@@ -22,6 +22,9 @@ public class DemoController
 
     java.util.Locale locale;
 
+    @Autowired
+    IServiceIndex iServiceIndex;
+
 
     @Autowired
     HttpServletRequest request;
@@ -45,6 +48,7 @@ public class DemoController
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
         mv.addObject("lang", languagestr);
 
+        mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
 
 
         System.out.print("Der DemoController wurde geladen" + "\n");

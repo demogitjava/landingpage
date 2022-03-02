@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
+import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import java.util.List;
 import java.io.*;
 
 @Repository
-public class Dao_DemoPageController
+public class Dao_DemoPageController implements IDaoDemoPageController
 {
 
 
@@ -30,8 +31,29 @@ public class Dao_DemoPageController
     private IndexService sdemowebtext;
 
 
-    public static String demopage;
-    public static String headerpage;
+
+
+    // returns all entriys from Table
+    public List<m_webtextlayout> getPageLanguageText()
+    {
+        List<m_webtextlayout> webtextlayouts = jtm.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+
+        return webtextlayouts;
+    }
+
+
+    // returns all entriys from stored Bootstrap Compoents
+    // with ${ value } for mapping to Theamyleaf
+    public List<m_bootstrap_components> getBootstrapComponents()
+    {
+
+        // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
+
+        // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
+        List<m_bootstrap_components> bootstrap_comonents = jtm.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+
+        return bootstrap_comonents;
+    }
 
 
 }
