@@ -2,9 +2,14 @@
 <project version="4">
   <component name="PersistenceUnitSettings">
     <persistence-units>
+      <persistence-unit name="demodb" persistenceXmlPath="src/main/resources/META-INF/persistence.xml">
+        <packages>
+          <package value="de.jgsoftware.lanserver.model" />
+        </packages>
+      </persistence-unit>
       <persistence-unit name="Default">
         <packages>
-          <package value="de.jgsoftware.landingpage" />
+          <package value="de.jgsoftware.landingpage.model" />
         </packages>
       </persistence-unit>
     </persistence-units>
