@@ -57,7 +57,7 @@ public class DemoController
         return mv;
     }
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public String login()
     {
 
