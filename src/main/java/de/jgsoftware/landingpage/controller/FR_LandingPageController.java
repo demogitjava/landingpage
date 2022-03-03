@@ -21,9 +21,6 @@ public class FR_LandingPageController
         ModelAndView mv = new ModelAndView("fr");
 
 
-
-
-
         return mv;
     }
 }
