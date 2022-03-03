@@ -2,7 +2,7 @@ FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 #FROM jgsoftwares/jgsoftwares:i386ubuntuopenjdk
 
 #hostname
-ENV HOSTNAME webbuilder
+ENV HOSTNAME landingpage
 
 
 
@@ -22,6 +22,6 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/shopdb.mv.db /root/sh
 #ADD https://github.com/demogitjava/demodatabase/raw/master/Dropboxclient.jar /root/applib/dropboxclient.jar
 
 ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
-COPY target/demo_websitebuilder-0.0.1-SNAPSHOT.jar websitebuilder.jar
+COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
 
-ENTRYPOINT ["java", "-jar", "websitebuilder.jar"]
+ENTRYPOINT ["java", "-jar", "landingpage.jar"]
