@@ -1,24 +1,31 @@
 package de.jgsoftware.landingpage.service;
 
 
+import de.jgsoftware.landingpage.dao.Dao_DemoPageController;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import de.jgsoftware.landingpage.dao.Dao_DemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 
 @Service
 public class IndexService implements IServiceIndex
 {
 
     @Autowired
-    Dao_DemoPageController dcontroller;
+    IDaoDemoPageController dcontroller;
 
 
-    public Dao_DemoPageController getDcontroller() {
+    @Override
+    public IDaoDemoPageController getDcontroller() {
         return dcontroller;
     }
 
+    @Override
     public void setDcontroller(Dao_DemoPageController dcontroller) {
+
+    }
+
+    public void setDcontroller(IDaoDemoPageController dcontroller) {
         this.dcontroller = dcontroller;
     }
 }
