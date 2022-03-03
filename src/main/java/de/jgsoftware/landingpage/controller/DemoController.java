@@ -29,6 +29,13 @@ public class DemoController
     @Autowired
     HttpServletRequest request;
 
+
+
+    public DemoController()
+    {
+
+    }
+
     // load default landingpage
     @GetMapping({"index", "/"})
     public ModelAndView demo() {
@@ -46,11 +53,12 @@ public class DemoController
          *
          */
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
+
+
         mv.addObject("lang", languagestr);
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
 
 
-        System.out.print("Der DemoController wurde geladen" + "\n");
 
         return mv;
     }
@@ -67,6 +75,14 @@ public class DemoController
     {
 
         return "header";
+    }
+
+
+    @GetMapping("/fr")
+    public String fr()
+    {
+
+        return "fr";
     }
 
 
