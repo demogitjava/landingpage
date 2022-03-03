@@ -1,7 +1,6 @@
 package de.jgsoftware.landingpage.dao;
 
 
-import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.service.IndexService;
@@ -13,9 +12,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import de.jgsoftware.landingpage.model.m_webtextlayout;
-
+import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import java.util.List;
-import java.io.*;
 
 @Repository
 public class Dao_DemoPageController implements IDaoDemoPageController
