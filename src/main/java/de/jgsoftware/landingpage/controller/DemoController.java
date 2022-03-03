@@ -17,19 +17,13 @@ import javax.servlet.http.HttpServletRequest;
 public class DemoController
 {
 
-
-
-
     java.util.Locale locale;
 
     @Autowired
     IServiceIndex iServiceIndex;
 
-
     @Autowired
     HttpServletRequest request;
-
-
 
     public DemoController()
     {
@@ -64,7 +58,7 @@ public class DemoController
     }
 
     @PostMapping("/login")
-    public String index(String username, String password)
+    public String login()
     {
 
         return "login";
