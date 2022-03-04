@@ -46,8 +46,6 @@ public class DemoController
          *   only for this Controller
          */
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
-
-
         mv.addObject("lang", languagestr);
 
 
