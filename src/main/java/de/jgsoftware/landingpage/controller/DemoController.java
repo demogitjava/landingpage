@@ -44,7 +44,6 @@ public class DemoController
         /**
          *   Get Country to display Language
          *   only for this Controller
-         *
          */
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
@@ -60,14 +59,12 @@ public class DemoController
     @GetMapping("/login")
     public String login()
     {
-
         return "login";
     }
 
     @GetMapping("/header")
     public String header()
     {
-
         return "header";
     }
 
@@ -75,7 +72,6 @@ public class DemoController
     @GetMapping("/fr")
     public String fr()
     {
-
         return "fr";
     }
 
