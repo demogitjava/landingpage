@@ -49,6 +49,14 @@ public class DemoController
 
 
         mv.addObject("lang", languagestr);
+
+
+        /**
+         *   load entities from table
+         *   webtextlayout to contoller
+         *
+         *   inject text from with webtextcomp[0] fist id of table
+         */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
 
 
