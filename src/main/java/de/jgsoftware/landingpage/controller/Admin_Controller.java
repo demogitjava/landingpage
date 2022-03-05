@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 @Controller
-
 public class Admin_Controller implements iAdminController
 {
 

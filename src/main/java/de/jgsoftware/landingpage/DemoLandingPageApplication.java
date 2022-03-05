@@ -18,25 +18,13 @@ import java.sql.SQLException;
 
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 @SpringBootApplication
-public class DemoLandingPageApplication {
+public class DemoLandingPageApplication implements iDemoLandingPage {
 
 
-
-
-    public DemoLandingPageApplication()
-    {
-
-    }
-
-
-
-
-    public static void main(String[] args) {
-        SpringApplication.run(DemoLandingPageApplication.class, args);
-    }
-
-
-
+    //@Override
+    //public static void main(String[] args) {
+      //  SpringApplication.run(DemoLandingPageApplication.class, args);
+   // }
 
 
 }
