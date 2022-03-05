@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.controller;
 
 
+import de.jgsoftware.landingpage.controller.interfaces.iDemoController;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/")
-public class DemoController
+public class DemoController implements iDemoController
 {
 
 
@@ -34,7 +35,8 @@ public class DemoController
     }
 
     // load default landingpage
-    @GetMapping({"index", "/"})
+    //@GetMapping({"index", "/"})
+    @Override
     public ModelAndView demo() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
@@ -65,19 +67,19 @@ public class DemoController
         return mv;
     }
 
-    @GetMapping("/login")
+    @Override
     public String login()
     {
         return "login";
     }
 
-    @GetMapping("/header")
+    @Override
     public String header()
     {
         return "header";
     }
 
-    @GetMapping("/fr")
+    @Override
     public String fr()
     {
         return "fr";
