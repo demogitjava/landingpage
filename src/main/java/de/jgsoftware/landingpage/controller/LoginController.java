@@ -1,6 +1,8 @@
 package de.jgsoftware.landingpage.controller;
 
 
+import de.jgsoftware.landingpage.controller.interfaces.iLoginController;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,12 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/login")
-public class LoginController
+public class LoginController implements iLoginController
 {
 
     // load default landingpage
-    @GetMapping({"login", "/"})
-    public ModelAndView demo() {
+    @Override
+    public ModelAndView login() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
@@ -25,12 +27,9 @@ public class LoginController
 
 
 
-    @GetMapping("/userdata")
+    @Override
     public ModelAndView userdata(String username, String password)
     {
-
-
-
         return new ModelAndView("redirect:/admin");
     }
 
