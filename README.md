@@ -10,10 +10,16 @@ http://www.h2database.com/html/download.html
 <br/>
 
 the application port is
-https://localhost/
+https://localhost/  
 
 you can edit the port in the application.properties 
-server.port=80
+the server port is 80.
+
+For jdbc client connect you can user
+the integreadted jdbc viewer from netbeans or
+SQuirreL SQL Client.
+
+
 
 
 

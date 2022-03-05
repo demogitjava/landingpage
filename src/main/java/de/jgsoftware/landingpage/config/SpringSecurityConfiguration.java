@@ -45,6 +45,9 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception
 	{
 
+		http.authorizeRequests().antMatchers("/").permitAll().and()
+				.authorizeRequests().antMatchers("/h2-console/**").permitAll();
+
 
 		http
 				.csrf().disable().cors().and()
@@ -53,7 +56,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 						"/index.html",
 						"/signup.html",
 						"/login.html",
-						"/h2/**",
+						"/h2-console/**",
 						"/resources/**",
 						"/static/**,").permitAll()
 

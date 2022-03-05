@@ -10,12 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/")
 public class DemoController
 {
+
 
     java.util.Locale locale;
 
@@ -73,7 +76,6 @@ public class DemoController
     {
         return "header";
     }
-
 
     @GetMapping("/fr")
     public String fr()
