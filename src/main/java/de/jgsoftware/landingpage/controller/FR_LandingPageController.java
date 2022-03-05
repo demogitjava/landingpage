@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.controller;
 
 
+import de.jgsoftware.landingpage.controller.interfaces.iFR_Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,11 +10,11 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 @Controller
 @RequestMapping("/fr")
-public class FR_LandingPageController
+public class FR_LandingPageController implements iFR_Controller
 {
 
     // load default landingpage
-    @GetMapping({"fr", "/"})
+    @Override
     public ModelAndView fr() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
