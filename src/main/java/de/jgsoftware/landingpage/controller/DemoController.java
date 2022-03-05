@@ -16,7 +16,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/")
 public class DemoController implements iDemoController
 {
 
