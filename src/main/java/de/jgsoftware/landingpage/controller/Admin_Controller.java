@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.controller;
 
 
+import de.jgsoftware.landingpage.controller.interfaces.iAdminController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,12 +10,12 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 @Controller
 @RequestMapping("/admin")
-public class Admin_Controller
+public class Admin_Controller implements iAdminController
 {
 
 
     // load default landingpage
-    @GetMapping({"admin", "/"})
+    @Override
     public ModelAndView demo() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
