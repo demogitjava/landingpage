@@ -1,5 +1,5 @@
 
-Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
+# Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 
 <br/>
 <br/>
@@ -43,7 +43,7 @@ used jdk: **GraalVM Community ** https://www.graalvm.org/downloads/
 <br/>
 
 
-For Docker
+# For Docker
 
 To build the image type:
 
