@@ -42,9 +42,6 @@ public class DemoController implements iDemoController
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
         ModelAndView mv = new ModelAndView("index");
 
-
-
-
         /**
          *   Get Country to display Language
          *   only for this Controller

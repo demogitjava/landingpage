@@ -53,10 +53,10 @@ and you create a docker image with CentOS runs in a container over port 80.
 
 Run the application and open ports by create a new container
 
-80
+80   web - servlet
 
-9092
-8082
+9092 h2 jdbc
+8082 h2 web
 5005 (optional for debug)
 
 docker for windows are available on https://www.docker.com/products/docker-desktop
