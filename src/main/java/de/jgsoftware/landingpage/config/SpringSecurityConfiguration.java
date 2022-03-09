@@ -45,8 +45,6 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception
 	{
 
-		http.authorizeRequests().antMatchers("/").permitAll().and()
-				.authorizeRequests().antMatchers("/h2-console/**").permitAll();
 
 
 		http
@@ -64,21 +62,10 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
 				.antMatchers("/manager/**").access("hasRole('ROLE_MANAGER')")
 				.and()
-				.formLogin()
-				.loginPage("/login")
-				.usernameParameter("username")
-				.passwordParameter("password")
-				.loginProcessingUrl("/perform_login")
-				.defaultSuccessUrl("/admin.html",true)
-				.failureUrl("/login.html?error=true")
-				.and()
-				.logout()
-				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-				.logoutSuccessUrl("/logout")
-				.and()
+				.formLogin();
+
 				//.rememberMe().tokenValiditySeconds(30000).key("keytoken!")
 				//.rememberMeParameter("checkRememberMe");
-				.rememberMe().disable();
 
 
 
