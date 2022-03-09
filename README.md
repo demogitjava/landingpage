@@ -1,16 +1,19 @@
 
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 
-<br/>
-<br/>
-<br/>
+<br>
+<br>
+<br>
 
 The used database is H2 from here
 http://www.h2database.com/html/download.html
-<br/>
-
+<br>
+the login for the database over jdbc is
+admin
+jj78mvpr52k1
+<br>
 the application url // port is
-url: https://localhost/  
+url: https://localhost/
 port: 80
 
 For jdbc client connect you can user
@@ -21,24 +24,24 @@ SQuirreL SQL Client.
 
 
 
-<br/>
-<br/>
+<br>
+<br>
 
 used ide
 https://netbeans.apache.org/
-<br/>
+<br>
 
 
 To compile this application install maven.
 maven https://downloads.apache.org/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.zip
 
 make sure that java is correctly installed and the "JAVA_HOME" path is set.
-<br/>
+<br>
 
 You can get the java jdk from here:
 used jdk: **GraalVM Community ** https://www.graalvm.org/downloads/
 
-<br/>
+<br>
 
 
 # For Docker
