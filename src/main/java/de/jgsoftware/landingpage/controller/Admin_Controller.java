@@ -15,15 +15,11 @@ public class Admin_Controller implements iAdminController
 
     // load default landingpage
     @Override
-    public ModelAndView admin() {
+    public ModelAndView admincontroller() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
         ModelAndView mv = new ModelAndView("admin");
-
-
-
-
 
 
         return mv;
