@@ -7,11 +7,11 @@
 
 The used database is H2 from here
 http://www.h2database.com/html/download.html
-<br>
+</br>
 the login for the database over jdbc is
 admin
 jj78mvpr52k1
-<br>
+</br>
 the application url // port is
 url: https://localhost/
 port: 80
