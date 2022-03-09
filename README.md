@@ -1,25 +1,29 @@
 
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 
-<br>
-<br>
-<br>
+</br>
+</br>
+</br>
 
 The used database is H2 from here
 http://www.h2database.com/html/download.html
+
 </br>
 the login for the database over jdbc is
 admin
 jj78mvpr52k1
+
 </br>
 the application url // port is
 url: https://localhost/
 port: 80
 
+</br>
 For jdbc client connect you can user
 the integreadted jdbc viewer from netbeans or
 SQuirreL SQL Client.
 
+</br>
 
 <br>
 <br>
