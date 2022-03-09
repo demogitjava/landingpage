@@ -21,9 +21,6 @@ the integreadted jdbc viewer from netbeans or
 SQuirreL SQL Client.
 
 
-
-
-
 <br>
 <br>
 
