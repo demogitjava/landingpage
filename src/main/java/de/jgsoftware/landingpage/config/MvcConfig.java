@@ -34,7 +34,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/fr").setViewName("fr");
         registry.addViewController("/en").setViewName("en");
 
-
+        registry.addViewController("/webbuilder").setViewName("webbuilder");
         registry.addViewController("/admin").setViewName("admin");
         registry.addViewController("/userlogin").setViewName("login");
 
