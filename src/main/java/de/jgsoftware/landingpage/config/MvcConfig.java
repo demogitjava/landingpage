@@ -26,7 +26,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/tr/").setViewName("tr");
         */
         registry.addViewController("/").setViewName("index");
-
+        registry.addViewController("/lpagewebbuilder").setViewName("lpagewebbuilder");
 
         /*
             register languages to controller
@@ -44,7 +44,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/about").setViewName("about");
         registry.addViewController("/contact").setViewName("contact");
 
-        registry.addViewController("/lpagewebbuilder").setViewName("lpagewebbuilder");
+
 
     }
 
