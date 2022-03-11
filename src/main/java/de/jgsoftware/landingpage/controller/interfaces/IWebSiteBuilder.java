@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface IWebSiteBuilder
 {
     @GetMapping({"lpagewebbuilder", "/"})
-    public ModelAndView webbuilder();
+    public ModelAndView lpagewebbuilder();
 }
