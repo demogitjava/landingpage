@@ -35,7 +35,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
 
 
-    public ModelAndView lpagewebbuilder()
+    public ModelAndView webbuilder()
     {
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());

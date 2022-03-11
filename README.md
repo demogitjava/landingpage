@@ -22,6 +22,13 @@ url: https://localhost/
 port: 80
 
 </br>
+to edit the landingpage type 
+https://localhost/lpagewebbuilder
+
+
+
+
+</br>
 For jdbc client connect you can user
 the integreadted jdbc viewer from netbeans or
 SQuirreL SQL Client.
