@@ -25,7 +25,5 @@ public class IndexService implements IServiceIndex
 
     }
 
-    public void setDcontroller(IDaoDemoPageController dcontroller) {
-        this.dcontroller = dcontroller;
-    }
+
 }

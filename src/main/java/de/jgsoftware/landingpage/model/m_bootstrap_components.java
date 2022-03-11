@@ -12,8 +12,9 @@ public class m_bootstrap_components
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Lob
+
     private String btcompname;
+
     @Lob
     private String txbootstrap;
 

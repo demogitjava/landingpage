@@ -1,16 +1,23 @@
 package de.jgsoftware.landingpage.controller;
 
-import de.jgsoftware.landingpage.controller.interfaces.IWebSiteBuilder;
-import org.springframework.web.servlet.ModelAndView;
 
-import de.jgsoftware.landingpage.controller.interfaces.iAboutController;
-import de.jgsoftware.landingpage.controller.interfaces.iServiceController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
+
+import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.support.RequestContextUtils;
+import de.jgsoftware.landingpage.controller.interfaces.IWebSiteBuilder;
 
 @Controller
 public class WebSiteBuilder implements IWebSiteBuilder
 {
+
+
+
 
     @Override
     public ModelAndView webbuilder()
