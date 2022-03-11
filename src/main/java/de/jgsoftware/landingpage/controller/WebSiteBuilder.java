@@ -42,9 +42,6 @@ public class WebSiteBuilder implements IWebSiteBuilder
         ModelAndView mv = new ModelAndView("lpagewebbuilder");
 
 
-        // load all bootstrap components to MVC Controller
-        mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getallbtcomp());
-
         /**
          *   Get Country to display Language
          *   only for this Controller
@@ -54,6 +51,9 @@ public class WebSiteBuilder implements IWebSiteBuilder
 
 
 
+        // load all bootstrap components to MVC Controller
+        mv.addObject("webtextcompp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
+        mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
 
         return mv;
     }

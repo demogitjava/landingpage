@@ -35,8 +35,6 @@ public interface iDemoController {
     @GetMapping("/tr")
     String tr();
 
-
-
-
-
+    @GetMapping("/lpagewebbuilder")
+    String lpagewebbuilder();
 }

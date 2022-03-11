@@ -24,11 +24,27 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
 
 
+    // returns all entriys from Table
     @Override
-    public List<m_bootstrap_components> getallbtcomp()
+    public List<m_webtextlayout> getPageLanguageText()
     {
-        List<m_bootstrap_components> lbtcomp = jtm2.query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_components.class));
+        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
 
-        return lbtcomp;
+        return webtextlayouts;
+    }
+
+
+    // returns all entriys from stored Bootstrap Compoents
+    // with ${ value } for mapping to Theamyleaf
+    @Override
+    public List<m_bootstrap_components> getBootstrapComponents()
+    {
+
+        // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
+
+        // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
+        List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+
+        return bootstrap_comonents;
     }
 }
