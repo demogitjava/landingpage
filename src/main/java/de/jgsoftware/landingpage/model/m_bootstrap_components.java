@@ -13,19 +13,10 @@ public class m_bootstrap_components
     private int id;
 
     @Lob
-    private String compname;
-    private String bootstrapcompname;
+    private String btcompname;
+    @Lob
+    private String txbootstrap;
 
-    private String svgname;
-
-
-    public String getSvgname() {
-        return svgname;
-    }
-
-    public void setSvgname(String svgname) {
-        this.svgname = svgname;
-    }
 
     public int getId() {
         return id;
@@ -35,20 +26,19 @@ public class m_bootstrap_components
         this.id = id;
     }
 
-
-    public String getCompname() {
-        return compname;
+    public String getBtcompname() {
+        return btcompname;
     }
 
-    public void setCompname(String compname) {
-        this.compname = compname;
+    public void setBtcompname(String btcompname) {
+        this.btcompname = btcompname;
     }
 
-    public String getBootstrapcompname() {
-        return bootstrapcompname;
+    public String getTxbootstrap() {
+        return txbootstrap;
     }
 
-    public void setBootstrapcompname(String bootstrapcompname) {
-        this.bootstrapcompname = bootstrapcompname;
+    public void setTxbootstrap(String txbootstrap) {
+        this.txbootstrap = txbootstrap;
     }
 }
