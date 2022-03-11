@@ -11,12 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 import de.jgsoftware.landingpage.controller.interfaces.IWebSiteBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+
 
 @Controller
 public class WebSiteBuilder implements IWebSiteBuilder
 {
 
 
+    @Autowired
+    iWebBuilderService iWebBuilderService;
 
 
     @Override

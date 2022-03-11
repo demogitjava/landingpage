@@ -15,10 +15,12 @@ public class WebBuilderService implements iWebBuilderService
     @Autowired
     iDaoWebBuilder iDaoWebBuilder;
 
+    @Override
     public de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder getiDaoWebBuilder() {
         return iDaoWebBuilder;
     }
 
+    @Override
     public void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder iDaoWebBuilder) {
         this.iDaoWebBuilder = iDaoWebBuilder;
     }
