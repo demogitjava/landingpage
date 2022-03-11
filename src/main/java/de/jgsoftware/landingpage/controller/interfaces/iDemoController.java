@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iDemoController {
 
     // load default landingpage
+    // de
     @GetMapping({"index", "/"})
     ModelAndView demo();
 
@@ -19,6 +20,23 @@ public interface iDemoController {
     @GetMapping("/header")
     String header();
 
+    @GetMapping("/en")
+    String en();
+
     @GetMapping("/fr")
     String fr();
+
+    @GetMapping("/es")
+    String es();
+
+    @GetMapping("/it")
+    String it();
+
+    @GetMapping("/tr")
+    String tr();
+
+
+
+
+
 }

@@ -31,8 +31,11 @@ public class MvcConfig implements WebMvcConfigurer
         /*
             register languages to controller
          */
-        registry.addViewController("/fr").setViewName("fr");
         registry.addViewController("/en").setViewName("en");
+        registry.addViewController("/fr").setViewName("fr");
+        registry.addViewController("/es").setViewName("es");
+        registry.addViewController("/it").setViewName("it");
+        registry.addViewController("/tr").setViewName("tr");
 
         registry.addViewController("/lpagewebbuilder").setViewName("lpagewebbuilder");
         registry.addViewController("/admin").setViewName("admin");

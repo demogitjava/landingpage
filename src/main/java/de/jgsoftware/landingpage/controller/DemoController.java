@@ -76,9 +76,33 @@ public class DemoController implements iDemoController
     }
 
     @Override
+    public String en()
+    {
+        return "en";
+    }
+
+    @Override
     public String fr()
     {
         return "fr";
+    }
+
+    @Override
+    public String es()
+    {
+        return "es";
+    }
+
+    @Override
+    public String it()
+    {
+        return "it";
+    }
+
+    @Override
+    public String tr()
+    {
+        return "tr";
     }
 
 
