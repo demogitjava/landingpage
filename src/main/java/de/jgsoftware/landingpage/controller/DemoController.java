@@ -28,10 +28,7 @@ public class DemoController implements iDemoController
     @Autowired
     HttpServletRequest request;
 
-    public DemoController()
-    {
 
-    }
 
     // load default landingpage
     //@GetMapping({"index", "/"})

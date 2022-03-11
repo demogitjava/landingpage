@@ -14,27 +14,29 @@ public interface iDemoController {
     @GetMapping({"index", "/"})
     ModelAndView demo();
 
+    @GetMapping("/lpagewebbuilder")
+    public String lpagewebbuilder();
+
     @GetMapping("/login")
     String login();
 
     @GetMapping("/header")
-    String header();
+    public String header();
 
     @GetMapping("/en")
-    String en();
+    public String en();
 
     @GetMapping("/fr")
-    String fr();
+    public String fr();
 
     @GetMapping("/es")
-    String es();
+    public String es();
 
     @GetMapping("/it")
-    String it();
+    public String it();
 
     @GetMapping("/tr")
-    String tr();
+    public String tr();
 
-    @GetMapping("/lpagewebbuilder")
-    String lpagewebbuilder();
+
 }
