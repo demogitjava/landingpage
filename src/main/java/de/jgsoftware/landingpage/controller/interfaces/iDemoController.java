@@ -14,8 +14,6 @@ public interface iDemoController {
     @GetMapping({"index", "/"})
     public ModelAndView index();
 
-
-
     @GetMapping("/login")
     String login();
 

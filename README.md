@@ -18,12 +18,13 @@ jj78mvpr52k1
 </br>
 </br>
 the application url // port is
-url: https://localhost/
+url: https:// "your domain " /
+
 port: 80
 
 </br>
 to edit the landingpage type 
-https://localhost/lpagewebbuilder
+https://"your domain "/lpagewebbuilder
 
 
 
