@@ -33,7 +33,7 @@ public class DemoController implements iDemoController
     // load default landingpage
     //@GetMapping({"index", "/"})
     @Override
-    public ModelAndView demo() {
+    public ModelAndView index() {
 
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());

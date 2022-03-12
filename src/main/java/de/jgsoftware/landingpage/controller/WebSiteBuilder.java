@@ -25,29 +25,22 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
     java.util.Locale locale;
 
-    ModelAndView mv;
 
-    @Autowired
-    HttpServletRequest request;
+
+
 
     @Autowired
     iWebBuilderService iWebBuilderService;
 
 
 
-    public ModelAndView webbuilder()
+    @Override
+    public ModelAndView lpagewebbuilder()
     {
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        mv = new ModelAndView("lpagewebbuilder");
+        ModelAndView mv = new ModelAndView("lpagewebbuilder");
 
-
-        /**
-         *   Get Country to display Language
-         *   only for this Controller
-         */
-        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
-        mv.addObject("lang", languagestr);
 
 
 

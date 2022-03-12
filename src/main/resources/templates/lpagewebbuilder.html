@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:lang="${lang}">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="ISO-8859-1">
@@ -53,41 +53,13 @@
 <body>
 
 
-<div class="container-fluid">
-
-
-
-    <ul class="breadcrumb">
-        <li><a href="#">Home</a> <span class="divider">/</span></li>
-        <li class="active">Editor</li>
-    </ul>
+<div class="container">
 
 
 
 
-    <div class="panel panel-primary draggable-panel toolbar-panel ui-draggable ui-resizable" id="toolbox-tools">
-        <div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></div>
-
-        <ul id="sortable" class="ui-sortable">
-            <li class="btn-group draggable-group ui-state-default" id="group-file">
-                <div class="btn-warning pull-left group-handle"><i class="fa fa-caret-down fa-1 toggle-button-group" data-toggle="tooltip" data-placement="bottom" title="Expand / Colapse"></i></div>
-
-                <button class="btn btn-primary btn-md" id="btn_empty" data-toggle="tooltip" data-placement="bottom" title="Clear Screen" onclick="clearcanvas()"><i class="fa fa-trash" ></i></button>
-                <button class="btn btn-primary btn-md" id="btn_svgOpen" data-toggle="tooltip" data-placement="bottom" title="Import Template"><i class="fa fa-upload"></i></button>
-
-            </li>
 
 
-            <li class="btn-group draggable-group ui-state-default" id="group-toggle-lanes">
-
-
-            </li>
-
-
-        </ul>
-
-
-    </div>
 
 
     <div class="row">
@@ -95,6 +67,7 @@
 
 
         <div class="col-md-12">
+
 
             <div id="gjs">
 
@@ -104,9 +77,9 @@
 
                 var editor = grapesjs.init
                 ({
-                    height: '80%',
+                    height: '100%',
                     fromElement: 1,
-                    clearOnRender: true,
+                    clearOnRender: false,
                     container: '#gjs',
                     allowScripts: 1,
                     canvas: {

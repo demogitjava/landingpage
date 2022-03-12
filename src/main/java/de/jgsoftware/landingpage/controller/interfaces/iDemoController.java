@@ -12,10 +12,9 @@ public interface iDemoController {
     // load default landingpage
     // de
     @GetMapping({"index", "/"})
-    ModelAndView demo();
+    public ModelAndView index();
 
-    @GetMapping("/lpagewebbuilder")
-    public String lpagewebbuilder();
+
 
     @GetMapping("/login")
     String login();
@@ -37,6 +36,9 @@ public interface iDemoController {
 
     @GetMapping("/tr")
     public String tr();
+
+    @GetMapping("/lpagewebbuilder")
+    public String lpagewebbuilder();
 
 
 }
