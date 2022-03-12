@@ -75,31 +75,31 @@ public class DemoController implements iDemoController
     @Override
     public String en()
     {
-        return "en";
+        return "redirect:/en/";
     }
 
     @Override
     public String fr()
     {
-        return "fr";
+        return "redirect:/fr/";
     }
 
     @Override
     public String es()
     {
-        return "es";
+        return "redirect:/es/";
     }
 
     @Override
     public String it()
     {
-        return "it";
+        return "redirect:/it/";
     }
 
     @Override
     public String tr()
     {
-        return "tr";
+        return "redirect:/tr/";
     }
 
 
@@ -107,7 +107,7 @@ public class DemoController implements iDemoController
     @Override
     public String lpagewebbuilder()
     {
-        return "lpagewebbuilder";
+        return "redirect:/lpagewebbuilder/";
     }
 
 
