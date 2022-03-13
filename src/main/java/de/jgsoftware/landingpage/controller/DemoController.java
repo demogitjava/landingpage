@@ -56,6 +56,8 @@ public class DemoController implements iDemoController
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
 
 
+        mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
+
 
         return mv;
     }
