@@ -10,20 +10,7 @@
     <name>landingpage</name>
     <description>Demo Landingpage</description>
     <packaging>jar</packaging>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <name>Central Repository</name>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-        </pluginRepository>
-    </pluginRepositories>
+
 
 
     <parent>
@@ -41,8 +28,40 @@
 
 
 
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <url>https://repo1.maven.org/maven2/</url>
+            <layout>default</layout>
 
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+
+        </repository>
+
+        <repository>
+            <id>repository.spring.milestone</id>
+            <name>Spring Milestone Repository</name>
+            <url>http://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+
+    </repositories>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -73,8 +92,6 @@
             <scope>compile</scope>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity5</artifactId>
@@ -100,7 +117,6 @@
             <scope>compile</scope>
         </dependency>
 
-
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
         <dependency>
             <groupId>org.jsoup</groupId>
@@ -116,11 +132,7 @@
             <version>2.2</version>
         </dependency>
 
-
     </dependencies>
-
-
-
     <build>
         <plugins>
 
@@ -141,4 +153,5 @@
 
         </plugins>
     </build>
+
 </project>
