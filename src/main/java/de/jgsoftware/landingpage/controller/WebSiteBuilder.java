@@ -50,4 +50,15 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
         return mv;
     }
+
+
+    @Override
+    public String loadhtmlpage(String htmlpage)
+    {
+
+
+        return htmlpage;
+    }
+
+
 }
