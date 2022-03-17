@@ -52,7 +52,7 @@
 <body>
 
 
-<div class="container-fluid">
+<div class="container">
 
 
 
@@ -94,8 +94,34 @@
 
 
         <div class="col-md-12">
+            <script type="text/javascript">
+                /**
+                 *
+                 *  refresh the editor canvas by
+                 *  button click
+                 */
+                function clearcanvas()
+                {
+                    editor.DomComponents.clear(); // Clear components
+                    editor.CssComposer.clear();  // Clear styles
+                    editor.UndoManager.clear(); // Clear undo history
 
-            <div id="gjs" th:include="bodycontent.html">
+
+
+                    localStorage.setItem("gjs-html", "")
+                    localStorage.setItem("gjs-css", "");
+
+                    console.log('clear canvas');
+                }
+
+                function importhtmlandcss()
+                {
+
+                    editor.setComponents(components);
+                    editor.setStyle(css);
+                }
+            </script>
+            <div id="gjs" th:include="bodycontent">
 
             </div>
 
