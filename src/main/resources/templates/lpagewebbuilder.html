@@ -64,7 +64,7 @@
 
     <th:ul class="nav nav-tabs" id="myTab" role="none">
         <th:li class="nav-item" >
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"  aria-controls="home" aria-selected="true">WebSiteBulder</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" th:data="#home" type="button"  aria-controls="home" aria-selected="true">WebSiteBulder</button>
         </th:li>
         <th:li class="nav-item">
             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" aria-controls="profile" aria-selected="false">Database data</button>
@@ -80,7 +80,7 @@
     <th:div class="tab-content" id="myTabContent">
         <th:div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <th:div class="panel panel-primary draggable-panel toolbar-panel ui-draggable ui-resizable" id="toolbox-tools">
-                <div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></div>
+                <th:div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></th:div>
 
                 <ul id="sortable" class="ui-sortable">
                     <li class="btn-group draggable-group ui-state-default" id="group-file">
@@ -103,12 +103,12 @@
 
             </th:div>
             <th:div class="row">
-                <div class="col-md-12">
+                <th:div class="col-md-12">
 
 
-                    <div id="gjs" th:include="bodycontent.html">
+                    <th:div id="gjs" th:include="bodycontent.html">
 
-                    </div>
+                    </th:div>
 
 
                     <script th:inline="javascript">
@@ -339,13 +339,13 @@
                         window.editor.clearCached();
                     </script>
 
-                </div>
+                </th:div>
 
             </th:div>
             <br/>
             <p></p>
             <TH:div class="row">
-                <div class="col-md-12">
+                <th:div class="col-md-12">
 
 
                     <!--
@@ -355,7 +355,7 @@
                     </div>
                     -->
 
-                </div>
+                </th:div>
 
 
 
