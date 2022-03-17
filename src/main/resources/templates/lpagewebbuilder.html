@@ -52,7 +52,7 @@
 <body>
 
 
-<div class="container-fluid">
+<th:div class="container-fluid">
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-    <div class="panel toolbar-panel" id="toolbox-tools">
+    <th:div class="panel toolbar-panel" id="toolbox-tools">
 
-        <div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></div>
+        <th:div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></th:div>
 
             <ul id="sortable" class="ui-sortable">
                 <li class="btn-group draggable-group" id="group-file">
@@ -79,8 +79,7 @@
                 </li>
 
 
-                <div class="row">
-
+                <th:div class="row">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <button class="btn btn-outline" type="button">load site</button>
@@ -102,12 +101,10 @@
                             <option value="3">footer</option>
                         </select>
                     </div>
-
-
-                </div>
+                </th:div>
                 <br>
 
-                <div class="row">
+                <th:div class="row">
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -132,19 +129,19 @@
                     </div>
 
 
-                </div>
+                </th:div>
 
             </ul>
 
-         </div>
-    </div>
+         </th:div>
+    </th:div>
 
 
-    <div class="row">
+    <th:div class="row">
 
 
 
-        <div class="col-md-12">
+        <th:div class="col-md-12">
             <script type="text/javascript">
                 /**
                  *
@@ -175,9 +172,9 @@
 
             </script>
 
-            <div id="gjs" th:include="bodycontent">
+            <th:div id="gjs" th:include="bodycontent">
 
-            </div>
+            </th:div>
 
             <script type="text/javascript" th:inline="javascript">
 
@@ -382,11 +379,11 @@
 
 
 
-        </div>
+        </th:div>
 
-    </div>
+    </th:div>
 
-</div>
+
 
 </body>
 </html>
