@@ -95,7 +95,7 @@
 
         <div class="col-md-12">
 
-            <div id="gjs">
+            <div id="gjs" th:include="bodycontent.html">
 
             </div>
 
@@ -103,9 +103,9 @@
 
                 var editor = grapesjs.init
                 ({
-                    height: '80%',
+                    height: '100%',
                     fromElement: 1,
-                    clearOnRender: true,
+                    clearOnRender: false,
                     container: '#gjs',
                     allowScripts: 1,
                     canvas: {
