@@ -64,7 +64,9 @@
 
 
 
+
     <div class="panel panel-primary draggable-panel toolbar-panel ui-draggable ui-resizable" id="toolbox-tools">
+
         <div class="panel-heading lang-panel-header-tools">ToolBar<i class="fa fa-times pull-right close-panel" id="close-toolbox-tools"></i><i class="fa pull-right fa-chevron-down" id="toggle-toolbox-tools"></i></div>
 
             <ul id="sortable" class="ui-sortable">
@@ -72,16 +74,37 @@
                     <div class="btn-warning pull-left group-handle"><i class="fa fa-caret-down fa-1 toggle-button-group" data-toggle="tooltip" data-placement="bottom" title="Expand / Colapse"></i></div>
 
                     <button class="btn btn-primary btn-md" id="btn_empty" data-toggle="tooltip" data-placement="bottom" title="Clear Screen" onclick="clearcanvas()"><i class="fa fa-trash" ></i></button>
-                    <button class="btn btn-primary btn-md" id="btn_svgOpen" data-toggle="tooltip" data-placement="bottom" title="Import Template"><i class="fa fa-upload"></i></button>
-
-                </li>
-
-
-                <li class="btn-group draggable-group ui-state-default" id="group-toggle-lanes">
 
 
                 </li>
 
+
+                <div class="row">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button">load file</button>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">de</option>
+                            <option value="2">en</option>
+                            <option value="3">fr</option>
+                            <option value="3">es</option>
+                            <option value="3">it</option>
+                            <option value="3">tr</option>
+
+                        </select>
+                        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected>Choose...</option>
+                            <option value="1">header</option>
+                            <option value="2">body</option>
+                            <option value="3">footer</option>
+                        </select>
+                    </div>
+
+
+                </div>
 
             </ul>
 
@@ -114,13 +137,16 @@
                     console.log('clear canvas');
                 }
 
+
                 function importhtmlandcss()
                 {
 
                     editor.setComponents(components);
                     editor.setStyle(css);
                 }
+
             </script>
+
             <div id="gjs" th:include="bodycontent">
 
             </div>
