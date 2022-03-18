@@ -41,9 +41,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
         ModelAndView mv = new ModelAndView("lpagewebbuilder");
 
-
-
-
         // load all bootstrap components to MVC Controller
         mv.addObject("webtextcompp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
         mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());

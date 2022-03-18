@@ -1,4 +1,4 @@
-FROM jgsoftwares/jgsoftwares:opensuseleapjava
+FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 #FROM jgsoftwares/jgsoftwares:i386ubuntuopenjdk
 
 #hostname
@@ -21,6 +21,6 @@ ENV JAVA_HOME /usr/lib64/jvm/jre-1.8.0-openjdk/bin/java
 # dropbox client
 #ADD https://github.com/demogitjava/demodatabase/raw/master/Dropboxclient.jar /root/applib/dropboxclient.jar
 
-#ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
-#COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
-#ENTRYPOINT ["java", "-jar", "root/target/landingpage-0.0.1-SNAPSHOT.jar"]
+ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
+ENTRYPOINT ["java", "-jar", "landingpage.jar"]
