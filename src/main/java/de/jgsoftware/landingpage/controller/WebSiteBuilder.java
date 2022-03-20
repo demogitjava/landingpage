@@ -50,11 +50,16 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
 
     @Override
-    public String loadhtmlpage(String htmlpage)
+    public String loadhtmlpage(String language, String component)
     {
 
 
-        return htmlpage;
+        System.out.print("die sprache ist " + language);
+        System.out.print("das ist die compoennt" + component);
+
+
+
+        return "loaded";
     }
 
 

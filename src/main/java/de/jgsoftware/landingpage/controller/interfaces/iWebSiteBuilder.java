@@ -13,5 +13,5 @@ public interface iWebSiteBuilder
     public ModelAndView lpagewebbuilder();
 
     @PostMapping("/loadhtmlpage")
-    public String loadhtmlpage(String htmlpage);
+    public String loadhtmlpage(String language, String component);
 }
