@@ -25,7 +25,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
     java.util.Locale locale;
 
-
+    ModelAndView mv;
 
 
 
@@ -39,7 +39,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
     {
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("lpagewebbuilder");
+        mv = new ModelAndView("lpagewebbuilder");
 
         // load all bootstrap components to MVC Controller
         mv.addObject("webtextcompp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
@@ -58,8 +58,23 @@ public class WebSiteBuilder implements iWebSiteBuilder
         System.out.print("das ist die compoennt" + component);
 
 
+        switch(language)
+        {
+            case "de":
+            {
 
-        return "loaded";
+
+                break;
+            }
+            case "fr":
+            {
+
+                break;
+            }
+
+        }
+
+        return "redict:/";
     }
 
 
