@@ -14,6 +14,8 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 import de.jgsoftware.landingpage.controller.interfaces.iWebSiteBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 import javax.servlet.http.HttpServletRequest;
 
 
@@ -27,6 +29,9 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
     ModelAndView mv;
 
+    ScriptEngine engine;
+
+    String htmlcomponent;
 
 
     @Autowired
@@ -37,6 +42,16 @@ public class WebSiteBuilder implements iWebSiteBuilder
     @Override
     public ModelAndView lpagewebbuilder()
     {
+
+        // iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
+
+
+
+        if(htmlcomponent == null)
+        {
+            htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
+        }
+
         //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
         //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
         mv = new ModelAndView("lpagewebbuilder");
@@ -44,6 +59,8 @@ public class WebSiteBuilder implements iWebSiteBuilder
         // load all bootstrap components to MVC Controller
         mv.addObject("webtextcompp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
         mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
+
+        mv.addObject("defaultsite", htmlcomponent);
 
         return mv;
     }
@@ -63,6 +80,20 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "de":
             {
 
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs(); // contentbody.html
+                }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = new String("footer");
+                }
+
 
                 break;
             }
@@ -71,11 +102,21 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
                 break;
             }
+            default:
+            {
+                break;
+            }
 
         }
 
-        return "redict:/";
+
+        return "redirect:/lpagewebbuilder";
     }
+
+
+
+
+
 
 
 }

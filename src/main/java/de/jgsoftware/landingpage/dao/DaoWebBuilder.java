@@ -22,7 +22,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     JdbcTemplate jtm2;
 
 
-
+    public static String demopage;
 
     // returns all entriys from Table
     @Override
@@ -47,4 +47,30 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
         return bootstrap_comonents;
     }
+
+
+    /*
+      include demopage as default
+      to grapesjs editor
+   */
+
+    public String loaddefaultpagetograpesjs()
+    {
+        demopage = new String("bodycontent.html");
+
+        return demopage;
+
+    }
+
+
+    public String loadheader()
+    {
+        demopage = new String("header.html");
+
+        return demopage;
+
+    }
+
+
+
 }
