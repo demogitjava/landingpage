@@ -71,9 +71,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
     {
 
 
-        System.out.print("die sprache ist " + language);
-        System.out.print("das ist die compoennt" + component);
-
 
         switch(language)
         {
@@ -82,7 +79,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
                 if(component.equals("header"))
                 {
-                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadheader();
+                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadheader(); // header
 
                 }
                 else if(component.equals("body"))
@@ -91,7 +88,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
                 }
                 else if(component.equals("footer"))
                 {
-                    htmlcomponent = new String("footer");
+                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadfooter(); // footer
                 }
 
 

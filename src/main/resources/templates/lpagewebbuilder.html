@@ -94,7 +94,7 @@
                            </select>
 
                            <div class="input-group-prepend">
-                               <input name="submit" class="form-control" type="submit" value="submit" />
+                               <input name="submit" class="form-control" type="submit" value="load html component" />
                            </div>
                        </div>
                    </form>
@@ -169,7 +169,11 @@
 
         </script>
 
-        <div id="gjs" th:include="${defaultsite}">
+        <div id="gjs">
+
+            <div th:include="${defaultsite}">
+
+            </div>
 
         </div>
 

@@ -53,7 +53,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
       include demopage as default
       to grapesjs editor
    */
-
+    @Override
     public String loaddefaultpagetograpesjs()
     {
         demopage = new String("bodycontent.html");
@@ -62,10 +62,18 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
     }
 
-
+    @Override
     public String loadheader()
     {
         demopage = new String("header.html");
+
+        return demopage;
+
+    }
+    @Override
+    public String loadfooter()
+    {
+        demopage = new String("footer.html");
 
         return demopage;
 

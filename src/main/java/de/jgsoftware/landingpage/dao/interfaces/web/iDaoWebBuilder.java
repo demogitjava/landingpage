@@ -16,4 +16,5 @@ public interface iDaoWebBuilder
 
 
     public String loadheader();
+    public String loadfooter();
 }
