@@ -62,8 +62,6 @@ To build the image type:
 
 docker build -f Dockerfile -t landingpage .
 
-and you create a docker image with CentOS runs in a container over port 80.
-
 Run the application and open ports by create a new container
 
 80   web - servlet
@@ -73,13 +71,11 @@ Run the application and open ports by create a new container
 5005 (optional for debug)
 
 docker for windows are available on https://www.docker.com/products/docker-desktop
-
 for config on an docker image make a backup with
 
 docker save -o landingpage.tar jgsoftwares/jgsoftwares
 
 to load your image to docker desktop type: docker load --input landingpage.tar
-
 <br/>
 
 

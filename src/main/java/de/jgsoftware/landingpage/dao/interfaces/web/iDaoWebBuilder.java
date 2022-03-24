@@ -13,8 +13,6 @@ public interface iDaoWebBuilder
     public List<m_bootstrap_components> getBootstrapComponents();
 
     public String loaddefaultpagetograpesjs();
-
-
     public String loadheader();
     public String loadfooter();
 }
