@@ -57,7 +57,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
         mv = new ModelAndView("lpagewebbuilder");
 
         // load all bootstrap components to MVC Controller
-        mv.addObject("webtextcompp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
+        mv.addObject("webtextcomp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
         mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
 
         mv.addObject("defaultsite", htmlcomponent);
