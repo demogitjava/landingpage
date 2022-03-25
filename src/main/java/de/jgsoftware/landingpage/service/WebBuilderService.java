@@ -14,6 +14,11 @@ public class WebBuilderService implements iWebBuilderService
     @Autowired
     iDaoWebBuilder iDaoWebBuilder;
 
+
+    private String demopage = null;
+
+
+
     @Override
     public de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder getiDaoWebBuilder() {
         return iDaoWebBuilder;
@@ -25,6 +30,36 @@ public class WebBuilderService implements iWebBuilderService
     }
 
 
+
+
+    /*
+            load fr components
+     */
+    @Override
+    public String frloadcontent()
+    {
+        demopage = new String("/fr/fr_body.html");
+
+        return demopage;
+
+    }
+
+    @Override
+    public String frloadheader()
+    {
+        demopage = new String("/fr/fr_header.html");
+
+        return demopage;
+
+    }
+    @Override
+    public String frloadfooter()
+    {
+        demopage = new String("/fr/fr_footer.html");
+
+        return demopage;
+
+    }
 
 
 

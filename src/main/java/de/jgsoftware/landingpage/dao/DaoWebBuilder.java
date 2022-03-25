@@ -22,7 +22,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     JdbcTemplate jtm2;
 
 
-    public static String demopage;
+    private String demopage = null;
 
     // returns all entriys from Table
     @Override

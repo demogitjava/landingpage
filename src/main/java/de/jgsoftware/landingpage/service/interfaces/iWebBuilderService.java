@@ -10,4 +10,8 @@ public interface iWebBuilderService
     public void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder iDaoWebBuilder);
 
 
+    // fr
+    public String frloadcontent();
+    public String frloadheader();
+    public String frloadfooter();
 }

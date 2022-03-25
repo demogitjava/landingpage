@@ -97,6 +97,19 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "fr":
             {
 
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.frloadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.frloadcontent();                }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = iWebBuilderService.frloadfooter();
+                }
+
                 break;
             }
             default:
