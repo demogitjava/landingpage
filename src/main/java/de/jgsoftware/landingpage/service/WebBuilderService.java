@@ -87,6 +87,85 @@ public class WebBuilderService implements iWebBuilderService
 
     }
 
+    /*
+        load es components
+     */
+    @Override
+    public String esloadcontent()
+    {
+        demopage = new String("/es/es_body.html");
+        return demopage;
+
+    }
+
+    @Override
+    public String esloadheader()
+    {
+        demopage = new String("/es/es_header.html");
+        return demopage;
+
+    }
+    @Override
+    public String esloadfooter()
+    {
+        demopage = new String("/es/es_footer.html");
+        return demopage;
+
+    }
+
+    /*
+        load it components
+     */
+    @Override
+    public String itloadcontent()
+    {
+        demopage = new String("/it/es_body.html");
+        return demopage;
+
+    }
+
+    @Override
+    public String itloadheader()
+    {
+        demopage = new String("/it/it_header.html");
+        return demopage;
+
+    }
+    @Override
+    public String itloadfooter()
+    {
+        demopage = new String("/it/it_footer.html");
+        return demopage;
+
+    }
+
+
+    /*
+       load tr components
+    */
+    @Override
+    public String trloadcontent()
+    {
+        demopage = new String("/tr/tr_body.html");
+        return demopage;
+
+    }
+
+    @Override
+    public String trloadheader()
+    {
+        demopage = new String("/tr/tr_header.html");
+        return demopage;
+
+    }
+    @Override
+    public String trloadfooter()
+    {
+        demopage = new String("/tr/tr_footer.html");
+        return demopage;
+
+    }
+
 
 
 }
