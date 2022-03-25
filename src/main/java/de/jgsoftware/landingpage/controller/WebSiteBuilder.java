@@ -112,6 +112,27 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
                 break;
             }
+
+            case "en":
+            {
+
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.enloadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.enloadcontent();                }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = iWebBuilderService.enloadfooter();
+                }
+
+                break;
+            }
+
+
             default:
             {
                 break;

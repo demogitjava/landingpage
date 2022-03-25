@@ -14,4 +14,9 @@ public interface iWebBuilderService
     public String frloadcontent();
     public String frloadheader();
     public String frloadfooter();
+
+    // en
+    public String enloadcontent();
+    public String enloadheader();
+    public String enloadfooter();
 }
