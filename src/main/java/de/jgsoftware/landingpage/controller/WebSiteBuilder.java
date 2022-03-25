@@ -132,6 +132,63 @@ public class WebSiteBuilder implements iWebSiteBuilder
                 break;
             }
 
+            case "es":
+            {
+
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.esloadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.esloadcontent();                }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = iWebBuilderService.esloadfooter();
+                }
+
+                break;
+            }
+
+            case "it":
+            {
+
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.itloadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.itloadcontent();                }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = iWebBuilderService.itloadfooter();
+                }
+
+                break;
+            }
+
+            case "tr":
+            {
+
+                if(component.equals("header"))
+                {
+                    htmlcomponent = iWebBuilderService.trloadheader();
+
+                }
+                else if(component.equals("body"))
+                {
+                    htmlcomponent = iWebBuilderService.trloadcontent();            }
+                else if(component.equals("footer"))
+                {
+                    htmlcomponent = iWebBuilderService.trloadfooter();
+                }
+
+                break;
+            }
+
 
             default:
             {
