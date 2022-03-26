@@ -201,7 +201,11 @@ public class WebSiteBuilder implements iWebSiteBuilder
         return "redirect:/lpagewebbuilder";
     }
 
+    public String savehtmlpage(String language, String component)
+    {
 
+        return "redirect:/lpagewebbuilder";
+    }
 
 
 

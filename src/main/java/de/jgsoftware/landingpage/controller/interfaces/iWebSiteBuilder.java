@@ -15,7 +15,8 @@ public interface iWebSiteBuilder
     @PostMapping("/loadhtmlpage")
     public String loadhtmlpage(String language, String component);
 
-
+    @PostMapping("/savehtmlpage")
+    public String savehtmlpage(String language, String component);
 
 
 }
