@@ -3,7 +3,9 @@ package de.jgsoftware.landingpage.service;
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_EN;
 import de.jgsoftware.landingpage.service.interfaces.i_service_en;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class service_en implements i_service_en
 {
 
