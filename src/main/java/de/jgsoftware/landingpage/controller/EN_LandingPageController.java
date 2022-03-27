@@ -23,11 +23,10 @@ public class EN_LandingPageController implements iEN_Controller
     @Override
     public ModelAndView en() {
 
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
+
         mv = new ModelAndView("en");
 
-        // load all bootstrap components to MVC Controller
+        // load bootstrap components with text to MVC Controller
         mv.addObject("webtextcomp", i_service_en.getiDaoEn().getPageLanguageText());
         mv.addObject("btcomp", i_service_en.getiDaoEn().getBootstrapComponents());
 
