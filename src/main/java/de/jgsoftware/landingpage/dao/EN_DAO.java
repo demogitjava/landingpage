@@ -1,20 +1,19 @@
 package de.jgsoftware.landingpage.dao;
 
 
+import de.jgsoftware.landingpage.dao.interfaces.i_DAO_EN;
+import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder;
-
-import de.jgsoftware.landingpage.model.m_bootstrap_components;
 
 import java.util.List;
 
 @Repository
-public class DaoWebBuilder implements iDaoWebBuilder
+public class EN_DAO implements i_DAO_EN
 {
 
     @Autowired
@@ -22,9 +21,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     JdbcTemplate jtm2;
 
 
-    private String demopage = null;
-
-    // returns all entries from Table
+    // returns all entriys from Table
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
@@ -34,7 +31,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     }
 
 
-    // returns all entries from stored Bootstrap Compoents
+    // returns all entriys from stored Bootstrap Compoents
     // with ${ value } for mapping to Theamyleaf
     @Override
     public List<m_bootstrap_components> getBootstrapComponents()
@@ -47,38 +44,4 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
         return bootstrap_comonents;
     }
-
-
-    /*
-      include demopage as default
-      to grapesjs editor
-   */
-    @Override
-    public String loaddefaultpagetograpesjs()
-    {
-        demopage = new String("bodycontent.html");
-
-        return demopage;
-
-    }
-
-    @Override
-    public String loadheader()
-    {
-        demopage = new String("header.html");
-
-        return demopage;
-
-    }
-    @Override
-    public String loadfooter()
-    {
-        demopage = new String("footer.html");
-
-        return demopage;
-
-    }
-
-
-
 }
