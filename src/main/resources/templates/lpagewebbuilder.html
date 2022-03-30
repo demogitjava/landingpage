@@ -107,7 +107,11 @@
                        </div>
 
                    </form>
+                </div>
 
+                <div class="row">
+                    <p th:text="${loadedcountry}"></p>
+                    <p th:text="${loadedcomp}"></p>
                 </div>
             <br>
 
@@ -337,12 +341,6 @@
                         '</div>' +
                         '</div>'
                 });
-
-
-
-
-
-
 
             editor.getConfig().showDevices = false;
             window.editor = editor;
