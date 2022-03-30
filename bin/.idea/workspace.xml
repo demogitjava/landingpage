@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee7c1f2b-1491-4a2b-a1cc-2ba597e5e077" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/build.gradle">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/target">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="landingpage" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="landingpage" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="landingpage/invalid/JPA" />
+      <facet id="landingpage/invalid/Spring" />
+      <facet id="landingpage/invalid/Web" />
+      <facet id="landingpage/invalid/Web2" />
+    </ignored-facets>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="localRepository" value="$USER_HOME$/Dokumente/.m2" />
+        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.4" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="userSettingsFile" value="$USER_HOME$/Dokumente/apache-maven-3.8.4/conf/settings.xml" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="26jUYu2lxQEkbfjjl0XoFK9pfMJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.do.not.ask.for.project" value="true" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1648563659808" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.113391995" />
+    <property name="project.structure.side.proportion" value="0.5358324" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/tr" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle --build-file" />
+      <command value="mvn clean" />
+      <command value="mvn install" />
+      <command value="gradle --debug --gradle-user-home" />
+      <command value="gradle run" />
+      <command value="gradle --debug --dry-run" />
+      <command value="mvn deploy" />
+      <command value="mvn compile" />
+      <command value="mvn spring-boot:start" />
+      <command value="mvn spring-boot:run" />
+      <command value="gradle --debug" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+    <configuration name="iDemoLandingPage" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <option name="VM_PARAMETERS" value="-Xms1024m -Xmx2048m" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="landingpage" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>false</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gradlew" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/gradlew" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <option name="VM_PARAMETERS" value="-agentlib:jdwp=transport=dt_socket,address=80,server=y,suspend=n " />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/target" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="landingpage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.jgsoftware.landingpage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="TeaVMDebugConfiguration" factoryName="TeaVM debug server" nameIsGenerated="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.iDemoLandingPage" />
+      <item itemvalue="Gradle.landingpage" />
+      <item itemvalue="JAR Application.Unnamed" />
+      <item itemvalue="Shell Script.gradlew" />
+      <item itemvalue="Spring Boot.Landingpage" />
+      <item itemvalue="Spring Boot.iDemoLandingPage" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.iDemoLandingPage" />
+        <item itemvalue="Shell Script.gradlew" />
+        <item itemvalue="Gradle.landingpage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee7c1f2b-1491-4a2b-a1cc-2ba597e5e077" name="Default Changelist" comment="" />
+      <created>1647936545943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647936545943</updated>
+      <workItem from="1647936548126" duration="1536000" />
+      <workItem from="1647938118458" duration="1078000" />
+      <workItem from="1647939234172" duration="2199000" />
+      <workItem from="1647942343608" duration="14000" />
+      <workItem from="1647946055220" duration="3729000" />
+      <workItem from="1648018525422" duration="316000" />
+      <workItem from="1648018937937" duration="54000" />
+      <workItem from="1648019422846" duration="12573000" />
+      <workItem from="1648058560852" duration="545000" />
+      <workItem from="1648104779527" duration="17180000" />
+      <workItem from="1648194600976" duration="443000" />
+      <workItem from="1648196760153" duration="82000" />
+      <workItem from="1648196896104" duration="5143000" />
+      <workItem from="1648209936888" duration="2635000" />
+      <workItem from="1648212630048" duration="3558000" />
+      <workItem from="1648217555606" duration="5893000" />
+      <workItem from="1648280418467" duration="886000" />
+      <workItem from="1648281309018" duration="1357000" />
+      <workItem from="1648283373973" duration="137000" />
+      <workItem from="1648283995260" duration="203000" />
+      <workItem from="1648284201957" duration="196000" />
+      <workItem from="1648284419077" duration="56000" />
+      <workItem from="1648284530076" duration="8373000" />
+      <workItem from="1648313441597" duration="7446000" />
+      <workItem from="1648372467028" duration="252000" />
+      <workItem from="1648375333771" duration="840000" />
+      <workItem from="1648376713490" duration="198000" />
+      <workItem from="1648377763457" duration="479000" />
+      <workItem from="1648378363891" duration="79000" />
+      <workItem from="1648378534011" duration="4499000" />
+      <workItem from="1648402715500" duration="809000" />
+      <workItem from="1648403536280" duration="602000" />
+      <workItem from="1648404182099" duration="23000" />
+      <workItem from="1648404262289" duration="5959000" />
+      <workItem from="1648450974599" duration="596000" />
+      <workItem from="1648451599877" duration="2819000" />
+      <workItem from="1648455070027" duration="1686000" />
+      <workItem from="1648456784500" duration="1172000" />
+      <workItem from="1648458867533" duration="18000" />
+      <workItem from="1648459187459" duration="156000" />
+      <workItem from="1648459352226" duration="48000" />
+      <workItem from="1648459952688" duration="1918000" />
+      <workItem from="1648479549244" duration="26000" />
+      <workItem from="1648479608847" duration="3689000" />
+      <workItem from="1648533973620" duration="2468000" />
+      <workItem from="1648538164823" duration="49000" />
+      <workItem from="1648539206324" duration="32000" />
+      <workItem from="1648539257400" duration="83000" />
+      <workItem from="1648539531149" duration="290000" />
+      <workItem from="1648540603559" duration="479000" />
+      <workItem from="1648541104906" duration="305000" />
+      <workItem from="1648542241369" duration="4172000" />
+      <workItem from="1648549515956" duration="94000" />
+      <workItem from="1648550226434" duration="2359000" />
+      <workItem from="1648552590456" duration="265000" />
+      <workItem from="1648567844881" duration="60000" />
+      <workItem from="1648572528239" duration="87000" />
+      <workItem from="1648572619997" duration="63000" />
+      <workItem from="1648572698838" duration="40000" />
+      <workItem from="1648572754971" duration="61000" />
+      <workItem from="1648572820283" duration="26000" />
+      <workItem from="1648572890257" duration="356000" />
+    </task>
+    <task id="LOCAL-00001" summary="edit maven repo&#10;to &#10;https://repo.maven.apache.org/maven2">
+      <created>1647938432906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647938432906</updated>
+    </task>
+    <task id="LOCAL-00002" summary="edit project settings">
+      <created>1647939735253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647939735254</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add fucntion to controller to load contentbody and header&#10;to websitebuilder">
+      <created>1648057502308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648057502308</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <created>1648057707458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648057707458</updated>
+    </task>
+    <task id="LOCAL-00005" summary="edit index.html">
+      <created>1648104916654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648104916654</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <created>1648112531042</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648112531042</updated>
+    </task>
+    <task id="LOCAL-00007" summary=".">
+      <created>1648121225155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648121225155</updated>
+    </task>
+    <task id="LOCAL-00008" summary=".">
+      <created>1648124985168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648124985168</updated>
+    </task>
+    <task id="LOCAL-00009" summary=".">
+      <created>1648125386979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1648125386979</updated>
+    </task>
+    <task id="LOCAL-00010" summary="create fr &#10;header&#10;body &#10;footer html file">
+      <created>1648126523939</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648126523939</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <created>1648129902178</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648129902178</updated>
+    </task>
+    <task id="LOCAL-00012" summary="load fr html pages from &#10;folder &#10;&#10;templates/fr/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer">
+      <created>1648209813899</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648209813899</updated>
+    </task>
+    <task id="LOCAL-00013" summary="load fr html pages from &#10;folder &#10;&#10;templates/en/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer">
+      <created>1648212414468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648212414468</updated>
+    </task>
+    <task id="LOCAL-00014" summary=" html pages from &#10;folder &#10;&#10;templates/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer">
+      <created>1648215460810</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648215460810</updated>
+    </task>
+    <task id="LOCAL-00015" summary=".">
+      <created>1648215521522</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648215521522</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implement service methods&#10;to load html pages &#10;&#10;for &#10;en &#10;it &#10;tr &#10;es &#10;fr">
+      <created>1648215837003</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648215837003</updated>
+    </task>
+    <task id="LOCAL-00017" summary=".">
+      <created>1648217237758</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1648217237758</updated>
+    </task>
+    <task id="LOCAL-00018" summary=".">
+      <created>1648217731977</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1648217731977</updated>
+    </task>
+    <task id="LOCAL-00019" summary=".">
+      <created>1648218429136</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648218429136</updated>
+    </task>
+    <task id="LOCAL-00020" summary=".">
+      <created>1648219698906</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1648219698906</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".">
+      <created>1648220183927</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1648220183927</updated>
+    </task>
+    <task id="LOCAL-00022" summary=".">
+      <created>1648310824889</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1648310824889</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add header for en">
+      <created>1648312733516</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1648312733516</updated>
+    </task>
+    <task id="LOCAL-00024" summary="edit html header file">
+      <created>1648313726027</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1648313726027</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add fr header html">
+      <created>1648363383864</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1648363383864</updated>
+    </task>
+    <task id="LOCAL-00026" summary="edit service for fr &#10;to load html pages">
+      <created>1648363527396</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1648363527396</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add header for french language">
+      <created>1648364374350</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1648364374350</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add a simple header &#10;for &#10;es&#10;it">
+      <created>1648364810404</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1648364810404</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add tr html header">
+      <created>1648364969430</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1648364969430</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add en dao to &#10;get bootstrap components &#10;and add a interface&#10;for dao_en">
+      <created>1648367037297</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648367037297</updated>
+    </task>
+    <task id="LOCAL-00031" summary="load bootstrap comp&#10;and bootstrap text &#10;to landingpage controller&#10;of english">
+      <created>1648367590350</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1648367590350</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add en html with &#10;dao &#10;and service&#10;over the interface layer&#10;to parse in en.html">
+      <created>1648368451878</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1648368451878</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add en html with &#10;dao &#10;and service&#10;over the interface layer&#10;to parse in en.html">
+      <created>1648371399798</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1648371399798</updated>
+    </task>
+    <task id="LOCAL-00034" summary=".">
+      <created>1648379318947</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1648379318948</updated>
+    </task>
+    <task id="LOCAL-00035" summary=".">
+      <created>1648379469126</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1648379469126</updated>
+    </task>
+    <task id="LOCAL-00036" summary=".">
+      <created>1648451686560</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648451686561</updated>
+    </task>
+    <task id="LOCAL-00037" summary=".">
+      <created>1648451813735</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648451813735</updated>
+    </task>
+    <task id="LOCAL-00038" summary="start application with memory 1024 and 2048">
+      <created>1648460807923</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1648460807923</updated>
+    </task>
+    <task id="LOCAL-00039" summary="edit jarRepositories.xml">
+      <created>1648481713340</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648481713340</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add build with maven gradle">
+      <created>1648550851068</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1648550851068</updated>
+    </task>
+    <task id="LOCAL-00041" summary="remove gradle">
+      <created>1648572966329</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1648572966329</updated>
+    </task>
+    <task id="LOCAL-00042" summary=".">
+      <created>1648573161374</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1648573161375</updated>
+    </task>
+    <task id="LOCAL-00043" summary=".">
+      <created>1648573228753</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1648573228753</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="TeaVMDebugConfiguration" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="edit project settings" />
+    <MESSAGE value="add fucntion to controller to load contentbody and header&#10;to websitebuilder" />
+    <MESSAGE value="edit index.html" />
+    <MESSAGE value="create fr &#10;header&#10;body &#10;footer html file" />
+    <MESSAGE value="load fr html pages from &#10;folder &#10;&#10;templates/fr/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer" />
+    <MESSAGE value="load fr html pages from &#10;folder &#10;&#10;templates/en/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer" />
+    <MESSAGE value=" html pages from &#10;folder &#10;&#10;templates/en/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer" />
+    <MESSAGE value=" html pages from &#10;folder &#10;&#10;templates/&#10;&#10;body&#10;header&#10;footer&#10;&#10;to editor&#10;over the service layer" />
+    <MESSAGE value="implement service methods&#10;to load html pages &#10;&#10;for &#10;en &#10;it &#10;tr &#10;es &#10;fr" />
+    <MESSAGE value="add header menu for en" />
+    <MESSAGE value="add header for en" />
+    <MESSAGE value="edit html header file" />
+    <MESSAGE value="add fr header html" />
+    <MESSAGE value="edit service for fr &#10;to load html pages" />
+    <MESSAGE value="add header for french language" />
+    <MESSAGE value="add a simple header &#10;for &#10;es&#10;it" />
+    <MESSAGE value="add tr html header" />
+    <MESSAGE value="add en dao to &#10;get bootstrap components &#10;and add a interface&#10;for dao_en" />
+    <MESSAGE value="load bootstrap comp&#10;and bootstrap text &#10;to landingpage controller&#10;of english" />
+    <MESSAGE value="add en html with &#10;dao &#10;and service&#10;over the interface layer&#10;to parse in en.html" />
+    <MESSAGE value="start application with memory 1024 and 2048" />
+    <MESSAGE value="edit jarRepositories.xml" />
+    <MESSAGE value="add build with maven gradle" />
+    <MESSAGE value="remove gradle" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/FR_LandingPageController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/landingpage$DemoLandingpage.ic" NAME="DemoLandingpage Coverage Results" MODIFIED="1648039904242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
