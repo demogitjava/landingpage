@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" th:lang="${lang}">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      th:lang="${lang}">
+
 <head>
     <meta charset="ISO-8859-1">
     <!--
@@ -52,10 +55,10 @@
 <body>
 
 
-<th:div class="container-fluid">
+<div class="container-fluid">
 
 
-    <th:div class="panel toolbar-panel" id="toolbox-tools">
+    <div class="panel toolbar-panel" id="toolbox-tools">
 
 
 
@@ -93,45 +96,27 @@
                                <option type="text" name="footer">footer</option>
                            </select>
 
+
+
+
                            <div class="input-group-prepend">
                                <input name="submit" class="form-control" type="submit" value="load html component" />
                            </div>
+
+
                        </div>
+
                    </form>
+
                 </div>
             <br>
 
-            <th:div class="row">
 
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-primary" type="button">save site</button>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect05" aria-label="Example select with button addon">
-                        <option selected>Choose...</option>
-                        <option value="1">de</option>
-                        <option value="2">en</option>
-                        <option value="3">fr</option>
-                        <option value="3">es</option>
-                        <option value="3">it</option>
-                        <option value="3">tr</option>
-
-                    </select>
-                    <select class="custom-select" id="inputGroupSelect06" aria-label="Example select with button addon">
-                        <option selected>Choose...</option>
-                        <option value="1">header</option>
-                        <option value="2">body</option>
-                        <option value="3">footer</option>
-                    </select>
-                </div>
-
-
-            </th:div>
 
         </ul>
 
-    </th:div>
-</th:div>
+    </div>
+</div>
 
 
 <div class="row">
@@ -139,7 +124,7 @@
 
 
     <div class="col-md-12">
-        <script type="text/javascript">
+        <script th:inline="javascript">
             /**
              *
              *  refresh the editor canvas by
@@ -177,7 +162,7 @@
 
         </div>
 
-        <script type="text/javascript" th:inline="javascript">
+        <script th:inline="javascript">
 
             var editor = grapesjs.init
             ({

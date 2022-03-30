@@ -1,22 +1,13 @@
 package de.jgsoftware.landingpage.controller;
 
 
-import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.servlet.ModelAndView;
-
-import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.support.RequestContextUtils;
 import de.jgsoftware.landingpage.controller.interfaces.iWebSiteBuilder;
+import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
@@ -32,6 +23,9 @@ public class WebSiteBuilder implements iWebSiteBuilder
     ScriptEngine engine;
 
     String htmlcomponent;
+
+    String language;
+    String component;
 
 
     @Autowired
@@ -61,6 +55,9 @@ public class WebSiteBuilder implements iWebSiteBuilder
         mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
 
         mv.addObject("defaultsite", htmlcomponent);
+
+        mv.addObject("loadedcountry", language);
+        mv.addObject("loadedcomp", component);
 
         return mv;
     }
@@ -185,6 +182,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
                 {
                     htmlcomponent = iWebBuilderService.trloadfooter();
                 }
+
 
                 break;
             }
