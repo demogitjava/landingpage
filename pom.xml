@@ -43,7 +43,7 @@
         <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
-            <url>http://repo.spring.io/milestone</url>
+            <url>https://repo.spring.io/milestone</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
@@ -115,7 +115,7 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.200</version>
-            <scope>compile</scope>
+            <type>jar</type>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
