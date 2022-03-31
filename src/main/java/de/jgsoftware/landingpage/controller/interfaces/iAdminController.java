@@ -8,5 +8,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iAdminController
 {
     @GetMapping({"admin", "/"})
-    public ModelAndView admincontroller();
+    ModelAndView admincontroller();
 }

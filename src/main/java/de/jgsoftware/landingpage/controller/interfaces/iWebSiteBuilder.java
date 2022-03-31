@@ -10,13 +10,13 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iWebSiteBuilder
 {
     @GetMapping({"lpagewebbuilder", "/"})
-    public ModelAndView lpagewebbuilder();
+    ModelAndView lpagewebbuilder();
 
     @PostMapping("/loadhtmlpage")
-    public String loadhtmlpage(String language, String component);
+    String loadhtmlpage(String language, String component);
 
     @PostMapping("/savehtmlpage")
-    public String savehtmlpage(String language, String component);
+    String savehtmlpage(String language, String component);
 
 
 }

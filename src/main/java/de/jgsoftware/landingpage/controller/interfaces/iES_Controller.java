@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iES_Controller
 {
     @GetMapping({"es", "/"})
-    public ModelAndView es();
+    ModelAndView es();
 }

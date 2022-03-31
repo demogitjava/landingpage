@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iServiceController
 {
     @GetMapping({"service", "/"})
-    public ModelAndView service();
+    ModelAndView service();
 
 
 }

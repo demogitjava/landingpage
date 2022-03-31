@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iIT_Controller
 {
     @GetMapping({"it", "/"})
-    public ModelAndView it();
+    ModelAndView it();
 }

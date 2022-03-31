@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iAboutController
 {
     @GetMapping({"about", "/"})
-    public ModelAndView about();
+    ModelAndView about();
 
 
 }

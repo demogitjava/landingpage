@@ -1,6 +1,5 @@
 package de.jgsoftware.landingpage.controller.interfaces;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -12,31 +11,31 @@ public interface iDemoController {
     // load default landingpage
     // de
     @GetMapping({"index", "/"})
-    public ModelAndView index();
+    ModelAndView index();
 
     @GetMapping("/login")
     String login();
 
     @GetMapping("/header")
-    public String header();
+    String header();
 
     @GetMapping("/en")
-    public String en();
+    String en();
 
     @GetMapping("/fr")
-    public String fr();
+    String fr();
 
     @GetMapping("/es")
-    public String es();
+    String es();
 
     @GetMapping("/it")
-    public String it();
+    String it();
 
     @GetMapping("/tr")
-    public String tr();
+    String tr();
 
     @GetMapping("/lpagewebbuilder")
-    public String lpagewebbuilder();
+    String lpagewebbuilder();
 
 
 }

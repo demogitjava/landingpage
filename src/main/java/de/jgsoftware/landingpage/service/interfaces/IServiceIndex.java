@@ -5,6 +5,6 @@ import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 
 public interface IServiceIndex
 {
-    public IDaoDemoPageController getDcontroller();
-    public void setDcontroller(Dao_DemoPageController dcontroller);
+    IDaoDemoPageController getDcontroller();
+    void setDcontroller(Dao_DemoPageController dcontroller);
 }

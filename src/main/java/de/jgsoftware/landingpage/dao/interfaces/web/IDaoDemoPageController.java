@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface IDaoDemoPageController
 {
-    public List<m_webtextlayout> getPageLanguageText();
-    public List<m_bootstrap_components> getBootstrapComponents();
+    List<m_webtextlayout> getPageLanguageText();
+    List<m_bootstrap_components> getBootstrapComponents();
 
 }

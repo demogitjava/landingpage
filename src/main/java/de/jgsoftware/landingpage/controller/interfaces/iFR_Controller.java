@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iFR_Controller
 {
     @GetMapping({"fr", "/"})
-    public ModelAndView fr();
+    ModelAndView fr();
 }

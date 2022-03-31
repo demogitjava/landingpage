@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iTR_Controller
 {
     @GetMapping({"tr", "/"})
-    public ModelAndView tr();
+    ModelAndView tr();
 }

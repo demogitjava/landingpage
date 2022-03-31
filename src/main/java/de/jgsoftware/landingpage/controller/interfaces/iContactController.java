@@ -9,5 +9,5 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iContactController
 {
     @GetMapping({"contact", "/"})
-    public ModelAndView contact();
+    ModelAndView contact();
 }

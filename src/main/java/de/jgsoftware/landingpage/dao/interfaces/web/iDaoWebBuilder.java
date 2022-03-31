@@ -9,10 +9,10 @@ import java.util.List;
 public interface iDaoWebBuilder
 {
 
-    public List<m_webtextlayout> getPageLanguageText();
-    public List<m_bootstrap_components> getBootstrapComponents();
+    List<m_webtextlayout> getPageLanguageText();
+    List<m_bootstrap_components> getBootstrapComponents();
 
-    public String loaddefaultpagetograpesjs();
-    public String loadheader();
-    public String loadfooter();
+    String loaddefaultpagetograpesjs();
+    String loadheader();
+    String loadfooter();
 }

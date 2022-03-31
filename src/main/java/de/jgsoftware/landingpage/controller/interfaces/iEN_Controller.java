@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public interface iEN_Controller
 {
     @GetMapping({"en", "/"})
-    public ModelAndView en();
+    ModelAndView en();
 
 
 }
