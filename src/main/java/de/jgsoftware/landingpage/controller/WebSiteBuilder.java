@@ -37,8 +37,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
     public ModelAndView lpagewebbuilder()
     {
 
-        // iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
-
 
 
         if(htmlcomponent == null)
@@ -46,8 +44,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
             htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
         }
 
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
         mv = new ModelAndView("lpagewebbuilder");
 
         // load all bootstrap components to MVC Controller
@@ -66,10 +62,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
     @Override
     public String loadhtmlpage(String language, String component)
     {
-
-
-
-
 
         switch(language)
         {

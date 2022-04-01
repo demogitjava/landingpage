@@ -2,7 +2,6 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iAboutController;
-import de.jgsoftware.landingpage.controller.interfaces.iEN_Controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -10,13 +9,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class About_LandingPageController implements iAboutController
 {
 
+    ModelAndView mv;
 
 
     @Override
     public ModelAndView about() {
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("about");
+
+
+        mv = new ModelAndView("about");
 
 
 
