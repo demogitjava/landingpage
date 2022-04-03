@@ -7,10 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public interface iDemoLandingPage
 {
 
-    /**
-     *
-     * @param args
-     */
+
     static void main(String[] args) {
         SpringApplication.run(DemoLandingPageApplication.class, args);
     }

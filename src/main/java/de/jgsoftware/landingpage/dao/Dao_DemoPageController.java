@@ -34,7 +34,6 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     public List<m_webtextlayout> getPageLanguageText()
     {
         List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
-
         return webtextlayouts;
     }
 
@@ -49,7 +48,6 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
         List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
-
         return bootstrap_comonents;
     }
 

@@ -120,10 +120,13 @@
     </div>
     <div class="row">
         <a>save compoents to </a>
+
+        <!--/*@thymesVar id="loadedcountry" type="string"*/-->
         <p>
             <h1 th:text="${loadedcountry}"></h1>
         </p>
 
+        <!--/*@thymesVar id="loadedcomp" type="string"*/-->
         <p>
             <h1 th:text="${loadedcomp}"></h1>
         </p>
@@ -170,6 +173,7 @@
         <div id="gjs">
 
 
+            <!--/*@thymesVar id="defaultsite" type="string"*/-->
             <div th:include="${defaultsite}">
 
             </div>
