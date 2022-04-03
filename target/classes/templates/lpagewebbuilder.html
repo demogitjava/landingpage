@@ -63,9 +63,9 @@
 
         <ul id="sortable" class="ui-sortable">
             <li class="btn-group draggable-group" id="group-file">
-                <div class="btn-warning pull-left group-handle"><i class="fa fa-caret-down fa-1 toggle-button-group" data-toggle="tooltip" data-placement="bottom" title="Expand / Colapse"></i></div>
 
                 <button class="btn btn-primary" id="btn_empty" data-toggle="tooltip" data-placement="bottom" title="Clear Screen" onclick="clearcanvas()"><i class="fa fa-trash" ></i></button>
+
 
 
             </li>
@@ -119,17 +119,29 @@
     </div>
 
 
+
     <!-- row 4-4-4 -->
     <div class="row">
+
         <div class="col-sm-4">
-            <p>save component to </p>
+            <button class="col-sm-4 btn btn-primary" type="button" onclick="postwebsitebuilderdata()">
+                save Template Data to file
+            </button>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-4">
             <h1 th:text="${loadedcountry}"></h1>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-4">
             <h1 th:text="${loadedcomp}"></h1>
         </div>
+
+    </div>
+
+
+
+
+
+
     </div>
 
 </div>
@@ -167,6 +179,33 @@
                 editor.setComponents(components);
                 editor.setStyle(css);
             }
+
+            /**
+             *  save html and css data
+             *  from websitebuilder to
+             *  html file
+             */
+            function postwebsitebuilderdata()
+            {
+                htmldata = localStorage.getItem("gjs-html");
+                cssdata = localStorage.getItem("gjs-css");
+
+                $.ajax({
+                    type : "POST",
+                    url : "savehtmlcsstofile",
+                    data : {
+                        gjshtml : localStorage.getItem('gjs-html'),
+                        gjscss : localStorage.getItem('gjs-css')
+                    },
+                    success : function(result) {
+                        // alert('changed');
+                        console.log('sucess');
+                        $( "#messageinfo" ).html( "<strong>" + result + "</strong>" );
+                    }
+                });
+
+            }
+
 
         </script>
 

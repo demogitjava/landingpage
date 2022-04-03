@@ -15,4 +15,6 @@ public interface iDaoWebBuilder
     String loaddefaultpagetograpesjs();
     String loadheader();
     String loadfooter();
+
+    String savehtmlandcss(String gjshtml, String gjscss, String language, String component);
 }

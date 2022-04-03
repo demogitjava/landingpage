@@ -5,6 +5,7 @@ import de.jgsoftware.landingpage.controller.interfaces.iWebSiteBuilder;
 import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.script.ScriptEngine;
@@ -206,6 +207,36 @@ public class WebSiteBuilder implements iWebSiteBuilder
     }
 
 
+
+    /*
+
+            save html and css data
+            as html / css
+
+     */
+    @Override
+    public String savehtmlcsstofile(
+            @RequestParam(value = "gjshtml", required = false) String gjshtml,
+            @RequestParam(value = "gjscss", required = false) String gjscss)
+
+    {
+
+        if(language == null && component == null)
+        {
+           System.out.print("can not save data to file");
+        }
+        else
+        {
+            iWebBuilderService.getiDaoWebBuilder().savehtmlandcss(gjshtml, gjscss, language, component);
+        }
+
+
+
+
+
+
+        return "header data saved";
+    }
 
 
 

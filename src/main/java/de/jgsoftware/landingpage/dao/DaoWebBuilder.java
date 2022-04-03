@@ -1,15 +1,16 @@
 package de.jgsoftware.landingpage.dao;
 
 
+import de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder;
+import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder;
-
-import de.jgsoftware.landingpage.model.m_bootstrap_components;
 
 import java.util.List;
 
@@ -40,7 +41,6 @@ public class DaoWebBuilder implements iDaoWebBuilder
     public List<m_bootstrap_components> getBootstrapComponents()
     {
 
-        // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
         List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
@@ -77,6 +77,20 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
         return demopage;
 
+    }
+
+    @Override
+    public String savehtmlandcss(String gjshtml, String gjscss, String language, String component)
+    {
+
+        //File fhtml = new File(language + "/" +  language + "_" + component + ".html");
+        Resource resource = new ClassPathResource("templates");
+
+        /*
+            write file to resource folder
+         */
+
+        return "shtmlandcss";
     }
 
 
