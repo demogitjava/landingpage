@@ -38,7 +38,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String frloadcontent()
     {
-        demopage = new String("/fr/fr_body.html");
+        demopage = "/fr/fr_body.html";
 
         return demopage;
 
@@ -47,7 +47,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String frloadheader()
     {
-        demopage = new String("/fr/fr_header.html");
+        demopage = "/fr/fr_header.html";
 
         return demopage;
 
@@ -55,7 +55,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String frloadfooter()
     {
-        demopage = new String("/fr/fr_footer.html");
+        demopage = "/fr/fr_footer.html";
 
         return demopage;
 
@@ -67,7 +67,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String enloadcontent()
     {
-        demopage = new String("/en/en_body.html");
+        demopage = "/en/en_body.html";
         return demopage;
 
     }
@@ -75,14 +75,14 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String enloadheader()
     {
-        demopage = new String("/en/en_header.html");
+        demopage = "/en/en_header.html";
         return demopage;
 
     }
     @Override
     public String enloadfooter()
     {
-        demopage = new String("/en/en_footer.html");
+        demopage = "/en/en_footer.html";
         return demopage;
 
     }
@@ -93,7 +93,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String esloadcontent()
     {
-        demopage = new String("/es/es_body.html");
+        demopage = "/es/es_body.html";
         return demopage;
 
     }
@@ -101,14 +101,14 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String esloadheader()
     {
-        demopage = new String("/es/es_header.html");
+        demopage = "/es/es_header.html";
         return demopage;
 
     }
     @Override
     public String esloadfooter()
     {
-        demopage = new String("/es/es_footer.html");
+        demopage = "/es/es_footer.html";
         return demopage;
 
     }
@@ -119,7 +119,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String itloadcontent()
     {
-        demopage = new String("/it/it_body.html");
+        demopage = "/it/it_body.html";
         return demopage;
 
     }
@@ -127,14 +127,14 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String itloadheader()
     {
-        demopage = new String("/it/it_header.html");
+        demopage = "/it/it_header.html";
         return demopage;
 
     }
     @Override
     public String itloadfooter()
     {
-        demopage = new String("/it/it_footer.html");
+        demopage = "/it/it_footer.html";
         return demopage;
 
     }
@@ -146,7 +146,7 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String trloadcontent()
     {
-        demopage = new String("/tr/tr_body.html");
+        demopage = "/tr/tr_body.html";
         return demopage;
 
     }
@@ -154,18 +154,17 @@ public class WebBuilderService implements iWebBuilderService
     @Override
     public String trloadheader()
     {
-        demopage = new String("/tr/tr_header.html");
+        demopage = "/tr/tr_header.html";
         return demopage;
 
     }
     @Override
     public String trloadfooter()
     {
-        demopage = new String("/tr/tr_footer.html");
+        demopage = "/tr/tr_footer.html";
         return demopage;
 
     }
-
 
 
 }

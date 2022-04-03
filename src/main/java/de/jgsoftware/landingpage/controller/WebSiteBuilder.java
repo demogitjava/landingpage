@@ -39,6 +39,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
 
 
+
         if(htmlcomponent == null)
         {
             htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
@@ -62,6 +63,9 @@ public class WebSiteBuilder implements iWebSiteBuilder
     @Override
     public String loadhtmlpage(String language, String component)
     {
+
+        this.component = component;
+        this.language = language;
 
         switch(language)
         {

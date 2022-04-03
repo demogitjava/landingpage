@@ -3,6 +3,7 @@ package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
+import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,8 +12,6 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import de.jgsoftware.landingpage.model.m_webtextlayout;
-import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import java.util.List;
 
 @Repository
@@ -26,7 +25,7 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
     @Lazy
     @Autowired
-    private IndexService sdemowebtext;
+    IndexService sdemowebtext;
 
 
 

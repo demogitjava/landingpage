@@ -56,7 +56,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     @Override
     public String loaddefaultpagetograpesjs()
     {
-        demopage = new String("bodycontent.html");
+        demopage = "bodycontent.html";
 
         return demopage;
 
@@ -65,7 +65,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     @Override
     public String loadheader()
     {
-        demopage = new String("header.html");
+        demopage = "header.html";
 
         return demopage;
 
@@ -73,7 +73,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     @Override
     public String loadfooter()
     {
-        demopage = new String("footer.html");
+        demopage = "footer.html";
 
         return demopage;
 
