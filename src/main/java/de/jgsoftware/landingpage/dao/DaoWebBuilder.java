@@ -6,12 +6,13 @@ import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 @Repository
@@ -83,12 +84,34 @@ public class DaoWebBuilder implements iDaoWebBuilder
     public String savehtmlandcss(String gjshtml, String gjscss, String language, String component)
     {
 
-        //File fhtml = new File(language + "/" +  language + "_" + component + ".html");
-        Resource resource = new ClassPathResource("templates");
+        String fileLocation = new File("src//main//resources//templates").getAbsolutePath() + "//" + language +  "//" + language + "_" + component + ".html";
 
-        /*
-            write file to resource folder
-         */
+        if(fileLocation == null)
+        {
+            System.out.print("is null");
+        }
+        else
+        {
+            System.out.print("file exist");
+        }
+
+        File fhtml = new File(language + "_" + component + ".html");
+
+
+        try {
+
+            FileWriter myWriter = new FileWriter(fileLocation);
+            myWriter.write(gjshtml);
+            myWriter.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+
+
 
         return "shtmlandcss";
     }

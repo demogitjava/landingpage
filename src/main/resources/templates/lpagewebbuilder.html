@@ -123,15 +123,15 @@
     <!-- row 4-4-4 -->
     <div class="row">
 
-        <div class="col-sm-4">
+        <div class="col-sm-8">
             <button class="col-sm-4 btn btn-primary" type="button" onclick="postwebsitebuilderdata()">
                 save Template Data to file
             </button>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <h1 th:text="${loadedcountry}"></h1>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <h1 th:text="${loadedcomp}"></h1>
         </div>
 
@@ -166,8 +166,8 @@
 
 
 
-                localStorage.setItem("gjs-html", "")
-                localStorage.setItem("gjs-css", "");
+                localStorage.setItem("gjs-html")
+                localStorage.setItem("gjs-css");
 
                 console.log('clear canvas');
             }
@@ -185,17 +185,16 @@
              *  from websitebuilder to
              *  html file
              */
-            function postwebsitebuilderdata()
-            {
-                htmldata = localStorage.getItem("gjs-html");
-                cssdata = localStorage.getItem("gjs-css");
+            function postwebsitebuilderdata(key) {
+                var htmldata = localStorage.getItem("gjs-html");
+                var cssdata = localStorage.getItem("gjs-css");
 
                 $.ajax({
                     type : "POST",
                     url : "savehtmlcsstofile",
                     data : {
-                        gjshtml : localStorage.getItem('gjs-html'),
-                        gjscss : localStorage.getItem('gjs-css')
+                        gjshtml : localStorage.getItem("gjs-html"),
+                        gjscss : localStorage.getItem("gjs-css")
                     },
                     success : function(result) {
                         // alert('changed');
