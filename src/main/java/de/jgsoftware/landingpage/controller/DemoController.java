@@ -5,14 +5,9 @@ import de.jgsoftware.landingpage.controller.interfaces.iDemoController;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
@@ -28,6 +23,7 @@ public class DemoController implements iDemoController
     @Autowired
     HttpServletRequest request;
 
+    ModelAndView mv;
 
 
     // load default landingpage
@@ -35,9 +31,9 @@ public class DemoController implements iDemoController
     @Override
     public ModelAndView index() {
 
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("index");
+
+
+        mv = new ModelAndView("index");
 
         /**
          *   Get Country to display Language

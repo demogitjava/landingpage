@@ -18,13 +18,14 @@ public class TR_LandingPageController implements iTR_Controller
     @Autowired
     itr_service itrService;
 
+
+
     // load default landingpage
     @Override
     public ModelAndView tr() {
 
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
-        ModelAndView mv = new ModelAndView("tr");
+
+        mv = new ModelAndView("tr");
 
 
 
