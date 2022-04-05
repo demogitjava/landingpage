@@ -2,11 +2,9 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iEN_Controller;
-import de.jgsoftware.landingpage.service.interfaces.i_service_en;
+import de.jgsoftware.landingpage.service.interfaces.ien_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
@@ -16,7 +14,7 @@ public class EN_LandingPageController implements iEN_Controller
     ModelAndView mv;
 
     @Autowired
-    i_service_en i_service_en;
+    ien_service i_service_en;
 
 
     // load default landingpage

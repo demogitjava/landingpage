@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:lang="${lang}">
+<html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="ISO-8859-1">
-    <title>Spanish Landingpage</title>
-</head>
+<header th:include="es/es_header.html">
+
+</header>
+
 <body>
-
-<p>simple landingpage for spain</p>
-
+<div th:include="es/es_body.html"></div>
+<div class="container" th:include="es/es_footer.html"></div>
 </body>
+
+
+
 </html>
