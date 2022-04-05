@@ -2,6 +2,13 @@
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 
 </br>
+to edit the text in the demo application
+copy the segment and 
+paste it with the editor to save
+the "text edit" for your
+language.
+
+
 </br>
 </br>
 
