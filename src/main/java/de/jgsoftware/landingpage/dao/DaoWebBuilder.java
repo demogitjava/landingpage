@@ -84,7 +84,8 @@ public class DaoWebBuilder implements iDaoWebBuilder
     public String savehtmlandcss(String gjshtml, String gjscss, String language, String component)
     {
 
-        String fileLocation = new File("src//main//resources//templates").getAbsolutePath() + "//" + language +  "//" + language + "_" + component + ".html";
+        ///target/classes/templates/en
+        String fileLocation = new File("target//classes/templates//").getAbsolutePath() + "//" + language +  "//" + language + "_" + component + ".html";
 
         if(fileLocation == null)
         {
