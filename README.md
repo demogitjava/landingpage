@@ -7,14 +7,21 @@ copy the segment and
 paste it with the editor to save
 the "text edit" for your
 language.
-
-
 </br>
+
+
+
 </br>
 
 The used database is H2 from here
 http://www.h2database.com/html/download.html
 </br>
+
+https://github.com/demogitjava/demodatabase
+watch about the databases in your user directory that
+/root/shopdb.mv.db are available.
+
+
 </br>
 
 the login for the database over jdbc is
