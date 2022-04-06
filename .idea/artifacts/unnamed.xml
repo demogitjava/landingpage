@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jlink" name="unnamed">
+    <output-path>$PROJECT_DIR$/target/artifacts/unnamed</output-path>
+    <root id="root">
+      <element id="module-output" name="landingpage" />
+    </root>
+  </artifact>
+</component>
