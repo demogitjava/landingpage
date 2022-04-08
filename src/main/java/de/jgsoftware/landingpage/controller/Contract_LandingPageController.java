@@ -9,12 +9,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class Contract_LandingPageController implements iContactController
 {
 
+    ModelAndView mv;
 
     @Override
     public ModelAndView contact()
     {
 
-        ModelAndView mv = new ModelAndView("contact");
+        mv = new ModelAndView("contact");
 
 
 
