@@ -9,7 +9,8 @@ the "text edit" for your
 language.
 </br>
 
-
+in class contact_service.java
+edit password and username for your smtp account -- hard coded in the moment
 
 </br>
 
