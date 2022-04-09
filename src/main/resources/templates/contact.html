@@ -34,13 +34,13 @@
             <p>
                 Please send your message below. We will get back to you at the earliest!
             </p>
-            <form role="form" method="post" id="reused_form">
+            <form role="form" id="reused_form" th:action="@{/contact/sendmail}" method="post">>
 
                 <div class="row">
                     <div class="col-sm-12 form-group">
                         <label for="message">
                             Message:</label>
-                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                        <textarea class="form-control" type="textarea" name="stmessage" id="message" maxlength="6000" rows="7"></textarea>
                     </div>
                 </div>
                 <div class="row">
