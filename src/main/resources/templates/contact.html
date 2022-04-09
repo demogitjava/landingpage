@@ -28,13 +28,14 @@
 
 <body>
 <div class="container">
+    <div class="card-body">
     <div class="row">
         <div class="col-md-6 col-md-offset-3" id="form_container">
             <h2>Contact Us</h2>
             <p>
                 Please send your message below. We will get back to you at the earliest!
             </p>
-            <form role="form" id="reused_form" th:action="@{/contact/sendmail}" method="post">>
+            <form role="form" id="reused_form" th:action="@{/contact/sendmail}" method="post">
 
                 <div class="row">
                     <div class="col-sm-12 form-group">
@@ -74,6 +75,7 @@
             </div>
         </div>
     </div>
+        </div>
 </div>
 </body>
 </html>
