@@ -29,44 +29,37 @@
 <body>
 <div class="container">
 
-    <div class="card">
-        <div class="card-header">
-            Contact Us
-        </div>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <form role="form" id="reused_form" th:action="@{/contact/sendmail}" method="post">
+    <div>
+        <form role="form" id="reused_form" th:action="@{/contact/sendmail}" method="post">
 
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <label for="message">
-                                Message:</label>
-                            <textarea class="form-control" type="textarea" name="stmessage" id="message" maxlength="6000" rows="7"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="name">
-                                Your Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" required="">
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <label for="email">
-                                Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required="">
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="message">
+                        Message:</label>
+                    <textarea class="form-control" type="textarea" name="stmessage" id="message" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required="">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required="">
+                </div>
+            </div>
 
 
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button type="submit" class="btn btn-primary btn-lg">Send</button>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                </div>
+            </div>
 
-                </form>
-            </blockquote>
-        </div>
+        </form>
     </div>
 </div>
 </body>
