@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link th:href="@{css/small-business.css}" rel="stylesheet" />
+    <link th:href="@{css/about.css}" rel="stylesheet" />
     <!-- Bootstrap core JavaScript -->
     <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script>
     <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.js}"></script>
@@ -27,6 +28,52 @@
 </head>
 
 <body>
-<p>sample page for about</p>
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="/w3images/team1.jpg" alt="Name 1" style="width:100%">
+            <div class="container">
+                <h2>Name 1</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>nm2@example.com</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="/w3images/team2.jpg" alt="Name 2" style="width:100%">
+            <div class="container">
+                <h2>Name 2</h2>
+                <p class="title">Art Director</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>nm2@example.com</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="/w3images/team3.jpg" alt="Name 3" style="width:100%">
+            <div class="container">
+                <h2>Name 3</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>nm3@example.com</p>
+
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
