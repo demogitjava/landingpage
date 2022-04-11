@@ -6,6 +6,7 @@ import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -16,13 +17,11 @@ public class About_LandingPageController implements iAboutController
 
     java.util.Locale locale;
 
-    @Autowired
+
     IServiceIndex iServiceIndex;
 
-    @Autowired
-    HttpServletRequest request;
 
-    ModelAndView mv;
+    HttpServletRequest request;
 
 
 
@@ -30,9 +29,16 @@ public class About_LandingPageController implements iAboutController
     public ModelAndView about() {
 
 
-        mv = new ModelAndView("about");
+        ModelAndView mv = new ModelAndView("about");
 
 
+
+        /**
+         *   Get Country to display Language
+         *   only for this Controller
+         */
+        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
+        mv.addObject("lang", languagestr);
 
 
         /**
@@ -42,8 +48,6 @@ public class About_LandingPageController implements iAboutController
          *   inject text from with webtextcomp[0] fist id of table
          */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
-
-
         mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
 
 

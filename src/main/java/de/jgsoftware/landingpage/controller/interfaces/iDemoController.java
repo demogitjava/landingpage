@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
-@RequestMapping("/")
+@RequestMapping("/de")
 public interface iDemoController {
 
     // load default landingpage

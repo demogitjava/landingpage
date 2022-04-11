@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iContactController;
+import de.jgsoftware.landingpage.service.interfaces.i_contact_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,8 +15,16 @@ public class Contract_LandingPageController implements iContactController
 
     ModelAndView mv;
 
-    @Autowired
+
+    /*
+            Service Layer
+            iContactService
+     */
     de.jgsoftware.landingpage.service.interfaces.i_contact_service iContactService;
+
+    public Contract_LandingPageController(i_contact_service iContactService) {
+        this.iContactService = iContactService;
+    }
 
 
     @Override
@@ -23,12 +32,6 @@ public class Contract_LandingPageController implements iContactController
     {
 
         mv = new ModelAndView("contact");
-
-
-
-
-
-
         return mv;
     }
 
