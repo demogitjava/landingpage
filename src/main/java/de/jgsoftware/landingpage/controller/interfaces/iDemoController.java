@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
-@RequestMapping("/de")
+@RequestMapping("/")
 public interface iDemoController {
 
     // load default landingpage
     // de
-    @GetMapping({"index", "/"})
-    ModelAndView index();
+    @GetMapping({"de", "/"})
+    ModelAndView de();
 
     @GetMapping("/login")
     String login();

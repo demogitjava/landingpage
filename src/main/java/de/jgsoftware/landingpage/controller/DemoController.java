@@ -29,11 +29,11 @@ public class DemoController implements iDemoController
     // load default landingpage
     //@GetMapping({"index", "/"})
     @Override
-    public ModelAndView index() {
+    public ModelAndView de() {
 
 
 
-        mv = new ModelAndView("index");
+        mv = new ModelAndView("de");
 
         /**
          *   Get Country to display Language
