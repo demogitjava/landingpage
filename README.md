@@ -1,4 +1,3 @@
-
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 
 </br>
@@ -93,7 +92,3 @@ docker save -o landingpage.tar jgsoftwares/jgsoftwares
 to load your image to docker desktop type: docker load --input landingpage.tar
 <br/>
 
-run container over temrinal
-docker run -p 80:80 sha256:a59e2434a909c2f42690329a6b97a2215bb4d841a19852f01ab1bea61471f72e
-
-image name in my local repository is :  ->      sha256:a59e2434a909c2f42690329a6b97a2215bb4d841a19852f01ab1bea61471f72e

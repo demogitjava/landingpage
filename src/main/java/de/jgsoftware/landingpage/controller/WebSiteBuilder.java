@@ -8,8 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.script.ScriptEngine;
-
 
 @Controller
 public class WebSiteBuilder implements iWebSiteBuilder
@@ -18,10 +16,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
 
     java.util.Locale locale;
-
     ModelAndView mv;
-
-    ScriptEngine engine;
 
     String htmlcomponent;
 
@@ -37,9 +32,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
     @Override
     public ModelAndView lpagewebbuilder()
     {
-
-
-
 
         if(htmlcomponent == null)
         {
@@ -134,11 +126,11 @@ public class WebSiteBuilder implements iWebSiteBuilder
                 if(component.equals("header"))
                 {
                     htmlcomponent = iWebBuilderService.esloadheader();
-
                 }
                 else if(component.equals("body"))
                 {
-                    htmlcomponent = iWebBuilderService.esloadcontent();                }
+                    htmlcomponent = iWebBuilderService.esloadcontent();
+                }
                 else if(component.equals("footer"))
                 {
                     htmlcomponent = iWebBuilderService.esloadfooter();
