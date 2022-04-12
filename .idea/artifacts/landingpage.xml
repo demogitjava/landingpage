@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="landingpage">
+    <output-path>$PROJECT_DIR$/target/artifacts/landingpage</output-path>
+    <root id="archive" name="landingpage.jar">
+      <element id="module-output" name="landingpage" />
+    </root>
+  </artifact>
+</component>
