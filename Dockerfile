@@ -2,7 +2,7 @@ FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 
 
 #hostname
-#ENV HOSTNAME landingpage
+ENV HOSTNAME landingpage
 
 
 
@@ -18,11 +18,11 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/mawi.mv.db /root/mawi
 ADD https://github.com/demogitjava/demodatabase/raw/master/shopdb.mv.db /root/shopdb.mv.db
 
 # h2 database
-ADD https://raw.githubusercontent.com/demogitjava/demodatabase/master/h2.zip /root/
+#ADD https://raw.githubusercontent.com/demogitjava/demodatabase/master/h2.zip /root/
 
 ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
 
 COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
 
-ENTRYPOINT ["java", "-jar", "landingpage.jar"]
+ENTRYPOINT ["java", "-jar", "debugjava/landingpage-0.0.1-SNAPSHOT.jar"]
 
