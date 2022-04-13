@@ -65,18 +65,20 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "de":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadheader(); // header
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadheader(); // header
 
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs(); // contentbody.html
-                }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadfooter(); // footer
+
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs(); // contentbody.html
+
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadfooter(); // footer
+
+                        break;
                 }
 
 
@@ -85,17 +87,17 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "fr":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.frloadheader();
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.frloadheader();
 
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.frloadcontent();                }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.frloadfooter();
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.frloadcontent();
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.frloadfooter();
+                        break;
                 }
 
                 break;
@@ -104,17 +106,17 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "en":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.enloadheader();
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.enloadheader();
 
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.enloadcontent();                }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.enloadfooter();
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.enloadcontent();
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.enloadfooter();
+                        break;
                 }
 
                 break;
@@ -123,17 +125,16 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "es":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.esloadheader();
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.esloadcontent();
-                }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.esloadfooter();
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.esloadheader();
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.esloadcontent();
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.esloadfooter();
+                        break;
                 }
 
                 break;
@@ -142,17 +143,17 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "it":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.itloadheader();
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.itloadheader();
 
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.itloadcontent();                }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.itloadfooter();
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.itloadcontent();
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.itloadfooter();
+                        break;
                 }
 
                 break;
@@ -161,17 +162,17 @@ public class WebSiteBuilder implements iWebSiteBuilder
             case "tr":
             {
 
-                if(component.equals("header"))
-                {
-                    htmlcomponent = iWebBuilderService.trloadheader();
+                switch (component) {
+                    case "header":
+                        htmlcomponent = iWebBuilderService.trloadheader();
 
-                }
-                else if(component.equals("body"))
-                {
-                    htmlcomponent = iWebBuilderService.trloadcontent();            }
-                else if(component.equals("footer"))
-                {
-                    htmlcomponent = iWebBuilderService.trloadfooter();
+                        break;
+                    case "body":
+                        htmlcomponent = iWebBuilderService.trloadcontent();
+                        break;
+                    case "footer":
+                        htmlcomponent = iWebBuilderService.trloadfooter();
+                        break;
                 }
 
 
