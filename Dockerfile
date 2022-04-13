@@ -23,6 +23,6 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/shopdb.mv.db /root/sh
 ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
 
 COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
-
-ENTRYPOINT ["java", "-jar", "debugjava/landingpage-0.0.1-SNAPSHOT.jar"]
+CMD java -classpath debugjava/de/jgsoftware/landingpage iDemoLandingPage
+#ENTRYPOINT ["java", "-jar", "debugjava/landingpage-0.0.1-SNAPSHOT.jar"]
 
