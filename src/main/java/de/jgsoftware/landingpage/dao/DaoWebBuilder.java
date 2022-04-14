@@ -96,21 +96,23 @@ public class DaoWebBuilder implements iDaoWebBuilder
         {
             System.out.print("file exist");
 
+            File fhtml = new File(language + "_" + component + ".html");
+
+
+            try {
+
+                FileWriter myWriter = new FileWriter(fileLocation);
+                myWriter.write(gjshtml);
+                myWriter.close();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
 
 
-        File fhtml = new File(language + "_" + component + ".html");
 
-
-        try {
-
-            FileWriter myWriter = new FileWriter(fileLocation);
-            myWriter.write(gjshtml);
-            myWriter.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
 
 
