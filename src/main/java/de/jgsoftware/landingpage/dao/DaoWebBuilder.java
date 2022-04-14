@@ -85,8 +85,8 @@ public class DaoWebBuilder implements iDaoWebBuilder
     savehtmlandcss(String gjshtml, String gjscss, String language, String component)
     {
 
-        ///target/classes/templates/en
-        String fileLocation = new File("target//classes/templates//").getAbsolutePath() + "//" + language +  "//" + language + "_" + component + ".html";
+        ///target/classes/templates/  for local debug
+        String fileLocation = new File("classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
 
         if(fileLocation == null)
         {
@@ -95,7 +95,9 @@ public class DaoWebBuilder implements iDaoWebBuilder
         else
         {
             System.out.print("file exist");
+
         }
+
 
         File fhtml = new File(language + "_" + component + ".html");
 
@@ -109,7 +111,6 @@ public class DaoWebBuilder implements iDaoWebBuilder
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
 
 
