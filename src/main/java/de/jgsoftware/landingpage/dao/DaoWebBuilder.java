@@ -86,30 +86,20 @@ public class DaoWebBuilder implements iDaoWebBuilder
     {
 
         ///target/classes/templates/  for local debug
-        String fileLocation = new File("classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
+        String fileLocation = new File("target/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
+        File fhtml = new File(language + "_" + component + ".html");
+        try {
 
-        if(fileLocation == null)
+            FileWriter myWriter = new FileWriter(fileLocation);
+            myWriter.write(gjshtml);
+            myWriter.close();
+
+        } catch (Exception e)
         {
-            System.out.print("is null");
+            e.printStackTrace();
         }
-        else
-        {
-            System.out.print("file exist");
-
-            File fhtml = new File(language + "_" + component + ".html");
 
 
-            try {
-
-                FileWriter myWriter = new FileWriter(fileLocation);
-                myWriter.write(gjshtml);
-                myWriter.close();
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
 
 
 
