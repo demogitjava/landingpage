@@ -14,13 +14,9 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/demodb.mv.db /root/de
 ADD https://github.com/demogitjava/demodatabase/raw/master/mawi.mv.db /root/mawi.mv.db
 ADD https://github.com/demogitjava/demodatabase/raw/master/shopdb.mv.db /root/shopdb.mv.db
 
-# h2 database
-#ADD https://raw.githubusercontent.com/demogitjava/demodatabase/master/h2.zip /root/
 
 ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+EXPOSE 80:80/tcp
+EXPOSE 5005:5005/tcp
 
-COPY target/landingpage-0.0.1-SNAPSHOT.jar landingpage.jar
-
-
-ENTRYPOINT ["java", "-jar", "landingpage.jar de.jgsoftware.landingpage.iDemoLandingPage"]
 

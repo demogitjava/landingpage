@@ -13,13 +13,12 @@ edit password and username for your smtp account -- hard coded in the moment
 
 </br>
 
-The used database is H2 from here
-http://www.h2database.com/html/download.html
-</br>
+
+
 
 https://github.com/demogitjava/demodatabase
 watch about the databases in your user directory that
-/root/shopdb.mv.db are available.
+/root/shopdb.mv.db and usw. are available.
 
 
 </br>
