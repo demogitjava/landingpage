@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
 
 @Repository
@@ -23,6 +22,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     @Qualifier(value = "shopJdbcTemplate")
     JdbcTemplate jtm2;
 
+    File fhtml;
 
     private String demopage = null;
 
@@ -67,7 +67,6 @@ public class DaoWebBuilder implements iDaoWebBuilder
     public String loadheader()
     {
         demopage = "header.html";
-
         return demopage;
 
     }
@@ -75,7 +74,6 @@ public class DaoWebBuilder implements iDaoWebBuilder
     public String loadfooter()
     {
         demopage = "footer.html";
-
         return demopage;
 
     }
@@ -87,7 +85,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
         ///target/classes/templates/  for local debug
         String fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
-        File fhtml = new File(language + "_" + component + ".html");
+        fhtml = new File(language + "_" + component + ".html");
         try {
 
             FileWriter myWriter = new FileWriter(fileLocation);
