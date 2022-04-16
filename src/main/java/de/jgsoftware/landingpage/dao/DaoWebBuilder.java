@@ -86,7 +86,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
     {
 
         ///target/classes/templates/  for local debug
-        String fileLocation = new File("target/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
+        String fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
         File fhtml = new File(language + "_" + component + ".html");
         try {
 
@@ -98,14 +98,6 @@ public class DaoWebBuilder implements iDaoWebBuilder
         {
             e.printStackTrace();
         }
-
-
-
-
-
-
-
-
 
 
         return "shtmlandcss";
