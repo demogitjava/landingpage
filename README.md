@@ -70,26 +70,28 @@ used jdk: **GraalVM Community ** https://www.graalvm.org/downloads/
 
 
 # For Docker
-
+<br/>
 To build the image type:
 
 docker build -f Dockerfile -t landingpage .
 
-Run the application and open ports by create a new container
-
-80   web - servlet
-
-9092 h2 jdbc
-8082 h2 web
-5005 (optional for debug)
-
+<br/>
 docker for windows are available on https://www.docker.com/products/docker-desktop
-for config on an docker image make a backup with
+
+
+backup 
+load / save
 
 docker save -o landingpage.tar jgsoftwares/jgsoftwares
 
-to load your image to docker desktop type: docker load --input landingpage.tar
-
+to load your image to docker desktop type:
+<br/>
+docker load --input landingpage.tar
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 The images are available
 dropbox:
 https://www.dropbox.com/s/ku2r5hz8koj9y7d/landingpage.tar?dl=0
@@ -98,7 +100,7 @@ ports
 your ip :80:80
 your ip :5005:5005
 <br/>
-mount direcotry into docker container:
+mount directory into docker container:
 
 /root/.m2:/root/.m2  
 /root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage  
