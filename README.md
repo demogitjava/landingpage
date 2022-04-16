@@ -89,5 +89,12 @@ for config on an docker image make a backup with
 docker save -o landingpage.tar jgsoftwares/jgsoftwares
 
 to load your image to docker desktop type: docker load --input landingpage.tar
+
+The images are available
+dropbox:
+https://www.dropbox.com/s/ku2r5hz8koj9y7d/landingpage.tar?dl=0
+
+
+
 <br/>
 

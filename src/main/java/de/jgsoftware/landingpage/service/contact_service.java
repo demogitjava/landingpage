@@ -19,9 +19,6 @@ public class contact_service implements i_contact_service
     @Autowired
     JavaMailSenderImpl javaMailSender;
 
-
-
-
     @Override
     public String sendEmail(String stmessage, String name, String email) throws AddressException {
 
@@ -62,7 +59,7 @@ public class contact_service implements i_contact_service
             Transport.send(message);
         } catch(Exception e)
         {
-            System.out.print("Fehler " + e);
+            System.out.print("Fehler send Email over smtp" + e);
         }
 
 
