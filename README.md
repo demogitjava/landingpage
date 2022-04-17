@@ -43,22 +43,17 @@ https://"your domain "/lpagewebbuilder
 
 
 
-</br>
 For jdbc client connect you can user
 the integreadted jdbc viewer from netbeans or
 SQuirreL SQL Client.
 
-</br>
-
-<br>
-<br>
 
 used ide
 https://netbeans.apache.org/
 <br>
 
 
-# To compile this application install maven.
+To compile this application install maven.
 maven https://downloads.apache.org/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.zip
 
 make sure that java is correctly installed and the "JAVA_HOME" path is set.
@@ -88,13 +83,12 @@ load / save
 docker save -o landingpage.tar jgsoftwares/jgsoftwares
 
 to load your image to docker desktop type:
-============================================================
+
 
 docker load --input landingpage.tar
 
 
 The images are available
-============================================================
 dropbox:
 https://www.dropbox.com/s/ku2r5hz8koj9y7d/landingpage.tar?dl=0
 <br/>
@@ -103,7 +97,7 @@ your ip :80:80
 your ip :5005:5005
 
 mount directory into docker container:
-============================================================
+
 /root/.m2:/root/.m2  
 /root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage  
 /usr/lib/jvm/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2  
