@@ -14,13 +14,8 @@ public class Service_LandingPageController implements iServiceController
     @Override
     public ModelAndView service()
     {
-        //model.addAttribute("lgname", plgservice.getMultipagelanguage().getPageLanguageText());
-        //model.addAttribute("productList", indexservice.getDaoProduct().getProductsforLandingpage());
+
         mv = new ModelAndView("service");
-
-
-
-
 
 
         return mv;
