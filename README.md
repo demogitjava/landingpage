@@ -26,11 +26,9 @@ watch about the databases in your user directory that
 
 the login for the database over jdbc is
 </br>
-admin
-jj78mvpr52k1
-</br>
-</br>
-</br>
+`admin
+jj78mvpr52k1`
+
 the application url // port is
 url: https:// "your domain " /
 
@@ -39,7 +37,7 @@ port: 80
 if h2 web-console is not available 
 start a docker terminal with command to
 enable connect
-'java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers'
+`java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers`
 </br>
 to edit the landingpage type 
 https://"your domain "/lpagewebbuilder
