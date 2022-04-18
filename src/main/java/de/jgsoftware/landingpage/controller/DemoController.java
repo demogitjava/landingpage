@@ -29,9 +29,8 @@ public class DemoController implements iDemoController
     // load default landingpage
     //@GetMapping({"index", "/"})
     @Override
-    public ModelAndView de() {
-
-
+    public ModelAndView de()
+    {
 
         mv = new ModelAndView("de");
 
@@ -50,8 +49,6 @@ public class DemoController implements iDemoController
          *   inject text from with webtextcomp[0] fist id of table
          */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
-
-
         mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
 
 

@@ -36,6 +36,10 @@ url: https:// "your domain " /
 
 port: 80
 
+if h2 web-console is not available 
+start a docker terminal with command to
+enable connect
+'java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers'
 </br>
 to edit the landingpage type 
 https://"your domain "/lpagewebbuilder
