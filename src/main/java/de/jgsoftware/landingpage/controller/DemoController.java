@@ -10,29 +10,25 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import de.jgsoftware.landingpage.model.areacodes;
+import java.util.List;
+
 @Controller
 public class DemoController implements iDemoController
 {
 
 
     java.util.Locale locale;
-
     @Autowired
     IServiceIndex iServiceIndex;
-
     @Autowired
     HttpServletRequest request;
-
     ModelAndView mv;
-
-
-    // load default landingpage
-    //@GetMapping({"index", "/"})
 
 
     @Override
     public ModelAndView de()
     {
+        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
         mv = new ModelAndView("de");
 
@@ -40,10 +36,8 @@ public class DemoController implements iDemoController
          *   Get Country to display Language
          *   only for this Controller
          */
-        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
-        mv.addObject("lang", languagestr);
 
-        mv.addObject("areacodes", iServiceIndex.getDcontroller().areacodes_eu());
+        mv.addObject("lang", languagestr);
 
 
         /**
