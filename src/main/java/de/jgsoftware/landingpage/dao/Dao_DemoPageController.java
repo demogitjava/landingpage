@@ -13,11 +13,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import de.jgsoftware.landingpage.model.areacodes;
 
 @Repository
 public class Dao_DemoPageController implements IDaoDemoPageController
 {
-
 
     @Autowired
     @Qualifier(value = "shopJdbcTemplate")
@@ -52,5 +52,11 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     }
 
 
+    // return list from country where in the eu
+    public List<areacodes> areacodes_eu()
+    {
+        List<areacodes> areacodes = jtm2.query("SELECT * FROM LEANDERCODES where EU = 1", new BeanPropertyRowMapper(areacodes.class));
+        return areacodes;
+    }
 }
 

@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
-
+import de.jgsoftware.landingpage.model.areacodes;
 @Controller
 public class DemoController implements iDemoController
 {
@@ -28,6 +28,8 @@ public class DemoController implements iDemoController
 
     // load default landingpage
     //@GetMapping({"index", "/"})
+
+
     @Override
     public ModelAndView de()
     {
@@ -40,6 +42,8 @@ public class DemoController implements iDemoController
          */
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
         mv.addObject("lang", languagestr);
+
+        mv.addObject("areacodes", iServiceIndex.getDcontroller().areacodes_eu());
 
 
         /**
@@ -96,8 +100,6 @@ public class DemoController implements iDemoController
     {
         return "redirect:/tr/";
     }
-
-
 
     @Override
     public String lpagewebbuilder()
