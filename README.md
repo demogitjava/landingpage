@@ -1,18 +1,17 @@
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
 ============================================================
 
-</br>
+
 to edit the text in the demo application
 copy the segment and 
 paste it with the editor to save
 the "text edit" for your
 language.
-</br>
+
 
 in class contact_service.java
 edit password and username for your smtp account -- hard coded in the moment
 
-</br>
 
 
 
@@ -22,7 +21,6 @@ watch about the databases in your user directory that
 /root/shopdb.mv.db and usw. are available.
 
 
-</br>
 
 the login for the database over jdbc is
 </br>
