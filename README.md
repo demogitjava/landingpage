@@ -113,7 +113,8 @@ run command over terminal:
 `docker run -p 217.160.255.254:80:80 
 -p 217.160.255.254:5005:5005 
 -p 217.160.255.254:9092:9092 
--p 217.160.255.254:8082:8082 -v /root/.m2:/root/.m2 -v 
+-p 217.160.255.254:8082:8082 -v 
+/root/.m2:/root/.m2 -v 
 /root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage -v 
 /usr/lib/jvm/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2 -v 
 /root/IdeaProjects/demodatabase:/root/ --env HOSTNAME=jgsoftwares.de --env LANG=de_DE.ISO-8859-1 --name landingpage -d 
