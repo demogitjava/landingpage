@@ -80,7 +80,7 @@ networkconfig
 run options
 ============================================================
 
---rm -d --network 192.200.100.254/24
+`--rm -d --network 192.200.100.254/24`
 after the network is scuessfully created
 type your run command to deploy your container 
 to the network 
