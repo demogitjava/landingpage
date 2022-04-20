@@ -10,6 +10,8 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import de.jgsoftware.landingpage.model.areacodes;
+
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -24,13 +26,29 @@ public class DemoController implements iDemoController
     HttpServletRequest request;
     ModelAndView mv;
 
+    Principal principal;
 
     @Override
     public ModelAndView de()
     {
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
+        principal = request.getUserPrincipal();
+
         mv = new ModelAndView("de");
+
+
+        /*
+                user login
+         */
+        if(principal == null)
+        {
+            System.out.print("not login");
+        }
+        else {
+            mv.addObject("user", principal.getName());
+
+        }
 
         /**
          *   Get Country to display Language

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 
 <head>
 
@@ -35,7 +35,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div sec:authorize="isAuthenticated()">
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">admin</a>  <!-- admin -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lpagewebbuilder/">Webpage Builder</a>  <!-- Login -->
+                </li>
+            </div>
+            <div sec:authorize="!isAuthenticated()" class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#" th:text="${webtextcomp[1].de}">  <!-- Home -->
