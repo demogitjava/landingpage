@@ -76,6 +76,17 @@ docker build -f Dockerfile -t landingpage .
 docker for windows are available on https://www.docker.com/products/docker-desktop
 
 
+networkconfig
+run options
+============================================================
+
+--rm -d --network 192.200.100.254/24
+after the network is scuessfully created
+type your run command to deploy your container 
+to the network 
+
+
+
 backup 
 load / save
 ============================================================
