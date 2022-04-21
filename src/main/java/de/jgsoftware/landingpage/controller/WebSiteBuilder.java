@@ -4,10 +4,11 @@ package de.jgsoftware.landingpage.controller;
 import de.jgsoftware.landingpage.controller.interfaces.iWebSiteBuilder;
 import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
 
 @Controller
 public class WebSiteBuilder implements iWebSiteBuilder

@@ -46,7 +46,7 @@ public class DemoController implements iDemoController
             System.out.print("not login");
         }
         else {
-            mv.addObject("user", principal.getName());
+            mv.addObject("lgusername", principal.getName());
 
         }
 

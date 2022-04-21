@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml"
       th:lang="${lang}">
 
 <head>
@@ -51,7 +51,7 @@
 
 </head>
 
-<body>
+<body sec:authorize="isAuthenticated()">
 
 
 <div class="container-fluid">
@@ -63,11 +63,7 @@
 
         <ul id="sortable" class="ui-sortable">
             <li class="btn-group draggable-group" id="group-file">
-
                 <button class="btn btn-primary" id="btn_empty" data-toggle="tooltip" data-placement="bottom" title="Clear Screen" onclick="clearcanvas()"><i class="fa fa-trash" ></i></button>
-
-
-
             </li>
 
                 <div class="row">
@@ -105,12 +101,6 @@
 
                    </form>
                 </div>
-
-
-
-            <br>
-
-
 
         </ul>
 

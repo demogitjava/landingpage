@@ -6,8 +6,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 
-@PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
+
 @RequestMapping("/lpagewebbuilder")
+@PreAuthorize("hasAuthority('ROLE_ADMIN','ROLE_USER')")
 public interface iWebSiteBuilder
 {
     @GetMapping({"lpagewebbuilder", "/"})

@@ -6,10 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
-@PreAuthorize("hasRole('ROLE_ADMIN')")
+
 @RequestMapping("/admin")
 public interface iAdminController
 {
     @GetMapping({"admin", "/"})
     ModelAndView admincontroller();
+
+
 }

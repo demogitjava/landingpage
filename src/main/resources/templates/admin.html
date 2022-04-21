@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:lang="${lang}">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" th:lang="${lang}">
 
 <head>
     <meta charset="ISO-8859-1">
     <title></title>
 </head>
-<body>
+<body sec:authorize="isAuthenticated()">
 
 <p>Simple admin page</p>
 
