@@ -119,6 +119,11 @@ mount directory into docker container:
 run command over terminal:
 ============================================================
 
+edit ip
+`217.160.255.254`
+to your static ip 
+
+
 `docker run -p 217.160.255.254:80:80 
 -p 217.160.255.254:5005:5005 
 -p 217.160.255.254:9092:9092 
