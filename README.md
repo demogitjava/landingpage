@@ -124,7 +124,7 @@ edit ip
 to your static ip 
 
 
-`docker run -p 217.160.255.254:80:80 
+```docker run -p 217.160.255.254:80:80 
 -p 217.160.255.254:5005:5005 
 -p 217.160.255.254:9092:9092 
 -p 217.160.255.254:8082:8082 -v 
@@ -229,7 +229,7 @@ to your static ip
 :/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar
 :/root/.m2/repository/org/springframework/spring-context-support/5.1.7.RELEASE/spring-context-support-5.1.7.RELEASE.jar
 :/root/.m2/repository/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar 
-de.jgsoftware.landingpage.iDemoLandingPage`
+de.jgsoftware.landingpage.iDemoLandingPage```
 
 
 
