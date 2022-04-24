@@ -17,3 +17,4 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/shopdb.mv.db /root/sh
 
 ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
 
+
