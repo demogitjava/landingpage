@@ -51,10 +51,11 @@ public class contact_service implements i_contact_service
         try
         {
             Message message = new MimeMessage(mailSession);
-            InternetAddress addressTo = new InternetAddress(receiver);
+            //InternetAddress addressTo = new InternetAddress(receiver);
+            InternetAddress addressTo = new InternetAddress("jgsoftwares@gmx.net");
             message.setRecipient(Message.RecipientType.TO, addressTo);
-            //message.setFrom(new InternetAddress(sender));
-            message.setFrom(new InternetAddress("jgsoftwares@gmx.net"));
+            message.setFrom(new InternetAddress(sender));
+
             message.setSubject(name + " _ " + email + sender);
             message.setContent(stmessage, "text/plain");
             Transport.send(message);
