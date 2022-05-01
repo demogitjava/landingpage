@@ -48,9 +48,6 @@ the integreadted jdbc viewer from netbeans or
 SQuirreL SQL Client.
 
 
-used ide
-https://netbeans.apache.org/
-<br>
 
 
 To compile this application install maven.
