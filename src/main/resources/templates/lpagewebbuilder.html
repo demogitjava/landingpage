@@ -68,6 +68,33 @@
 
             </li>
 
+            <li class="btn-group draggable-group" id="about">
+                <form method="post" action="/lpagewebbuilder/loadhtmlabout/">
+                    <div class="input-group-prepend">
+                        <input name="submit" class="btn btn-primary" type="submit" value="load about">
+                    </div>
+                </form>
+            </li>
+
+            <li class="btn-group draggable-group" id="service">
+                <form method="post" action="/lpagewebbuilder/loadhtmlservice/">
+                    <div class="input-group-prepend">
+                        <input name="submit" class="btn btn-primary" type="submit" value="load service">
+                    </div>
+                </form>
+            </li>
+
+
+            <li class="btn-group draggable-group" id="contact">
+                <form method="post" action="/lpagewebbuilder/loadhtmlcontact/">
+                    <div class="input-group-prepend">
+                        <input name="submit" class="btn btn-primary" type="submit" value="load contact">
+                    </div>
+                </form>
+            </li>
+
+
+
 
             <div class="row">
                    <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
