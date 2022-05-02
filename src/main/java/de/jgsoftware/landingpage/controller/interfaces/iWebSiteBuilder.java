@@ -18,7 +18,6 @@ public interface iWebSiteBuilder
     String loadhtmlpage(String language, String component);
 
 
-
     @RequestMapping("/savehtmlcsstofile")
     @ResponseBody
     String savehtmlcsstofile(
@@ -26,5 +25,12 @@ public interface iWebSiteBuilder
             @RequestParam(value = "gjscss", required = false) String gjscss);
 
 
+    @PostMapping("/loadhtmlabout")
+    ModelAndView loadhtmlabout();
+    @PostMapping("/loadhtmlservice")
+    ModelAndView loadhtmlservice();
+
+    @PostMapping("/loadhtmlcontact")
+    ModelAndView loadhtmlcontact();
 
 }

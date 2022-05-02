@@ -4,8 +4,6 @@ package de.jgsoftware.landingpage.controller;
 import de.jgsoftware.landingpage.controller.interfaces.iWebSiteBuilder;
 import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -192,14 +190,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
         return "redirect:/lpagewebbuilder";
     }
 
-    public String savehtmlpage(String language, String component)
-    {
-
-
-
-        return "redirect:/lpagewebbuilder";
-    }
-
 
 
     /*
@@ -232,6 +222,84 @@ public class WebSiteBuilder implements iWebSiteBuilder
         return "header data saved";
     }
 
+    @Override
+    public ModelAndView loadhtmlabout()
+    {
+
+        //edit compoent to about.html
+        htmlcomponent = "about.html";
+        component = "about.html";
+
+        if(htmlcomponent == null)
+        {
+            htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
+        }
+
+        mv = new ModelAndView("lpagewebbuilder");
+
+        // load all bootstrap components to MVC Controller
+        mv.addObject("webtextcomp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
+        mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
+
+        mv.addObject("defaultsite", htmlcomponent);
+
+        mv.addObject("loadedcountry", language);
+        mv.addObject("loadedcomp", component);
+
+        return mv;
+    }
+
+    @Override
+    public ModelAndView loadhtmlservice()
+    {
+        //edit compoent to about.html
+        htmlcomponent = "service.html";
+        component = "service.html";
+
+        if(htmlcomponent == null)
+        {
+            htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
+        }
+
+        mv = new ModelAndView("lpagewebbuilder");
+
+        // load all bootstrap components to MVC Controller
+        mv.addObject("webtextcomp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
+        mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
+
+        mv.addObject("defaultsite", htmlcomponent);
+
+        mv.addObject("loadedcountry", language);
+        mv.addObject("loadedcomp", component);
+
+        return mv;
+    }
+
+    @Override
+    public  ModelAndView loadhtmlcontact()
+    {
+        //edit compoent to about.html
+        htmlcomponent = "contact.html";
+        component = "contact.html";
+
+        if(htmlcomponent == null)
+        {
+            htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loaddefaultpagetograpesjs();
+        }
+
+        mv = new ModelAndView("lpagewebbuilder");
+
+        // load all bootstrap components to MVC Controller
+        mv.addObject("webtextcomp", iWebBuilderService.getiDaoWebBuilder().getPageLanguageText());
+        mv.addObject("btcomp", iWebBuilderService.getiDaoWebBuilder().getBootstrapComponents());
+
+        mv.addObject("defaultsite", htmlcomponent);
+
+        mv.addObject("loadedcountry", language);
+        mv.addObject("loadedcomp", component);
+
+        return mv;
+    }
 
 
 }

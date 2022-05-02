@@ -79,6 +79,28 @@ public class DaoWebBuilder implements iDaoWebBuilder
     }
 
     @Override
+    public String loadcontact()
+    {
+        demopage = "contact.html";
+        return demopage;
+    }
+
+    @Override
+    public String loadservicehtml()
+    {
+        demopage = "service.html";
+        return demopage;
+    }
+
+
+    @Override
+    public String loadabouthtml()
+    {
+        demopage = "about.html";
+        return demopage;
+    }
+
+    @Override
     public String
     savehtmlandcss(String gjshtml, String gjscss, String language, String component)
     {

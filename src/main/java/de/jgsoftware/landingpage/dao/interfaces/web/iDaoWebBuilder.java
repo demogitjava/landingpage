@@ -16,5 +16,9 @@ public interface iDaoWebBuilder
     String loadheader();
     String loadfooter();
 
+    String loadcontact();
+    String loadservicehtml();
+    String loadabouthtml();
+
     String savehtmlandcss(String gjshtml, String gjscss, String language, String component);
 }
