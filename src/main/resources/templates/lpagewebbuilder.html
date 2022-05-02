@@ -64,7 +64,12 @@
         <ul id="sortable" class="ui-sortable">
             <li class="btn-group draggable-group" id="group-file">
                 <button class="btn btn-primary" id="btn_empty" data-toggle="tooltip" data-placement="bottom" title="Clear Screen" onclick="clearcanvas()"><i class="fa fa-trash" ></i></button>
+
             </li>
+
+
+
+
 
                 <div class="row">
                    <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
@@ -89,19 +94,34 @@
                                <option type="text" name="footer">footer</option>
                            </select>
 
-
-
-
                            <div class="input-group-prepend">
-                               <input name="submit" class="form-control" type="submit" value="load html component" />
+                               <input name="submit" class="form-control" type="submit" value="load html component to editor" />
                            </div>
-
 
                        </div>
 
                    </form>
+
                 </div>
 
+                <div class="row">
+                    <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
+
+                        <div class="input-group mb-3">
+
+                            <input name="language">
+                            <input name="component">
+
+
+                            <div class="input-group-prepend">
+                                <input name="submit" class="form-control" type="submit" value="load component from path manuel" />
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
         </ul>
 
 
@@ -110,7 +130,7 @@
 
 
 
-    <!-- row 4-4-4 -->
+
     <div class="row">
 
         <div class="col-sm-8">
@@ -161,6 +181,8 @@
 
                 console.log('clear canvas');
             }
+
+
 
 
             function importhtmlandcss()
