@@ -69,7 +69,7 @@
             </li>
 
             <li class="btn-group draggable-group" id="about">
-                <form method="post" action="/lpagewebbuilder/loadhtmlabout/">
+                <form method="post" th:action="@{/lpagewebbuilder/loadhtmlabout/}">
                     <div class="input-group-prepend">
                         <input name="submit" class="btn btn-primary" type="submit" value="load about">
                     </div>
@@ -77,7 +77,7 @@
             </li>
 
             <li class="btn-group draggable-group" id="service">
-                <form method="post" action="/lpagewebbuilder/loadhtmlservice/">
+                <form method="post" th:action="@{/lpagewebbuilder/loadhtmlservice/}">
                     <div class="input-group-prepend">
                         <input name="submit" class="btn btn-primary" type="submit" value="load service">
                     </div>
@@ -86,7 +86,7 @@
 
 
             <li class="btn-group draggable-group" id="contact">
-                <form method="post" action="/lpagewebbuilder/loadhtmlcontact/">
+                <form method="post" th:action="@{/lpagewebbuilder/loadhtmlcontact/}">
                     <div class="input-group-prepend">
                         <input name="submit" class="btn btn-primary" type="submit" value="load contact">
                     </div>
@@ -109,7 +109,6 @@
                                <option type="text" name="es">es</option>
                                <option type="text" name="it">it</option>
                                <option type="text" name="tr">tr</option>
-
                            </select>
 
                            <select class="custom-select" id="valuetwo" name="component" aria-label="Example select with button addon">
