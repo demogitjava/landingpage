@@ -226,9 +226,11 @@ public class WebSiteBuilder implements iWebSiteBuilder
     public ModelAndView loadhtmlabout()
     {
 
-        //edit compoent to about.html
+
         htmlcomponent = "about.html";
         component = "about.html";
+        language = "..";
+        htmlcomponent = "about.html";
 
         if(htmlcomponent == null)
         {
@@ -255,6 +257,8 @@ public class WebSiteBuilder implements iWebSiteBuilder
         //edit compoent to about.html
         htmlcomponent = "service.html";
         component = "service.html";
+        language = "..";
+        htmlcomponent = "service.html";
 
         if(htmlcomponent == null)
         {
@@ -281,6 +285,8 @@ public class WebSiteBuilder implements iWebSiteBuilder
         //edit compoent to about.html
         htmlcomponent = "contact.html";
         component = "contact.html";
+        language = "..";
+        htmlcomponent = "contact.html";
 
         if(htmlcomponent == null)
         {
