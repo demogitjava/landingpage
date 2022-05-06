@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="" />
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +234,7 @@
       <workItem from="1651741049905" duration="13096000" />
       <workItem from="1651818828854" duration="2164000" />
       <workItem from="1651822209811" duration="794000" />
-      <workItem from="1651823009113" duration="3045000" />
+      <workItem from="1651823009113" duration="3548000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -324,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651825560353</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=".">
+      <created>1651826113531</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651826113531</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,9 +359,9 @@
     <MESSAGE value="add form &#10;from about service and contact.html&#10;&#10;the forms are loaded over the theamleaf engine" />
     <MESSAGE value="edit path for save &#10;about &#10;service &#10;and contact html pages form &#10;websitebuilder to tempaltes folder to&#10;display data" />
     <MESSAGE value="delete button over form &#10;because the editor didt not &#10;parse the data to save.&#10;&#10;use manual field the secode textfield to &#10;load the pages and save them to &#10;the template folder" />
-    <MESSAGE value="." />
     <MESSAGE value="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
