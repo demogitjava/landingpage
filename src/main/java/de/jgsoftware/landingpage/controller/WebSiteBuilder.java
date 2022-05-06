@@ -52,6 +52,7 @@ public class WebSiteBuilder implements iWebSiteBuilder
     }
 
 
+
     @Override
     public String loadhtmlpage(String language, String component)
     {
@@ -176,6 +177,22 @@ public class WebSiteBuilder implements iWebSiteBuilder
 
 
                 break;
+            }
+
+            case "--":
+            {
+                switch (component) {
+                    case "about":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadabouthtml();
+
+                        break;
+                    case "service":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadservicehtml();
+                        break;
+                    case "contact":
+                        htmlcomponent = iWebBuilderService.getiDaoWebBuilder().loadcontact();
+                        break;
+                }
             }
 
 

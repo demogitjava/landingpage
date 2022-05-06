@@ -69,10 +69,6 @@
             </li>
 
 
-
-
-
-
             <div class="row">
                    <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
 
@@ -105,21 +101,51 @@
 
                 </div>
 
-            <div class="row">
-                    <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
 
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <input name="language">
-                                <input name="component">
-                                <input name="submit" class="form-control" type="submit" value="load component from path manuel" />
-                            </div>
+
+            <div class="row">
+                <form method="post" th:action="@{/lpagewebbuilder/loadhtmlpage/}">
+
+
+
+                    <!-- row 4-4-4 -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p>default folder is /templates</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>type here name of component like about for about.html</p>
+
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+                    <!-- row 4-4-4 -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input name="language">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <input name="component">
+                        </div>
+
+                        <div class="col-sm-4">
+
+                            <input name="submit" class="form-control" type="submit" value="load component from path"/>
 
                         </div>
 
-                    </form>
 
-                </div>
+                    </div>
+
+
+
+
+                </form>
+
+            </div>
+
 
         </ul>
 
