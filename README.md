@@ -17,6 +17,8 @@ to run this modul in a docker container
 watch out the compile classpath for netbeans disable "save on compile"
 after then the folders has look like this
 
+//-------------------------------------------------
+ 
 /target
     /classes
         /static
@@ -28,6 +30,7 @@ after then the folders has look like this
         /landingpage
         -> compiled java classes
 
+//----------------------------------------------------
 
 
 https://github.com/demogitjava/demodatabase
