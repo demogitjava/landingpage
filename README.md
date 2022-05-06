@@ -13,6 +13,20 @@ in class contact_service.java
 edit password and username for your smtp account -- hard coded in the moment
 
 
+to run this modul in a docker container
+watch out the compile classpath for netbeans disable "save on compile"
+after then the folders has look like this
+
+/target
+    /classes
+        /static
+        /templates
+
+    /test-classes
+        /de
+        /jgsoftware
+        /landingpage
+        -> compiled java classes
 
 
 
