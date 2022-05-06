@@ -215,10 +215,6 @@ public class WebSiteBuilder implements iWebSiteBuilder
         }
 
 
-
-
-
-
         return "header data saved";
     }
 
