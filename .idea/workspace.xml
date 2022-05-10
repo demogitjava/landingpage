@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/landingpage/wiki.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lanserver/wiki.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webshop/wiki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -463,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652172514566</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject">
+      <created>1652179573753</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1652179573753</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,7 +508,8 @@
     <MESSAGE value="edit application.properties to start h2 server" />
     <MESSAGE value="edit html fontend with theamleay tags form h2 database &#10;to parse text" />
     <MESSAGE value="edit properties &#10;start theamleaf engine with mode html5" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit properties &#10;start theamleaf engine with mode html5" />
+    <MESSAGE value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
