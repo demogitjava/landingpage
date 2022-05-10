@@ -22,21 +22,21 @@
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
+    <autoscroll-to-editor value="true" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="3b3b3c57-c4e3-4e29-9e02-d2456af43841">
-      <console name="shopdb" type="STANDARD" schema="" session="Main" />
+    <connection id="5e8ac823-060d-4a7a-9b7b-f065e5c0ea9a">
+      <console name="demodb" type="STANDARD" schema="" session="Main"><![CDATA[select * from webtextlayout]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="3b3b3c57-c4e3-4e29-9e02-d2456af43841" />
+    <connection id="5e8ac823-060d-4a7a-9b7b-f065e5c0ea9a" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -56,8 +56,12 @@
     <last-used-dependency-type value="INCOMING" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
-    <last-used-operator value="EQUAL" />
-    <filters />
+    <last-used-operator value="LIKE" />
+    <filters>
+      <filter connection-id="5e8ac823-060d-4a7a-9b7b-f065e5c0ea9a" schema="" object-type="schema" join-type="AND">
+        <condition operator="LIKE" pattern="public" active="true" />
+      </filter>
+    </filters>
   </component>
   <component name="DBNavigator.Project.ParserDiagnosticsManager">
     <diagnostics-history />
@@ -67,17 +71,17 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="3b3b3c57-c4e3-4e29-9e02-d2456af43841" active="true" signed="false">
+      <connection id="5e8ac823-060d-4a7a-9b7b-f065e5c0ea9a" active="true" signed="false">
         <database>
-          <name value="shopdb" />
-          <description value="shopdb" />
+          <name value="demodb" />
+          <description value="demodb" />
           <database-type value="GENERIC" />
           <config-type value="CUSTOM" />
-          <database-version value="9999.0" />
+          <database-version value="1.4" />
           <driver-source value="EXTERNAL" />
           <driver-library value="$PROJECT_DIR$/../demodatabase/h2/bin/h2-1.4.199.jar" />
           <driver value="org.h2.Driver" />
-          <url value="" />
+          <url value="jdbc:h2:tcp://192.200.100.3:9092/~/shopdb;AUTO_SERVER=true" />
           <type value="USER_PASSWORD" />
           <user value="admin" />
           <deprecated-pwd value="amo3OG12cHI1Mmsx" />
@@ -106,7 +110,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="true" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
@@ -318,7 +322,7 @@
             <filter-element type="OBJECT" id="index" selected="true" />
             <filter-element type="OBJECT" id="constraint" selected="true" />
             <filter-element type="OBJECT" id="trigger" selected="true" />
-            <filter-element type="OBJECT" id="synonym" selected="false" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
             <filter-element type="OBJECT" id="sequence" selected="true" />
             <filter-element type="OBJECT" id="procedure" selected="true" />
             <filter-element type="OBJECT" id="function" selected="true" />
@@ -329,21 +333,21 @@
             <filter-element type="OBJECT" id="dblink" selected="true" />
           </user-schema>
           <public-schema>
-            <filter-element type="OBJECT" id="table" selected="false" />
-            <filter-element type="OBJECT" id="view" selected="false" />
-            <filter-element type="OBJECT" id="materialized view" selected="false" />
-            <filter-element type="OBJECT" id="index" selected="false" />
-            <filter-element type="OBJECT" id="constraint" selected="false" />
-            <filter-element type="OBJECT" id="trigger" selected="false" />
-            <filter-element type="OBJECT" id="synonym" selected="false" />
-            <filter-element type="OBJECT" id="sequence" selected="false" />
-            <filter-element type="OBJECT" id="procedure" selected="false" />
-            <filter-element type="OBJECT" id="function" selected="false" />
-            <filter-element type="OBJECT" id="package" selected="false" />
-            <filter-element type="OBJECT" id="type" selected="false" />
-            <filter-element type="OBJECT" id="dimension" selected="false" />
-            <filter-element type="OBJECT" id="cluster" selected="false" />
-            <filter-element type="OBJECT" id="dblink" selected="false" />
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
           </public-schema>
           <any-schema>
             <filter-element type="OBJECT" id="table" selected="true" />

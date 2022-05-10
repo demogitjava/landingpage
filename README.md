@@ -2,6 +2,9 @@
 ============================================================
 
 
+used db -> shopdb
+
+
 to edit the text in the demo application
 copy the segment and 
 paste it with the editor to save
