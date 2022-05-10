@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/i_de_wiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +81,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/wiki/de" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -87,7 +93,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.tomcat">
+  <component name="RunManager" selected="Docker.Landingpage">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
@@ -466,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652179573753</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary=".">
+      <created>1652181617979</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1652181617979</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +512,6 @@
     <MESSAGE value="edit path for save &#10;about &#10;service &#10;and contact html pages form &#10;websitebuilder to tempaltes folder to&#10;display data" />
     <MESSAGE value="delete button over form &#10;because the editor didt not &#10;parse the data to save.&#10;&#10;use manual field the secode textfield to &#10;load the pages and save them to &#10;the template folder" />
     <MESSAGE value="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder" />
-    <MESSAGE value="." />
     <MESSAGE value="edit footer.html" />
     <MESSAGE value="edit reamed" />
     <MESSAGE value="add simple html backup" />
@@ -509,7 +521,19 @@
     <MESSAGE value="edit html fontend with theamleay tags form h2 database &#10;to parse text" />
     <MESSAGE value="edit properties &#10;start theamleaf engine with mode html5" />
     <MESSAGE value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
