@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/landingpage/wiki.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/lanserver/wiki.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/webshop/wiki.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/landingpage/wiki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lanserver/wiki.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/webshop/wiki.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Landingpage">
+  <component name="RunManager" selected="Docker.tomcat">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
@@ -131,6 +132,24 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="tomcat:10" />
+          <option name="containerName" value="wiki" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="Landingpage" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
@@ -191,14 +210,36 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="tomcat" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="tomcat:10-jdk11" />
+          <option name="containerName" value="tomcatwiki" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Docker.Landingpage" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.tomcat" />
       <item itemvalue="JUnit.All in landingpage" />
       <item itemvalue="Remote JVM Debug.Landingpage remote debug" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.tomcat" />
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="JUnit.All in landingpage" />
       </list>
     </recent_temporary>
@@ -415,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652170446198</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="edit properties &#10;start theamleaf engine with mode html5">
+      <created>1652172514566</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652172514566</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +504,8 @@
     <MESSAGE value="edit lpagewebbuilder.html" />
     <MESSAGE value="edit application.properties to start h2 server" />
     <MESSAGE value="edit html fontend with theamleay tags form h2 database &#10;to parse text" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit html fontend with theamleay tags form h2 database &#10;to parse text" />
+    <MESSAGE value="edit properties &#10;start theamleaf engine with mode html5" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit properties &#10;start theamleaf engine with mode html5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
