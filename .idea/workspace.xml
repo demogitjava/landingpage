@@ -265,7 +265,7 @@
       <workItem from="1651900981399" duration="1873000" />
       <workItem from="1652247987948" duration="744000" />
       <workItem from="1652248733999" duration="6334000" />
-      <workItem from="1652261952402" duration="11921000" />
+      <workItem from="1652261952402" duration="12490000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -491,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652329763008</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="edit wiki">
+      <created>1652335276560</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652335276560</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,9 +543,9 @@
     <MESSAGE value="add simple html wiki page german" />
     <MESSAGE value="add html wikipage bootstrap js and css files" />
     <MESSAGE value="add simple wiki german only at the moment" />
-    <MESSAGE value="edit wiki" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit wiki" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
