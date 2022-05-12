@@ -20,39 +20,25 @@ public class de_wiki implements i_de_wiki
     IServiceIndex iServiceIndex;
     @Autowired
     HttpServletRequest request;
-    ModelAndView mv;
+
 
     Principal principal;
     @Override
     public ModelAndView wiki()
     {
 
-        mv = new ModelAndView("wiki");
-
-        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
-
-        principal = request.getUserPrincipal();
-
-        mv = new ModelAndView("de");
 
 
-        /*
-                user login
-         */
-        if(principal == null)
-        {
-            System.out.print("not login");
-        }
-        else {
-            mv.addObject("lgusername", "User: " + principal.getName());
 
-        }
+        ModelAndView mv = new ModelAndView("wiki");
+
+
 
         /**
          *   Get Country to display Language
          *   only for this Controller
          */
-
+        String languagestr = RequestContextUtils.getLocale(request).getLanguage();
         mv.addObject("lang", languagestr);
 
 
@@ -64,7 +50,6 @@ public class de_wiki implements i_de_wiki
          */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
         mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
-
 
         return mv;
     }

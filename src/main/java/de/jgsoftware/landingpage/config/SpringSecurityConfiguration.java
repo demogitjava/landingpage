@@ -52,6 +52,8 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.authorizeRequests()
 				.antMatchers(
 						"/index.html",
+						"/wiki.html",
+						"lpagewebbuilder.html",
 						"/signup.html",
 						"/userlogin.html",
 						"/lpagewebbuilder",
