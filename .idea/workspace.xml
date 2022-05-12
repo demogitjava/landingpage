@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +265,7 @@
       <workItem from="1651900981399" duration="1873000" />
       <workItem from="1652247987948" duration="744000" />
       <workItem from="1652248733999" duration="6334000" />
-      <workItem from="1652261952402" duration="15708000" />
+      <workItem from="1652261952402" duration="15891000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -514,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652337431391</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="edit header tag&#10;de_header.">
+      <created>1652340243774</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1652340243774</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +566,8 @@
     <MESSAGE value="add simple wiki german only at the moment" />
     <MESSAGE value="edit wiki" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit header tag&#10;de_header." />
+    <option name="LAST_COMMIT_MESSAGE" value="edit header tag&#10;de_header." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
