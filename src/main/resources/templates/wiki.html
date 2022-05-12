@@ -29,10 +29,23 @@
 
 <div class="container">
         <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Wiki </h1>
+                <p></p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=FVMA1k_11Lo" role="button">YouTube Channel</a>
+                </p>
+            </div>
+        </div>
+        <div class="jumbotron">
                     <div class="col-sm-12">
                         <h1>Landingpage</h1>
                         <p>Dieses Wiki ist im Moment noch auf Deutsch,</p>
-                        <h2>youtube:</h2>
+
+                        <p>
+                            <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=FVMA1k_11Lo" role="button">YouTube Channel</a>
+                        </p>
+                        <p>URL:</p>
                         <h2>https://www.youtube.com/watch?v=FVMA1k_11Lo</h2>
                     </div>
 
@@ -69,8 +82,10 @@
                         </pre>
                         <h2>Docker ports</h2>
                         <p>Host port static ip 80 -> 80</p>
-                        <p>optional ports for h2 server sind</p>
-                        <p>8082 für h2 console und 9092 für optional jdbc connect to database</p>
+                        <p>optional ports für h2 server sind</p>
+                        <p>8082 h2 console </p>
+                        <p>9092 tcp connect for sql client to edit data</p>
+                        <p>5005 optional for debug</p>
                         <p></p>
                         <h2>Run Options</h2>
                         <pre>--network=192.200.100.254/24 --add-host jgsoftware.de:217.160.255.254</pre>
