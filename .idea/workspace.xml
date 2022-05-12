@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +263,7 @@
       <workItem from="1652248733999" duration="6334000" />
       <workItem from="1652261952402" duration="17669000" />
       <workItem from="1652342498325" duration="425000" />
-      <workItem from="1652342943615" duration="1510000" />
+      <workItem from="1652342943615" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -538,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652344375004</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add simple nav to contact.html">
+      <created>1652344478254</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1652344478254</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add function to load html pages manuel to editor" />
     <MESSAGE value="load &#10;contact.html&#10;service.html&#10;about.html&#10;to websitebuilder after login" />
     <MESSAGE value="add shell methods for running the programm &#10;not under docker.&#10;&#10;shell Mehtods&#10;start h2 database&#10;copy h2 database file from github to user directory" />
     <MESSAGE value="edit db config" />
@@ -588,14 +594,15 @@
     <MESSAGE value="." />
     <MESSAGE value="add header to wiki.html" />
     <MESSAGE value="edit file type to html wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit file type to html wiki.html" />
+    <MESSAGE value="add simple nav to contact.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple nav to contact.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

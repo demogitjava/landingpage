@@ -21,6 +21,7 @@ public class de_wiki implements i_de_wiki
     @Autowired
     HttpServletRequest request;
 
+    ModelAndView mv;
 
     Principal principal;
     @Override
@@ -30,7 +31,7 @@ public class de_wiki implements i_de_wiki
 
 
 
-        ModelAndView mv = new ModelAndView("wiki");
+        mv = new ModelAndView("wiki");
 
 
 
