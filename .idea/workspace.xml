@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
@@ -265,7 +265,7 @@
       <workItem from="1651900981399" duration="1873000" />
       <workItem from="1652247987948" duration="744000" />
       <workItem from="1652248733999" duration="6334000" />
-      <workItem from="1652261952402" duration="4107000" />
+      <workItem from="1652261952402" duration="9720000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -470,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652265005037</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary=".">
+      <created>1652268614264</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1652268614264</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,9 +521,9 @@
     <MESSAGE value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
     <MESSAGE value="add simple html wiki page german" />
     <MESSAGE value="add html wikipage bootstrap js and css files" />
-    <MESSAGE value="." />
     <MESSAGE value="add simple wiki german only at the moment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple wiki german only at the moment" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
