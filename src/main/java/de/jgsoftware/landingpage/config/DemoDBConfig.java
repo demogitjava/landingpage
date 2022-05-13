@@ -41,7 +41,7 @@ import java.util.Map;
 @Configuration
 @EnableTransactionManagement
 
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.fibu",
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces",
         entityManagerFactoryRef = "entityManagerFactory",
         transactionManagerRef = "transactionManager")
 public class DemoDBConfig extends HikariConfig

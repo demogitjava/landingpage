@@ -16,6 +16,7 @@ public class de_wiki implements i_de_wiki
 {
 
     java.util.Locale locale;
+
     @Autowired
     IServiceIndex iServiceIndex;
     @Autowired
