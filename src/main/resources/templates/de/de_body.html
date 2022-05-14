@@ -57,9 +57,17 @@
                 <div class="card-body">
                     <h2 class="card-title" th:text="${webtextcomp[13].de}"></h2> <!-- LanServer -->
                     <p class="card-text" th:text="${webtextcomp[14].de}"></p>
+                    <p class="card-text" th:text="${webtextcomp[16].de}"></p> <!-- jar ausführen -->
+                    <pre th:text="${webtextcomp[17].de}">
+
+                    </pre>
+                    <p></p>
                 </div>
                 <div class="card-footer">
                     <a href="jarclients/JDesktopClient.jar" class="btn btn-primary btn-sm">download Desktop Client as jar</a>
+                </div>
+                <div class="card-footer">
+                    <a th:href="@{/wiki}" class="btn btn-primary btn-sm">More Info</a>
                 </div>
             </div>
         </div>
