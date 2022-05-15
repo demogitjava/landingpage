@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/default.ovpn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +77,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/templates",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "http.proxy"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -259,7 +268,7 @@
       <workItem from="1652508253129" duration="32000" />
       <workItem from="1652524168697" duration="22000" />
       <workItem from="1652524742912" duration="1065000" />
-      <workItem from="1652530666181" duration="1593000" />
+      <workItem from="1652530666181" duration="16218000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -569,7 +578,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652531600873</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="edit de_body.html&#10;download jar file &#10;and link card_footer">
+      <created>1652532325419</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1652532325419</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit path for save &#10;about &#10;service &#10;and contact html pages form &#10;websitebuilder to tempaltes folder to&#10;display data" />
     <MESSAGE value="delete button over form &#10;because the editor didt not &#10;parse the data to save.&#10;&#10;use manual field the secode textfield to &#10;load the pages and save them to &#10;the template folder" />
     <MESSAGE value="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder" />
     <MESSAGE value="edit footer.html" />
@@ -619,7 +634,8 @@
     <MESSAGE value="edit demodb config" />
     <MESSAGE value="add desktop jar for module &#10;lan server" />
     <MESSAGE value="edit url to download&#10;desktopclient jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit url to download&#10;desktopclient jar" />
+    <MESSAGE value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
