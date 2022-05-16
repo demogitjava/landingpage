@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/default.ovpn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/templates",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
@@ -268,7 +261,8 @@
       <workItem from="1652508253129" duration="32000" />
       <workItem from="1652524168697" duration="22000" />
       <workItem from="1652524742912" duration="1065000" />
-      <workItem from="1652530666181" duration="16218000" />
+      <workItem from="1652530666181" duration="18032000" />
+      <workItem from="1652697579348" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -585,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652532325419</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary=".">
+      <created>1652628154771</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1652628154771</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +627,6 @@
     <MESSAGE value="add simple wiki german only at the moment" />
     <MESSAGE value="edit wiki" />
     <MESSAGE value="edit header tag&#10;de_header." />
-    <MESSAGE value="." />
     <MESSAGE value="add header to wiki.html" />
     <MESSAGE value="edit file type to html wiki.html" />
     <MESSAGE value="add simple nav to contact.html" />
@@ -635,7 +635,8 @@
     <MESSAGE value="add desktop jar for module &#10;lan server" />
     <MESSAGE value="edit url to download&#10;desktopclient jar" />
     <MESSAGE value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

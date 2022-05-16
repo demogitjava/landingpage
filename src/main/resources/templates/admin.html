@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" th:lang="${lang}">
 
-<head>
+<header>
     <meta charset="ISO-8859-1">
     <title></title>
 
@@ -23,15 +23,15 @@
     <!-- Bootstrap core JavaScript -->
     <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script>
     <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.js}"></script>
-</head>
-    <body sec:authorize="isAuthenticated()">
 
 
-        <div class="container">
+</header>
+
+
+    <body class="container" sec:authorize="isAuthenticated()">
 
 
 
-        </div>
 
     </body>
 </html>
