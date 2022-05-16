@@ -53,6 +53,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers(
 						"/index.html",
 						"/wiki.html",
+						"/admin.html",
 						"lpagewebbuilder.html",
 						"/signup.html",
 						"/userlogin.html",

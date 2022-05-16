@@ -22,6 +22,10 @@ import java.sql.SQLException;
 public class DemoLandingPageApplication implements iDemoLandingPage {
 
 
+
+    // java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers
+
+
     //@Override
     //public static void main(String[] args) {
       //  SpringApplication.run(DemoLandingPageApplication.class, args);
