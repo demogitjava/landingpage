@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/Int_m_webtextlayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classrun.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/DemoLandingPageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/DemoLandingPageApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +273,7 @@
       <workItem from="1652524742912" duration="1065000" />
       <workItem from="1652530666181" duration="18032000" />
       <workItem from="1652697579348" duration="6847000" />
-      <workItem from="1652709237253" duration="3094000" />
+      <workItem from="1652709237253" duration="5193000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1651407274416</created>
@@ -614,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652700271144</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout">
+      <created>1652721516122</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1652721516122</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,7 +636,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder" />
     <MESSAGE value="edit footer.html" />
     <MESSAGE value="edit reamed" />
     <MESSAGE value="add simple html backup" />
@@ -664,7 +660,8 @@
     <MESSAGE value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
     <MESSAGE value="." />
     <MESSAGE value="edit admin page header" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit admin page header" />
+    <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
+    <option name="LAST_COMMIT_MESSAGE" value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -678,6 +675,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
           <line>49</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java</url>
+          <line>15</line>
+          <properties class="de.jgsoftware.landingpage.controller.interfaces.iAdminController" method="admincontroller">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

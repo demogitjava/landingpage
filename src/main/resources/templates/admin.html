@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" th:lang="${lang}">
-
+<html  xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" th:lang="${lang}">
 <header>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
 
 
     <meta charset="ISO-8859-1">
@@ -30,7 +29,7 @@
 
     <body class="container" sec:authorize="isAuthenticated()">
 
-    <div id="tablecrud">
+         <div id="tablecrud">
         <table class="table table-striped">
             <thead>
             <tr>
@@ -146,5 +145,13 @@
         </table>
     </div>
 
+
+    </body >
+
+
+    <body sec:authorize="!isAuthenticated()">
+
+                <p>bitte einlogen</p>
+                <a href="/login">login</a>
     </body>
 </html>
