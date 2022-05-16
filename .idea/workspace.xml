@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,14 +271,7 @@
       <workItem from="1652524742912" duration="1065000" />
       <workItem from="1652530666181" duration="18032000" />
       <workItem from="1652697579348" duration="6847000" />
-      <workItem from="1652709237253" duration="5588000" />
-    </task>
-    <task id="LOCAL-00001" summary=".">
-      <created>1651407274416</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1651407274416</updated>
+      <workItem from="1652709237253" duration="5736000" />
     </task>
     <task id="LOCAL-00002" summary="add function to load html pages manuel to editor">
       <created>1651482988435</created>
@@ -617,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652723676753</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="edit de landingpage">
+      <created>1652724112774</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1652724112775</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +641,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit footer.html" />
     <MESSAGE value="edit reamed" />
     <MESSAGE value="add simple html backup" />
     <MESSAGE value="edit header de" />
@@ -667,7 +665,8 @@
     <MESSAGE value="edit admin page header" />
     <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit de landingpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de landingpage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
