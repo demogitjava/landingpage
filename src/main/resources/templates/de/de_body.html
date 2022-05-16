@@ -1,4 +1,5 @@
 <!-- Page Content -->
+<meta charset="UTF-8">
 <div class="container" xmlns:th="http://www.w3.org/1999/xhtml">
 
     <!-- Heading Row -->
@@ -33,7 +34,10 @@
                 <div class="card-body">
                     <h2 class="card-title" th:text="${webtextcomp[9].de}"></h2> <!-- landingpage -->
                     <p class="card-text" th:text="${webtextcomp[10].de}"></p>
-
+                    <p>im Moment is die Datenbank nur duch das starten ueber den
+                    Container Terminal mit dem Befehl </p>
+                    <pre>java -jar /root/h2/bin/h2-1.4.199.jar -webAllowOthers -tcpAllowOthers</pre>
+                    <p>ausfuehrbar. Die Tabelle ist webtextcomponents</p>
                     <hr/>
                     <p>Username and password</p>
                     <hr/>
