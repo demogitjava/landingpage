@@ -271,14 +271,7 @@
       <workItem from="1652524742912" duration="1065000" />
       <workItem from="1652530666181" duration="18032000" />
       <workItem from="1652697579348" duration="6847000" />
-      <workItem from="1652709237253" duration="5736000" />
-    </task>
-    <task id="LOCAL-00002" summary="add function to load html pages manuel to editor">
-      <created>1651482988435</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1651482988435</updated>
+      <workItem from="1652709237253" duration="6543000" />
     </task>
     <task id="LOCAL-00003" summary="load &#10;contact.html&#10;service.html&#10;about.html&#10;to websitebuilder after login">
       <created>1651488071871</created>
@@ -616,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652724112775</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary=".">
+      <created>1652724217286</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1652724217286</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,9 +664,9 @@
     <MESSAGE value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
     <MESSAGE value="edit admin page header" />
     <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
-    <MESSAGE value="." />
     <MESSAGE value="edit de landingpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de landingpage" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

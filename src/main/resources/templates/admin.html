@@ -28,130 +28,132 @@
 
 
     <body class="container" sec:authorize="isAuthenticated()">
+            <div class="container">
+                <div id="tablecrud">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>Framename</th>
+                            <th>German</th>
+                            <th>English</th>
+                            <th>French</th>
+                            <th>Spanish</th>
+                            <th>Italian</th>
+                            <th>Turkish</th>
+                            <th>bindto</th>
+                            <th>Template</th>
+                            <th>Title Template</th>
+                            <th>Edit</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="webtextlayout : ${listtemplate}">
+                            <td th:text="${webtextlayout.id}">id</td>
+                            <td th:text="${webtextlayout.framename}">Framename</td>
+                            <td th:text="${webtextlayout.de}">German</td>
+                            <td th:text="${webtextlayout.en}">English</td>
+                            <td th:text="${webtextlayout.fr}">French</td>
+                            <td th:text="${webtextlayout.es}">Spanish</td>
+                            <td th:text="${webtextlayout.it}">Italian</td>
+                            <td th:text="${webtextlayout.tr}">Turkish</td>
+                            <td th:text="${webtextlayout.bindto}">bindto</td>
+                            <td th:text="${webtextlayout.template}">Template</td>
+                            <td th:text="${webtextlayout.titletemplate}">Title Template</td>
+                            <td>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" th:attrappend="data-target=${webtextlayout.id}">
+                                    Edit
+                                </button>
 
-         <div id="tablecrud">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Framename</th>
-                <th>German</th>
-                <th>English</th>
-                <th>French</th>
-                <th>Spanish</th>
-                <th>Italian</th>
-                <th>Turkish</th>
-                <th>bindto</th>
-                <th>Template</th>
-                <th>Title Template</th>
-                <th>Edit</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="webtextlayout : ${listtemplate}">
-                <td th:text="${webtextlayout.id}">id</td>
-                <td th:text="${webtextlayout.framename}">Framename</td>
-                <td th:text="${webtextlayout.de}">German</td>
-                <td th:text="${webtextlayout.en}">English</td>
-                <td th:text="${webtextlayout.fr}">French</td>
-                <td th:text="${webtextlayout.es}">Spanish</td>
-                <td th:text="${webtextlayout.it}">Italian</td>
-                <td th:text="${webtextlayout.tr}">Turkish</td>
-                <td th:text="${webtextlayout.bindto}">bindto</td>
-                <td th:text="${webtextlayout.template}">Template</td>
-                <td th:text="${webtextlayout.titletemplate}">Title Template</td>
-                <td>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" th:attrappend="data-target=${webtextlayout.id}">
-                        Edit
-                    </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" role="dialog" th:attrappend="id=${webtextlayout.id}" >
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="headertitle">Modal title</h5>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" role="dialog" th:attrappend="id=${webtextlayout.id}" >
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="headertitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!--
+                                                       <form action="#" th:action="@{/students/update/{id}(id=${student.id})}" th:object="${student}" method="post">
+                                                -->
+                                                <form action="#" th:action="@{/edit/crudlist}" method="post">
 
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <!--
-                                           <form action="#" th:action="@{/students/update/{id}(id=${student.id})}" th:object="${student}" method="post">
-                                    -->
-                                    <form action="#" th:action="@{/edit/crudlist}" method="post">
+                                                    <div class="form-group col-md-12">
 
-                                        <div class="form-group col-md-12">
+                                                        <label class="label label-default">ID
+                                                            <input type="text"  th:value="${webtextlayout.id}" class="form-control" id="id" name="id" placeholder="id"/>
+                                                        </label>
 
-                                            <label class="label label-default">ID
-                                                <input type="text"  th:value="${webtextlayout.id}" class="form-control" id="id" name="id" placeholder="id"/>
-                                            </label>
+                                                        <label class="label label-default">Framename
+                                                            <input type="text"  th:value="${webtextlayout.framename}" class="form-control" id="framename" name="framename" placeholder="Framename"/>
+                                                        </label>
 
-                                            <label class="label label-default">Framename
-                                                <input type="text"  th:value="${webtextlayout.framename}" class="form-control" id="framename" name="framename" placeholder="Framename"/>
-                                            </label>
+                                                        <label class="label label-default">de
+                                                            <input type="text" th:value="${webtextlayout.de}" class="form-control" id="de" placeholder="de" name="de"/>
+                                                        </label>
 
-                                            <label class="label label-default">de
-                                                <input type="text" th:value="${webtextlayout.de}" class="form-control" id="de" placeholder="de" name="de"/>
-                                            </label>
+                                                        <label class="label label-default">en
+                                                            <input type="text" th:value="${webtextlayout.en}" class="form-control" id="en" placeholder="en" name="en"/>
+                                                        </label>
 
-                                            <label class="label label-default">en
-                                                <input type="text" th:value="${webtextlayout.en}" class="form-control" id="en" placeholder="en" name="en"/>
-                                            </label>
+                                                        <label class="label label-default">fr
+                                                            <input type="text" th:value="${webtextlayout.fr}" class="form-control" id="fr" placeholder="fr" name="fr"/>
+                                                        </label>
 
-                                            <label class="label label-default">fr
-                                                <input type="text" th:value="${webtextlayout.fr}" class="form-control" id="fr" placeholder="fr" name="fr"/>
-                                            </label>
+                                                        <label class="label label-default">ESP
+                                                            <input type="text" th:value="${webtextlayout.es}" class="form-control" id="es" placeholder="esp" name="es"/>
+                                                        </label>
 
-                                            <label class="label label-default">ESP
-                                                <input type="text" th:value="${webtextlayout.es}" class="form-control" id="es" placeholder="esp" name="es"/>
-                                            </label>
+                                                        <label class="label label-default">it
+                                                            <input type="text" th:value="${webtextlayout.it}" class="form-control" id="it" placeholder="it" name="it"/>
+                                                        </label>
 
-                                            <label class="label label-default">it
-                                                <input type="text" th:value="${webtextlayout.it}" class="form-control" id="it" placeholder="it" name="it"/>
-                                            </label>
+                                                        <label class="label label-default">tr
+                                                            <input type="text" th:value="${webtextlayout.tr}" class="form-control" id="tr" placeholder="tr" name="tr"/>
+                                                        </label>
 
-                                            <label class="label label-default">tr
-                                                <input type="text" th:value="${webtextlayout.tr}" class="form-control" id="tr" placeholder="tr" name="tr"/>
-                                            </label>
+                                                        <label class="label label-default">bindto
+                                                            <input type="text" th:value="${webtextlayout.bindto}" class="form-control" id="bindto" placeholder="Framename" name="bindto"/>
+                                                        </label>
 
-                                            <label class="label label-default">bindto
-                                                <input type="text" th:value="${webtextlayout.bindto}" class="form-control" id="bindto" placeholder="Framename" name="bindto"/>
-                                            </label>
-
-                                            <label class="label label-default">comp_name
-                                                <input type="text" th:value="${webtextlayout.comp_name}" class="form-control" id="comp_name" placeholder="Framename" name="comp_name"/>
-                                            </label>
+                                                        <label class="label label-default">comp_name
+                                                            <input type="text" th:value="${webtextlayout.comp_name}" class="form-control" id="comp_name" placeholder="Framename" name="comp_name"/>
+                                                        </label>
 
 
+                                                    </div>
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                                </form>
+
+                                            </div>
+                                            <div class="modal-footer">
+
+                                            </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                    </form>
-
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
     </body >
 
 
     <body sec:authorize="!isAuthenticated()">
 
-                <p>bitte einlogen</p>
-                <a href="/login">login</a>
+                <div class="container">
+                    <p>bitte einlogen</p>
+                    <a href="/login">login</a>
+                </div>
     </body>
 </html>
