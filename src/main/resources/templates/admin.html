@@ -28,7 +28,9 @@
 
 
     <body class="container" sec:authorize="isAuthenticated()">
+
             <div class="container">
+
                 <div id="tablecrud">
                     <table class="table table-striped">
                         <thead>
@@ -144,9 +146,10 @@
                         </tbody>
                     </table>
                 </div>
+
             </div>
 
-    </body >
+    </body>
 
 
     <body sec:authorize="!isAuthenticated()">
@@ -156,4 +159,5 @@
                     <a href="/login">login</a>
                 </div>
     </body>
+
 </html>

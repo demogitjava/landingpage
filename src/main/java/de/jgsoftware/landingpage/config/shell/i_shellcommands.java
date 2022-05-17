@@ -13,5 +13,5 @@ public interface i_shellcommands
     String startdatabase() throws IOException;
 
     @ShellMethod("install h2 databases from github with type command --->  idemodatabase getinstall")
-    public String idemodatabase(String database);
+    String idemodatabase(String database);
 }
