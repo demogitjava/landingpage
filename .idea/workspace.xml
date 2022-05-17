@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="edit de_body.html">
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
@@ -286,14 +286,7 @@
       <workItem from="1652820800190" duration="308000" />
       <workItem from="1652821109701" duration="145000" />
       <workItem from="1652821279524" duration="1052000" />
-      <workItem from="1652822333275" duration="161000" />
-    </task>
-    <task id="LOCAL-00006" summary="edit db config">
-      <created>1651658068848</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1651658068848</updated>
+      <workItem from="1652822333275" duration="305000" />
     </task>
     <task id="LOCAL-00007" summary=".">
       <created>1651741876642</created>
@@ -631,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652807363380</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="edit de_body.html">
+      <created>1652822518431</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1652822518432</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
