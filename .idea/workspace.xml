@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +189,7 @@
               </DockerVolumeBindingImpl>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="$USER_HOME$/" />
-                <option name="hostPath" value="$PROJECT_DIR$/../demodatabase" />
+                <option name="hostPath" value="$PROJECT_DIR$/../demodatabase/" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -286,14 +295,7 @@
       <workItem from="1652820800190" duration="308000" />
       <workItem from="1652821109701" duration="145000" />
       <workItem from="1652821279524" duration="1052000" />
-      <workItem from="1652822333275" duration="512000" />
-    </task>
-    <task id="LOCAL-00008" summary="add form &#10;from about service and contact.html&#10;&#10;the forms are loaded over the theamleaf engine">
-      <created>1651747187042</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1651747187042</updated>
+      <workItem from="1652822333275" duration="1837000" />
     </task>
     <task id="LOCAL-00009" summary=".">
       <created>1651749177304</created>
@@ -631,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652822679791</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="edit service.html">
+      <created>1652822863437</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1652822863437</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit lpagewebbuilder.html" />
     <MESSAGE value="edit application.properties to start h2 server" />
     <MESSAGE value="edit html fontend with theamleay tags form h2 database &#10;to parse text" />
     <MESSAGE value="edit properties &#10;start theamleaf engine with mode html5" />
@@ -681,7 +689,8 @@
     <MESSAGE value="edit admin page" />
     <MESSAGE value="edit schell methods" />
     <MESSAGE value="edit de_body.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de_body.html" />
+    <MESSAGE value="edit service.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit service.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
