@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
@@ -289,14 +288,7 @@
       <workItem from="1652821109701" duration="145000" />
       <workItem from="1652821279524" duration="1052000" />
       <workItem from="1652822333275" duration="5147000" />
-      <workItem from="1652850460819" duration="508000" />
-    </task>
-    <task id="LOCAL-00012" summary=".">
-      <created>1651823748504</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1651823748504</updated>
+      <workItem from="1652850460819" duration="593000" />
     </task>
     <task id="LOCAL-00013" summary="laod components &#10;for about service and contact over &#10;manuel load &#10;&#10;field 1 type &#10;--&#10;&#10;field 2 type&#10;comp name   like about or contact or service&#10;to dispaly the component in the website builder">
       <created>1651825560353</created>
@@ -634,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652850335388</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="edit en">
+      <created>1652850998328</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1652850998329</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
     <MESSAGE value="add simple html wiki page german" />
     <MESSAGE value="add html wikipage bootstrap js and css files" />
     <MESSAGE value="add simple wiki german only at the moment" />
@@ -684,7 +682,8 @@
     <MESSAGE value="edit languagepages for &#10;en_body&#10;es_body&#10;fr_body&#10;it_body&#10;tr_body" />
     <MESSAGE value="add bootstrap combo box to &#10;&#10;de_body.html" />
     <MESSAGE value="add nav button for language" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nav button for language" />
+    <MESSAGE value="edit en" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
