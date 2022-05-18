@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +288,8 @@
       <workItem from="1652820800190" duration="308000" />
       <workItem from="1652821109701" duration="145000" />
       <workItem from="1652821279524" duration="1052000" />
-      <workItem from="1652822333275" duration="4929000" />
-    </task>
-    <task id="LOCAL-00011" summary="delete button over form &#10;because the editor didt not &#10;parse the data to save.&#10;&#10;use manual field the secode textfield to &#10;load the pages and save them to &#10;the template folder">
-      <created>1651814390497</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1651814390497</updated>
+      <workItem from="1652822333275" duration="5147000" />
+      <workItem from="1652850460819" duration="508000" />
     </task>
     <task id="LOCAL-00012" summary=".">
       <created>1651823748504</created>
@@ -639,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652841943633</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="add nav button for language">
+      <created>1652850335387</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1652850335388</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit properties &#10;start theamleaf engine with mode html5" />
     <MESSAGE value="delete wiki folder&#10;&#10;start a second tomcat server with html wiki files &#10;to module porject" />
     <MESSAGE value="add simple html wiki page german" />
     <MESSAGE value="add html wikipage bootstrap js and css files" />
@@ -689,7 +683,8 @@
     <MESSAGE value="edit service.html" />
     <MESSAGE value="edit languagepages for &#10;en_body&#10;es_body&#10;fr_body&#10;it_body&#10;tr_body" />
     <MESSAGE value="add bootstrap combo box to &#10;&#10;de_body.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bootstrap combo box to &#10;&#10;de_body.html" />
+    <MESSAGE value="add nav button for language" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nav button for language" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
