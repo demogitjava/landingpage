@@ -293,14 +293,7 @@
       <workItem from="1652821279524" duration="1052000" />
       <workItem from="1652822333275" duration="5147000" />
       <workItem from="1652850460819" duration="3320000" />
-      <workItem from="1652874356899" duration="1371000" />
-    </task>
-    <task id="LOCAL-00016" summary="edit reamed">
-      <created>1651847453045</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1651847453045</updated>
+      <workItem from="1652874356899" duration="3056000" />
     </task>
     <task id="LOCAL-00017" summary="edit reamed">
       <created>1651847586924</created>
@@ -638,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652875251018</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="edit wiki">
+      <created>1652875739344</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1652875739344</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +664,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add simple wiki german only at the moment" />
-    <MESSAGE value="edit wiki" />
     <MESSAGE value="edit header tag&#10;de_header." />
     <MESSAGE value="add header to wiki.html" />
     <MESSAGE value="edit file type to html wiki.html" />
@@ -688,7 +687,8 @@
     <MESSAGE value="edit en" />
     <MESSAGE value="add button to change language" />
     <MESSAGE value="edit language button" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit language button" />
+    <MESSAGE value="edit wiki" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
