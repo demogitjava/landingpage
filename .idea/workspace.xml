@@ -11,8 +11,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -300,14 +303,7 @@
       <workItem from="1652821279524" duration="1052000" />
       <workItem from="1652822333275" duration="5147000" />
       <workItem from="1652850460819" duration="3320000" />
-      <workItem from="1652874356899" duration="330000" />
-    </task>
-    <task id="LOCAL-00014" summary=".">
-      <created>1651826113531</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1651826113531</updated>
+      <workItem from="1652874356899" duration="860000" />
     </task>
     <task id="LOCAL-00015" summary="edit footer.html">
       <created>1651826568046</created>
@@ -645,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652851068358</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add button to change language">
+      <created>1652874719103</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874719103</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +673,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add simple html wiki page german" />
     <MESSAGE value="add html wikipage bootstrap js and css files" />
     <MESSAGE value="add simple wiki german only at the moment" />
     <MESSAGE value="edit wiki" />
@@ -695,7 +697,8 @@
     <MESSAGE value="add bootstrap combo box to &#10;&#10;de_body.html" />
     <MESSAGE value="add nav button for language" />
     <MESSAGE value="edit en" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit en" />
+    <MESSAGE value="add button to change language" />
+    <option name="LAST_COMMIT_MESSAGE" value="add button to change language" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
