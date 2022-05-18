@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="ISO-8859-1">
     <file url="file://$PROJECT_DIR$/Dockerfile" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/Dockerfilesuseleap" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/README.md" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/build.grandle" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/img/900x400.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/img/Screenshot.jpeg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/img/about.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/img/about.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/jarclients/JDesktopClient.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/target/classes/templates/en/en_body.html" charset="UTF-8" />
+    <file url="PROJECT" charset="ISO-8859-1" />
   </component>
 </project>
