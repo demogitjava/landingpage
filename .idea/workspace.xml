@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,14 +293,7 @@
       <workItem from="1652821279524" duration="1052000" />
       <workItem from="1652822333275" duration="5147000" />
       <workItem from="1652850460819" duration="3320000" />
-      <workItem from="1652874356899" duration="3056000" />
-    </task>
-    <task id="LOCAL-00017" summary="edit reamed">
-      <created>1651847586924</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1651847586924</updated>
+      <workItem from="1652874356899" duration="3984000" />
     </task>
     <task id="LOCAL-00018" summary="add simple html backup">
       <created>1651850519593</created>
@@ -638,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652875739344</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary=".">
+      <created>1652877427172</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1652877427172</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +676,6 @@
     <MESSAGE value="edit admin page header" />
     <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
     <MESSAGE value="edit de landingpage" />
-    <MESSAGE value="." />
     <MESSAGE value="edit admin page" />
     <MESSAGE value="edit schell methods" />
     <MESSAGE value="edit de_body.html" />
@@ -688,7 +687,8 @@
     <MESSAGE value="add button to change language" />
     <MESSAGE value="edit language button" />
     <MESSAGE value="edit wiki" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
