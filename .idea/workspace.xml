@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="edit language dropdown">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/contact_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/contact_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,14 +345,8 @@
       <workItem from="1653390636281" duration="22000" />
       <workItem from="1653464252233" duration="104000" />
       <workItem from="1653464702219" duration="44000" />
-      <workItem from="1653554571692" duration="419000" />
-    </task>
-    <task id="LOCAL-00020" summary="edit lpagewebbuilder.html">
-      <created>1652002756227</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1652002756227</updated>
+      <workItem from="1653554571692" duration="1009000" />
+      <workItem from="1653555967635" duration="24000" />
     </task>
     <task id="LOCAL-00021" summary="edit application.properties to start h2 server">
       <created>1652079109889</created>
@@ -691,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652947454280</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="edit smtp properties to send email over gmx.net">
+      <created>1653555075201</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1653555075202</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -716,7 +716,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit header tag&#10;de_header." />
     <MESSAGE value="add header to wiki.html" />
     <MESSAGE value="edit file type to html wiki.html" />
     <MESSAGE value="add simple nav to contact.html" />
@@ -741,7 +740,8 @@
     <MESSAGE value="edit wiki" />
     <MESSAGE value="." />
     <MESSAGE value="edit language dropdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit language dropdown" />
+    <MESSAGE value="edit smtp properties to send email over gmx.net" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit smtp properties to send email over gmx.net" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
