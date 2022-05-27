@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,14 +356,7 @@
       <workItem from="1653557958301" duration="468000" />
       <workItem from="1653559277970" duration="202000" />
       <workItem from="1653564820681" duration="3775000" />
-      <workItem from="1653639313123" duration="3086000" />
-    </task>
-    <task id="LOCAL-00037" summary=".">
-      <created>1652340388772</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1652340388772</updated>
+      <workItem from="1653639313123" duration="3133000" />
     </task>
     <task id="LOCAL-00038" summary="add header to wiki.html">
       <created>1652344018656</created>
@@ -702,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653643343785</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary=".">
+      <created>1653643400718</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1653643400718</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
