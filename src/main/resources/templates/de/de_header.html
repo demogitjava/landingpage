@@ -11,7 +11,7 @@
     <title>Small Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link th:href="@{/paper-kit/css/ct-paper.css}" rel="stylesheet" />
+
     <link th:href="@{/bootstrap4/css/bootstrap.css}" rel="stylesheet" />
     <link th:href="@{/bootstrap4/css/bootstrap-theme.min.css}" rel="stylesheet" />
 
@@ -20,14 +20,16 @@
 
     <script th:src="@{/bootstrap.min.js}"></script>
 
+
     <!-- Custom styles for this template -->
     <link th:href="@{css/small-business.css}" rel="stylesheet" />
     <!-- Bootstrap core JavaScript -->
     <script th:src="@{/jquery/jquery-3.5.1.min.js}"></script>
+
     <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.js}"></script>
 
 
-    <script th:src="@{/paper-kit/js/ct-paper.js}"></script>
+
 </header>
 
 <body>
@@ -64,7 +66,11 @@
         </div>
     </nav>
 
+
+
 </div>
+
+
 
 <div sec:authorize="isAuthenticated()">
 
@@ -104,5 +110,8 @@
     </nav>
 
 </div>
+
+
+
 </body>
 <html>
