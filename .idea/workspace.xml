@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -356,14 +357,7 @@
       <workItem from="1653557958301" duration="468000" />
       <workItem from="1653559277970" duration="202000" />
       <workItem from="1653564820681" duration="3775000" />
-      <workItem from="1653639313123" duration="2838000" />
-    </task>
-    <task id="LOCAL-00033" summary="edit wiki">
-      <created>1652335276560</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1652335276560</updated>
+      <workItem from="1653639313123" duration="2910000" />
     </task>
     <task id="LOCAL-00034" summary=".">
       <created>1652336007683</created>
@@ -701,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653641353566</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary=".">
+      <created>1653643155718</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1653643155718</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,9 +750,9 @@
     <MESSAGE value="edit password for smtp email" />
     <MESSAGE value="edit pom setup for cloud server" />
     <MESSAGE value="add ct-paper framework to project" />
-    <MESSAGE value="." />
     <MESSAGE value="add paper-kit ui to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add paper-kit ui to project" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
