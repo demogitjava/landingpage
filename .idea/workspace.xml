@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -362,14 +357,7 @@
       <workItem from="1653557958301" duration="468000" />
       <workItem from="1653559277970" duration="202000" />
       <workItem from="1653564820681" duration="3775000" />
-      <workItem from="1653639313123" duration="4132000" />
-    </task>
-    <task id="LOCAL-00040" summary="add simple nav to contact.html">
-      <created>1652344478254</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1652344478254</updated>
+      <workItem from="1653639313123" duration="4334000" />
     </task>
     <task id="LOCAL-00041" summary="edit init for ModalAndView">
       <created>1652344580832</created>
@@ -707,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653644355143</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="add jquery ui">
+      <created>1653644482063</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1653644482063</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -732,7 +727,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de_body.html&#10;download jar file &#10;and link card_footer" />
     <MESSAGE value="edit admin page header" />
     <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
     <MESSAGE value="edit de landingpage" />
@@ -757,7 +751,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit direcotry to test classes" />
     <MESSAGE value="remove paper kit" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove paper kit" />
+    <MESSAGE value="add jquery ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jquery ui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
