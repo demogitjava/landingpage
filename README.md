@@ -1,5 +1,5 @@
-# Demo Landingpage with Spring Boot + Theamleaf + Grapesjs
-============================================================
+# Demo Landingpage with Spring Boot + Theamleaf + Grapesjs + Bootflat ui kit
+============================================================================
 
 
 used db -> shopdb
