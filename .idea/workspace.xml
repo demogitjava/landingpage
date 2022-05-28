@@ -361,13 +361,6 @@
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
     </task>
-    <task id="LOCAL-00045" summary="edit de_body.html&#10;download jar file &#10;and link card_footer">
-      <created>1652532325419</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1652532325419</updated>
-    </task>
     <task id="LOCAL-00046" summary=".">
       <created>1652628154771</created>
       <option name="number" value="00046" />
@@ -704,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653724575584</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="add nav menu to webbuilder page after &#10;success login">
+      <created>1653730652347</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1653730652347</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +729,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de landingpage" />
     <MESSAGE value="edit admin page" />
     <MESSAGE value="edit schell methods" />
     <MESSAGE value="edit de_body.html" />
@@ -754,7 +753,8 @@
     <MESSAGE value="." />
     <MESSAGE value="add bootflat ui kit" />
     <MESSAGE value="edit readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit readme" />
+    <MESSAGE value="add nav menu to webbuilder page after &#10;success login" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nav menu to webbuilder page after &#10;success login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
