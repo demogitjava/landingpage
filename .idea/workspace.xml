@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,13 +361,6 @@
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
     </task>
-    <task id="LOCAL-00044" summary="edit url to download&#10;desktopclient jar">
-      <created>1652531600873</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1652531600873</updated>
-    </task>
     <task id="LOCAL-00045" summary="edit de_body.html&#10;download jar file &#10;and link card_footer">
       <created>1652532325419</created>
       <option name="number" value="00045" />
@@ -703,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653724418067</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="edit readme">
+      <created>1653724575584</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1653724575584</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +729,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout" />
     <MESSAGE value="edit de landingpage" />
     <MESSAGE value="edit admin page" />
     <MESSAGE value="edit schell methods" />
@@ -753,7 +753,8 @@
     <MESSAGE value="add jquery ui" />
     <MESSAGE value="." />
     <MESSAGE value="add bootflat ui kit" />
-    <option name="LAST_COMMIT_MESSAGE" value="add bootflat ui kit" />
+    <MESSAGE value="edit readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
