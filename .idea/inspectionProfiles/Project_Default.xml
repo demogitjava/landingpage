@@ -40,7 +40,5 @@
         </list>
       </option>
     </inspection_tool>
-    <inspection_tool class="SpringElInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="SpringElStaticFieldInjectionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
