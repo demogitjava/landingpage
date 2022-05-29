@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/small-business.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/small-business.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/css",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -365,13 +359,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00048" summary="add crud interfacae to admin page&#10;to add delete or update data from &#10;webtextlayout">
-      <created>1652721516122</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1652721516122</updated>
     </task>
     <task id="LOCAL-00049" summary=".">
       <created>1652723676753</created>
@@ -709,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653731357448</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="edit css small-business.css">
+      <created>1653735483164</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1653735483164</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -734,7 +728,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit schell methods" />
     <MESSAGE value="edit de_body.html" />
     <MESSAGE value="edit service.html" />
     <MESSAGE value="edit languagepages for &#10;en_body&#10;es_body&#10;fr_body&#10;it_body&#10;tr_body" />
@@ -759,7 +752,8 @@
     <MESSAGE value="add nav menu to webbuilder page after &#10;success login" />
     <MESSAGE value="." />
     <MESSAGE value="add iso-8859-1 to landingpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add iso-8859-1 to landingpage" />
+    <MESSAGE value="edit css small-business.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit css small-business.css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
