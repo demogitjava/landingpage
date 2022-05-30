@@ -3,11 +3,8 @@ version: "2.2"
 services:
   landingpage:
     image: img_landingpage
-    ports:
-      - 217.160.255.254:80:80
-      - 217.160.255.254:5005:5005
-      - 217.160.255.254:8082:8082
-      - 217.160.255.254:9092:9092
+    expose:
+      - "80/tcp"
     volumes:
       - /root/Dokumente/h2:/root/Dokumente/h2
       - /root/Dokumente/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/
@@ -17,8 +14,13 @@ services:
       - /root/IdeaProjects/landingpage/target:/root/IdeaProjects/landingpage/target
     networks:
       - my-proxy-net
+
+
 networks:
   my-proxy-net:
     external:
       name: 192.200.100.254/24
+
+
+
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="RemoteTargetsManager">
     <targets>
-      <target name="web" type="docker-compose" uuid="935cd590-d58c-4bfe-8d22-64599d0cc2e4">
+      <target name="landingpage" type="docker-compose" uuid="3076480b-9f5b-4472-b826-14df1c7b5918">
         <config>
           <option name="targetPlatform">
             <TargetPlatform />
@@ -16,8 +16,8 @@
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
-            <option name="homePath" value="/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/" />
-            <option name="javaVersionString" value="11" />
+            <option name="homePath" value="/opt/graalvm-ce-java17-22.0.0.2/" />
+            <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
       </target>
