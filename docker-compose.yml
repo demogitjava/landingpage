@@ -1,0 +1,24 @@
+
+version: "2.2"
+services:
+  web:
+    image: img_landingpage
+    ports:
+      - 80:80
+      - 5005:5005
+      - 8082:8082
+      - 9092:9092
+    volumes:
+      - /root/Dokumente/h2:/root/Dokumente/h2
+      - /root/Dokumente/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/
+      - /var/lib/snapd/snap/intellij-idea-ultimate/361/lib/idea_rt.jar:/var/lib/snapd/snap/intellij-idea-ultimate/361/lib/idea_rt.jar
+      - /root/.m2:/root/.m2
+      - /var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar:/var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar
+      - /root/IdeaProjects/landingpage/target:/root/IdeaProjects/landingpage/target
+    networks:
+      - my-proxy-net
+networks:
+  my-proxy-net:
+    external:
+      name: 192.200.100.254/24
+

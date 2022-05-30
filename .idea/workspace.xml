@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+    <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="edit docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +61,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
@@ -114,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Landingpage">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
@@ -143,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="de_header.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/landingpage/templates/de/de_header.html" useBuiltInWebServerPort="true">
+    <configuration name="de_header.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/landingpage/templates/de/de_header.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Landingpage remote debug" type="Remote">
@@ -164,7 +164,7 @@
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="/" />
-      <target name="@@@LOCAL@@@" />
+      <target name="web3" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,10 +202,6 @@
                 <option name="hostPath" value="$APPLICATION_HOME_DIR$/lib/idea_rt.jar" />
               </DockerVolumeBindingImpl>
               <DockerVolumeBindingImpl>
-                <option name="containerPath" value="$PROJECT_DIR$/../LanServer" />
-                <option name="hostPath" value="$PROJECT_DIR$/../LanServer" />
-              </DockerVolumeBindingImpl>
-              <DockerVolumeBindingImpl>
                 <option name="containerPath" value="$USER_HOME$/.m2" />
                 <option name="hostPath" value="$USER_HOME$/.m2" />
               </DockerVolumeBindingImpl>
@@ -232,11 +228,6 @@
       <item itemvalue="Remote JVM Debug.Landingpage remote debug" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.de_header.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -359,27 +350,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00049" summary=".">
-      <created>1652723676753</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1652723676753</updated>
-    </task>
-    <task id="LOCAL-00050" summary="edit de landingpage">
-      <created>1652724112774</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1652724112775</updated>
-    </task>
-    <task id="LOCAL-00051" summary=".">
-      <created>1652724217286</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1652724217286</updated>
     </task>
     <task id="LOCAL-00052" summary="edit admin page">
       <created>1652784060136</created>
@@ -703,7 +673,28 @@
       <option name="project" value="LOCAL" />
       <updated>1653735483164</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="edit btn button class">
+      <created>1653796099502</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1653796099502</updated>
+    </task>
+    <task id="LOCAL-00099" summary="recompile module with netbeans">
+      <created>1653799610780</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1653799610780</updated>
+    </task>
+    <task id="LOCAL-00100" summary="edit docker compose">
+      <created>1653890001396</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1653890001396</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,9 +719,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de_body.html" />
-    <MESSAGE value="edit service.html" />
-    <MESSAGE value="edit languagepages for &#10;en_body&#10;es_body&#10;fr_body&#10;it_body&#10;tr_body" />
     <MESSAGE value="add bootstrap combo box to &#10;&#10;de_body.html" />
     <MESSAGE value="add nav button for language" />
     <MESSAGE value="edit en" />
@@ -753,7 +741,10 @@
     <MESSAGE value="." />
     <MESSAGE value="add iso-8859-1 to landingpage" />
     <MESSAGE value="edit css small-business.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit css small-business.css" />
+    <MESSAGE value="edit btn button class" />
+    <MESSAGE value="recompile module with netbeans" />
+    <MESSAGE value="edit docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
