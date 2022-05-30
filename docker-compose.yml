@@ -1,13 +1,13 @@
 
 version: "2.2"
 services:
-  web:
+  landingpage:
     image: img_landingpage
     ports:
-      - 80:80
-      - 5005:5005
-      - 8082:8082
-      - 9092:9092
+      - 217.160.255.254:80:80
+      - 217.160.255.254:5005:5005
+      - 217.160.255.254:8082:8082
+      - 217.160.255.254:9092:9092
     volumes:
       - /root/Dokumente/h2:/root/Dokumente/h2
       - /root/Dokumente/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/
