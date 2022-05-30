@@ -176,7 +176,7 @@
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="/" />
-      <target name="landingpage" />
+      <target name="landingpage2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -392,13 +392,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00054" summary="edit de_body.html">
-      <created>1652807363380</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1652807363380</updated>
     </task>
     <task id="LOCAL-00055" summary="edit de_body.html">
       <created>1652822518431</created>
@@ -736,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653895817581</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="edit docker compose.yml">
+      <created>1653898117175</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1653898117175</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit en" />
     <MESSAGE value="add button to change language" />
     <MESSAGE value="edit language button" />
     <MESSAGE value="edit wiki" />
@@ -786,7 +785,8 @@
     <MESSAGE value="edit docker compose" />
     <MESSAGE value="add docker compose" />
     <MESSAGE value="edit pom and delte setup for cloud spring boot server" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit pom and delte setup for cloud spring boot server" />
+    <MESSAGE value="edit docker compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
