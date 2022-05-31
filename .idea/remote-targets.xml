@@ -16,8 +16,8 @@
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
-            <option name="homePath" value="/opt/graalvm-ce-java17-22.0.0.2/" />
-            <option name="javaVersionString" value="17.0.2" />
+            <option name="homePath" value="/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/" />
+            <option name="javaVersionString" value="11.0.14" />
           </config>
         </ContributedStateBase>
       </target>

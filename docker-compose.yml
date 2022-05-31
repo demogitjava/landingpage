@@ -1,12 +1,13 @@
-
-version: "3"
+version: "3.7"
 services:
 
 
 
   landingpage:
     container_name: landingpage_compose
-    image: img_landingpage:latest
+    image: img_landingpage
+
+
     build: ./
     volumes:
       - /root/Dokumente/h2:/root/Dokumente/h2
@@ -16,16 +17,11 @@ services:
       - /var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar:/var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar
       - /root/IdeaProjects/landingpage/target:/root/IdeaProjects/landingpage/target
     networks:
-        - my-proxy-net
-
-
+      - my-proxy-net
+    ports:
+      - "217.160.255.254:80:80"
 
 networks:
-
   my-proxy-net:
     external:
       name: 192.200.100.254/24
-
-
-
-
