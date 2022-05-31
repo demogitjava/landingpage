@@ -5,9 +5,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/DemoLandingPageApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/AppConfigLocale.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/DemoDBConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/FileConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/MaWiDBConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/ShopDBConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/shell/i_shellcommands.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/shell/shellcommands.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/About_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/Admin_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/Contract_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/DemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/Service_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/WebSiteBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/de_wiki.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/en/EN_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/es/ES_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/fr/FR_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/Int_m_webtextlayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/en/iEN_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/es/iES_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/fr/iFR_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iAboutController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iAdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iContactController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iDemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iLoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iServiceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/iWebSiteBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/i_de_wiki.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/it/iIT_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/interfaces/tr/iTR_Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/it/IT_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/controller/tr/TR_LandingPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/DaoWebBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/Dao_DemoPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/Dao_admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/EN_DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/ES_DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/FR_DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/IT_DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/TR_DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/Int_m_webtextlayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_DAO_EN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_DAO_ES.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_DAO_FR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_DAO_IT.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_DAO_TR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/dao/interfaces/web/iDaoWebBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/iDemoLandingPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/model/areacodes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/model/m_bootstrap_components.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/model/m_webtextlayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/IndexService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/WebBuilderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/admin_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/contact_service$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/contact_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/en_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/es_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/fr_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/IServiceIndex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/iWebBuilderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/i_admin_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/i_contact_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/ien_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/ies_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/ifr_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/iit_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/interfaces/itr_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/it_service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/service/tr_service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/landingpage.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +194,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+  <component name="RunManager" selected="Docker.docker-compose.yml.image: Compose Deployment">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
@@ -172,11 +250,16 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
-    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" editBeforeRun="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="/" />
-      <target name="landingpage2" />
+      <target name="landingpage" />
+      <selectedOptions>
+        <option name="spring.boot.profiles" visible="false" />
+        <option name="vmParameters" visible="false" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -239,12 +322,42 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.image: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
+              <option value="image" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="buildKitEnabledForCompose" value="true" />
+          <option name="enableCompatibilityMode" value="true" />
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
               <option value="landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="upDetach" value="false" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.reverse-proxy: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="reverse-proxy" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -257,8 +370,10 @@
       <item itemvalue="Application.i_webShop" />
       <item itemvalue="Application.de.jgsoftware.landingpage.iDemoLandingPage" />
       <item itemvalue="Docker.Landingpage" />
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.image: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.reverse-proxy: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       <item itemvalue="JavaScript Debug.de_header.html" />
       <item itemvalue="JUnit.All in landingpage" />
       <item itemvalue="Remote JVM Debug.Landingpage remote debug" />
@@ -266,8 +381,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.image: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.reverse-proxy: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -392,13 +509,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00055" summary="edit de_body.html">
-      <created>1652822518431</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1652822518432</updated>
     </task>
     <task id="LOCAL-00056" summary="edit de_body.html">
       <created>1652822679791</created>
@@ -736,7 +846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653898117175</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="edit docker compose.yml">
+      <created>1653898793604</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1653898793604</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

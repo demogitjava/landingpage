@@ -2,7 +2,7 @@
 <project version="4">
   <component name="RemoteTargetsManager">
     <targets>
-      <target name="landingpage2" type="docker-compose" uuid="8eb0dfbc-c85e-4e29-9f76-0876b9cb25fa">
+      <target name="landingpage" type="docker-compose" uuid="9712a5c1-b9e2-49f1-9030-449e4d087266">
         <config>
           <option name="targetPlatform">
             <TargetPlatform />

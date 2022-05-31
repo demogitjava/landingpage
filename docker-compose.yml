@@ -1,10 +1,15 @@
 
-version: "2.2"
+version: "3"
 services:
+
+
+
   landingpage:
-    image: img_landingpage
+    container_name: landingpage_compose
 
 
+  image: img_landingpage:latest
+    build: ./
     volumes:
       - /root/Dokumente/h2:/root/Dokumente/h2
       - /root/Dokumente/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/
@@ -13,17 +18,15 @@ services:
       - /var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar:/var/lib/snapd/snap/intellij-idea-ultimate/361/plugins/java/lib/rt/debugger-agent.jar
       - /root/IdeaProjects/landingpage/target:/root/IdeaProjects/landingpage/target
     networks:
-      - my-proxy-net
-    ports:
-      - "217.160.255.254:80:80/tcp"
+        - my-proxy-net
+
 
 
 networks:
+
   my-proxy-net:
     external:
       name: 192.200.100.254/24
-
-
 
 
 
