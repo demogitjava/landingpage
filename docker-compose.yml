@@ -6,9 +6,7 @@ services:
 
   landingpage:
     container_name: landingpage_compose
-
-
-  image: img_landingpage:latest
+    image: img_landingpage:latest
     build: ./
     volumes:
       - /root/Dokumente/h2:/root/Dokumente/h2
