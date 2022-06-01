@@ -18,8 +18,7 @@ services:
       - /root/IdeaProjects/landingpage/target:/root/IdeaProjects/landingpage/target
     networks:
       - my-proxy-net
-    ports:
-      - "217.160.255.254:80:80"
+
 
 networks:
   my-proxy-net:

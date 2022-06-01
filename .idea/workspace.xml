@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docker-compose_nginx.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/DemoLandingPageApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/AppConfigLocale.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/DemoDBConfig.class" afterDir="false" />
@@ -256,9 +257,9 @@
       <target name="landingpage" />
       <selectedOptions>
         <option name="spring.boot.profiles" visible="false" />
-        <option name="vmParameters" visible="false" />
       </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -312,23 +313,10 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="landingpage" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -339,20 +327,12 @@
       <item itemvalue="Application.i_webShop" />
       <item itemvalue="Application.de.jgsoftware.landingpage.iDemoLandingPage" />
       <item itemvalue="Docker.Landingpage" />
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.Unnamed" />
       <item itemvalue="JavaScript Debug.de_header.html" />
       <item itemvalue="JUnit.All in landingpage" />
       <item itemvalue="Remote JVM Debug.Landingpage remote debug" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -475,13 +455,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00058" summary="edit languagepages for &#10;en_body&#10;es_body&#10;fr_body&#10;it_body&#10;tr_body">
-      <created>1652841122842</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1652841122842</updated>
     </task>
     <task id="LOCAL-00059" summary="add bootstrap combo box to &#10;&#10;de_body.html">
       <created>1652841943633</created>
@@ -819,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653985307077</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="edit docker compose">
+      <created>1654017198772</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1654017198772</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

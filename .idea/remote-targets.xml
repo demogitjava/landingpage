@@ -21,6 +21,25 @@
           </config>
         </ContributedStateBase>
       </target>
+      <target name="nginx" type="docker-compose" uuid="6f6e1d3d-cb2f-4437-a694-6389bff2c571">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="configurationFiles">
+            <list>
+              <option value="$PROJECT_DIR$/docker-compose_nginx.yml" />
+            </list>
+          </option>
+          <option name="serviceName" value="nginx" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/" />
+            <option name="javaVersionString" value="11.0.14" />
+          </config>
+        </ContributedStateBase>
+      </target>
     </targets>
   </component>
 </project>
