@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8752a1bb-dc70-4257-8a41-0ae89a12a86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/target/spring-shell.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/DemoLandingPageApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/AppConfigLocale.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/de/jgsoftware/landingpage/config/DemoDBConfig.class" afterDir="false" />
@@ -86,8 +87,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose_nginx.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,8 +167,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/docker-compose.yml",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/target",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -178,7 +178,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propDebugger"
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -201,6 +201,7 @@
       <command value="mvn clean" />
       <command value="mvn compile" />
       <command value="mvn install" />
+      <command value="docker-compose.yml: Compose Deployment" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
@@ -259,16 +260,20 @@
       </RunnerSettings>
       <method v="2" />
     </configuration>
-    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" editBeforeRun="true" activateToolWindowBeforeRun="false" singleton="false" nameIsGenerated="true">
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
-      <target name="img_landingpage:latest" />
+      <projectPathOnTarget name="projectPathOnTarget" value="/" />
+      <target name="landingpage compose" />
       <selectedOptions>
         <option name="spring.boot.profiles" visible="false" />
-        <option name="vmParameters" visible="false" />
       </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=80, -Dhost=217.160.255.254" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/target" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true" />
       <method v="2" />
     </configuration>
     <configuration name="Landingpage" type="docker-deploy" factoryName="docker-image" server-name="Docker">
@@ -332,11 +337,25 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="spring-boot:run" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.environment: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="environment" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.i_webShop" />
       <item itemvalue="Application.de.jgsoftware.landingpage.iDemoLandingPage" />
       <item itemvalue="Docker.Landingpage" />
+      <item itemvalue="Docker.docker-compose.yml.environment: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JavaScript Debug.de_header.html" />
       <item itemvalue="JUnit.All in landingpage" />
@@ -345,6 +364,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.environment: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -470,13 +490,6 @@
       <workItem from="1653564820681" duration="3775000" />
       <workItem from="1653639313123" duration="5907000" />
       <workItem from="1653651863487" duration="1182000" />
-    </task>
-    <task id="LOCAL-00060" summary="add nav button for language">
-      <created>1652850335387</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1652850335388</updated>
     </task>
     <task id="LOCAL-00061" summary="edit en">
       <created>1652850998328</created>
@@ -814,7 +827,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654064252433</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="edit docker files">
+      <created>1654153481911</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1654153481911</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -839,7 +859,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add button to change language" />
     <MESSAGE value="edit language button" />
     <MESSAGE value="edit wiki" />
     <MESSAGE value="edit language dropdown" />
@@ -864,7 +883,8 @@
     <MESSAGE value="edit pom and delte setup for cloud spring boot server" />
     <MESSAGE value="edit docker compose.yml" />
     <MESSAGE value="edit docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
+    <MESSAGE value="edit docker files" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

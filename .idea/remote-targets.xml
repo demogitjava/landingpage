@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
-    <option name="projectDefaultTargetUuid" value="9712a5c1-b9e2-49f1-9030-449e4d087266" />
+    <option name="projectDefaultTargetUuid" value="39c6a0bc-fc13-49c4-bcca-45e7d1b87892" />
     <targets>
       <target name="img_landingpage:latest" type="docker" uuid="a3909231-760f-4157-99ee-b94098f3b59c">
         <config>
@@ -54,6 +54,12 @@
             <list>
               <option value="$PROJECT_DIR$/docker-compose.yml" />
             </list>
+          </option>
+          <option name="envs">
+            <map>
+              <entry key="LANG" value="de_DE.ISO-8859-1" />
+              <entry key="server.port" value="80" />
+            </map>
           </option>
           <option name="serviceName" value="landingpage" />
         </config>

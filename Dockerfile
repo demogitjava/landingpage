@@ -18,4 +18,6 @@ EXPOSE 80
 EXPOSE 8082
 EXPOSE 9092
 
+
+ENV MY_SERVICE_PORT 217.160.255.254:80
 #ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
