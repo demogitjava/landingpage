@@ -18,7 +18,7 @@
               <entry key="-Dserver.port" value="80" />
             </map>
           </option>
-          <option name="serviceName" value="landingpage" />
+          <option name="serviceName" value="web" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
@@ -37,6 +37,12 @@
               <option name="dockerFile" value="Dockerfile" />
             </BuildImageConfig>
           </option>
+          <option name="containerConfig">
+            <ContainerConfig>
+              <option name="runCliOptions" value="-d -p 80:80" />
+            </ContainerConfig>
+          </option>
+          <option name="projectRootOnTarget" value="/" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>

@@ -24,7 +24,7 @@ public class contact_service implements i_contact_service
 
 
         String sender = "jgsoftwares@gmx.net";
-        String password = "mvpr52k1";
+        String password = "jj78mvpr52k1";
         String receiver = email;
 
         Properties properties = new Properties();
