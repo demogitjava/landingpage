@@ -18,7 +18,7 @@
               <entry key="-Dserver.port" value="80" />
             </map>
           </option>
-          <option name="serviceName" value="web" />
+          <option name="serviceName" value="&lt;Select service&gt;" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
@@ -39,7 +39,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-d -p 80:80" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --name landingpage" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="/" />

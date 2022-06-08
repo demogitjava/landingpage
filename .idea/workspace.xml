@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add dockerfiel">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +25,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin/apache-maven-3.8.5" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -32,14 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn deploy" />
+      <command value="mvn install" />
+      <command value="mvn compile" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="contact.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/landingpage/templates/contact.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -49,9 +57,9 @@
       <option name="ENABLE_JMX_AGENT" value="false" />
       <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
       <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="/" />
-      <target name="@@@LOCAL@@@" />
+      <target name="img_landingpage:latest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=80" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +94,8 @@
       <workItem from="1654678027732" duration="768000" />
       <workItem from="1654681449968" duration="1189000" />
       <workItem from="1654683026129" duration="6000" />
-      <workItem from="1654683136899" duration="2831000" />
+      <workItem from="1654683136899" duration="6036000" />
+      <workItem from="1654699900670" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="edit application.properties">
       <created>1654326499045</created>
@@ -116,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654683212679</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add dockerfiel">
+      <created>1654695197808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654695197808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +157,7 @@
     <MESSAGE value="edit properties and docker-compose" />
     <MESSAGE value="delte dockerfiles" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="add dockerfiel" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dockerfiel" />
   </component>
 </project>
