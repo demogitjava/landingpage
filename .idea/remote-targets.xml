@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 0.0.0.0:80:80 --name landingpage" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --name landingpage" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="/" />
