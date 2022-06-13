@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker compose">
-      <change afterPath="$PROJECT_DIR$/root/Dokumente/nginx/hostname" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/Dokumente/nginx/hosts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/root/Dokumente/nginx/resolv.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="update docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -65,7 +61,7 @@
       <command value="docker-compose.yml: Compose Deployment" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.landingpage: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="dev" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
@@ -84,6 +80,14 @@
           <option name="imageTag" value="img_landingpage:latest" />
           <option name="containerName" value="landingpage" />
           <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -118,10 +122,12 @@
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.nginx-server: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.nginx-server: Compose Deployment" />
       </list>
@@ -166,7 +172,7 @@
       <workItem from="1654852343450" duration="602000" />
       <workItem from="1655017966580" duration="4550000" />
       <workItem from="1655024815838" duration="3825000" />
-      <workItem from="1655102676918" duration="8052000" />
+      <workItem from="1655102676918" duration="8597000" />
     </task>
     <task id="LOCAL-00001" summary="edit application.properties">
       <created>1654326499045</created>
@@ -238,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655105698959</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update docker compose">
+      <created>1655111612001</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1655111612001</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +283,8 @@
     <MESSAGE value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
     <MESSAGE value="add simple docker compose&#10;with nginx" />
     <MESSAGE value="edit docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
+    <MESSAGE value="update docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="update docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
