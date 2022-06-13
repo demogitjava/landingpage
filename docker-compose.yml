@@ -9,15 +9,7 @@ services:
     volumes:
       - /root/Dokumente/nginx/:/etc/nginx
     ports:
-      - "127.0.0.1:80:80"
-
-
-  landingpage:
-    image: img_landingpage:latest
-    container_name: landingpage
-    volumes:
-      - /root/Dokumente/IdeaProjects:/root/Dokumente/IdeaProjects
-      - /root/.m2:/root/.m2
+      - "217.160.255.254:80:80"
 
 
 
