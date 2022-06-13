@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="update wiki and header in de">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/de/de_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/en/en_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/es/es_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fr/fr_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/it/it_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tr/tr_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +34,38 @@
     </option>
   </component>
   <component name="ProjectId" id="2A6GHTPPXsdTPq3mK2r5HxCzSAU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/application.yml&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Dockerfile&quot;
   }
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn deploy" />
-      <command value="mvn install" />
       <command value="mvn compile" />
+      <command value="mvn install" />
+      <command value="docker-compose.yml: Compose Deployment" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
@@ -58,10 +75,11 @@
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ENABLE_JMX_AGENT" value="false" />
-      <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
       <module name="landingpage" />
       <target name="img_landingpage:latest" />
+      <selectedOptions>
+        <option name="spring.boot.profiles" visible="false" />
+      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="VM_PARAMETERS" value="-Dserver.port=80" />
       <method v="2">
@@ -77,11 +95,41 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JavaScript Debug.contact.html" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,7 +147,30 @@
       <workItem from="1654681449968" duration="1189000" />
       <workItem from="1654683026129" duration="6000" />
       <workItem from="1654683136899" duration="6036000" />
-      <workItem from="1654699900670" duration="3725000" />
+      <workItem from="1654699900670" duration="6606000" />
+      <workItem from="1654758392259" duration="371000" />
+      <workItem from="1654758800088" duration="3000" />
+      <workItem from="1654758980637" duration="3000" />
+      <workItem from="1654758996173" duration="4000" />
+      <workItem from="1654759090150" duration="61000" />
+      <workItem from="1654759444693" duration="9000" />
+      <workItem from="1654759507714" duration="24000" />
+      <workItem from="1654759543536" duration="142000" />
+      <workItem from="1654759708841" duration="29000" />
+      <workItem from="1654759750920" duration="47000" />
+      <workItem from="1654759828666" duration="1577000" />
+      <workItem from="1654761417365" duration="9244000" />
+      <workItem from="1654772068337" duration="529000" />
+      <workItem from="1654772664102" duration="65000" />
+      <workItem from="1654774391427" duration="26000" />
+      <workItem from="1654790875862" duration="3875000" />
+      <workItem from="1654849821677" duration="124000" />
+      <workItem from="1654850126598" duration="74000" />
+      <workItem from="1654850369318" duration="1536000" />
+      <workItem from="1654852343450" duration="602000" />
+      <workItem from="1655017966580" duration="4550000" />
+      <workItem from="1655024815838" duration="3825000" />
+      <workItem from="1655102676918" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="edit application.properties">
       <created>1654326499045</created>
@@ -150,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654705607320</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css">
+      <created>1654705760307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654705760307</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +249,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit application.properties" />
     <MESSAGE value="edit properties and docker-compose" />
     <MESSAGE value="delte dockerfiles" />
@@ -178,6 +257,11 @@
     <MESSAGE value="add dockerfiel" />
     <MESSAGE value="edit dockerfile &#10;for expose ports" />
     <MESSAGE value="update wiki and header in de" />
-    <option name="LAST_COMMIT_MESSAGE" value="update wiki and header in de" />
+    <MESSAGE value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

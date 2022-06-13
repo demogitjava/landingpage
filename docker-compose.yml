@@ -1,0 +1,25 @@
+version: "2"
+
+
+services:
+  # start landingpage
+  landingpage:
+    image: imge_landingpage
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: landingpage
+    volumes:
+        - .:/root/IdeaProjects/landingpage
+    command: de.jgsoftware.landingpage.iDemoLandingPage
+
+
+  # start nginx
+  nginx-server:
+    image: nginx
+    container_name: nginx
+    ports:
+      - "80:80"
+
+
+
