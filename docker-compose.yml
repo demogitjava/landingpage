@@ -1,30 +1,20 @@
 version: '2'
-
 services:
   proxy:
     image: nginx:1.13
     volumes:
       - /root/Dokumente/nginx/:/etc/nginx
     ports:
-        - "217.160.255.254:80:80"
+      - "217.160.255.254:80:80"
     networks:
       - internal-network
-  service_a:
-    image: nginx:1.13
-    hostname: service_a
-    volumes:
-      - ./landingpage/:/usr/share/nginx/html/:ro
-    networks:
-      - internal-network
-  service_b:
-    image: nginx:1.13
-    hostname: service_b
-    volumes:
-      - ./webshop/:/usr/share/nginx/html/:ro
+
+  landingpage:
+    image: img_landingpage:latest
+
     networks:
       - internal-network
 
 networks:
   internal-network:
-
 

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="update docker compose">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -37,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/Dockerfile&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Dockerfile&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.09233612",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Dockerfile"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn deploy" />
@@ -64,7 +66,7 @@
       <command value="docker-compose.yml: Compose Deployment" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="dev" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
@@ -78,64 +80,76 @@
       <option name="VM_PARAMETERS" value="-Dserver.port=80" />
       <method v="2" />
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <configuration name="landingpage" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="imageTag" value="img_landingpage:latest" />
+          <option name="command" value="/bin/java -Dserver.port=80 -Ddebug -Dspring.main.banner-mode=OFF -Dspring.profiles.active=dev -Dspring.output.ansi.enabled=always -Dfile.encoding=ISO-8859-1 -classpath /tmp/c5b72dc1-045b-4a7f-8bb3-c1cd3e56594e:/tmp/3c06aedc-3007-4992-81f6-9f5aebd9b677/spring-boot-starter-data-jpa-2.1.5.RELEASE.jar:/tmp/5fb2fa15-3aea-44c3-a348-a7730e1d26d5/spring-boot-starter-aop-2.1.5.RELEASE.jar:/tmp/1d356110-74a9-4587-9d9a-fbe4ecc97f92/aspectjweaver-1.9.4.jar:/tmp/02802ec8-e5c5-402f-9031-165b246fe3c3/spring-boot-starter-jdbc-2.1.5.RELEASE.jar:/tmp/e3e9de33-7178-441f-9386-32642612115e/HikariCP-3.2.0.jar:/tmp/ced6e1f8-2534-4adb-bda4-2620cd595e07/spring-jdbc-5.1.7.RELEASE.jar:/tmp/6b980afa-97a0-40fc-a109-858ff0b272e4/javax.transaction-api-1.3.jar:/tmp/b49c08a3-ebd3-4d9f-aadb-e5b7e7917c76/jaxb-api-2.3.1.jar:/tmp/1b995216-311c-4643-bc48-3d51a157d839/javax.activation-api-1.2.0.jar:/tmp/3ebb08bc-ce2e-4314-aa23-7820df4c79b0/hibernate-core-5.3.10.Final.jar:/tmp/dc3bba01-9215-443d-86f6-4aefec0d940d/jboss-logging-3.3.2.Final.jar:/tmp/65543164-50bb-4cbb-88c9-8b4dbbeb80cd/javassist-3.23.2-GA.jar:/tmp/705b3d71-8f1e-471d-8407-d7d71996e15a/byte-buddy-1.9.12.jar:/tmp/8b01c61d-4b53-448b-9f38-e6b756015850/antlr-2.7.7.jar:/tmp/2e0d547b-2d06-4633-9010-787e05c35eb7/jandex-2.0.5.Final.jar:/tmp/6e56c5a4-4ff4-40a4-b3ce-ca10a5bfe5ed/classmate-1.4.0.jar:/tmp/dbf5e64d-0889-48f6-b282-04eec2995652/dom4j-2.1.1.jar:/tmp/6163b5be-0bf5-47e0-a4a1-e9670308f87c/hibernate-commons-annotations-5.0.4.Final.jar:/tmp/edc53a66-ba26-4d1b-9f51-f2dddf141d90/spring-data-jpa-2.1.8.RELEASE.jar:/tmp/ee7fe6a1-a046-40f4-9219-ce056d157403/spring-data-commons-2.1.8.RELEASE.jar:/tmp/8b0f72ae-c9d4-4fdd-b23a-4be3d81c3707/spring-orm-5.1.7.RELEASE.jar:/tmp/94e2374b-c0e5-4929-9ce7-8c7c6b7693ee/spring-tx-5.1.7.RELEASE.jar:/tmp/ec9e6ac2-cdea-41c5-b7f6-ecfd899f49f0/spring-aspects-5.1.7.RELEASE.jar:/tmp/63f6e002-fee6-42d8-9a03-ddb405637fd0/spring-boot-starter-security-2.1.5.RELEASE.jar:/tmp/5a4fdd13-7b72-4f9a-bff8-9613b2082d64/spring-boot-starter-2.1.5.RELEASE.jar:/tmp/d822368f-5f85-4c1a-a2cc-f4d71c38d67d/spring-boot-starter-logging-2.1.5.RELEASE.jar:/tmp/8beebddd-1963-410a-8255-7347686ec960/logback-classic-1.2.3.jar:/tmp/d730410b-7a47-4303-9737-ed55b90f8cb0/logback-core-1.2.3.jar:/tmp/67e66a05-6abb-4304-a1c0-cc12db9507dd/log4j-to-slf4j-2.11.2.jar:/tmp/a24a0564-e9df-4f4b-9814-ee6030e7d7b4/log4j-api-2.11.2.jar:/tmp/4da5c5eb-0fdb-4bb8-a35e-7201186555f1/javax.annotation-api-1.3.2.jar:/tmp/980e7340-2ec3-4ad9-ba6d-efe022887c44/snakeyaml-1.23.jar:/tmp/fea97fdd-97b2-437e-8a6b-780e7d1f6224/spring-aop-5.1.7.RELEASE.jar:/tmp/282ba8c0-49fc-493f-8bed-aac3fdbfd17d/spring-security-config-5.1.5.RELEASE.jar:/tmp/eb5bc9b9-02f9-4f05-8474-1d72c22cd8da/spring-security-web-5.1.5.RELEASE.jar:/tmp/b7f952cf-6a3f-4e59-8355-0d0466934e52/spring-expression-5.1.7.RELEASE.jar:/tmp/34b76bcb-96a5-4200-8d80-4ba8fc2bc25b/spring-boot-starter-thymeleaf-2.1.5.RELEASE.jar:/tmp/26e9782c-39a4-4d19-8bd2-93d782d1a92e/thymeleaf-spring5-3.0.11.RELEASE.jar:/tmp/795baec9-c399-4d5a-ad79-3b227f9d50dd/thymeleaf-3.0.11.RELEASE.jar:/tmp/7927977d-e311-4aed-a957-cb9e9883d229/attoparser-2.0.5.RELEASE.jar:/tmp/66ab2153-355d-4f8b-9511-911d4073a7cf/unbescape-1.1.6.RELEASE.jar:/tmp/595f99e8-3663-4313-8683-f2f18e23fa9c/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/tmp/c8e74118-4593-440e-98d8-6473bc84a37a/spring-boot-starter-web-2.1.5.RELEASE.jar:/tmp/2537a384-0413-42ad-a063-ad0d15c13020/spring-boot-starter-json-2.1.5.RELEASE.jar:/tmp/e8b70173-be08-454d-a80b-7bf6391d3d08/jackson-databind-2.9.8.jar:/tmp/4616a74b-4be9-4ce9-8d5f-23858920af3a/jackson-annotations-2.9.0.jar:/tmp/46b04413-57dd-43bf-890a-ef2481a283f3/jackson-datatype-jdk8-2.9.8.jar:/tmp/09ff795e-b0e1-4e48-af00-f426e7f5a484/jackson-datatype-jsr310-2.9.8.jar:/tmp/74b10d22-362e-4103-b3a1-37000ed1ce5b/jackson-module-parameter-names-2.9.8.jar:/tmp/d4b2729c-55a3-4eac-9c1c-9c68225ddb5b/spring-boot-starter-tomcat-2.1.5.RELEASE.jar:/tmp/b9946ec3-f32f-49ac-a45f-34c3b62cf5bf/tomcat-embed-core-9.0.19.jar:/tmp/64451d85-816c-4414-9c39-9f1f888ccd0e/tomcat-embed-el-9.0.19.jar:/tmp/57360159-030e-4afc-9ba4-ed78e122fae2/tomcat-embed-websocket-9.0.19.jar:/tmp/d035c5d0-9b9a-4ba2-9b02-c375e417971f/hibernate-validator-6.0.16.Final.jar:/tmp/860b23f4-d23b-4357-8f0d-dcc5fa4ce9f9/spring-web-5.1.7.RELEASE.jar:/tmp/0c9824c9-4377-4e78-842c-8dc022bd2482/spring-webmvc-5.1.7.RELEASE.jar:/tmp/ceca93e5-c225-4264-aeb6-9dc49a9d0943/spring-boot-devtools-2.1.5.RELEASE.jar:/tmp/7ab3a93f-febe-4f60-9267-737b382f6e89/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:/tmp/8c64730f-05d5-48cf-ab4a-50f7ba7b274b/slf4j-api-1.7.26.jar:/tmp/31e9ae10-729a-41b6-b8e3-ec4260fb3d00/spring-core-5.1.7.RELEASE.jar:/tmp/ea738f42-f431-4ccf-a56f-c3896ac4369c/spring-jcl-5.1.7.RELEASE.jar:/tmp/fa155a59-b1de-4b30-b495-9080e5b75fb9/spring-test-5.1.7.RELEASE.jar:/tmp/cd855250-71bf-4c0f-8cc1-c06d55272ef2/spring-security-test-5.1.5.RELEASE.jar:/tmp/37da78b7-73c4-4e54-9a3e-3089e4c465db/spring-security-core-5.1.5.RELEASE.jar:/tmp/dbb1715a-04e6-45af-af6e-596025e8455c/h2-1.4.200.jar:/tmp/4a336aaf-15ca-48c6-bdb5-95dc9c691ec7/jsoup-1.14.3.jar:/tmp/f5bd7cd1-2766-417d-bf88-945792663899/javax.persistence-api-2.2.jar:/tmp/28fbc22d-102b-4e18-b815-107587ae4031/spring-boot-autoconfigure-2.1.5.RELEASE.jar:/tmp/1bff3890-ce21-4d74-a46d-05c2c0520504/spring-boot-2.1.5.RELEASE.jar:/tmp/8cde36d7-9c1f-492d-bad4-bfcc05707bb1/spring-context-5.1.7.RELEASE.jar:/tmp/a61f9409-8303-487e-b454-778b47a94d21/spring-boot-starter-mail-2.1.5.RELEASE.jar:/tmp/ffde44d7-772b-4532-90bd-2220730ed22f/javax.mail-1.6.2.jar:/tmp/b7f99d5f-3e54-4cd9-ada8-3cf7ed40ad15/activation-1.1.jar:/tmp/d877f7ba-7447-4449-b499-747c73cdf533/spring-context-support-5.1.7.RELEASE.jar:/tmp/4ba47aa0-ec08-4227-91d6-d0fc1cce81d0/spring-beans-5.1.7.RELEASE.jar:/tmp/cfb7fcfc-e481-4d46-b981-0a79f027f6a8/spring-shell-standard-2.0.1.RELEASE.jar:/tmp/badd9b3c-151b-438e-88dd-4c99f900ae40/spring-shell-core-2.0.1.RELEASE.jar:/tmp/5d47bfef-63cc-43c5-9d05-10e6224e8e53/spring-boot-starter-validation-2.1.5.RELEASE.jar:/tmp/51da329c-9e24-41b0-9414-fea12af2f311/jline-3.4.0.jar:/tmp/bcb7b1a6-821c-449a-89f7-dc8456eb5fa4/jline-terminal-jna-3.4.0.jar:/tmp/318ec6b5-9c96-4c8e-8c2f-5efe833b2f4f/jna-4.5.2.jar:/tmp/a801523a-3207-4b77-b207-16c069b33473/jline-terminal-3.4.0.jar:/tmp/ff05a910-b1c2-4d62-a85c-5d93b60596cb/commons-compress-1.9.jar:/tmp/8c2021cb-ad9e-4807-8369-d200ce422e63/pulsar-client-admin-2.9.1.jar:/tmp/83bb1338-8486-46fa-9629-ac4089a24665/pulsar-client-api-2.9.1.jar:/tmp/081c19f0-e0d8-4919-ba5c-7965e6786b03/aircompressor-0.20.jar:/tmp/99bda8d2-583a-4a32-a1e6-079335c39c0e/pulsar-transaction-common-2.9.1.jar:/tmp/92717837-fcdd-408b-b458-77f97800ade5/bouncy-castle-bc-2.9.1-pkg.jar:/tmp/74364ef0-388c-4f21-9195-a660892fbd22/bcpkix-jdk15on-1.69.jar:/tmp/58333d21-ab87-48d1-94c5-d56d7bde37e6/bcprov-jdk15on-1.69.jar:/tmp/a9b554b0-9ff7-4023-bb53-0db3e9a3a4ee/bcutil-jdk15on-1.69.jar:/tmp/f23c8d30-e3c2-4d58-afe9-dda46cd34857/bcprov-ext-jdk15on-1.69.jar:/tmp/1a6a1222-c050-497b-a05c-945c5d001f4a/avro-1.10.2.jar:/tmp/0b789df9-1ca5-4d2d-8a69-b2e76d3fd222/jackson-core-2.9.8.jar:/tmp/87a75dd4-d00e-44fc-99d5-911ac846850a/avro-protobuf-1.10.2.jar:/tmp/88548018-f68d-490e-b8d8-d5b05281c435/validation-api-2.0.1.Final.jar:/tmp/22217b20-72ac-41b2-ab60-ded2289f7a29/jcip-annotations-1.0.jar:/tmp/f641183e-9088-4b29-b93c-67376d1cc208/pulsar-client-admin-api-2.9.1.jar:/tmp/22b7eaa1-1554-4e03-9f04-2c0c3d7d7bf6/jakarta.ws.rs-api-2.1.6.jar:/tmp/d673c07c-6dea-4361-b038-aedcef222108/jakarta.xml.bind-api-2.3.3.jar:/tmp/1e45491b-bc98-4904-b0da-3b4d59d626d0/jakarta.activation-api-1.2.2.jar:/tmp/5af7b454-7553-470b-815f-6d5a495038b2/javax.activation-1.2.0.jar:/tmp/063f067a-ef6f-4e14-965b-263465e2c6f2/jul-to-slf4j-1.7.26.jar:/tmp/c5968d4d-e327-4a01-8520-dbe6a5325749/checker-qual-3.5.0.jar:/tmp/9d511c93-813e-4f99-9379-bc41aff3849b/pulsar-package-core-2.9.1.jar:/tmp/d710da7f-fd1c-420f-96ac-eb6f158d4a56/guava-30.1-jre.jar:/tmp/19353638-dd80-4ae9-a39b-71e790110c32/failureaccess-1.0.1.jar:/tmp/89aa99e9-5211-481b-b2db-102e44b49f92/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/tmp/15ac4e78-6da9-4d17-a218-4cc671564d7f/jsr305-3.0.2.jar:/tmp/dd77f24a-058a-451e-8918-52ae98dde08e/error_prone_annotations-2.3.4.jar:/tmp/060ddc29-bede-4e6f-8a25-67a009ec7ea6/j2objc-annotations-1.3.jar:/tmp/d16883fd-cb67-4ad1-a017-d65a63bb2eee/gson-2.8.5.jar:/tmp/0ac5f1e9-6027-40a8-a2cf-35cb7830fef0/commons-lang3-3.8.1.jar:/tmp/628415e1-2a6a-4687-8a2d-18679ef53842/jcommander-1.78.jar:/tmp/79eba8da-6eb7-4c86-bb77-83c91c82b58f/commons-io-2.11.0.jar:/tmp/1c9208a0-1b7a-4249-9988-15b4b2c5ac5c/idea_rt.jar de.jgsoftware.landingpage.iDemoLandingPage" />
           <option name="containerName" value="landingpage" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
           <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
+          <option name="volumeBindings">
             <list>
-              <option value="landingpage" />
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/usr/lib/jvm/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
+                <option name="hostPath" value="/usr/lib/jvm/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
+              </DockerVolumeBindingImpl>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$USER_HOME$/.m2" />
+                <option name="hostPath" value="$USER_HOME$/.m2" />
+              </DockerVolumeBindingImpl>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$PROJECT_DIR$" />
+                <option name="hostPath" value="$PROJECT_DIR$" />
+              </DockerVolumeBindingImpl>
             </list>
           </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.nginx-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="nginx" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
+          <option name="imageTag" value="nginx:latest" />
+          <option name="containerName" value="nginx" />
+          <option name="portBindings">
             <list>
-              <option value="nginx-server" />
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
             </list>
           </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/etc/nginx/conf.d/default.conf" />
+                <option name="hostPath" value="$USER_HOME$/Dokumente/nginx/conf.d/default.conf" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.nginx-server: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.landingpage" />
+      <item itemvalue="Docker.nginx" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.nginx-server: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.nginx-server: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+        <item itemvalue="Docker.nginx" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +193,10 @@
       <workItem from="1655017966580" duration="4550000" />
       <workItem from="1655024815838" duration="3825000" />
       <workItem from="1655102676918" duration="12116000" />
-      <workItem from="1655115970397" duration="4185000" />
+      <workItem from="1655115970397" duration="4291000" />
+      <workItem from="1655198857325" duration="257000" />
+      <workItem from="1655200749994" duration="18000" />
+      <workItem from="1655202201660" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="edit application.properties">
       <created>1654326499045</created>
@@ -272,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655118645976</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update docker compose">
+      <created>1655196761501</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1655196761501</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
