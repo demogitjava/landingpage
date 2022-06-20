@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 127.0.0.1:80:80 --name landingpage" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --name landingpage" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="/" />
@@ -41,7 +41,7 @@
                 </option>
               </VolumeState>
             </option>
-            <option name="javaVersionString" value="17.0.2" />
+            <option name="javaVersionString" value="11.0.11" />
           </config>
         </ContributedStateBase>
       </target>
