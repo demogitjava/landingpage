@@ -41,7 +41,7 @@
                 </option>
               </VolumeState>
             </option>
-            <option name="javaVersionString" value="11.0.11" />
+            <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
       </target>
