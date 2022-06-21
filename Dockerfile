@@ -12,6 +12,9 @@ EXPOSE 80
 EXPOSE 8082
 EXPOSE 9092
 
+ENV HTTP_PROXY="http://217.160.255.254:80"
+
+
 # add h2 database to root folder
 ADD https://github.com/demogitjava/demodatabase/raw/master/demodb.mv.db /root/demodb.mv.db
 ADD https://github.com/demogitjava/demodatabase/raw/master/mawi.mv.db /root/mawi.mv.db

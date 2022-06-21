@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit dockerfile to image&#10;FROM jgsoftwares/jgsoftwares:linuxgraalvmce">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add row to lpagewebbuilder.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/lpagewebbuilder.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -261,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655750160267</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add row to lpagewebbuilder.html">
+      <created>1655752022277</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1655752022277</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +303,8 @@
     <MESSAGE value="." />
     <MESSAGE value="delete root folder in project for nginx" />
     <MESSAGE value="edit dockerfile to image&#10;FROM jgsoftwares/jgsoftwares:linuxgraalvmce" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile to image&#10;FROM jgsoftwares/jgsoftwares:linuxgraalvmce" />
+    <MESSAGE value="add row to lpagewebbuilder.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add row to lpagewebbuilder.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
