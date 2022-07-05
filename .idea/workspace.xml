@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit dockerfile &#10;&#10;add http proxy">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add .mvn folder for gradle">
+      <change beforePath="$PROJECT_DIR$/.mvn/.gradle-enterprise/gradle-enterprise-workspace-id" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/LanServer",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -56,12 +56,17 @@
     "settings.editor.selected.configurable": "http.proxy"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn deploy" />
-      <command value="mvn install" />
       <command value="docker-compose.yml: Compose Deployment" />
       <command value="mvn compile" />
+      <command value="mvn install" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -273,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655797643937</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add .mvn folder for gradle">
+      <created>1657036180776</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657036180776</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +322,8 @@
     <MESSAGE value="edit dockerfile to image&#10;FROM jgsoftwares/jgsoftwares:linuxgraalvmce" />
     <MESSAGE value="add row to lpagewebbuilder.html" />
     <MESSAGE value="edit dockerfile &#10;&#10;add http proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile &#10;&#10;add http proxy" />
+    <MESSAGE value="add .mvn folder for gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .mvn folder for gradle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
