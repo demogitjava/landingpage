@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add .mvn folder for gradle">
-      <change beforePath="$PROJECT_DIR$/.mvn/.gradle-enterprise/gradle-enterprise-workspace-id" beforeDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit .mvn folder">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/jarclients/JDesktopClient.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/jarclients/JDesktopClient.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin/apache-maven-3.8.5" />
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -48,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/jarclients",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -67,6 +69,8 @@
       <command value="docker-compose.yml: Compose Deployment" />
       <command value="mvn compile" />
       <command value="mvn install" />
+      <command value="mvn clean" />
+      <command value="mvn spring-boot:run" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -76,29 +80,15 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
-    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="img_webshop" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="img_webshop:latest" />
-          <option name="containerName" value="webshop" />
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
+      <option name="VM_PARAMETERS" value="-Dserver.port=80" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/.." />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Docker.img_webshop" />
-      <item itemvalue="Spring Boot.iDemoLandingPage" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -285,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657036180776</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="edit .mvn folder">
+      <created>1657036329725</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1657036329725</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +320,8 @@
     <MESSAGE value="add row to lpagewebbuilder.html" />
     <MESSAGE value="edit dockerfile &#10;&#10;add http proxy" />
     <MESSAGE value="add .mvn folder for gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .mvn folder for gradle" />
+    <MESSAGE value="edit .mvn folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit .mvn folder" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
