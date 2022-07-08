@@ -1,20 +1,7 @@
 version: '2'
 services:
-  proxy:
-    image: nginx:1.13
-    volumes:
-      - /root/Dokumente/nginx/:/etc/nginx
-    ports:
-      - "217.160.255.254:80:80"
-    networks:
-      - internal-network
 
-  landingpage:
-    image: img_landingpage:latest
-
-    networks:
-      - internal-network
-
-networks:
-  internal-network:
+  web:
+    image: imglandingpagetest:latest
+    container_name: landingpage
 

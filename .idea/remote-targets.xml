@@ -41,7 +41,8 @@
                 </option>
               </VolumeState>
             </option>
-            <option name="javaVersionString" value="17.0.2" />
+            <option name="homePath" value="/opt/java/openjdk" />
+            <option name="javaVersionString" value="17.0.3" />
           </config>
         </ContributedStateBase>
       </target>
