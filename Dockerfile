@@ -1,6 +1,5 @@
 FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 
-FROM maven:latest
 #hostname
 ENV HOSTNAME demogitjava
 

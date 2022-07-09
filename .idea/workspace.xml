@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit desktop jar client &#10;&#10;email folder did not open by button event">
-      <change afterPath="$PROJECT_DIR$/.mvn/.gradle-enterprise/gradle-enterprise-workspace-id" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +26,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin/apache-maven-3.8.5" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -58,7 +55,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.09233612",
-    "settings.editor.selected.configurable": "http.proxy"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,11 +66,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn deploy" />
       <command value="docker-compose.yml: Compose Deployment" />
       <command value="mvn compile" />
-      <command value="mvn install" />
       <command value="mvn clean" />
+      <command value="mvn deploy" />
+      <command value="mvn install" />
       <command value="mvn spring-boot:run" />
     </option>
   </component>
@@ -81,10 +78,11 @@
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="docker-deploy" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -97,10 +95,36 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/.." />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="imageTag" value="sha256:5d0da3dc976460b72c77d94c8a1ad043720b0416bfc16c52c45d4847e53fadb6" />
+          <option name="containerName" value="centos8test" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$PROJECT_DIR$/.." />
+                <option name="hostPath" value="$PROJECT_DIR$/.." />
+              </DockerVolumeBindingImpl>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin" />
+                <option name="hostPath" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin" />
+              </DockerVolumeBindingImpl>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$USER_HOME$/Dokumente/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
+                <option name="hostPath" value="$USER_HOME$/Dokumente/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
         </settings>
       </deployment>
       <method v="2" />
@@ -108,44 +132,25 @@
     <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="web" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="web" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
           <option name="envFilePath" value="" />
-          <option name="commandLineOptions" value="--build" />
           <option name="services">
             <list>
               <option value="web" />
-              <option value="db" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
-          <option name="upDetach" value="false" />
-          <option name="upForceRecreate" value="true" />
-          <option name="upNoDeps" value="true" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.web" />
       <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -349,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657137493714</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="edit docker compose">
+      <created>1657308678050</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1657308678050</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +391,6 @@
     <MESSAGE value="update wiki and header in de" />
     <MESSAGE value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
     <MESSAGE value="add simple docker compose&#10;with nginx" />
-    <MESSAGE value="edit docker compose" />
     <MESSAGE value="update docker compose" />
     <MESSAGE value="." />
     <MESSAGE value="delete root folder in project for nginx" />
@@ -389,7 +400,8 @@
     <MESSAGE value="add .mvn folder for gradle" />
     <MESSAGE value="edit .mvn folder" />
     <MESSAGE value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
+    <MESSAGE value="edit docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
