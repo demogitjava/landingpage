@@ -1,7 +1,16 @@
-version: '2'
+version: '3'
+
+
 services:
 
-  web:
-    image: imglandingpagetest:latest
+  landingpage:
+    image: img_landingpage:latest
+    build: ./landingpage
+    volumes:
+      - ./landingpage:/root/IdeaProjects/landingpage
     container_name: landingpage
+    ports:
+      - "217.160.255.254:80:80"
+    command:
+      - "mvn spring-boot:run"
 

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker compose">
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit dockerfile to run spring boot applcation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +76,14 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="Application" />
+        <option value="MavenRunConfiguration" />
         <option value="SpringBootApplicationConfigurationType" />
         <option value="docker-deploy" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -95,63 +96,21 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/.." />
       <method v="2" />
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="sha256:5d0da3dc976460b72c77d94c8a1ad043720b0416bfc16c52c45d4847e53fadb6" />
-          <option name="containerName" value="centos8test" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="80" />
-                <option name="hostIp" value="217.160.255.254" />
-                <option name="hostPort" value="80" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="volumeBindings">
-            <list>
-              <DockerVolumeBindingImpl>
-                <option name="containerPath" value="$PROJECT_DIR$/.." />
-                <option name="hostPath" value="$PROJECT_DIR$/.." />
-              </DockerVolumeBindingImpl>
-              <DockerVolumeBindingImpl>
-                <option name="containerPath" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin" />
-                <option name="hostPath" value="$USER_HOME$/Dokumente/apache-maven-3.8.5-bin" />
-              </DockerVolumeBindingImpl>
-              <DockerVolumeBindingImpl>
-                <option name="containerPath" value="$USER_HOME$/Dokumente/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
-                <option name="hostPath" value="$USER_HOME$/Dokumente/graalvm-ce-java11-linux-amd64-22.1.0/graalvm-ce-java11-22.1.0" />
-              </DockerVolumeBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="web" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
-      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.docker-compose.yml.web: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657308678050</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="edit dockerfile to run spring boot applcation">
+      <created>1657405508083</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1657405508083</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +367,8 @@
     <MESSAGE value="edit .mvn folder" />
     <MESSAGE value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
     <MESSAGE value="edit docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
+    <MESSAGE value="edit dockerfile to run spring boot applcation" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile to run spring boot applcation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
