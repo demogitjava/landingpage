@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit for setup from docker-compose.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/1_Screenshot.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/grapesjs/grapes.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/grapesjs/grapes.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/Screenshot.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -61,6 +68,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/jarclients" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -345,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657540063542</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="edit for setup from docker-compose.yml">
+      <created>1657571137982</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1657571137982</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
