@@ -4,13 +4,8 @@ version: '3'
 services:
 
   landingpage:
-    image: img_landingpage:latest
-    build: ./landingpage
-    volumes:
-      - ./landingpage:/root/IdeaProjects/landingpage
+    image: jgsoftwares/jgsoftwares:linuxgraalvmce
     container_name: landingpage
     ports:
       - "217.160.255.254:80:80"
-    command:
-      - "mvn spring-boot:run"
 

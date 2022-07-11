@@ -19,7 +19,7 @@
               <option name="runCliOptions" value="-p 217.160.255.254:80:80 --name landingpage" />
             </ContainerConfig>
           </option>
-          <option name="projectRootOnTarget" value="/" />
+          <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
@@ -41,6 +41,7 @@
                 </option>
               </VolumeState>
             </option>
+            <option name="homePath" value="/opt/graalvm-ce-java17-22.0.0.2/" />
             <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
