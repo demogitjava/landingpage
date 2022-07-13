@@ -7,5 +7,11 @@ services:
     image: jgsoftwares/jgsoftwares:linuxgraalvmce
     container_name: landingpage
     ports:
-      - "217.160.255.254:80:80"
+      - "192.168.160.2:80:80"
+
+  webshop:
+    image: jgsoftwares/jgsoftwares:linuxgraalvmce
+    container_name: webshop
+    ports:
+      - "192.168.160.4:80:80"
 
