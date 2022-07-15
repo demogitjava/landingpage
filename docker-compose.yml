@@ -13,6 +13,6 @@ services:
     image: jgsoftwares/jgsoftwares:linuxgraalvmce
     container_name: webshop
     ports:
-      - "217.160.255.254:80:80"
+      - "217.160.255.254:443:443"
 
 
