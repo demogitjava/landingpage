@@ -10,7 +10,7 @@ services:
       - "217.160.255.254:80:80"
 
   webshop:
-    image: jgsoftwares/jgsoftwares:linuxgraalvmce
+    image: testwebshop:latest
     container_name: webshop
     ports:
       - "217.160.255.254:443:443"
