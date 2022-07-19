@@ -4,15 +4,11 @@ version: '3'
 services:
 
   landingpage:
-    image: jgsoftwares/jgsoftwares:linuxgraalvmce
-    container_name: landingpage
+    image: testlandingpage:latest
+    container_name: landingapge
     ports:
       - "217.160.255.254:80:80"
 
-  webshop:
-    image: testwebshop:latest
-    container_name: webshop
-    ports:
-      - "217.160.255.254:443:443"
+
 
 
