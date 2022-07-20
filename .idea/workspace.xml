@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,25 +41,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.09233612",
-    "settings.editor.selected.configurable": "http.proxy"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.09233612&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
@@ -86,7 +87,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -100,22 +101,18 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../" />
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="landingpage" />
-            </list>
-          </option>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -134,33 +131,17 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml[webshop, landingpage]: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="webshop" />
-              <option value="landingpage" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml[webshop, landingpage]: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.docker-compose.yml.webshop: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.webshop: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -450,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658155581787</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="edit docker compose">
+      <created>1658269467889</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1658269467889</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,12 +480,12 @@
     <MESSAGE value="edit dockerfile" />
     <MESSAGE value="edit for setup from docker-compose.yml" />
     <MESSAGE value="edit landingpage picture" />
-    <MESSAGE value="edit docker compose" />
     <MESSAGE value="edit docker compose &#10;webshop module port to 443" />
     <MESSAGE value="edit webshop port" />
     <MESSAGE value="edit url path to webshop" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
