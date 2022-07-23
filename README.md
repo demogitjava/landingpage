@@ -97,10 +97,24 @@ networkconfig
 run options
 ============================================================
 
+for bridge network -> 254 Containers
+
+`docker network create \
+--driver=bridge \
+--subnet=192.168.178.0/24 \
+--ip-range=192.168.178.0/24 \
+--gateway=192.168.178.1 \
+192.168.178.0`
+
+
+for ip
+
 `--rm -d --network 192.200.100.254/24`
 after the network is scuessfully created
 type your run command to deploy your container 
 to the network 
+
+
 
 
 
