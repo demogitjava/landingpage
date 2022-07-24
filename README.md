@@ -130,14 +130,10 @@ to load your image to docker desktop type:
 docker load --input landingpage.tar
 
 
-The images are available
-dropbox:
-https://www.dropbox.com/s/ku2r5hz8koj9y7d/landingpage.tar?dl=0
-<br/>
-ports
-your ip :80:80
-your ip :5005:5005
 
+
+-> for manual setup 
+----------------------------------------
 mount directory into docker container:
 
 /root/.m2:/root/.m2  
