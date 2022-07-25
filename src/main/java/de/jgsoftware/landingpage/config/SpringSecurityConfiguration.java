@@ -51,13 +51,16 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.csrf().disable().cors().and()
 				.authorizeRequests()
 				.antMatchers(
+
 						"/index.html",
-						"/wiki.html",
+						"/about.html",
 						"/admin.html",
+						"/contact.html",
 						"lpagewebbuilder.html",
 						"/signup.html",
 						"/userlogin.html",
 						"/lpagewebbuilder",
+						"/wiki.html",
 						"/h2-console/**",
 						"/resources/**",
 						"/static/**,").permitAll()

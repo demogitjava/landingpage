@@ -23,32 +23,21 @@ public class About_LandingPageController implements iAboutController
 
     HttpServletRequest request;
 
+    ModelAndView mv;
 
 
     @Override
     public ModelAndView about() {
 
 
-        ModelAndView mv = new ModelAndView("about");
+        mv = new ModelAndView("about");
 
 
 
-        /**
-         *   Get Country to display Language
-         *   only for this Controller
-         */
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
         mv.addObject("lang", languagestr);
 
 
-        /**
-         *   load entities from table
-         *   webtextlayout to contoller
-         *
-         *   inject text from with webtextcomp[0] fist id of table
-         */
-        mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
-        mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
 
 
         return mv;
