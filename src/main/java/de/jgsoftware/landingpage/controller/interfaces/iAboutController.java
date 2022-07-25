@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.mail.internet.AddressException;
 
-@RequestMapping("/about")
+@RequestMapping("about")
 public interface iAboutController
 {
     @GetMapping({"about", "/"})
