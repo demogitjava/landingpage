@@ -9,6 +9,8 @@
     <title>About</title>
     <link th:href="@{/bootstrap4/css/bootstrap.css}" rel="stylesheet" />
     <link th:href="@{/bootflat/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/cover/cover.css}" rel="stylesheet" />
+
 
     <script th:src="@{/bootstrap.min.js}"></script>
 
@@ -20,9 +22,13 @@
     <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.js}"></script>
 
 
+
     <script th:src="@{/bootflat/js/jcheck.min.js}"></script>
     <script th:src="@{/jquery.fs.selecter.min.js}"></script>
     <script th:src="@{/jquery.fs.stepper.min.js}"></script>
+
+    <script th:src="@{/popper.min.js}"></script>
+
 
 
 </header>
@@ -30,120 +36,144 @@
 
 
 
-<body>
+<body class="container">
 
-<!-- Container element -->
-<div class="container">
-    <!-- row 4-4-4 -->
-    <div class="row">
-        <div class="col-sm-4">
+<div class="row-cols-lg-12">
+    <nav id="navigationbootstrap" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <!-- Home -->
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>  <!-- Contact -->
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-4">
+    </nav>
+
+    <!-- Container element -->
+    <div>
+        <!-- row 4-4-4 -->
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+            </div>
         </div>
-        <div class="col-sm-4">
+        <!-- row 12 -->
+        <!-- row  6-6 -->
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
+            </div>
+        </div>
+        <!-- row 4-4-4 -->
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <h1>About us</h1>
+                <br/>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+        <!-- row  6-6 -->
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
+                <div>Diese Anwendung wurde mit
+                </div>
+                <div>den Frameworks
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>- Spring Boot
+                </div>
+                <div>- Theamleaf
+                </div>
+                <div>- Bootstrap
+                    <br/>
+                </div>
+                <div>- Bootflat
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>erstellt.
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>Er soll eine einfache M&oumlglichkeit bieten
+                    <br/>
+                </div>
+                <div>eine Warenwirtschaftssoftware
+                    <br/>
+                </div>
+                <div>&uumlber Module sowohl &uumlber einen Internet Server
+                    <br/>
+                </div>
+                <div>via epel-release als auch lokal oder den &quot;Docker - Desktop &quot;
+                </div>
+                <div>bereit zu stellen.
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>F&uumlr fragen nutzen Sie bitte das Kontakt Formular
+                    <br/>
+                </div>
+                <div>&uumlber die Webseite.
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+                <div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
         </div>
     </div>
-    <!-- row 12 -->
-    <!-- row  6-6 -->
-    <div class="row">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-        </div>
-    </div>
-    <!-- row 4-4-4 -->
-    <div class="row">
-        <div class="col-sm-4">
-        </div>
-        <div class="col-sm-4">
-            <h1>About us</h1>
-            <br/>
-        </div>
-        <div class="col-sm-4">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-        </div>
-    </div>
-    <!-- row  6-6 -->
-    <div class="row">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-            <div>Diese Anwendung wurde mit
-            </div>
-            <div>den Frameworks
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>- Spring Boot
-            </div>
-            <div>- Theamleaf
-            </div>
-            <div>- Bootstrap
-                <br/>
-            </div>
-            <div>- Bootflat
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>erstellt.
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>Er soll eine einfache M&oumlglichkeit bieten
-                <br/>
-            </div>
-            <div>eine Warenwirtschaftssoftware
-                <br/>
-            </div>
-            <div>&uumlber Module sowohl &uumlber einen Internet Server
-                <br/>
-            </div>
-            <div>via epel-release als auch lokal oder den &quot;Docker - Desktop &quot;
-            </div>
-            <div>bereit zu stellen.
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>F&uumlr fragen nutzen Sie bitte das Kontakt Formular
-                <br/>
-            </div>
-            <div>&uumlber die Webseite.
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-            <div>
-                <br/>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-        </div>
-    </div>
+
 </div>
 
 
