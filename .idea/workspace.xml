@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit page to bootflat">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit service page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/service.html" afterDir="false" />
     </list>
@@ -147,11 +147,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.All in generated-requests" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658826378398</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="edit service page">
+      <created>1658842036055</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1658842036055</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +568,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add dockerfiel" />
     <MESSAGE value="edit dockerfile &#10;for expose ports" />
     <MESSAGE value="update wiki and header in de" />
     <MESSAGE value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
@@ -586,7 +592,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit about.html" />
     <MESSAGE value="edit page to bootflat" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit page to bootflat" />
+    <MESSAGE value="edit service page" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit service page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
