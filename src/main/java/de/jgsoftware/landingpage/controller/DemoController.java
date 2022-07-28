@@ -123,19 +123,19 @@ public class DemoController implements iDemoController
     @Override
     public String contact()
     {
-        return "redirect:/contact";
+        return "contact";
     }
 
     @Override
     public String about()
     {
-        return "redirect:/about";
+        return "about";
     }
 
     @Override
     public String service()
     {
-        return "redirect:/service";
+        return "service";
     }
 
 
