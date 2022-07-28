@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit lpagewebbuilder.html">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/service.css" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit service.html page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/service.html" afterDir="false" />
     </list>
@@ -212,13 +211,6 @@
       <workItem from="1655198857325" duration="257000" />
       <workItem from="1655200749994" duration="18000" />
       <workItem from="1655202201660" duration="9000" />
-    </task>
-    <task id="LOCAL-00004" summary=".">
-      <created>1654683212679</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654683212679</updated>
     </task>
     <task id="LOCAL-00005" summary="add dockerfiel">
       <created>1654695197808</created>
@@ -556,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659034913396</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="edit service.html page">
+      <created>1659037514094</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1659037514095</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete bootstrap4/css/bootstrap.min.css&#10;&#10;used css is &#10;bootflat/css/bootstrap.min.css" />
     <MESSAGE value="add simple docker compose&#10;with nginx" />
     <MESSAGE value="update docker compose" />
     <MESSAGE value="delete root folder in project for nginx" />
@@ -603,7 +601,8 @@
     <MESSAGE value="edit service page" />
     <MESSAGE value="add simple meta keyword&#10;to landingpage" />
     <MESSAGE value="edit lpagewebbuilder.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit lpagewebbuilder.html" />
+    <MESSAGE value="edit service.html page" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit service.html page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
