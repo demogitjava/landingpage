@@ -42,4 +42,13 @@ public interface iDemoController {
     String lpagewebbuilder();
 
 
+    @GetMapping("/contact")
+    String contact();
+
+    @GetMapping("/about")
+    String about();
+
+    @GetMapping("/service")
+    String service();
+
 }

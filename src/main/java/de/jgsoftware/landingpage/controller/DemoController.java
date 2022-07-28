@@ -120,5 +120,24 @@ public class DemoController implements iDemoController
     }
 
 
+    @Override
+    public String contact()
+    {
+        return "redirect:/contact";
+    }
+
+    @Override
+    public String about()
+    {
+        return "redirect:/about";
+    }
+
+    @Override
+    public String service()
+    {
+        return "redirect:/service";
+    }
+
+
 
 }
