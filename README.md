@@ -85,7 +85,14 @@ used jdk: **GraalVM Community ** https://www.graalvm.org/downloads/
 # For Docker
 ============================================================
 <br/>
-To build the image type:
+start docker container with 
+line 
+
+
+T**o build the image type:
+
+-p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage**
+
 
 docker build -f Dockerfile -t landingpage .
 
