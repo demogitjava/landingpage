@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootflat/js/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/bootflat/js/jcheck.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,13 +215,6 @@
       <workItem from="1655198857325" duration="257000" />
       <workItem from="1655200749994" duration="18000" />
       <workItem from="1655202201660" duration="9000" />
-    </task>
-    <task id="LOCAL-00010" summary="edit docker compose">
-      <created>1655105698959</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1655105698959</updated>
     </task>
     <task id="LOCAL-00011" summary="update docker compose">
       <created>1655111612001</created>
@@ -557,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659042937974</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;">
+      <created>1659377669672</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1659377669673</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +581,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update docker compose" />
     <MESSAGE value="delete root folder in project for nginx" />
     <MESSAGE value="edit dockerfile to image&#10;FROM jgsoftwares/jgsoftwares:linuxgraalvmce" />
     <MESSAGE value="add row to lpagewebbuilder.html" />
@@ -604,7 +605,8 @@
     <MESSAGE value="edit service.html page" />
     <MESSAGE value="add simple naviagtion menu to service.html" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
