@@ -27,7 +27,7 @@ after then the folders has look like this
         /static
         /templates
 
-    /test-classes
+    /classes
         /de
         /jgsoftware
         /landingpage
