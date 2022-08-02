@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +215,6 @@
       <workItem from="1655198857325" duration="257000" />
       <workItem from="1655200749994" duration="18000" />
       <workItem from="1655202201660" duration="9000" />
-    </task>
-    <task id="LOCAL-00015" summary=".">
-      <created>1655671342654</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1655671342654</updated>
     </task>
     <task id="LOCAL-00016" summary="delete root folder in project for nginx">
       <created>1655748759809</created>
@@ -555,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659465713865</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary=".">
+      <created>1659483240632</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1659483240633</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
