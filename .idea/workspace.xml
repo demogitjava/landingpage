@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +211,6 @@
       <workItem from="1655198857325" duration="257000" />
       <workItem from="1655200749994" duration="18000" />
       <workItem from="1655202201660" duration="9000" />
-    </task>
-    <task id="LOCAL-00014" summary="update docker compose">
-      <created>1655196761501</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1655196761501</updated>
     </task>
     <task id="LOCAL-00015" summary=".">
       <created>1655671342654</created>
@@ -555,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659465595604</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary=".">
+      <created>1659465713865</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1659465713865</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
