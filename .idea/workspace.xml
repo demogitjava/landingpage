@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add keyword to de for &#10;google search">
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,14 +241,7 @@
       <workItem from="1660037895050" duration="6056000" />
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
-      <workItem from="1660051200626" duration="6950000" />
-    </task>
-    <task id="LOCAL-00026" summary="edit for setup from docker-compose.yml">
-      <created>1657540063541</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1657540063542</updated>
+      <workItem from="1660051200626" duration="7000000" />
     </task>
     <task id="LOCAL-00027" summary="edit for setup from docker-compose.yml">
       <created>1657571137982</created>
@@ -587,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660065985357</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="add keyword to de for &#10;google search">
+      <created>1660066390110</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1660066390110</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit dockerfile to run spring boot applcation" />
     <MESSAGE value="edit for setup from docker-compose.yml" />
     <MESSAGE value="edit landingpage picture" />
     <MESSAGE value="edit docker compose &#10;webshop module port to 443" />
@@ -634,7 +632,8 @@
     <MESSAGE value="edit de start landingpage" />
     <MESSAGE value="edit de_body.html" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="add keyword to de for &#10;google search" />
+    <option name="LAST_COMMIT_MESSAGE" value="add keyword to de for &#10;google search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
