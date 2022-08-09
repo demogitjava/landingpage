@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit readme">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,14 +242,7 @@
       <workItem from="1660037895050" duration="6056000" />
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
-      <workItem from="1660051200626" duration="3085000" />
-    </task>
-    <task id="LOCAL-00022" summary="edit desktop jar client &#10;&#10;email folder did not open by button event">
-      <created>1657137493714</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1657137493714</updated>
+      <workItem from="1660051200626" duration="4653000" />
     </task>
     <task id="LOCAL-00023" summary="edit docker compose">
       <created>1657308678050</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660054858356</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary=".">
+      <created>1660058406308</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1660058406308</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,11 +630,11 @@
     <MESSAGE value="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="wrong import path &#10;&#10;edit to &#10;&lt;script th:src=&quot;@{bootstrap.min.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="edit navigation menu german" />
-    <MESSAGE value="." />
     <MESSAGE value="edit admin controller" />
     <MESSAGE value="h2-console is now available &#10;over html interface" />
     <MESSAGE value="edit readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit readme" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

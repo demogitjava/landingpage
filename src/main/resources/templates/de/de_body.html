@@ -55,11 +55,25 @@
                 <div class="card-body">
                     <h2 class="card-title" th:text="${webtextcomp[9].de}"></h2> <!-- landingpage -->
                     <p class="card-text" th:text="${webtextcomp[10].de}"></p>
+
+                    <pre>
+                        <p>Datenbank -> shopdb</p>
+                    </pre>
+
                     <p>start h2 jar in Container with:</p>
                     <hr/>
                     <pre>java -jar /root/h2/bin/h2-1.4.199.jar -webAllowOthers -tcpAllowOthers</pre>
                     <hr/>
+                    <p>alternativ ist der Text über die URL</p>
+
                     <hr/>
+
+                        <p>/h2-console
+                        </p>
+                        <p>jdbc:h2:tcp://localhost:9092/~/shopdb</p>
+
+                    <hr/>
+
                     <p>Username and password</p>
                     <hr/>
                     <pre>admin</pre>
