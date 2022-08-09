@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit de start landingpage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
@@ -242,14 +242,7 @@
       <workItem from="1660037895050" duration="6056000" />
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
-      <workItem from="1660051200626" duration="4653000" />
-    </task>
-    <task id="LOCAL-00023" summary="edit docker compose">
-      <created>1657308678050</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1657308678050</updated>
+      <workItem from="1660051200626" duration="5323000" />
     </task>
     <task id="LOCAL-00024" summary="edit dockerfile to run spring boot applcation">
       <created>1657405508083</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660058406308</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="edit de start landingpage">
+      <created>1660062609802</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1660062609802</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit .mvn folder" />
     <MESSAGE value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
     <MESSAGE value="edit dockerfile to run spring boot applcation" />
     <MESSAGE value="edit for setup from docker-compose.yml" />
@@ -634,7 +633,8 @@
     <MESSAGE value="h2-console is now available &#10;over html interface" />
     <MESSAGE value="edit readme" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit de start landingpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de start landingpage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
