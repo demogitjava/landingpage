@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="h2-console is now available &#10;over html interface">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -242,14 +242,7 @@
       <workItem from="1660037895050" duration="6056000" />
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
-      <workItem from="1660051200626" duration="2457000" />
-    </task>
-    <task id="LOCAL-00021" summary="edit .mvn folder">
-      <created>1657036329725</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1657036329725</updated>
+      <workItem from="1660051200626" duration="3085000" />
     </task>
     <task id="LOCAL-00022" summary="edit desktop jar client &#10;&#10;email folder did not open by button event">
       <created>1657137493714</created>
@@ -587,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660054500646</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="edit readme">
+      <created>1660054858355</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1660054858356</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -609,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add .mvn folder for gradle" />
     <MESSAGE value="edit .mvn folder" />
     <MESSAGE value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
     <MESSAGE value="edit dockerfile to run spring boot applcation" />
@@ -634,7 +633,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit admin controller" />
     <MESSAGE value="h2-console is now available &#10;over html interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="h2-console is now available &#10;over html interface" />
+    <MESSAGE value="edit readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

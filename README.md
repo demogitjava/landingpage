@@ -122,7 +122,7 @@ for bridge network -> 254 Containers
 for ip
 
 `--rm -d --network 192.200.100.254/24`
-after the network is scuessfully created
+after the network is successfuly created
 type your run command to deploy your container 
 to the network 
 
