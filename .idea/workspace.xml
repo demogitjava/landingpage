@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit admin controller">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="h2-console is now available &#10;over html interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +73,11 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.41935483",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -239,14 +242,7 @@
       <workItem from="1660037895050" duration="6056000" />
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
-      <workItem from="1660051200626" duration="1804000" />
-    </task>
-    <task id="LOCAL-00020" summary="add .mvn folder for gradle">
-      <created>1657036180776</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1657036180776</updated>
+      <workItem from="1660051200626" duration="2457000" />
     </task>
     <task id="LOCAL-00021" summary="edit .mvn folder">
       <created>1657036329725</created>
@@ -584,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660051483689</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="h2-console is now available &#10;over html interface">
+      <created>1660054500646</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1660054500646</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit dockerfile &#10;&#10;add http proxy" />
     <MESSAGE value="add .mvn folder for gradle" />
     <MESSAGE value="edit .mvn folder" />
     <MESSAGE value="edit desktop jar client &#10;&#10;email folder did not open by button event" />
@@ -631,16 +633,12 @@
     <MESSAGE value="edit navigation menu german" />
     <MESSAGE value="." />
     <MESSAGE value="edit admin controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit admin controller" />
+    <MESSAGE value="h2-console is now available &#10;over html interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="h2-console is now available &#10;over html interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/WebSiteBuilder.java</url>
           <line>39</line>

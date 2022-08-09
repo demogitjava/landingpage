@@ -3,7 +3,10 @@
 
 
 used db -> shopdb
+available with  ->your-ip/h2-console
 
+username admin
+password jj78mvpr52k1
 
 to edit the text in the demo application
 copy the segment and 
@@ -14,6 +17,8 @@ language.
 
 in class contact_service.java
 edit password and username for your smtp account -- hard coded in the moment
+-> testet with gmx.
+
 
 
 to run this modul in a docker container
