@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 
-@RequestMapping("/admin")
+@RequestMapping("admin")
 @PreAuthorize("hasAuthority('ROLE_ADMIN','ROLE_USER')")
 public interface iAdminController
 {
