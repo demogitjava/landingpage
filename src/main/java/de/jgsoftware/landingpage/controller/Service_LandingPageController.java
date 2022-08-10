@@ -20,4 +20,13 @@ public class Service_LandingPageController implements iServiceController
 
         return mv;
     }
+
+
+    @Override
+    public String getClientid(String clientid, String channel)
+    {
+
+
+        return "";
+    }
 }
