@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add gentella dashboard framework">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit admin.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
@@ -279,13 +279,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00032" summary="edit webshop port">
-      <created>1657875892812</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1657875892812</updated>
     </task>
     <task id="LOCAL-00033" summary="edit url path to webshop">
       <created>1658155066292</created>
@@ -623,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660661347736</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="edit admin.html">
+      <created>1660662686305</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1660662686305</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +647,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit webshop port" />
     <MESSAGE value="edit url path to webshop" />
     <MESSAGE value="edit docker compose" />
     <MESSAGE value="edit dockerfile" />
@@ -672,7 +671,8 @@
     <MESSAGE value="add spring kafka to pom" />
     <MESSAGE value="edit keyword in header&#10;for &#10;en&#10;es&#10;fr&#10;it&#10;and tr" />
     <MESSAGE value="add gentella dashboard framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gentella dashboard framework" />
+    <MESSAGE value="edit admin.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit admin.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
