@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add navigation menu to admin dashboard template &#10;&#10;messages are available after login">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit to simple admin dashboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
@@ -273,13 +273,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00037" summary="edit dockerfile">
-      <created>1658400598248</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1658400598248</updated>
     </task>
     <task id="LOCAL-00038" summary=".">
       <created>1658597260572</created>
@@ -617,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660721194394</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="edit to simple admin dashboard">
+      <created>1660763143082</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1660763143082</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +641,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit dockerfile" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit about.html" />
     <MESSAGE value="edit page to bootflat" />
@@ -666,7 +665,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit charset &#10;for admin.html" />
     <MESSAGE value="add navigation menu to admin dashboard template &#10;&#10;messages are available after login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add navigation menu to admin dashboard template &#10;&#10;messages are available after login" />
+    <MESSAGE value="edit to simple admin dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit to simple admin dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
