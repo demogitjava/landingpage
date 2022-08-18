@@ -24,10 +24,14 @@
 
     <!-- Custom Theme Style -->
     <link th:href="@{/gentella/build/css/custom.min.css}" rel="stylesheet">
+    <link th:href="@{/gentella/build/css/custom.css}" rel="stylesheet">
 
 
-    <!-- jQuery -->
-    <script th:src="@{/gentella/vendors/jquery/dist/jquery.min.js}"></script>
+    <script th:src="@{/gentella/vendors/jquery/dist/jquery.js}"></script>
+    <script th:src="@{/gentella/vendors/jquery/external.sizzle/sizzle.js}"></script>
+
+
+
     <!-- Bootstrap -->
     <script th:src="@{/gentella/vendors/bootstrap/dist/js/bootstrap.bundle.min.js}"></script>
     <!-- FastClick -->
@@ -64,6 +68,8 @@
     <script th:src="@{/gentella/vendors/bootstrap-daterangepicker/daterangepicker.js}"></script>
 
     <!-- Custom Theme Scripts -->
+    <script th:src="@{/gentella/build/js/custom.js}"></script>
+
     <script th:src="@{/gentella/build/js/custom.min.js}"></script>
 
 
@@ -1032,7 +1038,7 @@
     <br>
     <p>you are not logged in</p>
 </body>
-
+</body>
 
 
 </html>
