@@ -18,24 +18,25 @@ public class Admin_Controller implements iAdminController
 {
 
 
+    java.util.Locale locale;
     ModelAndView mv;
 
-    java.util.Locale locale;
+
+    String language;
+    String component;
 
 
     @Autowired
     i_admin_service admin_service;
 
 
-    @Autowired
-    HttpServletRequest request;
 
-
-    Principal principal;
 
     @Override
     public ModelAndView admin()
     {
+
+        mv = new ModelAndView("admin");
 
         /**
          *   Bootstrap VALUES for Navigation Bar

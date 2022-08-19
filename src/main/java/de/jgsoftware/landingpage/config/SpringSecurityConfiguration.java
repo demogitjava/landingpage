@@ -59,7 +59,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 						"contact",
 						"wiki",
 						"/h2-console/**",
-						"/resources/static/**").permitAll()
+						"static/**").permitAll()
 
 				//.antMatchers("/profile/**").access("hasRole('ROLE_USER')")
 				.antMatchers("lpagewebbuilder").access("hasAuthority('ROLE_ADMIN','ROLE_USER')")

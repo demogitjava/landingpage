@@ -51,4 +51,6 @@ public interface iDemoController {
     @GetMapping("/service")
     String service();
 
+    @GetMapping("/admin")
+    String admin();
 }

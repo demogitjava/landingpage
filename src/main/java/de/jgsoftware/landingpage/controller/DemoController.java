@@ -138,6 +138,13 @@ public class DemoController implements iDemoController
         return "service";
     }
 
+    @Override
+    public String admin()
+    {
+        return "admin";
+    }
+
+
 
 
 }
