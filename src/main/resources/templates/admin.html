@@ -28,7 +28,7 @@
 
 
     <script th:src="@{/gentella/vendors/jquery/dist/jquery.js}"></script>
-    <script th:src="@{/gentella/vendors/jquery/external.sizzle/sizzle.js}"></script>
+    <script th:src="@{/gentella/vendors/jquery/external.sizzle/dist/sizzle.js}"></script>
 
 
 
@@ -67,10 +67,9 @@
     <script th:src="@{/gentella/vendors/moment/min/moment.min.js}"></script>
     <script th:src="@{/gentella/vendors/bootstrap-daterangepicker/daterangepicker.js}"></script>
 
-    <!-- Custom Theme Scripts -->
-    <script th:src="@{/gentella/build/js/custom.js}"></script>
 
-    <script th:src="@{/gentella/build/js/custom.min.js}"></script>
+
+    <script th:src="@{/gentella/build/js/custom.js}"></script>
 
 
 
@@ -155,8 +154,8 @@
                             </li>
                             <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
-                                    <li><a href="fixed_footer.html">Fixed Footer</a></li>
+                                    <li><a href="dashboard/fixed_sidebar.html">Fixed Sidebar</a></li>
+                                    <li><a href="dashboard/fixed_footer.html">Fixed Footer</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -218,7 +217,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="Lock">
                         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="/logout">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>
