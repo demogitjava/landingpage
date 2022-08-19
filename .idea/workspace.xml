@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit admin.html tempalte">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" afterDir="false" />
     </list>
@@ -59,8 +59,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "15",
-    "RequestMappingsPanelWidth1": "15",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -273,13 +273,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00043" summary="edit about.html">
-      <created>1658774403772</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1658774403772</updated>
     </task>
     <task id="LOCAL-00044" summary="edit about.html">
       <created>1658775206664</created>
@@ -617,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660913998779</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin">
+      <created>1660914805601</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1660914805601</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +641,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit service page" />
     <MESSAGE value="add simple meta keyword&#10;to landingpage" />
     <MESSAGE value="edit lpagewebbuilder.html" />
     <MESSAGE value="edit service.html page" />
@@ -666,7 +665,8 @@
     <MESSAGE value="edit navigation menu&#10;from admin.html" />
     <MESSAGE value="." />
     <MESSAGE value="edit admin.html tempalte" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit admin.html tempalte" />
+    <MESSAGE value="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
