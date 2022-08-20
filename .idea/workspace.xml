@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,13 +273,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00047" summary="edit about.html">
-      <created>1658826016651</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1658826016652</updated>
     </task>
     <task id="LOCAL-00048" summary="edit page to bootflat">
       <created>1658826378398</created>
@@ -619,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660986130254</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working">
+      <created>1660986662842</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1660986662842</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +641,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit lpagewebbuilder.html" />
     <MESSAGE value="edit service.html page" />
     <MESSAGE value="add simple naviagtion menu to service.html" />
     <MESSAGE value="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;" />
@@ -668,7 +665,8 @@
     <MESSAGE value="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin" />
     <MESSAGE value="." />
     <MESSAGE value="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;" />
+    <MESSAGE value="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
