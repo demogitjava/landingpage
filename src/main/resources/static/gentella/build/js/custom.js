@@ -1,8 +1,8 @@
 /**
  * Resize function without multiple trigger
- * 
+ *
  * Usage:
- * $(window).smartresize(function(){  
+ * $(window).smartresize(function(){
  *     // code here
  * });
  */
@@ -10,14 +10,14 @@
     // debouncing function from John Hann
     // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
     var debounce = function (func, threshold, execAsap) {
-      var timeout;
+        var timeout;
 
         return function debounced () {
             var obj = this, args = arguments;
             function delayed () {
                 if (!execAsap)
-                    func.apply(obj, args); 
-                timeout = null; 
+                    func.apply(obj, args);
+                timeout = null;
             }
 
             if (timeout)
@@ -25,11 +25,11 @@
             else if (execAsap)
                 func.apply(obj, args);
 
-            timeout = setTimeout(delayed, threshold || 100); 
+            timeout = setTimeout(delayed, threshold || 100);
         };
     };
 
-    // smartresize 
+    // smartresize
     jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
@@ -49,9 +49,11 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $NAV_MENU = $('.nav_menu'),
     $FOOTER = $('footer');
 
+
+
 // Sidebar
 function init_sidebar() {
-    // TODO: This is some kind of easy fix, maybe we can improve this
+// TODO: This is some kind of easy fix, maybe we can improve this
     var setContentHeight = function () {
         // reset height
         $RIGHT_COL.css('min-height', $(window).height());
@@ -67,41 +69,40 @@ function init_sidebar() {
         $RIGHT_COL.css('min-height', contentHeight);
     };
 
-    var openUpMenu = function () {
-        $SIDEBAR_MENU.find('li').removeClass('active active-sm');
-        $SIDEBAR_MENU.find('li ul').slideUp();
-    }
-
-    $SIDEBAR_MENU.find('a').on('click', function (ev) {
+    $SIDEBAR_MENU.find('a').on('click', function(ev) {
+        console.log('clicked - sidebar_menu');
         var $li = $(this).parent();
 
         if ($li.is('.active')) {
             $li.removeClass('active active-sm');
-            $('ul:first', $li).slideUp(function () {
+            $('ul:first', $li).slideUp(function() {
                 setContentHeight();
             });
         } else {
             // prevent closing menu if we are on child menu
             if (!$li.parent().is('.child_menu')) {
-                openUpMenu();
-            } else {
-                if ($BODY.is('nav-sm')) {
-                    if (!$li.parent().is('child_menu')) {
-                        openUpMenu();
-                    }
+                $SIDEBAR_MENU.find('li').removeClass('active active-sm');
+                $SIDEBAR_MENU.find('li ul').slideUp();
+            }else
+            {
+                if ( $BODY.is( ".nav-sm" ) )
+                {
+                    $SIDEBAR_MENU.find( "li" ).removeClass( "active active-sm" );
+                    $SIDEBAR_MENU.find( "li ul" ).slideUp();
                 }
             }
-
             $li.addClass('active');
 
-            $('ul:first', $li).slideDown(function () {
+            $('ul:first', $li).slideDown(function() {
                 setContentHeight();
             });
         }
     });
 
-    // toggle small or large menu
-    $MENU_TOGGLE.on('click', function () {
+// toggle small or large menu
+    $MENU_TOGGLE.on('click', function() {
+        console.log('clicked - menu toggle');
+
         if ($BODY.hasClass('nav-md')) {
             $SIDEBAR_MENU.find('li.active ul').hide();
             $SIDEBAR_MENU.find('li.active').addClass('active-sm').removeClass('active');
@@ -113,8 +114,6 @@ function init_sidebar() {
         $BODY.toggleClass('nav-md nav-sm');
 
         setContentHeight();
-
-        $('.dataTable').each(function () { $(this).dataTable().fnDraw(); });
     });
 
     // check active menu
@@ -122,12 +121,12 @@ function init_sidebar() {
 
     $SIDEBAR_MENU.find('a').filter(function () {
         return this.href == CURRENT_URL;
-    }).parent('li').addClass('current-page').parents('ul').slideDown(function () {
+    }).parent('li').addClass('current-page').parents('ul').slideDown(function() {
         setContentHeight();
     }).parent().addClass('active');
 
     // recompute content when resizing
-    $(window).smartresize(function () {
+    $(window).smartresize(function(){
         setContentHeight();
     });
 
@@ -138,22 +137,27 @@ function init_sidebar() {
         $('.menu_fixed').mCustomScrollbar({
             autoHideScrollbar: true,
             theme: 'minimal',
-            mouseWheel: { preventDefault: true }
+            mouseWheel:{ preventDefault: true }
         });
     }
-}
+};
 // /Sidebar
 
+var randNum = function() {
+    return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
+};
+
+
 // Panel toolbox
-$(document).ready(function () {
-    $('.collapse-link').on('click', function () {
+$(document).ready(function() {
+    $('.collapse-link').on('click', function() {
         var $BOX_PANEL = $(this).closest('.x_panel'),
             $ICON = $(this).find('i'),
             $BOX_CONTENT = $BOX_PANEL.find('.x_content');
 
         // fix for some div with hardcoded fix class
         if ($BOX_PANEL.attr('style')) {
-            $BOX_CONTENT.slideToggle(200, function () {
+            $BOX_CONTENT.slideToggle(200, function(){
                 $BOX_PANEL.removeAttr('style');
             });
         } else {
@@ -173,7 +177,7 @@ $(document).ready(function () {
 // /Panel toolbox
 
 // Tooltip
-$(document).ready(function () {
+$(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip({
         container: 'body'
     });
@@ -181,15 +185,13 @@ $(document).ready(function () {
 // /Tooltip
 
 // Progressbar
-$(document).ready(function () {
-    if ($(".progress .progress-bar")[0]) {
-        $('.progress .progress-bar').progressbar();
-    }
-});
+if ($(".progress .progress-bar")[0]) {
+    $('.progress .progress-bar').progressbar();
+}
 // /Progressbar
 
 // Switchery
-$(document).ready(function () {
+$(document).ready(function() {
     if ($(".js-switch")[0]) {
         var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
         elems.forEach(function (html) {
@@ -201,8 +203,9 @@ $(document).ready(function () {
 });
 // /Switchery
 
+
 // iCheck
-$(document).ready(function () {
+$(document).ready(function() {
     if ($("input.flat")[0]) {
         $(document).ready(function () {
             $('input.flat').iCheck({
@@ -267,8 +270,10 @@ function countChecked() {
     }
 }
 
+
+
 // Accordion
-$(document).ready(function () {
+$(document).ready(function() {
     $(".expand").on("click", function () {
         $(this).next().slideToggle(200);
         $expand = $(this).find(">:first-child");
@@ -287,7 +292,7 @@ if (typeof NProgress != 'undefined') {
         NProgress.start();
     });
 
-    $(window).on('load', function () {
+    $(window).load(function () {
         NProgress.done();
     });
 }
@@ -295,7 +300,7 @@ if (typeof NProgress != 'undefined') {
 
 //hover and retain popover when on popover content
 var originalLeave = $.fn.popover.Constructor.prototype.leave;
-$.fn.popover.Constructor.prototype.leave = function (obj) {
+$.fn.popover.Constructor.prototype.leave = function(obj) {
     var self = obj instanceof this.constructor ?
         obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type);
     var container, timeout;
@@ -305,11 +310,11 @@ $.fn.popover.Constructor.prototype.leave = function (obj) {
     if (obj.currentTarget) {
         container = $(obj.currentTarget).siblings('.popover');
         timeout = self.timeout;
-        container.one('mouseenter', function () {
+        container.one('mouseenter', function() {
             //We entered the actual popover – call off the dogs
             clearTimeout(timeout);
             //Let's monitor popover content instead
-            container.one('mouseleave', function () {
+            container.one('mouseleave', function() {
                 $.fn.popover.Constructor.prototype.leave.call(self, self);
             });
         });
@@ -331,14 +336,13 @@ function gd(year, month, day) {
 }
 
 
-function init_flot_chart() {
+function init_flot_chart(){
 
-    if (typeof ($.plot) === 'undefined') { return; }
+    if( typeof ($.plot) === 'undefined'){ return; }
 
     console.log('init_flot_chart');
-    var randNum = function () {
-        return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
-    };
+
+
 
     var arr_data1 = [
         [gd(2012, 1, 1), 17],
@@ -487,7 +491,7 @@ function init_flot_chart() {
             margin: [0, -25],
             noColumns: 0,
             labelBoxBorderColor: null,
-            labelFormatter: function (label, series) {
+            labelFormatter: function(label, series) {
                 return label + '&nbsp;&nbsp;';
             },
             width: 40,
@@ -541,17 +545,17 @@ function init_flot_chart() {
     };
 
 
-    if ($("#chart_plot_01").length) {
+    if ($("#chart_plot_01").length){
         console.log('Plot1');
 
-        $.plot($("#chart_plot_01"), [arr_data1, arr_data2], chart_plot_01_settings);
+        $.plot( $("#chart_plot_01"), [ arr_data1, arr_data2 ],  chart_plot_01_settings );
     }
 
 
-    if ($("#chart_plot_02").length) {
+    if ($("#chart_plot_02").length){
         console.log('Plot2');
 
-        $.plot($("#chart_plot_02"),
+        $.plot( $("#chart_plot_02"),
             [{
                 label: "Email Sent",
                 data: chart_plot_02_data,
@@ -559,13 +563,12 @@ function init_flot_chart() {
                     fillColor: "rgba(150, 202, 89, 0.12)"
                 },
                 points: {
-                    fillColor: "#fff"
-                }
+                    fillColor: "#fff" }
             }], chart_plot_02_settings);
 
     }
 
-    if ($("#chart_plot_03").length) {
+    if ($("#chart_plot_03").length){
         console.log('Plot3');
 
 
@@ -589,7 +592,7 @@ function init_flot_chart() {
 
 function init_starrr() {
 
-    if (typeof (starrr) === 'undefined') { return; }
+    if( typeof (starrr) === 'undefined'){ return; }
     console.log('init_starrr');
 
     $(".stars").starrr();
@@ -609,15 +612,15 @@ function init_starrr() {
 };
 
 
-function init_JQVmap() {
+function init_JQVmap(){
 
-    //console.log('check init_JQVmap [' + typeof (VectorCanvas) + '][' + typeof (jQuery.fn.vectorMap) + ']' );	
+    //console.log('check init_JQVmap [' + typeof (VectorCanvas) + '][' + typeof (jQuery.fn.vectorMap) + ']' );
 
-    if (typeof (jQuery.fn.vectorMap) === 'undefined') { return; }
+    if(typeof (jQuery.fn.vectorMap) === 'undefined'){ return; }
 
     console.log('init_JQVmap');
 
-    if ($('#world-map-gdp').length) {
+    if ($('#world-map-gdp').length ){
 
         $('#world-map-gdp').vectorMap({
             map: 'world_en',
@@ -634,7 +637,7 @@ function init_JQVmap() {
 
     }
 
-    if ($('#usa_map').length) {
+    if ($('#usa_map').length ){
 
         $('#usa_map').vectorMap({
             map: 'usa_en',
@@ -654,14 +657,14 @@ function init_JQVmap() {
 };
 
 
-function init_skycons() {
+function init_skycons(){
 
-    if (typeof (Skycons) === 'undefined') { return; }
+    if( typeof (Skycons) === 'undefined'){ return; }
     console.log('init_skycons');
 
     var icons = new Skycons({
-        "color": "#73879C"
-    }),
+            "color": "#73879C"
+        }),
         list = [
             "clear-day", "clear-night", "partly-cloudy-day",
             "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
@@ -677,13 +680,13 @@ function init_skycons() {
 }
 
 
-function init_chart_doughnut() {
+function init_chart_doughnut(){
 
-    if (typeof (Chart) === 'undefined') { return; }
+    if( typeof (Chart) === 'undefined'){ return; }
 
     console.log('init_chart_doughnut');
 
-    if ($('.canvasDoughnut').length) {
+    if ($('.canvasDoughnut').length){
 
         var chart_doughnut_settings = {
             type: 'doughnut',
@@ -720,10 +723,10 @@ function init_chart_doughnut() {
             }
         }
 
-        $('.canvasDoughnut').each(function () {
+        $('.canvasDoughnut').each(function(){
 
             var chart_element = $(this);
-            var chart_doughnut = new Chart(chart_element, chart_doughnut_settings);
+            var chart_doughnut = new Chart( chart_element, chart_doughnut_settings);
 
         });
 
@@ -733,7 +736,7 @@ function init_chart_doughnut() {
 
 function init_gauge() {
 
-    if (typeof (Gauge) === 'undefined') { return; }
+    if( typeof (Gauge) === 'undefined'){ return; }
 
     console.log('init_gauge [' + $('.gauge-chart').length + ']');
 
@@ -757,7 +760,7 @@ function init_gauge() {
     };
 
 
-    if ($('#chart_gauge_01').length) {
+    if ($('#chart_gauge_01').length){
 
         var chart_gauge_01_elem = document.getElementById('chart_gauge_01');
         var chart_gauge_01 = new Gauge(chart_gauge_01_elem).setOptions(chart_gauge_settings);
@@ -765,7 +768,7 @@ function init_gauge() {
     }
 
 
-    if ($('#gauge-text').length) {
+    if ($('#gauge-text').length){
 
         chart_gauge_01.maxValue = 6000;
         chart_gauge_01.animationSpeed = 32;
@@ -774,7 +777,7 @@ function init_gauge() {
 
     }
 
-    if ($('#chart_gauge_02').length) {
+    if ($('#chart_gauge_02').length){
 
         var chart_gauge_02_elem = document.getElementById('chart_gauge_02');
         var chart_gauge_02 = new Gauge(chart_gauge_02_elem).setOptions(chart_gauge_settings);
@@ -782,7 +785,7 @@ function init_gauge() {
     }
 
 
-    if ($('#gauge-text2').length) {
+    if ($('#gauge-text2').length){
 
         chart_gauge_02.maxValue = 9000;
         chart_gauge_02.animationSpeed = 32;
@@ -798,7 +801,7 @@ function init_gauge() {
 
 function init_sparklines() {
 
-    if (typeof (jQuery.fn.sparkline) === 'undefined') { return; }
+    if(typeof (jQuery.fn.sparkline) === 'undefined'){ return; }
     console.log('init_sparklines');
 
 
@@ -916,12 +919,12 @@ function init_sparklines() {
 
 function init_autocomplete() {
 
-    if (typeof ($.fn.autocomplete) === 'undefined') { return; }
+    if( typeof (autocomplete) === 'undefined'){ return; }
     console.log('init_autocomplete');
 
-    var countries = { AD: "Andorra", A2: "Andorra Test", AE: "United Arab Emirates", AF: "Afghanistan", AG: "Antigua and Barbuda", AI: "Anguilla", AL: "Albania", AM: "Armenia", AN: "Netherlands Antilles", AO: "Angola", AQ: "Antarctica", AR: "Argentina", AS: "American Samoa", AT: "Austria", AU: "Australia", AW: "Aruba", AX: "Åland Islands", AZ: "Azerbaijan", BA: "Bosnia and Herzegovina", BB: "Barbados", BD: "Bangladesh", BE: "Belgium", BF: "Burkina Faso", BG: "Bulgaria", BH: "Bahrain", BI: "Burundi", BJ: "Benin", BL: "Saint Barthélemy", BM: "Bermuda", BN: "Brunei", BO: "Bolivia", BQ: "British Antarctic Territory", BR: "Brazil", BS: "Bahamas", BT: "Bhutan", BV: "Bouvet Island", BW: "Botswana", BY: "Belarus", BZ: "Belize", CA: "Canada", CC: "Cocos [Keeling] Islands", CD: "Congo - Kinshasa", CF: "Central African Republic", CG: "Congo - Brazzaville", CH: "Switzerland", CI: "Côte d’Ivoire", CK: "Cook Islands", CL: "Chile", CM: "Cameroon", CN: "China", CO: "Colombia", CR: "Costa Rica", CS: "Serbia and Montenegro", CT: "Canton and Enderbury Islands", CU: "Cuba", CV: "Cape Verde", CX: "Christmas Island", CY: "Cyprus", CZ: "Czech Republic", DD: "East Germany", DE: "Germany", DJ: "Djibouti", DK: "Denmark", DM: "Dominica", DO: "Dominican Republic", DZ: "Algeria", EC: "Ecuador", EE: "Estonia", EG: "Egypt", EH: "Western Sahara", ER: "Eritrea", ES: "Spain", ET: "Ethiopia", FI: "Finland", FJ: "Fiji", FK: "Falkland Islands", FM: "Micronesia", FO: "Faroe Islands", FQ: "French Southern and Antarctic Territories", FR: "France", FX: "Metropolitan France", GA: "Gabon", GB: "United Kingdom", GD: "Grenada", GE: "Georgia", GF: "French Guiana", GG: "Guernsey", GH: "Ghana", GI: "Gibraltar", GL: "Greenland", GM: "Gambia", GN: "Guinea", GP: "Guadeloupe", GQ: "Equatorial Guinea", GR: "Greece", GS: "South Georgia and the South Sandwich Islands", GT: "Guatemala", GU: "Guam", GW: "Guinea-Bissau", GY: "Guyana", HK: "Hong Kong SAR China", HM: "Heard Island and McDonald Islands", HN: "Honduras", HR: "Croatia", HT: "Haiti", HU: "Hungary", ID: "Indonesia", IE: "Ireland", IL: "Israel", IM: "Isle of Man", IN: "India", IO: "British Indian Ocean Territory", IQ: "Iraq", IR: "Iran", IS: "Iceland", IT: "Italy", JE: "Jersey", JM: "Jamaica", JO: "Jordan", JP: "Japan", JT: "Johnston Island", KE: "Kenya", KG: "Kyrgyzstan", KH: "Cambodia", KI: "Kiribati", KM: "Comoros", KN: "Saint Kitts and Nevis", KP: "North Korea", KR: "South Korea", KW: "Kuwait", KY: "Cayman Islands", KZ: "Kazakhstan", LA: "Laos", LB: "Lebanon", LC: "Saint Lucia", LI: "Liechtenstein", LK: "Sri Lanka", LR: "Liberia", LS: "Lesotho", LT: "Lithuania", LU: "Luxembourg", LV: "Latvia", LY: "Libya", MA: "Morocco", MC: "Monaco", MD: "Moldova", ME: "Montenegro", MF: "Saint Martin", MG: "Madagascar", MH: "Marshall Islands", MI: "Midway Islands", MK: "Macedonia", ML: "Mali", MM: "Myanmar [Burma]", MN: "Mongolia", MO: "Macau SAR China", MP: "Northern Mariana Islands", MQ: "Martinique", MR: "Mauritania", MS: "Montserrat", MT: "Malta", MU: "Mauritius", MV: "Maldives", MW: "Malawi", MX: "Mexico", MY: "Malaysia", MZ: "Mozambique", NA: "Namibia", NC: "New Caledonia", NE: "Niger", NF: "Norfolk Island", NG: "Nigeria", NI: "Nicaragua", NL: "Netherlands", NO: "Norway", NP: "Nepal", NQ: "Dronning Maud Land", NR: "Nauru", NT: "Neutral Zone", NU: "Niue", NZ: "New Zealand", OM: "Oman", PA: "Panama", PC: "Pacific Islands Trust Territory", PE: "Peru", PF: "French Polynesia", PG: "Papua New Guinea", PH: "Philippines", PK: "Pakistan", PL: "Poland", PM: "Saint Pierre and Miquelon", PN: "Pitcairn Islands", PR: "Puerto Rico", PS: "Palestinian Territories", PT: "Portugal", PU: "U.S. Miscellaneous Pacific Islands", PW: "Palau", PY: "Paraguay", PZ: "Panama Canal Zone", QA: "Qatar", RE: "Réunion", RO: "Romania", RS: "Serbia", RU: "Russia", RW: "Rwanda", SA: "Saudi Arabia", SB: "Solomon Islands", SC: "Seychelles", SD: "Sudan", SE: "Sweden", SG: "Singapore", SH: "Saint Helena", SI: "Slovenia", SJ: "Svalbard and Jan Mayen", SK: "Slovakia", SL: "Sierra Leone", SM: "San Marino", SN: "Senegal", SO: "Somalia", SR: "Suriname", ST: "São Tomé and Príncipe", SU: "Union of Soviet Socialist Republics", SV: "El Salvador", SY: "Syria", SZ: "Swaziland", TC: "Turks and Caicos Islands", TD: "Chad", TF: "French Southern Territories", TG: "Togo", TH: "Thailand", TJ: "Tajikistan", TK: "Tokelau", TL: "Timor-Leste", TM: "Turkmenistan", TN: "Tunisia", TO: "Tonga", TR: "Turkey", TT: "Trinidad and Tobago", TV: "Tuvalu", TW: "Taiwan", TZ: "Tanzania", UA: "Ukraine", UG: "Uganda", UM: "U.S. Minor Outlying Islands", US: "United States", UY: "Uruguay", UZ: "Uzbekistan", VA: "Vatican City", VC: "Saint Vincent and the Grenadines", VD: "North Vietnam", VE: "Venezuela", VG: "British Virgin Islands", VI: "U.S. Virgin Islands", VN: "Vietnam", VU: "Vanuatu", WF: "Wallis and Futuna", WK: "Wake Island", WS: "Samoa", YD: "People's Democratic Republic of Yemen", YE: "Yemen", YT: "Mayotte", ZA: "South Africa", ZM: "Zambia", ZW: "Zimbabwe", ZZ: "Unknown or Invalid Region" };
+    var countries = { AD:"Andorra",A2:"Andorra Test",AE:"United Arab Emirates",AF:"Afghanistan",AG:"Antigua and Barbuda",AI:"Anguilla",AL:"Albania",AM:"Armenia",AN:"Netherlands Antilles",AO:"Angola",AQ:"Antarctica",AR:"Argentina",AS:"American Samoa",AT:"Austria",AU:"Australia",AW:"Aruba",AX:"Åland Islands",AZ:"Azerbaijan",BA:"Bosnia and Herzegovina",BB:"Barbados",BD:"Bangladesh",BE:"Belgium",BF:"Burkina Faso",BG:"Bulgaria",BH:"Bahrain",BI:"Burundi",BJ:"Benin",BL:"Saint Barthélemy",BM:"Bermuda",BN:"Brunei",BO:"Bolivia",BQ:"British Antarctic Territory",BR:"Brazil",BS:"Bahamas",BT:"Bhutan",BV:"Bouvet Island",BW:"Botswana",BY:"Belarus",BZ:"Belize",CA:"Canada",CC:"Cocos [Keeling] Islands",CD:"Congo - Kinshasa",CF:"Central African Republic",CG:"Congo - Brazzaville",CH:"Switzerland",CI:"Côte d’Ivoire",CK:"Cook Islands",CL:"Chile",CM:"Cameroon",CN:"China",CO:"Colombia",CR:"Costa Rica",CS:"Serbia and Montenegro",CT:"Canton and Enderbury Islands",CU:"Cuba",CV:"Cape Verde",CX:"Christmas Island",CY:"Cyprus",CZ:"Czech Republic",DD:"East Germany",DE:"Germany",DJ:"Djibouti",DK:"Denmark",DM:"Dominica",DO:"Dominican Republic",DZ:"Algeria",EC:"Ecuador",EE:"Estonia",EG:"Egypt",EH:"Western Sahara",ER:"Eritrea",ES:"Spain",ET:"Ethiopia",FI:"Finland",FJ:"Fiji",FK:"Falkland Islands",FM:"Micronesia",FO:"Faroe Islands",FQ:"French Southern and Antarctic Territories",FR:"France",FX:"Metropolitan France",GA:"Gabon",GB:"United Kingdom",GD:"Grenada",GE:"Georgia",GF:"French Guiana",GG:"Guernsey",GH:"Ghana",GI:"Gibraltar",GL:"Greenland",GM:"Gambia",GN:"Guinea",GP:"Guadeloupe",GQ:"Equatorial Guinea",GR:"Greece",GS:"South Georgia and the South Sandwich Islands",GT:"Guatemala",GU:"Guam",GW:"Guinea-Bissau",GY:"Guyana",HK:"Hong Kong SAR China",HM:"Heard Island and McDonald Islands",HN:"Honduras",HR:"Croatia",HT:"Haiti",HU:"Hungary",ID:"Indonesia",IE:"Ireland",IL:"Israel",IM:"Isle of Man",IN:"India",IO:"British Indian Ocean Territory",IQ:"Iraq",IR:"Iran",IS:"Iceland",IT:"Italy",JE:"Jersey",JM:"Jamaica",JO:"Jordan",JP:"Japan",JT:"Johnston Island",KE:"Kenya",KG:"Kyrgyzstan",KH:"Cambodia",KI:"Kiribati",KM:"Comoros",KN:"Saint Kitts and Nevis",KP:"North Korea",KR:"South Korea",KW:"Kuwait",KY:"Cayman Islands",KZ:"Kazakhstan",LA:"Laos",LB:"Lebanon",LC:"Saint Lucia",LI:"Liechtenstein",LK:"Sri Lanka",LR:"Liberia",LS:"Lesotho",LT:"Lithuania",LU:"Luxembourg",LV:"Latvia",LY:"Libya",MA:"Morocco",MC:"Monaco",MD:"Moldova",ME:"Montenegro",MF:"Saint Martin",MG:"Madagascar",MH:"Marshall Islands",MI:"Midway Islands",MK:"Macedonia",ML:"Mali",MM:"Myanmar [Burma]",MN:"Mongolia",MO:"Macau SAR China",MP:"Northern Mariana Islands",MQ:"Martinique",MR:"Mauritania",MS:"Montserrat",MT:"Malta",MU:"Mauritius",MV:"Maldives",MW:"Malawi",MX:"Mexico",MY:"Malaysia",MZ:"Mozambique",NA:"Namibia",NC:"New Caledonia",NE:"Niger",NF:"Norfolk Island",NG:"Nigeria",NI:"Nicaragua",NL:"Netherlands",NO:"Norway",NP:"Nepal",NQ:"Dronning Maud Land",NR:"Nauru",NT:"Neutral Zone",NU:"Niue",NZ:"New Zealand",OM:"Oman",PA:"Panama",PC:"Pacific Islands Trust Territory",PE:"Peru",PF:"French Polynesia",PG:"Papua New Guinea",PH:"Philippines",PK:"Pakistan",PL:"Poland",PM:"Saint Pierre and Miquelon",PN:"Pitcairn Islands",PR:"Puerto Rico",PS:"Palestinian Territories",PT:"Portugal",PU:"U.S. Miscellaneous Pacific Islands",PW:"Palau",PY:"Paraguay",PZ:"Panama Canal Zone",QA:"Qatar",RE:"Réunion",RO:"Romania",RS:"Serbia",RU:"Russia",RW:"Rwanda",SA:"Saudi Arabia",SB:"Solomon Islands",SC:"Seychelles",SD:"Sudan",SE:"Sweden",SG:"Singapore",SH:"Saint Helena",SI:"Slovenia",SJ:"Svalbard and Jan Mayen",SK:"Slovakia",SL:"Sierra Leone",SM:"San Marino",SN:"Senegal",SO:"Somalia",SR:"Suriname",ST:"São Tomé and Príncipe",SU:"Union of Soviet Socialist Republics",SV:"El Salvador",SY:"Syria",SZ:"Swaziland",TC:"Turks and Caicos Islands",TD:"Chad",TF:"French Southern Territories",TG:"Togo",TH:"Thailand",TJ:"Tajikistan",TK:"Tokelau",TL:"Timor-Leste",TM:"Turkmenistan",TN:"Tunisia",TO:"Tonga",TR:"Turkey",TT:"Trinidad and Tobago",TV:"Tuvalu",TW:"Taiwan",TZ:"Tanzania",UA:"Ukraine",UG:"Uganda",UM:"U.S. Minor Outlying Islands",US:"United States",UY:"Uruguay",UZ:"Uzbekistan",VA:"Vatican City",VC:"Saint Vincent and the Grenadines",VD:"North Vietnam",VE:"Venezuela",VG:"British Virgin Islands",VI:"U.S. Virgin Islands",VN:"Vietnam",VU:"Vanuatu",WF:"Wallis and Futuna",WK:"Wake Island",WS:"Samoa",YD:"People's Democratic Republic of Yemen",YE:"Yemen",YT:"Mayotte",ZA:"South Africa",ZM:"Zambia",ZW:"Zimbabwe",ZZ:"Unknown or Invalid Region" };
 
-    var countriesArray = $.map(countries, function (value, key) {
+    var countriesArray = $.map(countries, function(value, key) {
         return {
             value: value,
             data: key
@@ -939,7 +942,7 @@ function init_autocomplete() {
 
 function init_autosize() {
 
-    if (typeof $.fn.autosize !== 'undefined') {
+    if(typeof $.fn.autosize !== 'undefined'){
 
         autosize($('.resizable_textarea'));
 
@@ -951,17 +954,17 @@ function init_autosize() {
 
 function init_parsley() {
 
-    if (typeof (parsley) === 'undefined') { return; }
+    if( typeof (parsley) === 'undefined'){ return; }
     console.log('init_parsley');
 
-    $/*.listen*/('parsley:field:validate', function () {
+    $/*.listen*/('parsley:field:validate', function() {
         validateFront();
     });
-    $('#demo-form .btn').on('click', function () {
+    $('#demo-form .btn').on('click', function() {
         $('#demo-form').parsley().validate();
         validateFront();
     });
-    var validateFront = function () {
+    var validateFront = function() {
         if (true === $('#demo-form').parsley().isValid()) {
             $('.bs-callout-info').removeClass('hidden');
             $('.bs-callout-warning').addClass('hidden');
@@ -971,14 +974,14 @@ function init_parsley() {
         }
     };
 
-    $/*.listen*/('parsley:field:validate', function () {
+    $/*.listen*/('parsley:field:validate', function() {
         validateFront();
     });
-    $('#demo-form2 .btn').on('click', function () {
+    $('#demo-form2 .btn').on('click', function() {
         $('#demo-form2').parsley().validate();
         validateFront();
     });
-    var validateFront = function () {
+    var validateFront = function() {
         if (true === $('#demo-form2').parsley().isValid()) {
             $('.bs-callout-info').removeClass('hidden');
             $('.bs-callout-warning').addClass('hidden');
@@ -990,7 +993,7 @@ function init_parsley() {
 
     try {
         hljs.initHighlightingOnLoad();
-    } catch (err) { }
+    } catch (err) {}
 
 };
 
@@ -1012,7 +1015,7 @@ function onChangeTag(input, tag) {
 //tags input
 function init_TagsInput() {
 
-    if (typeof $.fn.tagsInput !== 'undefined') {
+    if(typeof $.fn.tagsInput !== 'undefined'){
 
         $('#tags_1').tagsInput({
             width: 'auto'
@@ -1026,7 +1029,7 @@ function init_TagsInput() {
 
 function init_select2() {
 
-    if (typeof (select2) === 'undefined') { return; }
+    if( typeof (select2) === 'undefined'){ return; }
     console.log('init_toolbox');
 
     $(".select2_single").select2({
@@ -1046,33 +1049,33 @@ function init_select2() {
 
 function init_wysiwyg() {
 
-    if (typeof ($.fn.wysiwyg) === 'undefined') { return; }
+    if( typeof ($.fn.wysiwyg) === 'undefined'){ return; }
     console.log('init_wysiwyg');
 
     function init_ToolbarBootstrapBindings() {
         var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
-            'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
-            'Times New Roman', 'Verdana'
-        ],
+                'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+                'Times New Roman', 'Verdana'
+            ],
             fontTarget = $('[title=Font]').siblings('.dropdown-menu');
-        $.each(fonts, function (idx, fontName) {
+        $.each(fonts, function(idx, fontName) {
             fontTarget.append($('<li><a data-edit="fontName ' + fontName + '" style="font-family:\'' + fontName + '\'">' + fontName + '</a></li>'));
         });
         $('a[title]').tooltip({
             container: 'body'
         });
-        $('.dropdown-menu input').click(function () {
+        $('.dropdown-menu input').click(function() {
             return false;
         })
-            .change(function () {
+            .change(function() {
                 $(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');
             })
-            .keydown('esc', function () {
+            .keydown('esc', function() {
                 this.value = '';
                 $(this).change();
             });
 
-        $('[data-role=magic-overlay]').each(function () {
+        $('[data-role=magic-overlay]').each(function() {
             var overlay = $(this),
                 target = $(overlay.data('target'));
             overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
@@ -1101,7 +1104,7 @@ function init_wysiwyg() {
             '<strong>File upload error</strong> ' + msg + ' </div>').prependTo('#alerts');
     }
 
-    $('.editor-wrapper').each(function () {
+    $('.editor-wrapper').each(function(){
         var id = $(this).attr('id');	//editor-one
 
         $(this).wysiwyg({
@@ -1121,7 +1124,7 @@ function init_wysiwyg() {
 function init_cropper() {
 
 
-    if (typeof ($.fn.cropper) === 'undefined') { return; }
+    if( typeof ($.fn.cropper) === 'undefined'){ return; }
     console.log('init_cropper');
 
     var $image = $('#image');
@@ -1355,24 +1358,24 @@ function init_cropper() {
 
 function init_knob() {
 
-    if (typeof ($.fn.knob) === 'undefined') { return; }
+    if( typeof ($.fn.knob) === 'undefined'){ return; }
     console.log('init_knob');
 
     $(".knob").knob({
-        change: function (value) {
+        change: function(value) {
             //console.log("change : " + value);
         },
-        release: function (value) {
+        release: function(value) {
             //console.log(this.$.attr('value'));
             console.log("release : " + value);
         },
-        cancel: function () {
+        cancel: function() {
             console.log("cancel : ", this);
         },
         /*format : function (value) {
-         return value + '%';
-         },*/
-        draw: function () {
+				   return value + '%';
+				   },*/
+        draw: function() {
 
             // "tron" case
             if (this.$.data('skin') == 'tron') {
@@ -1417,12 +1420,12 @@ function init_knob() {
         i = 0,
         $idir = $("div.idir"),
         $ival = $("div.ival"),
-        incr = function () {
+        incr = function() {
             i++;
             $idir.show().html("+").fadeOut();
             $ival.html(i);
         },
-        decr = function () {
+        decr = function() {
             i--;
             $idir.show().html("-").fadeOut();
             $ival.html(i);
@@ -1431,7 +1434,7 @@ function init_knob() {
         min: 0,
         max: 20,
         stopper: false,
-        change: function () {
+        change: function() {
             if (v > this.cv) {
                 if (up) {
                     decr();
@@ -1461,7 +1464,7 @@ function init_knob() {
 
 function init_InputMask() {
 
-    if (typeof ($.fn.inputmask) === 'undefined') { return; }
+    if( typeof ($.fn.inputmask) === 'undefined'){ return; }
     console.log('init_InputMask');
 
     $(":input").inputmask();
@@ -1472,7 +1475,7 @@ function init_InputMask() {
 
 function init_ColorPicker() {
 
-    if (typeof ($.fn.colorpicker) === 'undefined') { return; }
+    if( typeof ($.fn.colorpicker) === 'undefined'){ return; }
     console.log('init_ColorPicker');
 
     $('.demo1').colorpicker();
@@ -1496,7 +1499,7 @@ function init_ColorPicker() {
 
 function init_IonRangeSlider() {
 
-    if (typeof ($.fn.ionRangeSlider) === 'undefined') { return; }
+    if( typeof ($.fn.ionRangeSlider) === 'undefined'){ return; }
     console.log('init_IonRangeSlider');
 
     $("#range_27").ionRangeSlider({
@@ -1554,7 +1557,7 @@ function init_IonRangeSlider() {
         from: +moment().subtract(6, "hours").format("X"),
         grid: true,
         force_edges: true,
-        prettify: function (num) {
+        prettify: function(num) {
             var m = moment(num, "X");
             return m.format("Do MMMM, HH:mm");
         }
@@ -1567,10 +1570,10 @@ function init_IonRangeSlider() {
 
 function init_daterangepicker() {
 
-    if (typeof ($.fn.daterangepicker) === 'undefined') { return; }
+    if( typeof ($.fn.daterangepicker) === 'undefined'){ return; }
     console.log('init_daterangepicker');
 
-    var cb = function (start, end, label) {
+    var cb = function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
         $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
     };
@@ -1616,25 +1619,25 @@ function init_daterangepicker() {
 
     $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
     $('#reportrange').daterangepicker(optionSet1, cb);
-    $('#reportrange').on('show.daterangepicker', function () {
+    $('#reportrange').on('show.daterangepicker', function() {
         console.log("show event fired");
     });
-    $('#reportrange').on('hide.daterangepicker', function () {
+    $('#reportrange').on('hide.daterangepicker', function() {
         console.log("hide event fired");
     });
-    $('#reportrange').on('apply.daterangepicker', function (ev, picker) {
+    $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
         console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
     });
-    $('#reportrange').on('cancel.daterangepicker', function (ev, picker) {
+    $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
         console.log("cancel event fired");
     });
-    $('#options1').click(function () {
+    $('#options1').click(function() {
         $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
     });
-    $('#options2').click(function () {
+    $('#options2').click(function() {
         $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
     });
-    $('#destroy').click(function () {
+    $('#destroy').click(function() {
         $('#reportrange').data('daterangepicker').remove();
     });
 
@@ -1642,10 +1645,10 @@ function init_daterangepicker() {
 
 function init_daterangepicker_right() {
 
-    if (typeof ($.fn.daterangepicker) === 'undefined') { return; }
+    if( typeof ($.fn.daterangepicker) === 'undefined'){ return; }
     console.log('init_daterangepicker_right');
 
-    var cb = function (start, end, label) {
+    var cb = function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
         $('#reportrange_right span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
     };
@@ -1693,28 +1696,28 @@ function init_daterangepicker_right() {
 
     $('#reportrange_right').daterangepicker(optionSet1, cb);
 
-    $('#reportrange_right').on('show.daterangepicker', function () {
+    $('#reportrange_right').on('show.daterangepicker', function() {
         console.log("show event fired");
     });
-    $('#reportrange_right').on('hide.daterangepicker', function () {
+    $('#reportrange_right').on('hide.daterangepicker', function() {
         console.log("hide event fired");
     });
-    $('#reportrange_right').on('apply.daterangepicker', function (ev, picker) {
+    $('#reportrange_right').on('apply.daterangepicker', function(ev, picker) {
         console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
     });
-    $('#reportrange_right').on('cancel.daterangepicker', function (ev, picker) {
+    $('#reportrange_right').on('cancel.daterangepicker', function(ev, picker) {
         console.log("cancel event fired");
     });
 
-    $('#options1').click(function () {
+    $('#options1').click(function() {
         $('#reportrange_right').data('daterangepicker').setOptions(optionSet1, cb);
     });
 
-    $('#options2').click(function () {
+    $('#options2').click(function() {
         $('#reportrange_right').data('daterangepicker').setOptions(optionSet2, cb);
     });
 
-    $('#destroy').click(function () {
+    $('#destroy').click(function() {
         $('#reportrange_right').data('daterangepicker').remove();
     });
 
@@ -1722,31 +1725,31 @@ function init_daterangepicker_right() {
 
 function init_daterangepicker_single_call() {
 
-    if (typeof ($.fn.daterangepicker) === 'undefined') { return; }
+    if( typeof ($.fn.daterangepicker) === 'undefined'){ return; }
     console.log('init_daterangepicker_single_call');
 
     $('#single_cal1').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_1"
-    }, function (start, end, label) {
+    }, function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
     });
     $('#single_cal2').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_2"
-    }, function (start, end, label) {
+    }, function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
     });
     $('#single_cal3').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_3"
-    }, function (start, end, label) {
+    }, function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
     });
     $('#single_cal4').daterangepicker({
         singleDatePicker: true,
         singleClasses: "picker_4"
-    }, function (start, end, label) {
+    }, function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
     });
 
@@ -1756,10 +1759,10 @@ function init_daterangepicker_single_call() {
 
 function init_daterangepicker_reservation() {
 
-    if (typeof ($.fn.daterangepicker) === 'undefined') { return; }
+    if( typeof ($.fn.daterangepicker) === 'undefined'){ return; }
     console.log('init_daterangepicker_reservation');
 
-    $('#reservation').daterangepicker(null, function (start, end, label) {
+    $('#reservation').daterangepicker(null, function(start, end, label) {
         console.log(start.toISOString(), end.toISOString(), label);
     });
 
@@ -1777,7 +1780,7 @@ function init_daterangepicker_reservation() {
 
 function init_SmartWizard() {
 
-    if (typeof ($.fn.smartWizard) === 'undefined') { return; }
+    if( typeof ($.fn.smartWizard) === 'undefined'){ return; }
     console.log('init_SmartWizard');
 
     $('#wizard').smartWizard();
@@ -1795,9 +1798,9 @@ function init_SmartWizard() {
 
 /* VALIDATOR */
 
-function init_validator() {
+function init_validator () {
 
-    if (typeof (validator) === 'undefined') { return; }
+    if( typeof (validator) === 'undefined'){ return; }
     console.log('init_validator');
 
     // initialize the validator function
@@ -1809,11 +1812,11 @@ function init_validator() {
         .on('change', 'select.required', validator.checkField)
         .on('keypress', 'input[required][pattern]', validator.keypress);
 
-    $('.multi.required').on('keyup blur', 'input', function () {
+    $('.multi.required').on('keyup blur', 'input', function() {
         validator.checkField.apply($(this).siblings().last()[0]);
     });
 
-    $('form').submit(function (e) {
+    $('form').submit(function(e) {
         e.preventDefault();
         var submit = true;
 
@@ -1834,8 +1837,31 @@ function init_validator() {
 
 function init_PNotify() {
 
-    if (typeof (PNotify) === 'undefined') { return; }
+    if( typeof (PNotify) === 'undefined'){ return; }
     console.log('init_PNotify');
+
+    new PNotify({
+        title: "PNotify",
+        type: "info",
+        text: "Welcome. Try hovering over me. You can click things behind me, because I'm non-blocking.",
+        nonblock: {
+            nonblock: true
+        },
+        addclass: 'dark',
+        styling: 'bootstrap3',
+        hide: false,
+        before_close: function(PNotify) {
+            PNotify.update({
+                title: PNotify.options.title + " - Enjoy your Stay",
+                before_close: null
+            });
+
+            PNotify.queueRemove();
+
+            return false;
+        }
+    });
+
 };
 
 
@@ -1845,12 +1871,12 @@ function init_CustomNotification() {
 
     console.log('run_customtabs');
 
-    if (typeof (CustomTabs) === 'undefined') { return; }
+    if( typeof (CustomTabs) === 'undefined'){ return; }
     console.log('init_CustomTabs');
 
     var cnt = 10;
 
-    TabbedNotification = function (options) {
+    TabbedNotification = function(options) {
         var message = "<div id='ntf" + cnt + "' class='text alert-" + options.type + "' style='display:none'><h2><i class='fa fa-bell'></i> " + options.title +
             "</h2><div class='close'><a href='javascript:;' class='notification_close'><i class='fa fa-close'></i></a></div><p>" + options.text + "</p></div>";
 
@@ -1864,11 +1890,11 @@ function init_CustomNotification() {
         }
     };
 
-    CustomTabs = function (options) {
+    CustomTabs = function(options) {
         $('.tabbed_notifications > div').hide();
         $('.tabbed_notifications > div:first-of-type').show();
         $('#custom_notifications').removeClass('dsp_none');
-        $('.notifications a').click(function (e) {
+        $('.notifications a').click(function(e) {
             e.preventDefault();
             var $this = $(this),
                 tabbed_notifications = '#' + $this.parents('.notifications').data('tabbed_notifications'),
@@ -1885,7 +1911,7 @@ function init_CustomNotification() {
 
     var tabid = idname = '';
 
-    $(document).on('click', '.notification_close', function (e) {
+    $(document).on('click', '.notification_close', function(e) {
         idname = $(this).parent().parent().attr("id");
         tabid = idname.substr(-2);
         $('#ntf' + tabid).remove();
@@ -1900,7 +1926,7 @@ function init_CustomNotification() {
 
 function init_EasyPieChart() {
 
-    if (typeof ($.fn.easyPieChart) === 'undefined') { return; }
+    if( typeof ($.fn.easyPieChart) === 'undefined'){ return; }
     console.log('init_EasyPieChart');
 
     $('.chart').easyPieChart({
@@ -1912,18 +1938,18 @@ function init_EasyPieChart() {
         lineWidth: 20,
         trackWidth: 16,
         lineCap: 'butt',
-        onStep: function (from, to, percent) {
+        onStep: function(from, to, percent) {
             $(this.el).find('.percent').text(Math.round(percent));
         }
     });
     var chart = window.chart = $('.chart').data('easyPieChart');
-    $('.js_update').on('click', function () {
+    $('.js_update').on('click', function() {
         chart.update(Math.random() * 200 - 100);
     });
 
     //hover and retain popover when on popover content
     var originalLeave = $.fn.popover.Constructor.prototype.leave;
-    $.fn.popover.Constructor.prototype.leave = function (obj) {
+    $.fn.popover.Constructor.prototype.leave = function(obj) {
         var self = obj instanceof this.constructor ?
             obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type);
         var container, timeout;
@@ -1933,11 +1959,11 @@ function init_EasyPieChart() {
         if (obj.currentTarget) {
             container = $(obj.currentTarget).siblings('.popover');
             timeout = self.timeout;
-            container.one('mouseenter', function () {
+            container.one('mouseenter', function() {
                 //We entered the actual popover – call off the dogs
                 clearTimeout(timeout);
                 //Let's monitor popover content instead
-                container.one('mouseleave', function () {
+                container.one('mouseleave', function() {
                     $.fn.popover.Constructor.prototype.leave.call(self, self);
                 });
             });
@@ -1960,7 +1986,7 @@ function init_charts() {
 
     console.log('run_charts  typeof [' + typeof (Chart) + ']');
 
-    if (typeof (Chart) === 'undefined') { return; }
+    if( typeof (Chart) === 'undefined'){ return; }
 
     console.log('init_charts');
 
@@ -1971,7 +1997,7 @@ function init_charts() {
 
 
 
-    if ($('#canvas_line').length) {
+    if ($('#canvas_line').length ){
 
         var canvas_line_00 = new Chart(document.getElementById("canvas_line"), {
             type: 'line',
@@ -2004,7 +2030,7 @@ function init_charts() {
     }
 
 
-    if ($('#canvas_line1').length) {
+    if ($('#canvas_line1').length ){
 
         var canvas_line_01 = new Chart(document.getElementById("canvas_line1"), {
             type: 'line',
@@ -2037,7 +2063,7 @@ function init_charts() {
     }
 
 
-    if ($('#canvas_line2').length) {
+    if ($('#canvas_line2').length ){
 
         var canvas_line_02 = new Chart(document.getElementById("canvas_line2"), {
             type: 'line',
@@ -2070,7 +2096,7 @@ function init_charts() {
     }
 
 
-    if ($('#canvas_line3').length) {
+    if ($('#canvas_line3').length ){
 
         var canvas_line_03 = new Chart(document.getElementById("canvas_line3"), {
             type: 'line',
@@ -2103,7 +2129,7 @@ function init_charts() {
     }
 
 
-    if ($('#canvas_line4').length) {
+    if ($('#canvas_line4').length ){
 
         var canvas_line_04 = new Chart(document.getElementById("canvas_line4"), {
             type: 'line',
@@ -2138,7 +2164,7 @@ function init_charts() {
 
     // Line chart
 
-    if ($('#lineChart').length) {
+    if ($('#lineChart').length ){
 
         var ctx = document.getElementById("lineChart");
         var lineChart = new Chart(ctx, {
@@ -2173,7 +2199,7 @@ function init_charts() {
 
     // Bar chart
 
-    if ($('#mybarChart').length) {
+    if ($('#mybarChart').length ){
 
         var ctx = document.getElementById("mybarChart");
         var mybarChart = new Chart(ctx, {
@@ -2207,7 +2233,7 @@ function init_charts() {
 
     // Doughnut chart
 
-    if ($('#canvasDoughnut').length) {
+    if ($('#canvasDoughnut').length ){
 
         var ctx = document.getElementById("canvasDoughnut");
         var data = {
@@ -2248,7 +2274,7 @@ function init_charts() {
 
     // Radar chart
 
-    if ($('#canvasRadar').length) {
+    if ($('#canvasRadar').length ){
 
         var ctx = document.getElementById("canvasRadar");
         var data = {
@@ -2283,7 +2309,7 @@ function init_charts() {
 
 
     // Pie chart
-    if ($('#pieChart').length) {
+    if ($('#pieChart').length ){
 
         var ctx = document.getElementById("pieChart");
         var data = {
@@ -2320,7 +2346,7 @@ function init_charts() {
 
     // PolarArea chart
 
-    if ($('#polarArea').length) {
+    if ($('#polarArea').length ){
 
         var ctx = document.getElementById("polarArea");
         var data = {
@@ -2363,10 +2389,10 @@ function init_charts() {
 
 function init_compose() {
 
-    if (typeof ($.fn.slideToggle) === 'undefined') { return; }
+    if( typeof ($.fn.slideToggle) === 'undefined'){ return; }
     console.log('init_compose');
 
-    $('#compose, .compose-close').click(function () {
+    $('#compose, .compose-close').click(function(){
         $('.compose').slideToggle();
     });
 
@@ -2374,9 +2400,9 @@ function init_compose() {
 
 /* CALENDAR */
 
-function init_calendar() {
+function  init_calendar() {
 
-    if (typeof ($.fn.fullCalendar) === 'undefined') { return; }
+    if( typeof ($.fn.fullCalendar) === 'undefined'){ return; }
     console.log('init_calendar');
 
     var date = new Date(),
@@ -2394,13 +2420,13 @@ function init_calendar() {
         },
         selectable: true,
         selectHelper: true,
-        select: function (start, end, allDay) {
+        select: function(start, end, allDay) {
             $('#fc_create').click();
 
             started = start;
             ended = end;
 
-            $(".antosubmit").on("click", function () {
+            $(".antosubmit").on("click", function() {
                 var title = $("#title").val();
                 if (end) {
                     ended = end;
@@ -2410,11 +2436,11 @@ function init_calendar() {
 
                 if (title) {
                     calendar.fullCalendar('renderEvent', {
-                        title: title,
-                        start: started,
-                        end: end,
-                        allDay: allDay
-                    },
+                            title: title,
+                            start: started,
+                            end: end,
+                            allDay: allDay
+                        },
                         true // make the event "stick"
                     );
                 }
@@ -2428,13 +2454,13 @@ function init_calendar() {
                 return false;
             });
         },
-        eventClick: function (calEvent, jsEvent, view) {
+        eventClick: function(calEvent, jsEvent, view) {
             $('#fc_edit').click();
             $('#title2').val(calEvent.title);
 
             categoryClass = $("#event_type").val();
 
-            $(".antosubmit2").on("click", function () {
+            $(".antosubmit2").on("click", function() {
                 calEvent.title = $("#title2").val();
 
                 calendar.fullCalendar('updateEvent', calEvent);
@@ -2481,13 +2507,13 @@ function init_DataTables() {
 
     console.log('run_datatables');
 
-    if (typeof ($.fn.DataTable) === 'undefined') { return; }
+    if( typeof ($.fn.DataTable) === 'undefined'){ return; }
     console.log('init_DataTables');
 
-    var handleDataTableButtons = function () {
+    var handleDataTableButtons = function() {
         if ($("#datatable-buttons").length) {
             $("#datatable-buttons").DataTable({
-                dom: "Blfrtip",
+                dom: "Bfrtip",
                 buttons: [
                     {
                         extend: "copy",
@@ -2515,10 +2541,10 @@ function init_DataTables() {
         }
     };
 
-    TableManageButtons = function () {
+    TableManageButtons = function() {
         "use strict";
         return {
-            init: function () {
+            init: function() {
                 handleDataTableButtons();
             }
         };
@@ -2547,12 +2573,12 @@ function init_DataTables() {
     var $datatable = $('#datatable-checkbox');
 
     $datatable.dataTable({
-        'order': [[1, 'asc']],
+        'order': [[ 1, 'asc' ]],
         'columnDefs': [
             { orderable: false, targets: [0] }
         ]
     });
-    $datatable.on('draw.dt', function () {
+    $datatable.on('draw.dt', function() {
         $('checkbox input').iCheck({
             checkboxClass: 'icheckbox_flat-green'
         });
@@ -2566,24 +2592,24 @@ function init_DataTables() {
 
 function init_morris_charts() {
 
-    if (typeof (Morris) === 'undefined') { return; }
+    if( typeof (Morris) === 'undefined'){ return; }
     console.log('init_morris_charts');
 
-    if ($('#graph_bar').length) {
+    if ($('#graph_bar').length){
 
         Morris.Bar({
             element: 'graph_bar',
             data: [
-                { device: 'iPhone 4', geekbench: 380 },
-                { device: 'iPhone 4S', geekbench: 655 },
-                { device: 'iPhone 3GS', geekbench: 275 },
-                { device: 'iPhone 5', geekbench: 1571 },
-                { device: 'iPhone 5S', geekbench: 655 },
-                { device: 'iPhone 6', geekbench: 2154 },
-                { device: 'iPhone 6 Plus', geekbench: 1144 },
-                { device: 'iPhone 6S', geekbench: 2371 },
-                { device: 'iPhone 6S Plus', geekbench: 1471 },
-                { device: 'Other', geekbench: 1371 }
+                {device: 'iPhone 4', geekbench: 380},
+                {device: 'iPhone 4S', geekbench: 655},
+                {device: 'iPhone 3GS', geekbench: 275},
+                {device: 'iPhone 5', geekbench: 1571},
+                {device: 'iPhone 5S', geekbench: 655},
+                {device: 'iPhone 6', geekbench: 2154},
+                {device: 'iPhone 6 Plus', geekbench: 1144},
+                {device: 'iPhone 6S', geekbench: 2371},
+                {device: 'iPhone 6S Plus', geekbench: 1471},
+                {device: 'Other', geekbench: 1371}
             ],
             xkey: 'device',
             ykeys: ['geekbench'],
@@ -2597,21 +2623,21 @@ function init_morris_charts() {
 
     }
 
-    if ($('#graph_bar_group').length) {
+    if ($('#graph_bar_group').length ){
 
         Morris.Bar({
             element: 'graph_bar_group',
             data: [
-                { "period": "2016-10-01", "licensed": 807, "sorned": 660 },
-                { "period": "2016-09-30", "licensed": 1251, "sorned": 729 },
-                { "period": "2016-09-29", "licensed": 1769, "sorned": 1018 },
-                { "period": "2016-09-20", "licensed": 2246, "sorned": 1461 },
-                { "period": "2016-09-19", "licensed": 2657, "sorned": 1967 },
-                { "period": "2016-09-18", "licensed": 3148, "sorned": 2627 },
-                { "period": "2016-09-17", "licensed": 3471, "sorned": 3740 },
-                { "period": "2016-09-16", "licensed": 2871, "sorned": 2216 },
-                { "period": "2016-09-15", "licensed": 2401, "sorned": 1656 },
-                { "period": "2016-09-10", "licensed": 2115, "sorned": 1022 }
+                {"period": "2016-10-01", "licensed": 807, "sorned": 660},
+                {"period": "2016-09-30", "licensed": 1251, "sorned": 729},
+                {"period": "2016-09-29", "licensed": 1769, "sorned": 1018},
+                {"period": "2016-09-20", "licensed": 2246, "sorned": 1461},
+                {"period": "2016-09-19", "licensed": 2657, "sorned": 1967},
+                {"period": "2016-09-18", "licensed": 3148, "sorned": 2627},
+                {"period": "2016-09-17", "licensed": 3471, "sorned": 3740},
+                {"period": "2016-09-16", "licensed": 2871, "sorned": 2216},
+                {"period": "2016-09-15", "licensed": 2401, "sorned": 1656},
+                {"period": "2016-09-10", "licensed": 2115, "sorned": 1022}
             ],
             xkey: 'period',
             barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
@@ -2624,15 +2650,15 @@ function init_morris_charts() {
 
     }
 
-    if ($('#graphx').length) {
+    if ($('#graphx').length ){
 
         Morris.Bar({
             element: 'graphx',
             data: [
-                { x: '2015 Q1', y: 2, z: 3, a: 4 },
-                { x: '2015 Q2', y: 3, z: 5, a: 6 },
-                { x: '2015 Q3', y: 4, z: 3, a: 2 },
-                { x: '2015 Q4', y: 2, z: 4, a: 5 }
+                {x: '2015 Q1', y: 2, z: 3, a: 4},
+                {x: '2015 Q2', y: 3, z: 5, a: 6},
+                {x: '2015 Q3', y: 4, z: 3, a: 2},
+                {x: '2015 Q4', y: 2, z: 4, a: 5}
             ],
             xkey: 'x',
             ykeys: ['y', 'z', 'a'],
@@ -2646,21 +2672,21 @@ function init_morris_charts() {
 
     }
 
-    if ($('#graph_area').length) {
+    if ($('#graph_area').length ){
 
         Morris.Area({
             element: 'graph_area',
             data: [
-                { period: '2014 Q1', iphone: 2666, ipad: null, itouch: 2647 },
-                { period: '2014 Q2', iphone: 2778, ipad: 2294, itouch: 2441 },
-                { period: '2014 Q3', iphone: 4912, ipad: 1969, itouch: 2501 },
-                { period: '2014 Q4', iphone: 3767, ipad: 3597, itouch: 5689 },
-                { period: '2015 Q1', iphone: 6810, ipad: 1914, itouch: 2293 },
-                { period: '2015 Q2', iphone: 5670, ipad: 4293, itouch: 1881 },
-                { period: '2015 Q3', iphone: 4820, ipad: 3795, itouch: 1588 },
-                { period: '2015 Q4', iphone: 15073, ipad: 5967, itouch: 5175 },
-                { period: '2016 Q1', iphone: 10687, ipad: 4460, itouch: 2028 },
-                { period: '2016 Q2', iphone: 8432, ipad: 5713, itouch: 1791 }
+                {period: '2014 Q1', iphone: 2666, ipad: null, itouch: 2647},
+                {period: '2014 Q2', iphone: 2778, ipad: 2294, itouch: 2441},
+                {period: '2014 Q3', iphone: 4912, ipad: 1969, itouch: 2501},
+                {period: '2014 Q4', iphone: 3767, ipad: 3597, itouch: 5689},
+                {period: '2015 Q1', iphone: 6810, ipad: 1914, itouch: 2293},
+                {period: '2015 Q2', iphone: 5670, ipad: 4293, itouch: 1881},
+                {period: '2015 Q3', iphone: 4820, ipad: 3795, itouch: 1588},
+                {period: '2015 Q4', iphone: 15073, ipad: 5967, itouch: 5175},
+                {period: '2016 Q1', iphone: 10687, ipad: 4460, itouch: 2028},
+                {period: '2016 Q2', iphone: 8432, ipad: 5713, itouch: 1791}
             ],
             xkey: 'period',
             ykeys: ['iphone', 'ipad', 'itouch'],
@@ -2673,15 +2699,15 @@ function init_morris_charts() {
 
     }
 
-    if ($('#graph_donut').length) {
+    if ($('#graph_donut').length ){
 
         Morris.Donut({
             element: 'graph_donut',
             data: [
-                { label: 'Jam', value: 25 },
-                { label: 'Frosted', value: 40 },
-                { label: 'Custard', value: 25 },
-                { label: 'Sugar', value: 10 }
+                {label: 'Jam', value: 25},
+                {label: 'Frosted', value: 40},
+                {label: 'Custard', value: 25},
+                {label: 'Sugar', value: 10}
             ],
             colors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
             formatter: function (y) {
@@ -2692,7 +2718,7 @@ function init_morris_charts() {
 
     }
 
-    if ($('#graph_line').length) {
+    if ($('#graph_line').length ){
 
         Morris.Line({
             element: 'graph_line',
@@ -2702,16 +2728,16 @@ function init_morris_charts() {
             hideHover: 'auto',
             lineColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
             data: [
-                { year: '2012', value: 20 },
-                { year: '2013', value: 10 },
-                { year: '2014', value: 5 },
-                { year: '2015', value: 5 },
-                { year: '2016', value: 20 }
+                {year: '2012', value: 20},
+                {year: '2013', value: 10},
+                {year: '2014', value: 5},
+                {year: '2015', value: 5},
+                {year: '2016', value: 20}
             ],
             resize: true
         });
 
-        $MENU_TOGGLE.on('click', function () {
+        $MENU_TOGGLE.on('click', function() {
             $(window).resize();
         });
 
@@ -2726,7 +2752,7 @@ function init_morris_charts() {
 
 function init_echarts() {
 
-    if (typeof (echarts) === 'undefined') { return; }
+    if( typeof (echarts) === 'undefined'){ return; }
     console.log('init_echarts');
 
 
@@ -2814,8 +2840,8 @@ function init_echarts() {
                 color: '#408829'
             },
             controlStyle: {
-                normal: { color: '#408829' },
-                emphasis: { color: '#408829' }
+                normal: {color: '#408829'},
+                emphasis: {color: '#408829'}
             }
         },
 
@@ -2945,7 +2971,7 @@ function init_echarts() {
 
     //echart Bar
 
-    if ($('#mainb').length) {
+    if ($('#mainb').length ){
 
         var echartBar = echarts.init(document.getElementById('mainb'), theme);
 
@@ -3023,7 +3049,7 @@ function init_echarts() {
 
     //echart Radar
 
-    if ($('#echart_sonar').length) {
+    if ($('#echart_sonar').length ){
 
         var echartRadar = echarts.init(document.getElementById('echart_sonar'), theme);
 
@@ -3093,7 +3119,7 @@ function init_echarts() {
 
     //echart Funnel
 
-    if ($('#echart_pyramid').length) {
+    if ($('#echart_pyramid').length ){
 
         var echartFunnel = echarts.init(document.getElementById('echart_pyramid'), theme);
 
@@ -3153,7 +3179,7 @@ function init_echarts() {
 
     //echart Gauge
 
-    if ($('#echart_gauge').length) {
+    if ($('#echart_gauge').length ){
 
         var echartGauge = echarts.init(document.getElementById('echart_gauge'), theme);
 
@@ -3208,7 +3234,7 @@ function init_echarts() {
                 },
                 axisLabel: {
                     show: true,
-                    formatter: function (v) {
+                    formatter: function(v) {
                         switch (v + '') {
                             case '10':
                                 return 'a';
@@ -3273,7 +3299,7 @@ function init_echarts() {
 
     //echart Line
 
-    if ($('#echart_line').length) {
+    if ($('#echart_line').length ){
 
         var echartLine = echarts.init(document.getElementById('echart_line'), theme);
 
@@ -3365,7 +3391,7 @@ function init_echarts() {
 
     //echart Scatter
 
-    if ($('#echart_scatter').length) {
+    if ($('#echart_scatter').length ){
 
         var echartScatter = echarts.init(document.getElementById('echart_scatter'), theme);
 
@@ -3416,7 +3442,7 @@ function init_echarts() {
                 type: 'scatter',
                 tooltip: {
                     trigger: 'item',
-                    formatter: function (params) {
+                    formatter: function(params) {
                         if (params.value.length > 1) {
                             return params.seriesName + ' :<br/>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
                         } else {
@@ -3706,7 +3732,7 @@ function init_echarts() {
                 type: 'scatter',
                 tooltip: {
                     trigger: 'item',
-                    formatter: function (params) {
+                    formatter: function(params) {
                         if (params.value.length > 1) {
                             return params.seriesName + ' :<br/>' + params.value[0] + 'cm ' + params.value[1] + 'kg ';
                         } else {
@@ -3985,7 +4011,7 @@ function init_echarts() {
 
     //echart Bar Horizontal
 
-    if ($('#echart_bar_horizontal').length) {
+    if ($('#echart_bar_horizontal').length ){
 
         var echartBar = echarts.init(document.getElementById('echart_bar_horizontal'), theme);
 
@@ -4034,7 +4060,7 @@ function init_echarts() {
 
     //echart Pie Collapse
 
-    if ($('#echart_pie2').length) {
+    if ($('#echart_pie2').length ){
 
         var echartPieCollapse = echarts.init(document.getElementById('echart_pie2'), theme);
 
@@ -4101,7 +4127,7 @@ function init_echarts() {
 
     //echart Donut
 
-    if ($('#echart_donut').length) {
+    if ($('#echart_donut').length ){
 
         var echartDonut = echarts.init(document.getElementById('echart_donut'), theme);
 
@@ -4188,7 +4214,7 @@ function init_echarts() {
 
     //echart Pie
 
-    if ($('#echart_pie').length) {
+    if ($('#echart_pie').length ){
 
         var echartPie = echarts.init(document.getElementById('echart_pie'), theme);
 
@@ -4282,11 +4308,11 @@ function init_echarts() {
 
     //echart Mini Pie
 
-    if ($('#echart_mini_pie').length) {
+    if ($('#echart_mini_pie').length ){
 
         var echartMiniPie = echarts.init(document.getElementById('echart_mini_pie'), theme);
 
-        echartMiniPie.setOption({
+        echartMiniPie .setOption({
             title: {
                 text: 'Chart #2',
                 subtext: 'From ExcelHome',
@@ -4387,7 +4413,7 @@ function init_echarts() {
 
     //echart Map
 
-    if ($('#echart_world_map').length) {
+    if ($('#echart_world_map').length ){
 
         var echartMap = echarts.init(document.getElementById('echart_world_map'), theme);
 
@@ -4401,7 +4427,7 @@ function init_echarts() {
             },
             tooltip: {
                 trigger: 'item',
-                formatter: function (params) {
+                formatter: function(params) {
                     var value = (params.value + '').split('.');
                     value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') + '.' + value[1];
                     return params.seriesName + '<br/>' + params.name + ' : ' + value;
@@ -4999,7 +5025,7 @@ function init_echarts() {
 }
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     init_sparklines();
     init_flot_chart();
@@ -5036,4 +5062,5 @@ $(document).ready(function () {
     init_autosize();
     init_autocomplete();
 
-});	
+});
+
