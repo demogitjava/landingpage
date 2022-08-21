@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import java.security.Principal;
-
 
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 
@@ -33,7 +30,7 @@ public class Admin_Controller implements iAdminController
 
 
     @Override
-    public ModelAndView admin()
+    public ModelAndView adminsite()
     {
 
         mv = new ModelAndView("admin");
