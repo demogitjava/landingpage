@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,13 +274,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00048" summary="edit page to bootflat">
-      <created>1658826378398</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1658826378398</updated>
     </task>
     <task id="LOCAL-00049" summary="edit service page">
       <created>1658842036055</created>
@@ -617,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660986662842</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary=".">
+      <created>1660986845365</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1660986845365</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,10 +664,10 @@
     <MESSAGE value="edit navigation menu&#10;from admin.html" />
     <MESSAGE value="edit admin.html tempalte" />
     <MESSAGE value="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin" />
-    <MESSAGE value="." />
     <MESSAGE value="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -675,6 +676,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/WebSiteBuilder.java</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java</url>
+          <line>22</line>
+          <properties class="de.jgsoftware.landingpage.controller.interfaces.iAdminController" method="admin">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
