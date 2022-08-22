@@ -4,6 +4,7 @@ package de.jgsoftware.landingpage.controller;
 import de.jgsoftware.landingpage.controller.interfaces.iDemoController;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.RequestContextUtils;
@@ -28,9 +29,17 @@ public class DemoController implements iDemoController
 
     Principal principal;
 
+
+
+
     @Override
     public ModelAndView de()
     {
+
+        // ip address client
+        String ipAddress =  request.getRemoteAddr();
+
+
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
         principal = request.getUserPrincipal();
