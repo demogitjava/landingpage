@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add table useragent &#10;to model layer">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IUserAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" afterDir="false" />
-    </list>
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="save pojo Useragent &#10;from http request to h2 database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,13 +298,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00053" summary="edit service.html page">
-      <created>1659037514094</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1659037514095</updated>
     </task>
     <task id="LOCAL-00054" summary="add simple naviagtion menu to service.html">
       <created>1659038057050</created>
@@ -651,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661243676708</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="save pojo Useragent &#10;from http request to h2 database">
+      <created>1661252173141</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1661252173141</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +666,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="wrong import path &#10;&#10;edit to &#10;&lt;script th:src=&quot;@{bootstrap.min.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="edit navigation menu german" />
     <MESSAGE value="edit admin controller" />
     <MESSAGE value="h2-console is now available &#10;over html interface" />
@@ -700,7 +690,8 @@
     <MESSAGE value="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin" />
     <MESSAGE value="edit pom.xml" />
     <MESSAGE value="add table useragent &#10;to model layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add table useragent &#10;to model layer" />
+    <MESSAGE value="save pojo Useragent &#10;from http request to h2 database" />
+    <option name="LAST_COMMIT_MESSAGE" value="save pojo Useragent &#10;from http request to h2 database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,11 +700,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
