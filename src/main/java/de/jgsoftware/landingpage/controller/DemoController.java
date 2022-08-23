@@ -13,7 +13,19 @@ import javax.servlet.http.HttpServletRequest;
 import de.jgsoftware.landingpage.model.areacodes;
 
 import java.security.Principal;
+import java.security.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+
+
+import ua_parser.Parser;
+import ua_parser.Client;
+
+
+
+import java.util.Date;
+
 
 @Controller
 public class DemoController implements iDemoController
@@ -37,10 +49,35 @@ public class DemoController implements iDemoController
     {
 
         // ip address client
-        String ipAddress =  request.getRemoteAddr();
+        String ipAddress = request.getRemoteAddr();
+
+        String stuseragent = request.getHeader("user-agent");
 
 
+        Parser uaParser = new Parser();
+        Client c = uaParser.parse(stuseragent);
+
+        String stbrowser = c.userAgent.family; // browser
+        String stbrowserversion = c.userAgent.family; // browser version
+        String stsystem = c.os.family; // operation system
+
+        /*
+        System.out.println(c.userAgent.family); // => browser
+        System.out.println(c.userAgent.major);  // => browser version
+        System.out.println(c.userAgent.minor);  // => "1"
+
+        System.out.println(c.os.family);        // => operation system
+           */
+
+
+        // browser language like "de"
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
+
+        Date date = new Date();
+
+
+
+
 
         principal = request.getUserPrincipal();
 
