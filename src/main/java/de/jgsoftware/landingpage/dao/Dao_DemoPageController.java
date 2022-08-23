@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.web.IUserAgent;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.service.IndexService;
@@ -15,6 +16,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import de.jgsoftware.landingpage.model.areacodes;
 
+import de.jgsoftware.landingpage.model.useragent;
+
+
+
 @Repository
 public class Dao_DemoPageController implements IDaoDemoPageController
 {
@@ -23,11 +28,20 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Qualifier(value = "shopJdbcTemplate")
     JdbcTemplate jtm2;
 
+
+    // demodb
+    @Autowired
+    @Qualifier(value = "defaultJdbcTemplate")
+    JdbcTemplate jtm;
+
+
     @Lazy
     @Autowired
     IndexService sdemowebtext;
 
 
+    @Autowired
+    IUserAgent iuseragent;
 
 
     // returns all entriys from Table
@@ -53,10 +67,22 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
 
     // return list from country where in the eu
+    @Override
     public List<areacodes> areacodes_eu()
     {
         List<areacodes> areacodes = jtm2.query("SELECT * FROM LEANDERCODES where EU = 1", new BeanPropertyRowMapper(areacodes.class));
         return areacodes;
+    }
+
+
+    @Override
+    public useragent saveuseragent(useragent muagent)
+    {
+
+        iuseragent.save(muagent);
+
+
+        return muagent;
     }
 }
 

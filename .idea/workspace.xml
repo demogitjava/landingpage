@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit pom.xml">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_ua_parser_uap_java_1_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/useragent.java" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add table useragent &#10;to model layer">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IUserAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +26,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -306,13 +307,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00052" summary="edit lpagewebbuilder.html">
-      <created>1659034913395</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1659034913396</updated>
     </task>
     <task id="LOCAL-00053" summary="edit service.html page">
       <created>1659037514094</created>
@@ -650,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661193449668</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="add table useragent &#10;to model layer">
+      <created>1661243676708</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1661243676708</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +675,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit import javascript form &#10;theamleaf&#10;    &lt;script th:src=&quot;@{/bootflat/js/jcheck.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.selecter.min.js}&quot;&gt;&lt;/script&gt;&#10;    &lt;script th:src=&quot;@{/bootflat/js/jquery.fs.stepper.min.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="wrong import path &#10;&#10;edit to &#10;&lt;script th:src=&quot;@{bootstrap.min.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="edit navigation menu german" />
     <MESSAGE value="edit admin controller" />
@@ -699,7 +699,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin" />
     <MESSAGE value="edit pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit pom.xml" />
+    <MESSAGE value="add table useragent &#10;to model layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add table useragent &#10;to model layer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,6 +709,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

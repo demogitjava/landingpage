@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iDemoController;
+import de.jgsoftware.landingpage.model.useragent;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -53,7 +54,6 @@ public class DemoController implements iDemoController
 
         String stuseragent = request.getHeader("user-agent");
 
-
         Parser uaParser = new Parser();
         Client c = uaParser.parse(stuseragent);
 
@@ -69,7 +69,6 @@ public class DemoController implements iDemoController
         System.out.println(c.os.family);        // => operation system
            */
 
-
         // browser language like "de"
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
@@ -77,6 +76,20 @@ public class DemoController implements iDemoController
 
 
 
+        useragent muagent = new useragent();
+        muagent.setIpAddress(ipAddress);
+        muagent.setStbrowser(stbrowser);
+        muagent.setStbrowserversion(stbrowserversion);
+        muagent.setStsystem(stsystem);
+        muagent.setStlanguage(languagestr);
+        muagent.setDate(date);
+
+
+        /*
+                save pojo
+               de.jgsoftware.landingpage.model.useragent
+         */
+        iServiceIndex.getDcontroller().saveuseragent(muagent);
 
 
         principal = request.getUserPrincipal();
