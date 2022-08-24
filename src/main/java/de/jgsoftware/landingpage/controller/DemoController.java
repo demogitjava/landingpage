@@ -89,7 +89,7 @@ public class DemoController implements iDemoController
                 save pojo
                de.jgsoftware.landingpage.model.useragent
          */
-
+        iServiceIndex.getDcontroller().saveuseragent(muagent);
 
         principal = request.getUserPrincipal();
 
