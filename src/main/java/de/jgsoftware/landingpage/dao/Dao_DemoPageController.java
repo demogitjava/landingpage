@@ -12,6 +12,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.List;
 import de.jgsoftware.landingpage.model.areacodes;
 
@@ -77,7 +79,26 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     public useragent saveuseragent(useragent muagent)
     {
 
-        //iuseragent.save(muagent);
+
+        Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
+
+        if(countid == 0)
+        {
+            countid = Long.valueOf(1);
+        }
+        muagent.setId(countid);
+
+        jtm.update("insert into useragent " +
+                        "(id, ipaddress, stbrowser, stbrowserversion, stsystem, stlanguage, datum, timestamp) " +
+                        "values (?, ?, ?, ?, ?, ?, ?, ?)",
+                muagent.getId(),
+                muagent.getIpAddress(),
+                muagent.getStbrowser(),
+                muagent.getStbrowserversion(),
+                muagent.getStsystem(),
+                muagent.getStlanguage(),
+                muagent.getDate(),
+                muagent.getDate());
 
 
         return muagent;

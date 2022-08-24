@@ -24,7 +24,7 @@ public class useragent
 
     private Date date;
 
-
+    private Timestamp timestamp;
 
     public long getId() {
         return id;
@@ -82,4 +82,11 @@ public class useragent
         this.date = date;
     }
 
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+    }
 }
