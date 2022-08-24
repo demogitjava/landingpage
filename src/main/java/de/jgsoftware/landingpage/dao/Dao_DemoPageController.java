@@ -85,8 +85,14 @@ public class Dao_DemoPageController implements IDaoDemoPageController
         if(countid == 0)
         {
             countid = Long.valueOf(1);
+            muagent.setId(countid);
         }
-        muagent.setId(countid);
+        else if(countid > 0)
+        {
+            long l = countid + 1;
+            muagent.setId(l);
+        }
+
 
         jtm.update("insert into useragent " +
                         "(id, ipaddress, stbrowser, stbrowserversion, stsystem, stlanguage, datum, timestamp) " +
