@@ -2,7 +2,6 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
-import de.jgsoftware.landingpage.dao.interfaces.web.IUserAgent;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.service.IndexService;
@@ -40,8 +39,7 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     IndexService sdemowebtext;
 
 
-    @Autowired
-    IUserAgent iuseragent;
+
 
 
     // returns all entriys from Table
@@ -79,7 +77,7 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     public useragent saveuseragent(useragent muagent)
     {
 
-       // iuseragent.save(muagent);
+        //iuseragent.save(muagent);
 
 
         return muagent;
