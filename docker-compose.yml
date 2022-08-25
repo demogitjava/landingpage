@@ -4,7 +4,7 @@ version: '3'
 services:
 
   landingpage:
-    image: imglandingpage
+    image: imglandingpage:latest
     container_name: landingapge
     build:
       context: ./

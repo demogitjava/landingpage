@@ -1,4 +1,4 @@
-FROM testlandingpage:latest
+FROM imglandingpage:latest
 #FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 
 #hostname

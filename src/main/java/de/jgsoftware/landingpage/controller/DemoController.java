@@ -74,8 +74,6 @@ public class DemoController implements iDemoController
 
         Date date = new Date();
 
-
-
         useragent muagent = new useragent();
         muagent.setIpAddress(ipAddress);
         muagent.setStbrowser(stbrowser);
@@ -91,8 +89,19 @@ public class DemoController implements iDemoController
          */
         iServiceIndex.getDcontroller().saveuseragent(muagent);
 
+
+
+        /*
+                is user loggedin
+         */
         principal = request.getUserPrincipal();
 
+
+
+        /*
+
+                start spring boot mvc
+         */
         mv = new ModelAndView("de");
 
 
