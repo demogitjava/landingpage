@@ -9,8 +9,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
-import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
+
 import java.util.List;
+
+import de.jgsoftware.landingpage.model.Users;
 
 @Repository
 public class Dao_admin implements i_dao_admin
@@ -18,7 +20,12 @@ public class Dao_admin implements i_dao_admin
 
     @Autowired
     @Qualifier(value = "shopJdbcTemplate")
-    private JdbcTemplate jtm;
+    private JdbcTemplate jtm2;
+
+
+    @Autowired
+    @Qualifier(value = "defaultJdbcTemplate")
+    JdbcTemplate jtm;
 
     /*
             Crud Interface -> de.jgsoftware.landingpage.model.m_webtextlayout
@@ -39,7 +46,7 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
-        List<m_webtextlayout> webtextlayouts = jtm.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
 
         return webtextlayouts;
     }
@@ -49,10 +56,14 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List<m_webtextlayout> getWebtextentriys()
     {
-        List<m_webtextlayout> pagenavbar = jtm.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        List<m_webtextlayout> pagenavbar = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
 
         return pagenavbar;
     }
+
+
+
+
 
 
 

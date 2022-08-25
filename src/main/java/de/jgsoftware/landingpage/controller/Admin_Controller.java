@@ -2,13 +2,17 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iAdminController;
+import de.jgsoftware.landingpage.model.Users;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
 
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
+
+import java.util.List;
 
 @Controller
 public class Admin_Controller implements iAdminController
@@ -46,6 +50,7 @@ public class Admin_Controller implements iAdminController
                 webtextlayout to mvc Controller
          */
         mv.addObject("listtemplate", admin_service.getIdao_admin().getPageLanguageText());
+
 
 
         return mv;
