@@ -22,6 +22,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$" relative="/" />
         </webroots>
+        <sourceRoots />
       </configuration>
     </facet>
   </component>

@@ -208,7 +208,7 @@ public class DemoController implements iDemoController
     @Override
     public String admin()
     {
-        return "admin";
+        return "redirect:/admin/";
     }
 
 
