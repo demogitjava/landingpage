@@ -48,7 +48,6 @@ public class Admin_Controller implements iAdminController
         mv.addObject("listtemplate", admin_service.getIdao_admin().getPageLanguageText());
 
 
-
         return mv;
     }
 
