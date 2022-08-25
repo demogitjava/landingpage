@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit admin.html page">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add commons.io to pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -229,13 +229,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00061" summary="wrong import path &#10;&#10;edit to &#10;&lt;script th:src=&quot;@{bootstrap.min.js}&quot;&gt;&lt;/script&gt;">
-      <created>1659378219890</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1659378219890</updated>
     </task>
     <task id="LOCAL-00062" summary=".">
       <created>1659465595604</created>
@@ -573,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661429658070</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="add commons.io to pom.xml">
+      <created>1661438904272</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1661438904272</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +597,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add spring kafka to pom" />
     <MESSAGE value="edit keyword in header&#10;for &#10;en&#10;es&#10;fr&#10;it&#10;and tr" />
     <MESSAGE value="add gentella dashboard framework" />
     <MESSAGE value="edit admin.html" />
@@ -622,7 +621,8 @@
     <MESSAGE value="edit function &#10; public useragent saveuseragent(useragent muagent)&#10; save http request from user-agent to database" />
     <MESSAGE value="edit democontroller" />
     <MESSAGE value="edit admin.html page" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit admin.html page" />
+    <MESSAGE value="add commons.io to pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add commons.io to pom.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
