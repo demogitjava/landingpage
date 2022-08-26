@@ -14,4 +14,5 @@ public interface i_dao_admin
 
     List<m_webtextlayout> getWebtextentriys();
 
+    List<Users> getallUsers();
 }

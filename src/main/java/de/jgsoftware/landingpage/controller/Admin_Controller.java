@@ -39,18 +39,8 @@ public class Admin_Controller implements iAdminController
 
         mv = new ModelAndView("admin");
 
-        /**
-         *   Bootstrap VALUES for Navigation Bar
-         *   class = navbar // Bootstrap
-         */
-        mv.addObject("webtextcomp", admin_service.getIdao_admin().getWebtextentriys());
 
-         /*
-                return all Objects of table
-                webtextlayout to mvc Controller
-         */
-        mv.addObject("listtemplate", admin_service.getIdao_admin().getPageLanguageText());
-
+        mv.addObject("userdb", admin_service.getIdao_admin().getallUsers());
 
 
         return mv;

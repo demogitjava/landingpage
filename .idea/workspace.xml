@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add class Users &#10;in package de.jgsoftware.landingpage.model;">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/useragent.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,13 +232,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00067" summary=".">
-      <created>1659962199308</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1659962199308</updated>
     </task>
     <task id="LOCAL-00068" summary="edit admin controller">
       <created>1660051483689</created>
@@ -576,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661455357353</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary=".">
+      <created>1661457480534</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1661457480534</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,10 +622,10 @@
     <MESSAGE value="add commons.io to pom.xml" />
     <MESSAGE value="edit spring boot version to 2.7.0" />
     <MESSAGE value="edit spring boot version to 2.1.5.RELEASE&#10;with version 2.7 the application doesn't run" />
-    <MESSAGE value="." />
     <MESSAGE value="edit admin request in DemoController&#10;function&#10; @Override&#10;    public String admin()&#10;    {&#10;        return &quot;redirect:/admin/&quot;;&#10;    }&#10;&#10;the request with admin.html is loaded&#10;the ModalAndView with the right request" />
     <MESSAGE value="add class Users &#10;in package de.jgsoftware.landingpage.model;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class Users &#10;in package de.jgsoftware.landingpage.model;" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -633,7 +633,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
           <line>39</line>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

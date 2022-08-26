@@ -62,7 +62,13 @@ public class Dao_admin implements i_dao_admin
     }
 
 
+    @Override
+    public List<Users> getallUsers()
+    {
 
+        List<Users> usersList = (List<Users>) jtm2.query("select count(id) from users", new BeanPropertyRowMapper(Users.class));
+        return usersList;
+    }
 
 
 
