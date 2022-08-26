@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 217.160.255.254:80:80 &#10;--dns 8.8.8.8 --dns 8.8.4.4 &#10;--dns-search demogitjava&#10;--name landingpage" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 --dns 8.8.4.4 &#10;--dns-search demogitjava&#10;--name landingpage" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />

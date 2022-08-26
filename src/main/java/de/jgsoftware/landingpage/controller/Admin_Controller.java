@@ -40,8 +40,6 @@ public class Admin_Controller implements iAdminController
         mv = new ModelAndView("admin");
 
 
-        mv.addObject("userdb", admin_service.getIdao_admin().getallUsers());
-
 
         return mv;
     }
