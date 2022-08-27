@@ -16,4 +16,10 @@ public interface i_dao_admin
 
     Integer getusercount();
 
+
+    /*
+        show connects of the
+        current month
+     */
+    public Integer getconnectsmonth();
 }

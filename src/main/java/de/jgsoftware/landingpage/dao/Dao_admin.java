@@ -70,6 +70,13 @@ public class Dao_admin implements i_dao_admin
         return usercount;
     }
 
+    @Override
+    public Integer getconnectsmonth()
+    {
+        Integer connectsmonth = jtm.queryForObject("select count(id) from users", Integer.class);
+        return connectsmonth;
+    }
+
 
 
 
