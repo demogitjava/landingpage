@@ -40,6 +40,8 @@ public class Admin_Controller implements iAdminController
         mv = new ModelAndView("admin");
 
 
+        Integer usercount = admin_service.getIdao_admin().getusercount();
+        mv.addObject("usersdb", usercount);
 
         return mv;
     }
@@ -56,5 +58,6 @@ public class Admin_Controller implements iAdminController
         //idexservice.getDcontroller().saveFormModalData(webtextlayout);
         return "redirect:/";
     }
+
 
 }

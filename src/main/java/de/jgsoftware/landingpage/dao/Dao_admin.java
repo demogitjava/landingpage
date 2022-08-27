@@ -62,6 +62,15 @@ public class Dao_admin implements i_dao_admin
     }
 
 
+    @Override
+    public Integer getusercount()
+    {
+
+        Integer usercount = jtm.queryForObject("select count(id) from users", Integer.class);
+        return usercount;
+    }
+
+
 
 
 
