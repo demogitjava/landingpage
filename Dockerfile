@@ -9,8 +9,7 @@ ENV LANG=de_DE.ISO-8859-1
 ENV LANGUAGE de_DE:de
 ENV LC_ALL de_DE.ISO-8859-1
 
-
-ENV TZ="Europe/Berlin"
+ENV TZ=Europe/Berlin
 
 EXPOSE 80
 EXPOSE 8082
