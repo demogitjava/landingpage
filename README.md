@@ -1,6 +1,7 @@
 # Demo Landingpage with Spring Boot + Theamleaf + Grapesjs + Bootflat ui kit
 ============================================================================
 
+the used timezone is -> UTC Europe/Berlin
 
 used db -> shopdb
 available with  ->your-ip/h2-console

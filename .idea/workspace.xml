@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add timezone to maven pom">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit timezone to TZ=Europe/Berlin">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,13 +260,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00076" summary=".">
-      <created>1660066421473</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1660066421473</updated>
     </task>
     <task id="LOCAL-00077" summary="add spring kafka to pom">
       <created>1660162109239</created>
@@ -608,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661764406433</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="edit timezone to TZ=Europe/Berlin">
+      <created>1661774647945</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1661774647945</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +628,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;" />
     <MESSAGE value="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working" />
     <MESSAGE value="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin" />
     <MESSAGE value="edit pom.xml" />
@@ -657,7 +652,8 @@
     <MESSAGE value="edit admin.html" />
     <MESSAGE value="add timezone to dockerfile" />
     <MESSAGE value="add timezone to maven pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="add timezone to maven pom" />
+    <MESSAGE value="edit timezone to TZ=Europe/Berlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit timezone to TZ=Europe/Berlin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
