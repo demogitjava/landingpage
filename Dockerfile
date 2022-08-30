@@ -1,5 +1,5 @@
+#FROM imglandingpage:latest
 FROM imglandingpage:latest
-#FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 
 #hostname
 ENV HOSTNAME demogitjava
