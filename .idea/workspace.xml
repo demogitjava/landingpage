@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add dns server to &#10;docker-compose.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -305,13 +302,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00080" summary="add gentella dashboard framework">
-      <created>1660661347735</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1660661347736</updated>
     </task>
     <task id="LOCAL-00081" summary="edit admin.html">
       <created>1660662686305</created>
@@ -649,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661856039289</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver">
+      <created>1661856622014</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1661856622014</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +670,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit pom.xml" />
     <MESSAGE value="add table useragent &#10;to model layer" />
     <MESSAGE value="save pojo Useragent &#10;from http request to h2 database" />
     <MESSAGE value="edit demo controller &#10;sava pojo with over jpa controller &#10;becouse save over jpa not working" />
@@ -698,7 +694,8 @@
     <MESSAGE value="edit read me" />
     <MESSAGE value="." />
     <MESSAGE value="add dns server to &#10;docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dns server to &#10;docker-compose.yml" />
+    <MESSAGE value="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver" />
+    <option name="LAST_COMMIT_MESSAGE" value="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
