@@ -53,4 +53,8 @@ public interface iDemoController {
 
     @GetMapping("/admin")
     String admin();
+
+
+    @GetMapping("/wiki")
+    String wiki();
 }

@@ -211,7 +211,11 @@ public class DemoController implements iDemoController
         return "redirect:/admin/";
     }
 
-
+    @Override
+    public String wiki()
+    {
+        return "redirect:/wiki/";
+    }
 
 
 }
