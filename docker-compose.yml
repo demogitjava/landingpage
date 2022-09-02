@@ -3,9 +3,10 @@ version: '3'
 
 services:
 
-  landingpage:
+
+  de_landingpage:
     image: imglandingpage:latest
-    container_name: landingapge
+    container_name: de_landingapge
     build:
       context: ./
       dockerfile: Dockerfile
