@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Calendar;
 import java.util.Date;
@@ -20,7 +21,8 @@ public interface iDemoLandingPage
 {
     static void main(String[] args)
     {
-        ZonedDateTime now = ZonedDateTime.now();
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+        //ZonedDateTime now = ZonedDateTime.now();
 
         // 1. ZonedDateTime to TimeStamp
         Timestamp timestamp = Timestamp.valueOf(now.toLocalDateTime());
