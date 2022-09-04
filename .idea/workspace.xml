@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit viewport meta tag&#10;to fix error from googlebot" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,13 +305,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00092" summary="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin">
-      <created>1660914805601</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1660914805601</updated>
     </task>
     <task id="LOCAL-00093" summary="edit security config &#10;for url &#10; lpagewebbuilder and &#10; admin">
       <created>1660914992007</created>
@@ -647,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662299611163</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de">
+      <created>1662300000150</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1662300000150</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +673,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit admin.html page" />
     <MESSAGE value="add commons.io to pom.xml" />
     <MESSAGE value="edit spring boot version to 2.7.0" />
     <MESSAGE value="edit spring boot version to 2.1.5.RELEASE&#10;with version 2.7 the application doesn't run" />
@@ -696,7 +697,8 @@
     <MESSAGE value="add google html" />
     <MESSAGE value="." />
     <MESSAGE value="edit viewport meta tag&#10;to fix error from googlebot" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit viewport meta tag&#10;to fix error from googlebot" />
+    <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
