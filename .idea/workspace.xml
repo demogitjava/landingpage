@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit bootstrap version">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/BingSiteAuth(1).xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/BingSiteAuth.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add auth file for google and bing">
+      <change beforePath="$PROJECT_DIR$/README.md.backup" beforeDir="false" afterPath="$PROJECT_DIR$/README.md.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,13 +305,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00095" summary="edit&#10;    &lt;script th:src=&quot;@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}&quot;&gt;&lt;/script&gt;">
-      <created>1660986130254</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1660986130254</updated>
     </task>
     <task id="LOCAL-00096" summary="edit &#10;-&gt; custom.js &#10;for gentella template &#10;the sidbarmenu is now working">
       <created>1660986662842</created>
@@ -652,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662368582723</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="add auth file for google and bing">
+      <created>1662546282385</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1662546282385</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +673,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit spring boot version to 2.1.5.RELEASE&#10;with version 2.7 the application doesn't run" />
     <MESSAGE value="edit admin request in DemoController&#10;function&#10; @Override&#10;    public String admin()&#10;    {&#10;        return &quot;redirect:/admin/&quot;;&#10;    }&#10;&#10;the request with admin.html is loaded&#10;the ModalAndView with the right request" />
     <MESSAGE value="add class Users &#10;in package de.jgsoftware.landingpage.model;" />
     <MESSAGE value="dao_admin &#10;get all users from database" />
@@ -701,7 +697,8 @@
     <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
     <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 144.76.83.104&#10;--dns 144.76.173.169&#10;--dns 81.169.230.157&#10;--dns 195.243.99.35&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
     <MESSAGE value="edit bootstrap version" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit bootstrap version" />
+    <MESSAGE value="add auth file for google and bing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth file for google and bing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -1,6 +1,19 @@
 ************
 Demo Websitebuilder with Spring Boot + Theamleaf + Grapesjs
 
+
+for indexing your site for
+google
+or bing
+edit your auth files in my case is this
+
+for google
+google3bcc7fb369b1dc91.html
+
+and for bing
+BingSiteAuth(1).xml
+
+
 <br/>
 <br/>
 <br/>
