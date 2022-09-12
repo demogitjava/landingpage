@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add ionic framework for mobile site development" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00102" summary="save pojo Useragent &#10;from http request to h2 database">
-      <created>1661252173141</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1661252173141</updated>
     </task>
     <task id="LOCAL-00103" summary="edit demo controller &#10;sava pojo with over jpa controller &#10;becouse save over jpa not working">
       <created>1661252361990</created>
@@ -647,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662995318607</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary=".">
+      <created>1662995926624</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1662995926624</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +688,6 @@
     <MESSAGE value="edit dockerfile time zone&#10;to Europe/Berlin" />
     <MESSAGE value="add robots.txt" />
     <MESSAGE value="add google html" />
-    <MESSAGE value="." />
     <MESSAGE value="edit viewport meta tag&#10;to fix error from googlebot" />
     <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
     <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 144.76.83.104&#10;--dns 144.76.173.169&#10;--dns 81.169.230.157&#10;--dns 195.243.99.35&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
@@ -696,7 +698,8 @@
     <MESSAGE value="add hreflang tags for country fr" />
     <MESSAGE value="add hreflang tags for country es" />
     <MESSAGE value="add ionic framework for mobile site development" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ionic framework for mobile site development" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
