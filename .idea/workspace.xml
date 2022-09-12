@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add hreflang tags for country fr">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-    </list>
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add ionic framework for mobile site development" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -306,20 +303,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00100" summary="edit pom.xml">
-      <created>1661193449668</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1661193449668</updated>
-    </task>
-    <task id="LOCAL-00101" summary="add table useragent &#10;to model layer">
-      <created>1661243676708</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1661243676708</updated>
     </task>
     <task id="LOCAL-00102" summary="save pojo Useragent &#10;from http request to h2 database">
       <created>1661252173141</created>
@@ -650,7 +633,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662993742920</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="add hreflang tags for country es">
+      <created>1662995175500</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1662995175501</updated>
+    </task>
+    <task id="LOCAL-00150" summary="add ionic framework for mobile site development">
+      <created>1662995318607</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1662995318607</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,8 +671,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove function in dao_admin&#10;controller and request to /admin is then working" />
-    <MESSAGE value="show all users from db" />
     <MESSAGE value="edit admin.html" />
     <MESSAGE value="add timezone to dockerfile" />
     <MESSAGE value="add timezone to maven pom" />
@@ -699,7 +694,9 @@
     <MESSAGE value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
     <MESSAGE value="add hreflang tag" />
     <MESSAGE value="add hreflang tags for country fr" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hreflang tags for country fr" />
+    <MESSAGE value="add hreflang tags for country es" />
+    <MESSAGE value="add ionic framework for mobile site development" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ionic framework for mobile site development" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
