@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add hreflang tag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
     </list>
@@ -306,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00098" summary="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin">
-      <created>1661076317218</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1661076317219</updated>
     </task>
     <task id="LOCAL-00099" summary="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin">
       <created>1661084412315</created>
@@ -650,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662973563763</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="add hreflang tag">
+      <created>1662992051809</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1662992051809</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +674,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add class Users &#10;in package de.jgsoftware.landingpage.model;" />
     <MESSAGE value="dao_admin &#10;get all users from database" />
     <MESSAGE value="remove function in dao_admin&#10;controller and request to /admin is then working" />
     <MESSAGE value="show all users from db" />
@@ -699,7 +698,8 @@
     <MESSAGE value="edit bootstrap version" />
     <MESSAGE value="add auth file for google and bing" />
     <MESSAGE value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
+    <MESSAGE value="add hreflang tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hreflang tag" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
