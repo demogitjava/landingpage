@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add auth file for google and bing">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -309,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00097" summary=".">
-      <created>1660986845365</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1660986845365</updated>
     </task>
     <task id="LOCAL-00098" summary="edit path for interface request&#10;&#10;from &#10;/admin/admin&#10;to&#10;/admin&#10;the spring boot controller is now &#10;loaded by request path /admin">
       <created>1661076317218</created>
@@ -653,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662546454518</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop">
+      <created>1662973563762</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1662973563763</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,7 +674,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit admin request in DemoController&#10;function&#10; @Override&#10;    public String admin()&#10;    {&#10;        return &quot;redirect:/admin/&quot;;&#10;    }&#10;&#10;the request with admin.html is loaded&#10;the ModalAndView with the right request" />
     <MESSAGE value="add class Users &#10;in package de.jgsoftware.landingpage.model;" />
     <MESSAGE value="dao_admin &#10;get all users from database" />
     <MESSAGE value="remove function in dao_admin&#10;controller and request to /admin is then working" />
@@ -702,7 +698,8 @@
     <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 144.76.83.104&#10;--dns 144.76.173.169&#10;--dns 81.169.230.157&#10;--dns 195.243.99.35&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
     <MESSAGE value="edit bootstrap version" />
     <MESSAGE value="add auth file for google and bing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth file for google and bing" />
+    <MESSAGE value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
