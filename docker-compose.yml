@@ -19,7 +19,7 @@ services:
       - 8.8.4.4
 
   webshop:
-      image: imgwebshop:latest
+      image: img_webshop:latest
       container_name: webshop
       build:
         context: ./
