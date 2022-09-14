@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add controller &#10;for mobile &#10;&#10;language mobile german is loaded">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="spring load html mobile de &#10;testpage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00114" summary="edit admin request in DemoController&#10;function&#10; @Override&#10;    public String admin()&#10;    {&#10;        return &quot;redirect:/admin/&quot;;&#10;    }&#10;&#10;the request with admin.html is loaded&#10;the ModalAndView with the right request">
-      <created>1661441102775</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1661441102775</updated>
     </task>
     <task id="LOCAL-00115" summary="add class Users &#10;in package de.jgsoftware.landingpage.model;">
       <created>1661455357353</created>
@@ -652,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663164248356</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="spring load html mobile de &#10;testpage">
+      <created>1663165698849</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1663165698849</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +674,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add docker-compose.yml&#10;for Europe" />
     <MESSAGE value="edit dockerfile time zone&#10;to Europe/Berlin" />
     <MESSAGE value="add robots.txt" />
     <MESSAGE value="add google html" />
@@ -701,7 +698,8 @@
     <MESSAGE value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
     <MESSAGE value="." />
     <MESSAGE value="add controller &#10;for mobile &#10;&#10;language mobile german is loaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="add controller &#10;for mobile &#10;&#10;language mobile german is loaded" />
+    <MESSAGE value="spring load html mobile de &#10;testpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring load html mobile de &#10;testpage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
