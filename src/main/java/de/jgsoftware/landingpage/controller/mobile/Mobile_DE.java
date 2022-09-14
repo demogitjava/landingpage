@@ -30,7 +30,10 @@ public class Mobile_DE implements de.jgsoftware.landingpage.controller.interface
     @Override
     public ModelAndView m_de()
     {
+        mv = new ModelAndView("m_de");
 
+
+        mv.addObject("webtextcomp", i_mobile_service.getDcontroller().getPageLanguageText());
         return mv;
     }
 
