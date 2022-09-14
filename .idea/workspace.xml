@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add ref svg&#10;to &#10;mobile &#10;and tablet">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_mobile_service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/de_mobile_service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -305,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00112" summary="edit spring boot version to 2.1.5.RELEASE&#10;with version 2.7 the application doesn't run">
-      <created>1661439547588</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1661439547588</updated>
     </task>
     <task id="LOCAL-00113" summary=".">
       <created>1661440321820</created>
@@ -649,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663160564731</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary=".">
+      <created>1663162212310</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1663162212310</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +689,6 @@
     <MESSAGE value="add hreflang tags for country fr" />
     <MESSAGE value="add hreflang tags for country es" />
     <MESSAGE value="add ionic framework for mobile site development" />
-    <MESSAGE value="." />
     <MESSAGE value="add hrelang uk" />
     <MESSAGE value="add a simple mobile html page" />
     <MESSAGE value="add Spring Boot Controller for &#10;mobile &#10;&#10;de" />
@@ -698,7 +698,8 @@
     <MESSAGE value="add hreflang tags &#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
