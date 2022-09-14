@@ -217,5 +217,12 @@ public class DemoController implements iDemoController
         return "redirect:/wiki/";
     }
 
+    @Override
+    public String m_de()
+    {
+        return "redirect:/m_de/";
+    }
+
+
 
 }

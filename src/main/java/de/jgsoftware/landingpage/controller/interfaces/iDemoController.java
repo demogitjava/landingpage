@@ -57,4 +57,22 @@ public interface iDemoController {
 
     @GetMapping("/wiki")
     String wiki();
+
+
+
+    /*
+
+            mobile
+     */
+
+    @GetMapping("/m_de")
+    String m_de();
+
+
+
+    /*
+
+            tablet
+
+     */
 }

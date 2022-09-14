@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile html page">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add Spring Boot Controller for &#10;mobile &#10;&#10;de">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iDemoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,13 +304,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00105" summary="edit Dao_DemoPageController">
-      <created>1661341640016</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1661341640017</updated>
     </task>
     <task id="LOCAL-00106" summary="save user-agent header to &#10;h2 database &#10;&#10;with function &#10; public useragent saveuseragent(useragent muagent)">
       <created>1661345041437</created>
@@ -650,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663153438045</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="add Spring Boot Controller for &#10;mobile &#10;&#10;de">
+      <created>1663154350256</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1663154350256</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +672,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add timezone to maven pom" />
     <MESSAGE value="edit timezone to TZ=Europe/Berlin" />
     <MESSAGE value="edit read me" />
     <MESSAGE value="add dns server to &#10;docker-compose.yml" />
@@ -699,7 +696,8 @@
     <MESSAGE value="." />
     <MESSAGE value="add hrelang uk" />
     <MESSAGE value="add a simple mobile html page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile html page" />
+    <MESSAGE value="add Spring Boot Controller for &#10;mobile &#10;&#10;de" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Spring Boot Controller for &#10;mobile &#10;&#10;de" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
