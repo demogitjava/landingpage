@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add google meta tag to de.html page">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit tag  hreflang">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,13 +307,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00108" summary="edit democontroller">
-      <created>1661428314235</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1661428314235</updated>
     </task>
     <task id="LOCAL-00109" summary="edit admin.html page">
       <created>1661429658070</created>
@@ -647,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663156114424</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="edit tag  hreflang">
+      <created>1663157129191</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1663157129192</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +675,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add dns server to &#10;docker-compose.yml" />
     <MESSAGE value="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver" />
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit democontroller to load &#10;MVC wiki&#10;over request (/wiki)" />
@@ -696,7 +699,8 @@
     <MESSAGE value="add Spring Boot Controller for &#10;mobile &#10;&#10;de" />
     <MESSAGE value="add string to democontroller&#10;for request mapping m_de" />
     <MESSAGE value="add google meta tag to de.html page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add google meta tag to de.html page" />
+    <MESSAGE value="edit tag  hreflang" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit tag  hreflang" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
