@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add hrelang uk">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/mde.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,38 +52,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
-    "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41935483",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "trusted.hosts"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/src/main/resources/static&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41935483&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;service.view.auto.scroll.from.source&quot;: &quot;true&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;trusted.hosts&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -140,37 +142,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="imageTag" value="almalinux/almalinux:latest" />
+          <option name="containerName" value="almalinux" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="de_landingpage" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="imageTag" value="procube/powerdns:latest" />
+          <option name="containerName" value="procube" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Docker Image (4)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="services">
+          <option name="imageTag" value="centos/mariadb-103-centos8:latest" />
+          <option name="command" value="MYSQL_ROOT_PASSWORD=jj78mvpr52k1 powerdns/mariadb55" />
+          <option name="containerName" value="mysql" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image (5)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="powerdns/dnsdist-17:latest" />
+          <option name="containerName" value="powerdns" />
+          <option name="portBindings">
             <list>
-              <option value="landingpage" />
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="9191" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="9191" />
+              </DockerPortBindingImpl>
             </list>
           </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="powerdns/dnsdist-master:latest" />
+          <option name="containerName" value="powerdns" />
         </settings>
       </deployment>
       <method v="2" />
@@ -192,47 +214,22 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.lanserver: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="lanserver" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.webshop: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="webshop" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.lanserver: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.webshop: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Docker Image (1)" />
+      <item itemvalue="Docker.Docker Image (2)" />
+      <item itemvalue="Docker.Docker Image (4)" />
+      <item itemvalue="Docker.Docker Image (5)" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.webshop: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.lanserver: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image (2)" />
+        <item itemvalue="Docker.Docker Image (1)" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.Docker Image (5)" />
+        <item itemvalue="Docker.Docker Image (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -306,13 +303,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00103" summary="edit demo controller &#10;sava pojo with over jpa controller &#10;becouse save over jpa not working">
-      <created>1661252361990</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1661252361990</updated>
     </task>
     <task id="LOCAL-00104" summary="add class with shell commands &#10;to install h2 database from github">
       <created>1661337331504</created>
@@ -650,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662995926624</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="add hrelang uk">
+      <created>1662996434539</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1662996434539</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -674,7 +671,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit admin.html" />
     <MESSAGE value="add timezone to dockerfile" />
     <MESSAGE value="add timezone to maven pom" />
     <MESSAGE value="edit timezone to TZ=Europe/Berlin" />
@@ -699,7 +695,8 @@
     <MESSAGE value="add hreflang tags for country es" />
     <MESSAGE value="add ionic framework for mobile site development" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="add hrelang uk" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hrelang uk" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
