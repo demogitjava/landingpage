@@ -47,6 +47,12 @@ public class MvcConfig implements WebMvcConfigurer
 
         registry.addViewController("/wiki").setViewName("wiki");
 
+        // mobile
+        registry.addViewController("/m_de").setViewName("m_de");
+
+
+        // tablet
+
     }
 
     public AppConfigLocale getAppConfigLocale() {

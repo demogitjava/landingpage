@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add hrelang uk">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/mde.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile html page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +23,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -303,13 +306,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00104" summary="add class with shell commands &#10;to install h2 database from github">
-      <created>1661337331504</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1661337331504</updated>
     </task>
     <task id="LOCAL-00105" summary="edit Dao_DemoPageController">
       <created>1661341640016</created>
@@ -647,7 +643,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662996434539</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="add a simple mobile html page">
+      <created>1663153438045</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1663153438045</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +674,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add timezone to dockerfile" />
     <MESSAGE value="add timezone to maven pom" />
     <MESSAGE value="edit timezone to TZ=Europe/Berlin" />
     <MESSAGE value="edit read me" />
@@ -696,7 +698,8 @@
     <MESSAGE value="add ionic framework for mobile site development" />
     <MESSAGE value="." />
     <MESSAGE value="add hrelang uk" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hrelang uk" />
+    <MESSAGE value="add a simple mobile html page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile html page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
