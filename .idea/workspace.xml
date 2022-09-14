@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add ref svg&#10;to &#10;mobile &#10;and tablet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_DE.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mobile/m_de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,13 +305,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00111" summary="edit spring boot version to 2.7.0">
-      <created>1661439031136</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1661439031136</updated>
     </task>
     <task id="LOCAL-00112" summary="edit spring boot version to 2.1.5.RELEASE&#10;with version 2.7 the application doesn't run">
       <created>1661439547588</created>
@@ -647,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663158603558</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="add ref svg&#10;to &#10;mobile &#10;and tablet">
+      <created>1663160564731</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1663160564731</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +673,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit democontroller to load &#10;MVC wiki&#10;over request (/wiki)" />
     <MESSAGE value="edit wiki.html &#10;for requested language" />
     <MESSAGE value="add docker-compose.yml&#10;for Europe" />
     <MESSAGE value="edit dockerfile time zone&#10;to Europe/Berlin" />
@@ -696,7 +697,8 @@
     <MESSAGE value="edit tag  hreflang" />
     <MESSAGE value="add hreflang tags &#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
+    <MESSAGE value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
