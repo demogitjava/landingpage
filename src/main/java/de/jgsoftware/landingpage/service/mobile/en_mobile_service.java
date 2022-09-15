@@ -6,18 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import de.jgsoftware.landingpage.service.interfaces.mobile.i_en_mobile_service;
-
+import de.jgsoftware.landingpage.dao.interfaces.i_DAO_EN;
 @Service
 public class en_mobile_service implements i_en_mobile_service
 {
-    @Autowired
-    i_DAO_EN iDaoEn;
 
-    public i_DAO_EN getiDaoEn() {
-        return iDaoEn;
+    @Autowired
+    i_DAO_EN i_dao_en;
+
+    public i_DAO_EN getI_dao_en() {
+        return i_dao_en;
     }
 
-    public void setiDaoEn(i_DAO_EN iDaoEn) {
-        this.iDaoEn = iDaoEn;
+    public void setI_dao_en(i_DAO_EN i_dao_en) {
+        this.i_dao_en = i_dao_en;
     }
 }

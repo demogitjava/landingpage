@@ -51,7 +51,6 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/m_de").setViewName("m_de");
         registry.addViewController("/m_en").setViewName("m_en");
 
-        // tablet
 
     }
 
