@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add de_mobile-header.html &#10;for german">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit gitattributes&#10;for java only">
       <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_mobile-header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,13 +281,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00121" summary=".">
-      <created>1661588699081</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1661588699082</updated>
     </task>
     <task id="LOCAL-00122" summary="edit admin.html">
       <created>1661592558199</created>
@@ -627,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663227958112</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="edit gitattributes&#10;for java only">
+      <created>1663243801214</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1663243801214</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +649,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 144.76.83.104&#10;--dns 144.76.173.169&#10;--dns 81.169.230.157&#10;--dns 195.243.99.35&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de" />
     <MESSAGE value="edit bootstrap version" />
     <MESSAGE value="add auth file for google and bing" />
     <MESSAGE value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
@@ -676,7 +673,8 @@
     <MESSAGE value="add thymeleaf properties" />
     <MESSAGE value="." />
     <MESSAGE value="add de_mobile-header.html &#10;for german" />
-    <option name="LAST_COMMIT_MESSAGE" value="add de_mobile-header.html &#10;for german" />
+    <MESSAGE value="edit gitattributes&#10;for java only" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit gitattributes&#10;for java only" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

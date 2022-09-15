@@ -4,3 +4,5 @@
 *.xml linguist-detectable=false
 *.css linguist-detectable=false
 *.ts linguist-detectable=false
+js/*.map linguist-detectable=false
+js/ts.js linguist-detectable=false
