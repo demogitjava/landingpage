@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit page en_mobile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,13 +281,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00129" summary="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver">
-      <created>1661856622014</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1661856622014</updated>
     </task>
     <task id="LOCAL-00130" summary=".">
       <created>1661857628058</created>
@@ -625,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663250089445</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="edit page en_mobile">
+      <created>1663250578041</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1663250578041</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +649,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add hreflang tags for country es" />
     <MESSAGE value="add ionic framework for mobile site development" />
     <MESSAGE value="add hrelang uk" />
     <MESSAGE value="add a simple mobile html page" />
@@ -674,7 +673,8 @@
     <MESSAGE value="simple m_en.html test page is available&#10;and is loading" />
     <MESSAGE value="add simple html mobile page &#10;for english &#10;m_en.html" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit page en_mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit page en_mobile" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
