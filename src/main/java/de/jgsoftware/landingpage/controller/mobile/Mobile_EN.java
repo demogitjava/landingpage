@@ -21,7 +21,7 @@ public class Mobile_EN implements de.jgsoftware.landingpage.controller.interface
     {
         mv = new ModelAndView("m_en");
 
-        //mv.addObject("webtextcomp", i_en_mobile_service.getiDaoEn().getPageLanguageText());
+        mv.addObject("webtextcomp", i_en_mobile_service.getI_dao_en().getPageLanguageText());
         return mv;
     }
 
