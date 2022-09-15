@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_en.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_en_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/en_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add en mobile page&#10;&#10;with controller and service layer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,13 +282,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00124" summary="add timezone to maven pom">
-      <created>1661764406432</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1661764406433</updated>
     </task>
     <task id="LOCAL-00125" summary="edit timezone to TZ=Europe/Berlin">
       <created>1661774647945</created>
@@ -630,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663244148014</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="add en mobile page&#10;&#10;with controller and service layer">
+      <created>1663246698194</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1663246698194</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +650,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add auth file for google and bing" />
     <MESSAGE value="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop" />
     <MESSAGE value="add hreflang tag" />
     <MESSAGE value="add hreflang tags for country fr" />
@@ -679,7 +674,8 @@
     <MESSAGE value="add de_mobile-header.html &#10;for german" />
     <MESSAGE value="edit gitattributes&#10;for java only" />
     <MESSAGE value="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing" />
+    <MESSAGE value="add en mobile page&#10;&#10;with controller and service layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add en mobile page&#10;&#10;with controller and service layer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
