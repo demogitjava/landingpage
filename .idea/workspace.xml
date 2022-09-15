@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add simple html mobile page &#10;for english &#10;m_en.html">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,13 +281,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00128" summary="add dns server to &#10;docker-compose.yml">
-      <created>1661856039288</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1661856039289</updated>
     </task>
     <task id="LOCAL-00129" summary="add to docker-compose.yml&#10;&#10;modul &#10;-webshop&#10;-lanserver">
       <created>1661856622014</created>
@@ -626,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663249499310</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary=".">
+      <created>1663250089445</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1663250089445</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +666,6 @@
     <MESSAGE value="add header.html &#10;for m_de.html" />
     <MESSAGE value="edit m_de.html" />
     <MESSAGE value="add thymeleaf properties" />
-    <MESSAGE value="." />
     <MESSAGE value="add de_mobile-header.html &#10;for german" />
     <MESSAGE value="edit gitattributes&#10;for java only" />
     <MESSAGE value="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing" />
@@ -675,7 +673,8 @@
     <MESSAGE value="register controller to mvcconfig &#10;for request mapping" />
     <MESSAGE value="simple m_en.html test page is available&#10;and is loading" />
     <MESSAGE value="add simple html mobile page &#10;for english &#10;m_en.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="add simple html mobile page &#10;for english &#10;m_en.html" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
