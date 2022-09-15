@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="simple m_en.html test page is available&#10;and is loading">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add simple html mobile page &#10;for english &#10;m_en.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,13 +282,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00127" summary=".">
-      <created>1661775529982</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1661775529982</updated>
     </task>
     <task id="LOCAL-00128" summary="add dns server to &#10;docker-compose.yml">
       <created>1661856039288</created>
@@ -626,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663249011861</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="add simple html mobile page &#10;for english &#10;m_en.html">
+      <created>1663249499309</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1663249499310</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +650,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add hreflang tags for country fr" />
     <MESSAGE value="add hreflang tags for country es" />
     <MESSAGE value="add ionic framework for mobile site development" />
     <MESSAGE value="add hrelang uk" />
@@ -675,23 +674,8 @@
     <MESSAGE value="add en mobile page&#10;&#10;with controller and service layer" />
     <MESSAGE value="register controller to mvcconfig &#10;for request mapping" />
     <MESSAGE value="simple m_en.html test page is available&#10;and is loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple m_en.html test page is available&#10;and is loading" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/EN_DAO.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_EN.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add simple html mobile page &#10;for english &#10;m_en.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add simple html mobile page &#10;for english &#10;m_en.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
