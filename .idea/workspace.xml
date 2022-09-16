@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_fr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_FR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_fr_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/fr_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_fr.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,13 +281,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00135" summary="add docker-compose.yml&#10;for Europe">
-      <created>1662115740843</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1662115740844</updated>
     </task>
     <task id="LOCAL-00136" summary="edit dockerfile time zone&#10;to Europe/Berlin">
       <created>1662130431210</created>
@@ -630,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663323455490</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot">
+      <created>1663325148256</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1663325148256</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,7 +649,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add google meta tag to de.html page" />
     <MESSAGE value="edit tag  hreflang" />
     <MESSAGE value="add hreflang tags &#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
@@ -679,7 +673,8 @@
     <MESSAGE value="add a simple html file&#10;mobile header for france&#10;&#10;fr_mobile-header.html" />
     <MESSAGE value="add a simple html file&#10;mobile header for italy&#10;&#10;it_mobile-header.html" />
     <MESSAGE value="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html" />
+    <MESSAGE value="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
