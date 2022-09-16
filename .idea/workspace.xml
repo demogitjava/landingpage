@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="delete jpg">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_es.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_ES.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_es_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/es_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_mobile-header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_es.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_mobile-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_en.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,13 +276,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00131" summary=".">
-      <created>1662039298154</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1662039298391</updated>
     </task>
     <task id="LOCAL-00132" summary="edit wiki.html">
       <created>1662040351722</created>
@@ -628,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663268625147</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service">
+      <created>1663273266268</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1663273266269</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +644,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add hrelang uk" />
     <MESSAGE value="add a simple mobile html page" />
     <MESSAGE value="add Spring Boot Controller for &#10;mobile &#10;&#10;de" />
     <MESSAGE value="add string to democontroller&#10;for request mapping m_de" />
@@ -677,7 +668,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit page en_mobile" />
     <MESSAGE value="delete jpg" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete jpg" />
+    <MESSAGE value="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
