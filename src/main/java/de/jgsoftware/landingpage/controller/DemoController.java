@@ -13,6 +13,7 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 import javax.servlet.http.HttpServletRequest;
 import de.jgsoftware.landingpage.model.areacodes;
 
+import java.io.IOException;
 import java.security.Principal;
 import java.security.Timestamp;
 import java.text.SimpleDateFormat;
@@ -46,8 +47,7 @@ public class DemoController implements iDemoController
 
 
     @Override
-    public ModelAndView de()
-    {
+    public ModelAndView de() {
 
         // ip address client
         String ipAddress = request.getRemoteAddr();
@@ -133,6 +133,9 @@ public class DemoController implements iDemoController
          */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
         mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
+
+
+
 
 
         return mv;

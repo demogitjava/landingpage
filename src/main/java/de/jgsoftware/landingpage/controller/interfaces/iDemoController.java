@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 
 @RequestMapping("/")
@@ -15,7 +16,7 @@ public interface iDemoController {
     // load default landingpage
     // de
     @GetMapping({"de", "/"})
-    ModelAndView de();
+    ModelAndView de() throws IOException;
 
     @GetMapping("/login")
     String login();

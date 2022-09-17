@@ -7,8 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
 
-import java.util.List;
-import de.jgsoftware.landingpage.model.areacodes;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
 @Service
 public class IndexService implements IServiceIndex
 {
@@ -26,6 +27,9 @@ public class IndexService implements IServiceIndex
     public void setDcontroller(Dao_DemoPageController dcontroller) {
 
     }
+
+
+
 
 
 

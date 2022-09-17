@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="exclude header for &#10;m_de.html">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_162721.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_16272123.png" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit de_body.html&#10;with carousel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/1_Screenshot.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/1_Screenshot.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/900x400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iDemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/IndexService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/IServiceIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/IServiceIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/1_Screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_162720.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_162721.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_162721.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_16272123.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/IMG_20220915_162719.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,13 +288,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00137" summary="add robots.txt">
-      <created>1662190592860</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1662190592860</updated>
     </task>
     <task id="LOCAL-00138" summary="add google html">
       <created>1662191663438</created>
@@ -629,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663325336460</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="edit de_body.html&#10;with carousel">
+      <created>1663339925616</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1663339925616</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,7 +656,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add hreflang tags &#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add hreflang tags &#10;from http&#10;to &#10;https &#10;for Google Crawling&#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr" />
     <MESSAGE value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
     <MESSAGE value="add controller &#10;for mobile &#10;&#10;language mobile german is loaded" />
@@ -678,7 +680,8 @@
     <MESSAGE value="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html" />
     <MESSAGE value="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot" />
     <MESSAGE value="exclude header for &#10;m_de.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="exclude header for &#10;m_de.html" />
+    <MESSAGE value="edit de_body.html&#10;with carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de_body.html&#10;with carousel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
