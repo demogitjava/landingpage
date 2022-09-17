@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="delete bootrap carousel &#10;add simple static image">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit image to &#10;xl-4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,13 +281,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00139" summary=".">
-      <created>1662295702027</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1662295702028</updated>
     </task>
     <task id="LOCAL-00140" summary="edit viewport meta tag&#10;to fix error from googlebot">
       <created>1662299611163</created>
@@ -625,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663406466585</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="edit image to &#10;xl-4">
+      <created>1663406688730</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1663406688730</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +649,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add ref svg&#10;to &#10;mobile &#10;and tablet" />
     <MESSAGE value="add controller &#10;for mobile &#10;&#10;language mobile german is loaded" />
     <MESSAGE value="spring load html mobile de &#10;testpage" />
     <MESSAGE value="add html body for &#10;m_de.html&#10;the text is loaded over the&#10;spring boot mvc controller" />
@@ -674,7 +673,8 @@
     <MESSAGE value="exclude header for &#10;m_de.html" />
     <MESSAGE value="edit de_body.html&#10;with carousel" />
     <MESSAGE value="delete bootrap carousel &#10;add simple static image" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete bootrap carousel &#10;add simple static image" />
+    <MESSAGE value="edit image to &#10;xl-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit image to &#10;xl-4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
