@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit image to &#10;xl-4">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit js and css lib">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_fr.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_fr.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,13 +282,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00140" summary="edit viewport meta tag&#10;to fix error from googlebot">
-      <created>1662299611163</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1662299611163</updated>
     </task>
     <task id="LOCAL-00141" summary="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 80.69.96.12&#10;--dns 81.210.129.4&#10;--dns 217.5.100.185&#10;--dns 217.5.100.186&#10;--dns 62.104.191.241&#10;--dns 62.104.196.134&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de">
       <created>1662300000150</created>
@@ -625,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663406688730</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="edit js and css lib">
+      <created>1663406820186</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1663406820186</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +650,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add controller &#10;for mobile &#10;&#10;language mobile german is loaded" />
     <MESSAGE value="spring load html mobile de &#10;testpage" />
     <MESSAGE value="add html body for &#10;m_de.html&#10;the text is loaded over the&#10;spring boot mvc controller" />
     <MESSAGE value="add header.html &#10;for m_de.html" />
@@ -674,7 +674,8 @@
     <MESSAGE value="edit de_body.html&#10;with carousel" />
     <MESSAGE value="delete bootrap carousel &#10;add simple static image" />
     <MESSAGE value="edit image to &#10;xl-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit image to &#10;xl-4" />
+    <MESSAGE value="edit js and css lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit js and css lib" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
