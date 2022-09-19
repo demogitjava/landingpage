@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -335,13 +334,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00142" summary="edit run options for &#10;docker container &#10;&#10;run options:&#10;&#10;-p 217.160.255.254:80:80&#10;--dns 8.8.8.8 &#10;--dns 8.8.4.4 &#10;--dns 144.76.83.104&#10;--dns 144.76.173.169&#10;--dns 81.169.230.157&#10;--dns 195.243.99.35&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de&#10;--dns-search demogitjava&#10;--name landingpage&#10;--hostname=demogitjava.de">
-      <created>1662300928144</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1662300928144</updated>
     </task>
     <task id="LOCAL-00143" summary="edit bootstrap version">
       <created>1662368582723</created>
@@ -679,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663488741615</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary=".">
+      <created>1663593080674</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1663593080675</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
