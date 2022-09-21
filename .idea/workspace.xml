@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="." />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit run command of docker container">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_it.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_IT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_it_mobile_service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/it_mobile_service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="HTML File" />
       </list>
     </option>
@@ -89,42 +98,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.36205316&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;service.view.auto.scroll.from.source&quot;: &quot;true&quot;,
-    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
@@ -163,7 +142,6 @@
         <option value="docker-deploy" />
       </set>
     </option>
-    <option name="openRunningConfigInTab" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="/root/IdeaProjects/landingpage" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
@@ -198,66 +176,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="almalinux/almalinux:latest" />
-          <option name="containerName" value="almalinux" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="procube/powerdns:latest" />
-          <option name="containerName" value="procube" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image (5)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="powerdns/dnsdist-17:latest" />
-          <option name="containerName" value="powerdns" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="9191" />
-                <option name="hostIp" value="127.0.0.1" />
-                <option name="hostPort" value="9191" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="powerdns/dnsdist-master:latest" />
-          <option name="containerName" value="powerdns" />
+          <option name="imageTag" value="jgsoftwares/jgsoftwares/" />
+          <option name="attachToContainerNeeded" value="true" />
+          <option name="containerName" value="" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Docker.Docker Image" />
-      <item itemvalue="Docker.Docker Image (1)" />
-      <item itemvalue="Docker.Docker Image (2)" />
-      <item itemvalue="Docker.Docker Image (5)" />
       <item itemvalue="Gradle./root/IdeaProjects/landingpage" />
       <item itemvalue="JavaScript Debug.de_mobile-header.html" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Docker Image (2)" />
-        <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.Docker Image (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -331,13 +268,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00144" summary="add auth file for google and bing">
-      <created>1662546282385</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1662546282385</updated>
     </task>
     <task id="LOCAL-00145" summary="add auth file for google and bing">
       <created>1662546454518</created>
@@ -675,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663593542270</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="edit run command of docker container">
+      <created>1663666579148</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1663666579148</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +636,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="spring load html mobile de &#10;testpage" />
     <MESSAGE value="add html body for &#10;m_de.html&#10;the text is loaded over the&#10;spring boot mvc controller" />
     <MESSAGE value="add header.html &#10;for m_de.html" />
     <MESSAGE value="edit m_de.html" />
@@ -724,7 +660,8 @@
     <MESSAGE value="edit image to &#10;xl-4" />
     <MESSAGE value="edit js and css lib" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit run command of docker container" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit run command of docker container" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

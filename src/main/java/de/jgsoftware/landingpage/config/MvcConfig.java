@@ -3,13 +3,8 @@ package de.jgsoftware.landingpage.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-import de.jgsoftware.landingpage.config.AppConfigLocale;
 
 @Configuration
 public class MvcConfig implements WebMvcConfigurer
@@ -52,7 +47,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/m_en").setViewName("m_en");
         registry.addViewController("/m_es").setViewName("m_es");
         registry.addViewController("/m_fr").setViewName("m_fr");
-
+        registry.addViewController("/m_it").setViewName("m_it");
     }
 
     public AppConfigLocale getAppConfigLocale() {
