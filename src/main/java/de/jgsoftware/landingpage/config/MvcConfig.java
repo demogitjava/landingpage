@@ -48,6 +48,7 @@ public class MvcConfig implements WebMvcConfigurer
         registry.addViewController("/m_es").setViewName("m_es");
         registry.addViewController("/m_fr").setViewName("m_fr");
         registry.addViewController("/m_it").setViewName("m_it");
+        registry.addViewController("/m_tr").setViewName("m_tr");
     }
 
     public AppConfigLocale getAppConfigLocale() {
