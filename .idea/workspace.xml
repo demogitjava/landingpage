@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
     </list>
@@ -269,13 +269,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00146" summary="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop">
-      <created>1662973563762</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1662973563763</updated>
     </task>
     <task id="LOCAL-00147" summary="add hreflang tag">
       <created>1662992051809</created>
@@ -613,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663746280106</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working">
+      <created>1663748720243</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1663748720243</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +637,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add header.html &#10;for m_de.html" />
     <MESSAGE value="edit m_de.html" />
     <MESSAGE value="add thymeleaf properties" />
     <MESSAGE value="add de_mobile-header.html &#10;for german" />
@@ -662,7 +661,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit run command of docker container" />
     <MESSAGE value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
+    <MESSAGE value="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
