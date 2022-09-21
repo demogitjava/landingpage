@@ -7,4 +7,7 @@ public interface i_admin_service
 
     Dao_admin getIdao_admin();
     void setIdao_admin(Dao_admin idao_admin);
+
+    int getcurrentMonth();
+    int getcurrentYear();
 }

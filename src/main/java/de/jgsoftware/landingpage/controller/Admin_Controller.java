@@ -2,17 +2,11 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iAdminController;
-import de.jgsoftware.landingpage.model.Users;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
-
-
-import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
-
-import java.util.List;
 
 @Controller
 public class Admin_Controller implements iAdminController
@@ -34,7 +28,7 @@ public class Admin_Controller implements iAdminController
 
 
     @Override
-    public ModelAndView adminsite()
+    public ModelAndView admin()
     {
 
         mv = new ModelAndView("admin");
@@ -42,6 +36,25 @@ public class Admin_Controller implements iAdminController
 
         Integer usercount = admin_service.getIdao_admin().getusercount();
         mv.addObject("usersdb", usercount);
+
+          /*
+            get current month and year
+            form sercie layer
+         */
+        int month = admin_service.getcurrentMonth();
+        int year = admin_service.getcurrentYear();
+        mv.addObject("currentmonth", month);
+        mv.addObject("currentyear", year);
+
+
+
+        /*
+
+            current connect
+         */
+
+
+        mv.addObject("currentconnects", admin_service.getIdao_admin().countofyear());
 
         return mv;
     }
