@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_tr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_TR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_tr_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/tr_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_tr.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="delte file useragent.txt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/DAO_Wiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_wiki.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_wiki_service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/wiki_service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_en_mobile_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_en_mobile_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_it_mobile_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_it_mobile_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/de_wiki.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,20 +276,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00148" summary="add hreflang tags for country fr">
-      <created>1662993742920</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1662993742920</updated>
-    </task>
-    <task id="LOCAL-00149" summary="add hreflang tags for country es">
-      <created>1662995175500</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1662995175501</updated>
     </task>
     <task id="LOCAL-00150" summary="add ionic framework for mobile site development">
       <created>1662995318607</created>
@@ -623,7 +606,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663749783800</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="add layer &#10;with controller and service&#10;for mobile tr html page">
+      <created>1663751133007</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1663751133008</updated>
+    </task>
+    <task id="LOCAL-00198" summary="delte file useragent.txt">
+      <created>1663751272745</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1663751272745</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,8 +644,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit m_de.html" />
-    <MESSAGE value="add thymeleaf properties" />
     <MESSAGE value="add de_mobile-header.html &#10;for german" />
     <MESSAGE value="edit gitattributes&#10;for java only" />
     <MESSAGE value="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing" />
@@ -672,7 +667,9 @@
     <MESSAGE value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
     <MESSAGE value="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="add layer &#10;with controller and service&#10;for mobile tr html page" />
+    <MESSAGE value="delte file useragent.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="delte file useragent.txt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

@@ -1,18 +1,16 @@
 package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
+import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.useragent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
-
 import java.util.List;
-
-import de.jgsoftware.landingpage.model.Users;
 
 @Repository
 public class Dao_admin implements i_dao_admin
@@ -79,6 +77,34 @@ public class Dao_admin implements i_dao_admin
 
 
 
+    public List loadbrowserconnectmonth()
+    {
+        List<useragent> connectsmonth = jtm.query("select \n" +
+                "count(stbrowser), \n" +
+                "stbrowser,\n" +
+                "stsystem,\n" +
+                "EXTRACT(MONTH FROM datum) as monat,\n" +
+                "EXTRACT(YEAR FROM datum) as JAHR\n" +
+                "from useragent group by stbrowser, monat, jahr, stsystem", new BeanPropertyRowMapper(useragent.class));
+
+        return connectsmonth;
+    }
+
+
+
+    /*
+            return count of connect
+            by year
+     */
+    public List countofyear()
+    {
+        List<useragent> countmonth = jtm.query("select count(datum) as count,\n" +
+                "    EXTRACT(MONTH FROM datum) as monat,\n" +
+                "    EXTRACT(YEAR FROM datum) as JAHR\n" +
+                "    from useragent\n" +
+                "    group by monat, jahr\n", new BeanPropertyRowMapper(useragent.class));
+        return countmonth;
+    }
 
 
 
