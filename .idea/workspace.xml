@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit run command of docker container">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_it.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_IT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/mobile/i_it_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/mobile/it_mobile_service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/m_it.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/mobile/i_mobile_de.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "WebServerToolWindowFactoryState": "false"
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -268,13 +269,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00145" summary="add auth file for google and bing">
-      <created>1662546454518</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1662546454518</updated>
     </task>
     <task id="LOCAL-00146" summary="edit css and lib &#10;by loading over Thymeleaf&#10;&#10;Speedtest by google&#10;now &#10;57% mobile &#10;and &#10;91% for desktop">
       <created>1662973563762</created>
@@ -612,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663666579148</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service">
+      <created>1663746280105</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1663746280106</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +637,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add html body for &#10;m_de.html&#10;the text is loaded over the&#10;spring boot mvc controller" />
     <MESSAGE value="add header.html &#10;for m_de.html" />
     <MESSAGE value="edit m_de.html" />
     <MESSAGE value="add thymeleaf properties" />
@@ -661,7 +661,19 @@
     <MESSAGE value="edit js and css lib" />
     <MESSAGE value="." />
     <MESSAGE value="edit run command of docker container" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit run command of docker container" />
+    <MESSAGE value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/mobile/Mobile_IT.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
