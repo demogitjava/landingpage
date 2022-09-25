@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add screenshot">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -398,13 +398,6 @@
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
     </task>
-    <task id="LOCAL-00153" summary="add a simple mobile html page">
-      <created>1663153438045</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1663153438045</updated>
-    </task>
     <task id="LOCAL-00154" summary="add Spring Boot Controller for &#10;mobile &#10;&#10;de">
       <created>1663154350256</created>
       <option name="number" value="00154" />
@@ -741,7 +734,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663841284954</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary=".">
+      <created>1664051590805</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1664051590806</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -784,13 +784,13 @@
     <MESSAGE value="edit run command of docker container" />
     <MESSAGE value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
     <MESSAGE value="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working" />
-    <MESSAGE value="." />
     <MESSAGE value="add layer &#10;with controller and service&#10;for mobile tr html page" />
     <MESSAGE value="delte file useragent.txt" />
     <MESSAGE value="add wiki service" />
     <MESSAGE value="add function in admin controller&#10;for current month and year &#10;&#10;and list all connect as list for dashboard" />
     <MESSAGE value="add screenshot" />
-    <option name="LAST_COMMIT_MESSAGE" value="add screenshot" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
