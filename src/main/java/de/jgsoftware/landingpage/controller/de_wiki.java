@@ -36,7 +36,6 @@ public class de_wiki implements i_de_wiki
 
         mv = new ModelAndView("wiki");
 
-
         /*
                 language from useragent
          */
