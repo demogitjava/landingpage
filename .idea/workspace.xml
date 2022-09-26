@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add a simple panel on wiki.html">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit wiki.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
@@ -300,13 +300,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00157" summary="edit tag  hreflang">
-      <created>1663157129191</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1663157129192</updated>
     </task>
     <task id="LOCAL-00158" summary="add hreflang tags &#10;&#10;to &#10;dn&#10;es&#10;fr&#10;it&#10;tr">
       <created>1663157205356</created>
@@ -644,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664191461379</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="edit wiki.html">
+      <created>1664197024008</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1664197024008</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -668,7 +668,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="simple m_en.html test page is available&#10;and is loading" />
     <MESSAGE value="add simple html mobile page &#10;for english &#10;m_en.html" />
     <MESSAGE value="edit page en_mobile" />
     <MESSAGE value="delete jpg" />
@@ -693,7 +692,8 @@
     <MESSAGE value="edit google-site-verification" />
     <MESSAGE value="." />
     <MESSAGE value="add a simple panel on wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a simple panel on wiki.html" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
