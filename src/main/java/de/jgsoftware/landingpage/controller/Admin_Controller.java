@@ -41,6 +41,8 @@ public class Admin_Controller implements iAdminController
             get current month and year
             form sercie layer
          */
+
+
         int month = admin_service.getcurrentMonth();
         int year = admin_service.getcurrentYear();
         mv.addObject("currentmonth", month);

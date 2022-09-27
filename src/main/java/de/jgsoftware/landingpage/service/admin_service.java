@@ -1,14 +1,13 @@
 package de.jgsoftware.landingpage.service;
 
 
+import de.jgsoftware.landingpage.dao.Dao_admin;
+import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import de.jgsoftware.landingpage.dao.Dao_admin;
-import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
-
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 @Service
 public class admin_service implements i_admin_service
@@ -33,9 +32,11 @@ public class admin_service implements i_admin_service
   */
     public int getcurrentMonth()
     {
-        int month;
-        GregorianCalendar date = new GregorianCalendar();
-        month = date.get(Calendar.MONTH);
+
+
+        ZonedDateTime ztime = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+        int month = ztime.getMonthValue();
+
         return month;
     }
 
@@ -46,9 +47,8 @@ public class admin_service implements i_admin_service
      */
     public int getcurrentYear()
     {
-        int year;
-        GregorianCalendar date = new GregorianCalendar();
-        year = date.get(Calendar.YEAR);
+        ZonedDateTime ztime = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+        int year = ztime.getYear();
         return year;
     }
 

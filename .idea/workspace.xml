@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit wiki.html&#10;add screenshots for mobile and desktop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,13 +252,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00162" summary="add controller &#10;for mobile &#10;&#10;language mobile german is loaded">
-      <created>1663164248356</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1663164248356</updated>
     </task>
     <task id="LOCAL-00163" summary="spring load html mobile de &#10;testpage">
       <created>1663165698849</created>
@@ -595,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664276069730</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="edit wiki.html&#10;add screenshots for mobile and desktop">
+      <created>1664318396355</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1664318396355</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +620,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete jpg" />
     <MESSAGE value="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service" />
     <MESSAGE value="add a simple html file&#10;mobile header for france&#10;&#10;fr_mobile-header.html" />
     <MESSAGE value="add a simple html file&#10;mobile header for italy&#10;&#10;it_mobile-header.html" />
@@ -644,7 +644,19 @@
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg" />
     <MESSAGE value="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates" />
+    <MESSAGE value="edit wiki.html&#10;add screenshots for mobile and desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html&#10;add screenshots for mobile and desktop" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
