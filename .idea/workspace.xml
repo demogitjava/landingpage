@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,13 +251,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00161" summary=".">
-      <created>1663162212310</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1663162212310</updated>
     </task>
     <task id="LOCAL-00162" summary="add controller &#10;for mobile &#10;&#10;language mobile german is loaded">
       <created>1663164248356</created>
@@ -592,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664274469142</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates">
+      <created>1664276069729</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1664276069730</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +619,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit page en_mobile" />
     <MESSAGE value="delete jpg" />
     <MESSAGE value="add a simple mobile html page &#10;for spain&#10;&#10;with layer for&#10;controller&#10;service" />
     <MESSAGE value="add a simple html file&#10;mobile header for france&#10;&#10;fr_mobile-header.html" />
@@ -641,7 +643,8 @@
     <MESSAGE value="add a simple panel on wiki.html" />
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg" />
+    <MESSAGE value="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
