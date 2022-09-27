@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<header th:include="fr/fr_header.html">
+<header>
 
     <link rel="alternate" hreflang="de-de"
           href="https://f4416cf.online-server.cloud/" />
@@ -276,8 +276,9 @@
 </header>
 
 <body>
-<div th:include="fr/fr_body.html"></div>
-<div class="container" th:include="fr/fr_footer.html"></div>
+<div th:insert="fr/fr_header.html"></div>
+<div th:insert="fr/fr_body.html"></div>
+<div th:insert="fr/fr_footer.html"></div>
 </body>
 
 
