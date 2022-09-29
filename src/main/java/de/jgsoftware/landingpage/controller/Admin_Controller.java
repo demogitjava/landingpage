@@ -61,6 +61,14 @@ public class Admin_Controller implements iAdminController
          */
         mv.addObject("currentconnects", admin_service.getiJpaUseragent().allconnectsbymonth());
 
+
+        /*
+            connects monat
+            for navbar
+
+         */
+        mv.addObject("connectsnavar", admin_service.getiJpaUseragent().connectsmonthnavbar());
+
         return mv;
     }
 

@@ -28,4 +28,9 @@ public interface i_jpa_useragent extends JpaRepository<useragent, Long>
             "EXTRACT(YEAR FROM datum) as year\n" +
             "from useragent group by stbrowser, month, year, stsystem order by current_date", nativeQuery = true)
     List allconnectsbymonth();
+
+    // select count(id) from useragent order by current_date
+    @Query(value = "select count(id) from useragent order by current_date", nativeQuery = true)
+    List connectsmonthnavbar();
+
 }
