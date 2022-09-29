@@ -19,4 +19,13 @@ public interface i_jpa_useragent extends JpaRepository<useragent, Long>
             "from useragent group by stbrowser, month, year, stsystem", nativeQuery = true)
     List allgetBrowserconnects();
 
+
+    @Query(value = "select \n" +
+            "count(stbrowser), \n" +
+            "stbrowser,\n" +
+            "stsystem,\n" +
+            "EXTRACT(MONTH FROM datum) as month,\n" +
+            "EXTRACT(YEAR FROM datum) as year\n" +
+            "from useragent group by stbrowser, month, year, stsystem order by current_date", nativeQuery = true)
+    List allconnectsbymonth();
 }

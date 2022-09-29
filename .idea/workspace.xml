@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit wiki.html">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add interface&#10;i_jpa_useragent&#10;for query connects of useragent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_dao_admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,13 +253,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00165" summary="add header.html &#10;for m_de.html">
-      <created>1663166581844</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1663166581844</updated>
     </task>
     <task id="LOCAL-00166" summary="edit m_de.html">
       <created>1663166693952</created>
@@ -601,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664324761767</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="add interface&#10;i_jpa_useragent&#10;for query connects of useragent">
+      <created>1664454979665</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1664454979665</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +621,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add a simple html file&#10;mobile header for france&#10;&#10;fr_mobile-header.html" />
     <MESSAGE value="add a simple html file&#10;mobile header for italy&#10;&#10;it_mobile-header.html" />
     <MESSAGE value="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html" />
     <MESSAGE value="add a simple mobile landingpage in&#10;frensch&#10;with controller and service layer&#10;over spring boot" />
@@ -650,20 +645,16 @@
     <MESSAGE value="edit wiki.html&#10;add screenshots for mobile and desktop" />
     <MESSAGE value="edit functions in admin_service &#10;&#10;getMonth &#10;and getYear&#10;&#10;to  ZonedDateTime&#10;ztime.getMonthValue();&#10;ztime.getYear();&#10;&#10;it now return the correct month and year" />
     <MESSAGE value="edit wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
+    <MESSAGE value="add interface&#10;i_jpa_useragent&#10;for query connects of useragent" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface&#10;i_jpa_useragent&#10;for query connects of useragent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>56</line>
+          <line>61</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -51,10 +51,15 @@ public class Admin_Controller implements iAdminController
 
 
         /*
-
             current connect
+
+            dao interface
+            -> i_jpa_useragent
+
+            all connects by month
+            -> sql current_date
          */
-        mv.addObject("currentconnects", admin_service.getiJpaUseragent().allgetBrowserconnects());
+        mv.addObject("currentconnects", admin_service.getiJpaUseragent().allconnectsbymonth());
 
         return mv;
     }
