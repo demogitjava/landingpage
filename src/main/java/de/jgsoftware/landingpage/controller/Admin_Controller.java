@@ -54,9 +54,7 @@ public class Admin_Controller implements iAdminController
 
             current connect
          */
-
-
-        mv.addObject("currentconnects", admin_service.getIdao_admin().countofyear());
+        mv.addObject("currentconnects", admin_service.getiJpaUseragent().allgetBrowserconnects());
 
         return mv;
     }

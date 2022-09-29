@@ -28,7 +28,6 @@ public interface i_dao_admin
     List loadbrowserconnectmonth();
 
 
-
     // count of connects in the month
     // and year
     // --> demodb
