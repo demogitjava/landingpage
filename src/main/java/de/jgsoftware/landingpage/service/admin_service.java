@@ -5,6 +5,8 @@ import de.jgsoftware.landingpage.dao.Dao_admin;
 import de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent;
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.time.ZoneId;
@@ -69,6 +71,15 @@ public class admin_service implements i_admin_service
         ZonedDateTime ztime = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
         int year = ztime.getYear();
         return year;
+    }
+
+
+    @Override
+    public String getloggedinuser()
+    {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String currentPrincipalName = authentication.getName();
+        return currentPrincipalName;
     }
 
 

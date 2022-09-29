@@ -20,4 +20,12 @@ public interface i_admin_service
      */
     i_jpa_useragent getiJpaUseragent();
     void setiJpaUseragent(i_jpa_useragent iJpaUseragent);
+
+
+
+    /*
+        get user
+        if loggedin
+     */
+    public String getloggedinuser();
 }

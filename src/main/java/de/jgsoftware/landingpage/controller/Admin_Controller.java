@@ -78,6 +78,15 @@ public class Admin_Controller implements iAdminController
         mv.addObject("connectsnavaryear", admin_service.getiJpaUseragent().connectsnavbaryear());
 
 
+
+
+        /*
+            return the user is
+            loggedin
+         */
+        mv.addObject("loggedinuser", admin_service.getloggedinuser());
+
+
         return mv;
     }
 
