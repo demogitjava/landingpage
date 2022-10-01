@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,13 +253,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00172" summary="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing">
-      <created>1663244148014</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1663244148014</updated>
     </task>
     <task id="LOCAL-00173" summary="add en mobile page&#10;&#10;with controller and service layer">
       <created>1663246698194</created>
@@ -594,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664623419411</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary=".">
+      <created>1664627832946</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1664627832946</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,9 +644,9 @@
     <MESSAGE value="add value in admin.html&#10;on navbar &#10;the connets of the month" />
     <MESSAGE value="edit admin.html&#10;add connects for year" />
     <MESSAGE value="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service" />
-    <MESSAGE value="." />
     <MESSAGE value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
