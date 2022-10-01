@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" afterDir="false" />
-    </list>
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -254,13 +250,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00171" summary="edit gitattributes&#10;for java only">
-      <created>1663244067442</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1663244067442</updated>
     </task>
     <task id="LOCAL-00172" summary="delete ionic framework &#10;for mobile used bootstrap for mobile&#10;index for google and bing">
       <created>1663244148014</created>
@@ -598,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664616764629</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="edit query function in&#10;i_jpa_useragent &#10;for current month and year">
+      <created>1664623419411</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1664623419411</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +618,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de_body.html&#10;with carousel" />
     <MESSAGE value="delete bootrap carousel &#10;add simple static image" />
     <MESSAGE value="edit image to &#10;xl-4" />
     <MESSAGE value="edit js and css lib" />
@@ -647,7 +642,8 @@
     <MESSAGE value="edit admin.html&#10;add connects for year" />
     <MESSAGE value="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
