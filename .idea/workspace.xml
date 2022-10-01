@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit admin.html&#10;add connects for year">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,13 +252,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00169" summary="add de_mobile-header.html &#10;for german">
-      <created>1663227958112</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1663227958112</updated>
     </task>
     <task id="LOCAL-00170" summary="edit gitattributes&#10;for java only">
       <created>1663243801214</created>
@@ -600,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664476963215</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service">
+      <created>1664480379521</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1664480379521</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +620,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="exclude header for &#10;m_de.html" />
     <MESSAGE value="edit de_body.html&#10;with carousel" />
     <MESSAGE value="delete bootrap carousel &#10;add simple static image" />
     <MESSAGE value="edit image to &#10;xl-4" />
@@ -649,7 +644,8 @@
     <MESSAGE value="edit query to return all &#10;connects of the month &#10;&#10;by currentdate" />
     <MESSAGE value="add value in admin.html&#10;on navbar &#10;the connets of the month" />
     <MESSAGE value="edit admin.html&#10;add connects for year" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit admin.html&#10;add connects for year" />
+    <MESSAGE value="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service" />
+    <option name="LAST_COMMIT_MESSAGE" value="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
