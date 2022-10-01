@@ -98,6 +98,13 @@ public class Admin_Controller implements iAdminController
         mv.addObject("javascriptengine", admin_service.startjavasciptengine());
 
 
+        /*
+            data for line chart
+         */
+        mv.addObject("monthlinechart", 1234);
+        mv.addObject("textminechart", "<h2>Hello from Spring MVC</h2>");
+
+
         return mv;
     }
 

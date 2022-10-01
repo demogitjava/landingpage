@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="load javascript engine &#10;over the service layer">
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +150,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+  <component name="RunManager" selected="JavaScript Debug.admin.html">
     <configuration name="/root/IdeaProjects/landingpage" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,6 +170,9 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="admin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/landingpage/templates/admin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -183,8 +185,14 @@
     </configuration>
     <list>
       <item itemvalue="Gradle./root/IdeaProjects/landingpage" />
+      <item itemvalue="JavaScript Debug.admin.html" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.admin.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
@@ -256,13 +264,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00174" summary="register controller to mvcconfig &#10;for request mapping">
-      <created>1663246853199</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1663246853199</updated>
     </task>
     <task id="LOCAL-00175" summary="simple m_en.html test page is available&#10;and is loading">
       <created>1663249011861</created>
@@ -600,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664629205561</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="load javascript engine &#10;over the service layer">
+      <created>1664657759691</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1664657759691</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +632,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete bootrap carousel &#10;add simple static image" />
     <MESSAGE value="edit image to &#10;xl-4" />
     <MESSAGE value="edit js and css lib" />
     <MESSAGE value="edit run command of docker container" />
@@ -649,7 +656,8 @@
     <MESSAGE value="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service" />
     <MESSAGE value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="load javascript engine &#10;over the service layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="load javascript engine &#10;over the service layer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,6 +666,17 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java</url>
           <line>96</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/templates/admin.html</url>
+          <line>881</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 217.160.255.254:80:80&#10;--dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;&#10;--dns-search=demogitjava.de&#10;--name=landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;&#10;" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80&#10;--dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;&#10;--dns-search=demogitjava.de&#10;--name=landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;--network=192.168.178.0&#10;" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
