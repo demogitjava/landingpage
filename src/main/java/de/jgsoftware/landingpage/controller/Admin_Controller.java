@@ -88,6 +88,16 @@ public class Admin_Controller implements iAdminController
         mv.addObject("loggedinuser", admin_service.getloggedinuser());
 
 
+
+        /*
+
+            load javascript engine
+            over the service layer
+
+         */
+        mv.addObject("javascriptengine", admin_service.startjavasciptengine());
+
+
         return mv;
     }
 

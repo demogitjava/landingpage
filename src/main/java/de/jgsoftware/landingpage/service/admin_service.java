@@ -9,6 +9,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
@@ -82,6 +85,25 @@ public class admin_service implements i_admin_service
         return currentPrincipalName;
     }
 
+
+    @Override
+    public ScriptEngineManager startjavasciptengine()
+    {
+        ScriptEngineManager manager = new ScriptEngineManager ();
+        ScriptEngine engine = manager.getEngineByName ("js");
+
+
+        String script = "print ('javascript engine is loaded !')";
+        try {
+
+
+            engine.eval (script);
+        } catch (ScriptException e) {
+            e.printStackTrace();
+        };
+
+        return manager;
+    }
 
 
 }

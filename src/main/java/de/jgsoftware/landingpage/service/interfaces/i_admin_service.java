@@ -3,6 +3,8 @@ package de.jgsoftware.landingpage.service.interfaces;
 import de.jgsoftware.landingpage.dao.Dao_admin;
 import de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent;
 
+import javax.script.ScriptEngineManager;
+
 public interface i_admin_service
 {
 
@@ -28,4 +30,7 @@ public interface i_admin_service
         if loggedin
      */
     public String getloggedinuser();
+
+    ScriptEngineManager startjavasciptengine();
+
 }
