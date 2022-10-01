@@ -94,10 +94,12 @@ public class admin_service implements i_admin_service
 
 
         String script = "print ('javascript engine is loaded !')";
+
         try {
 
 
             engine.eval (script);
+
         } catch (ScriptException e) {
             e.printStackTrace();
         };

@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/DemoLandingPageApplication.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/gentella/vendors/echarts/src/coord/polar/AngleAxis.js" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/ionic-framework-main/ionic-framework-main/CODE_OF_CONDUCT.md" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/ionic-framework-main/ionic-framework-main/angular/test/base/.browserslistrc" charset="ISO-8859-1" />
