@@ -30,8 +30,9 @@ public interface i_jpa_useragent extends JpaRepository<useragent, Long>
     List allconnectsbymonth();
 
     // select count(id) from useragent order by current_date
-    @Query(value = "select count(id) from useragent order by current_date", nativeQuery = true)
-    List connectsmonthnavbar();
+    @Query(value = "select count(id) from useragent WHERE month(datum) = :month and year(datum) = :year", nativeQuery = true)
+    //  @Query(value = "select count(id) from useragent order by current_date", nativeQuery = true)
+    List connectsmonthnavbar(int month, int year);
 
 
 

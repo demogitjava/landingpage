@@ -67,7 +67,8 @@ public class Admin_Controller implements iAdminController
             for navbar
 
          */
-        mv.addObject("connectsnavar", admin_service.getiJpaUseragent().connectsmonthnavbar());
+
+        mv.addObject("connectsnavar", admin_service.getiJpaUseragent().connectsmonthnavbar(month, year));
 
 
         /*
