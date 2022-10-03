@@ -120,7 +120,7 @@ public class admin_service implements i_admin_service
     {
 
        int year = getcurrentYear();
-       return iJpaUseragent.connectsnavbargraifcyear(year);
+       return iJpaUseragent.connectsnavbargraphicalyear(year);
     }
 
 }

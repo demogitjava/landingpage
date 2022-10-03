@@ -49,5 +49,5 @@ public interface i_jpa_useragent extends JpaRepository<useragent, Long>
             Network Activities Graph title sub-title
      */
     @Query(value ="select count(datum) as count, stbrowser, EXTRACT(MONTH FROM datum) as monat, EXTRACT(YEAR FROM datum) as JAHR from useragent WHERE year(datum) = :year group by monat, jahr, stbrowser", nativeQuery = true)
-    List connectsnavbargraifcyear(int year);
+    List connectsnavbargraphicalyear(int year);
 }
