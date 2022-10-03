@@ -114,6 +114,11 @@ public class admin_service implements i_admin_service
 
         data for
         Network Activities Graph title sub-title
+
+        --> year is required
+            in dao method
+
+
      */
     @Override
     public List getconnectdatayear()

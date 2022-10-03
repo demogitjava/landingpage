@@ -330,32 +330,10 @@ function gd(year, month, day) {
     return new Date(year, month - 1, day).getTime();
 }
 
-
-function gethtmldata()
+function init_flot_chart()
 {
-    var htmldata = localStorage.getItem("gjs-html");
-    var cssdata = localStorage.getItem("gjs-css");
 
 
-    $.ajax({
-        type : "GET",
-        url : "admin/getgraficnavbar",
-        data : {
-            gjshtml : localStorage.getItem('gjs-html'),
-            gjscss : localStorage.getItem('gjs-css')
-        }, // parameters
-        success : function(result) {
-            // alert('changed');
-            console.log('sucess');
-            $( "#messageinfo" ).html( "<strong>" + result + "</strong>" );
-        }
-    });
-
-}
-
-
-
-function init_flot_chart() {
 
     if (typeof ($.plot) === 'undefined') { return; }
 
