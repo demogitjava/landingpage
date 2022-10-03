@@ -5,6 +5,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -15,14 +16,15 @@ public interface iAdminController
 {
 
     @GetMapping({"admin", "/"})
-    public ModelAndView admin();
+    ModelAndView admin();
 
     @PostMapping("/edit/crudlist")
-    public String submitForm(m_webtextlayout webtextlayout);
+    String submitForm(m_webtextlayout webtextlayout);
 
 
     @GetMapping("/getgraficnavbar")
-    public List getcondatayear();
+    @ResponseBody
+    List getcondatayear();
 
 
 }

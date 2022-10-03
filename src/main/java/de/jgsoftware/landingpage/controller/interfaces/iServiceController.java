@@ -12,6 +12,6 @@ public interface iServiceController
 
 
     @GetMapping("/getclientid")
-    public String getClientid(String clientid, String channel);
+    String getClientid(String clientid, String channel);
 
 }

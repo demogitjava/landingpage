@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.admin.html">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="/root/IdeaProjects/landingpage" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -269,13 +268,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00182" summary="add a simple html file&#10;mobile header for italy&#10;&#10;it_mobile-header.html">
-      <created>1663323295908</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1663323295908</updated>
     </task>
     <task id="LOCAL-00183" summary="add a simple html file&#10;mobile header for Turkey&#10;&#10;tr_mobile-header.html">
       <created>1663323455490</created>
@@ -613,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664798480834</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary=".">
+      <created>1664800281026</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1664800281029</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
