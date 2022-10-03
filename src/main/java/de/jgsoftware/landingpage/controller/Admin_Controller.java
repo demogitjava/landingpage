@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 @Controller
 public class Admin_Controller implements iAdminController
 {
@@ -76,7 +78,7 @@ public class Admin_Controller implements iAdminController
             for navbar
 
          */
-        mv.addObject("connectsnavaryear", admin_service.getiJpaUseragent().connectsnavbaryear());
+        mv.addObject("connectsnavaryear", admin_service.getiJpaUseragent().connectsnavbaryear(admin_service.getcurrentYear()));
 
 
 
@@ -116,5 +118,10 @@ public class Admin_Controller implements iAdminController
         return "redirect:/";
     }
 
+    @Override
+    public List getcondatayear()
+    {
 
+        return admin_service.getconnectdatayear();
+    }
 }

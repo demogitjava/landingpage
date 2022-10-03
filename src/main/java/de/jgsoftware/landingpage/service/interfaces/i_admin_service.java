@@ -4,6 +4,7 @@ import de.jgsoftware.landingpage.dao.Dao_admin;
 import de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent;
 
 import javax.script.ScriptEngineManager;
+import java.util.List;
 
 public interface i_admin_service
 {
@@ -29,8 +30,20 @@ public interface i_admin_service
         get user
         if loggedin
      */
-    public String getloggedinuser();
+    String getloggedinuser();
 
     ScriptEngineManager startjavasciptengine();
+
+
+
+    /*
+
+        Network Activities Graph title sub-title
+
+        run java query
+        for Graph gentelella index dashboard
+     */
+
+    List getconnectdatayear();
 
 }

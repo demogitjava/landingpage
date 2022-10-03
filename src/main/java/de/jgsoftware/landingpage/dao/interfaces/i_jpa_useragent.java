@@ -37,8 +37,8 @@ public interface i_jpa_useragent extends JpaRepository<useragent, Long>
 
 
     // connect as count by year
-    @Query(value = "select count(stbrowser) from useragent where year(datum) = 2022", nativeQuery = true)
-    List connectsnavbaryear();
+    @Query(value = "select count(stbrowser) from useragent where year(datum) = :year", nativeQuery = true)
+    List connectsnavbaryear(int year);
 
 
 

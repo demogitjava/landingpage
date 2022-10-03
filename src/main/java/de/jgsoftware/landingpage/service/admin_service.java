@@ -14,6 +14,7 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.List;
 
 @Service
 public class admin_service implements i_admin_service
@@ -108,5 +109,13 @@ public class admin_service implements i_admin_service
         return manager;
     }
 
+
+
+    @Override
+    public List getconnectdatayear()
+    {
+
+       return iJpaUseragent.connectsnavbaryear(getcurrentYear());
+    }
 
 }

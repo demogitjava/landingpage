@@ -331,6 +331,9 @@ function gd(year, month, day) {
 }
 
 
+
+
+
 function init_flot_chart() {
 
     if (typeof ($.plot) === 'undefined') { return; }
