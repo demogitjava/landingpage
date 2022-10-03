@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-@RequestMapping("/admin")
+@RequestMapping("/admin/**")
 @PreAuthorize("hasAuthority('ROLE_ADMIN','ROLE_USER')")
 public interface iAdminController
 {
@@ -25,6 +25,8 @@ public interface iAdminController
     @GetMapping("/getgraficnavbar")
     @ResponseBody
     List getcondatayear();
+
+    String returntologin();
 
 
 }

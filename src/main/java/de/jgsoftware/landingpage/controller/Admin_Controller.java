@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -22,6 +24,11 @@ public class Admin_Controller implements iAdminController
     String language;
     String component;
 
+
+    @Autowired
+    HttpServletRequest request;
+
+    Principal principal;
 
     @Autowired
     i_admin_service admin_service;
@@ -121,7 +128,35 @@ public class Admin_Controller implements iAdminController
     @Override
     public List getcondatayear()
     {
-        List connectsyear = admin_service.getconnectdatayear();
+        List connectsyear = null;
+
+         /*
+                is user loggedin
+         */
+        principal = request.getUserPrincipal();
+
+        /*
+                user login
+         */
+        if(principal == null)
+        {
+            System.out.print("not login");
+            returntologin();
+        }
+        else {
+            connectsyear = admin_service.getconnectdatayear();
+
+        }
+
+
         return connectsyear;
     }
+
+
+    @Override
+    public String returntologin()
+    {
+        return "redirect:/login/";
+    }
+
 }
