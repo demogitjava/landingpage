@@ -110,12 +110,17 @@ public class admin_service implements i_admin_service
     }
 
 
+    /*
 
+        data for
+        Network Activities Graph title sub-title
+     */
     @Override
     public List getconnectdatayear()
     {
 
-       return iJpaUseragent.connectsnavbaryear(getcurrentYear());
+       int year = getcurrentYear();
+       return iJpaUseragent.connectsnavbargraifcyear(year);
     }
 
 }

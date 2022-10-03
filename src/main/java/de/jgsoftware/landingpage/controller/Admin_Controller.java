@@ -121,7 +121,7 @@ public class Admin_Controller implements iAdminController
     @Override
     public List getcondatayear()
     {
-
-        return admin_service.getconnectdatayear();
+        List connectsyear = admin_service.getconnectdatayear();
+        return connectsyear;
     }
 }

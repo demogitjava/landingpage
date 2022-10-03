@@ -21,7 +21,7 @@ public interface iAdminController
     public String submitForm(m_webtextlayout webtextlayout);
 
 
-    @GetMapping("/getcondatayear")
+    @GetMapping("/getgraficnavbar")
     public List getcondatayear();
 
 

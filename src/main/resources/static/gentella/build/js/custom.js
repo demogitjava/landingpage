@@ -331,6 +331,27 @@ function gd(year, month, day) {
 }
 
 
+function gethtmldata()
+{
+    var htmldata = localStorage.getItem("gjs-html");
+    var cssdata = localStorage.getItem("gjs-css");
+
+
+    $.ajax({
+        type : "GET",
+        url : "admin/getgraficnavbar",
+        data : {
+            gjshtml : localStorage.getItem('gjs-html'),
+            gjscss : localStorage.getItem('gjs-css')
+        }, // parameters
+        success : function(result) {
+            // alert('changed');
+            console.log('sucess');
+            $( "#messageinfo" ).html( "<strong>" + result + "</strong>" );
+        }
+    });
+
+}
 
 
 
@@ -342,6 +363,8 @@ function init_flot_chart() {
     var randNum = function () {
         return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
     };
+
+
 
     var arr_data1 = [
         [gd(2012, 1, 1), 17],
