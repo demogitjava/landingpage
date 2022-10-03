@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit network for container&#10;to &#10;192.168.178.0">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="convert custom.js&#10;to iso-8859-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,13 +262,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00176" summary="add simple html mobile page &#10;for english &#10;m_en.html">
-      <created>1663249499309</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1663249499310</updated>
     </task>
     <task id="LOCAL-00177" summary=".">
       <created>1663250089445</created>
@@ -610,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664659197434</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="convert custom.js&#10;to iso-8859-1">
+      <created>1664664228839</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1664664228839</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +630,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit js and css lib" />
     <MESSAGE value="edit run command of docker container" />
     <MESSAGE value="add a simple mobile template html page &#10;for language it&#10;&#10;add new layer for&#10;controller&#10;service" />
     <MESSAGE value="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working" />
@@ -659,7 +654,8 @@
     <MESSAGE value="." />
     <MESSAGE value="load javascript engine &#10;over the service layer" />
     <MESSAGE value="edit network for container&#10;to &#10;192.168.178.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit network for container&#10;to &#10;192.168.178.0" />
+    <MESSAGE value="convert custom.js&#10;to iso-8859-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="convert custom.js&#10;to iso-8859-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
