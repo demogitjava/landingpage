@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/landingpage/classes/templates/index.html" useBuiltInWebServerPort="true">
+    <configuration name="de.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://217.160.255.254/landingpage/templates/de.html" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -164,7 +165,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.de.html" />
       </list>
     </recent_temporary>
   </component>
@@ -238,13 +239,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00185" summary="exclude header for &#10;m_de.html">
-      <created>1663325336460</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1663325336460</updated>
     </task>
     <task id="LOCAL-00186" summary="edit de_body.html&#10;with carousel">
       <created>1663339925616</created>
@@ -582,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664815098931</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary=".">
+      <created>1664881022790</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1664881022790</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,10 +629,10 @@
     <MESSAGE value="convert custom.js&#10;to iso-8859-1" />
     <MESSAGE value="add function for gentelella-master index dashboard&#10;list query" />
     <MESSAGE value="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title" />
-    <MESSAGE value="." />
     <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,15 +642,10 @@
           <line>96</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/target/classes/static/gentella/build/js/custom.js</url>
-          <line>340</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/target/classes/static/gentella/build/js/custom.js</url>
-          <line>335</line>
-          <option name="timeStamp" value="19" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
