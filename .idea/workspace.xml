@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit iAdminController.java interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +101,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;last_opened_file_path&quot;: &quot;/root/Dokumente/useragent_csv/2022_07_29_useragent.csv&quot;,
@@ -153,6 +154,9 @@
     <configuration name="de.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://217.160.255.254/landingpage/templates/de.html" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/landingpage/classes/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -165,6 +169,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.de.html" />
       </list>
     </recent_temporary>
@@ -239,13 +244,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00186" summary="edit de_body.html&#10;with carousel">
-      <created>1663339925616</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1663339925616</updated>
     </task>
     <task id="LOCAL-00187" summary="delete bootrap carousel &#10;add simple static image">
       <created>1663406466585</created>
@@ -583,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664881022790</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="edit iAdminController.java interface">
+      <created>1664891842251</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1664891842251</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +612,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delte file useragent.txt" />
     <MESSAGE value="add wiki service" />
     <MESSAGE value="add function in admin controller&#10;for current month and year &#10;&#10;and list all connect as list for dashboard" />
     <MESSAGE value="add screenshot" />
@@ -632,7 +636,8 @@
     <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit iAdminController.java interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit iAdminController.java interface" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,8 +649,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="27" />
+          <line>146</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

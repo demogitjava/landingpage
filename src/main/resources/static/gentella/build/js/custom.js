@@ -343,6 +343,18 @@ function init_flot_chart()
     };
 
 
+    var response = '';
+    $.ajax({ type: "GET",
+        url: "/admin/getgraficnavbar",
+        async: false,
+        success : function(text)
+        {
+            response = text;
+        }
+    });
+
+    alert(response);
+
 
     var arr_data1 = [
         [gd(2012, 1, 1), 17],
