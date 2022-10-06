@@ -2170,7 +2170,7 @@ function init_charts() {
         var lineChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                 datasets: [{
                     label: "My First dataset",
                     backgroundColor: "rgba(38, 185, 154, 0.31)",
