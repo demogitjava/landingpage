@@ -124,6 +124,7 @@ public class Admin_Controller implements iAdminController
         //iServiceIndex.getDcontroller().g
         //idexservice.getDcontroller().saveFormModalData(webtextlayout);
         return "redirect:/";
+
     }
 
     @Override
@@ -153,28 +154,30 @@ public class Admin_Controller implements iAdminController
 
             graflist = new ArrayList();
 
-            for (int i = 0; i < indexlist; i++) {
 
 
+            Integer currentyear = admin_service.getcurrentYear();
+
+            for(int i = 0; i < indexlist; i++) {
                 Object obcount = ((Object[]) connectsyear.get(i))[0]; // count
-                Object obname = ((Object[]) connectsyear.get(i))[1]; // browser name
-                Object obmonth = ((Object[]) connectsyear.get(i))[2]; // month
-                Object obyear = ((Object[]) connectsyear.get(i))[3]; // year
-
-                String stforlist = "[gd(" + obyear + ", " + obmonth + ", " + "1, " + obcount + "]";
-                //[gd(2012, 1,   1), 17],
-                graflist.add(stforlist);
+                Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
+                Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
 
 
-                //connectsyear.get(0).equals("integer");
-                // graflist.add(connectsyear.get(i).);
-                System.out.print(graflist);
+                String stcount = String.valueOf(obcount);
+
+                Integer intmonth = (Integer) obmonth;
+
+
+
+               // graflist.add(intmonth, stcount);
+
+
+
             }
 
 
         }
-
-
         return graflist;
     }
 
