@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -126,8 +127,7 @@ public class Admin_Controller implements iAdminController
     }
 
     @Override
-    public List getcondatayear()
-    {
+    public List getcondatayear() {
         List connectsyear = null;
 
          /*
@@ -138,18 +138,44 @@ public class Admin_Controller implements iAdminController
         /*
                 user login
          */
-        if(principal == null)
-        {
+        List graflist = null;
+        if (principal == null) {
             System.out.print("not login");
             returntologin();
-        }
-        else {
+        } else {
             connectsyear = admin_service.getconnectdatayear();
 
+            //    year month day value
+            //[gd(2012, 1,   1), 17],
+
+            // integer size list
+            int indexlist = connectsyear.size();
+
+            graflist = new ArrayList();
+
+            for (int i = 0; i < indexlist; i++) {
+
+
+                Object obcount = ((Object[]) connectsyear.get(i))[0]; // count
+                Object obname = ((Object[]) connectsyear.get(i))[1]; // browser name
+                Object obmonth = ((Object[]) connectsyear.get(i))[2]; // month
+                Object obyear = ((Object[]) connectsyear.get(i))[3]; // year
+
+                String stforlist = "[gd(" + obyear + ", " + obmonth + ", " + "1, " + obcount + "]";
+                //[gd(2012, 1,   1), 17],
+                graflist.add(stforlist);
+
+
+                //connectsyear.get(0).equals("integer");
+                // graflist.add(connectsyear.get(i).);
+                System.out.print(graflist);
+            }
+
+
         }
 
 
-        return connectsyear;
+        return graflist;
     }
 
 

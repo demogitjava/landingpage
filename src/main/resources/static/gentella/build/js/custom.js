@@ -343,19 +343,28 @@ function init_flot_chart()
     };
 
 
+
+    var arr_data1 = null;
     var response = '';
     $.ajax({ type: "GET",
         url: "/admin/getgraficnavbar",
         async: false,
         success : function(text)
         {
-            response = text;
+
+                response = text
+                arr_data1 = [
+                    "" + response
+                ];
         }
     });
 
     alert(response);
 
 
+
+
+    /*
     var arr_data1 = [
         [gd(2012, 1, 1), 17],
         [gd(2012, 1, 2), 74],
@@ -364,7 +373,8 @@ function init_flot_chart()
         [gd(2012, 1, 5), 20],
         [gd(2012, 1, 6), 85],
         [gd(2012, 1, 7), 7]
-    ];
+    ];  */
+
 
     var arr_data2 = [
         [gd(2012, 1, 1), 82],

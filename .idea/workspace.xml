@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit iAdminController.java interface">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,13 +245,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00187" summary="delete bootrap carousel &#10;add simple static image">
-      <created>1663406466585</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1663406466585</updated>
     </task>
     <task id="LOCAL-00188" summary="edit image to &#10;xl-4">
       <created>1663406688730</created>
@@ -588,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664891842251</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data">
+      <created>1664963517889</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1664963517889</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +613,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add wiki service" />
     <MESSAGE value="add function in admin controller&#10;for current month and year &#10;&#10;and list all connect as list for dashboard" />
     <MESSAGE value="add screenshot" />
     <MESSAGE value="edit google-site-verification" />
@@ -637,7 +637,8 @@
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
     <MESSAGE value="." />
     <MESSAGE value="edit iAdminController.java interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit iAdminController.java interface" />
+    <MESSAGE value="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -646,11 +647,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_admin.java</url>
           <line>96</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
