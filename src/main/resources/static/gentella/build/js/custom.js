@@ -359,7 +359,7 @@ function init_flot_chart()
         }
     });
 
-    alert(response);
+   // alert(response);
 
 
 
@@ -377,13 +377,13 @@ function init_flot_chart()
 
 
     var arr_data2 = [
-        [gd(2012, 1, 1), 82],
-        [gd(2012, 1, 2), 23],
-        [gd(2012, 1, 3), 66],
-        [gd(2012, 1, 4), 9],
-        [gd(2012, 1, 5), 119],
-        [gd(2012, 1, 6), 6],
-        [gd(2012, 1, 7), 9]
+        [gd(2022, 9, 1), 82],
+        [gd(2022, 9, 2), 23],
+        [gd(2022, 9, 3), 66],
+        [gd(2022, 9, 4), 9],
+        [gd(2022, 9, 5), 119],
+        [gd(2022, 9, 6), 6],
+        [gd(2022, 9, 7), 9]
     ];
 
     var arr_data3 = [
@@ -464,7 +464,7 @@ function init_flot_chart()
         xaxis: {
             tickColor: "rgba(51, 51, 51, 0.06)",
             mode: "time",
-            tickSize: [1, "day"],
+            tickSize: [1, "year"],
             //tickLength: 10,
             axisLabel: "Date",
             axisLabelUseCanvas: true,
@@ -570,7 +570,7 @@ function init_flot_chart()
     if ($("#chart_plot_01").length) {
         console.log('Plot1');
 
-        $.plot($("#chart_plot_01"), [arr_data1, arr_data2], chart_plot_01_settings);
+        $.plot($("#chart_plot_01"), [arr_data1, arr_data2]);
     }
 
 
@@ -1604,8 +1604,8 @@ function init_daterangepicker() {
     var optionSet1 = {
         startDate: moment().subtract(29, 'days'),
         endDate: moment(),
-        minDate: '01/01/2012',
-        maxDate: '12/31/2015',
+        minDate: '01/01/2022',
+        maxDate: '12/31/2030',
         dateLimit: {
             days: 60
         },
@@ -1679,8 +1679,8 @@ function init_daterangepicker_right() {
     var optionSet1 = {
         startDate: moment().subtract(29, 'days'),
         endDate: moment(),
-        minDate: '01/01/2012',
-        maxDate: '12/31/2020',
+        minDate: '01/01/2022',
+        maxDate: '12/31/2030',
         dateLimit: {
             days: 60
         },
@@ -2728,11 +2728,11 @@ function init_morris_charts() {
             hideHover: 'auto',
             lineColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
             data: [
-                { year: '2012', value: 20 },
-                { year: '2013', value: 10 },
-                { year: '2014', value: 5 },
-                { year: '2015', value: 5 },
-                { year: '2016', value: 20 }
+                { year: '2022', value: 20 },
+                { year: '2023', value: 10 },
+                { year: '2024', value: 5 },
+                { year: '2025', value: 5 },
+                { year: '2026', value: 20 }
             ],
             resize: true
         });
