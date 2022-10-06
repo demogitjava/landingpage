@@ -2162,6 +2162,21 @@ function init_charts() {
     }
 
 
+    var arr_data1 = null;
+    var response = '';
+    $.ajax({ type: "GET",
+        url: "/admin/getgraficnavbar",
+        async: false,
+        success : function(text)
+        {
+
+            response = text
+            arr_data1 = [
+                "" + response
+            ];
+        }
+    });
+
     // Line chart
 
     if ($('#lineChart').length) {
@@ -2169,7 +2184,8 @@ function init_charts() {
         var ctx = document.getElementById("lineChart");
         var lineChart = new Chart(ctx, {
             type: 'line',
-            data: {
+            data:
+                {
                 labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                 datasets: [{
                     label: "My First dataset",
@@ -2180,8 +2196,9 @@ function init_charts() {
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
-                    data: [31, 74, 6, 39, 20, 85, 7]
-                }, {
+                    data: [31, 74, 6, 39, 20, 85, 7, 100, 90, 70, 88, 12]
+                },
+                    {
                     label: "My Second dataset",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
                     borderColor: "rgba(3, 88, 106, 0.70)",
