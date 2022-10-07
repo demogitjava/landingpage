@@ -128,4 +128,15 @@ public class admin_service implements i_admin_service
        return iJpaUseragent.connectsnavbargraphicalyear(year);
     }
 
+    @Override
+    public Integer addvaluegrafyear(Integer month, Integer intobcount, Integer intlistvalue)
+    {
+
+        intlistvalue = intlistvalue + intobcount;
+        month = month;
+
+
+        return month + intobcount;
+    }
+
 }

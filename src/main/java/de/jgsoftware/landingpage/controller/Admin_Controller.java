@@ -35,6 +35,25 @@ public class Admin_Controller implements iAdminController
     i_admin_service admin_service;
 
 
+    Integer m01;
+    Integer m02;
+    Integer m03;
+    Integer m04;
+    Integer m05;
+    Integer m06;
+    Integer m07;
+    Integer m08;
+    Integer m09;
+    Integer m10;
+    Integer m11;
+    Integer m12;
+
+    Integer[] valuemonth;
+
+
+
+
+
 
 
     @Override
@@ -155,28 +174,178 @@ public class Admin_Controller implements iAdminController
             graflist = new ArrayList();
 
 
-
             Integer currentyear = admin_service.getcurrentYear();
+
+            m01 = Integer.valueOf(0);
+            m02 = Integer.valueOf(0);
+            m03 = Integer.valueOf(0);
+            m04 = Integer.valueOf(0);
+            m05 = Integer.valueOf(0);
+            m06 = Integer.valueOf(0);
+            m07 = Integer.valueOf(0);
+            m08 = Integer.valueOf(0);
+            m09 = Integer.valueOf(0);
+            m10 = Integer.valueOf(0);
+            m11 = Integer.valueOf(0);
+            m12 = Integer.valueOf(0);
+
+            valuemonth = new Integer[] {m01, m02, m03, m04, m05, m06, m07, m08, m09, m10, m11, m12};
+
 
             for(int i = 0; i < indexlist; i++) {
                 Object obcount = ((Object[]) connectsyear.get(i))[0]; // count
                 Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
                 Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
 
-
-                String stcount = String.valueOf(obcount);
-
                 Integer intmonth = (Integer) obmonth;
 
+                switch (intmonth)
+                {
+                    case 1:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+                        Integer intlistvalue = m01;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
 
+
+
+                        m01 = Integer.valueOf(intobcount);
+                        break;
+                    }
+                    case 2:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m02;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m02 = intobcount;
+                        break;
+                    }
+
+                    case 3:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m03;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m03 = intobcount;
+                        break;
+                    }
+
+                    case 4:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m03;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+                        m04 = intobcount;
+                        break;
+                    }
+                    case 5:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m05;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m05 = intobcount;
+                        break;
+                    }
+                    case 6:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+                        m06 = intobcount;
+                        break;
+                    }
+                    case 7:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m07;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m07 = intobcount;
+                        break;
+                    }
+                    case 8:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m08;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m08 = intobcount;
+                        break;
+                    }
+                    case 9:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m09;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m09 = intobcount;
+                        break;
+                    }
+                    case 10:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m10;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m10 = intobcount;
+                        break;
+                    }
+                    case 11:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+
+                        Integer intlistvalue = m11;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m11 = intobcount;
+                        break;
+                    }
+                    case 12:
+                    {
+                        String stobcount = String.valueOf(obcount);
+                        Integer intobcount = Integer.valueOf(stobcount);
+
+
+                        Integer intlistvalue = m12;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
+                        m12 = intobcount;
+                        break;
+                    }
+
+                    default:
+                        break;
+                }
 
                // graflist.add(intmonth, stcount);
 
 
-
             }
 
+            Integer[] countvaluemonth = new Integer[] {m01, m02, m03, m04, m05, m06, m07, m08, m09, m10, m11, m12};
 
+            graflist.add(countvaluemonth);
         }
         return graflist;
     }

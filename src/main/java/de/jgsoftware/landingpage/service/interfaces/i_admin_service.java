@@ -46,4 +46,6 @@ public interface i_admin_service
 
     List getconnectdatayear();
 
+    Integer addvaluegrafyear(Integer month, Integer intobcount, Integer intlistvalue);
+
 }

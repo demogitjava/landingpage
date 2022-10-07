@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit custom.js&#10;&#10;line 2169&#10;&#10;month form Jan to Dez&#10;  data: [31, 74, 6, 39, 20, 85, 7, 100, 90, 70, 88, 12]">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/admin_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/service/interfaces/i_admin_service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,13 +247,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00192" summary=".">
-      <created>1663593542270</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1663593542270</updated>
     </task>
     <task id="LOCAL-00193" summary="edit run command of docker container">
       <created>1663666579148</created>
@@ -589,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665053466265</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph">
+      <created>1665081339330</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1665081339330</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +615,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg" />
     <MESSAGE value="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates" />
     <MESSAGE value="edit wiki.html&#10;add screenshots for mobile and desktop" />
     <MESSAGE value="edit functions in admin_service &#10;&#10;getMonth &#10;and getYear&#10;&#10;to  ZonedDateTime&#10;ztime.getMonthValue();&#10;ztime.getYear();&#10;&#10;it now return the correct month and year" />
@@ -638,7 +639,8 @@
     <MESSAGE value="edit admin.html&#10;grafic to &#10;lineChart" />
     <MESSAGE value="edit custom.js&#10;&#10;line 2169&#10;month form Jan to Dez" />
     <MESSAGE value="edit custom.js&#10;&#10;line 2169&#10;&#10;month form Jan to Dez&#10;  data: [31, 74, 6, 39, 20, 85, 7, 100, 90, 70, 88, 12]" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit custom.js&#10;&#10;line 2169&#10;&#10;month form Jan to Dez&#10;  data: [31, 74, 6, 39, 20, 85, 7, 100, 90, 70, 88, 12]" />
+    <MESSAGE value="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
