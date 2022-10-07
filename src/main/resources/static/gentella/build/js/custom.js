@@ -330,10 +330,8 @@ function gd(year, month, day) {
     return new Date(year, month - 1, day).getTime();
 }
 
-function init_flot_chart()
-{
 
-
+function init_flot_chart() {
 
     if (typeof ($.plot) === 'undefined') { return; }
 
@@ -341,16 +339,6 @@ function init_flot_chart()
     var randNum = function () {
         return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
     };
-
-
-
-
-
-    // alert(response);
-
-
-
-
 
     var arr_data1 = [
         [gd(2012, 1, 1), 17],
@@ -362,15 +350,14 @@ function init_flot_chart()
         [gd(2012, 1, 7), 7]
     ];
 
-
     var arr_data2 = [
-        [gd(2022, 9, 1), 82],
-        [gd(2022, 9, 2), 23],
-        [gd(2022, 9, 3), 66],
-        [gd(2022, 9, 4), 9],
-        [gd(2022, 9, 5), 119],
-        [gd(2022, 9, 6), 6],
-        [gd(2022, 9, 7), 9]
+        [gd(2012, 1, 1), 82],
+        [gd(2012, 1, 2), 23],
+        [gd(2012, 1, 3), 66],
+        [gd(2012, 1, 4), 9],
+        [gd(2012, 1, 5), 119],
+        [gd(2012, 1, 6), 6],
+        [gd(2012, 1, 7), 9]
     ];
 
     var arr_data3 = [
@@ -451,7 +438,7 @@ function init_flot_chart()
         xaxis: {
             tickColor: "rgba(51, 51, 51, 0.06)",
             mode: "time",
-            tickSize: [1, "year"],
+            tickSize: [1, "day"],
             //tickLength: 10,
             axisLabel: "Date",
             axisLabelUseCanvas: true,
@@ -557,7 +544,7 @@ function init_flot_chart()
     if ($("#chart_plot_01").length) {
         console.log('Plot1');
 
-        $.plot($("#chart_plot_01"), [arr_data1, arr_data2]);
+        $.plot($("#chart_plot_01"), [arr_data1, arr_data2], chart_plot_01_settings);
     }
 
 
@@ -932,7 +919,7 @@ function init_autocomplete() {
     if (typeof ($.fn.autocomplete) === 'undefined') { return; }
     console.log('init_autocomplete');
 
-    var countries = { AD: "Andorra", A2: "Andorra Test", AE: "United Arab Emirates", AF: "Afghanistan", AG: "Antigua and Barbuda", AI: "Anguilla", AL: "Albania", AM: "Armenia", AN: "Netherlands Antilles", AO: "Angola", AQ: "Antarctica", AR: "Argentina", AS: "American Samoa", AT: "Austria", AU: "Australia", AW: "Aruba", AX: "?land Islands", AZ: "Azerbaijan", BA: "Bosnia and Herzegovina", BB: "Barbados", BD: "Bangladesh", BE: "Belgium", BF: "Burkina Faso", BG: "Bulgaria", BH: "Bahrain", BI: "Burundi", BJ: "Benin", BL: "Saint Barth?lemy", BM: "Bermuda", BN: "Brunei", BO: "Bolivia", BQ: "British Antarctic Territory", BR: "Brazil", BS: "Bahamas", BT: "Bhutan", BV: "Bouvet Island", BW: "Botswana", BY: "Belarus", BZ: "Belize", CA: "Canada", CC: "Cocos [Keeling] Islands", CD: "Congo - Kinshasa", CF: "Central African Republic", CG: "Congo - Brazzaville", CH: "Switzerland", CI: "C?te d?Ivoire", CK: "Cook Islands", CL: "Chile", CM: "Cameroon", CN: "China", CO: "Colombia", CR: "Costa Rica", CS: "Serbia and Montenegro", CT: "Canton and Enderbury Islands", CU: "Cuba", CV: "Cape Verde", CX: "Christmas Island", CY: "Cyprus", CZ: "Czech Republic", DD: "East Germany", DE: "Germany", DJ: "Djibouti", DK: "Denmark", DM: "Dominica", DO: "Dominican Republic", DZ: "Algeria", EC: "Ecuador", EE: "Estonia", EG: "Egypt", EH: "Western Sahara", ER: "Eritrea", ES: "Spain", ET: "Ethiopia", FI: "Finland", FJ: "Fiji", FK: "Falkland Islands", FM: "Micronesia", FO: "Faroe Islands", FQ: "French Southern and Antarctic Territories", FR: "France", FX: "Metropolitan France", GA: "Gabon", GB: "United Kingdom", GD: "Grenada", GE: "Georgia", GF: "French Guiana", GG: "Guernsey", GH: "Ghana", GI: "Gibraltar", GL: "Greenland", GM: "Gambia", GN: "Guinea", GP: "Guadeloupe", GQ: "Equatorial Guinea", GR: "Greece", GS: "South Georgia and the South Sandwich Islands", GT: "Guatemala", GU: "Guam", GW: "Guinea-Bissau", GY: "Guyana", HK: "Hong Kong SAR China", HM: "Heard Island and McDonald Islands", HN: "Honduras", HR: "Croatia", HT: "Haiti", HU: "Hungary", ID: "Indonesia", IE: "Ireland", IL: "Israel", IM: "Isle of Man", IN: "India", IO: "British Indian Ocean Territory", IQ: "Iraq", IR: "Iran", IS: "Iceland", IT: "Italy", JE: "Jersey", JM: "Jamaica", JO: "Jordan", JP: "Japan", JT: "Johnston Island", KE: "Kenya", KG: "Kyrgyzstan", KH: "Cambodia", KI: "Kiribati", KM: "Comoros", KN: "Saint Kitts and Nevis", KP: "North Korea", KR: "South Korea", KW: "Kuwait", KY: "Cayman Islands", KZ: "Kazakhstan", LA: "Laos", LB: "Lebanon", LC: "Saint Lucia", LI: "Liechtenstein", LK: "Sri Lanka", LR: "Liberia", LS: "Lesotho", LT: "Lithuania", LU: "Luxembourg", LV: "Latvia", LY: "Libya", MA: "Morocco", MC: "Monaco", MD: "Moldova", ME: "Montenegro", MF: "Saint Martin", MG: "Madagascar", MH: "Marshall Islands", MI: "Midway Islands", MK: "Macedonia", ML: "Mali", MM: "Myanmar [Burma]", MN: "Mongolia", MO: "Macau SAR China", MP: "Northern Mariana Islands", MQ: "Martinique", MR: "Mauritania", MS: "Montserrat", MT: "Malta", MU: "Mauritius", MV: "Maldives", MW: "Malawi", MX: "Mexico", MY: "Malaysia", MZ: "Mozambique", NA: "Namibia", NC: "New Caledonia", NE: "Niger", NF: "Norfolk Island", NG: "Nigeria", NI: "Nicaragua", NL: "Netherlands", NO: "Norway", NP: "Nepal", NQ: "Dronning Maud Land", NR: "Nauru", NT: "Neutral Zone", NU: "Niue", NZ: "New Zealand", OM: "Oman", PA: "Panama", PC: "Pacific Islands Trust Territory", PE: "Peru", PF: "French Polynesia", PG: "Papua New Guinea", PH: "Philippines", PK: "Pakistan", PL: "Poland", PM: "Saint Pierre and Miquelon", PN: "Pitcairn Islands", PR: "Puerto Rico", PS: "Palestinian Territories", PT: "Portugal", PU: "U.S. Miscellaneous Pacific Islands", PW: "Palau", PY: "Paraguay", PZ: "Panama Canal Zone", QA: "Qatar", RE: "R?union", RO: "Romania", RS: "Serbia", RU: "Russia", RW: "Rwanda", SA: "Saudi Arabia", SB: "Solomon Islands", SC: "Seychelles", SD: "Sudan", SE: "Sweden", SG: "Singapore", SH: "Saint Helena", SI: "Slovenia", SJ: "Svalbard and Jan Mayen", SK: "Slovakia", SL: "Sierra Leone", SM: "San Marino", SN: "Senegal", SO: "Somalia", SR: "Suriname", ST: "S?o Tom? and Pr?ncipe", SU: "Union of Soviet Socialist Republics", SV: "El Salvador", SY: "Syria", SZ: "Swaziland", TC: "Turks and Caicos Islands", TD: "Chad", TF: "French Southern Territories", TG: "Togo", TH: "Thailand", TJ: "Tajikistan", TK: "Tokelau", TL: "Timor-Leste", TM: "Turkmenistan", TN: "Tunisia", TO: "Tonga", TR: "Turkey", TT: "Trinidad and Tobago", TV: "Tuvalu", TW: "Taiwan", TZ: "Tanzania", UA: "Ukraine", UG: "Uganda", UM: "U.S. Minor Outlying Islands", US: "United States", UY: "Uruguay", UZ: "Uzbekistan", VA: "Vatican City", VC: "Saint Vincent and the Grenadines", VD: "North Vietnam", VE: "Venezuela", VG: "British Virgin Islands", VI: "U.S. Virgin Islands", VN: "Vietnam", VU: "Vanuatu", WF: "Wallis and Futuna", WK: "Wake Island", WS: "Samoa", YD: "People's Democratic Republic of Yemen", YE: "Yemen", YT: "Mayotte", ZA: "South Africa", ZM: "Zambia", ZW: "Zimbabwe", ZZ: "Unknown or Invalid Region" };
+    var countries = { AD: "Andorra", A2: "Andorra Test", AE: "United Arab Emirates", AF: "Afghanistan", AG: "Antigua and Barbuda", AI: "Anguilla", AL: "Albania", AM: "Armenia", AN: "Netherlands Antilles", AO: "Angola", AQ: "Antarctica", AR: "Argentina", AS: "American Samoa", AT: "Austria", AU: "Australia", AW: "Aruba", AX: "Åland Islands", AZ: "Azerbaijan", BA: "Bosnia and Herzegovina", BB: "Barbados", BD: "Bangladesh", BE: "Belgium", BF: "Burkina Faso", BG: "Bulgaria", BH: "Bahrain", BI: "Burundi", BJ: "Benin", BL: "Saint Barthélemy", BM: "Bermuda", BN: "Brunei", BO: "Bolivia", BQ: "British Antarctic Territory", BR: "Brazil", BS: "Bahamas", BT: "Bhutan", BV: "Bouvet Island", BW: "Botswana", BY: "Belarus", BZ: "Belize", CA: "Canada", CC: "Cocos [Keeling] Islands", CD: "Congo - Kinshasa", CF: "Central African Republic", CG: "Congo - Brazzaville", CH: "Switzerland", CI: "Côte d?Ivoire", CK: "Cook Islands", CL: "Chile", CM: "Cameroon", CN: "China", CO: "Colombia", CR: "Costa Rica", CS: "Serbia and Montenegro", CT: "Canton and Enderbury Islands", CU: "Cuba", CV: "Cape Verde", CX: "Christmas Island", CY: "Cyprus", CZ: "Czech Republic", DD: "East Germany", DE: "Germany", DJ: "Djibouti", DK: "Denmark", DM: "Dominica", DO: "Dominican Republic", DZ: "Algeria", EC: "Ecuador", EE: "Estonia", EG: "Egypt", EH: "Western Sahara", ER: "Eritrea", ES: "Spain", ET: "Ethiopia", FI: "Finland", FJ: "Fiji", FK: "Falkland Islands", FM: "Micronesia", FO: "Faroe Islands", FQ: "French Southern and Antarctic Territories", FR: "France", FX: "Metropolitan France", GA: "Gabon", GB: "United Kingdom", GD: "Grenada", GE: "Georgia", GF: "French Guiana", GG: "Guernsey", GH: "Ghana", GI: "Gibraltar", GL: "Greenland", GM: "Gambia", GN: "Guinea", GP: "Guadeloupe", GQ: "Equatorial Guinea", GR: "Greece", GS: "South Georgia and the South Sandwich Islands", GT: "Guatemala", GU: "Guam", GW: "Guinea-Bissau", GY: "Guyana", HK: "Hong Kong SAR China", HM: "Heard Island and McDonald Islands", HN: "Honduras", HR: "Croatia", HT: "Haiti", HU: "Hungary", ID: "Indonesia", IE: "Ireland", IL: "Israel", IM: "Isle of Man", IN: "India", IO: "British Indian Ocean Territory", IQ: "Iraq", IR: "Iran", IS: "Iceland", IT: "Italy", JE: "Jersey", JM: "Jamaica", JO: "Jordan", JP: "Japan", JT: "Johnston Island", KE: "Kenya", KG: "Kyrgyzstan", KH: "Cambodia", KI: "Kiribati", KM: "Comoros", KN: "Saint Kitts and Nevis", KP: "North Korea", KR: "South Korea", KW: "Kuwait", KY: "Cayman Islands", KZ: "Kazakhstan", LA: "Laos", LB: "Lebanon", LC: "Saint Lucia", LI: "Liechtenstein", LK: "Sri Lanka", LR: "Liberia", LS: "Lesotho", LT: "Lithuania", LU: "Luxembourg", LV: "Latvia", LY: "Libya", MA: "Morocco", MC: "Monaco", MD: "Moldova", ME: "Montenegro", MF: "Saint Martin", MG: "Madagascar", MH: "Marshall Islands", MI: "Midway Islands", MK: "Macedonia", ML: "Mali", MM: "Myanmar [Burma]", MN: "Mongolia", MO: "Macau SAR China", MP: "Northern Mariana Islands", MQ: "Martinique", MR: "Mauritania", MS: "Montserrat", MT: "Malta", MU: "Mauritius", MV: "Maldives", MW: "Malawi", MX: "Mexico", MY: "Malaysia", MZ: "Mozambique", NA: "Namibia", NC: "New Caledonia", NE: "Niger", NF: "Norfolk Island", NG: "Nigeria", NI: "Nicaragua", NL: "Netherlands", NO: "Norway", NP: "Nepal", NQ: "Dronning Maud Land", NR: "Nauru", NT: "Neutral Zone", NU: "Niue", NZ: "New Zealand", OM: "Oman", PA: "Panama", PC: "Pacific Islands Trust Territory", PE: "Peru", PF: "French Polynesia", PG: "Papua New Guinea", PH: "Philippines", PK: "Pakistan", PL: "Poland", PM: "Saint Pierre and Miquelon", PN: "Pitcairn Islands", PR: "Puerto Rico", PS: "Palestinian Territories", PT: "Portugal", PU: "U.S. Miscellaneous Pacific Islands", PW: "Palau", PY: "Paraguay", PZ: "Panama Canal Zone", QA: "Qatar", RE: "Réunion", RO: "Romania", RS: "Serbia", RU: "Russia", RW: "Rwanda", SA: "Saudi Arabia", SB: "Solomon Islands", SC: "Seychelles", SD: "Sudan", SE: "Sweden", SG: "Singapore", SH: "Saint Helena", SI: "Slovenia", SJ: "Svalbard and Jan Mayen", SK: "Slovakia", SL: "Sierra Leone", SM: "San Marino", SN: "Senegal", SO: "Somalia", SR: "Suriname", ST: "São Tomé and Príncipe", SU: "Union of Soviet Socialist Republics", SV: "El Salvador", SY: "Syria", SZ: "Swaziland", TC: "Turks and Caicos Islands", TD: "Chad", TF: "French Southern Territories", TG: "Togo", TH: "Thailand", TJ: "Tajikistan", TK: "Tokelau", TL: "Timor-Leste", TM: "Turkmenistan", TN: "Tunisia", TO: "Tonga", TR: "Turkey", TT: "Trinidad and Tobago", TV: "Tuvalu", TW: "Taiwan", TZ: "Tanzania", UA: "Ukraine", UG: "Uganda", UM: "U.S. Minor Outlying Islands", US: "United States", UY: "Uruguay", UZ: "Uzbekistan", VA: "Vatican City", VC: "Saint Vincent and the Grenadines", VD: "North Vietnam", VE: "Venezuela", VG: "British Virgin Islands", VI: "U.S. Virgin Islands", VN: "Vietnam", VU: "Vanuatu", WF: "Wallis and Futuna", WK: "Wake Island", WS: "Samoa", YD: "People's Democratic Republic of Yemen", YE: "Yemen", YT: "Mayotte", ZA: "South Africa", ZM: "Zambia", ZW: "Zimbabwe", ZZ: "Unknown or Invalid Region" };
 
     var countriesArray = $.map(countries, function (value, key) {
         return {
@@ -1591,8 +1578,8 @@ function init_daterangepicker() {
     var optionSet1 = {
         startDate: moment().subtract(29, 'days'),
         endDate: moment(),
-        minDate: '01/01/2022',
-        maxDate: '12/31/2030',
+        minDate: '01/01/2012',
+        maxDate: '12/31/2015',
         dateLimit: {
             days: 60
         },
@@ -1666,8 +1653,8 @@ function init_daterangepicker_right() {
     var optionSet1 = {
         startDate: moment().subtract(29, 'days'),
         endDate: moment(),
-        minDate: '01/01/2022',
-        maxDate: '12/31/2030',
+        minDate: '01/01/2012',
+        maxDate: '12/31/2020',
         dateLimit: {
             days: 60
         },
@@ -2151,12 +2138,13 @@ function init_charts() {
 
 
 
+
+
+
     // Line chart
 
-    if ($('#lineChart').length) {
-
-
-
+    if ($('#lineChart').length)
+    {
 
         $.ajax({ type: "GET",
             url: "/admin/getgraficnavbar",
@@ -2166,45 +2154,38 @@ function init_charts() {
                 response = text
             }
         });
-
-
-
-
+        alert(response);
 
         var ctx = document.getElementById("lineChart");
         var lineChart = new Chart(ctx, {
             type: 'line',
-            data:
-                {
-                    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-                    datasets: [
-                        {
-                        label: "My First dataset",
-                        backgroundColor: "rgba(38, 185, 154, 0.31)",
-                        borderColor: "rgba(38, 185, 154, 0.7)",
-                        pointBorderColor: "rgba(38, 185, 154, 0.7)",
-                        pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
-                        pointHoverBackgroundColor: "#fff",
-                        pointHoverBorderColor: "rgba(220,220,220,1)",
-                        pointBorderWidth: 1,
-                        data: [response],
-
-
-                    },
-                        {
-                            label: "My Second dataset",
-                            backgroundColor: "rgba(3, 88, 106, 0.3)",
-                            borderColor: "rgba(3, 88, 106, 0.70)",
-                            pointBorderColor: "rgba(3, 88, 106, 0.70)",
-                            pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
-                            pointHoverBackgroundColor: "#fff",
-                            pointHoverBorderColor: "rgba(151,187,205,1)",
-                            pointBorderWidth: 1,
-                            data: [82, 23, 66, 9, 99, 4, 2]
-                        }]
-                },
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                datasets: [{
+                    label: "My First dataset",
+                    backgroundColor: "rgba(38, 185, 154, 0.31)",
+                    borderColor: "rgba(38, 185, 154, 0.7)",
+                    pointBorderColor: "rgba(38, 185, 154, 0.7)",
+                    pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointBorderWidth: 1,
+                    data: ['' + response + '']
+                }, {
+                    label: "My Second dataset",
+                    backgroundColor: "rgba(3, 88, 106, 0.3)",
+                    borderColor: "rgba(3, 88, 106, 0.70)",
+                    pointBorderColor: "rgba(3, 88, 106, 0.70)",
+                    pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+                    pointHoverBackgroundColor: "#fff",
+                    pointHoverBorderColor: "rgba(151,187,205,1)",
+                    pointBorderWidth: 1,
+                    data: [82, 23, 66, 9, 99, 4, 2]
+                }]
+            },
         });
         alert(response);
+
     }
 
     // Bar chart
@@ -2738,11 +2719,11 @@ function init_morris_charts() {
             hideHover: 'auto',
             lineColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
             data: [
-                { year: '2022', value: 20 },
-                { year: '2023', value: 10 },
-                { year: '2024', value: 5 },
-                { year: '2025', value: 5 },
-                { year: '2026', value: 20 }
+                { year: '2012', value: 20 },
+                { year: '2013', value: 10 },
+                { year: '2014', value: 5 },
+                { year: '2015', value: 5 },
+                { year: '2016', value: 20 }
             ],
             resize: true
         });
