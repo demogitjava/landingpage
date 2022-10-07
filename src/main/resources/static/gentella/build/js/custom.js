@@ -294,7 +294,7 @@ if (typeof NProgress != 'undefined') {
 
 
 //hover and retain popover when on popover content
-var originalLeave = $.fn.popover.Constructor.prototype.leave;
+var originalLeave = $.fn.popover.Constructor.prototype.leave, response;
 $.fn.popover.Constructor.prototype.leave = function (obj) {
     var self = obj instanceof this.constructor ?
         obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type);
@@ -2136,7 +2136,15 @@ function init_charts() {
     }
 
 
-
+    $.ajax({ type: "GET",
+        url: "/admin/getgraficnavbar",
+        async: false,
+        success : function(text)
+        {
+            response = text
+        }
+    });
+    alert(response);
 
 
 
@@ -2146,15 +2154,7 @@ function init_charts() {
     if ($('#lineChart').length)
     {
 
-        $.ajax({ type: "GET",
-            url: "/admin/getgraficnavbar",
-            async: false,
-            success : function(text)
-            {
-                response = text
-            }
-        });
-        alert(response);
+
 
         var ctx = document.getElementById("lineChart");
         var lineChart = new Chart(ctx, {
@@ -2171,7 +2171,7 @@ function init_charts() {
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
 
-                    data: ["" + response]
+                    data: [0,0,0,0,0,0,0,0,12,1,0,0]
                 }, {
                     label: "My Second dataset",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
@@ -2186,7 +2186,6 @@ function init_charts() {
             },
         });
         alert(response);
-
     }
 
     // Bar chart

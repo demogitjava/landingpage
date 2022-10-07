@@ -245,13 +245,6 @@
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
     </task>
-    <task id="LOCAL-00195" summary="edit it_body.html&#10;the image is now displayed&#10;&#10;controller and service for the page mobile_it&#10;is working">
-      <created>1663748720243</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1663748720243</updated>
-    </task>
     <task id="LOCAL-00196" summary=".">
       <created>1663749783800</created>
       <option name="number" value="00196" />
@@ -588,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665135010827</updated>
     </task>
-    <option name="localTasksCounter" value="244" />
+    <task id="LOCAL-00244" summary="edit custom.js &#10;lineChart">
+      <created>1665137212886</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1665137212887</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
