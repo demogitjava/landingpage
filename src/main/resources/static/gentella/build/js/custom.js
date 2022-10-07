@@ -2162,7 +2162,7 @@ function init_charts() {
             data: {
                 labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                 datasets: [{
-                    label: "My First dataset",
+                    label: "Connects over http",
                     backgroundColor: "rgba(38, 185, 154, 0.31)",
                     borderColor: "rgba(38, 185, 154, 0.7)",
                     pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -2170,7 +2170,8 @@ function init_charts() {
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
-                    data: ['' + response + '']
+
+                    data: ["" + response]
                 }, {
                     label: "My Second dataset",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
