@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit custom.js &#10;lineChart">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
     </list>
@@ -92,24 +92,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/Dokumente/useragent_csv/2022_07_29_useragent.csv&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "/root/Dokumente/useragent_csv/2022_07_29_useragent.csv",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.nodejs"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -244,13 +245,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00196" summary=".">
-      <created>1663749783800</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1663749783800</updated>
     </task>
     <task id="LOCAL-00197" summary="add layer &#10;with controller and service&#10;for mobile tr html page">
       <created>1663751133007</created>
@@ -588,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665137212887</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary=".">
+      <created>1665139195792</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1665139195796</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +628,6 @@
     <MESSAGE value="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title" />
     <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
-    <MESSAGE value="." />
     <MESSAGE value="edit iAdminController.java interface" />
     <MESSAGE value="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data" />
     <MESSAGE value="add data from admin controller &#10;to arr_data1 on client side of the browser" />
@@ -637,7 +637,8 @@
     <MESSAGE value="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph" />
     <MESSAGE value="edit function in Admin Controller &#10;to parse data to line chart" />
     <MESSAGE value="edit custom.js &#10;lineChart" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit custom.js &#10;lineChart" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

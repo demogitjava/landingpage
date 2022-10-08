@@ -2141,10 +2141,9 @@ function init_charts() {
         async: false,
         success : function(text)
         {
-            response = text
+            response = text;
         }
     });
-    alert(response);
 
 
 
@@ -2171,7 +2170,7 @@ function init_charts() {
                     pointHoverBorderColor: "rgba(220,220,220,1)",
                     pointBorderWidth: 1,
 
-                    data: [0,0,0,0,0,0,0,0,12,1,0,0]
+                    data: response[0]
                 }, {
                     label: "My Second dataset",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
