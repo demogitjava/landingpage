@@ -2172,7 +2172,7 @@ function init_charts() {
 
                     data: response[0]
                 }, {
-                    label: "My Second dataset",
+                    label: "connects europe not de",
                     backgroundColor: "rgba(3, 88, 106, 0.3)",
                     borderColor: "rgba(3, 88, 106, 0.70)",
                     pointBorderColor: "rgba(3, 88, 106, 0.70)",
@@ -2180,7 +2180,7 @@ function init_charts() {
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(151,187,205,1)",
                     pointBorderWidth: 1,
-                    data: [82, 23, 66, 9, 99, 4, 2]
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 }]
             },
         });
