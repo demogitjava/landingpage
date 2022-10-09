@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit custom.js">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_mobile-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es/es_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es/es_mobile-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr/fr_mobile-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it/it_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it/it_mobile-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_mobile-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr/tr_mobile-header.html" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add meta description">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,13 +244,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00199" summary="add wiki service">
-      <created>1663758435874</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1663758435875</updated>
     </task>
     <task id="LOCAL-00200" summary="add function in admin controller&#10;for current month and year &#10;&#10;and list all connect as list for dashboard">
       <created>1663759913935</created>
@@ -599,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665217567047</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="add meta description">
+      <created>1665302346615</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1665302346615</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +612,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add interface&#10;i_jpa_useragent&#10;for query connects of useragent" />
     <MESSAGE value="edit query to return all &#10;connects of the month &#10;&#10;by currentdate" />
     <MESSAGE value="add value in admin.html&#10;on navbar &#10;the connets of the month" />
     <MESSAGE value="edit admin.html&#10;add connects for year" />
@@ -648,7 +636,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit custom.js&#10;&#10;for response from jquery &#10;to linechart" />
     <MESSAGE value="edit custom.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit custom.js" />
+    <MESSAGE value="add meta description" />
+    <option name="LAST_COMMIT_MESSAGE" value="add meta description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

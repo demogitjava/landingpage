@@ -2184,7 +2184,7 @@ function init_charts() {
                 }]
             },
         });
-        alert(response);
+
     }
 
     // Bar chart
