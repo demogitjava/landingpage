@@ -165,8 +165,8 @@ public class Admin_Controller implements iAdminController
         } else {
             connectsyear = admin_service.getconnectdatayear();
 
-            //    year month day value
-            //[gd(2012, 1,   1), 17],
+            //month day value
+            //[1, 1, 23,  1), 17],
 
             // integer size list
             int indexlist = connectsyear.size();
