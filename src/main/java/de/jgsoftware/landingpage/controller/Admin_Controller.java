@@ -55,6 +55,13 @@ public class Admin_Controller implements iAdminController
 
 
 
+    /*
+
+        with th:include
+        default loading html file
+        is
+        /dashboard/dashboard1.html
+     */
 
     @Override
     public ModelAndView admin()
@@ -127,6 +134,11 @@ public class Admin_Controller implements iAdminController
         mv.addObject("javascriptengine", admin_service.startjavasciptengine());
 
 
+        String dashboardname = "fragments/dashboard1.html";
+        mv.addObject("dashboardname", dashboardname);
+
+        String idashboard = "dashboard1";
+        mv.addObject("iddashboard", idashboard);
 
 
         return mv;

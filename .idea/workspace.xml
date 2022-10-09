@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit loading html from &#10;Thyemleaf &#10;with tag th:include">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard/dashboard1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard/dashboard1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,8 +169,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="nginx:latest" />
+          <option name="containerName" value="nginx" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="443" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="443" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.de.html" />
       </list>
@@ -246,13 +270,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00205" summary="add a simple panel on wiki.html">
-      <created>1664191461379</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1664191461379</updated>
     </task>
     <task id="LOCAL-00206" summary="edit wiki.html">
       <created>1664197024008</created>
@@ -590,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665318177161</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="edit loading html from &#10;Thyemleaf &#10;with tag th:include">
+      <created>1665319921998</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1665319921999</updated>
+    </task>
+    <option name="localTasksCounter" value="255" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +638,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit query function in&#10;i_jpa_useragent &#10;for current month and year" />
     <MESSAGE value="load javascript engine &#10;over the service layer" />
     <MESSAGE value="edit network for container&#10;to &#10;192.168.178.0" />
     <MESSAGE value="convert custom.js&#10;to iso-8859-1" />
@@ -639,7 +662,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit keyword for de &#10;edit grafic size in admin.html" />
     <MESSAGE value="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment" />
+    <MESSAGE value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,7 +675,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>137</line>
+          <line>149</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
