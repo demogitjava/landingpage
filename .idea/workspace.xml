@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit loading html from &#10;Thyemleaf &#10;with tag th:include">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,13 +268,6 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
-    </task>
-    <task id="LOCAL-00206" summary="edit wiki.html">
-      <created>1664197024008</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1664197024008</updated>
     </task>
     <task id="LOCAL-00207" summary="edit wiki.html">
       <created>1664197889839</created>
@@ -614,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665319921999</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary=".">
+      <created>1665327024767</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1665327024769</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,11 +657,11 @@
     <MESSAGE value="add meta description" />
     <MESSAGE value="delete alert message&#10; alert(response);&#10; &#10; in line 2187&#10;data successfully sent" />
     <MESSAGE value="fix data&#10;int line 261&#10;&#10; case 6:&#10;                    {&#10;                        String stobcount = String.valueOf(obcount);&#10;                        Integer intobcount = Integer.valueOf(stobcount);&#10;&#10;                        Integer intlistvalue = m06;&#10;                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);&#10;&#10;                        m06 = intobcount;&#10;                        break;&#10;                    }" />
-    <MESSAGE value="." />
     <MESSAGE value="edit keyword for de &#10;edit grafic size in admin.html" />
     <MESSAGE value="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment" />
     <MESSAGE value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

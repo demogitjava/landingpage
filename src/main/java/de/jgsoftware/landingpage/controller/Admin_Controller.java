@@ -138,7 +138,7 @@ public class Admin_Controller implements iAdminController
         mv.addObject("dashboardname", dashboardname);
 
         String idashboard = "dashboard1";
-        mv.addObject("iddashboard", idashboard);
+        mv.addObject("idashboard", idashboard);
 
 
         return mv;
