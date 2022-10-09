@@ -262,6 +262,10 @@ public class Admin_Controller implements iAdminController
                     {
                         String stobcount = String.valueOf(obcount);
                         Integer intobcount = Integer.valueOf(stobcount);
+
+                        Integer intlistvalue = m06;
+                        admin_service.addvaluegrafyear(intmonth, intobcount, intlistvalue);
+
                         m06 = intobcount;
                         break;
                     }
