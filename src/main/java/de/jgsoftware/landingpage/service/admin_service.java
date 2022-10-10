@@ -16,6 +16,8 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
 
+import static de.jgsoftware.landingpage.iDemoLandingPage.st_timezones;
+
 @Service
 public class admin_service implements i_admin_service
 {
@@ -58,7 +60,7 @@ public class admin_service implements i_admin_service
     {
 
 
-        ZonedDateTime ztime = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+        ZonedDateTime ztime = ZonedDateTime.now(ZoneId.of(st_timezones));
         int month = ztime.getMonthValue();
 
         return month;
