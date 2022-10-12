@@ -3,14 +3,14 @@
   <component name="RemoteTargetsManager">
     <option name="projectDefaultTargetUuid" value="6dc3730b-f357-4d27-b555-6729f3b4893e" />
     <targets>
-      <target name="imglandingpage:latest" type="docker" uuid="6dc3730b-f357-4d27-b555-6729f3b4893e">
+      <target name="jgsoftwares:latest" type="docker" uuid="6dc3730b-f357-4d27-b555-6729f3b4893e">
         <config>
           <option name="targetPlatform">
             <TargetPlatform />
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="imglandingpage:latest" />
+              <option name="builtImageTag" value="sha256:883369352572fa46ef266b3ca32c30b776f1da1d10e6248926f30dd0405f2afc" />
               <option name="dockerFile" value="Dockerfile" />
             </BuildImageConfig>
           </option>
@@ -41,6 +41,24 @@
                 </option>
               </VolumeState>
             </option>
+            <option name="javaVersionString" value="17.0.2" />
+          </config>
+        </ContributedStateBase>
+      </target>
+      <target name="de_landingpage" type="docker-compose" uuid="adeda919-ec79-4fd4-aab0-3bb142ebf491">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="configurationFiles">
+            <list>
+              <option value="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" />
+            </list>
+          </option>
+          <option name="serviceName" value="de_landingpage" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
             <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>

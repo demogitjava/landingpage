@@ -1,14 +1,9 @@
 version: '3'
-
-
-
-
 services:
 
-
   de_landingpage:
-    image: imglandingpage:latest
-    container_name: de_landingapge
+    image: jgsoftwares/jgsoftwares:linuxgraalvmce
+    container_name: de_landingpage
     build:
       context: ./
       dockerfile: Dockerfile
@@ -25,8 +20,3 @@ services:
 networks:
   192.168.178.0:
     external: true
-
-
-
-
-

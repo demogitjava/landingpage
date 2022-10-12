@@ -1,6 +1,4 @@
-FROM imglandingpage:latest
-#FROM jgsoftwares/jgsoftwares:linuxgraalvmce
-
+FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 #hostname
 ENV HOSTNAME demogitjava
 

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add static variable for timezones">
-      <change afterPath="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,11 +106,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/docker-compose_landingpage_network192.168.178.0.yml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsDialog.application.dockerMachine&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -149,65 +153,60 @@
         <option value="Application" />
         <option value="MavenRunConfiguration" />
         <option value="SpringBootApplicationConfigurationType" />
-        <option value="docker-deploy" />
       </set>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
-    <configuration name="en_landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" />
-      <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$/" />
-      <target name="bing_en_landingpage:latest" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fr_landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" />
-      <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$/" />
-      <target name="bing_fr_landingapge:latest" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$/" />
-      <target name="imglandingpage:latest" />
+      <target name="jgsoftwares:latest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="bing_en_landingpage:latest" />
-          <option name="containerName" value="en_landingpage" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="80" />
-                <option name="hostIp" value="192.168.178.5" />
-                <option name="hostPort" value="80" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
+          <option name="imageTag" value="img_landingpage:latest" />
+          <option name="attachToContainerNeeded" value="true" />
+          <option name="containerName" value="de_landingpage" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="en_landingpage:latest" />
-          <option name="containerName" value="en_landingpage" />
+          <option name="imageTag" value="sha256:1ea0293b31ba63db96e69170f36f1080d4fd88272b25e5ca3e5676b1be93ced0" />
+          <option name="containerName" value="de_landingpage" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="commandLineOptions" value="--build" />
+          <option name="services">
+            <list>
+              <option value="de_landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose_landingpage_network192.168.178.0.yml" />
+          <option name="upDetach" value="false" />
         </settings>
       </deployment>
       <method v="2" />
@@ -215,73 +214,26 @@
     <configuration name="docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="docker-compose_landingpage_network192.168.178.0.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose_onlynetwork.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose_onlynetwork.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose_onlynetwork.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="landingpage" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose_onlynetwork.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose_onlynetwork.yml.networks: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="networks" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose_onlynetwork.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="europa_docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="europa_docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Unnamed" />
       <item itemvalue="Docker.Docker Image (1)" />
-      <item itemvalue="Docker.docker-compose_onlynetwork.yml.landingpage: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose_onlynetwork.yml: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose_onlynetwork.yml.networks: Compose Deployment" />
-      <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
-      <item itemvalue="Spring Boot.en_landingpage" />
-      <item itemvalue="Spring Boot.fr_landingpage" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose_onlynetwork.yml.networks: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose_onlynetwork.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose_onlynetwork.yml.landingpage: Compose Deployment" />
-        <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image (1)" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
   </component>
@@ -355,6 +307,12 @@
       <workItem from="1660047351822" duration="1911000" />
       <workItem from="1660049636944" duration="1364000" />
       <workItem from="1660051200626" duration="9136000" />
+      <workItem from="1665559863532" duration="1510000" />
+      <workItem from="1665571146978" duration="71000" />
+      <workItem from="1665571234644" duration="3027000" />
+      <workItem from="1665574293998" duration="2953000" />
+      <workItem from="1665577267882" duration="1389000" />
+      <workItem from="1665579817054" duration="1395000" />
     </task>
     <task id="LOCAL-00209" summary="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg">
       <created>1664274469142</created>
@@ -706,7 +664,10 @@
     <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.shell:spring-shell-standard" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="nginx.conf" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
