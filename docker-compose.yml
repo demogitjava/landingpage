@@ -4,9 +4,6 @@ services:
   de_landingpage:
     image: de_landingpage
     container_name: de_landingpage
-    build:
-      context: .
-      dockerfile: Dockerfile
     ports:
       - "217.160.255.254:80:80"
     networks:

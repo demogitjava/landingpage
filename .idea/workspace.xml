@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/Dockerfile1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/landingpage.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.6" />
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -111,7 +111,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/docker-compose.yml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -119,7 +119,8 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -161,21 +162,47 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" editBeforeRun="true" singleton="false">
-      <option name="ACTIVE_PROFILES" />
-      <option name="DEBUG_MODE" value="true" />
-      <option name="ENABLE_JMX_AGENT" value="false" />
-      <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
-      <option name="HIDE_BANNER" value="true" />
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" singleton="true">
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$/../" />
       <target name="de_landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="true" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="true" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="de_landingpage:latest" />
+          <option name="containerName" value="de_landingpage" />
+          <option name="commandLineOptions" value="-p 217.160.255.254:80:80 --dns=8.8.8.8  --dns=8.8.4.4   --dns-search=demogitjava.de --name=landingpage --hostname=demogitjava.de --add-host=demogitjava.de:217.160.255.254 --network=192.168.178.0 " />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose_landingpage_network192.168.178.0.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -186,30 +213,34 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <configuration name="docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="buildKitEnabledForCompose" value="true" />
+          <option name="enableCompatibilityMode" value="true" />
           <option name="envFilePath" value="" />
-          <option name="commandLineOptions" value="--build" />
           <option name="services">
             <list>
               <option value="de_landingpage" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
-          <option name="upDetach" value="false" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -299,14 +330,13 @@
       <workItem from="1665754619291" duration="1262000" />
       <workItem from="1665757326952" duration="2391000" />
       <workItem from="1665759720546" duration="2965000" />
-      <workItem from="1665821457480" duration="49000" />
-    </task>
-    <task id="LOCAL-00211" summary="edit wiki.html&#10;add screenshots for mobile and desktop">
-      <created>1664318396355</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1664318396355</updated>
+      <workItem from="1665821457480" duration="653000" />
+      <workItem from="1665822114240" duration="3749000" />
+      <workItem from="1665826524202" duration="1852000" />
+      <workItem from="1665829585052" duration="741000" />
+      <workItem from="1665830328394" duration="1137000" />
+      <workItem from="1665831773686" duration="104000" />
+      <workItem from="1665831879414" duration="403000" />
     </task>
     <task id="LOCAL-00212" summary="edit functions in admin_service &#10;&#10;getMonth &#10;and getYear&#10;&#10;to  ZonedDateTime&#10;ztime.getMonthValue();&#10;ztime.getYear();&#10;&#10;it now return the correct month and year">
       <created>1664321459825</created>
@@ -644,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665821147776</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary=".">
+      <created>1665821520092</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1665821520094</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
