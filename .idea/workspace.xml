@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add static variable for timezones">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose_landingpage_network192.168.178.0.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +21,11 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="$USER_HOME$/.jdks/graalvm-ce-11/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:35853,suspend=y,server=n -Ddebug -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:/var/lib/snapd/snap/intellij-idea-ultimate/386/plugins/java/lib/rt/debugger-agent.jar -Dfile.encoding=ISO-8859-1 -classpath /root/IdeaProjects/landingpage/target/classes:/root/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.1.5.RELEASE/spring-boot-starter-data-jpa-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.1.5.RELEASE/spring-boot-starter-aop-2.1.5.RELEASE.jar:/root/.m2/repository/org/aspectj/aspectjweaver/1.9.4/aspectjweaver-1.9.4.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.1.5.RELEASE/spring-boot-starter-jdbc-2.1.5.RELEASE.jar:/root/.m2/repository/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar:/root/.m2/repository/org/springframework/spring-jdbc/5.1.7.RELEASE/spring-jdbc-5.1.7.RELEASE.jar:/root/.m2/repository/javax/transaction/javax.transaction-api/1.3/javax.transaction-api-1.3.jar:/root/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/root/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/root/.m2/repository/org/hibernate/hibernate-core/5.3.10.Final/hibernate-core-5.3.10.Final.jar:/root/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/root/.m2/repository/org/javassist/javassist/3.23.2-GA/javassist-3.23.2-GA.jar:/root/.m2/repository/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.jar:/root/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/root/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/root/.m2/repository/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar:/root/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/root/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar:/root/.m2/repository/org/springframework/spring-aspects/5.1.7.RELEASE/spring-aspects-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.1.5.RELEASE/spring-boot-starter-security-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter/2.1.5.RELEASE/spring-boot-starter-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.1.5.RELEASE/spring-boot-starter-logging-2.1.5.RELEASE.jar:/root/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/root/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar:/root/.m2/repository/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar:/root/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/root/.m2/repository/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/security/spring-security-config/5.1.5.RELEASE/spring-security-config-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-expression/5.1.7.RELEASE/spring-expression-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.5.RELEASE/spring-boot-starter-thymeleaf-2.1.5.RELEASE.jar:/root/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar:/root/.m2/repository/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar:/root/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/root/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/root/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.1.5.RELEASE/spring-boot-starter-web-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.1.5.RELEASE/spring-boot-starter-json-2.1.5.RELEASE.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.8/jackson-core-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.8/jackson-datatype-jdk8-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.8/jackson-datatype-jsr310-2.9.8.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.8/jackson-module-parameter-names-2.9.8.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.1.5.RELEASE/spring-boot-starter-tomcat-2.1.5.RELEASE.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.19/tomcat-embed-el-9.0.19.jar:/root/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.19/tomcat-embed-websocket-9.0.19.jar:/root/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.16.Final/hibernate-validator-6.0.16.Final.jar:/root/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/root/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/spring-webmvc/5.1.7.RELEASE/spring-webmvc-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-devtools/2.1.5.RELEASE/spring-boot-devtools-2.1.5.RELEASE.jar:/root/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.1.5.RELEASE/spring-boot-starter-test-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test/2.1.5.RELEASE/spring-boot-test-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.1.5.RELEASE/spring-boot-test-autoconfigure-2.1.5.RELEASE.jar:/root/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/root/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/root/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/root/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar:/root/.m2/repository/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar:/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.9.12/byte-buddy-agent-1.9.12.jar:/root/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/root/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/root/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/root/.m2/repository/org/springframework/spring-core/5.1.7.RELEASE/spring-core-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/spring-jcl/5.1.7.RELEASE/spring-jcl-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar:/root/.m2/repository/org/xmlunit/xmlunit-core/2.6.2/xmlunit-core-2.6.2.jar:/root/.m2/repository/org/springframework/security/spring-security-test/5.1.5.RELEASE/spring-security-test-5.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.jar:/root/.m2/repository/com/h2database/h2/1.4.200/h2-1.4.200.jar:/root/.m2/repository/org/jsoup/jsoup/1.14.3/jsoup-1.14.3.jar:/root/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/root/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot/2.1.5.RELEASE/spring-boot-2.1.5.RELEASE.jar:/root/.m2/repository/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-mail/2.1.5.RELEASE/spring-boot-starter-mail-2.1.5.RELEASE.jar:/root/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/root/.m2/repository/org/springframework/spring-context-support/5.1.7.RELEASE/spring-context-support-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/shell/spring-shell-standard/2.0.1.RELEASE/spring-shell-standard-2.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/shell/spring-shell-core/2.0.1.RELEASE/spring-shell-core-2.0.1.RELEASE.jar:/root/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.1.5.RELEASE/spring-boot-starter-validation-2.1.5.RELEASE.jar:/root/.m2/repository/org/jline/jline/3.4.0/jline-3.4.0.jar:/root/.m2/repository/org/jline/jline-terminal-jna/3.4.0/jline-terminal-jna-3.4.0.jar:/root/.m2/repository/net/java/dev/jna/jna/4.5.2/jna-4.5.2.jar:/root/.m2/repository/org/jline/jline-terminal/3.4.0/jline-terminal-3.4.0.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar:/root/.m2/repository/com/github/ua-parser/uap-java/1.5.3/uap-java-1.5.3.jar:/root/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar:/root/.m2/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/root/.m2/repository/org/springframework/data/spring-data-jpa/2.1.8.RELEASE/spring-data-jpa-2.1.8.RELEASE.jar:/root/.m2/repository/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE.jar:/root/.m2/repository/org/springframework/spring-orm/5.1.7.RELEASE/spring-orm-5.1.7.RELEASE.jar:/root/.m2/repository/org/springframework/spring-tx/5.1.7.RELEASE/spring-tx-5.1.7.RELEASE.jar:/root/.m2/repository/org/aspectj/aspectjrt/1.9.4/aspectjrt-1.9.4.jar:/root/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/var/lib/snapd/snap/intellij-idea-ultimate/386/lib/idea_rt.jar de.jgsoftware.landingpage.iDemoLandingPage " />
+    </ExecCommand>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -81,7 +87,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.6-bin/apache-maven-3.8.6" />
+        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.6" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -94,36 +100,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/docker-compose_landingpage_network192.168.178.0.yml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsDialog.application.dockerMachine&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/docker-compose.yml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/tr" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates/it" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/bootstrap/css" />
@@ -157,36 +163,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
-    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" editBeforeRun="true" singleton="false">
       <option name="ACTIVE_PROFILES" />
+      <option name="DEBUG_MODE" value="true" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
+      <option name="HIDE_BANNER" value="true" />
       <module name="landingpage" />
-      <target name="jgsoftwares:latest" />
+      <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$/../" />
+      <target name="de_landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="img_landingpage:latest" />
-          <option name="attachToContainerNeeded" value="true" />
-          <option name="containerName" value="de_landingpage" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="sha256:1ea0293b31ba63db96e69170f36f1080d4fd88272b25e5ca3e5676b1be93ced0" />
-          <option name="containerName" value="de_landingpage" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="containerName" value="" />
@@ -195,7 +187,16 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
@@ -205,35 +206,24 @@
               <option value="de_landingpage" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docker-compose_landingpage_network192.168.178.0.yml" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
           <option name="upDetach" value="false" />
         </settings>
       </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose_landingpage_network192.168.178.0.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="spring-boot:run" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Docker.Unnamed" />
-      <item itemvalue="Docker.Docker Image (1)" />
-      <item itemvalue="Docker.Docker Image" />
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.de_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose_landingpage_network192.168.178.0.yml: Compose Deployment" />
-        <item itemvalue="Docker.Docker Image (1)" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -313,13 +303,16 @@
       <workItem from="1665574293998" duration="2953000" />
       <workItem from="1665577267882" duration="1389000" />
       <workItem from="1665579817054" duration="1395000" />
-    </task>
-    <task id="LOCAL-00209" summary="edit bootstrap.css to boostrap.min.css&#10;edit import Screenshot to jpeg">
-      <created>1664274469142</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1664274469142</updated>
+      <workItem from="1665680507896" duration="2267000" />
+      <workItem from="1665735405811" duration="6764000" />
+      <workItem from="1665745045899" duration="188000" />
+      <workItem from="1665745334750" duration="3811000" />
+      <workItem from="1665749160979" duration="62000" />
+      <workItem from="1665750067275" duration="3445000" />
+      <workItem from="1665753586606" duration="687000" />
+      <workItem from="1665754619291" duration="1262000" />
+      <workItem from="1665757326952" duration="2391000" />
+      <workItem from="1665759720546" duration="2665000" />
     </task>
     <task id="LOCAL-00210" summary="add 2 Screenshots from googel search console &#10;&#10;speedtest for templates">
       <created>1664276069729</created>
@@ -657,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665388844487</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary=".">
+      <created>1665737950729</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1665737950729</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,9 +707,9 @@
     <MESSAGE value="edit keyword for de &#10;edit grafic size in admin.html" />
     <MESSAGE value="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment" />
     <MESSAGE value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
-    <MESSAGE value="." />
     <MESSAGE value="add static variable for timezones" />
-    <option name="LAST_COMMIT_MESSAGE" value="add static variable for timezones" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

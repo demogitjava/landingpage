@@ -2,7 +2,7 @@ version: '3'
 services:
 
   de_landingpage:
-    image: jgsoftwares/jgsoftwares:linuxgraalvmce
+    image: img_landingpage
     container_name: de_landingpage
     build:
       context: .
