@@ -55,7 +55,6 @@
               <option value="$PROJECT_DIR$/docker-compose.yml" />
             </list>
           </option>
-          <option name="serviceName" value="de_landingpage" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
