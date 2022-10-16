@@ -7,7 +7,7 @@
     <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage/docker-compose.yml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/webshop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -414,14 +414,8 @@
       <workItem from="1665912705860" duration="2155000" />
       <workItem from="1665915577454" duration="922000" />
       <workItem from="1665917977763" duration="2628000" />
-      <workItem from="1665921341690" duration="4005000" />
-    </task>
-    <task id="LOCAL-00215" summary="edit query to return all &#10;connects of the month &#10;&#10;by currentdate">
-      <created>1664463685552</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1664463685553</updated>
+      <workItem from="1665921341690" duration="4305000" />
+      <workItem from="1665925670514" duration="2564000" />
     </task>
     <task id="LOCAL-00216" summary="add value in admin.html&#10;on navbar &#10;the connets of the month">
       <created>1664464425400</created>
@@ -759,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665924918282</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary=".">
+      <created>1665925391768</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1665925391768</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
