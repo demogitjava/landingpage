@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
-    <option name="projectDefaultTargetUuid" value="adeda919-ec79-4fd4-aab0-3bb142ebf491" />
+    <option name="projectDefaultTargetUuid" value="6dc3730b-f357-4d27-b555-6729f3b4893e" />
     <targets>
       <target name="jgsoftwares:latest" type="docker" uuid="6dc3730b-f357-4d27-b555-6729f3b4893e">
         <config>
@@ -10,8 +10,9 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="536b799114164ad611939a08f30ff7e6c60e366b458db5c710d5256b55e98ae6" />
-              <option name="dockerFile" value="Dockerfile" />
+              <option name="builtImageTag" value="sha256:bb2b519aa8567ccb678533cafc5ca226a60bbcf320516469452d5ae86ed0eb4e" />
+              <option name="dockerFile" value="docker-compose" />
+              <option name="rebuildEveryTime" value="false" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
@@ -41,6 +42,7 @@
                 </option>
               </VolumeState>
             </option>
+            <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
       </target>
