@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker-compose.yml">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
@@ -232,6 +232,7 @@
         <settings>
           <option name="imageTag" value="jgsoftwares/jgsoftwares:linuxgraalvmce" />
           <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
           <option name="containerName" value="de_landingpage" />
           <option name="portBindings">
             <list>
@@ -413,14 +414,7 @@
       <workItem from="1665912705860" duration="2155000" />
       <workItem from="1665915577454" duration="922000" />
       <workItem from="1665917977763" duration="2628000" />
-      <workItem from="1665921341690" duration="3445000" />
-    </task>
-    <task id="LOCAL-00214" summary="add interface&#10;i_jpa_useragent&#10;for query connects of useragent">
-      <created>1664454979665</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
-      <option name="project" value="LOCAL" />
-      <updated>1664454979665</updated>
+      <workItem from="1665921341690" duration="4005000" />
     </task>
     <task id="LOCAL-00215" summary="edit query to return all &#10;connects of the month &#10;&#10;by currentdate">
       <created>1664463685552</created>
@@ -758,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665922175519</updated>
     </task>
-    <option name="localTasksCounter" value="263" />
+    <task id="LOCAL-00263" summary=".">
+      <created>1665924918282</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1665924918282</updated>
+    </task>
+    <option name="localTasksCounter" value="264" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -807,10 +808,10 @@
     <MESSAGE value="load html dashbaord1 &#10;form ebedded html folder&#10;&#10;/dashboard/dashboard1.html&#10;over id dashboard1 as &#10;fragment" />
     <MESSAGE value="edit loading html from &#10;Thyemleaf &#10;with tag th:include" />
     <MESSAGE value="add static variable for timezones" />
-    <MESSAGE value="." />
     <MESSAGE value="edit docker compose" />
     <MESSAGE value="edit docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker-compose.yml" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

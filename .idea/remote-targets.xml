@@ -10,14 +10,14 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:bb2b519aa8567ccb678533cafc5ca226a60bbcf320516469452d5ae86ed0eb4e" />
+              <option name="builtImageTag" value="sha256:123fc09f7e69b2947bb649aaca066b21135d27716184b855ce8ad23d2c7b903e" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 217.160.255.254:80:80&#10;--dns=192.168.178.5&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;&#10;--dns-search=demogitjava.de&#10;--name=landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;--network=192.168.178.0&#10;" />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80&#10;--dns=192.168.178.2&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;&#10;--dns-search=demogitjava.de&#10;--name=landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;--network=192.168.178.0&#10;" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
