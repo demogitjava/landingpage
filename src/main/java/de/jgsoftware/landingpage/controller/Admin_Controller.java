@@ -18,6 +18,14 @@ public class Admin_Controller implements iAdminController
 {
 
 
+    /*
+        load dashboard
+        site over string
+
+     */
+    String dashboardhtml;
+
+
     java.util.Locale locale;
     ModelAndView mv;
 
@@ -137,8 +145,16 @@ public class Admin_Controller implements iAdminController
         String dashboardname = "fragments/dashboard1.html";
         mv.addObject("dashboardname", dashboardname);
 
-        String idashboard = "dashboard1";
-        mv.addObject("idashboard", idashboard);
+
+        /*
+                public stirng
+                for loading html
+                dashboard site
+                in folder
+                resources/templates/dashboard
+         */
+        dashboardhtml = "dashboard/dashboard1";
+        mv.addObject("idashboard", dashboardhtml);
 
 
         return mv;

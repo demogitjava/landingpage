@@ -300,7 +300,15 @@
             </div>
             <!-- /top tiles -->
 
-            <div th:include="dashboard/dashboard1" id="dashbaord1"></div>
+
+            <!--
+                    load dashboard html
+                    template by over string
+
+                    by default
+                    dashboard/dashboard1
+            -->
+            <div th:include="${idashboard}" id="dashbaord1"></div>
         </div>
         <!-- /page content -->
 
