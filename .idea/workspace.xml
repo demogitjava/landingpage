@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +121,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/en_landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -130,10 +135,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/tr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -172,7 +177,6 @@
       <option name="ACTIVE_PROFILES" value="dev" />
       <option name="ENABLE_JMX_AGENT" value="false" />
       <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
-      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$" />
       <target name="jgsoftwares:latest" />
@@ -432,14 +436,10 @@
       <workItem from="1665917977763" duration="2628000" />
       <workItem from="1665921341690" duration="4305000" />
       <workItem from="1665925670514" duration="2578000" />
-      <workItem from="1665938825862" duration="3887000" />
-    </task>
-    <task id="LOCAL-00218" summary="parse  logged in user&#10;to dashboard&#10;&#10;over i_admin_service">
-      <created>1664480379521</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1664480379521</updated>
+      <workItem from="1665938825862" duration="4774000" />
+      <workItem from="1665943617178" duration="3635000" />
+      <workItem from="1665993332344" duration="489000" />
+      <workItem from="1665994781717" duration="394000" />
     </task>
     <task id="LOCAL-00219" summary=".">
       <created>1664616764629</created>
@@ -777,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665940848033</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1">
+      <created>1665942874350</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1665942874351</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -804,7 +811,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add function for gentelella-master index dashboard&#10;list query" />
     <MESSAGE value="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title" />
     <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
@@ -829,7 +835,8 @@
     <MESSAGE value="edit docker compose" />
     <MESSAGE value="edit docker-compose.yml" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
+    <option name="LAST_COMMIT_MESSAGE" value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,4 +1,4 @@
-FROM de_landingpage:latest
+FROM jgsoftwares/jgsoftwares:linuxgraalvmce
 #hostname
 ENV HOSTNAME demogitjava
 

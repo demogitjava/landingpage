@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:12f8ba2e40ba70d435aadf9f6b6a3f92dc783adda186129d7c59977357600f2c" />
+              <option name="builtImageTag" value="sha256:59bfc8d6a895302a9b8513f4db3785c77f04a7aef4b7d9209790d1fd2035a0fc" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />
             </BuildImageConfig>
