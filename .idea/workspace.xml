@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit screenshot image">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
+    "last_opened_file_path": "/root/IdeaProjects/webshop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,7 +125,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerMachine",
+    "settings.editor.selected.configurable": "reference.settings.deploy.options",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280"
   }
 }]]></component>
@@ -439,14 +435,8 @@
       <workItem from="1665938825862" duration="4774000" />
       <workItem from="1665943617178" duration="3635000" />
       <workItem from="1665993332344" duration="489000" />
-      <workItem from="1665994781717" duration="394000" />
-    </task>
-    <task id="LOCAL-00219" summary=".">
-      <created>1664616764629</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1664616764629</updated>
+      <workItem from="1665994781717" duration="4152000" />
+      <workItem from="1666159980272" duration="979000" />
     </task>
     <task id="LOCAL-00220" summary="edit query function in&#10;i_jpa_useragent &#10;for current month and year">
       <created>1664623419411</created>
@@ -784,7 +774,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665942874351</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="edit screenshot image">
+      <created>1665995398741</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1665995398741</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -811,7 +808,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title" />
     <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
     <MESSAGE value="edit iAdminController.java interface" />
@@ -836,7 +832,8 @@
     <MESSAGE value="edit docker-compose.yml" />
     <MESSAGE value="." />
     <MESSAGE value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
-    <option name="LAST_COMMIT_MESSAGE" value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
+    <MESSAGE value="edit screenshot image" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit screenshot image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
