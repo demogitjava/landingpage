@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit screenshot image">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/blue_image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/es.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/es.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fr.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tr.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tr.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,11 +119,10 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/webshop",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -436,14 +441,10 @@
       <workItem from="1665943617178" duration="3635000" />
       <workItem from="1665993332344" duration="489000" />
       <workItem from="1665994781717" duration="4152000" />
-      <workItem from="1666159980272" duration="979000" />
-    </task>
-    <task id="LOCAL-00220" summary="edit query function in&#10;i_jpa_useragent &#10;for current month and year">
-      <created>1664623419411</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1664623419411</updated>
+      <workItem from="1666159980272" duration="3935000" />
+      <workItem from="1666166756888" duration="246000" />
+      <workItem from="1666167017756" duration="159000" />
+      <workItem from="1666167190052" duration="2679000" />
     </task>
     <task id="LOCAL-00221" summary=".">
       <created>1664627832946</created>
@@ -781,7 +782,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665995398741</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element">
+      <created>1666161160783</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1666161160784</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +816,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add&#10;   @GetMapping(&quot;/getgraficnavbar&quot;)&#10;   @ResponseBody&#10;   List getcondatayear();&#10;   &#10;   for fetch response for jquery list" />
     <MESSAGE value="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)" />
     <MESSAGE value="edit iAdminController.java interface" />
     <MESSAGE value="add ajax function for url &#10;/admin/getgraficnavbar&#10;&#10;to get data" />
@@ -833,7 +840,8 @@
     <MESSAGE value="." />
     <MESSAGE value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
     <MESSAGE value="edit screenshot image" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit screenshot image" />
+    <MESSAGE value="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
