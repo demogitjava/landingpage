@@ -10,14 +10,15 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:59bfc8d6a895302a9b8513f4db3785c77f04a7aef4b7d9209790d1fd2035a0fc" />
+              <option name="builtImageTag" value="sha256:a51e2b9aee45cd164b0d885a031770d3c66ce1b9b5222b90ef9ec2322261ae3f" />
+              <option name="contextFolder" value="../../IdeaProjects" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p  217.160.255.254:80:80&#10;--dns=192.168.178.2&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;&#10;--dns-search=demogitjava.de&#10;--name=landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;--network=192.168.178.0" />
+              <option name="runCliOptions" value="-p&#10;217.160.255.254:80:80&#10;--dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10;--dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.de&#10;--add-host=demogitjava.de:217.160.255.254&#10;--network=192.168.178.0" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
