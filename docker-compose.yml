@@ -2,7 +2,7 @@ version: '3'
 services:
 
   de_landingpage:
-    image: de_landingpage
+    image: de_landingpage:latest
     container_name: de_landingpage
     build:
       context: ./

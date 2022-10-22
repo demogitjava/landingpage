@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit wiki.html&#10;edit start docker command for setup a &#10;container">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +116,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/webshop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -296,11 +299,27 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment (1)" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="enableCompatibilityMode" value="true" />
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="de_landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+          <option name="upDetach" value="false" />
         </settings>
       </deployment>
       <method v="2" />
@@ -323,6 +342,7 @@
       <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.de_landingpage docker compose" />
       <item itemvalue="Docker.docker-compose.yml.en_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
       <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.Docker Image (1)" />
       <item itemvalue="Docker.Docker Image" />
@@ -331,6 +351,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Docker Image (2)" />
         <item itemvalue="Docker.Docker Image (1)" />
@@ -454,14 +475,7 @@
       <workItem from="1666167190052" duration="6599000" />
       <workItem from="1666265815156" duration="2427000" />
       <workItem from="1666272150058" duration="11885000" />
-      <workItem from="1666416973301" duration="1638000" />
-    </task>
-    <task id="LOCAL-00223" summary="load javascript engine &#10;over the service layer">
-      <created>1664657759691</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1664657759691</updated>
+      <workItem from="1666416973301" duration="5618000" />
     </task>
     <task id="LOCAL-00224" summary="edit network for container&#10;to &#10;192.168.178.0">
       <created>1664659197434</created>
@@ -799,7 +813,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666404292385</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary=".">
+      <created>1666418794861</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1666418794862</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -845,13 +866,13 @@
     <MESSAGE value="add static variable for timezones" />
     <MESSAGE value="edit docker compose" />
     <MESSAGE value="edit docker-compose.yml" />
-    <MESSAGE value="." />
     <MESSAGE value="load dashboard html sites over &#10;ModalAndView Controller over &#10;Stirng dashboardhtml&#10;&#10;by default is set to dashboard/dashboard1" />
     <MESSAGE value="edit screenshot image" />
     <MESSAGE value="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element" />
     <MESSAGE value="add &#10;&lt;link rel=&quot;canonical&quot; &#10;for google search console" />
     <MESSAGE value="edit wiki.html&#10;edit start docker command for setup a &#10;container" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html&#10;edit start docker command for setup a &#10;container" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
