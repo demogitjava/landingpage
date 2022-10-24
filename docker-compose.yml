@@ -1,6 +1,13 @@
 version: '3'
 services:
 
+  nginx:
+    image : nginx:latest
+    ports:
+      - "217.160.255.254:80:80"
+
+
+
   de_landingpage:
     image: de_landingpage:latest
     container_name: de_landingpage
