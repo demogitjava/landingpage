@@ -4,23 +4,6 @@ version: '3'
 services:
 
 
-  de_landingpage:
-    image: de_landingpage:latest
-    container_name: de_landingapge
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    ports:
-      - "0.0.0.0:80:80"
-    environment:
-      - TZ=Europe/Berlin
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    networks:
-      - 192.168.178.0
-
-
   fr_landingpage:
     image: imglandingpage:latest
     container_name: fr_landingapge
@@ -28,7 +11,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "0.0.0.0:80:80"
+      - "127.0.0.1:80:80"
     environment:
       - TZ=Europe/Paris
     dns:
@@ -37,13 +20,13 @@ services:
 
 
   en_landingpage:
-    image: imglandingpage:latest
+    image: en_landingpage:latest
     container_name: en_landingapge
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile_en
     ports:
-      - "0.0.0.0:80:80"
+      - "192.168.178.7:80:80"
     environment:
       - TZ=Europe/London
     dns:
@@ -58,7 +41,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "0.0.0.0:80:80"
+      - "127.0.0.1:80:80"
     environment:
       - TZ=Europe/Madrid
     dns:
@@ -74,7 +57,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "0.0.0.0:80:80"
+      - "127.0.0.1:80:80"
     environment:
       - TZ=Europe/Rom
     dns:
@@ -90,7 +73,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "0.0.0.0:80:80"
+      - "127.0.0.1:80:80"
     environment:
       - TZ=Europe/Istanbul
     dns:

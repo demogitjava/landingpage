@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:287f017edb5b338fd285e3e2259c42b4dedae359f3b68357506c4b0fe17b3ba0" />
+              <option name="builtImageTag" value="sha256:a51e2b9aee45cd164b0d885a031770d3c66ce1b9b5222b90ef9ec2322261ae3f" />
               <option name="contextFolder" value="../../IdeaProjects" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />

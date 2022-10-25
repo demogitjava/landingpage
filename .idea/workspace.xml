@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/new_image.jpg" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/Dockerfile_en" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/europa_docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/europa_docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,30 +104,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/en_landingpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
@@ -274,6 +276,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.nginx: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -300,25 +315,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.traefik: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="europa_docker-compose.yml.en_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="envFilePath" value="" />
           <option name="services">
             <list>
-              <option value="traefik" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="europa_docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="de_landingpage" />
+              <option value="en_landingpage" />
             </list>
           </option>
           <option name="sourceFilePath" value="europa_docker-compose.yml" />
@@ -330,20 +333,20 @@
       <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.de_landingpage docker compose" />
       <item itemvalue="Docker.docker-compose.yml.en_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.europa_docker-compose.yml.en_landingpage: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.reverse-proxy: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.traefik: Compose Deployment" />
-      <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.europa_docker-compose.yml.en_landingpage: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.nginx: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.reverse-proxy: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.traefik: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
-        <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.reverse-proxy: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -465,14 +468,10 @@
       <workItem from="1666272150058" duration="11885000" />
       <workItem from="1666416973301" duration="5618000" />
       <workItem from="1666621185158" duration="4945000" />
-      <workItem from="1666628004199" duration="412000" />
-    </task>
-    <task id="LOCAL-00225" summary="convert custom.js&#10;to iso-8859-1">
-      <created>1664664228839</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1664664228839</updated>
+      <workItem from="1666628004199" duration="4140000" />
+      <workItem from="1666693831512" duration="376000" />
+      <workItem from="1666694211470" duration="1566000" />
+      <workItem from="1666696068885" duration="2167000" />
     </task>
     <task id="LOCAL-00226" summary=".">
       <created>1664785736213</created>
@@ -810,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666625330266</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary=".">
+      <created>1666628424599</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1666628424599</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -860,9 +866,9 @@
     <MESSAGE value="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element" />
     <MESSAGE value="add &#10;&lt;link rel=&quot;canonical&quot; &#10;for google search console" />
     <MESSAGE value="edit wiki.html&#10;edit start docker command for setup a &#10;container" />
-    <MESSAGE value="." />
     <MESSAGE value="edit docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker-compose.yml" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
