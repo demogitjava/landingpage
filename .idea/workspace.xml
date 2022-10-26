@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit docker-compose.yml">
+      <change afterPath="$PROJECT_DIR$/docker-compose_nginx.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +164,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Docker Image (2)">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" singleton="false">
       <option name="ACTIVE_PROFILES" />
       <option name="DEBUG_MODE" value="true" />
@@ -351,11 +350,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
         <item itemvalue="Docker.Docker Image (2)" />
         <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -483,14 +482,7 @@
       <workItem from="1666696068885" duration="5580000" />
       <workItem from="1666769615546" duration="516000" />
       <workItem from="1666770135535" duration="1489000" />
-      <workItem from="1666771630117" duration="1904000" />
-    </task>
-    <task id="LOCAL-00228" summary="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title">
-      <created>1664798300489</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1664798300490</updated>
+      <workItem from="1666771630117" duration="2343000" />
     </task>
     <task id="LOCAL-00229" summary="edit native query for graphical data&#10;&#10;Network Activities Graph title sub-title">
       <created>1664798335111</created>
@@ -828,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666701413054</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="edit docker-compose.yml">
+      <created>1666776310367</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1666776310367</updated>
+    </task>
+    <option name="localTasksCounter" value="278" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,10 +876,10 @@
     <MESSAGE value="edit about.html page &#10;the navbar html element is not displayed&#10;&#10;contact.html edit &lt;head&gt; to &lt;header&gt; &#10;as html element" />
     <MESSAGE value="add &#10;&lt;link rel=&quot;canonical&quot; &#10;for google search console" />
     <MESSAGE value="edit wiki.html&#10;edit start docker command for setup a &#10;container" />
-    <MESSAGE value="edit docker-compose.yml" />
     <MESSAGE value="edit docker-compose.yml&#10;&#10;the landingpage in german is available with nginx proxy &#10;with forward to de_landingpage container" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker-compose.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
