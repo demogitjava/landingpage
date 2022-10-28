@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit zone time to utc with&#10;.withZoneSameInstant( ZoneId.of(&quot;UTC&quot;) )&#10;                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/default.conf" afterDir="false" />
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add panel with nginx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
@@ -483,14 +482,7 @@
       <workItem from="1666778958774" duration="909000" />
       <workItem from="1666779898877" duration="960000" />
       <workItem from="1666783198377" duration="15828000" />
-      <workItem from="1666945109752" duration="5122000" />
-    </task>
-    <task id="LOCAL-00233" summary="secure request &#10;&#10;@GetMapping(&quot;/getgraficnavbar&quot;)">
-      <created>1664815098931</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
-      <option name="project" value="LOCAL" />
-      <updated>1664815098931</updated>
+      <workItem from="1666945109752" duration="5896000" />
     </task>
     <task id="LOCAL-00234" summary=".">
       <created>1664881022790</created>
@@ -828,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666947369539</updated>
     </task>
-    <option name="localTasksCounter" value="282" />
+    <task id="LOCAL-00282" summary="add panel with nginx">
+      <created>1666953819509</created>
+      <option name="number" value="00282" />
+      <option name="presentableId" value="LOCAL-00282" />
+      <option name="project" value="LOCAL" />
+      <updated>1666953819509</updated>
+    </task>
+    <option name="localTasksCounter" value="283" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -855,7 +854,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit custom.js&#10;&#10;line 2169&#10;&#10;month form Jan to Dez&#10;  data: [31, 74, 6, 39, 20, 85, 7, 100, 90, 70, 88, 12]" />
     <MESSAGE value="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph" />
     <MESSAGE value="edit function in Admin Controller &#10;to parse data to line chart" />
     <MESSAGE value="edit custom.js &#10;lineChart" />
@@ -880,7 +878,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit fqdn to &#10;http://demogitjava.ddns.net/&#10;with ip 217.160.255.254" />
     <MESSAGE value="edit zone time to utc with&#10;.withZoneSameInstant( ZoneId.of(&quot;UTC&quot;) )&#10;                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit zone time to utc with&#10;.withZoneSameInstant( ZoneId.of(&quot;UTC&quot;) )&#10;                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );" />
+    <MESSAGE value="add panel with nginx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add panel with nginx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
