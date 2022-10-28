@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 //import org.springframework.cloud.config.server.EnableConfigServer;
 
 
@@ -21,6 +22,9 @@ public interface iDemoLandingPage
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of(st_timezones));
         //ZonedDateTime now = ZonedDateTime.now();
 
+        // set up to UTC
+        now.withZoneSameInstant( ZoneId.of("UTC") )
+                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );
         // 1. ZonedDateTime to TimeStamp
         Timestamp timestamp = Timestamp.valueOf(now.toLocalDateTime());
 
