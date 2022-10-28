@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add nginx compose file for docker">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose_nginx.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose_nginx.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -484,14 +482,7 @@
       <workItem from="1666778722587" duration="208000" />
       <workItem from="1666778958774" duration="909000" />
       <workItem from="1666779898877" duration="960000" />
-      <workItem from="1666783198377" duration="177000" />
-    </task>
-    <task id="LOCAL-00230" summary=".">
-      <created>1664798480834</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1664798480834</updated>
+      <workItem from="1666783198377" duration="15230000" />
     </task>
     <task id="LOCAL-00231" summary=".">
       <created>1664800281026</created>
@@ -829,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666776759402</updated>
     </task>
-    <option name="localTasksCounter" value="279" />
+    <task id="LOCAL-00279" summary=".">
+      <created>1666783552473</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1666783552473</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,10 +876,10 @@
     <MESSAGE value="add &#10;&lt;link rel=&quot;canonical&quot; &#10;for google search console" />
     <MESSAGE value="edit wiki.html&#10;edit start docker command for setup a &#10;container" />
     <MESSAGE value="edit docker-compose.yml&#10;&#10;the landingpage in german is available with nginx proxy &#10;with forward to de_landingpage container" />
-    <MESSAGE value="." />
     <MESSAGE value="edit docker-compose.yml" />
     <MESSAGE value="add nginx compose file for docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="add nginx compose file for docker" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
