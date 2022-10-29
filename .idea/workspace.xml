@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="add panel with nginx">
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit command line for&#10;de_landingpage container to &#10;-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0">
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,30 +103,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "editor.reader.mode",
-    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
@@ -170,12 +172,10 @@
       <option name="DEBUG_MODE" value="true" />
       <option name="ENABLE_JMX_AGENT" value="false" />
       <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
+      <option name="HIDE_BANNER" value="true" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$" />
-      <target name="jgsoftwares:latest" />
-      <selectedOptions>
-        <option name="spring.boot.profiles" visible="false" />
-      </selectedOptions>
+      <target name="de_landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="VM_PARAMETERS" value="-Dserver.port=80" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -192,24 +192,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="nginx:latest" />
-          <option name="containerName" value="nginx" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="80" />
-                <option name="hostIp" value="217.160.255.254" />
-                <option name="hostPort" value="80" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
     </configuration>
     <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
@@ -277,6 +259,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose_nginx.yml.proxy1: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="proxy1" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose_nginx.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose_nginx.yml.proxy: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -334,9 +329,9 @@
       <item itemvalue="Docker.Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.de_landingpage docker compose" />
       <item itemvalue="Docker.docker-compose.yml.en_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose_nginx.yml.proxy1: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       <item itemvalue="Docker.docker-compose_nginx.yml.proxy: Compose Deployment" />
-      <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
@@ -344,10 +339,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
+        <item itemvalue="Docker.docker-compose_nginx.yml.proxy1: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
         <item itemvalue="Docker.docker-compose_nginx.yml.proxy: Compose Deployment" />
-        <item itemvalue="Docker.Docker Image (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -482,14 +477,12 @@
       <workItem from="1666778958774" duration="909000" />
       <workItem from="1666779898877" duration="960000" />
       <workItem from="1666783198377" duration="15828000" />
-      <workItem from="1666945109752" duration="5896000" />
-    </task>
-    <task id="LOCAL-00234" summary=".">
-      <created>1664881022790</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1664881022790</updated>
+      <workItem from="1666945109752" duration="9853000" />
+      <workItem from="1667040732389" duration="1262000" />
+      <workItem from="1667042417826" duration="469000" />
+      <workItem from="1667042919611" duration="1777000" />
+      <workItem from="1667044807083" duration="296000" />
+      <workItem from="1667045107371" duration="2363000" />
     </task>
     <task id="LOCAL-00235" summary="edit iAdminController.java interface">
       <created>1664891842251</created>
@@ -827,7 +820,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666953819509</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="edit command line for&#10;de_landingpage container to &#10;-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0">
+      <created>1666955775145</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1666955775146</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -854,7 +854,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit &#10;function i_jpa_useragent&#10;&#10;for Line graph" />
     <MESSAGE value="edit function in Admin Controller &#10;to parse data to line chart" />
     <MESSAGE value="edit custom.js &#10;lineChart" />
     <MESSAGE value="edit custom.js&#10;&#10;for response from jquery &#10;to linechart" />
@@ -879,7 +878,8 @@
     <MESSAGE value="edit fqdn to &#10;http://demogitjava.ddns.net/&#10;with ip 217.160.255.254" />
     <MESSAGE value="edit zone time to utc with&#10;.withZoneSameInstant( ZoneId.of(&quot;UTC&quot;) )&#10;                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );" />
     <MESSAGE value="add panel with nginx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add panel with nginx" />
+    <MESSAGE value="edit command line for&#10;de_landingpage container to &#10;-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit command line for&#10;de_landingpage container to &#10;-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,7 +18,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0&#10;" />
+              <option name="runCliOptions" value="-p 192.168.178.4:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0&#10;" />
             </ContainerConfig>
           </option>
           <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
@@ -57,7 +57,7 @@
               <option value="$PROJECT_DIR$/docker-compose.yml" />
             </list>
           </option>
-          <option name="serviceName" value="de_landingpage" />
+          <option name="serviceName" value="landingpage" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
