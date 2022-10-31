@@ -112,12 +112,8 @@ run options
 
 for bridge network -> 254 Containers
 
-`docker network create \
---driver=bridge \
---subnet=192.168.178.0/24 \
---ip-range=192.168.178.0/24 \
---gateway=192.168.178.1 \
-192.168.178.0`
+`docker network create --driver=bridge --subnet=192.168.178.0/24 --ip-range=192.168.178.0/24 --gateway=192.168.178.1 192.168.178.0`
+
 
 
 for ip
