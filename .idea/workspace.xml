@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="edit readme.md">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="263bfc8b-534e-49b8-a8f7-1a2a7217fd1f" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +66,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a86c53e0-f748-4d37-864f-e7afb86a7712" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
@@ -487,14 +493,7 @@
       <workItem from="1667252332282" duration="191000" />
       <workItem from="1667252548896" duration="80000" />
       <workItem from="1667252650014" duration="1954000" />
-      <workItem from="1667255836610" duration="1273000" />
-    </task>
-    <task id="LOCAL-00237" summary="add data from admin controller &#10;to arr_data1 on client side of the browser">
-      <created>1665046429637</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
-      <option name="project" value="LOCAL" />
-      <updated>1665046429638</updated>
+      <workItem from="1667255836610" duration="2074000" />
     </task>
     <task id="LOCAL-00238" summary="edit admin.html&#10;grafic to &#10;lineChart">
       <created>1665051692602</created>
@@ -832,7 +831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667251543790</updated>
     </task>
-    <option name="localTasksCounter" value="286" />
+    <task id="LOCAL-00286" summary=".">
+      <created>1667296824041</created>
+      <option name="number" value="00286" />
+      <option name="presentableId" value="LOCAL-00286" />
+      <option name="project" value="LOCAL" />
+      <updated>1667296824041</updated>
+    </task>
+    <option name="localTasksCounter" value="287" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -888,11 +894,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="52011f64-1b53-446a-a02f-17af6cc8c3dd" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -931,14 +932,14 @@
     <MESSAGE value="edit docker-compose.yml&#10;&#10;the landingpage in german is available with nginx proxy &#10;with forward to de_landingpage container" />
     <MESSAGE value="edit docker-compose.yml" />
     <MESSAGE value="add nginx compose file for docker" />
-    <MESSAGE value="." />
     <MESSAGE value="edit fqdn to &#10;http://demogitjava.ddns.net/&#10;with ip 217.160.255.254" />
     <MESSAGE value="edit zone time to utc with&#10;.withZoneSameInstant( ZoneId.of(&quot;UTC&quot;) )&#10;                .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );" />
     <MESSAGE value="add panel with nginx" />
     <MESSAGE value="edit command line for&#10;de_landingpage container to &#10;-p 127.0.0.1:80:80 --dns=192.168.178.3&#10;--dns=8.8.8.8 &#10;--dns=8.8.4.4 &#10; --dns-search=demogitjava.de&#10;--name=de_landingpage&#10;--hostname=demogitjava.ddns.net&#10;--add-host=demogitjava.ddns.net:217.160.255.254&#10;--network=192.168.178.0" />
     <MESSAGE value="edit docker-compose.yml &#10;with ip and port" />
     <MESSAGE value="edit readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit readme.md" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
