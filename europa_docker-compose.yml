@@ -6,7 +6,7 @@ services:
 
   fr_landingpage:
     image: imglandingpage:latest
-    container_name: fr_landingapge
+    container_name: fr_landingpage:latest
     build:
       context: ./
       dockerfile: Dockerfile
@@ -21,12 +21,12 @@ services:
 
   en_landingpage:
     image: en_landingpage:latest
-    container_name: en_landingapge
+    container_name: en_landingpage:latest
     build:
       context: ./
       dockerfile: Dockerfile_en
     ports:
-      - "192.168.178.7:80:80"
+      - "127.0.0.1:80:80"
     environment:
       - TZ=Europe/London
     dns:
@@ -35,8 +35,8 @@ services:
 
 
   sp_landingpage:
-    image: imglandingpage:latest
-    container_name: sp_landingapge
+    image: sp_landingpage:latest
+    container_name: sp_landingapge:latest
     build:
       context: ./
       dockerfile: Dockerfile
@@ -52,7 +52,7 @@ services:
 
   it_landingpage:
     image: imglandingpage:latest
-    container_name: it_landingapge
+    container_name: it_landingpage:latest
     build:
       context: ./
       dockerfile: Dockerfile
@@ -68,7 +68,7 @@ services:
 
   tr_landingpage:
     image: imglandingpage:latest
-    container_name: fr_landingapge
+    container_name: tr_landingpage:latest
     build:
       context: ./
       dockerfile: Dockerfile
