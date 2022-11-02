@@ -36,7 +36,7 @@ services:
 
   sp_landingpage:
     image: sp_landingpage:latest
-    container_name: sp_landingapge:latest
+    container_name: sp_landingpage:latest
     build:
       context: ./
       dockerfile: Dockerfile
