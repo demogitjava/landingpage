@@ -4,8 +4,23 @@ version: '3'
 services:
 
 
+  de_landingpage:
+    image: de_landingpage:latest
+    container_name: de_landingpage:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "127.0.0.1:80:80"
+    environment:
+      - TZ=Europe/Berlin
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+
   fr_landingpage:
-    image: imglandingpage:latest
+    image: fr_landingpage:latest
     container_name: fr_landingpage:latest
     build:
       context: ./
@@ -51,7 +66,7 @@ services:
 
 
   it_landingpage:
-    image: imglandingpage:latest
+    image: it_landingpage:latest
     container_name: it_landingpage:latest
     build:
       context: ./
@@ -67,7 +82,7 @@ services:
 
 
   tr_landingpage:
-    image: imglandingpage:latest
+    image: tr_landingpage:latest
     container_name: tr_landingpage:latest
     build:
       context: ./
