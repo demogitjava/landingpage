@@ -5,13 +5,16 @@ services:
     image: de_landingpage:latest
     container_name: de_landingpage
     ports:
-      - "127.0.0.1:80:80"
+      - "80:80"
     networks:
       192.168.178.0:
         ipv4_address: 192.168.178.4
+
     build:
       context: ./
       dockerfile: Dockerfile
+
+
     environment:
       - TZ=Europe/Berlin
     dns:
@@ -20,9 +23,8 @@ services:
       - 8.8.4.4
 
 
+
 networks:
   192.168.178.0:
     external: true
-
-
 
