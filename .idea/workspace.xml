@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit europa_docker-compose.yml">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de_landingpage&#10;docker-compose.yml">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/LanServer",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -52,7 +53,7 @@
       <recent name="$PROJECT_DIR$/Dockerfiles" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="landingpage" />
@@ -62,19 +63,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose_nginx.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose_nginx.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
           <option name="services">
             <list>
               <option value="landingpage" />
@@ -99,10 +99,61 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="europa_docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="de_landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="europa_docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="europa_docker-compose.yml.fr_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="fr_landingpage" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="europa_docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.europa_docker-compose.yml.fr_landingpage: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.iDemoLandingPage" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+        <item itemvalue="Docker.europa_docker-compose.yml.fr_landingpage: Compose Deployment" />
+        <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -135,9 +186,19 @@
       <workItem from="1667567871790" duration="1208000" />
       <workItem from="1667569691158" duration="130000" />
       <workItem from="1667569844087" duration="434000" />
-      <workItem from="1667570403160" duration="305000" />
+      <workItem from="1667570403160" duration="372000" />
+      <workItem from="1667570998718" duration="338000" />
+      <workItem from="1667571355975" duration="815000" />
+      <workItem from="1667573075419" duration="260000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
+      <created>1667570738816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667570738816</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit europa_docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit europa_docker-compose.yml" />
+    <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de_landingpage&#10;docker-compose.yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
