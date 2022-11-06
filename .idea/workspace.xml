@@ -7,8 +7,8 @@
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de_landingpage&#10;docker-compose.yml">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +44,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerMachine"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/Dockerfiles" />
     </key>
   </component>
@@ -63,10 +65,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose_nginx.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
         <settings>
-          <option name="sourceFilePath" value="docker-compose_nginx.yml" />
+          <option name="imageTag" value="debian:latest" />
+          <option name="containerName" value="dns" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="53" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="53" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="debian:latest" />
+          <option name="containerName" value="dns" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="53" />
+                <option name="hostIp" value="217.160.255.254" />
+                <option name="hostPort" value="53" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="debian:latest" />
+          <option name="containerName" value="dns" />
         </settings>
       </deployment>
       <method v="2" />
@@ -74,12 +113,6 @@
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="envFilePath" value="" />
-          <option name="services">
-            <list>
-              <option value="landingpage" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -113,47 +146,29 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="europa_docker-compose.yml.de_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="europa_docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="de_landingpage" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="europa_docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="europa_docker-compose.yml.fr_landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="fr_landingpage" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="europa_docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Docker Image (1)" />
+      <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
-      <item itemvalue="Docker.europa_docker-compose.yml.fr_landingpage: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
+      <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Docker Image (2)" />
+        <item itemvalue="Docker.Docker Image (1)" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
-        <item itemvalue="Docker.europa_docker-compose.yml.fr_landingpage: Compose Deployment" />
-        <item itemvalue="Docker.europa_docker-compose.yml.de_landingpage: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +205,9 @@
       <workItem from="1667570998718" duration="338000" />
       <workItem from="1667571355975" duration="815000" />
       <workItem from="1667573075419" duration="260000" />
+      <workItem from="1667749835671" duration="653000" />
+      <workItem from="1667750491563" duration="202000" />
+      <workItem from="1667750741782" duration="2251000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
