@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de_landingpage&#10;docker-compose.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +18,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="05574b6c-0d78-41df-bbe9-ac7d8a2a92e0" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +41,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerMachine"
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -207,7 +202,7 @@
       <workItem from="1667573075419" duration="260000" />
       <workItem from="1667749835671" duration="653000" />
       <workItem from="1667750491563" duration="202000" />
-      <workItem from="1667750741782" duration="2251000" />
+      <workItem from="1667750741782" duration="2690000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -216,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667570738816</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit wiki.html">
+      <created>1667753064406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667753064407</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +243,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit europa_docker-compose.yml" />
     <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de_landingpage&#10;docker-compose.yml" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
