@@ -9,12 +9,9 @@ services:
     networks:
       192.168.178.0:
         ipv4_address: 192.168.178.4
-
     build:
       context: ./
       dockerfile: Dockerfile
-
-
     environment:
       - TZ=Europe/Berlin
     dns:

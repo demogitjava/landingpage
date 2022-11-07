@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit Timezone to GMT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose_nginx.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose_nginx.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/europa_docker-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,44 +130,34 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.landingpage: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="europa_docker-compose.yml.proxy1: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="envFilePath" value="" />
           <option name="services">
             <list>
-              <option value="landingpage" />
+              <option value="proxy1" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="europa_docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
           <option name="sourceFilePath" value="europa_docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
+      <item itemvalue="Docker.europa_docker-compose.yml.proxy1: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.Docker Image (1)" />
       <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.europa_docker-compose.yml.proxy1: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Docker Image (2)" />
         <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.europa_docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +198,7 @@
       <workItem from="1667750491563" duration="202000" />
       <workItem from="1667750741782" duration="3346000" />
       <workItem from="1667792097259" duration="2030000" />
-      <workItem from="1667796641171" duration="1906000" />
+      <workItem from="1667796641171" duration="4228000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -230,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667753447702</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit Timezone to GMT">
+      <created>1667803702683</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667803702683</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +254,8 @@
     <MESSAGE value="edit europa_docker-compose.yml" />
     <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
     <MESSAGE value="edit wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
+    <MESSAGE value="edit Timezone to GMT" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Timezone to GMT" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
