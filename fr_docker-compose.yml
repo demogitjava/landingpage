@@ -9,6 +9,9 @@ services:
     networks:
       192.168.178.0:
         ipv4_address: 192.168.178.5
+    #build:
+     # context: ./
+     # dockerfile: Dockerfiles/Dockerfile_fr
     environment:
       - TZ=Europe/Paris
     dns:
