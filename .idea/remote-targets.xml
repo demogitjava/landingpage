@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:16c96d78c575b9b97d00d86b9396e6ad8d8b5252c4f28ac0f68fcc3ed4193d67" />
+              <option name="builtImageTag" value="sha256:4019d9f6a0bb01097f11c2d5d008d5f5d21df5e3a304222c25eda2c63fbfd245" />
               <option name="contextFolder" value="../../IdeaProjects" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />
@@ -57,6 +57,7 @@
               <option value="$PROJECT_DIR$/docker-compose.yml" />
             </list>
           </option>
+          <option name="serviceName" value="landingpage" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
