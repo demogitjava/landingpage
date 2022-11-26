@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
-    <option name="projectDefaultTargetUuid" value="adeda919-ec79-4fd4-aab0-3bb142ebf491" />
+    <option name="projectDefaultTargetUuid" value="6dc3730b-f357-4d27-b555-6729f3b4893e" />
     <targets>
       <target name="jgsoftwares:latest" type="docker" uuid="6dc3730b-f357-4d27-b555-6729f3b4893e">
         <config>
@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:6835c04a98212b0aadfcb5f7557a0a7552f27715e9d3ce4724528db5f24fb02d" />
+              <option name="builtImageTag" value="sha256:fa348d65f63d6fc4358862b0eaec8f4dc7585cfe2ce0c6c88ea69b7cb7e79ff2" />
               <option name="contextFolder" value="../../IdeaProjects" />
               <option name="dockerFile" value="docker-compose" />
               <option name="rebuildEveryTime" value="false" />
