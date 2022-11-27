@@ -5,8 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/image_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/bodycontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/lpagewebbuilder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_body.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/userlogin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +82,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -55,7 +92,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,8 +107,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Dockerfiles" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
+      <recent name="$PROJECT_DIR$/Dockerfiles" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
@@ -113,7 +150,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose_nginx.yml: Compose Deployment (1)" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose_nginx.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="sourceFilePath" value="docker-compose_nginx.yml" />
@@ -171,7 +208,6 @@
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment (1)" />
       <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
@@ -180,7 +216,6 @@
         <item itemvalue="Docker.docker-compose.yml.landingpage: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose_nginx.yml: Compose Deployment (1)" />
         <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
@@ -242,6 +277,10 @@
       <workItem from="1669404046646" duration="1279000" />
       <workItem from="1669405327637" duration="1517000" />
       <workItem from="1669444981925" duration="268000" />
+      <workItem from="1669445656953" duration="4009000" />
+      <workItem from="1669467257190" duration="2614000" />
+      <workItem from="1669473355320" duration="4000" />
+      <workItem from="1669529521789" duration="2561000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -306,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669404586927</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=".">
+      <created>1669445783208</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669445783208</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +375,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit europa_docker-compose.yml" />
     <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
     <MESSAGE value="edit wiki.html" />
