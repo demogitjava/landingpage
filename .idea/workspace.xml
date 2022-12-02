@@ -5,44 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/image_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/bodycontent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/de/de_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/en/en_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/es/es_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/fr/fr_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/it/it_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/lpagewebbuilder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/tr/tr_header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/htmlsitebackup/userlogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/image.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +39,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.8.6-bin/apache-maven-3.8.6" />
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2H268OJux6SEjoJ3RL5veR59C7x" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -92,7 +67,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img",
+    "kotlin.migration.detection.enabled": "false",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,20 +77,27 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "proofread",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
       <recent name="$PROJECT_DIR$/Dockerfiles" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-boot:run" />
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="landingpage" />
-      <target name="jgsoftwares:latest" />
+      <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$/../" />
+      <target name="@@@LOCAL@@@" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -280,7 +263,12 @@
       <workItem from="1669445656953" duration="4009000" />
       <workItem from="1669467257190" duration="2614000" />
       <workItem from="1669473355320" duration="4000" />
-      <workItem from="1669529521789" duration="2561000" />
+      <workItem from="1669529521789" duration="12399000" />
+      <workItem from="1669636985182" duration="18000" />
+      <workItem from="1669637025165" duration="101000" />
+      <workItem from="1670021211409" duration="340000" />
+      <workItem from="1670022628232" duration="626000" />
+      <workItem from="1670023593095" duration="579000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -352,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669445783208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=".">
+      <created>1669532154091</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669532154091</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -147,7 +147,7 @@ public class Admin_Controller implements iAdminController
 
 
         /*
-                public stirng
+                public String
                 for loading html
                 dashboard site
                 in folder
