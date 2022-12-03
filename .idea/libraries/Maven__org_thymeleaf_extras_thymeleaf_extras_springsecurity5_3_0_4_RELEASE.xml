@@ -1,4 +1,4 @@
-<component name="libraryTable">
+﻿<component name="libraryTable">
   <library name="Maven: org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.4.RELEASE">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/thymeleaf/extras/thymeleaf-extras-springsecurity5/3.0.4.RELEASE/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar!/" />
