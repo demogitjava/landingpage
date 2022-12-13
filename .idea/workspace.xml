@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container">
-      <change afterPath="$PROJECT_DIR$/hs_err_pid1.log" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de.html landingpage">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid1.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid1.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +300,7 @@
       <workItem from="1670789347208" duration="314000" />
       <workItem from="1670789672804" duration="759000" />
       <workItem from="1670790527642" duration="1456000" />
-      <workItem from="1670855725247" duration="11915000" />
+      <workItem from="1670855725247" duration="12243000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -389,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670076036582</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="edit de.html landingpage">
+      <created>1670945570443</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670945570443</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +441,19 @@
     <MESSAGE value="add fr_docker-compose.yml&#10;for orphans" />
     <MESSAGE value="." />
     <MESSAGE value="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container" />
-    <option name="LAST_COMMIT_MESSAGE" value="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container" />
+    <MESSAGE value="edit de.html landingpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de.html landingpage" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

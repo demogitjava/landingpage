@@ -139,7 +139,7 @@ public class Admin_Controller implements iAdminController
             over the service layer
 
          */
-        mv.addObject("javascriptengine", admin_service.startjavasciptengine());
+       // mv.addObject("javascriptengine", admin_service.startjavasciptengine());
 
 
         String dashboardname = "fragments/dashboard1.html";
