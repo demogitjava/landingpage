@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de.html landingpage">
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="dockerfile edit url to backup h2 db&#10;&#10;wiki.html&#10;add url for youtube installation centos server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -302,7 +296,7 @@
       <workItem from="1679043945500" duration="30000" />
       <workItem from="1679043992036" duration="91000" />
       <workItem from="1679044113027" duration="2174000" />
-      <workItem from="1679046289413" duration="3473000" />
+      <workItem from="1679046289413" duration="4532000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -395,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670945570443</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dockerfile edit url to backup h2 db&#10;&#10;wiki.html&#10;add url for youtube installation centos server">
+      <created>1679067070006</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679067070006</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +445,8 @@
     <MESSAGE value="." />
     <MESSAGE value="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container" />
     <MESSAGE value="edit de.html landingpage" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de.html landingpage" />
+    <MESSAGE value="dockerfile edit url to backup h2 db&#10;&#10;wiki.html&#10;add url for youtube installation centos server" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerfile edit url to backup h2 db&#10;&#10;wiki.html&#10;add url for youtube installation centos server" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
