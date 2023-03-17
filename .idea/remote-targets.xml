@@ -3,25 +3,22 @@
   <component name="RemoteTargetsManager">
     <option name="projectDefaultTargetUuid" value="6dc3730b-f357-4d27-b555-6729f3b4893e" />
     <targets>
-      <target name="jgsoftwares:latest" type="docker" uuid="6dc3730b-f357-4d27-b555-6729f3b4893e">
+      <target name="de_landingpage2" type="docker" uuid="1505536c-f1fe-47b6-b1a7-0ef91bdea333">
         <config>
           <option name="targetPlatform">
             <TargetPlatform />
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="sha256:8dabd790c91b47c6801777e3a63e894c3ab1f6cf0b549710c1fb062069262d27" />
-              <option name="contextFolder" value="../../IdeaProjects" />
-              <option name="dockerFile" value="docker-compose" />
-              <option name="rebuildEveryTime" value="false" />
+              <option name="builtImageTag" value="de_landingpage" />
+              <option name="dockerFile" value="Dockerfile" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 127.0.0.1:80:80 --dns=192.168.178.3 --dns=8.8.8.8 --dns=8.8.4.4 &#10;--dns-search=demogitjava.de &#10;--name=de_landingpage &#10;--hostname=demogitjava.ddns.net &#10;--add-host=demogitjava.ddns.net:217.160.255.254 &#10;--network=192.168.178.0 " />
+              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage" />
             </ContainerConfig>
           </option>
-          <option name="projectRootOnTarget" value="$PROJECT_DIR$/../" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>
@@ -43,24 +40,6 @@
                 </option>
               </VolumeState>
             </option>
-            <option name="javaVersionString" value="17.0.2" />
-          </config>
-        </ContributedStateBase>
-      </target>
-      <target name="de_landingpage" type="docker-compose" uuid="adeda919-ec79-4fd4-aab0-3bb142ebf491">
-        <config>
-          <option name="targetPlatform">
-            <TargetPlatform />
-          </option>
-          <option name="configurationFiles">
-            <list>
-              <option value="$PROJECT_DIR$/docker-compose.yml" />
-            </list>
-          </option>
-          <option name="serviceName" value="landingpage" />
-        </config>
-        <ContributedStateBase type="JavaLanguageRuntime">
-          <config>
             <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
