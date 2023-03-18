@@ -89,7 +89,7 @@
       <command value="mvn spring-boot:run" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
+  <component name="RunManager" selected="Docker.fr_docker-compose.yml.landingpage: Compose Deployment">
     <configuration name="landingpagedocker.sh" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -161,7 +161,9 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -208,7 +210,6 @@
       <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Shell Script.landingpagedocker.sh" />
-      <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
