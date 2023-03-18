@@ -6,8 +6,8 @@ the used timezone is -> UTC Europe/Berlin
 used db -> shopdb
 available with  ->your-ip/h2-console
 
-username admin
-password jj78mvpr52k1
+    username admin
+    password jj78mvpr52k1
 
 to edit the text in the demo application
 copy the segment and 
@@ -49,9 +49,9 @@ watch about the databases in your user directory that
 
 
 the login for the database over jdbc is
-</br>
-`admin
-jj78mvpr52k1`
+
+    admin
+    jj78mvpr52k1
 
 the application url // port is
 url: https:// "your domain " /
@@ -85,6 +85,8 @@ make sure that java is correctly installed and the "JAVA_HOME" path is set.
 You can get the java jdk from here:
 used jdk: **GraalVM Community ** https://www.graalvm.org/downloads/
 
+Java 17 jdk - Docker stable
+[graal-ce-17 ](https://drive.google.com/file/d/1CZxzp_Q8-sYmiFgCEon1qVIgGbRE8DFT/view?usp=sharing)
 <br>
 
 
@@ -95,12 +97,13 @@ start docker container with
 line 
 
 
-to build the image type:
+docker command for containe image:
 
--p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage
+    -p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage
 
+or 
 
-docker build -f Dockerfile -t landingpage .
+    docker build -f Dockerfile -t landingpage .
 
 <br/>
 docker for windows are available on https://www.docker.com/products/docker-desktop
@@ -131,28 +134,10 @@ backup
 load / save
 ============================================================
 
-docker save -o landingpage.tar jgsoftwares/jgsoftwares
+    docker save -o landingpage.tar jgsoftwares/jgsoftwares
 
 to load your image to docker desktop type:
 
 
-docker load --input landingpage.tar
-
-
-
-
--> for manual setup 
-----------------------------------------
-mount directory into docker container:
-
-/root/.m2:/root/.m2  
-/root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage  
-/usr/lib/jvm/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2  
-/root/IdeaProjects/demodatabase:/root/
-
-
-
-
-
-
+    docker load --input landingpage.tar
 
