@@ -23,7 +23,7 @@
         <spring-boot.run.jvmArguments>-Duser.timezone=UTC</spring-boot.run.jvmArguments>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
     </properties>
 
 
