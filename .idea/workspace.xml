@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit page de for loading bootstrap &#10;lib and css">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit import bootstrap and bootflat files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/en/en_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +319,7 @@
       <workItem from="1679413068864" duration="404000" />
       <workItem from="1679413499603" duration="2080000" />
       <workItem from="1679467744517" duration="61000" />
-      <workItem from="1679467829268" duration="2339000" />
+      <workItem from="1679467829268" duration="4646000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -461,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679469939029</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="edit import bootstrap and bootflat files">
+      <created>1679470438822</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679470438822</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +523,8 @@
     <MESSAGE value="disable loading bootstrap files &#10;in de_header.html" />
     <MESSAGE value="edit description" />
     <MESSAGE value="edit page de for loading bootstrap &#10;lib and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit page de for loading bootstrap &#10;lib and css" />
+    <MESSAGE value="edit import bootstrap and bootflat files" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit import bootstrap and bootflat files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
