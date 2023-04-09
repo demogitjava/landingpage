@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de_header.html">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +302,7 @@
       <workItem from="1681042421662" duration="1247000" />
       <workItem from="1681043701681" duration="125000" />
       <workItem from="1681043828649" duration="806000" />
-      <workItem from="1681046088059" duration="2338000" />
+      <workItem from="1681046088059" duration="2642000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -543,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681040457024</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px">
+      <created>1681048564594</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1681048564594</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +613,8 @@
     <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
     <MESSAGE value="." />
     <MESSAGE value="edit de_header.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit de_header.html" />
+    <MESSAGE value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
