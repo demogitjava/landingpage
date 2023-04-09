@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit application.properties&#10;&#10;enable gzip compression">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +298,7 @@
       <workItem from="1681025820259" duration="50000" />
       <workItem from="1681025880852" duration="89000" />
       <workItem from="1681025971788" duration="3975000" />
-      <workItem from="1681031916346" duration="5667000" />
+      <workItem from="1681031916346" duration="5771000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -516,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681039544826</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary=".">
+      <created>1681039983121</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681039983121</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +572,6 @@
     <MESSAGE value="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container" />
     <MESSAGE value="edit de.html landingpage" />
     <MESSAGE value="edit README.md" />
-    <MESSAGE value="." />
     <MESSAGE value="update bootstrap version to 5" />
     <MESSAGE value="edit de.html&#10;and de_header.html" />
     <MESSAGE value="disable loading bootstrap files &#10;in de_header.html" />
@@ -579,7 +586,8 @@
     <MESSAGE value="edit dockerfile for loading h2 database to image" />
     <MESSAGE value="edit html page &#10;de_body.html" />
     <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit application.properties&#10;&#10;enable gzip compression" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
