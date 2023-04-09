@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add google screenshot &#10;form 2023-03-22">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/robots.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +68,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
     "kotlin.migration.detection.enabled": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/demodatabase",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +79,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,6 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="de_landingpage:latest" />
+          <option name="containerName" value="demolandingpage" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="de_landingapge:latest" />
+          <option name="containerName" value="landingpage" />
+          <option name="commandLineOptions" value="-p 127.0.0.1:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -138,17 +161,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="landingpage" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="de_landingapge:latest" />
-          <option name="containerName" value="landingpage" />
-          <option name="commandLineOptions" value="-p 127.0.0.1:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage" />
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="nginx" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -160,13 +172,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.landingpage" />
+      <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.nginx" />
       <item itemvalue="Shell Script.landingpagedocker.sh" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Docker.nginx" />
       </list>
     </recent_temporary>
@@ -260,7 +274,24 @@
       <workItem from="1679467829268" duration="18333000" />
       <workItem from="1679674609055" duration="2258000" />
       <workItem from="1679735663227" duration="185000" />
-      <workItem from="1679740531230" duration="259000" />
+      <workItem from="1679740531230" duration="2098000" />
+      <workItem from="1679901525154" duration="120000" />
+      <workItem from="1679926121952" duration="280000" />
+      <workItem from="1680347850473" duration="177000" />
+      <workItem from="1680351250960" duration="84000" />
+      <workItem from="1680365852255" duration="527000" />
+      <workItem from="1680415215711" duration="3094000" />
+      <workItem from="1680435926310" duration="55000" />
+      <workItem from="1680504765938" duration="4384000" />
+      <workItem from="1680510117595" duration="286000" />
+      <workItem from="1680512316060" duration="2725000" />
+      <workItem from="1680523510198" duration="402000" />
+      <workItem from="1680523914653" duration="364000" />
+      <workItem from="1680524892353" duration="83000" />
+      <workItem from="1680524996628" duration="90000" />
+      <workItem from="1680529750747" duration="212000" />
+      <workItem from="1680530334754" duration="635000" />
+      <workItem from="1681020437476" duration="532000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -430,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679476815926</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="edit wiki.html">
+      <created>1679740818966</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1679740818966</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +510,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit europa_docker-compose.yml" />
     <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
-    <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit Timezone to GMT" />
     <MESSAGE value="edit docker-compose" />
     <MESSAGE value="add fr_docker-compose.yml&#10;for orphans" />
@@ -489,7 +526,8 @@
     <MESSAGE value="edit html description for google" />
     <MESSAGE value="add youtube url to &#10;wiki.html" />
     <MESSAGE value="add google screenshot &#10;form 2023-03-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="add google screenshot &#10;form 2023-03-22" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
