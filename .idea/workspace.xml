@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit html page &#10;de_body.html">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit application.properties&#10;&#10;enable gzip compression">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +297,7 @@
       <workItem from="1681025820259" duration="50000" />
       <workItem from="1681025880852" duration="89000" />
       <workItem from="1681025971788" duration="3975000" />
-      <workItem from="1681031916346" duration="5083000" />
+      <workItem from="1681031916346" duration="5667000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -509,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681036235808</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="edit application.properties&#10;&#10;enable gzip compression">
+      <created>1681039544826</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681039544826</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +578,8 @@
     <MESSAGE value="add sitemap to robots.txt" />
     <MESSAGE value="edit dockerfile for loading h2 database to image" />
     <MESSAGE value="edit html page &#10;de_body.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit html page &#10;de_body.html" />
+    <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit application.properties&#10;&#10;enable gzip compression" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
