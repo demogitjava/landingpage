@@ -3,47 +3,6 @@
   <component name="RemoteTargetsManager">
     <option name="projectDefaultTargetUuid" value="1505536c-f1fe-47b6-b1a7-0ef91bdea333" />
     <targets>
-      <target name="de_landingpage2" type="docker" uuid="1505536c-f1fe-47b6-b1a7-0ef91bdea333">
-        <config>
-          <option name="targetPlatform">
-            <TargetPlatform />
-          </option>
-          <option name="buildImageConfig">
-            <BuildImageConfig>
-              <option name="builtImageTag" value="de_landingpage" />
-              <option name="dockerFile" value="Dockerfile" />
-            </BuildImageConfig>
-          </option>
-          <option name="containerConfig">
-            <ContainerConfig>
-              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage" />
-            </ContainerConfig>
-          </option>
-        </config>
-        <ContributedStateBase type="JavaLanguageRuntime">
-          <config>
-            <option name="agentFolder">
-              <VolumeState>
-                <option name="targetSpecificBits">
-                  <map>
-                    <entry key="mountAsVolume" value="false" />
-                  </map>
-                </option>
-              </VolumeState>
-            </option>
-            <option name="classpathFolder">
-              <VolumeState>
-                <option name="targetSpecificBits">
-                  <map>
-                    <entry key="mountAsVolume" value="false" />
-                  </map>
-                </option>
-              </VolumeState>
-            </option>
-            <option name="javaVersionString" value="17.0.2" />
-          </config>
-        </ContributedStateBase>
-      </target>
       <target name="de_landingpage" type="docker" uuid="87b31063-7033-4b99-a4f6-aa7f4b5f07cf">
         <config>
           <option name="targetPlatform">
