@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add sitemap to robots.txt">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile for loading h2 database to image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +297,7 @@
       <workItem from="1681025786630" duration="8000" />
       <workItem from="1681025820259" duration="50000" />
       <workItem from="1681025880852" duration="89000" />
-      <workItem from="1681025971788" duration="174000" />
+      <workItem from="1681025971788" duration="1796000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -481,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681020983332</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="edit dockerfile for loading h2 database to image">
+      <created>1681026176479</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681026176479</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +548,8 @@
     <MESSAGE value="add google screenshot &#10;form 2023-03-22" />
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="add sitemap to robots.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sitemap to robots.txt" />
+    <MESSAGE value="edit dockerfile for loading h2 database to image" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile for loading h2 database to image" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
