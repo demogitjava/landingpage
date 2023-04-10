@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="update m_de.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/m_de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +302,7 @@
       <workItem from="1681042421662" duration="1247000" />
       <workItem from="1681043701681" duration="125000" />
       <workItem from="1681043828649" duration="806000" />
-      <workItem from="1681046088059" duration="5703000" />
+      <workItem from="1681046088059" duration="9469000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -563,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681049949282</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="update m_de.html">
+      <created>1681106804335</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681106804335</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit europa_docker-compose.yml" />
     <MESSAGE value="edit de_landingpage&#10;docker-compose.yml" />
     <MESSAGE value="edit Timezone to GMT" />
     <MESSAGE value="edit docker-compose" />
@@ -628,7 +634,8 @@
     <MESSAGE value="edit de_header.html" />
     <MESSAGE value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="update m_de.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="update m_de.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
