@@ -35,6 +35,7 @@ public class DemoController implements iDemoController
 
 
     java.util.Locale locale;
+
     @Autowired
     IServiceIndex iServiceIndex;
     @Autowired
