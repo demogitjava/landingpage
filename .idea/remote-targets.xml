@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="de_landingpage" />
+              <option name="builtImageTag" value="de1_landingpage" />
               <option name="dockerFile" value="Dockerfile" />
             </BuildImageConfig>
           </option>
