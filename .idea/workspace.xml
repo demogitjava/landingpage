@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/resolv.conf" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="delete interface for shellcommands start methods as public class&#10;with @ShellComponent">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest/2023_13_04_sitegoogleindex_webshop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/i_shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/i_shellcommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +80,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin.migration.detection.enabled": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/Dockerfile",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/img/googelspeedtest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,9 +96,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/jarclients" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/bootstrap" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
     </key>
@@ -357,7 +353,7 @@
       <workItem from="1681314594703" duration="796000" />
       <workItem from="1681315392832" duration="350000" />
       <workItem from="1681316000092" duration="3909000" />
-      <workItem from="1681459622636" duration="9105000" />
+      <workItem from="1681459622636" duration="9951000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -660,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681319847089</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="delete interface for shellcommands start methods as public class&#10;with @ShellComponent">
+      <created>1681469852460</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1681469852460</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +703,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="addlandingpagedocker.sh&#10;&#10;the shell file is to &#10;run the target class folder in &#10;a docker container" />
     <MESSAGE value="edit de.html landingpage" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="update bootstrap version to 5" />
@@ -725,14 +727,15 @@
     <MESSAGE value="edit pom.xml &#10;add repositories" />
     <MESSAGE value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>161</line>
+          <line>147</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

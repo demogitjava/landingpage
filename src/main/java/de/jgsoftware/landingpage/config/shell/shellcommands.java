@@ -153,9 +153,9 @@ public class shellcommands {
 
             FileWriter fileWriter = new FileWriter(f);
             PrintWriter printWriter = new PrintWriter(fileWriter);
-            printWriter.print("search demogitjava freewebshop free landingpage");
-            printWriter.print("nameserver 8.8.8.8 8.8.4.4");
-            printWriter.print("options ndots:0");
+            printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 8.8.8.8 8.8.4.4" + "\n");
+            printWriter.print("options ndots:0" + "\n");
 
             printWriter.close();
         } catch (Exception e)
