@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="delete interface for shellcommands start methods as public class&#10;with @ShellComponent">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest/2023_13_04_sitegoogleindex_webshop.png" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -353,7 +351,7 @@
       <workItem from="1681314594703" duration="796000" />
       <workItem from="1681315392832" duration="350000" />
       <workItem from="1681316000092" duration="3909000" />
-      <workItem from="1681459622636" duration="9951000" />
+      <workItem from="1681459622636" duration="10223000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -663,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681469852460</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop">
+      <created>1681470563355</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1681470563355</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de.html landingpage" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="update bootstrap version to 5" />
     <MESSAGE value="edit de.html&#10;and de_header.html" />
@@ -728,18 +732,8 @@
     <MESSAGE value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
     <MESSAGE value="." />
     <MESSAGE value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
