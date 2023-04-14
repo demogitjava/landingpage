@@ -1,35 +1,29 @@
 
 package de.jgsoftware.landingpage.config.shell;
 
-import org.apache.commons.compress.archivers.ArchiveOutputStream;
-import org.apache.commons.compress.archivers.tar.TarArchiveOutputStream;
-import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
-import org.apache.commons.compress.archivers.zip.ZipArchiveInputStream;
-import org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
-import org.springframework.jmx.support.RegistrationPolicy;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import java.net.*;
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
-import java.util.Enumeration;
-import java.util.List;
 import java.util.zip.*;
 
-import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import static org.hibernate.engine.jdbc.StreamUtils.copy;
 
 @ShellComponent
-public class shellcommands
-{
+public class shellcommands {
 
+    @ShellMethod("start h2 server --->  start h2 database")
+    public String startdatabase() throws IOException
+    {
+
+        return "";
+    }
 
 
     // idemodatabases demo
+
+
     @ShellMethod("install h2 databases from github with type command --->  idemodatabase getinstall")
     public String idemodatabase(String database) {
         System.out.print("install databases" + "\n");
@@ -145,10 +139,35 @@ public class shellcommands
         return "installed";
     }
 
+
+
+    @ShellMethod("install resolvconf ---> iresolvconf")
+    public String iresolvconf()
+    {
+
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print("search demogitjava freewebshop free landingpage");
+            printWriter.print("nameserver 8.8.8.8 8.8.4.4");
+            printWriter.print("options ndots:0");
+
+            printWriter.close();
+        } catch (Exception e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+
     private static void copyFile(File source, File dest) throws IOException {
         Files.copy(source.toPath(), dest.toPath());
     }
-
 
     private void extractFile(ZipInputStream zipIn, String filePath) throws IOException
     {

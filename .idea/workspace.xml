@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/resolv.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/i_shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/i_shellcommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/de/de_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +21,12 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="cp https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/resolv.conf /etc/resolv.conf" />
+    </ExecCommand>
+    <ExecCommand />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +84,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin.migration.detection.enabled": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/Dockerfile",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,10 +100,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/jarclients" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/bootstrap" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
     </key>
   </component>
@@ -164,6 +177,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile01" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile01" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -193,34 +214,24 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="nginx" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="nginx:latest" />
-          <option name="containerName" value="nginx" />
-          <option name="commandLineOptions" value="-p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name nginx" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile: Compose Deployment" />
+      <item itemvalue="Docker.Dockerfile01" />
       <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.Docker Image (3)" />
       <item itemvalue="Docker.Docker Image (1)" />
       <item itemvalue="Docker.Docker Image" />
-      <item itemvalue="Docker.nginx" />
       <item itemvalue="JavaScript Debug.de_body.html" />
       <item itemvalue="Shell Script.landingpagedocker.sh" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile01" />
         <item itemvalue="Docker.Docker Image (3)" />
         <item itemvalue="Docker.Docker Image (2)" />
         <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.nginx" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +356,8 @@
       <workItem from="1681279886679" duration="30000" />
       <workItem from="1681314594703" duration="796000" />
       <workItem from="1681315392832" duration="350000" />
-      <workItem from="1681316000092" duration="3628000" />
+      <workItem from="1681316000092" duration="3909000" />
+      <workItem from="1681459622636" duration="9105000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -641,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681317219790</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary=".">
+      <created>1681319847089</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1681319847089</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,13 +719,24 @@
     <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
     <MESSAGE value="edit de_header.html" />
     <MESSAGE value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
-    <MESSAGE value="." />
     <MESSAGE value="update m_de.html" />
     <MESSAGE value="add to pom.xml&#10;  &lt;dependency&gt;&#10;            &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;&#10;            &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;&#10;            &lt;version&gt;4.0.3&lt;/version&gt;&#10;        &lt;/dependency&gt;" />
     <MESSAGE value="edit pom.xml starter parent to version&#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.5.1&lt;/version&gt;&#10;    &lt;/parent&gt;&#10;    &#10;for error message &#10;org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression:" />
     <MESSAGE value="edit pom.xml &#10;add repositories" />
     <MESSAGE value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
