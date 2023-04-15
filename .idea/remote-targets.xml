@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns 192.168.178.3 --dns-search demogitjava --name de_landingpage --network 192.168.178.0" />
+              <option name="runCliOptions" value="-p 80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns 192.168.178.3 --dns-search demogitjava --name de_landingpage --network 192.168.178.0" />
             </ContainerConfig>
           </option>
         </config>
