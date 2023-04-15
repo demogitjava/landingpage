@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit config files">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -231,13 +231,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="edit europa_docker-compose.yml">
-      <created>1667367799241</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667367799241</updated>
-    </task>
     <task id="LOCAL-00002" summary="edit europa_docker-compose.yml">
       <created>1667367937113</created>
       <option name="number" value="00002" />
@@ -351,7 +344,7 @@
       <workItem from="1681314594703" duration="796000" />
       <workItem from="1681315392832" duration="350000" />
       <workItem from="1681316000092" duration="3909000" />
-      <workItem from="1681459622636" duration="15217000" />
+      <workItem from="1681459622636" duration="17408000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -682,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681544515691</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="edit config files">
+      <created>1681544983151</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1681544983151</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +722,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit README.md" />
     <MESSAGE value="update bootstrap version to 5" />
     <MESSAGE value="edit de.html&#10;and de_header.html" />
     <MESSAGE value="disable loading bootstrap files &#10;in de_header.html" />
@@ -747,7 +746,8 @@
     <MESSAGE value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
     <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
     <MESSAGE value="edit wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
+    <MESSAGE value="edit config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit config files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
