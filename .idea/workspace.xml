@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit config files">
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add cpu command to docker command">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin.migration.detection.enabled&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -231,13 +231,6 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00002" summary="edit europa_docker-compose.yml">
-      <created>1667367937113</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1667367937113</updated>
-    </task>
     <task active="true" id="Default" summary="Default task">
       <changelist id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit europa_docker-compose.yml" />
       <created>1667470671345</created>
@@ -344,7 +337,9 @@
       <workItem from="1681314594703" duration="796000" />
       <workItem from="1681315392832" duration="350000" />
       <workItem from="1681316000092" duration="3909000" />
-      <workItem from="1681459622636" duration="17408000" />
+      <workItem from="1681459622636" duration="18280000" />
+      <workItem from="1681549857588" duration="697000" />
+      <workItem from="1681562785939" duration="300000" />
     </task>
     <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
       <created>1667570738816</created>
@@ -682,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681544983151</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add cpu command to docker command">
+      <created>1681547912159</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1681547912160</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +724,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update bootstrap version to 5" />
     <MESSAGE value="edit de.html&#10;and de_header.html" />
     <MESSAGE value="disable loading bootstrap files &#10;in de_header.html" />
     <MESSAGE value="edit description" />
@@ -747,7 +748,8 @@
     <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit config files" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit config files" />
+    <MESSAGE value="add cpu command to docker command" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cpu command to docker command" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
