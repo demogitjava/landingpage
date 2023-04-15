@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <project version="4">
   <component name="RemoteTargetsManager">
     <option name="projectDefaultTargetUuid" value="1505536c-f1fe-47b6-b1a7-0ef91bdea333" />
@@ -16,7 +16,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns 192.168.178.3 --dns-search demogitjava --name de_landingpage --network 192.168.178.0" />
+              <option name="runCliOptions" value="-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns 192.168.178.3 --dns-search demogitjava --name de_landingpage --network 192.168.178.0" />
             </ContainerConfig>
           </option>
         </config>
