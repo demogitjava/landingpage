@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add cpu command to docker command">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit Time Zone to UTC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,14 +339,9 @@
       <workItem from="1681316000092" duration="3909000" />
       <workItem from="1681459622636" duration="18280000" />
       <workItem from="1681549857588" duration="697000" />
-      <workItem from="1681562785939" duration="300000" />
-    </task>
-    <task id="LOCAL-00003" summary="edit de_landingpage&#10;docker-compose.yml">
-      <created>1667570738816</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1667570738816</updated>
+      <workItem from="1681562785939" duration="415000" />
+      <workItem from="1681563932607" duration="446000" />
+      <workItem from="1681622748872" duration="84000" />
     </task>
     <task id="LOCAL-00004" summary="edit wiki.html">
       <created>1667753064406</created>
@@ -684,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681547912160</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="edit Time Zone to UTC">
+      <created>1681563088719</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1681563088719</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,7 +726,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit de.html&#10;and de_header.html" />
     <MESSAGE value="disable loading bootstrap files &#10;in de_header.html" />
     <MESSAGE value="edit description" />
     <MESSAGE value="edit page de for loading bootstrap &#10;lib and css" />
@@ -749,7 +750,8 @@
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit config files" />
     <MESSAGE value="add cpu command to docker command" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cpu command to docker command" />
+    <MESSAGE value="edit Time Zone to UTC" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Time Zone to UTC" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
