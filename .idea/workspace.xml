@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit Time Zone to UTC">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -341,14 +343,9 @@
       <workItem from="1681549857588" duration="697000" />
       <workItem from="1681562785939" duration="415000" />
       <workItem from="1681563932607" duration="446000" />
-      <workItem from="1681622748872" duration="84000" />
-    </task>
-    <task id="LOCAL-00004" summary="edit wiki.html">
-      <created>1667753064406</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1667753064407</updated>
+      <workItem from="1681622748872" duration="778000" />
+      <workItem from="1681632949748" duration="1000000" />
+      <workItem from="1681663110742" duration="45000" />
     </task>
     <task id="LOCAL-00005" summary="edit wiki.html">
       <created>1667753447702</created>
@@ -686,7 +683,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681563088719</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="edit wiki.html">
+      <created>1681622864711</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1681622864711</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -747,11 +751,11 @@
     <MESSAGE value="." />
     <MESSAGE value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
     <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
-    <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit config files" />
     <MESSAGE value="add cpu command to docker command" />
     <MESSAGE value="edit Time Zone to UTC" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Time Zone to UTC" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
