@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,14 +356,7 @@
       <workItem from="1681793175456" duration="46000" />
       <workItem from="1681793223157" duration="2941000" />
       <workItem from="1681803674366" duration="288000" />
-      <workItem from="1681804362896" duration="3103000" />
-    </task>
-    <task id="LOCAL-00010" summary=".">
-      <created>1669402905545</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1669402905545</updated>
+      <workItem from="1681804362896" duration="3666000" />
     </task>
     <task id="LOCAL-00011" summary=".">
       <created>1669404586927</created>
@@ -702,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681808292725</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden">
+      <created>1681809342824</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1681809342824</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +742,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit page de for loading bootstrap &#10;lib and css" />
     <MESSAGE value="edit import bootstrap and bootflat files" />
     <MESSAGE value="edit html description for google" />
     <MESSAGE value="add youtube url to &#10;wiki.html" />
@@ -768,7 +766,8 @@
     <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
     <MESSAGE value="edit wiki.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
+    <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

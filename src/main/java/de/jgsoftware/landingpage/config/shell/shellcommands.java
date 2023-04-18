@@ -141,6 +141,28 @@ public class shellcommands {
 
 
 
+    // 192.168.178.4	f713f62510c9
+    @ShellMethod("install hosts ---> ihost")
+    public String ihosts()
+    {
+
+        String stresolv = new String("host installed");
+
+        File f = new File("/etc/hosts");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            printWriter.print("192.168.178.4 de_landingapge" + "\n");
+
+            printWriter.close();
+        } catch (Exception e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
 
     @ShellMethod("install resolvconf ---> iresolvconf")
     public String iresolvconf()
