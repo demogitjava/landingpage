@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html &#10;&#10;docker add path for file hosts">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +91,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -352,14 +357,7 @@
       <workItem from="1681793175456" duration="46000" />
       <workItem from="1681793223157" duration="2941000" />
       <workItem from="1681803674366" duration="288000" />
-      <workItem from="1681804362896" duration="2157000" />
-    </task>
-    <task id="LOCAL-00009" summary=".">
-      <created>1669401932415</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1669401932415</updated>
+      <workItem from="1681804362896" duration="3103000" />
     </task>
     <task id="LOCAL-00010" summary=".">
       <created>1669402905545</created>
@@ -697,7 +695,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681804439236</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="edit wiki.html">
+      <created>1681808292725</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1681808292725</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,10 +765,10 @@
     <MESSAGE value="edit config files" />
     <MESSAGE value="add cpu command to docker command" />
     <MESSAGE value="edit Time Zone to UTC" />
-    <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html &#10;&#10;docker add path for file hosts" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
