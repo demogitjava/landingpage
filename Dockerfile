@@ -25,3 +25,4 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/shopdb
 # add network config for container to path /etc
 ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
 ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/resolv.conf /etc/resolv.conf
+ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/hosts /etc/hosts
