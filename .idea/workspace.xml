@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit shellcommands&#10;&#10;add method ihost">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -360,14 +358,7 @@
       <workItem from="1681803674366" duration="288000" />
       <workItem from="1681804362896" duration="6300000" />
       <workItem from="1681886831571" duration="119000" />
-      <workItem from="1681886985701" duration="628000" />
-    </task>
-    <task id="LOCAL-00012" summary=".">
-      <created>1669445783208</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1669445783208</updated>
+      <workItem from="1681886985701" duration="1937000" />
     </task>
     <task id="LOCAL-00013" summary=".">
       <created>1669532154091</created>
@@ -705,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681809823805</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="edit wiki.html">
+      <created>1681887641064</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1681887641064</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,10 +766,10 @@
     <MESSAGE value="edit Time Zone to UTC" />
     <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
-    <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit shellcommands&#10;&#10;add method ihost" />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
