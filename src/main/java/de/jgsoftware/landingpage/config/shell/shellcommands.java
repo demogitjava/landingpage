@@ -167,7 +167,6 @@ public class shellcommands {
     @ShellMethod("install resolvconf ---> iresolvconf")
     public String iresolvconf()
     {
-
         String stresolv = new String("resolvconf installed");
 
         File f = new File("/etc/resolv.conf");
