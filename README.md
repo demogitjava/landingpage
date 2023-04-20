@@ -97,7 +97,7 @@ line
 
 to build the image type:
 
--p 217.160.255.254:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --name landingpage
+-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns 192.168.178.3 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus="4" 
 
 
 docker build -f Dockerfile -t landingpage .
