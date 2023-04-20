@@ -24,3 +24,11 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/shopdb
 
 # add network config for container to path /etc
 ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
+
+
+# add jar to maschine
+#ADD https://cgateu01mc.storage-gmx.net/cgate-mc/rest/document/os-live-mc/628955951117900355/1205461780277494448/2023_02_09_landingpage-0.0.1-SNAPSHOT.jar?x_cd=attachment&c=AAi6Q5bWwBXrELqZSZbAF1AAAAGGNb6FXf__&t=1681971710294&h=GePs7LgUZVauSriyPlpgD9aHJdc /root/landingpage.jar
+#ENV JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+#COPY target/landingpage.jar landingpage.jar
+
+#ENTRYPOINT ["java", "-jar", "landingpage.jar"]
