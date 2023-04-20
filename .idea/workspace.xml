@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="update dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
@@ -87,7 +87,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -110,6 +110,7 @@
     <option name="myCommands">
       <command value="mvn spring-boot:run" />
       <command value="mvn compile" />
+      <command value="mvn deploy" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
@@ -310,14 +311,7 @@
       <workItem from="1681895043356" duration="1296000" />
       <workItem from="1681961148630" duration="2389000" />
       <workItem from="1681964290741" duration="4000" />
-      <workItem from="1681964350375" duration="2135000" />
-    </task>
-    <task id="LOCAL-00016" summary="edit README.md">
-      <created>1679133469339</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1679133469339</updated>
+      <workItem from="1681964350375" duration="5269000" />
     </task>
     <task id="LOCAL-00017" summary=".">
       <created>1679133657170</created>
@@ -655,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681964672895</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="update dockerfile">
+      <created>1681966503559</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681966503560</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add google screenshot &#10;form 2023-03-22" />
     <MESSAGE value="add sitemap to robots.txt" />
     <MESSAGE value="edit dockerfile for loading h2 database to image" />
     <MESSAGE value="edit html page &#10;de_body.html" />
@@ -722,7 +722,8 @@
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
+    <MESSAGE value="update dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
