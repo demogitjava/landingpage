@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="update dockerfile">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfiles/Dockerfile_fr" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfiles/Dockerfile_fr" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,14 +311,7 @@
       <workItem from="1681895043356" duration="1296000" />
       <workItem from="1681961148630" duration="2389000" />
       <workItem from="1681964290741" duration="4000" />
-      <workItem from="1681964350375" duration="5269000" />
-    </task>
-    <task id="LOCAL-00017" summary=".">
-      <created>1679133657170</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1679133657170</updated>
+      <workItem from="1681964350375" duration="5318000" />
     </task>
     <task id="LOCAL-00018" summary=".">
       <created>1679413640479</created>
@@ -656,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681966503560</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="edit dockerfile">
+      <created>1681972907425</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681972907425</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +698,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add sitemap to robots.txt" />
     <MESSAGE value="edit dockerfile for loading h2 database to image" />
     <MESSAGE value="edit html page &#10;de_body.html" />
     <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
@@ -723,7 +722,8 @@
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
     <MESSAGE value="update dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dockerfile" />
+    <MESSAGE value="edit dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
