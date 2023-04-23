@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile Dockerfile_fr">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile to run container">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/derbydb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/h2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/mysql.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin.migration.detection.enabled": "false",
-    "last_opened_file_path": "/root/IdeaProjects/demodatabase",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/src/main/resources/static/dbimages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,7 +90,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -99,11 +102,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/dbimages" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/jarclients" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/bootstrap" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,7 +116,7 @@
       <command value="mvn deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Docker Image (1)">
+  <component name="RunManager" selected="Spring Boot.iDemoLandingPage">
     <configuration name="de_body.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/landingpage/src/main/resources/templates/de/de_body.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -239,7 +242,6 @@
         <item itemvalue="Docker.Docker" />
         <item itemvalue="Maven.landingpage [deploy]" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.nginx" />
       </list>
     </recent_temporary>
   </component>
@@ -371,14 +373,11 @@
       <workItem from="1681895043356" duration="1296000" />
       <workItem from="1681961148630" duration="2389000" />
       <workItem from="1681964290741" duration="4000" />
-      <workItem from="1681964350375" duration="8216000" />
-    </task>
-    <task id="LOCAL-00019" summary="update bootstrap version to 5">
-      <created>1679468468015</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1679468468015</updated>
+      <workItem from="1681964350375" duration="9498000" />
+      <workItem from="1682059907462" duration="134000" />
+      <workItem from="1682136865029" duration="532000" />
+      <workItem from="1682137421107" duration="23000" />
+      <workItem from="1682228654975" duration="3141000" />
     </task>
     <task id="LOCAL-00020" summary="edit de.html&#10;and de_header.html">
       <created>1679469124543</created>
@@ -716,7 +715,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681972952557</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="edit dockerfile to run container">
+      <created>1681975857302</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681975857302</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +764,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit html page &#10;de_body.html" />
     <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
     <MESSAGE value="edit de_header.html" />
     <MESSAGE value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
@@ -783,7 +788,8 @@
     <MESSAGE value="update dockerfile" />
     <MESSAGE value="edit dockerfile" />
     <MESSAGE value="edit dockerfile Dockerfile_fr" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile Dockerfile_fr" />
+    <MESSAGE value="edit dockerfile to run container" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile to run container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
