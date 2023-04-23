@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile to run container">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/derbydb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/h2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dbimages/mysql.png" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html&#10;&#10;add xpanel for supported sql databases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
@@ -377,14 +374,7 @@
       <workItem from="1682059907462" duration="134000" />
       <workItem from="1682136865029" duration="532000" />
       <workItem from="1682137421107" duration="23000" />
-      <workItem from="1682228654975" duration="3141000" />
-    </task>
-    <task id="LOCAL-00020" summary="edit de.html&#10;and de_header.html">
-      <created>1679469124543</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1679469124543</updated>
+      <workItem from="1682228654975" duration="4242000" />
     </task>
     <task id="LOCAL-00021" summary="edit description">
       <created>1679469598697</created>
@@ -722,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681975857302</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="edit wiki.html&#10;&#10;add xpanel for supported sql databases">
+      <created>1682232073135</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1682232073135</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -764,7 +761,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit application.properties&#10;&#10;enable gzip compression" />
     <MESSAGE value="edit de_header.html" />
     <MESSAGE value="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px" />
     <MESSAGE value="update m_de.html" />
@@ -789,7 +785,8 @@
     <MESSAGE value="edit dockerfile" />
     <MESSAGE value="edit dockerfile Dockerfile_fr" />
     <MESSAGE value="edit dockerfile to run container" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile to run container" />
+    <MESSAGE value="edit wiki.html&#10;&#10;add xpanel for supported sql databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html&#10;&#10;add xpanel for supported sql databases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
