@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit wiki.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
@@ -374,14 +374,7 @@
       <workItem from="1682059907462" duration="134000" />
       <workItem from="1682136865029" duration="532000" />
       <workItem from="1682137421107" duration="23000" />
-      <workItem from="1682228654975" duration="4731000" />
-    </task>
-    <task id="LOCAL-00022" summary="edit page de for loading bootstrap &#10;lib and css">
-      <created>1679469939029</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1679469939029</updated>
+      <workItem from="1682228654975" duration="5483000" />
     </task>
     <task id="LOCAL-00023" summary="edit import bootstrap and bootflat files">
       <created>1679470438822</created>
@@ -719,7 +712,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682233001429</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="edit wiki.html">
+      <created>1682233486601</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1682233486601</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -777,7 +777,6 @@
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
     <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
-    <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
     <MESSAGE value="update dockerfile" />
@@ -786,7 +785,8 @@
     <MESSAGE value="edit dockerfile to run container" />
     <MESSAGE value="edit wiki.html&#10;&#10;add xpanel for supported sql databases" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit wiki.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit wiki.html" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
