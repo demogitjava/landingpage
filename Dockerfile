@@ -28,8 +28,7 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/shopdb
 # add network config for container to path /etc
 ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
 
+ADD /target/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
 
-# add jar to maschine
-#COPY target/2023_02_09_landingpage.jar /root/2023_02_09_landingpage.jar
 
-#ENTRYPOINT ["java", "-jar", "/root/2023_02_09_landingpage.jar"]
+ENTRYPOINT ["java", "-jar", "/root/landingpage.jar"]

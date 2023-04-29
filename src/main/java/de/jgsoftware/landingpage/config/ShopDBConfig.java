@@ -20,9 +20,14 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.HashMap;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.web",
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.shopdb",
         entityManagerFactoryRef = "shopEntityManagerFactory",
         transactionManagerRef = "shopTransactionManager")
 public class ShopDBConfig extends HikariConfig
@@ -60,7 +65,7 @@ public class ShopDBConfig extends HikariConfig
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         return builder.dataSource(dataSource1).properties(properties)
-                .packages("de.jgsoftware.landingpage.model").persistenceUnit("Shop").build();
+                .packages("de.jgsoftware.webshop.model").persistenceUnit("Shop").build();
     }
 
     @Bean(name = "shopTransactionManager")
