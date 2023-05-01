@@ -10,7 +10,7 @@
           </option>
           <option name="buildImageConfig">
             <BuildImageConfig>
-              <option name="builtImageTag" value="de_landingpage" />
+              <option name="builtImageTag" value="de_landingpage:latest" />
               <option name="dockerFile" value="Dockerfile" />
             </BuildImageConfig>
           </option>
@@ -40,7 +40,6 @@
                 </option>
               </VolumeState>
             </option>
-            <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
       </target>
