@@ -30,6 +30,4 @@ ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networ
 
 ADD /target/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
 
-# ENTRYPOINT
-#["java","-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 ENTRYPOINT ["java","-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n","-Djava.security.egd=file:/dev/./urandom","-jar","/root/landingpage.jar"]

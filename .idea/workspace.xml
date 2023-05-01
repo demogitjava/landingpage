@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="remove files resolv.conf &#10;and spring-shell.log">
-      <change afterPath="$PROJECT_DIR$/Dockerfileremotedebug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add Dockerfile for debug">
+      <change beforePath="$PROJECT_DIR$/Dockerfileremotedebug" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfileremotedebug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -515,14 +513,7 @@
       <workItem from="1682924215284" duration="67000" />
       <workItem from="1682924298664" duration="340000" />
       <workItem from="1682924666000" duration="1001000" />
-      <workItem from="1682925669161" duration="1425000" />
-    </task>
-    <task id="LOCAL-00028" summary="add sitemap to robots.txt">
-      <created>1681020983332</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1681020983332</updated>
+      <workItem from="1682925669161" duration="1570000" />
     </task>
     <task id="LOCAL-00029" summary="edit dockerfile for loading h2 database to image">
       <created>1681026176479</created>
@@ -860,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682926104693</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="add Dockerfile for debug">
+      <created>1682927214115</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1682927214115</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -902,7 +900,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add to pom.xml&#10;  &lt;dependency&gt;&#10;            &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;&#10;            &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;&#10;            &lt;version&gt;4.0.3&lt;/version&gt;&#10;        &lt;/dependency&gt;" />
     <MESSAGE value="edit pom.xml starter parent to version&#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.5.1&lt;/version&gt;&#10;    &lt;/parent&gt;&#10;    &#10;for error message &#10;org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression:" />
     <MESSAGE value="edit pom.xml &#10;add repositories" />
     <MESSAGE value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
@@ -927,7 +924,8 @@
     <MESSAGE value="delete docker compose files" />
     <MESSAGE value="edit dockerfile" />
     <MESSAGE value="remove files resolv.conf &#10;and spring-shell.log" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove files resolv.conf &#10;and spring-shell.log" />
+    <MESSAGE value="add Dockerfile for debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Dockerfile for debug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
