@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="remove files resolv.conf &#10;and spring-shell.log">
+      <change afterPath="$PROJECT_DIR$/Dockerfileremotedebug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,42 +77,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin.migration.detection.enabled&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.25186568&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin.migration.detection.enabled": "false",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/Dockerfileremotedebug",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.25186568",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -148,7 +149,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.landingpage-0.0.1-SNAPSHOT.jar">
+  <component name="RunManager" selected="Docker.Docker Image (2)">
     <configuration name="All in landingpage" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="landingpage" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -163,6 +164,7 @@
     </configuration>
     <configuration name="landingpage-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/landingpage-0.0.1-SNAPSHOT.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="de_body.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/landingpage/src/main/resources/templates/de/de_body.html" useBuiltInWebServerPort="true">
@@ -203,7 +205,8 @@
       <option name="ACTIVE_PROFILES" value="dev" />
       <option name="DEBUG_MODE" value="true" />
       <module name="landingpage" />
-      <target name="de_landingpage" />
+      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
+      <target name="de_remotedebuglandingapge:latest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="VM_PARAMETERS" value="-agentlib:jdwp=transport=dt_socket,address=*:5005,server=y,suspend=n" />
       <method v="2">
@@ -219,6 +222,38 @@
       <target name="de_landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/target" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="de_remotedebuglandingapge:latest" />
+          <option name="containerName" value="remotedebug" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="de_remotedebuglandingapge:latest" />
+          <option name="containerName" value="de_landingapgeremotedeub" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="80" />
+              </DockerPortBindingImpl>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5005" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="5005" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
@@ -281,6 +316,8 @@
     <list>
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Docker.dockerremote" />
+      <item itemvalue="Docker.Docker Image (1)" />
+      <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
       <item itemvalue="JavaScript Debug.de_body.html" />
@@ -292,6 +329,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Docker Image (2)" />
+        <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
         <item itemvalue="Docker.Docker Image" />
       </list>
@@ -476,21 +515,7 @@
       <workItem from="1682924215284" duration="67000" />
       <workItem from="1682924298664" duration="340000" />
       <workItem from="1682924666000" duration="1001000" />
-      <workItem from="1682925669161" duration="330000" />
-    </task>
-    <task id="LOCAL-00026" summary="add google screenshot &#10;form 2023-03-22">
-      <created>1679476815926</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1679476815926</updated>
-    </task>
-    <task id="LOCAL-00027" summary="edit wiki.html">
-      <created>1679740818966</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1679740818966</updated>
+      <workItem from="1682925669161" duration="1425000" />
     </task>
     <task id="LOCAL-00028" summary="add sitemap to robots.txt">
       <created>1681020983332</created>
@@ -821,7 +846,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682882085572</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="edit dockerfile">
+      <created>1682926015952</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1682926015952</updated>
+    </task>
+    <task id="LOCAL-00076" summary="remove files resolv.conf &#10;and spring-shell.log">
+      <created>1682926104693</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1682926104693</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -863,7 +902,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update m_de.html" />
     <MESSAGE value="add to pom.xml&#10;  &lt;dependency&gt;&#10;            &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;&#10;            &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;&#10;            &lt;version&gt;4.0.3&lt;/version&gt;&#10;        &lt;/dependency&gt;" />
     <MESSAGE value="edit pom.xml starter parent to version&#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.5.1&lt;/version&gt;&#10;    &lt;/parent&gt;&#10;    &#10;for error message &#10;org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression:" />
     <MESSAGE value="edit pom.xml &#10;add repositories" />
@@ -888,7 +926,8 @@
     <MESSAGE value="edit dockerfile to start jar with ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;/root/landingpage.jar&quot;]&#10;&#10;edit h2 jdbc config to connect to databases with subfolders for&#10;mawi &#10;shop &#10;the txt for folder" />
     <MESSAGE value="delete docker compose files" />
     <MESSAGE value="edit dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile" />
+    <MESSAGE value="remove files resolv.conf &#10;and spring-shell.log" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove files resolv.conf &#10;and spring-shell.log" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
