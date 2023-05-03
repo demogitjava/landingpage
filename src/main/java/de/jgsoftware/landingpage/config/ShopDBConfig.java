@@ -27,7 +27,7 @@ import java.util.HashMap;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.shopdb",
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces",
         entityManagerFactoryRef = "shopEntityManagerFactory",
         transactionManagerRef = "shopTransactionManager")
 public class ShopDBConfig extends HikariConfig
@@ -51,7 +51,7 @@ public class ShopDBConfig extends HikariConfig
     @Bean("ds3")
     @Qualifier("shopdb")
     @ConfigurationProperties(prefix="app.datasource3")
-    public DataSource secondDS()
+    public DataSource thirdDS()
     {
         return DataSourceBuilder.create().build();
     }

@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile to &#10;graalvmce build on oraclelinux">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit shopdb config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfileremotedebug" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfileremotedebug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -441,14 +437,7 @@
       <workItem from="1682925669161" duration="8006000" />
       <workItem from="1683015398148" duration="702000" />
       <workItem from="1683018257376" duration="3590000" />
-      <workItem from="1683107458372" duration="8008000" />
-    </task>
-    <task id="LOCAL-00031" summary="edit html page &#10;de_body.html">
-      <created>1681032151152</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1681032151152</updated>
+      <workItem from="1683107458372" duration="8555000" />
     </task>
     <task id="LOCAL-00032" summary="edit html page &#10;de_body.html">
       <created>1681036235808</created>
@@ -786,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682933415859</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="edit shopdb config">
+      <created>1683115629477</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1683115629477</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -828,7 +824,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit pom.xml &#10;add repositories" />
     <MESSAGE value="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;" />
     <MESSAGE value="delete interface for shellcommands start methods as public class&#10;with @ShellComponent" />
     <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
@@ -853,7 +848,8 @@
     <MESSAGE value="add Dockerfile for debug" />
     <MESSAGE value="." />
     <MESSAGE value="edit dockerfile to &#10;graalvmce build on oraclelinux" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile to &#10;graalvmce build on oraclelinux" />
+    <MESSAGE value="edit shopdb config" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit shopdb config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
