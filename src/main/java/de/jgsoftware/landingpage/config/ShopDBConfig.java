@@ -38,7 +38,7 @@ public class ShopDBConfig extends HikariConfig
 
 
     @Autowired
-    DataSource dataSource1;
+    DataSource dataSource2;
 
 
 
@@ -60,12 +60,12 @@ public class ShopDBConfig extends HikariConfig
 
     @Bean(name = "shopEntityManagerFactory")
     public LocalContainerEntityManagerFactoryBean shopEntityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                           @Qualifier("shopdb") DataSource dataSource1) {
+                                                                           @Qualifier("shopdb") DataSource dataSource2) {
         HashMap<String, Object> properties = new HashMap<>();
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-        return builder.dataSource(dataSource1).properties(properties)
-                .packages("de.jgsoftware.webshop.model").persistenceUnit("Shop").build();
+        return builder.dataSource(dataSource2).properties(properties)
+                .packages("de.jgsoftware.landingpage.model").persistenceUnit("Shop").build();
     }
 
     @Bean(name = "shopTransactionManager")
@@ -75,10 +75,10 @@ public class ShopDBConfig extends HikariConfig
     }
 
     @Bean(name = "shopJdbcTemplate")
-    public JdbcTemplate jdbcTemplate(@Qualifier("ds3") DataSource dataSource1)
+    public JdbcTemplate jdbcTemplate(@Qualifier("ds3") DataSource dataSource2)
     {
 
-        return new JdbcTemplate(dataSource1);
+        return new JdbcTemplate(dataSource2);
     }
 
 

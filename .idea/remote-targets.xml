@@ -40,6 +40,7 @@
                 </option>
               </VolumeState>
             </option>
+            <option name="javaVersionString" value="11.0.18" />
           </config>
         </ContributedStateBase>
       </target>
