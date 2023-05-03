@@ -20,6 +20,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.HashMap;
 
+
 /**
  *
  * @author hoscho
@@ -51,7 +52,7 @@ public class ShopDBConfig extends HikariConfig
     @Bean("ds3")
     @Qualifier("shopdb")
     @ConfigurationProperties(prefix="app.datasource3")
-    public DataSource thirdDS()
+    public DataSource secondDS()
     {
         return DataSourceBuilder.create().build();
     }
@@ -80,7 +81,4 @@ public class ShopDBConfig extends HikariConfig
 
         return new JdbcTemplate(dataSource2);
     }
-
-
-
 }

@@ -11,12 +11,12 @@
           <option name="buildImageConfig">
             <BuildImageConfig>
               <option name="builtImageTag" value="de_landingpage:latest" />
-              <option name="dockerFile" value="Dockerfile" />
+              <option name="dockerFile" value="Dockerfileremotedebug" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+              <option name="runCliOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 -e JAVA_TOOL_OPTIONS=&quot;-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n&quot; --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
             </ContainerConfig>
           </option>
         </config>
