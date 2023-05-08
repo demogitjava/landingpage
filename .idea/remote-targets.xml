@@ -11,7 +11,7 @@
           <option name="buildImageConfig">
             <BuildImageConfig>
               <option name="builtImageTag" value="de_landingapge:latest" />
-              <option name="dockerFile" value="Dockerfile" />
+              <option name="dockerFile" value="Dockerfileremotedebug" />
             </BuildImageConfig>
           </option>
           <option name="containerConfig">
