@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="." />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="add .mvn/wrapper">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -518,13 +520,7 @@
       <workItem from="1683534856753" duration="2000" />
       <workItem from="1683535069530" duration="2344000" />
       <workItem from="1683540155156" duration="5212000" />
-    </task>
-    <task id="LOCAL-00036" summary="edit de_header.html">
-      <created>1681040457024</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1681040457024</updated>
+      <workItem from="1683553927019" duration="161000" />
     </task>
     <task id="LOCAL-00037" summary="edit de html pages&#10;edit size of landingapge image by &#10;default to 600 400 px">
       <created>1681048564594</created>
@@ -862,7 +858,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683535749136</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="add .mvn/wrapper">
+      <created>1683553964257</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1683553964258</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -904,7 +907,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop" />
     <MESSAGE value="edit config files" />
     <MESSAGE value="add cpu command to docker command" />
     <MESSAGE value="edit Time Zone to UTC" />
@@ -929,7 +931,8 @@
     <MESSAGE value="edit shopdbconfig" />
     <MESSAGE value="edit Dao_admin&#10;&#10;edit private JdbcTemplate jtm2;&#10;to JdbcTemplate jtm2;" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="add .mvn/wrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .mvn/wrapper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

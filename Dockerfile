@@ -10,12 +10,16 @@ ENV LC_ALL de_DE.ISO-8859-1
 
 ENV TZ Europe/Berlin
 
+# web
 EXPOSE 80
+
+# h2 console
 EXPOSE 8082
 
-# optional for
-# remote connect to db
-EXPOSE 9092
+
+# cluster h2 db
+EXPOSE 9101
+EXPOSE 9102
 
 ENV HTTP_PROXY="http://217.160.255.254:80"
 
