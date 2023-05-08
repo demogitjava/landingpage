@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit Dao_admin&#10;&#10;edit private JdbcTemplate jtm2;&#10;to JdbcTemplate jtm2;">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/landingpage_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/landingpage_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfileremotedebug" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfileremotedebug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/SpringSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +62,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.9.1-bin/apache-maven-3.9.1" />
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="nonRecursive" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -114,7 +100,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "master",
     "kotlin.migration.detection.enabled": "false",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/Dockerfile",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -149,8 +135,8 @@
       <command value="mvn spring-boot:run" />
       <command value="mvn install" />
       <command value="mvn spring-boot:deploy" />
-      <command value="mvn deploy" />
       <command value="mvn compile" />
+      <command value="mvn deploy" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -171,12 +157,12 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Application.iDemoLandingPage">
+  <component name="RunManager" selected="Maven.landingpage [jar:jar]">
     <configuration name="iDemoLandingPage" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
-      <target name="de_landingpage" />
+      <target name="@@@LOCAL@@@" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -190,6 +176,95 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="landingpage [deploy:deploy]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="deploy:deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="landingpage [jar:jar]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jar:jar" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="landingpage [mvn,deploy:deploy]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <target name="@@@LOCAL@@@" />
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mvn" />
+                <option value="deploy:deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="dev" value="true" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2" />
     </configuration>
     <configuration name="Remote Debug Landingapge" type="Remote">
       <module name="landingpage" />
@@ -264,6 +339,14 @@
           <option name="imageTag" value="de_landingpage:latest" />
           <option name="containerName" value="de_landingpage" />
           <option name="commandLineOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$USER_HOME$/snapshots" />
+                <option name="hostPath" value="$USER_HOME$/Dokumente/snapshotsforcontainer" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
         </settings>
       </deployment>
       <method v="2" />
@@ -295,11 +378,16 @@
       <item itemvalue="Docker.dockerremotedebug" />
       <item itemvalue="Docker.de_landingapge" />
       <item itemvalue="Docker.mysqlserver" />
+      <item itemvalue="Maven.landingpage [mvn,deploy:deploy]" />
+      <item itemvalue="Maven.landingpage [deploy:deploy]" />
+      <item itemvalue="Maven.landingpage [jar:jar]" />
       <item itemvalue="Remote JVM Debug.Remote Debug Landingapge" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.landingpage [jar:jar]" />
+        <item itemvalue="Maven.landingpage [deploy:deploy]" />
         <item itemvalue="Docker.de_landingapge" />
         <item itemvalue="Docker.mysqlserver" />
       </list>
@@ -512,14 +600,7 @@
       <workItem from="1683532620759" duration="878000" />
       <workItem from="1683533962645" duration="481000" />
       <workItem from="1683534856753" duration="2000" />
-      <workItem from="1683535069530" duration="387000" />
-    </task>
-    <task id="LOCAL-00035" summary="edit de_header.html">
-      <created>1681040065764</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1681040065764</updated>
+      <workItem from="1683535069530" duration="2344000" />
     </task>
     <task id="LOCAL-00036" summary="edit de_header.html">
       <created>1681040457024</created>
@@ -857,7 +938,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683127225731</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary=".">
+      <created>1683535749135</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1683535749136</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -922,9 +1010,9 @@
     <MESSAGE value="edit dockerfile to &#10;graalvmce build on oraclelinux" />
     <MESSAGE value="edit shopdb config" />
     <MESSAGE value="edit shopdbconfig" />
-    <MESSAGE value="." />
     <MESSAGE value="edit Dao_admin&#10;&#10;edit private JdbcTemplate jtm2;&#10;to JdbcTemplate jtm2;" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Dao_admin&#10;&#10;edit private JdbcTemplate jtm2;&#10;to JdbcTemplate jtm2;" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
