@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
-    <option name="projectDefaultTargetUuid" value="1505536c-f1fe-47b6-b1a7-0ef91bdea333" />
+    <option name="projectDefaultTargetUuid" value="87b31063-7033-4b99-a4f6-aa7f4b5f07cf" />
     <targets>
       <target name="de_landingpage" type="docker" uuid="87b31063-7033-4b99-a4f6-aa7f4b5f07cf">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="buildImageConfig">
+            <BuildImageConfig>
+              <option name="builtImageTag" value="de_landingpage:latest" />
+              <option name="dockerFile" value="Dockerfile" />
+            </BuildImageConfig>
+          </option>
+          <option name="containerConfig">
+            <ContainerConfig>
+              <option name="runCliOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+            </ContainerConfig>
+          </option>
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="agentFolder">
+              <VolumeState>
+                <option name="targetSpecificBits">
+                  <map>
+                    <entry key="mountAsVolume" value="false" />
+                  </map>
+                </option>
+              </VolumeState>
+            </option>
+            <option name="classpathFolder">
+              <VolumeState>
+                <option name="targetSpecificBits">
+                  <map>
+                    <entry key="mountAsVolume" value="false" />
+                  </map>
+                </option>
+              </VolumeState>
+            </option>
+          </config>
+        </ContributedStateBase>
+      </target>
+      <target name="de_remotedebuglandingapge:latest" type="docker" uuid="0fb6bf41-a70b-430b-8682-a8ac7f15e723">
         <config>
           <option name="targetPlatform">
             <TargetPlatform />
@@ -16,7 +56,7 @@
           </option>
           <option name="containerConfig">
             <ContainerConfig>
-              <option name="runCliOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 -e JAVA_TOOL_OPTIONS=&quot;-agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n&quot; --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+              <option name="runCliOptions" value="-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot;" />
             </ContainerConfig>
           </option>
         </config>
@@ -41,47 +81,6 @@
               </VolumeState>
             </option>
             <option name="javaVersionString" value="11.0.18" />
-          </config>
-        </ContributedStateBase>
-      </target>
-      <target name="de_remotedebuglandingapge:latest" type="docker" uuid="0fb6bf41-a70b-430b-8682-a8ac7f15e723">
-        <config>
-          <option name="targetPlatform">
-            <TargetPlatform />
-          </option>
-          <option name="buildImageConfig">
-            <BuildImageConfig>
-              <option name="builtImageTag" value="de_remotedebuglandingapge:latest" />
-              <option name="dockerFile" value="Dockerfileremotedebug" />
-            </BuildImageConfig>
-          </option>
-          <option name="containerConfig">
-            <ContainerConfig>
-              <option name="runCliOptions" value="-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
-            </ContainerConfig>
-          </option>
-        </config>
-        <ContributedStateBase type="JavaLanguageRuntime">
-          <config>
-            <option name="agentFolder">
-              <VolumeState>
-                <option name="targetSpecificBits">
-                  <map>
-                    <entry key="mountAsVolume" value="false" />
-                  </map>
-                </option>
-              </VolumeState>
-            </option>
-            <option name="classpathFolder">
-              <VolumeState>
-                <option name="targetSpecificBits">
-                  <map>
-                    <entry key="mountAsVolume" value="false" />
-                  </map>
-                </option>
-              </VolumeState>
-            </option>
-            <option name="javaVersionString" value="17.0.2" />
           </config>
         </ContributedStateBase>
       </target>

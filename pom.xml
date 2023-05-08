@@ -54,12 +54,6 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity5</artifactId>
             <scope>compile</scope>
@@ -174,6 +168,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
+
                             <classifier>spring-boot</classifier>
                             <mainClass>de.jgsoftware.landingpage.iDemoLandingPage</mainClass>
                         </configuration>

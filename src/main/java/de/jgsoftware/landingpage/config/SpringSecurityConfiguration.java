@@ -54,6 +54,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers(
 
 						"index",
+						"admin",
 						"about",
 						"service",
 						"contact",
