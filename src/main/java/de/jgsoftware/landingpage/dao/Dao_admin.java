@@ -167,11 +167,13 @@ public class Dao_admin implements i_dao_admin
     }
     
     @Override
-    public List connectsnavbaryear(int year)
+    public Long connectsnavbaryear(int year)
     {
-        List<useragent> connectsnavbaryear = jtm.query(
-                "select count(stbrowser) from useragent WHERE year(datum) = +" + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
-        return connectsnavbaryear;
+       // List<useragent> connectsnavbaryear = jtm.query(
+         //       "select count(stbrowser) from useragent WHERE year(datum) = +" + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
+        
+       long connavyear = jtm.queryForObject("select count(stbrowser) from useragent WHERE year(datum) = +" + "'" + year + "'", Long.class);
+       return connavyear;
     }
     
     @Override

@@ -122,7 +122,9 @@ public class Admin_Controller implements iAdminController
             for navbar
 
          */
-        mv.addObject("connectsnavaryear", admin_service.getIdao_admin().connectsnavbaryear(admin_service.getcurrentYear()));
+        Long connectyear = admin_service.getIdao_admin().connectsnavbaryear(admin_service.getcurrentYear());
+        String stconyear = connectyear.toString();
+        mv.addObject("connectsnavaryear", stconyear);
 
 
 

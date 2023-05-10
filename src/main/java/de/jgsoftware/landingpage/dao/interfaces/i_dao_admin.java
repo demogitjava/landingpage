@@ -38,9 +38,10 @@ public interface i_dao_admin
     List allgetBrowserconnects();
     List  allconnectsbymonth();
     //List connectsmonthnavbar(int month, int year);
-    List connectsnavbaryear(int year);
+    //List connectsnavbaryear(int year);
     List connectsnavbargraphicalyear(int year);
     
     Long connectsmonthnavbar(int month, int year);
+    Long connectsnavbaryear(int year);
 
 }
