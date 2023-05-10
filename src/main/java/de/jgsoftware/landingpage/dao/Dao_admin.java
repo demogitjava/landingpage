@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
+import javax.sql.DataSource;
 
 @Repository
 public class Dao_admin implements i_dao_admin
@@ -24,7 +24,7 @@ public class Dao_admin implements i_dao_admin
     @Autowired
     @Qualifier(value = "defaultJdbcTemplate")
     JdbcTemplate jtm;
-
+    
     /*
             Crud Interface -> de.jgsoftware.landingpage.model.m_webtextlayout
      */
@@ -76,7 +76,7 @@ public class Dao_admin implements i_dao_admin
     }
 
 
-
+    @Override
     public List loadbrowserconnectmonth()
     {
         List<useragent> connectsmonth = jtm.query(
@@ -95,6 +95,7 @@ public class Dao_admin implements i_dao_admin
             return count of connect
             by year
      */
+    @Override
     public List countofyear()
     {
         List<useragent> countmonth = jtm.query(
@@ -102,7 +103,80 @@ public class Dao_admin implements i_dao_admin
         return countmonth;
     }
 
-
-
+    /**
+     *
+     * @return
+     */
+    @Override
+    public List allgetBrowserconnects()
+    {
+      
+       /*
+            select \n" +
+            "count(stbrowser), \n" +
+            "stbrowser,\n" +
+            "stsystem,\n" +
+            "EXTRACT(MONTH FROM datum) as month,\n" +
+            "EXTRACT(YEAR FROM datum) as year\n" +
+            "from useragent group by stbrowser, month, year, stsystem
+        
+        */
+        List<useragent> allbrowserconnects = jtm.query(
+                "select count(stbrowser), stbrowser, stsystem, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent group by stbrowser, month, year, stsystem", new BeanPropertyRowMapper(useragent.class));
+        
+        return allbrowserconnects;
+    }
+    
+    
+    // List allconnectsbymonth();
+    @Override
+    public List  allconnectsbymonth()
+    {
+      
+      
+        List<useragent> allconnectsbymonth = jtm.query(
+                "select count(stbrowser), stbrowser, stsystem, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent group by stbrowser, month, year, stsystem order by current_date", new BeanPropertyRowMapper(useragent.class));
+        
+        return allconnectsbymonth;
+    }
+    
+    
+    
+    
+    /*
+    
+           public List<MKundenstamm> getCustomerbyname(String customername)
+    {
+        String beginswith = customername + "%";
+        List<MKundenstamm> customerlist = jtm.query("select * from kundenstamm where kundenname like " + "'" + beginswith + "'", new BeanPropertyRowMapper(MKundenstamm.class));
+        return customerlist;
+    }
+    
+    */
+    @Override
+    public List connectsmonthnavbar(int month, int year)
+    {
+      
+      
+        List<useragent> connectsmonthnavbar = jtm.query(
+                "select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
+        return connectsmonthnavbar;
+    }
+    
+    @Override
+    public List connectsnavbaryear(int year)
+    {
+        List<useragent> connectsnavbaryear = jtm.query(
+                "select count(stbrowser) from useragent WHERE year(datum) = +" + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
+        return connectsnavbaryear;
+    }
+    
+    @Override
+    public List connectsnavbargraphicalyear(int year)
+    {
+        List<useragent> connectsnavbargraphicalyear = jtm.query(
+                "select count(stbrowser), EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent WHERE year(datum) = " + "'" + year + "'" + " group by month, year order by current_date", new BeanPropertyRowMapper(useragent.class));
+        return connectsnavbargraphicalyear;
+    }
 
 }

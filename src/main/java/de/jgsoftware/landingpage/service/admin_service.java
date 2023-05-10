@@ -2,7 +2,6 @@ package de.jgsoftware.landingpage.service;
 
 
 import de.jgsoftware.landingpage.dao.Dao_admin;
-import de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent;
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -23,20 +22,6 @@ public class admin_service implements i_admin_service
 {
 
 
-    // interface hibernate jpa
-    @Autowired
-    i_jpa_useragent iJpaUseragent;
-
-
-    @Override
-    public i_jpa_useragent getiJpaUseragent() {
-        return iJpaUseragent;
-    }
-
-    @Override
-    public void setiJpaUseragent(i_jpa_useragent iJpaUseragent) {
-        this.iJpaUseragent = iJpaUseragent;
-    }
 
     @Autowired
     Dao_admin idao_admin;
@@ -127,7 +112,7 @@ public class admin_service implements i_admin_service
     {
 
        int year = getcurrentYear();
-       return iJpaUseragent.connectsnavbargraphicalyear(year);
+       return idao_admin.connectsnavbargraphicalyear(year);
     }
 
     @Override

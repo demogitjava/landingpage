@@ -3,6 +3,7 @@ package de.jgsoftware.landingpage.dao.interfaces;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 
 import java.util.List;
+import javax.sql.DataSource;
 
 public interface i_dao_admin
 {
@@ -33,4 +34,11 @@ public interface i_dao_admin
     // --> demodb
     // --> useragent
     List countofyear();
+    
+    List allgetBrowserconnects();
+    List  allconnectsbymonth();
+    List connectsmonthnavbar(int month, int year);
+    List connectsnavbaryear(int year);
+    List connectsnavbargraphicalyear(int year);
+
 }

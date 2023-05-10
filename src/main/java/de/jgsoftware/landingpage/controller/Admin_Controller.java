@@ -103,7 +103,7 @@ public class Admin_Controller implements iAdminController
             all connects by month
             -> sql current_date
          */
-        mv.addObject("currentconnects", admin_service.getiJpaUseragent().allconnectsbymonth());
+        mv.addObject("currentconnects", admin_service.getIdao_admin().allconnectsbymonth());
 
 
         /*
@@ -112,7 +112,7 @@ public class Admin_Controller implements iAdminController
 
          */
 
-        mv.addObject("connectsnavar", admin_service.getiJpaUseragent().connectsmonthnavbar(month, year));
+        mv.addObject("connectsnavar", admin_service.getIdao_admin().connectsmonthnavbar(month, year));
 
 
         /*
@@ -120,7 +120,7 @@ public class Admin_Controller implements iAdminController
             for navbar
 
          */
-        mv.addObject("connectsnavaryear", admin_service.getiJpaUseragent().connectsnavbaryear(admin_service.getcurrentYear()));
+        mv.addObject("connectsnavaryear", admin_service.getIdao_admin().connectsnavbaryear(admin_service.getcurrentYear()));
 
 
 

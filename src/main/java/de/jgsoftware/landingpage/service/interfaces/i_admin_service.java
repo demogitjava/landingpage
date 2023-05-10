@@ -1,7 +1,6 @@
 package de.jgsoftware.landingpage.service.interfaces;
 
 import de.jgsoftware.landingpage.dao.Dao_admin;
-import de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent;
 
 import javax.script.ScriptEngineManager;
 import java.util.List;
@@ -15,14 +14,6 @@ public interface i_admin_service
     int getcurrentMonth();
     int getcurrentYear();
 
-
-
-    /*
-        interface dao
-        i_jpa_useragent
-     */
-    i_jpa_useragent getiJpaUseragent();
-    void setiJpaUseragent(i_jpa_useragent iJpaUseragent);
 
 
 
