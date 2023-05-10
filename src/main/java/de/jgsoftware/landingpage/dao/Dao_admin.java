@@ -154,13 +154,16 @@ public class Dao_admin implements i_dao_admin
     
     */
     @Override
-    public List connectsmonthnavbar(int month, int year)
+    public Long connectsmonthnavbar(int month, int year)
     {
       
+        
+        long navbarmonth = jtm.queryForObject("select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", Long.class);
+
       
-        List<useragent> connectsmonthnavbar = jtm.query(
-                "select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
-        return connectsmonthnavbar;
+       // List<useragent> connectsmonthnavbar = jtm.query(
+         //       "select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", new BeanPropertyRowMapper(useragent.class));
+        return navbarmonth;
     }
     
     @Override

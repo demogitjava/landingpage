@@ -112,7 +112,9 @@ public class Admin_Controller implements iAdminController
 
          */
 
-        mv.addObject("connectsnavar", admin_service.getIdao_admin().connectsmonthnavbar(month, year));
+        Long connetmonth = admin_service.getIdao_admin().connectsmonthnavbar(month, year);
+        String stconmonth = connetmonth.toString();
+        mv.addObject("connectsnavar", new String(stconmonth));
 
 
         /*

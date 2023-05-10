@@ -161,6 +161,24 @@
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.landingpage-0.0.1-SNAPSHOT.jar">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="iDemoLandingPage" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="-agentlib:jdwp" value="transport=dt_socket,server=y,suspend=n,address=*:5005" />
@@ -236,24 +254,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
-      <deployment type="docker-image">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="de_landingapge" type="docker-deploy" factoryName="docker-image" editBeforeRun="true" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -295,19 +295,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.iDemoLandingPage" />
-      <item itemvalue="Docker.Dockerfile: Compose Deployment" />
-      <item itemvalue="Docker.dockerremotedebug" />
-      <item itemvalue="Docker.de_landingapge" />
-      <item itemvalue="Docker.mysqlserver" />
       <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
       <item itemvalue="Remote JVM Debug.Remote Debug Landingapge" />
-      <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
-        <item itemvalue="Docker.de_landingapge" />
-        <item itemvalue="Docker.mysqlserver" />
       </list>
     </recent_temporary>
   </component>
