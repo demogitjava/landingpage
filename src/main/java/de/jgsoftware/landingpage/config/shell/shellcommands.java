@@ -177,7 +177,10 @@ public class shellcommands {
             FileWriter fileWriter = new FileWriter(f);
             PrintWriter printWriter = new PrintWriter(fileWriter);
             printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
-            printWriter.print("nameserver 8.8.8.8 8.8.4.4" + "\n");
+            printWriter.print("nameserver 208.67.222.222" + "\n");
+            printWriter.print("nameserver 208.67.220.220" + "\n");
+            printWriter.print("nameserver 208.67.220.222" + "\n");
+            printWriter.print("ameserver 208.67.222.220" + "\n");
             printWriter.print("options ndots:0" + "\n");
 
             printWriter.close();
