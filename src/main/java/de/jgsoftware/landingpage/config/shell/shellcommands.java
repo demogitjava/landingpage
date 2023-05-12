@@ -184,7 +184,7 @@ public class shellcommands {
             printWriter.print("options ndots:0" + "\n");
 
             printWriter.close();
-        } catch (Exception e)
+        } catch (IOException e)
         {
             System.out.print("Fehler " + e);
         }
