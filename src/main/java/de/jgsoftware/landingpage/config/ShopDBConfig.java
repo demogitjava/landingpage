@@ -33,13 +33,15 @@ import java.util.HashMap;
         transactionManagerRef = "shopTransactionManager")
 public class ShopDBConfig extends HikariConfig
 {
-    @Autowired
-    @Qualifier(value = "shopJdbcTemplate")
-    JdbcTemplate jtm2;
+    //@Autowired
+    //@Qualifier(value = "shopJdbcTemplate")
+    //JdbcTemplate jtm2;
 
+    
+    
 
-    @Autowired
-    DataSource dataSource2;
+    //@Autowired
+    //DataSource dataSource2;
 
 
 
