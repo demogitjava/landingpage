@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.Int_m_webtextlayout;
 import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
+import de.jgsoftware.landingpage.model.dashboardgraphicline;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.model.useragent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -179,9 +180,11 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List connectsnavbargraphicalyear(int year)
     {
-        List<useragent> connectsnavbargraphicalyear = jtm.query(
-                "select count(stbrowser), EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent WHERE year(datum) = " + "'" + year + "'" + " group by month, year order by current_date", new BeanPropertyRowMapper(useragent.class));
+        
+         List<dashboardgraphicline> connectsnavbargraphicalyear = jtm.query(
+                "select count(stbrowser) as count, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent WHERE year(datum) = " + "'" + year + "'" + " group by month, year order by current_date", new BeanPropertyRowMapper(dashboardgraphicline.class));
         return connectsnavbargraphicalyear;
+       
     }
 
 }
