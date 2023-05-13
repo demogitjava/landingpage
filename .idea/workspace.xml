@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile&#10;expose ports for evtl cluster h2 db">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wiki.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,18 +62,19 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Dokumente/apache-maven-3.9.1-bin/apache-maven-3.9.1" />
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="nonRecursive" value="true" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="jdkForImporter" value="graalvm-ce-17" />
+        <option name="jdkForImporter" value="graalvm-11" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
+    <option name="jreName" value="graalvm-11" />
     <option name="runMavenInBackground" value="false" />
     <option name="skipTests" value="true" />
   </component>
@@ -111,7 +112,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25186568",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
+    "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -136,10 +137,10 @@
       <command value="mvn spring-boot:run" />
       <command value="mvn install" />
       <command value="mvn spring-boot:deploy" />
-      <command value="mvn deploy" />
       <command value="mvn compile" />
       <command value="./mvn spring-boot:deploy" />
       <command value="./mvn deploy" />
+      <command value="mvn deploy" />
       <command value="./mvnw clean install" />
     </option>
   </component>
@@ -161,7 +162,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Docker Image (2)">
+  <component name="RunManager" selected="Docker.de_landingapge">
     <configuration name="iDemoLandingPage" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="-agentlib:jdwp" value="transport=dt_socket,server=y,suspend=n,address=*:5005" />
@@ -307,7 +308,7 @@
         <settings>
           <option name="imageTag" value="de_landingpage:latest" />
           <option name="containerName" value="de_landingpage" />
-          <option name="commandLineOptions" value="-p 0.0.0.0:80:80 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+          <option name="commandLineOptions" value="-p 0.0.0.0:80:80 --dns 208.67.222.222 --dns 208.67.220.220 --dns 208.67.220.222 --dns 208.67.222.220 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
           <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
@@ -568,6 +569,8 @@
       <workItem from="1683540155156" duration="5212000" />
       <workItem from="1683553927019" duration="6513000" />
       <workItem from="1683801553397" duration="448000" />
+      <workItem from="1683994661551" duration="687000" />
+      <workItem from="1683997826536" duration="839000" />
     </task>
     <task id="LOCAL-00038" summary=".">
       <created>1681048747686</created>
