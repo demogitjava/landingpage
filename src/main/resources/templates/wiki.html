@@ -326,12 +326,36 @@
 
                                             <p>Da der Container über das Brigde Netzwerk bereitgestellt wird
                                                 ist es nötig die</p>
+                                            <p>Dateien zu ändern.</p>
+                                            <p>Der Docker Container wird mit der IP 192.168.178.4 in dem 
+                                            Netzwerk 192.168.178.0 bereitgestellt.</p> 
+                                             
 
                                             <p>-networks</p>
+                                            <pre>
+                                                auto ens192
+                                                iface ens192 inet static
+                                                address 192.168.178.4
+                                                netmask 255.255.255.0
+                                                gateway 192.168.178.1
+                                                dns-nameservers 208.67.222.222 208.67.220.220 208.67.220.222 208.67.222.220
+                                                dns-search demogitjava landingpage freewebshop
+                                            </pre>
                                             <p>-resolv.conf</p>
-                                            <p>-hosts</p>
-
-                                            <p>Dateien zu ändern.</p>
+                                            <pre>
+                                                search demogitjava freewebshop
+                                                nameserver 208.67.222.222
+                                                nameserver 208.67.220.220
+                                                nameserver 208.67.220.222
+                                                nameserver 208.67.222.220
+                                                options ndots:0
+                                            </pre>
+                                            <p>hosts</p>
+                                            <pre>
+                                                192.168.178.4	de_landingpage
+                                            </pre>        
+                                           
+                                            <a hidden="https://github.com/demogitjava/demodatabase/blob/master/db_landingpage/networkconf/hosts">--> files</a>
 
 
 
