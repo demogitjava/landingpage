@@ -47,10 +47,11 @@ import java.util.Map;
 public class DemoDBConfig extends HikariConfig
 {
 
-    @Autowired
-    @Qualifier(value = "defaultJdbcTemplate")
-    JdbcTemplate jtm;
+    //@Autowired
+    //@Qualifier(value = "defaultJdbcTemplate")
+    //JdbcTemplate jtm;
 
+    
     public DemoDBConfig()
     {
         startH2Server();
@@ -110,7 +111,7 @@ public class DemoDBConfig extends HikariConfig
     @Bean(name = "defaultJdbcTemplate")
     public JdbcTemplate jdbcTemplate(@Qualifier("dataSource") DataSource demodb)
     {
-        jtm = new JdbcTemplate();
+        JdbcTemplate jtm = new JdbcTemplate();
         jtm.setDataSource(demodb);
         return jtm;
     }
