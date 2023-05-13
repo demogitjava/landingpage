@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.controller;
 
 
 import de.jgsoftware.landingpage.controller.interfaces.iAdminController;
+import de.jgsoftware.landingpage.model.dashboardgraphicline;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -181,7 +182,7 @@ public class Admin_Controller implements iAdminController
     @Override
     public List getcondatayear()
     {
-        List connectsyear = null;
+        List<dashboardgraphicline> connectsyear = null;
 
          /*
                 is user loggedin
@@ -226,9 +227,12 @@ public class Admin_Controller implements iAdminController
 
 
             for(int i = 0; i < indexlist; i++) {
-                Object obcount = ((Object[]) connectsyear.get(i))[0]; // count
-                Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
-                Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
+                Integer obcount = connectsyear.get(i).getCount();
+                Integer obmonth = connectsyear.get(i).getMonth(); // month
+                
+                Integer obyear = connectsyear.get(i).getYear(); // year
+                //Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
+                //Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
 
                 Integer intmonth = (Integer) obmonth;
 
