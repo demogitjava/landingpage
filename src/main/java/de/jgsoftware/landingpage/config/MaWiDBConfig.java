@@ -31,13 +31,14 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
         transactionManagerRef = "mawiTransactionManager")
 public class MaWiDBConfig extends HikariConfig
 {
-    @Autowired
-    @Qualifier(value = "mawiJdbcTemplate")
-    JdbcTemplate jtm1;
+    //@Autowired
+    //@Qualifier(value = "mawiJdbcTemplate")
+    //JdbcTemplate jtm1;
 
+    
 
-    @Autowired
-    DataSource dataSource1;
+    //@Autowired
+    //DataSource dataSource1;
 
 
 
