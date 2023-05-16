@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile&#10;expose ports for evtl cluster h2 db">
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23106283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20287728" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -147,15 +145,15 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.09975816" />
       <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.5416666" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.34401453" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.59068924" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.23576042" />
+      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.20581327" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.2169157" />
     </layout>
@@ -614,14 +612,7 @@
       <workItem from="1684233707542" duration="118000" />
       <workItem from="1684258735201" duration="175000" />
       <workItem from="1684259158223" duration="14000" />
-      <workItem from="1684259198544" duration="2925000" />
-    </task>
-    <task id="LOCAL-00038" summary=".">
-      <created>1681048747686</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1681048747686</updated>
+      <workItem from="1684259198544" duration="3934000" />
     </task>
     <task id="LOCAL-00039" summary=".">
       <created>1681049949282</created>
@@ -959,7 +950,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683554115971</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="add persistence.xml">
+      <created>1684266295405</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1684266295406</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1001,7 +999,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add cpu command to docker command" />
     <MESSAGE value="edit Time Zone to UTC" />
     <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
@@ -1026,7 +1023,8 @@
     <MESSAGE value="." />
     <MESSAGE value="add .mvn/wrapper" />
     <MESSAGE value="edit dockerfile&#10;expose ports for evtl cluster h2 db" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile&#10;expose ports for evtl cluster h2 db" />
+    <MESSAGE value="add persistence.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add persistence.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

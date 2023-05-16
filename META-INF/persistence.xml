@@ -21,4 +21,41 @@
       <property name="show_sql" value="true" />
     </properties>
   </persistence-unit>
+
+  <persistence-unit name="mawi">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver"
+                value="org.h2.Driver" />
+      <property name="javax.persistence.jdbc.url"
+                value="jdbc:h2:tcp://0.0.0.0:9092/~/mawi" />
+      <property name="javax.persistence.jdbc.user" value="admin" />
+      <property name="javax.persistence.jdbc.password" value="jj78mvpr52k1" />
+      <property name="hibernate.dialect"
+                value="org.hibernate.dialect.H2Dialect" />
+      <property name="show_sql" value="true" />
+    </properties>
+  </persistence-unit>
+
+  <persistence-unit name="shopdb">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver"
+                value="org.h2.Driver" />
+      <property name="javax.persistence.jdbc.url"
+                value="jdbc:h2:tcp://0.0.0.0:9092/~/shopdb" />
+      <property name="javax.persistence.jdbc.user" value="admin" />
+      <property name="javax.persistence.jdbc.password" value="jj78mvpr52k1" />
+      <property name="hibernate.dialect"
+                value="org.hibernate.dialect.H2Dialect" />
+      <property name="show_sql" value="true" />
+    </properties>
+  </persistence-unit>
+
+
+
 </persistence>

@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="demogitjava@192.168.178.2" uuid="5e0b2c52-8108-4ab8-8b9c-4664d6a65477">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="H2 mawi" uuid="c401e191-ed78-427c-a7c1-e30a66818f50">
+      <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.178.2:3306/demogitjava</jdbc-url>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/mawi</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="demodb" uuid="27ea21d5-62e5-4f00-81c9-67592456c530">
+    <data-source source="LOCAL" name="H2 demodb" uuid="4693e7b7-b645-4196-8867-775a46a2e43d">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/demodb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="shopdb" uuid="663190e5-16f6-48cd-9876-480bcdd80ef2">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/shopdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
