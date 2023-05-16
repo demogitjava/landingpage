@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="edit dockerfile&#10;expose ports for evtl cluster h2 db">
-      <change afterPath="$PROJECT_DIR$/Dockerfilesshserver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockersshserver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.25186568",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -120,11 +123,43 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "h2",
-      "mysql"
+      "mysql",
+      "h2"
     ]
   }
 }]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Space Code Reviews" />
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23106283" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Dependency Checker" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.5416666" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.34401453" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Beans" />
+      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.23576042" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2169157" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -173,7 +208,7 @@
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
-      <target name="de_landingapge:latest" />
+      <target name="@@@LOCAL@@@" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -208,6 +243,7 @@
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
+      <target name="@@@LOCAL@@@" />
       <selectedOptions>
         <option name="environmentVariables" />
       </selectedOptions>
@@ -576,6 +612,9 @@
       <workItem from="1683997826536" duration="839000" />
       <workItem from="1684233575131" duration="121000" />
       <workItem from="1684233707542" duration="118000" />
+      <workItem from="1684258735201" duration="175000" />
+      <workItem from="1684259158223" duration="14000" />
+      <workItem from="1684259198544" duration="2925000" />
     </task>
     <task id="LOCAL-00038" summary=".">
       <created>1681048747686</created>
@@ -995,7 +1034,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java</url>
           <line>34</line>
-          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent" method="connectsmonthnavbar">
+          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="5" />
@@ -1003,7 +1042,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java</url>
           <line>19</line>
-          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent" method="allgetBrowserconnects">
+          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
@@ -1011,7 +1050,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java</url>
           <line>29</line>
-          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent" method="allconnectsbymonth">
+          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="9" />
@@ -1019,7 +1058,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java</url>
           <line>40</line>
-          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent" method="connectsnavbaryear">
+          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
@@ -1027,7 +1066,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/i_jpa_useragent.java</url>
           <line>51</line>
-          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent" method="connectsnavbargraphicalyear">
+          <properties class="de.jgsoftware.landingpage.dao.interfaces.i_jpa_useragent">
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="11" />
