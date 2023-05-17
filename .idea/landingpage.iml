@@ -20,9 +20,11 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="demodb" />
+          <factory-entry name="demodb" value="9fdb69d6-2063-4f31-ac15-fbd52b340c93" />
           <factory-entry name="landingpage" value="27ea21d5-62e5-4f00-81c9-67592456c530" />
+          <factory-entry name="mawi" value="c401e191-ed78-427c-a7c1-e30a66818f50" />
           <factory-entry name="mawidb" />
+          <factory-entry name="shopdb" value="663190e5-16f6-48cd-9876-480bcdd80ef2" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/META-INF/persistence.xml" />

@@ -16,21 +16,6 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="H2 demodb" uuid="4693e7b7-b645-4196-8867-775a46a2e43d">
-      <database-info product="H2" version="2.1.210 (2022-01-17)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.1.210 (2022-01-17)" dbms="H2" exact-version="2.1.210" exact-driver-version="2.1">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>admin</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
     <data-source name="shopdb" uuid="663190e5-16f6-48cd-9876-480bcdd80ef2">
       <database-info product="H2" version="2.1.210 (2022-01-17)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.1.210 (2022-01-17)" dbms="H2" exact-version="2.1.210" exact-driver-version="2.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -42,6 +27,26 @@
         <introspection-scope>
           <node kind="database" qname="SHOPDB">
             <node kind="schema" qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="demodb" uuid="9fdb69d6-2063-4f31-ac15-fbd52b340c93">
+      <database-info product="H2" version="2.1.210 (2022-01-17)" jdbc-version="4.2" driver-name="H2 JDBC Driver" driver-version="2.1.210 (2022-01-17)" dbms="H2" exact-version="2.1.210" exact-driver-version="2.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="DEMODB">
+              <node kind="schema" qname="PUBLIC" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>

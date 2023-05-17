@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +132,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info id="Persistence" side_tool="true" />
+      <window_info active="true" id="Persistence" sideWeight="0.7146789" side_tool="true" visible="true" weight="0.19473343" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0992647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.28532112" visible="true" weight="0.19473343" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -140,20 +142,21 @@
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Problems View" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5218642" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.353855" />
       <window_info active="true" anchor="bottom" id="Build" order="3" visible="true" weight="0.5416666" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.45512083" />
-      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.22727272" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.55408514" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
-      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.26570857" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.28643048" />
+      <window_info active="true" anchor="right" id="Database" order="1" sideWeight="0.24105622" visible="true" weight="0.13686606" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.2169157" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.26570857" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -611,14 +614,8 @@
       <workItem from="1684258735201" duration="175000" />
       <workItem from="1684259158223" duration="14000" />
       <workItem from="1684259198544" duration="5376000" />
-      <workItem from="1684305595109" duration="1703000" />
-    </task>
-    <task id="LOCAL-00040" summary="update m_de.html">
-      <created>1681106804335</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1681106804335</updated>
+      <workItem from="1684305595109" duration="2300000" />
+      <workItem from="1684309107914" duration="3230000" />
     </task>
     <task id="LOCAL-00041" summary="add to pom.xml&#10;  &lt;dependency&gt;&#10;            &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;&#10;            &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;&#10;            &lt;version&gt;4.0.3&lt;/version&gt;&#10;        &lt;/dependency&gt;">
       <created>1681112951115</created>
@@ -956,7 +953,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684267275664</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path">
+      <created>1684308599203</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1684308599204</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -998,7 +1002,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
     <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
@@ -1023,7 +1026,8 @@
     <MESSAGE value="edit dockerfile&#10;expose ports for evtl cluster h2 db" />
     <MESSAGE value="add persistence.xml" />
     <MESSAGE value="add persiscte unit &#10;&#10;shop &#10;mawi &#10;demodb" />
-    <option name="LAST_COMMIT_MESSAGE" value="add persiscte unit &#10;&#10;shop &#10;mawi &#10;demodb" />
+    <MESSAGE value="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
