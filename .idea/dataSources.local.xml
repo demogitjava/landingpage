@@ -40,8 +40,8 @@
       <user-name>admin</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
+          <node kind="database" qname="SHOPDB">
+            <node kind="schema" qname="PUBLIC" />
           </node>
         </introspection-scope>
       </schema-mapping>

@@ -39,7 +39,7 @@ public class shellcommands {
                 load file from internet to disk
          */
         try {
-            URL url = new URL("https://github.com/demogitjava/demodatabase/archive/refs/heads/master.zip");
+            URL url = new URL("https://github.com/demogitjava/demodatabase/raw/master/zip_h2_db/landingpage/master.zip");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             InputStream in = connection.getInputStream();
