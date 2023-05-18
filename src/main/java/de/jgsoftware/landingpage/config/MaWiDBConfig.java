@@ -65,7 +65,7 @@ public class MaWiDBConfig extends HikariConfig
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         return builder.dataSource(dataSource1).properties(properties)
-                .packages("de.jgsoftware.landingpage.model").persistenceUnit("Mawi").build();
+                .packages("de.jgsoftware.landingpage.model.jpa.mawi").persistenceUnit("h2mawi").build();
     }
 
     @Bean(name = "mawiTransactionManager")

@@ -68,7 +68,7 @@ public class ShopDBConfig extends HikariConfig
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         return builder.dataSource(dataSource2).properties(properties)
-                .packages("de.jgsoftware.landingpage.model").persistenceUnit("Shop").build();
+                .packages("de.jgsoftware.landingpage.model.jpa.shopdb").persistenceUnit("h2shopdb").build();
     }
 
     @Bean(name = "shopTransactionManager")

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Artikelstamm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Artikelstamm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Belegarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Belegarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsdaten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsdaten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/SpringSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/SpringSessionAttributes.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +140,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.3137128" side_tool="true" visible="true" weight="0.12288135" />
+      <window_info active="true" id="Persistence" sideWeight="0.41434538" side_tool="true" visible="true" weight="0.3640216" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68628716" visible="true" weight="0.12288135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5856546" visible="true" weight="0.3640216" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -148,9 +157,9 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3712614" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.43526316" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.3712614" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.16477916" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.06321184" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.3712614" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
@@ -630,14 +639,7 @@
       <workItem from="1684403414052" duration="1935000" />
       <workItem from="1684405672713" duration="1114000" />
       <workItem from="1684406906593" duration="2079000" />
-      <workItem from="1684409365032" duration="2177000" />
-    </task>
-    <task id="LOCAL-00043" summary="edit pom.xml &#10;add repositories">
-      <created>1681315289307</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1681315289307</updated>
+      <workItem from="1684409365032" duration="4052000" />
     </task>
     <task id="LOCAL-00044" summary="edit pom.xml to &#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.1.5.RELEASE&lt;/version&gt;&#10;    &lt;/parent&gt;">
       <created>1681317219790</created>
@@ -975,7 +977,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684411495948</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="edit persistence.xml">
+      <created>1684411582579</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1684411582579</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1017,7 +1026,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
     <MESSAGE value="update dockerfile" />
@@ -1042,7 +1050,8 @@
     <MESSAGE value="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path" />
     <MESSAGE value="add model from demodb &#10;&#10;implement to path &#10;&#10;de.jgosftware.landingapge.model.jpa" />
     <MESSAGE value="add model from demodb &#10;&#10;edit userdetail" />
-    <option name="LAST_COMMIT_MESSAGE" value="add model from demodb &#10;&#10;edit userdetail" />
+    <MESSAGE value="edit persistence.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit persistence.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
