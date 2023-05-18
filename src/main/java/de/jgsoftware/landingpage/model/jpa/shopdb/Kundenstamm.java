@@ -2,10 +2,13 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.sql.Timestamp;
 import java.util.Objects;
 
+
 @Entity
+@Table(name = "KUNDENSTAMM", schema = "PUBLIC", catalog = "SHOPDB")
 public class Kundenstamm {
     @Basic
     @javax.persistence.Column(name = "KUNDENNUMMER")

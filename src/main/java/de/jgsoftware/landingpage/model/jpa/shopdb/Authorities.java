@@ -3,7 +3,10 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 import javax.persistence.*;
 import java.util.Objects;
 
+
+
 @Entity
+@Table(name = "AUTHORITIES", schema = "PUBLIC", catalog = "SHOPDB")
 public class Authorities {
     @Basic
     @javax.persistence.Column(name = "USERNAME")

@@ -3,10 +3,13 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 import javax.persistence.*;
 import java.util.Objects;
 
+
 @Entity
+@Table(name = "PRODUCTS", schema = "PUBLIC", catalog = "SHOPDB")
 public class Products {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @javax.persistence.Column(name = "productId")
     private Integer productId;
 

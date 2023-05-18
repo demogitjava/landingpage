@@ -6,8 +6,9 @@ import java.util.Objects;
 @Entity
 @javax.persistence.Table(name = "PRODUCT_CHECK_OUT_TEXT", schema = "PUBLIC", catalog = "SHOPDB")
 public class ProductCheckOutText {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @javax.persistence.Column(name = "ID")
     private Integer id;
 

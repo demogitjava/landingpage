@@ -3,8 +3,10 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 import javax.persistence.*;
 import java.util.Objects;
 
+
+
 @Entity
-@javax.persistence.Table(name = "BOOTSTRAP_COMPONENTS", schema = "PUBLIC", catalog = "SHOPDB")
+@Table(name = "BOOTSTRAP_COMPONENTS", schema = "PUBLIC", catalog = "SHOPDB")
 public class BootstrapComponents {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
