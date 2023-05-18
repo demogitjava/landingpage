@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="H2 mawi" uuid="c401e191-ed78-427c-a7c1-e30a66818f50">
+    <data-source source="LOCAL" name="h2demodb" uuid="f4fa21d4-2542-4e41-97d9-754532a924a2">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/demodb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="h2mawi" uuid="641c45b5-f457-474a-bfa4-29f0c6150e03">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/mawi</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="shopdb" uuid="663190e5-16f6-48cd-9876-480bcdd80ef2">
+    <data-source source="LOCAL" name="h2shopdb" uuid="83c9120b-cb8a-4767-80b8-c91cb67aeae7">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/shopdb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="demodb" uuid="9fdb69d6-2063-4f31-ac15-fbd52b340c93">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/demodb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

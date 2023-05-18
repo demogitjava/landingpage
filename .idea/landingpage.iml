@@ -21,12 +21,19 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="demodb" value="9fdb69d6-2063-4f31-ac15-fbd52b340c93" />
+          <factory-entry name="h2demodb" value="f4fa21d4-2542-4e41-97d9-754532a924a2" />
+          <factory-entry name="h2mawi" value="641c45b5-f457-474a-bfa4-29f0c6150e03" />
+          <factory-entry name="h2shopdb" value="83c9120b-cb8a-4767-80b8-c91cb67aeae7" />
           <factory-entry name="landingpage" value="27ea21d5-62e5-4f00-81c9-67592456c530" />
           <factory-entry name="mawi" value="c401e191-ed78-427c-a7c1-e30a66818f50" />
           <factory-entry name="mawidb" />
           <factory-entry name="shopdb" value="663190e5-16f6-48cd-9876-480bcdd80ef2" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="h2demodb" />
+          <unit-entry name="h2mawi" />
+          <unit-entry name="h2shopdb" />
+        </naming-strategy-map>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/META-INF/persistence.xml" />
       </configuration>
     </facet>

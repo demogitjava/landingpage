@@ -3,11 +3,21 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-  <persistence-unit name="demodb">
+  <persistence-unit name="h2demodb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-    <class>de.jgsoftware.landingpage.model.m_webtextlayout</class>
-    <class>de.jgsoftware.landingpage.model.useragent</class>
-    <class>de.jgsoftware.landingpage.model.Users</class>
+
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Desktoplayout</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Kundenstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Reports</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Sprachen</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.SpringSession</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.SpringSessionAttributes</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Useragent</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdata</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdetail</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Users</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Yourcompanydata</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.driver"
@@ -19,11 +29,21 @@
       <property name="hibernate.dialect"
                 value="org.hibernate.dialect.H2Dialect" />
       <property name="show_sql" value="true" />
+      <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/demodb"/>
+      <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+      <property name="hibernate.connection.username" value="admin"/>
+      <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
 
-  <persistence-unit name="mawi">
+  <persistence-unit name="h2mawi">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsarten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsdaten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Belegarten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.SpringSession</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.SpringSessionAttributes</class>
 
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
@@ -36,11 +56,30 @@
       <property name="hibernate.dialect"
                 value="org.hibernate.dialect.H2Dialect" />
       <property name="show_sql" value="true" />
+      <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/mawi"/>
+      <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+      <property name="hibernate.connection.username" value="admin"/>
+      <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
 
-  <persistence-unit name="shopdb">
+  <persistence-unit name="h2shopdb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Authorities</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.EngProduct</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Kundenstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Leandercodes</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Products</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.ProductCheckOutText</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Shoppingcart</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Sprachen</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSession</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributes</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.User_Product_List</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Users</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.Webtextlayout</class>
 
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
@@ -53,6 +92,9 @@
       <property name="hibernate.dialect"
                 value="org.hibernate.dialect.H2Dialect" />
       <property name="show_sql" value="true" />
+      <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/shopdb"/>
+      <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+      <property name="hibernate.connection.username" value="admin"/>
     </properties>
   </persistence-unit>
 

@@ -5,11 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Desktoplayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Kundenstamm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Reports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Sprachen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Useragent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Userdata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Userdetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Webtextlayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Yourcompanydata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Artikelstamm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Belegarten.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsarten.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/Buchungsdaten.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/SpringSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/mawi/SpringSessionAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/AuthoritiesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponentsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Kundenstamm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/KundenstammEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Leandercodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/LeandercodesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutTextEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ShoppingcartEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SprachenEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributesPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/UserProductListEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/User_Product_List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/UsersEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/WebtextlayoutEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4693e7b7-b645-4196-8867-775a46a2e43d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4693e7b7-b645-4196-8867-775a46a2e43d/storage_v2/_src_/database/DEMODB.oRH6dw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4693e7b7-b645-4196-8867-775a46a2e43d/storage_v2/_src_/database/DEMODB.oRH6dw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4693e7b7-b645-4196-8867-775a46a2e43d/storage_v2/_src_/database/DEMODB.oRH6dw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/663190e5-16f6-48cd-9876-480bcdd80ef2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/663190e5-16f6-48cd-9876-480bcdd80ef2/storage_v2/_src_/database/SHOPDB.9PW9kQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/663190e5-16f6-48cd-9876-480bcdd80ef2/storage_v2/_src_/database/SHOPDB.9PW9kQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/663190e5-16f6-48cd-9876-480bcdd80ef2/storage_v2/_src_/database/SHOPDB.9PW9kQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdb69d6-2063-4f31-ac15-fbd52b340c93.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdb69d6-2063-4f31-ac15-fbd52b340c93/storage_v2/_src_/database/DEMODB.oRH6dw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdb69d6-2063-4f31-ac15-fbd52b340c93/storage_v2/_src_/database/DEMODB.oRH6dw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9fdb69d6-2063-4f31-ac15-fbd52b340c93/storage_v2/_src_/database/DEMODB.oRH6dw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c401e191-ed78-427c-a7c1-e30a66818f50.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c401e191-ed78-427c-a7c1-e30a66818f50/storage_v2/_src_/database/MAWI.Zv8jAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c401e191-ed78-427c-a7c1-e30a66818f50/storage_v2/_src_/database/MAWI.Zv8jAA/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +94,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///usr/lib/jvm/graalvm-ce-java11-22.3.1/lib/src.zip!/java.base/java/net/PlainSocketImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -67,7 +130,6 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
         <option name="nonRecursive" value="true" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -93,6 +155,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;83c9120b-cb8a-4767-80b8-c91cb67aeae7&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -132,31 +195,34 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.7146789" side_tool="true" visible="true" weight="0.19473343" />
+      <window_info active="true" id="Persistence" sideWeight="0.49482536" side_tool="true" visible="true" weight="0.355547" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.28532112" visible="true" weight="0.19473343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50517464" visible="true" weight="0.355547" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Dependencies" weight="0.4637599" />
+      <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Run" weight="0.59362805" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.353855" />
-      <window_info active="true" anchor="bottom" id="Build" order="3" visible="true" weight="0.5416666" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.22727272" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.55408514" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3712614" />
+      <window_info anchor="bottom" id="Build" order="3" weight="0.3712614" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.16477916" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.3712614" />
       <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.26570857" />
-      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="1" sideWeight="0.24105622" visible="true" weight="0.13686606" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.22662601" />
+      <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.32985073" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.26570857" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.18597561" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -166,6 +232,12 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/img/googelspeedtest" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/jarclients" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/bootstrap" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="de.jgsoftware.landingpage.model.jpa.shopdb" />
+      <recent name="de.jgsoftware.landingpage.model.jpa.mawi" />
+      <recent name="de.jgsoftware.landingpage.model.jpa.demodb" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -238,7 +310,8 @@
     </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="dev" />
-      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Dokumente/graalvm-ce-java11-linux-amd64-22.0.0.2/graalvm-ce-java11-22.0.0.2" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/graalvm" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
       <target name="@@@LOCAL@@@" />
@@ -246,7 +319,6 @@
         <option name="environmentVariables" />
       </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <option name="VM_PARAMETERS" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -616,6 +688,12 @@
       <workItem from="1684259198544" duration="5376000" />
       <workItem from="1684305595109" duration="2300000" />
       <workItem from="1684309107914" duration="3230000" />
+      <workItem from="1684402992774" duration="284000" />
+      <workItem from="1684403374521" duration="11000" />
+      <workItem from="1684403414052" duration="1935000" />
+      <workItem from="1684405672713" duration="1114000" />
+      <workItem from="1684406906593" duration="2079000" />
+      <workItem from="1684409365032" duration="1190000" />
     </task>
     <task id="LOCAL-00041" summary="add to pom.xml&#10;  &lt;dependency&gt;&#10;            &lt;groupId&gt;com.zaxxer&lt;/groupId&gt;&#10;            &lt;artifactId&gt;HikariCP&lt;/artifactId&gt;&#10;            &lt;version&gt;4.0.3&lt;/version&gt;&#10;        &lt;/dependency&gt;">
       <created>1681112951115</created>
