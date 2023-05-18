@@ -10,8 +10,6 @@
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Kundenstamm</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Reports</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Sprachen</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.SpringSession</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.SpringSessionAttributes</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Useragent</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdata</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdetail</class>

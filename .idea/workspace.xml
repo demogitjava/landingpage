@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Userdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/demodb/Userdetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,9 +131,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.3137128" side_tool="true" visible="true" weight="0.355547" />
+      <window_info active="true" id="Persistence" sideWeight="0.3137128" side_tool="true" visible="true" weight="0.12288135" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68628716" visible="true" weight="0.355547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68628716" visible="true" weight="0.12288135" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -158,7 +157,7 @@
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.26570857" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.22662601" />
-      <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.32985073" />
+      <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.33012325" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.18597561" />
     </layout>
@@ -631,14 +630,7 @@
       <workItem from="1684403414052" duration="1935000" />
       <workItem from="1684405672713" duration="1114000" />
       <workItem from="1684406906593" duration="2079000" />
-      <workItem from="1684409365032" duration="2076000" />
-    </task>
-    <task id="LOCAL-00042" summary="edit pom.xml starter parent to version&#10; &lt;parent&gt;&#10;        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;&#10;        &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;&#10;        &lt;version&gt;2.5.1&lt;/version&gt;&#10;    &lt;/parent&gt;&#10;    &#10;for error message &#10;org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression:">
-      <created>1681114820841</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1681114820841</updated>
+      <workItem from="1684409365032" duration="2177000" />
     </task>
     <task id="LOCAL-00043" summary="edit pom.xml &#10;add repositories">
       <created>1681315289307</created>
@@ -976,7 +968,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684410656914</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add model from demodb &#10;&#10;edit userdetail">
+      <created>1684411495948</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1684411495948</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1018,7 +1017,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
@@ -1043,7 +1041,8 @@
     <MESSAGE value="add persiscte unit &#10;&#10;shop &#10;mawi &#10;demodb" />
     <MESSAGE value="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path" />
     <MESSAGE value="add model from demodb &#10;&#10;implement to path &#10;&#10;de.jgosftware.landingapge.model.jpa" />
-    <option name="LAST_COMMIT_MESSAGE" value="add model from demodb &#10;&#10;implement to path &#10;&#10;de.jgosftware.landingapge.model.jpa" />
+    <MESSAGE value="add model from demodb &#10;&#10;edit userdetail" />
+    <option name="LAST_COMMIT_MESSAGE" value="add model from demodb &#10;&#10;edit userdetail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
