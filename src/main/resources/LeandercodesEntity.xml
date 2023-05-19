@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="de.jgsoftware.landingpage.model.jpa.shopdb.LeandercodesEntity">
+        <table name="LEANDERCODES" schema="PUBLIC" catalog="SHOPDB"/>
+        <attributes>
+            <basic name="id">
+                <column name="ID"/>
+            </basic>
+            <basic name="land">
+                <column name="LAND"/>
+            </basic>
+            <basic name="code1">
+                <column name="CODE1"/>
+            </basic>
+            <basic name="code2">
+                <column name="CODE2"/>
+            </basic>
+            <basic name="eu">
+                <column name="EU"/>
+            </basic>
+            <basic name="intlangdb">
+                <column name="INTLANGDB"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,41 +1,40 @@
 package de.jgsoftware.landingpage.model.jpa.shopdb;
 
-
 import javax.persistence.*;
 
-
 @Entity
-@Table(name = "Users", schema = "PUBLIC", catalog = "SHOPDB")
-public class Users
-{
+public class Users {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-
-    private String email;
-
-    private String password;
-
-    private String role;
-
+    @Column(name = "id")
+    private Long id;
+    @Basic
+    @Column(name = "USERNAME")
     private String username;
-
+    @Basic
+    @Column(name = "PASSWORD")
+    private String password;
+    @Basic
+    @Column(name = "ROLE")
+    private String role;
+    @Basic
+    @Column(name = "ENABLED")
     private Integer enabled;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -54,14 +53,6 @@ public class Users
         this.role = role;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public Integer getEnabled() {
         return enabled;
     }
@@ -70,4 +61,3 @@ public class Users
         this.enabled = enabled;
     }
 }
-

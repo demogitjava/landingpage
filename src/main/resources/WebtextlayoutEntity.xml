@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="de.jgsoftware.landingpage.model.jpa.shopdb.WebtextlayoutEntity">
+        <table name="WEBTEXTLAYOUT" schema="PUBLIC" catalog="SHOPDB"/>
+        <attributes>
+            <id name="id">
+                <column name="ID"/>
+            </id>
+            <basic name="framename">
+                <column name="FRAMENAME"/>
+            </basic>
+            <basic name="de">
+                <column name="DE"/>
+            </basic>
+            <basic name="en">
+                <column name="EN"/>
+            </basic>
+            <basic name="fr">
+                <column name="FR"/>
+            </basic>
+            <basic name="es">
+                <column name="ES"/>
+            </basic>
+            <basic name="it">
+                <column name="IT"/>
+            </basic>
+            <basic name="tr">
+                <column name="TR"/>
+            </basic>
+            <basic name="bindto">
+                <column name="BINDTO"/>
+            </basic>
+            <basic name="template">
+                <column name="TEMPLATE"/>
+            </basic>
+            <basic name="titletemplate">
+                <column name="TITLETEMPLATE"/>
+            </basic>
+            <basic name="compName">
+                <column name="COMP_NAME"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

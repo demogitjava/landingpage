@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="de.jgsoftware.landingpage.model.jpa.shopdb.SprachenEntity">
+        <table name="SPRACHEN" schema="PUBLIC" catalog="SHOPDB"/>
+        <attributes>
+            <id name="id">
+                <column name="ID"/>
+            </id>
+            <basic name="sprache">
+                <column name="SPRACHE"/>
+            </basic>
+            <basic name="bezeichnung">
+                <column name="BEZEICHNUNG"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

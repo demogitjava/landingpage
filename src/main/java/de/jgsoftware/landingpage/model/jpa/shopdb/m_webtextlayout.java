@@ -1,52 +1,45 @@
 package de.jgsoftware.landingpage.model.jpa.shopdb;
 
+
 import javax.persistence.*;
 
-@Entity
-public class Webtextlayout {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Id
-    @Column(name = "ID")
-    private Integer id;
-    @Basic
-    @Column(name = "FRAMENAME")
-    private String framename;
-    @Basic
-    @Column(name = "DE")
-    private String de;
-    @Basic
-    @Column(name = "EN")
-    private String en;
-    @Basic
-    @Column(name = "FR")
-    private String fr;
-    @Basic
-    @Column(name = "ES")
-    private String es;
-    @Basic
-    @Column(name = "IT")
-    private String it;
-    @Basic
-    @Column(name = "TR")
-    private String tr;
-    @Basic
-    @Column(name = "BINDTO")
-    private String bindto;
-    @Basic
-    @Column(name = "TEMPLATE")
-    private String template;
-    @Basic
-    @Column(name = "TITLETEMPLATE")
-    private String titletemplate;
-    @Basic
-    @Column(name = "COMP_NAME")
-    private String compName;
 
-    public Integer getId() {
+@Entity
+@Table(name = "webtextlayout")
+public class m_webtextlayout
+{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
+    private String framename;
+    private String de;
+    private String en;
+    private String fr;
+    private String es;
+    private String it;
+    private String tr;
+    private String bindto;
+    private String template;
+    private String titletemplate;
+
+    private String comp_name;
+
+
+    public String getComp_name() {
+        return comp_name;
+    }
+
+    public void setComp_name(String comp_name) {
+        this.comp_name = comp_name;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -130,11 +123,5 @@ public class Webtextlayout {
         this.titletemplate = titletemplate;
     }
 
-    public String getCompName() {
-        return compName;
-    }
 
-    public void setCompName(String compName) {
-        this.compName = compName;
-    }
 }

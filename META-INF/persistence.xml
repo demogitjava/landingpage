@@ -9,6 +9,20 @@
   -->
   <persistence-unit name="h2demodb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <mapping-file>AuthoritiesEntity.xml</mapping-file>
+    <mapping-file>BootstrapComponentsEntity.xml</mapping-file>
+    <mapping-file>EngProductEntity.xml</mapping-file>
+    <mapping-file>KundenstammEntity.xml</mapping-file>
+    <mapping-file>LeandercodesEntity.xml</mapping-file>
+    <mapping-file>ProductsEntity.xml</mapping-file>
+    <mapping-file>ProductCheckOutTextEntity.xml</mapping-file>
+    <mapping-file>ShoppingcartEntity.xml</mapping-file>
+    <mapping-file>SprachenEntity.xml</mapping-file>
+    <mapping-file>SpringSessionEntity.xml</mapping-file>
+    <mapping-file>SpringSessionAttributesEntity.xml</mapping-file>
+    <mapping-file>UsersEntity.xml</mapping-file>
+    <mapping-file>UserProductListEntity.xml</mapping-file>
+    <mapping-file>WebtextlayoutEntity.xml</mapping-file>
 
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Desktoplayout</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Kundenstamm</class>
@@ -20,6 +34,30 @@
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Users</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Yourcompanydata</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.AuthoritiesEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponentsEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.EngProductEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.KundenstammEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.LeandercodesEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.ProductsEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.ProductCheckOutTextEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.ShoppingcartEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SprachenEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributesEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.UsersEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.UserProductListEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.WebtextlayoutEntity</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsdaten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsarten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Belegarten</class>
+    <class>de.jgsoftware.landingpage.model.Users</class>
+    <class>de.jgsoftware.landingpage.model.m_bootstrap_components</class>
+    <class>de.jgsoftware.landingpage.model.useragent</class>
+    <class>de.jgsoftware.landingpage.model.m_webtextlayout</class>
+    <class>org.springframework.data.jpa.domain.AbstractPersistable</class>
+    <class>org.springframework.data.jpa.domain.AbstractAuditable</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.driver"
@@ -31,7 +69,7 @@
       <property name="hibernate.dialect"
                 value="org.hibernate.dialect.H2Dialect" />
       <property name="show_sql" value="true" />
-      <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/demodb"/>
+      <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/shopdb"/>
       <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
       <property name="hibernate.connection.username" value="admin"/>
       <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
@@ -63,6 +101,7 @@
   </persistence-unit>
   <persistence-unit name="h2shopdb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <mapping-file>KundenstammEntity.xml</mapping-file>
 
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.Authorities</class>
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents</class>
@@ -76,6 +115,29 @@
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.User_Product_List</class>
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.Users</class>
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.Webtextlayout</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSession</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributes</class>
+    <class>de.jgsoftware.landingpage.model.jpa.shopdb.UserProductList</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Reports</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Desktoplayout</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Users</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Useragent</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdata</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdetail</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Kundenstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Sprachen</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Yourcompanydata</class>
+    <class>de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsdaten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsarten</class>
+    <class>de.jgsoftware.landingpage.model.jpa.mawi.Belegarten</class>
+    <class>de.jgsoftware.landingpage.model.Users</class>
+    <class>de.jgsoftware.landingpage.model.m_bootstrap_components</class>
+    <class>de.jgsoftware.landingpage.model.useragent</class>
+    <class>de.jgsoftware.landingpage.model.m_webtextlayout</class>
+    <class>org.springframework.data.jpa.domain.AbstractPersistable</class>
+    <class>org.springframework.data.jpa.domain.AbstractAuditable</class>
 
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
@@ -91,6 +153,7 @@
       <property name="hibernate.connection.url" value="jdbc:h2:tcp://0.0.0.0:9092/~/shopdb"/>
       <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
       <property name="hibernate.connection.username" value="admin"/>
+      <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
 

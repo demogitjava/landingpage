@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="de.jgsoftware.landingpage.model.jpa.shopdb.ProductsEntity">
+        <table name="PRODUCTS" schema="PUBLIC" catalog="SHOPDB"/>
+        <attributes>
+            <id name="productId">
+                <column name="productId"/>
+            </id>
+            <basic name="productname">
+                <column name="PRODUCTNAME"/>
+            </basic>
+            <basic name="productDescription">
+                <column name="productDescription"/>
+            </basic>
+            <basic name="productPrice">
+                <column name="productPrice"/>
+            </basic>
+            <basic name="productUnit">
+                <column name="productUnit"/>
+            </basic>
+            <basic name="image">
+                <column name="IMAGE"/>
+            </basic>
+            <basic name="landingpage">
+                <column name="LANDINGPAGE"/>
+            </basic>
+            <basic name="productDescriptionEn">
+                <column name="productDescription_EN"/>
+            </basic>
+            <basic name="productDescriptionEs">
+                <column name="productDescription_ES"/>
+            </basic>
+            <basic name="productDescriptionFr">
+                <column name="productDescription_FR"/>
+            </basic>
+            <basic name="productDescriptionIt">
+                <column name="productDescription_IT"/>
+            </basic>
+            <basic name="productDescriptionTr">
+                <column name="productDescription_TR"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

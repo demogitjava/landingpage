@@ -5,8 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributesPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/AuthoritiesEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/BootstrapComponentsEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/EngProductEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/KundenstammEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LeandercodesEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ProductCheckOutTextEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ProductsEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ShoppingcartEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SprachenEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringSessionAttributesEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringSessionEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/UserProductListEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/UsersEntity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/WebtextlayoutEntity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Kundenstamm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Leandercodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/User_Product_List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +101,6 @@
         <option name="nonRecursive" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="graalvm-11" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="graalvm-11" />
@@ -130,18 +157,19 @@
     <layout>
       <window_info id="Space Code Reviews" />
       <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.5841248" side_tool="true" visible="true" weight="0.34507042" />
+      <window_info id="Persistence" sideWeight="0.5841248" side_tool="true" weight="0.34507042" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41587517" visible="true" weight="0.34507042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41587517" visible="true" weight="0.3228171" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="JPA Console" weight="0.5529613" />
-      <window_info anchor="bottom" id="Dependencies" weight="0.4637599" />
+      <window_info anchor="bottom" id="Dependencies" weight="0.56954694" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="File Transfer" />
@@ -150,17 +178,17 @@
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.43526316" />
-      <window_info anchor="bottom" id="Build" order="3" weight="0.3712614" />
+      <window_info anchor="bottom" id="Build" order="3" weight="0.57878786" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.24886104" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.3712614" />
+      <window_info anchor="bottom" id="Services" order="5" visible="true" weight="0.3230303" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.26570857" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.22662601" />
-      <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.33012325" />
+      <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.3298279" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.18597561" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3298279" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -195,17 +223,6 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
-    </option>
-    <option name="hiddenConfigurations">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <set>
-              <option value="iDemoLandingPage" />
-            </set>
-          </value>
-        </entry>
-      </map>
     </option>
   </component>
   <component name="RunManager" selected="Docker.Docker Image (3)">
@@ -245,6 +262,17 @@
         <option name="LOCAL" value="false" />
       </RunnerSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="Landingapge" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/graalvm-ce-java11-22.3.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="landingpage" />
+      <projectPathOnTarget name="projectPathOnTarget" value="/app" />
+      <target name="@@@LOCAL@@@" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="iDemoLandingPage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="dev" />
@@ -395,6 +423,7 @@
       <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Remote JVM Debug.Remote Debug Landingapge" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
+      <item itemvalue="Spring Boot.Landingapge" />
     </list>
     <recent_temporary>
       <list>
@@ -633,6 +662,10 @@
       <workItem from="1684406906593" duration="2079000" />
       <workItem from="1684409365032" duration="7646000" />
       <workItem from="1684495290361" duration="435000" />
+      <workItem from="1684506084617" duration="135000" />
+      <workItem from="1684506259774" duration="642000" />
+      <workItem from="1684506944439" duration="118000" />
+      <workItem from="1684507090857" duration="1513000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>

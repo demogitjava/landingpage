@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributesEntity">
+        <table name="SPRING_SESSION_ATTRIBUTES" schema="PUBLIC" catalog="SHOPDB"/>
+        <id-class class="de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributesEntityPK"/>
+        <attributes>
+            <id name="sessionPrimaryId">
+                <column name="SESSION_PRIMARY_ID"/>
+            </id>
+            <id name="attributeName">
+                <column name="ATTRIBUTE_NAME"/>
+            </id>
+            <basic name="attributeBytes">
+                <column name="ATTRIBUTE_BYTES"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
