@@ -102,7 +102,7 @@ public class shellcommands {
                 System.out.print("folder demodatabase not exit please type command again");
             }
             else {
-                copyFile(new File("/demodatabase-master/demodb.mv.db"), new File(path + "/"+ "demodb.mv.db"));
+                copyFile(new File("/demodb.mv.db"), new File(path + "/"+ "demodb.mv.db"));
 
 
             }
@@ -114,7 +114,7 @@ public class shellcommands {
                 System.out.print("folder demodatabase not exit please type command again");
             }
             else {
-                copyFile(new File("/demodatabase-master/mawi.mv.db"), new File(path + "/"+ "mawi.mv.db"));
+                copyFile(new File("/mawi.mv.db"), new File(path + "/"+ "mawi.mv.db"));
             }
 
 
@@ -125,7 +125,7 @@ public class shellcommands {
                 System.out.print("folder demodatabase not exit please type command again");
             }
             else {
-                copyFile(new File("/demodatabase-master/shopdb.mv.db"), new File(path + "/"+ "shopdb.mv.db"));
+                copyFile(new File("/shopdb.mv.db"), new File(path + "/"+ "shopdb.mv.db"));
             }
 
 

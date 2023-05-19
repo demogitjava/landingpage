@@ -5,40 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributesPK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/AuthoritiesEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BootstrapComponentsEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EngProductEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/KundenstammEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LeandercodesEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ProductCheckOutTextEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ProductsEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ShoppingcartEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SprachenEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringSessionAttributesEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringSessionEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UserProductListEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UsersEntity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WebtextlayoutEntity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/83c9120b-cb8a-4767-80b8-c91cb67aeae7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/83c9120b-cb8a-4767-80b8-c91cb67aeae7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3291cc5-be0b-4f5d-b97c-88a6a6929e10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3291cc5-be0b-4f5d-b97c-88a6a6929e10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Kundenstamm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Leandercodes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/User_Product_List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shell.log" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shell.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +135,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" sideWeight="0.5841248" side_tool="true" weight="0.34507042" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41587517" visible="true" weight="0.3228171" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41587517" visible="true" weight="0.26464283" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -177,10 +150,10 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.43526316" />
-      <window_info anchor="bottom" id="Build" order="3" weight="0.57878786" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.44496366" />
+      <window_info anchor="bottom" id="Build" order="3" weight="0.4960357" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.24886104" />
-      <window_info anchor="bottom" id="Services" order="5" visible="true" weight="0.3230303" />
+      <window_info anchor="bottom" id="Services" order="5" visible="true" weight="0.48338526" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
@@ -188,7 +161,7 @@
       <window_info anchor="right" id="Notifications" order="0" weight="0.22662601" />
       <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.3298279" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3298279" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.20892859" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -666,6 +639,10 @@
       <workItem from="1684506259774" duration="642000" />
       <workItem from="1684506944439" duration="118000" />
       <workItem from="1684507090857" duration="1513000" />
+      <workItem from="1684523295888" duration="379000" />
+      <workItem from="1684523845082" duration="83000" />
+      <workItem from="1684523949193" duration="1254000" />
+      <workItem from="1684525940551" duration="318000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
