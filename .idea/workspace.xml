@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Authorities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/BootstrapComponents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/EngProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Kundenstamm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Kundenstamm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Leandercodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Leandercodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/ProductCheckOutTextEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Shoppingcart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Sprachen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/SpringSessionAttributesPK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/User_Product_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/User_Product_List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/UsersEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/Webtextlayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/model/jpa/shopdb/WebtextlayoutEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/interfaces/iAdminController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,9 +135,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.41434538" side_tool="true" visible="true" weight="0.44029278" />
+      <window_info active="true" id="Persistence" sideWeight="0.41495198" side_tool="true" visible="true" weight="0.34938365" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5856546" visible="true" weight="0.44029278" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.585048" visible="true" weight="0.34938365" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -648,14 +634,7 @@
       <workItem from="1684403414052" duration="1935000" />
       <workItem from="1684405672713" duration="1114000" />
       <workItem from="1684406906593" duration="2079000" />
-      <workItem from="1684409365032" duration="4868000" />
-    </task>
-    <task id="LOCAL-00046" summary="delete interface for shellcommands start methods as public class&#10;with @ShellComponent">
-      <created>1681469852460</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1681469852460</updated>
+      <workItem from="1684409365032" duration="6934000" />
     </task>
     <task id="LOCAL-00047" summary="add Screenshot for webshop speedtest&#10;form 2023 13 04&#10;edit woki id to webshop">
       <created>1681470563355</created>
@@ -993,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684413711144</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="edit persistence.xml&#10;&#10;edit model for shopdb">
+      <created>1684414280927</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1684414280927</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1035,7 +1021,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update dockerfile" />
     <MESSAGE value="edit dockerfile Dockerfile_fr" />
     <MESSAGE value="edit dockerfile to run container" />
     <MESSAGE value="edit wiki.html&#10;&#10;add xpanel for supported sql databases" />
@@ -1060,7 +1045,8 @@
     <MESSAGE value="edit persistence.xml" />
     <MESSAGE value="edit persistence.xml&#10;&#10;add model for mawi database for jpa" />
     <MESSAGE value="edit persistence.xml&#10;&#10;delete Entity in shopdb" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit persistence.xml&#10;&#10;delete Entity in shopdb" />
+    <MESSAGE value="edit persistence.xml&#10;&#10;edit model for shopdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit persistence.xml&#10;&#10;edit model for shopdb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,22 +1098,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>179</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/Admin_Controller.java</url>
-          <line>389</line>
+          <line>391</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -22,6 +22,10 @@ public interface iAdminController
     String submitForm(m_webtextlayout webtextlayout);
 
 
+    /*
+        return data for
+        gentelella/navbar
+    */
     @GetMapping("/getgraficnavbar")
     @ResponseBody
     List getcondatayear();

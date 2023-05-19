@@ -189,10 +189,12 @@ public class Admin_Controller implements iAdminController
          */
         principal = request.getUserPrincipal();
 
-        /*
+
+        List graflist = null;
+
+         /*
                 user login
          */
-        List graflist = null;
         if (principal == null) {
             System.out.print("not login");
             returntologin();
