@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,9 +132,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.58392227" side_tool="true" visible="true" weight="0.34507042" />
+      <window_info active="true" id="Persistence" sideWeight="0.5841248" side_tool="true" visible="true" weight="0.34507042" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41607773" visible="true" weight="0.34507042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.41587517" visible="true" weight="0.34507042" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -632,13 +632,7 @@
       <workItem from="1684405672713" duration="1114000" />
       <workItem from="1684406906593" duration="2079000" />
       <workItem from="1684409365032" duration="7646000" />
-    </task>
-    <task id="LOCAL-00048" summary="edit wiki.html">
-      <created>1681471031683</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1681471031683</updated>
+      <workItem from="1684495290361" duration="435000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
@@ -976,7 +970,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684494018842</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="edit persistence.xml">
+      <created>1684495394301</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1684495394302</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1038,12 +1039,12 @@
     <MESSAGE value="edit url path for shell method &#10;&#10;idemodatabase getinstall&#10;&#10;load the master.zip from github to the local root path" />
     <MESSAGE value="add model from demodb &#10;&#10;implement to path &#10;&#10;de.jgosftware.landingapge.model.jpa" />
     <MESSAGE value="add model from demodb &#10;&#10;edit userdetail" />
-    <MESSAGE value="edit persistence.xml" />
     <MESSAGE value="edit persistence.xml&#10;&#10;add model for mawi database for jpa" />
     <MESSAGE value="edit persistence.xml&#10;&#10;delete Entity in shopdb" />
     <MESSAGE value="edit persistence.xml&#10;&#10;edit model for shopdb" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit persistence.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit persistence.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
