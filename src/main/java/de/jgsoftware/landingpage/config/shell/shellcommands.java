@@ -31,7 +31,16 @@ public class shellcommands {
         File path = new File(System.getProperty("user.home"));
 
 
-        // https://github.com/demogitjava/demodatabase/archive/refs/heads/master.zip
+        /*
+              path h2 database
+              https://github.com/demogitjava/demodatabase/raw/master/zip_h2_db/landingpage/master.zip
+
+              -> master.zip
+              - demodb.mv.db
+              - mawi.mv.db
+              - shopdb.mv.db
+        */
+
         int BUFFER = 2048;
 
 
@@ -191,9 +200,12 @@ public class shellcommands {
         return stresolv;
     }
 
+
+
     private static void copyFile(File source, File dest) throws IOException {
         Files.copy(source.toPath(), dest.toPath());
     }
+
 
     private void extractFile(ZipInputStream zipIn, String filePath) throws IOException
     {
