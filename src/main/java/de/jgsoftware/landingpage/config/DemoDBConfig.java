@@ -8,14 +8,17 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 import com.zaxxer.hikari.HikariConfig;
+import org.h2.security.auth.ConfigProperties;
 import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -40,23 +43,20 @@ import java.util.Map;
 
 @Configuration
 @EnableTransactionManagement
-
 @EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces",
         entityManagerFactoryRef = "entityManagerFactory",
         transactionManagerRef = "transactionManager")
 public class DemoDBConfig extends HikariConfig
 {
 
-    //@Autowired
-    //@Qualifier(value = "defaultJdbcTemplate")
-    //JdbcTemplate jtm;
 
+    @Value("${startdb.rundb")
+    private Integer rundb;
 
-
-    public DemoDBConfig()
+    public DemoDBConfig(@Value("${startdb.rundb}") Integer rundb)
     {
+        this.rundb = rundb;
 
-        Integer rundb = new Integer(1);
 
         switch(rundb)
         {
@@ -150,4 +150,6 @@ public class DemoDBConfig extends HikariConfig
         jtm.setDataSource(demodb);
         return jtm;
     }
+
+
 }
