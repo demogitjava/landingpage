@@ -14,6 +14,8 @@ import static org.apache.commons.io.IOUtils.copy;
 @ShellComponent
 public class shellcommands {
 
+
+
     @ShellMethod("start h2 server --->  start h2 database")
     public String startdatabase(String database) throws IOException
     {
@@ -24,7 +26,7 @@ public class shellcommands {
 
 
 
-    @ShellMethod("install h2 databases from github with type command --->  idemodatabase")
+    @ShellMethod("install h2 databases from github with type command --->  h2demodatabase")
     public String h2demodatabase() {
         System.out.print("install databases" + "\n");
         File path = new File(System.getProperty("user.home"));

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,9 +129,9 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.32703775" side_tool="true" visible="true" weight="0.15371388" />
+      <window_info active="true" id="Persistence" sideWeight="0.3258258" side_tool="true" visible="true" weight="0.32209897" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6729622" visible="true" weight="0.15371388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6741742" visible="true" weight="0.32209897" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -145,10 +146,10 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.28682637" />
-      <window_info anchor="bottom" id="Build" order="3" weight="0.37368423" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.38982034" />
+      <window_info anchor="bottom" id="Build" order="3" weight="0.4233533" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.24886104" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.5251497" />
+      <window_info active="true" anchor="bottom" id="Services" order="5" visible="true" weight="0.49041915" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
@@ -637,7 +638,7 @@
       <workItem from="1684523295888" duration="379000" />
       <workItem from="1684523845082" duration="83000" />
       <workItem from="1684523949193" duration="1254000" />
-      <workItem from="1684525940551" duration="6100000" />
+      <workItem from="1684525940551" duration="8012000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
@@ -982,7 +983,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684495394302</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -51,15 +51,52 @@ public class DemoDBConfig extends HikariConfig
     //@Qualifier(value = "defaultJdbcTemplate")
     //JdbcTemplate jtm;
 
-    
+
+
     public DemoDBConfig()
     {
-        startH2Server();
+        String rundb = new String("h2");
+
+
+        switch(rundb)
+        {
+            case "h2":
+              startH2Server();
+            break;
+
+            case "derbydb":
+              startderbydb();
+              break;
+            case "mysql":
+              startmysqldb();
+              break;
+
+            default:
+              startH2Server();
+              break;
+        }
+
+
+
+
+    }
+
+    private void startmysqldb()
+    {
+
+
+    }
+
+    private void startderbydb()
+    {
+
+
     }
 
     // start h2 database server
     private static void startH2Server()
     {
+
         try
         {
             org.h2.tools.Server h2Server = Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
@@ -75,7 +112,6 @@ public class DemoDBConfig extends HikariConfig
         } catch (SQLException e) {
             throw new RuntimeException("Failed to start H2 server: " + e + "\n");
         }
-
     }
 
 
