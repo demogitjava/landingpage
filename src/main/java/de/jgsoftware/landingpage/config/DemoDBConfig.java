@@ -55,19 +55,19 @@ public class DemoDBConfig extends HikariConfig
 
     public DemoDBConfig()
     {
-        String rundb = new String("h2");
+        //String rundb = new String("h2");
 
+        Integer rundb = new Integer(1);
 
         switch(rundb)
         {
-            case "h2":
+            case 1:
               startH2Server();
-            break;
-
-            case "derbydb":
+               break;
+            case 2:
               startderbydb();
               break;
-            case "mysql":
+            case 3:
               startmysqldb();
               break;
 
