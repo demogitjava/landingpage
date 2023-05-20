@@ -55,7 +55,6 @@ public class DemoDBConfig extends HikariConfig
 
     public DemoDBConfig()
     {
-        //String rundb = new String("h2");
 
         Integer rundb = new Integer(1);
 

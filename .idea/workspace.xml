@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,9 +130,9 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.3275463" side_tool="true" visible="true" weight="0.2804606" />
+      <window_info active="true" id="Persistence" sideWeight="0.32650274" side_tool="true" visible="true" weight="0.38217214" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6724537" visible="true" weight="0.2804606" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67349726" visible="true" weight="0.38217214" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -148,7 +150,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.38982034" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.4233533" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.24886104" />
-      <window_info active="true" anchor="bottom" id="Services" order="5" visible="true" weight="0.37185627" />
+      <window_info active="true" anchor="bottom" id="Services" order="5" visible="true" weight="0.45089823" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
@@ -637,7 +639,7 @@
       <workItem from="1684523295888" duration="379000" />
       <workItem from="1684523845082" duration="83000" />
       <workItem from="1684523949193" duration="1254000" />
-      <workItem from="1684525940551" duration="8448000" />
+      <workItem from="1684525940551" duration="9725000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
@@ -982,7 +984,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684495394302</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1024,7 +1026,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete docker compose files" />
     <MESSAGE value="edit dockerfile" />
     <MESSAGE value="remove files resolv.conf &#10;and spring-shell.log" />
     <MESSAGE value="add Dockerfile for debug" />
@@ -1049,7 +1050,8 @@
     <MESSAGE value="edit workspace to ISO-8859-1" />
     <MESSAGE value="edit shellcommand" />
     <MESSAGE value="edit start method in DemoDbConf&#10;&#10;- h2&#10;- derbydb&#10;- mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit start method in DemoDbConf&#10;&#10;- h2&#10;- derbydb&#10;- mysql" />
+    <MESSAGE value="edit DemoDbCOnfig&#10;to start the swich case with an Integer&#10;&#10;1 h2 &#10;2 derbydb&#10;3 mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDbCOnfig&#10;to start the swich case with an Integer&#10;&#10;1 h2 &#10;2 derbydb&#10;3 mysql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
