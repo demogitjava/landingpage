@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,9 +128,9 @@
       <window_info id="Merge Requests" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.3263889" side_tool="true" visible="true" weight="0.15371388" />
+      <window_info active="true" id="Persistence" sideWeight="0.32742316" side_tool="true" visible="true" weight="0.15371388" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6736111" visible="true" weight="0.15371388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67257684" visible="true" weight="0.15371388" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -142,7 +145,7 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.4580838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.38263476" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.37368423" />
       <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.24886104" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.5251497" />
@@ -634,7 +637,7 @@
       <workItem from="1684523295888" duration="379000" />
       <workItem from="1684523845082" duration="83000" />
       <workItem from="1684523949193" duration="1254000" />
-      <workItem from="1684525940551" duration="5592000" />
+      <workItem from="1684525940551" duration="5780000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
@@ -979,7 +982,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684495394302</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1021,7 +1024,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit wiki.html&#10;&#10;add xpanel for supported sql databases" />
     <MESSAGE value="edit wiki.html" />
     <MESSAGE value="edit dockerfile to start jar with ENTRYPOINT [&quot;java&quot;, &quot;-jar&quot;, &quot;/root/landingpage.jar&quot;]&#10;&#10;edit h2 jdbc config to connect to databases with subfolders for&#10;mawi &#10;shop &#10;the txt for folder" />
     <MESSAGE value="delete docker compose files" />
@@ -1046,7 +1048,8 @@
     <MESSAGE value="edit shellcommands &#10;&#10;edit method to install the demodatabase &#10;from the github acount to unzip master.zip &#10;to /root/ mawi - demodb and fibu" />
     <MESSAGE value="edit persistence.xml" />
     <MESSAGE value="edti shellcommand method &#10;install idemodatabase getinstall" />
-    <option name="LAST_COMMIT_MESSAGE" value="edti shellcommand method &#10;install idemodatabase getinstall" />
+    <MESSAGE value="edit workspace to ISO-8859-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit workspace to ISO-8859-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

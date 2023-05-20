@@ -26,7 +26,7 @@ public class shellcommands {
 
 
     @ShellMethod("install h2 databases from github with type command --->  idemodatabase getinstall")
-    public String idemodatabase(String database) {
+    public String h2demodatabase(String database) {
         System.out.print("install databases" + "\n");
         File path = new File(System.getProperty("user.home"));
 
