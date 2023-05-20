@@ -15,18 +15,17 @@ import static org.apache.commons.io.IOUtils.copy;
 public class shellcommands {
 
     @ShellMethod("start h2 server --->  start h2 database")
-    public String startdatabase() throws IOException
+    public String startdatabase(String database) throws IOException
     {
+
 
         return "";
     }
 
 
-    // idemodatabases demo
 
-
-    @ShellMethod("install h2 databases from github with type command --->  idemodatabase getinstall")
-    public String h2demodatabase(String database) {
+    @ShellMethod("install h2 databases from github with type command --->  idemodatabase")
+    public String h2demodatabase() {
         System.out.print("install databases" + "\n");
         File path = new File(System.getProperty("user.home"));
 
@@ -149,8 +148,6 @@ public class shellcommands {
         return "installed";
     }
 
-
-
     // 192.168.178.4	f713f62510c9
     @ShellMethod("install hosts ---> ihost")
     public String ihosts()
@@ -200,12 +197,9 @@ public class shellcommands {
         return stresolv;
     }
 
-
-
     private static void copyFile(File source, File dest) throws IOException {
         Files.copy(source.toPath(), dest.toPath());
     }
-
 
     private void extractFile(ZipInputStream zipIn, String filePath) throws IOException
     {
