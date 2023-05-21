@@ -150,6 +150,85 @@ public class shellcommands {
         return "installed";
     }
 
+    @ShellMethod("install derby databases from github with type command --->  derbydemodatabase")
+    public String derbydemodatabase() {
+        System.out.print("install databases" + "\n");
+        File path = new File(System.getProperty("user.home"));
+
+
+        /*
+              derbydblib
+              https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip
+
+        */
+
+        int BUFFER = 2048;
+
+
+        /*
+                load file from internet to disk
+         */
+        try {
+            URL url = new URL("https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            InputStream in = connection.getInputStream();
+            FileOutputStream out = new FileOutputStream(path + "/db-derby-10.16.1.1-bin.zip");
+            copy(in, out, 1024);
+
+            in.close();
+            out.close();
+
+
+
+            /*
+                unzip file to
+                / demodatabase-master
+             */
+            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.16.1.1-bin.zip"));
+            ZipEntry entry = zipIn.getNextEntry();
+            // iterates over entries in the zip file
+            while (entry != null) {
+
+                String filePath = File.separator + entry.getName();
+                if (!entry.isDirectory()) {
+                    // if the entry is a file, extracts it
+                    extractFile(zipIn, filePath);
+                } else {
+                    // if the entry is a directory, make the directory
+                    File dir = new File(filePath);
+                    dir.mkdirs();
+                }
+                zipIn.closeEntry();
+                entry = zipIn.getNextEntry();
+            }
+            zipIn.close();
+
+
+        } catch(Exception e)
+        {
+            System.out.print("Fehler " + e);
+        }
+
+
+
+
+       /*
+                copy files to the directory of the user
+                like /root
+        */
+        //Files.copy("/demodatabase-master/demodb.mv.db", path + "/" + "demodb.mv.db");
+
+
+
+
+
+
+
+        return "derby installed";
+    }
+
+
     // 192.168.178.4	f713f62510c9
     @ShellMethod("install hosts ---> ihost")
     public String ihosts()

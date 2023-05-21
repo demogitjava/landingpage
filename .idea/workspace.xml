@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" sideWeight="0.3290398" side_tool="true" weight="0.2109527" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6709602" visible="true" weight="0.29469746" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6709602" visible="true" weight="0.2959662" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -149,14 +147,14 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32972664" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3964327" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.38982034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.29054055" />
       <window_info anchor="bottom" id="Build" order="3" weight="0.4231568" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39615783" />
-      <window_info anchor="bottom" id="Services" order="5" visible="true" weight="0.27673936" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.52681565" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
-      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.26570857" />
+      <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.7589438" side_tool="true" weight="0.3301577" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.22662601" />
       <window_info anchor="right" id="Database" order="1" sideWeight="0.24105622" weight="0.21702638" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
@@ -643,7 +641,7 @@
       <workItem from="1684523949193" duration="1254000" />
       <workItem from="1684525940551" duration="10560000" />
       <workItem from="1684591847292" duration="2071000" />
-      <workItem from="1684594381204" duration="1740000" />
+      <workItem from="1684594381204" duration="6328000" />
     </task>
     <task id="LOCAL-00049" summary="edit wiki.html">
       <created>1681544515691</created>
@@ -988,7 +986,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684495394302</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1030,8 +1028,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="remove files resolv.conf &#10;and spring-shell.log" />
-    <MESSAGE value="add Dockerfile for debug" />
     <MESSAGE value="edit dockerfile to &#10;graalvmce build on oraclelinux" />
     <MESSAGE value="edit shopdb config" />
     <MESSAGE value="edit shopdbconfig" />
@@ -1055,7 +1051,9 @@
     <MESSAGE value="edit start method in DemoDbConf&#10;&#10;- h2&#10;- derbydb&#10;- mysql" />
     <MESSAGE value="edit DemoDbCOnfig&#10;to start the swich case with an Integer&#10;&#10;1 h2 &#10;2 derbydb&#10;3 mysql" />
     <MESSAGE value="edit readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit readme.md" />
+    <MESSAGE value="edit DemoDBConfig&#10;&#10;start database from application.properties" />
+    <MESSAGE value="edit DemoDBConfig&#10;&#10;start database from application.properties&#10;&#10;startdb.rundb=1&#10;&#10;1 h2 db&#10;2 derby db&#10;3 mysql db&#10;&#10;default ist set to h2" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig&#10;&#10;start database from application.properties&#10;&#10;startdb.rundb=1&#10;&#10;1 h2 db&#10;2 derby db&#10;3 mysql db&#10;&#10;default ist set to h2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

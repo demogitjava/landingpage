@@ -1,9 +1,10 @@
 package de.jgsoftware.landingpage.config;
 
 
+import java.io.FileInputStream;
 import java.sql.SQLException;
 import java.util.HashMap;
-
+import java.io.File;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
@@ -40,6 +41,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
 
 @Configuration
 @EnableTransactionManagement
@@ -55,6 +58,10 @@ public class DemoDBConfig extends HikariConfig
 
     public DemoDBConfig(@Value("${startdb.rundb}") Integer rundb)
     {
+        /*
+            application.properties
+            startdb.rundb
+        */
         this.rundb = rundb;
 
 
@@ -88,6 +95,22 @@ public class DemoDBConfig extends HikariConfig
 
     private void startderbydb()
     {
+
+        // zip file on github
+        //https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip
+        File fileexist = new File("root/db-derby-10.16.1.1-bin.zip");
+        if(fileexist.exists() == true)
+        {
+
+
+          System.out.print("zip file exist");
+
+
+        }
+        else
+        {
+
+        }
 
 
     }
