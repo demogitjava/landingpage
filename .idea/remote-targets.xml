@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
-    <option name="projectDefaultTargetUuid" value="92495e0e-935c-46cb-baac-ad707ea04676" />
     <targets>
       <target name="de_landingapge:latest" type="docker" uuid="92495e0e-935c-46cb-baac-ad707ea04676">
         <config>
@@ -19,6 +18,7 @@
               <option name="runCliOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
             </ContainerConfig>
           </option>
+          <option name="dockerServerName" value="Docker" />
         </config>
         <ContributedStateBase type="JavaLanguageRuntime">
           <config>

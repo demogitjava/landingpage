@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/Dockerfileremotedebug" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/DemoLandingPageApplication.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/gentella/build/js/custom.js" charset="ISO-8859-1" />
