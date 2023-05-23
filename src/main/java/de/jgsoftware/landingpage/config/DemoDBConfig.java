@@ -45,13 +45,19 @@ public class DemoDBConfig extends HikariConfig
 
             case "h2": {
 
-                startH2Server();
+                  startH2Server();
                   break;
             }
             case "derby":
             {
-                  System.out.print("start derby " + "\n");
+                  startderbydb();
                   break;
+            }
+            case "mysql":
+            {
+                 // connect
+                 startmysqldb();
+                 break;
             }
             default:
             break;
