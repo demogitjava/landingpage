@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="" />
+    <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AuthoritiesEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BootstrapComponentsEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/EngProductEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/KundenstammEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LeandercodesEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ProductCheckOutTextEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ProductsEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ShoppingcartEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SprachenEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringSessionAttributesEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringSessionEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UserProductListEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/UsersEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/WebtextlayoutEntity.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,27 +149,27 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32993966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32964286" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.3852839" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.29127726" />
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Run" weight="0.4197225" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.3860258" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.48493627" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.36818632" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.3860258" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.48493627" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36818632" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" side_tool="true" />
-      <window_info active="true" anchor="right" id="Notifications" order="0" visible="true" weight="0.24396682" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.24392858" />
       <window_info anchor="right" id="Database" order="1" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.24396682" />
@@ -603,6 +620,7 @@
       <workItem from="1684735329679" duration="440000" />
       <workItem from="1684755364440" duration="2000" />
       <workItem from="1684755744281" duration="1454000" />
+      <workItem from="1684824367399" duration="211000" />
     </task>
     <task id="LOCAL-00039" summary=".">
       <created>1681049949282</created>
