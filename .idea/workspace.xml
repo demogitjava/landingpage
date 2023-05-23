@@ -208,7 +208,7 @@
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
+      <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$/.." />
       <target name="de_landingapge:latest" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -244,7 +244,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <module name="landingpage" />
-      <projectPathOnTarget name="projectPathOnTarget" value="$USER_HOME$" />
+      <projectPathOnTarget name="projectPathOnTarget" value="$PROJECT_DIR$/.." />
       <target name="@@@LOCAL@@@" />
       <selectedOptions>
         <option name="environmentVariables" />
