@@ -10,6 +10,7 @@ import javax.sql.DataSource;
 import com.zaxxer.hikari.HikariConfig;
 import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
@@ -32,16 +33,31 @@ import org.springframework.beans.factory.annotation.Autowired;
         transactionManagerRef = "transactionManager")
 public class DemoDBConfig extends HikariConfig
 {
+    private String startdb;
 
-
-
-    public DemoDBConfig()
+    @Autowired
+    public DemoDBConfig(@Value("${startdb:h2}") String startdb)
     {
+        this.startdb = startdb;
 
 
+        switch(startdb) {
+
+            case "h2": {
+
+                startH2Server();
+                  break;
+            }
+            case "derby":
+            {
+                  System.out.print("start derby " + "\n");
+                  break;
+            }
+            default:
+            break;
+        }
 
 
-        startH2Server();
 
 
 

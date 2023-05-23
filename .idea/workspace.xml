@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AuthoritiesEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/BootstrapComponentsEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/EngProductEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/KundenstammEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LeandercodesEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ProductCheckOutTextEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ProductsEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ShoppingcartEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SprachenEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringSessionAttributesEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringSessionEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UserProductListEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UsersEntity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WebtextlayoutEntity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,22 +138,22 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32964286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3167857" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.29127726" />
+      <window_info anchor="bottom" id="Build" weight="0.38992733" />
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.4197225" />
+      <window_info anchor="bottom" id="Run" weight="0.2746625" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3860258" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.48493627" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36818632" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36915886" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
@@ -172,7 +161,7 @@
       <window_info anchor="right" id="Notifications" order="0" weight="0.24392858" />
       <window_info anchor="right" id="Database" order="1" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.24396682" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25035715" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -620,7 +609,7 @@
       <workItem from="1684735329679" duration="440000" />
       <workItem from="1684755364440" duration="2000" />
       <workItem from="1684755744281" duration="1454000" />
-      <workItem from="1684824367399" duration="211000" />
+      <workItem from="1684824367399" duration="1073000" />
     </task>
     <task id="LOCAL-00039" summary=".">
       <created>1681049949282</created>
@@ -965,7 +954,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684234100494</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1007,7 +996,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit wiki.html&#10;&#10;add tab with h2cluster module" />
     <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
     <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
@@ -1032,7 +1020,8 @@
     <MESSAGE value="edit dockerfile&#10;expose ports for evtl cluster h2 db" />
     <MESSAGE value="add dockerfile for connect to &#10;container over ssh" />
     <MESSAGE value="add dockerfile for jetbrains gateway &#10;ssh server for develop on remote" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dockerfile for jetbrains gateway &#10;ssh server for develop on remote" />
+    <MESSAGE value="delte model xml files" />
+    <option name="LAST_COMMIT_MESSAGE" value="delte model xml files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,13 +1103,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="26" />
+          <line>42</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="27" />
+          <line>46</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
