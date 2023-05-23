@@ -4,6 +4,7 @@ package de.jgsoftware.landingpage.config;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.io.File;
+import java.util.Properties;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
@@ -38,8 +39,10 @@ public class DemoDBConfig extends HikariConfig
     @Autowired
     public DemoDBConfig(@Value("${startdb:h2}") String startdb)
     {
-        this.startdb = startdb;
 
+
+
+        this.startdb = startdb;
 
         switch(startdb) {
 

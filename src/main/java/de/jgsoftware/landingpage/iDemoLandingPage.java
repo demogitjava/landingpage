@@ -8,6 +8,7 @@ import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Properties;
 //import org.springframework.cloud.config.server.EnableConfigServer;
 
 
@@ -16,7 +17,10 @@ import java.time.format.DateTimeFormatter;
 public interface iDemoLandingPage
 {
 
+
     public static String st_timezones = "Europe/Berlin";
+    public static String operationsytem = null;
+
     static void main(String[] args)
     {
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of(st_timezones));
@@ -34,6 +38,23 @@ public interface iDemoLandingPage
         System.out.println(now);
         System.out.println(timestamp);
         System.out.println(timestamp2);
+
+
+        String operationsytem = System.getProperty("os.name").toLowerCase();
+        if (operationsytem.contains("win")){
+            //Betriebssystem = Windows
+            operationsytem = "Windows";
+
+        }
+        else if (operationsytem.contains("osx")){
+            //Betriebssystem = OSX von Apple
+            operationsytem = "OSX Apple";
+        }
+        else if (operationsytem.contains("nix") || operationsytem.contains("aix") || operationsytem.contains("nux")){
+            //Betriebssystem = Unix bzw. Linux basiert
+            operationsytem = "unix-linux";
+        }
+        System.out.print("Operating System is " + operationsytem + "\n");
 
         SpringApplication.run(DemoLandingPageApplication.class, args);
     }

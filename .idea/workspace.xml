@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20035714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3167857" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -141,12 +142,12 @@
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info active="true" anchor="bottom" id="Run" visible="true" weight="0.54984426" />
+      <window_info anchor="bottom" id="Run" weight="0.63187957" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3860258" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.48493627" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6433022" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.63187957" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5674974" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
@@ -154,7 +155,7 @@
       <window_info anchor="right" id="Notifications" order="0" weight="0.24392858" />
       <window_info anchor="right" id="Database" order="1" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.33035713" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.33035713" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -176,8 +177,8 @@
       <command value="mvn spring-boot:deploy" />
       <command value="./mvn spring-boot:deploy" />
       <command value="./mvn deploy" />
-      <command value="mvn deploy" />
       <command value="./mvnw clean install" />
+      <command value="mvn deploy" />
       <command value="mvn compile" />
     </option>
   </component>
@@ -222,6 +223,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="landingpage-0.0.1-SNAPSHOT-spring-boot.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/landingpage-0.0.1-SNAPSHOT-spring-boot.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="landingpage-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/landingpage-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
     </configuration>
     <configuration name="Remote Debug Landingapge" type="Remote">
       <module name="landingpage" />
@@ -348,11 +357,15 @@
       <item itemvalue="Docker.de_landingapge" />
       <item itemvalue="Docker.development container" />
       <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver: Compose Deployment" />
+      <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT-spring-boot.jar" />
+      <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
       <item itemvalue="Remote JVM Debug.Remote Debug Landingapge" />
       <item itemvalue="Spring Boot.iDemoLandingPage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT-spring-boot.jar" />
+        <item itemvalue="JAR Application.landingpage-0.0.1-SNAPSHOT.jar" />
         <item itemvalue="Docker.development container" />
         <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver: Compose Deployment" />
       </list>
@@ -604,7 +617,7 @@
       <workItem from="1684755744281" duration="1454000" />
       <workItem from="1684824367399" duration="1073000" />
       <workItem from="1684847415689" duration="626000" />
-      <workItem from="1684851370149" duration="1066000" />
+      <workItem from="1684851370149" duration="2176000" />
     </task>
     <task id="LOCAL-00039" summary=".">
       <created>1681049949282</created>
@@ -949,7 +962,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684234100494</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -991,7 +1004,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit wiki.html &#10;&#10;docker add path for file hosts" />
     <MESSAGE value="edit Dockerfile&#10;&#10;remove hosts and resolv.conf&#10;the files are by start the container overriden" />
     <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
     <MESSAGE value="edit README.md" />
@@ -1016,7 +1028,8 @@
     <MESSAGE value="add dockerfile for connect to &#10;container over ssh" />
     <MESSAGE value="add dockerfile for jetbrains gateway &#10;ssh server for develop on remote" />
     <MESSAGE value="delte model xml files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delte model xml files" />
+    <MESSAGE value="edit pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
