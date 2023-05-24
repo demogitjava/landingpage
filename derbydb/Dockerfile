@@ -1,4 +1,4 @@
-﻿FROM FROM jgsoftwares/derbydb
+﻿FROM jgsoftwares/derbydb
 
 EXPOSE 1527
 CMD ["/root/db-derby-10.16.1.1-bin/bin/startNetworkServer", "-p 1527"]
