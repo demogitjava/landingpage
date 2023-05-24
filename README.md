@@ -112,9 +112,16 @@ docker load --input landingpage.tar
 -> for manual setup // Dockerfile ssh server - jetbrains gateway
 ----------------------------------------
 mount directory into docker container:
-
 /root/.m2:/root/.m2  
 /root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage  
 /usr/lib/jvm/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2  
 /root/IdeaProjects/demodatabase:/root/
+
+for jetbrains gateway or jetbrains eap you can alternative run 
+in the folder the docker-compose_jetbrains_gateway.yml as "compose"
+watch out that the container is running in your network 
+in my case it is the 192.168.178.2 than you can connect.
+I choose 4096 MB RAM for container debug with maven.
+
+
 
