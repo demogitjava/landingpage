@@ -27,6 +27,12 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.apache.derby.tools.ij;
+import org.apache.derby.jdbc.*;
+
+import org.apache.derby.tools.ij;
+import org.apache.derby.drda.NetworkServerControl;
+
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces",
