@@ -43,10 +43,13 @@ public class DemoDBConfig extends HikariConfig
 
 
         this.startdb = startdb;
+        System.out.print("starting database" + startdb + "\n" + "\n");
 
         switch(startdb) {
 
-            case "h2": {
+            case "h2":
+            {
+
 
                   startH2Server();
                   break;
