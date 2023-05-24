@@ -168,6 +168,15 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.apache.derby/derbynet -->
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derbynet</artifactId>
+            <version>10.16.1.1</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

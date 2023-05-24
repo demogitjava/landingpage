@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef50cf1-d247-4b3a-ae3a-df1af61ca3c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3167857" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2960614" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -146,8 +144,8 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.3860258" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.63187957" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3359294" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3411215" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.605919" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
@@ -155,7 +153,7 @@
       <window_info anchor="right" id="Notifications" order="0" weight="0.24392858" />
       <window_info anchor="right" id="Database" order="1" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.33035713" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.29072094" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -617,7 +615,7 @@
       <workItem from="1684755744281" duration="1454000" />
       <workItem from="1684824367399" duration="1073000" />
       <workItem from="1684847415689" duration="626000" />
-      <workItem from="1684851370149" duration="4824000" />
+      <workItem from="1684851370149" duration="7408000" />
     </task>
     <task id="LOCAL-00039" summary=".">
       <created>1681049949282</created>
@@ -962,7 +960,7 @@
       <option name="project" value="LOCAL" />
       <updated>1684234100494</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1004,7 +1002,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit shellcommands&#10;&#10;add method ihost" />
     <MESSAGE value="edit README.md" />
     <MESSAGE value="edit dockerfile &#10;&#10;add snapshot landingpage &#10;form &#10;2023 02 09" />
     <MESSAGE value="update dockerfile" />
@@ -1029,7 +1026,8 @@
     <MESSAGE value="delte model xml files" />
     <MESSAGE value="edit pom.xml" />
     <MESSAGE value="edit iDemoLandingPage&#10;&#10;add Operatin System by startup" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit iDemoLandingPage&#10;&#10;add Operatin System by startup" />
+    <MESSAGE value="edit Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
