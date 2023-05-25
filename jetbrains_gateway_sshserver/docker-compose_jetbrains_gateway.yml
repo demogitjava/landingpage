@@ -2,7 +2,7 @@ version: '3'
 services:
 
   de_development:
-    image: jgsoftwares/graalce11
+    image: de_development:latest
     container_name: de_development
     ports:
       - "217.160.255.254:22:22"

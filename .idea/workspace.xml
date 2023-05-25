@@ -1,18 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="landingpage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QFTP5IBWBiGYMWxXYOPgdWUwrC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment">
+    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="gitpod/workspace-java-11:latest" />
+          <option name="containerName" value="gitpod" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="22" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="22" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network 192.168.178.0" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="landingpage" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Docker Image (3)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="jgsoftwares/graalce11:latest" />
+          <option name="containerName" value="de_developerimage" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="22" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="22" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network 192.168.178.0" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="gitpod/workspace-java-11:latest" />
+          <option name="containerName" value="gitpod" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="22" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="22" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="--network 192.168.178.0" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="jetbrains_gateway_sshserver/Dockerfilesshserver" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="jetbrains_gateway_sshserver/Dockerfilesshserver" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Docker Image (3)" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Docker Image (2)" />
+      <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
+      <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
+        <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
+        <item itemvalue="Docker.Docker Image (3)" />
+        <item itemvalue="Docker.Docker Image (2)" />
+        <item itemvalue="Docker.Docker Image" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="edit derbydb dockerfile">
+      <option name="closed" value="true" />
+      <created>1684921413980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684921413980</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="" />
+      <created>1684948306129</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684948306129</updated>
+      <workItem from="1684948315399" duration="323000" />
+      <workItem from="1684948725698" duration="749000" />
+      <workItem from="1684949597227" duration="2144000" />
+      <workItem from="1684995137560" duration="1831000" />
+      <workItem from="1684996975478" duration="1356000" />
+      <workItem from="1684998399283" duration="320000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="edit derbydb dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit derbydb dockerfile" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
