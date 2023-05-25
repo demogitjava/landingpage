@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="" />
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,81 +36,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/root/IdeaProjects/demodatabase",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;derby&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment">
-    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="gitpod/workspace-java-11:latest" />
-          <option name="containerName" value="gitpod" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="22" />
-                <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="22" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="commandLineOptions" value="--network 192.168.178.0" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image (3)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="jgsoftwares/graalce11:latest" />
-          <option name="containerName" value="de_developerimage" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="22" />
-                <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="22" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="commandLineOptions" value="--network 192.168.178.0" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="gitpod/workspace-java-11:latest" />
-          <option name="containerName" value="gitpod" />
+          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
+          <option name="containerName" value="de_derbydb" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
-                <option name="containerPort" value="22" />
+                <option name="containerPort" value="1527" />
                 <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="22" />
+                <option name="hostPort" value="1527" />
               </DockerPortBindingImpl>
             </list>
           </option>
-          <option name="commandLineOptions" value="--network 192.168.178.0" />
         </settings>
       </deployment>
       <method v="2" />
@@ -128,10 +95,28 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="jetbrains_gateway_sshserver/Dockerfilesshserver" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="derbydb" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
+          <option name="containerName" value="de_derbydb" />
+          <option name="commandLineOptions" value="--network 192.168.178.0" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="derbydb/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="jetbrains_gateway_sshserver/Dockerfilesshserver" />
+          <option name="sourceFilePath" value="derbydb/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="derbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="derbydb/docker-compose_derbydb.yml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -145,19 +130,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Docker Image (3)" />
+      <item itemvalue="Docker.derbydb" />
+      <item itemvalue="Docker.derbydb/Dockerfile" />
+      <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
-      <item itemvalue="Docker.Docker Image (2)" />
-      <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
       <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
-        <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
-        <item itemvalue="Docker.Docker Image (3)" />
-        <item itemvalue="Docker.Docker Image (2)" />
+        <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
+        <item itemvalue="Docker.derbydb" />
         <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.derbydb/Dockerfile" />
+        <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +168,7 @@
       <workItem from="1684995137560" duration="1831000" />
       <workItem from="1684996975478" duration="1356000" />
       <workItem from="1684998399283" duration="379000" />
+      <workItem from="1685001241769" duration="2240000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -192,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1684998764011</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edit Dockerfilesshserver">
+      <option name="closed" value="true" />
+      <created>1685001306924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685001306924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="edit Dockerfilesshserver">
+      <option name="closed" value="true" />
+      <created>1685001377055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685001377055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +203,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit derbydb dockerfile" />
     <MESSAGE value="edit docker-compose_jetbrains_gateway.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker-compose_jetbrains_gateway.yml" />
+    <MESSAGE value="edit Dockerfilesshserver" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfilesshserver" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

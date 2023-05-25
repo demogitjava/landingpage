@@ -73,5 +73,19 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="demodb@192.168.178.5" uuid="50df12a2-a7c5-4bc6-a0a4-48565cbafcb6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DERBY" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+      <ssl-config use-ide-store="true" use-java-store="true" use-system-store="true">
+        <enabled>true</enabled>
+        <mode>REQUIRE</mode>
+      </ssl-config>
+    </data-source>
   </component>
 </project>
