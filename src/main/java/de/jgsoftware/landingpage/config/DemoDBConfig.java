@@ -27,6 +27,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import de.jgsoftware.landingpage.config.shell.shellcommands;
 
 @Configuration
 @EnableTransactionManagement
@@ -50,6 +51,16 @@ public class DemoDBConfig extends HikariConfig
 
             case "h2":
             {
+
+                File f = new File("/root/demodb.mv.db");
+                if(f.exists()) {
+                System.out.print("demodb exist on path root/demodb.mv.db" + "\n");
+                }
+                else {
+                    System.out.print("install demodatabase from github - master.zip file ");
+                    de.jgsoftware.landingpage.config.shell.shellcommands shellcommands = new de.jgsoftware.landingpage.config.shell.shellcommands();
+                    shellcommands.h2demodatabase();
+                }
 
 
                   startH2Server();

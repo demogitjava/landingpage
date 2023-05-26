@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,31 +69,37 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21923077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21892858" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.52284527" />
+      <window_info anchor="bottom" id="Build" weight="0.53011423" />
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.52348644" />
+      <window_info anchor="bottom" id="Run" weight="0.52284527" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.52458155" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.43043935" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.48753893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.59657323" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.52458155" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.39615783" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.8146417" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.52284527" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" side_tool="true" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.24979356" />
       <window_info anchor="right" id="Database" order="1" weight="0.33035713" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.32972026" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32972026" />
     </layout>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
     <configuration name="landingpage [compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
@@ -245,7 +251,8 @@
       <workItem from="1684996975478" duration="1356000" />
       <workItem from="1684998399283" duration="379000" />
       <workItem from="1685001241769" duration="2240000" />
-      <workItem from="1685102289339" duration="304000" />
+      <workItem from="1685102289339" duration="1017000" />
+      <workItem from="1685103674571" duration="471000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -271,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685001377055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="edit DemoDBConfig">
+      <option name="closed" value="true" />
+      <created>1685102899591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685102899591</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +296,8 @@
     <MESSAGE value="edit derbydb dockerfile" />
     <MESSAGE value="edit docker-compose_jetbrains_gateway.yml" />
     <MESSAGE value="edit Dockerfilesshserver" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfilesshserver" />
+    <MESSAGE value="edit DemoDBConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
