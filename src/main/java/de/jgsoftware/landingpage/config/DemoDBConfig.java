@@ -27,11 +27,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.apache.derby.tools.ij;
-import org.apache.derby.jdbc.*;
-
-import org.apache.derby.tools.ij;
-import org.apache.derby.drda.NetworkServerControl;
 
 @Configuration
 @EnableTransactionManagement
@@ -90,21 +85,7 @@ public class DemoDBConfig extends HikariConfig
     private void startderbydb()
     {
 
-        // zip file on github
-        //https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip
-        File fileexist = new File("root/db-derby-10.16.1.1-bin.zip");
-        if(fileexist.exists() == true)
-        {
 
-
-          System.out.print("zip file exist");
-
-
-        }
-        else
-        {
-
-        }
 
 
     }

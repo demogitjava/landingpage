@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +34,104 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/root/IdeaProjects/demodatabase",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "derby"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Space Code Reviews" />
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" />
+      <window_info id="Pull Requests" />
+      <window_info id="Persistence" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21923077" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.52284527" />
+      <window_info anchor="bottom" id="Dependencies" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Run" weight="0.52348644" />
+      <window_info anchor="bottom" id="Dependency Checker" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.52458155" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.43043935" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.48753893" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.59657323" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.52458155" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Beans" />
+      <window_info anchor="right" id="Meet New UI" side_tool="true" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.24979356" />
+      <window_info anchor="right" id="Database" order="1" weight="0.33035713" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.32972026" />
+    </layout>
+  </component>
   <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
+    <configuration name="landingpage [compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="compile" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Landingapge" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="landingpage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -116,6 +189,7 @@
     <configuration name="derbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="derbydb/docker-compose_derbydb.yml" />
         </settings>
       </deployment>
@@ -135,6 +209,8 @@
       <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
+      <item itemvalue="Maven.landingpage [compile]" />
+      <item itemvalue="Spring Boot.Landingapge" />
     </list>
     <recent_temporary>
       <list>
@@ -169,6 +245,7 @@
       <workItem from="1684996975478" duration="1356000" />
       <workItem from="1684998399283" duration="379000" />
       <workItem from="1685001241769" duration="2240000" />
+      <workItem from="1685102289339" duration="304000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -205,6 +282,10 @@
     <MESSAGE value="edit docker-compose_jetbrains_gateway.yml" />
     <MESSAGE value="edit Dockerfilesshserver" />
     <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfilesshserver" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
