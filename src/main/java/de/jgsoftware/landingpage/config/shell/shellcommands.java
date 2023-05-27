@@ -157,8 +157,8 @@ public class shellcommands {
 
 
         /*
-              derbydblib
-              https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip
+              derbydb
+              https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.15.2.0-bin.zip
 
         */
 
@@ -169,11 +169,11 @@ public class shellcommands {
                 load file from internet to disk
          */
         try {
-            URL url = new URL("https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.16.1.1-bin.zip");
+            URL url = new URL("https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.15.2.0-bin.zip");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             InputStream in = connection.getInputStream();
-            FileOutputStream out = new FileOutputStream(path + "/db-derby-10.16.1.1-bin.zip");
+            FileOutputStream out = new FileOutputStream(path + "/db-derby-10.15.2.0-bin.zip");
             copy(in, out, 1024);
 
             in.close();
@@ -183,14 +183,14 @@ public class shellcommands {
 
             /*
                 unzip file to
-                / demodatabase-master
+                / derbydb
              */
-            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.16.1.1-bin.zip"));
+            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.15.2.0-bin.zip"));
             ZipEntry entry = zipIn.getNextEntry();
             // iterates over entries in the zip file
             while (entry != null) {
 
-                String filePath = File.separator + entry.getName();
+                String filePath = path + File.separator + entry.getName();
                 if (!entry.isDirectory()) {
                     // if the entry is a file, extracts it
                     extractFile(zipIn, filePath);

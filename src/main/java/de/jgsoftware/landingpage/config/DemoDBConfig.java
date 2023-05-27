@@ -1,15 +1,9 @@
 package de.jgsoftware.landingpage.config;
 
 
-import java.sql.SQLException;
-import java.util.HashMap;
-import java.io.File;
-import java.util.Properties;
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
 import com.zaxxer.hikari.HikariConfig;
 import org.h2.tools.Server;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -18,16 +12,19 @@ import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
-import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import de.jgsoftware.landingpage.config.shell.shellcommands;
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+import java.io.File;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.HashMap;
 
 @Configuration
 @EnableTransactionManagement
@@ -39,7 +36,7 @@ public class DemoDBConfig extends HikariConfig
     private String startdb;
 
     @Autowired
-    public DemoDBConfig(@Value("${startdb:h2}") String startdb)
+    public DemoDBConfig(@Value("${startdb:h2}") String startdb, @Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
     {
 
 
@@ -67,7 +64,17 @@ public class DemoDBConfig extends HikariConfig
             }
             case "derby":
             {
-                  startderbydb();
+                  File derbyzip = new File("/root/db-derby-10.15.2.0-bin.zip");
+                  if(derbyzip.exists()) {
+                     System.out.print("derby database exist" + "\n");
+                  }
+                  else {
+                    System.out.print("install derbydb" + "\n");
+                      de.jgsoftware.landingpage.config.shell.shellcommands shellcommands = new de.jgsoftware.landingpage.config.shell.shellcommands();
+                      shellcommands.derbydemodatabase();
+                  }
+
+                  startderbydb(startmode, derbyipremote);
                   break;
             }
             case "mysql":
@@ -80,10 +87,6 @@ public class DemoDBConfig extends HikariConfig
             break;
         }
 
-
-
-
-
     }
 
     private void startmysqldb()
@@ -92,9 +95,16 @@ public class DemoDBConfig extends HikariConfig
 
     }
 
-    private void startderbydb()
+    private void startderbydb(@Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
     {
 
+        if(startmode == "local")
+        {
+        }
+        else
+        {
+
+        }
 
 
 
