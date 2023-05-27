@@ -22,10 +22,7 @@
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout</class>
     <class>de.jgsoftware.landingpage.model.jpa.demodb.Yourcompanydata</class>
 
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsdaten</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsarten</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Belegarten</class>
+
     <class>de.jgsoftware.landingpage.model.Users</class>
     <class>de.jgsoftware.landingpage.model.m_bootstrap_components</class>
     <class>de.jgsoftware.landingpage.model.useragent</class>
@@ -49,6 +46,10 @@
       <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
+  
+  <!--
+       h2 mawi db
+   -->
   <persistence-unit name="h2mawi">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
@@ -73,6 +74,9 @@
       <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
+  <!--
+    h2 shop db
+    -->
   <persistence-unit name="h2shopdb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
@@ -91,21 +95,7 @@
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSession</class>
     <class>de.jgsoftware.landingpage.model.jpa.shopdb.SpringSessionAttributes</class>
 
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Reports</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Desktoplayout</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Users</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Useragent</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdata</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Userdetail</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Kundenstamm</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Sprachen</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Yourcompanydata</class>
-    <class>de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsdaten</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Buchungsarten</class>
-    <class>de.jgsoftware.landingpage.model.jpa.mawi.Belegarten</class>
-    <class>de.jgsoftware.landingpage.model.Users</class>
+    
     <class>de.jgsoftware.landingpage.model.m_bootstrap_components</class>
     <class>de.jgsoftware.landingpage.model.useragent</class>
     <class>de.jgsoftware.landingpage.model.m_webtextlayout</class>
