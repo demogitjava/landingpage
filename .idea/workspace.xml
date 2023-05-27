@@ -261,21 +261,21 @@
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="Build" weight="0.48252118" />
-      <window_info anchor="bottom" id="Dependencies" />
+      <window_info active="true" anchor="bottom" id="Dependencies" visible="true" weight="0.25597093" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Run" weight="0.500523" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.47371134" />
-      <window_info anchor="bottom" id="Problems View" order="1" weight="0.47371134" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3463136" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.3463136" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.25597093" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5872274" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.6511506" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.25597093" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" side_tool="true" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.24534625" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.19349316" />
+      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.21335617" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.33018208" />
     </layout>
@@ -450,7 +450,7 @@
       <workItem from="1685177506530" duration="293000" />
       <workItem from="1685177856219" duration="3036000" />
       <workItem from="1685180937737" duration="5074000" />
-      <workItem from="1685187138541" duration="685000" />
+      <workItem from="1685187138541" duration="993000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -524,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685186511135</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary=".">
+      <option name="closed" value="true" />
+      <created>1685188249922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685188249923</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,9 +547,9 @@
     <MESSAGE value="edit DemoController&#10;&#10;edit mapping model to Controller from demodb mawi or shopdb&#10;to model" />
     <MESSAGE value="edit shellcommands&#10;&#10;edit the path in installderbydb to root" />
     <MESSAGE value="edit shellcommands" />
-    <MESSAGE value="." />
     <MESSAGE value="edit DemoDBConfig&#10;&#10;to install the database local &#10;running shell script to start the NetworkServer with default port 1527" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig&#10;&#10;to install the database local &#10;running shell script to start the NetworkServer with default port 1527" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
