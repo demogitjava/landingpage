@@ -70,7 +70,7 @@ public class shellcommands {
             // iterates over entries in the zip file
             while (entry != null) {
 
-                String filePath = File.separator + entry.getName();
+                String filePath = path + File.separator + entry.getName();
                 if (!entry.isDirectory()) {
                     // if the entry is a file, extracts it
                     extractFile(zipIn, filePath);
