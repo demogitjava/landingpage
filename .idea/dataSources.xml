@@ -1,65 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="h2demodb" uuid="f4fa21d4-2542-4e41-97d9-754532a924a2">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/demodb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="h2mawi" uuid="641c45b5-f457-474a-bfa4-29f0c6150e03">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/mawi</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="h2shopdb" uuid="83c9120b-cb8a-4767-80b8-c91cb67aeae7">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/shopdb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="h2shopdb/Hibernate" uuid="910646c4-b8fe-46ac-a36c-a2cbb18bec94">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/IdeaProjects/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/shopdb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="h2demodb/Hibernate" uuid="4121321e-5826-41f5-8bf3-1079999a50fa">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/IdeaProjects/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/demodb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="h2mawi/Hibernate" uuid="e3291cc5-be0b-4f5d-b97c-88a6a6929e10">
-      <driver-ref>h2.unified</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/IdeaProjects/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:tcp://0.0.0.0:9092/~/mawi</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="demodb@192.168.178.5" uuid="50df12a2-a7c5-4bc6-a0a4-48565cbafcb6">
+    <data-source source="LOCAL" name="demodb@127.0.0.1" uuid="50df12a2-a7c5-4bc6-a0a4-48565cbafcb6">
       <driver-ref>derby.remote</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby://192.168.178.5:1527/demodb;create=true;territory=de_DE;collation=TERRITORY_BASED</jdbc-url>
+      <jdbc-url>jdbc:derby://127.0.0.1:1527/root/demodb;create=true;territory=de_DE;collation=TERRITORY_BASED</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="mawi@127.0.0.1" uuid="6a8c857d-7e84-44e8-8b13-bfecb06653b5">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://127.0.0.1:1527/root/mawi;create=true</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="shopdb@127.0.0.1" uuid="6b08d933-c8e4-4772-bc63-617cf7430975">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://127.0.0.1:1527/root/shopdb;create=true</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

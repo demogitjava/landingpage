@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.io.File;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -98,8 +99,20 @@ public class DemoDBConfig extends HikariConfig
     private void startderbydb(@Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
     {
 
-        if(startmode == "local")
+        if(startmode.equals("local"))
         {
+
+            try {
+
+                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.16.1.1-bin");
+                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer -p 1527");
+                Runtime.getRuntime().exec("java -jar $DERBY_HOME/lib/derbyrun.jar ij");
+
+
+                // CONNECT 'jdbc:derby:firstdb;create=true';
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
         else
         {
