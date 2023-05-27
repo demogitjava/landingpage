@@ -54,7 +54,7 @@ public interface iDemoLandingPage
             //Betriebssystem = Unix bzw. Linux basiert
             operationsytem = "unix-linux";
         }
-        System.out.print("Operating System is " + operationsytem + "\n" + "\n");
+        System.out.print(operationsytem + "\n");
 
         SpringApplication.run(DemoLandingPageApplication.class, args);
     }

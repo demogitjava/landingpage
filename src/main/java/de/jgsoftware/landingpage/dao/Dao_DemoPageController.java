@@ -2,8 +2,12 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
-import de.jgsoftware.landingpage.model.m_bootstrap_components;
-import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
+
+import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
+
+import de.jgsoftware.landingpage.model.jpa.shopdb.m_webtextlayout;
+
 import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -55,13 +59,13 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     // returns all entriys from stored Bootstrap Compoents
     // with ${ value } for mapping to Theamyleaf
     @Override
-    public List<m_bootstrap_components> getBootstrapComponents()
+    public List<BootstrapComponents> getBootstrapComponents()
     {
 
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
-        List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+        List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
         return bootstrap_comonents;
     }
 
@@ -76,7 +80,7 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
 
     @Override
-    public useragent saveuseragent(useragent muagent)
+    public Useragent saveuseragent(Useragent muagent)
     {
 
 

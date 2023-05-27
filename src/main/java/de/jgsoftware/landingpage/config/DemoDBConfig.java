@@ -45,7 +45,6 @@ public class DemoDBConfig extends HikariConfig
 
 
         this.startdb = startdb;
-        System.out.print("starting database" + startdb + "\n" + "\n");
 
         switch(startdb) {
 
@@ -54,7 +53,7 @@ public class DemoDBConfig extends HikariConfig
 
                 File f = new File("/root/demodb.mv.db");
                 if(f.exists()) {
-                System.out.print("demodb exist on path root/demodb.mv.db" + "\n");
+                System.out.print("root/demodb.mv.db exist" + "\n");
                 }
                 else {
                     System.out.print("install demodatabase from github - master.zip file ");

@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/Dao_DemoPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/dao/interfaces/web/IDaoDemoPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/iDemoLandingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +48,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
@@ -69,36 +76,44 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21892858" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2797945" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Build" weight="0.53011423" />
+      <window_info anchor="bottom" id="Build" weight="0.4854621" />
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.52284527" />
+      <window_info anchor="bottom" id="Run" weight="0.41900313" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.52458155" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.43043935" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.39615783" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.43977153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8146417" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.52284527" />
+      <window_info active="true" anchor="bottom" id="Services" order="4" visible="true" weight="0.5051921" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" side_tool="true" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.24979356" />
-      <window_info anchor="right" id="Database" order="1" weight="0.33035713" />
+      <window_info anchor="right" id="Notifications" order="0" weight="0.19455644" />
+      <window_info anchor="right" id="Database" order="1" weight="0.19455644" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32972026" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2160959" />
     </layout>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn install" />
+      <command value="mvn compile" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
     </option>
   </component>
   <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
@@ -253,6 +268,7 @@
       <workItem from="1685001241769" duration="2240000" />
       <workItem from="1685102289339" duration="1017000" />
       <workItem from="1685103674571" duration="471000" />
+      <workItem from="1685173234177" duration="1441000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
