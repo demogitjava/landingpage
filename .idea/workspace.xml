@@ -5,187 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03/storage_v2/_src_/database/MAWI.Zv8jAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03/storage_v2/_src_/database/MAWI.Zv8jAA/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/641c45b5-f457-474a-bfa4-29f0c6150e03/storage_v2/_src_/database/MAWI.Zv8jAA/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/83c9120b-cb8a-4767-80b8-c91cb67aeae7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/83c9120b-cb8a-4767-80b8-c91cb67aeae7/storage_v2/_src_/database/SHOPDB.9PW9kQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/83c9120b-cb8a-4767-80b8-c91cb67aeae7/storage_v2/_src_/database/SHOPDB.9PW9kQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3291cc5-be0b-4f5d-b97c-88a6a6929e10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3291cc5-be0b-4f5d-b97c-88a6a6929e10/storage_v2/_src_/database/MAWI.Zv8jAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3291cc5-be0b-4f5d-b97c-88a6a6929e10/storage_v2/_src_/database/MAWI.Zv8jAA/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2/storage_v2/_src_/database/DEMODB.oRH6dw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2/storage_v2/_src_/database/DEMODB.oRH6dw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f4fa21d4-2542-4e41-97d9-754532a924a2/storage_v2/_src_/database/DEMODB.oRH6dw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/dbex.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/log/log.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/log/log1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/log/logmirror.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c10.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c101.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c111.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c121.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c130.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c141.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c150.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c161.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c171.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c180.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c191.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1e0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c1f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c20.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c200.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c211.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c221.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c230.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c241.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c251.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c260.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c271.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c281.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c290.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c2f0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c300.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c31.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c311.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c321.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c331.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c340.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c351.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c361.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c371.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c380.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c391.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c3f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c400.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c41.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c411.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c421.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c430.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c441.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c451.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c461.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c470.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c481.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c51.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c60.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c71.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c81.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/c90.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/ca1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/cb1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/cc0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/cd1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/ce1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/seg0/cf0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/mawi/service.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/dbex.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/log/log.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/log/log1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/log/logmirror.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c10.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c101.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c111.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c121.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c130.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c141.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c150.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c161.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c171.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c180.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c191.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1e0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c1f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c20.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c200.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c211.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c221.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c230.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c241.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c251.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c260.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c271.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c281.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c290.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c2f0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c300.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c31.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c311.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c321.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c331.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c340.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c351.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c361.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c371.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c380.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c391.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c3f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c400.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c41.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c411.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c421.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c430.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c441.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c451.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c461.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c470.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c481.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c51.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c60.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c71.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c81.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/c90.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/ca1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/cb1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/cc0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/cd1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/ce1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/seg0/cf0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/root/shopdb/service.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,9 +16,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -218,18 +37,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/landingpage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/demodatabase&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -245,103 +57,28 @@
     ]
   }
 }</component>
-  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
-    <layout>
-      <window_info id="Space Code Reviews" />
-      <window_info id="Bookmarks" side_tool="true" />
-      <window_info id="Merge Requests" />
-      <window_info id="Commit_Guest" />
-      <window_info id="Pull Requests" />
-      <window_info id="Persistence" side_tool="true" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.244863" />
-      <window_info id="Commit" order="1" weight="0.25" />
-      <window_info id="Structure" order="2" weight="0.22514006" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Build" weight="0.48252118" />
-      <window_info active="true" anchor="bottom" id="Dependencies" visible="true" weight="0.25597093" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.500523" />
-      <window_info anchor="bottom" id="Dependency Checker" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.47371134" />
-      <window_info anchor="bottom" id="Problems View" order="1" weight="0.3463136" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.25597093" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5872274" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.25597093" />
-      <window_info anchor="right" id="Endpoints" />
-      <window_info anchor="right" id="Beans" />
-      <window_info anchor="right" id="Meet New UI" side_tool="true" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.24534625" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.21335617" />
-      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.33018208" />
-    </layout>
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean" />
-      <command value="mvn install" />
-      <command value="mvn compile" />
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
-    <configuration name="landingpage [compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="cmdOptions" />
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="compile" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
+  <component name="RunManager" selected="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment">
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="de_lanserver:latest" />
+          <option name="containerName" value="lanserver" />
+          <option name="commandLineOptions" value="--network 192.168.178.0" />
+        </settings>
+      </deployment>
       <method v="2" />
-    </configuration>
-    <configuration name="Landingapge" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="landingpage" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="containerName" value="de_derbydb" />
+          <option name="imageTag" value="de_development:latest" />
+          <option name="containerName" value="de_developer" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
-                <option name="containerPort" value="1527" />
+                <option name="containerPort" value="22" />
                 <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="1527" />
+                <option name="hostPort" value="22" />
               </DockerPortBindingImpl>
             </list>
           </option>
@@ -367,29 +104,10 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="derbydb" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="containerName" value="de_derbydb" />
-          <option name="commandLineOptions" value="--network 192.168.178.0" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="derbydb/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="jetbrains_gateway_sshserver/Dockerfilesshserver" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="sourceFilePath" value="derbydb/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="derbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="derbydb/docker-compose_derbydb.yml" />
+          <option name="sourceFilePath" value="jetbrains_gateway_sshserver/Dockerfilesshserver" />
         </settings>
       </deployment>
       <method v="2" />
@@ -402,22 +120,35 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml.de_development: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="de_development" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml" />
+          <option name="upRemoveOrphans" value="true" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.derbydb" />
-      <item itemvalue="Docker.derbydb/Dockerfile" />
-      <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Docker Image (1)" />
       <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
-      <item itemvalue="Maven.landingpage [compile]" />
-      <item itemvalue="Spring Boot.Landingapge" />
+      <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
+      <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml.de_development: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
-        <item itemvalue="Docker.derbydb" />
-        <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.derbydb/Dockerfile" />
         <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
+        <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml.de_development: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.jetbrains_gateway_sshserver/Dockerfilesshserver" />
+        <item itemvalue="Docker.Docker Image (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -443,14 +174,14 @@
       <workItem from="1684995137560" duration="1831000" />
       <workItem from="1684996975478" duration="1356000" />
       <workItem from="1684998399283" duration="379000" />
-      <workItem from="1685001241769" duration="2240000" />
-      <workItem from="1685102289339" duration="1017000" />
-      <workItem from="1685103674571" duration="471000" />
-      <workItem from="1685173234177" duration="3930000" />
-      <workItem from="1685177506530" duration="293000" />
-      <workItem from="1685177856219" duration="3036000" />
-      <workItem from="1685180937737" duration="5074000" />
-      <workItem from="1685187138541" duration="993000" />
+      <workItem from="1685001241769" duration="5555000" />
+      <workItem from="1685087529158" duration="383000" />
+      <workItem from="1685090024354" duration="72000" />
+      <workItem from="1685179144902" duration="395000" />
+      <workItem from="1685179546808" duration="19000" />
+      <workItem from="1685259681536" duration="235000" />
+      <workItem from="1685259918975" duration="1863000" />
+      <workItem from="1685261826627" duration="752000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -476,84 +207,26 @@
       <option name="project" value="LOCAL" />
       <updated>1685001377055</updated>
     </task>
-    <task id="LOCAL-00005" summary="edit DemoDBConfig">
+    <task id="LOCAL-00005" summary="edit docker-compose_derbydb.yml">
       <option name="closed" value="true" />
-      <created>1685102899591</created>
+      <created>1685003519179</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1685102899591</updated>
+      <updated>1685003519179</updated>
     </task>
-    <task id="LOCAL-00006" summary="edit DemoController&#10;&#10;edit mapping model to Controller from demodb mawi or shopdb&#10;to model">
-      <option name="closed" value="true" />
-      <created>1685175003307</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1685175003307</updated>
-    </task>
-    <task id="LOCAL-00007" summary="edit shellcommands&#10;&#10;edit the path in installderbydb to root">
-      <option name="closed" value="true" />
-      <created>1685180841993</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1685180841993</updated>
-    </task>
-    <task id="LOCAL-00008" summary="edit shellcommands">
-      <option name="closed" value="true" />
-      <created>1685181129550</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1685181129550</updated>
-    </task>
-    <task id="LOCAL-00009" summary=".">
-      <option name="closed" value="true" />
-      <created>1685181343170</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1685181343170</updated>
-    </task>
-    <task id="LOCAL-00010" summary="edit DemoDBConfig&#10;&#10;to install the database local &#10;running shell script to start the NetworkServer with default port 1527">
-      <option name="closed" value="true" />
-      <created>1685186511135</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1685186511135</updated>
-    </task>
-    <task id="LOCAL-00011" summary=".">
-      <option name="closed" value="true" />
-      <created>1685188249922</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1685188249923</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit derbydb dockerfile" />
     <MESSAGE value="edit docker-compose_jetbrains_gateway.yml" />
     <MESSAGE value="edit Dockerfilesshserver" />
-    <MESSAGE value="edit DemoDBConfig" />
-    <MESSAGE value="edit DemoController&#10;&#10;edit mapping model to Controller from demodb mawi or shopdb&#10;to model" />
-    <MESSAGE value="edit shellcommands&#10;&#10;edit the path in installderbydb to root" />
-    <MESSAGE value="edit shellcommands" />
-    <MESSAGE value="edit DemoDBConfig&#10;&#10;to install the database local &#10;running shell script to start the NetworkServer with default port 1527" />
-    <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="edit docker-compose_derbydb.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker-compose_derbydb.yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/landingpage$iDemoLandingPage.ic" NAME="iDemoLandingPage Coverage Results" MODIFIED="1665901093175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
