@@ -37,7 +37,7 @@ public class DemoDBConfig extends HikariConfig
     private String startdb;
 
     @Autowired
-    public DemoDBConfig(@Value("${startdb:h2}") String startdb, @Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
+    public DemoDBConfig(@Value("${startdb}") String startdb, @Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
     {
 
 
@@ -107,10 +107,9 @@ public class DemoDBConfig extends HikariConfig
                 Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.16.1.1-bin");
                 Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer -p 1527");
 
-
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.print("Error start derby " + e + "\n");
             }
         }
         else
