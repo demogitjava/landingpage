@@ -98,6 +98,12 @@ public class DemoDBConfig extends HikariConfig
 
     private void startderbydb(@Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
     {
+        try {
+            Server h2Server = Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
 
         if(startmode.equals("local"))
         {
@@ -156,11 +162,11 @@ public class DemoDBConfig extends HikariConfig
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
                                                                        @Qualifier("demodb") DataSource dataSource) {
-      HashMap<String, Object> properties = new HashMap<>();
-
-        properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-        return builder.dataSource(dataSource).properties(properties)
-                .packages("de.jgsoftware.landingpage.model.jpa.demodb").persistenceUnit("h2demodb").build();
+        //HashMap<String, Object> properties = new HashMap<>();
+        //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        return builder.dataSource(dataSource)
+        //.properties(properties)
+                .packages("de.jgsoftware.landingpage.model.jpa.demodb").persistenceUnit("derbydemodb").build();
 
     }
 
