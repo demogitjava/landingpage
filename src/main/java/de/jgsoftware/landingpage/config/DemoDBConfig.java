@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -36,8 +37,13 @@ public class DemoDBConfig extends HikariConfig
 {
     private String startdb;
 
+    DriverManagerDataSource dataSource;
+
     @Autowired
-    public DemoDBConfig(@Value("${startdb}") String startdb, @Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
+    public DemoDBConfig(
+    @Value("${startdb}") String startdb,
+    @Value("${derbystartmode}") String startmode,
+    @Value("${derbyipremote}") String derbyipremote)
     {
 
 
@@ -96,10 +102,14 @@ public class DemoDBConfig extends HikariConfig
 
     }
 
-    private void startderbydb(@Value("${derbystartmode}") String startmode, @Value("${derbyipremote}") String derbyipremote)
+    private void startderbydb(
+    @Value("${derbystartmode}") String startmode,
+    @Value("${derbyipremote}") String derbyipremote)
     {
         try {
             Server h2Server = Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
+            org.h2.tools.Server webh2Server = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082").start();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -117,6 +127,9 @@ public class DemoDBConfig extends HikariConfig
             } catch (IOException e) {
                 System.out.print("Error start derby " + e + "\n");
             }
+        }
+        else if(startmode.equals("remote")) {
+
         }
         else
         {
@@ -153,7 +166,35 @@ public class DemoDBConfig extends HikariConfig
     @Bean(name = "dataSource")
     @Qualifier("demodb")
     @ConfigurationProperties(prefix = "spring.demodb.datasource")
-    public DataSource dataSource() {
+    public DataSource dataSource(@Value("${startdb}") String startdb)
+    {
+        dataSource = new DriverManagerDataSource();
+
+        switch(startdb) {
+
+            case "h2":
+            {
+                dataSource.setDriverClassName("org.h2.Driver");
+                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/demodb;AUTO_SERVER=true");
+                dataSource.setUsername("admin");
+                dataSource.setPassword("jj78mvpr52k1");
+            }
+                break;
+
+            case "derby":
+            {
+                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
+                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/~/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setUsername("root");
+                dataSource.setPassword("jj78mvpr52k1");
+            }
+                    break;
+            default:
+                    break;
+        }
+
+
+
         return DataSourceBuilder.create().build();
     }
 
@@ -161,19 +202,38 @@ public class DemoDBConfig extends HikariConfig
     @Primary
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                       @Qualifier("demodb") DataSource dataSource) {
+                                                                       @Qualifier("demodb") DataSource dataSource,
+                                                                       @Value("${startdb}") String startdb) {
         //HashMap<String, Object> properties = new HashMap<>();
         //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        String stpersistence = new String("h2demodb");
+
+         if(startdb.equals("h2")) {
+           stpersistence = "h2demodb";
+         }
+         else if(startdb.equals("derby")) {
+           stpersistence = "derbydemodb";
+         }
+         else if(startdb.equals("mysql")) {
+           stpersistence = "mysqldemodb";
+         }
+         else {
+           System.out.print("unknown database startype " + startdb + "\n");
+           stpersistence = "h2demodb";
+         }
         return builder.dataSource(dataSource)
         //.properties(properties)
-                .packages("de.jgsoftware.landingpage.model.jpa.demodb").persistenceUnit("derbydemodb").build();
+                .packages("de.jgsoftware.landingpage.model.jpa.demodb")
+                .persistenceUnit(stpersistence)
+                .build();
 
     }
 
     @Primary
     @Bean(name = "transactionManager")
     public PlatformTransactionManager transactionManager(
-            @Qualifier("entityManagerFactory") EntityManagerFactory entityManagerFactory) {
+            @Qualifier("entityManagerFactory") EntityManagerFactory entityManagerFactory)
+    {
         return new JpaTransactionManager(entityManagerFactory);
     }
 

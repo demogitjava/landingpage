@@ -93,8 +93,8 @@
   <!--
       derby database
   -->
-  <persistence-unit name="derbydemodb">
-  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<persistence-unit name="derbydemodb">
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 
   <class>de.jgsoftware.landingpage.model.jpa.demodb.Desktoplayout</class>
@@ -118,7 +118,6 @@
     <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
   </properties>
 </persistence-unit>
-
 <persistence-unit name="derbymawi">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>de.jgsoftware.landingpage.model.jpa.mawi.Artikelstamm</class>
@@ -137,8 +136,7 @@
       <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
     </properties>
   </persistence-unit>
-
-  <persistence-unit name="derbyshopdb">
+<persistence-unit name="derbyshopdb">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 
@@ -175,5 +173,8 @@
     </properties>
   </persistence-unit>
 
+  <!--
+     mysql database
+  -->
 
 </persistence>
