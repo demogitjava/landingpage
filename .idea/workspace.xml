@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/ConstructorResolver.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.7.RELEASE/spring-core-5.1.7.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,12 +78,13 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19411415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19384304" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="SQL Generator" weight="0.31875658" />
+      <window_info anchor="bottom" id="Duplicates" weight="0.3298573" />
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="Build" weight="0.66382253" />
       <window_info anchor="bottom" id="Dependencies" />
@@ -95,7 +96,7 @@
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.50370765" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.5155763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42108053" />
-      <window_info anchor="bottom" id="Services" order="4" visible="true" weight="0.4896158" />
+      <window_info anchor="bottom" id="Services" order="4" visible="true" weight="0.21350163" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
@@ -263,7 +264,7 @@
       <workItem from="1685348438422" duration="3365000" />
       <workItem from="1685430071549" duration="767000" />
       <workItem from="1685430920435" duration="2572000" />
-      <workItem from="1685434273533" duration="2181000" />
+      <workItem from="1685434273533" duration="3047000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -321,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685269200761</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="edit DemoDBConfig">
+      <option name="closed" value="true" />
+      <created>1685436637908</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685436637908</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,9 +343,29 @@
     <MESSAGE value="edit docker-compose_derbydb.yml" />
     <MESSAGE value="add application.properties&#10;&#10;for derby h2 and mysql" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="edit DemoDBConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>270</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="dataSource" language="JAVA" />

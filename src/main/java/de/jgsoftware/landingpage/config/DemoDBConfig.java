@@ -166,7 +166,8 @@ public class DemoDBConfig extends HikariConfig
     @Bean(name = "dataSource")
     @Qualifier("demodb")
     @ConfigurationProperties(prefix = "spring.demodb.datasource")
-    public DataSource dataSource(@Value("${startdb}") String startdb)
+    public DataSource dataSource(
+    @Value("${startdb}") String startdb)
     {
         dataSource = new DriverManagerDataSource();
 
@@ -241,8 +242,36 @@ public class DemoDBConfig extends HikariConfig
     @Bean(name = "defaultJdbcTemplate")
     public JdbcTemplate jdbcTemplate(@Qualifier("dataSource") DataSource demodb)
     {
+
+
+
+        switch(startdb) {
+
+            case "h2":
+            {
+                dataSource.setDriverClassName("org.h2.Driver");
+                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/demodb;AUTO_SERVER=true");
+                dataSource.setUsername("admin");
+                dataSource.setPassword("jj78mvpr52k1");
+            }
+            break;
+
+            case "derby":
+            {
+                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
+                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/~/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setUsername("root");
+                dataSource.setPassword("jj78mvpr52k1");
+            }
+            break;
+            default:
+                break;
+        }
+
         JdbcTemplate jtm = new JdbcTemplate();
-        jtm.setDataSource(demodb);
+
+
+        jtm.setDataSource(dataSource);
         return jtm;
     }
 
