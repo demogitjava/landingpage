@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,16 +90,16 @@
       <window_info anchor="bottom" id="Run" weight="0.49215484" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Problems View" order="1" weight="0.50370765" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5155763" />
+      <window_info anchor="bottom" id="Problems View" order="1" weight="0.4967069" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.5318332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42108053" />
-      <window_info anchor="bottom" id="Services" order="4" visible="true" weight="0.21350163" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.5318332" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" side_tool="true" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.29497623" />
-      <window_info anchor="right" id="Database" order="1" weight="0.3302616" />
+      <window_info anchor="right" id="Database" order="1" weight="0.32983762" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.33007696" />
     </layout>
@@ -264,7 +261,7 @@
       <workItem from="1685348438422" duration="3365000" />
       <workItem from="1685430071549" duration="767000" />
       <workItem from="1685430920435" duration="2572000" />
-      <workItem from="1685434273533" duration="3047000" />
+      <workItem from="1685434273533" duration="3956000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -330,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685436637908</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="edit DemoDBConfig">
+      <option name="closed" value="true" />
+      <created>1685437661946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685437661946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,11 +358,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
           <line>123</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>270</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
