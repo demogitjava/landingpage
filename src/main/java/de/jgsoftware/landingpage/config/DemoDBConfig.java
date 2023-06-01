@@ -106,6 +106,14 @@ public class DemoDBConfig extends HikariConfig
     @Value("${derbystartmode}") String startmode,
     @Value("${derbyipremote}") String derbyipremote)
     {
+        /*
+
+              start h2 console
+              port 8082
+              if
+              spring.h2.console.enabled=true
+
+        */
         try {
             Server h2Server = Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
             org.h2.tools.Server webh2Server = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082").start();
@@ -129,11 +137,7 @@ public class DemoDBConfig extends HikariConfig
             }
         }
         else if(startmode.equals("remote")) {
-
-        }
-        else
-        {
-
+            System.out.print("startmode derbydb is remote" + "\n");
         }
 
 

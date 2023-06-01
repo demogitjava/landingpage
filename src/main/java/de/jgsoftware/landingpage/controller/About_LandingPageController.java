@@ -17,10 +17,13 @@ public class About_LandingPageController implements iAboutController
 
 
     java.util.Locale locale;
+
     @Autowired
     IServiceIndex iServiceIndex;
+
     @Autowired
     HttpServletRequest request;
+
     ModelAndView mv;
 
     Principal principal;
