@@ -64,7 +64,7 @@ public class MaWiDBConfig extends HikariConfig
             case "h2":
             {
                 dataSource.setDriverClassName("org.h2.Driver");
-                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/demodb;AUTO_SERVER=true");
+                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/mawi;AUTO_SERVER=true");
                 dataSource.setUsername("admin");
                 dataSource.setPassword("jj78mvpr52k1");
             }
@@ -73,7 +73,7 @@ public class MaWiDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/~/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setUrl("jdbc:derby://0.0.0.0:1527//root/db-derby-10.15.2.0-bin/bin/mawi;territory=de_DE;collation=TERRITORY_BASED");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }

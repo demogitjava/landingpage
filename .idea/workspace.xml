@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/About_LandingPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/controller/About_LandingPageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,37 +42,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "graalvm-11",
-    "last_opened_file_path": "/root/yourcompanydata.csv",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/yourcompanydata.csv&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "derby"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;derby&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Space Code Reviews" />
@@ -85,7 +82,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29400462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2593795" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -101,15 +98,15 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.4967069" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.35739437" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.5582108" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42108053" />
-      <window_info active="true" anchor="bottom" id="Services" order="4" visible="true" weight="0.35739437" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.5582108" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" weight="0.33030063" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.29497623" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.43005383" />
+      <window_info anchor="right" id="Database" order="1" weight="0.2520849" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32993674" />
     </layout>
@@ -274,6 +271,9 @@
       <workItem from="1685434273533" duration="4937000" />
       <workItem from="1685515254530" duration="5783000" />
       <workItem from="1685602649688" duration="6581000" />
+      <workItem from="1685618000716" duration="133000" />
+      <workItem from="1685618187947" duration="38000" />
+      <workItem from="1685618308117" duration="1415000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />

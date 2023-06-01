@@ -129,7 +129,7 @@ public class DemoDBConfig extends HikariConfig
             try {
 
                 Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin");
-                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer");
+                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer -p 1527");
 
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {
@@ -263,7 +263,7 @@ public class DemoDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/~/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/root/db-derby-10.15.2.0-bin/bin/demodb;territory=de_DE;collation=TERRITORY_BASED");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
