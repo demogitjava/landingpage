@@ -25,8 +25,12 @@ import javax.sql.DataSource;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.InetAddress;
 import java.sql.SQLException;
 import java.util.HashMap;
+
+import org.apache.derby.drda.NetworkServerControl;
+
 
 @Configuration
 @EnableTransactionManagement
@@ -128,8 +132,8 @@ public class DemoDBConfig extends HikariConfig
 
             try {
 
-                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin");
-                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer -p 1527");
+                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/bin/");
+                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer");
 
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {

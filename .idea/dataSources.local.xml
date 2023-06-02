@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-232.6095.10">
     <data-source name="demodb@127.0.0.1" uuid="50df12a2-a7c5-4bc6-a0a4-48565cbafcb6">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Network Client JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
+      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Network Client JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
