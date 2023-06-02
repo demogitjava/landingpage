@@ -91,7 +91,7 @@ public class MaWiDBConfig extends HikariConfig
     public LocalContainerEntityManagerFactoryBean mawiEntityManagerFactory(EntityManagerFactoryBuilder builder,
                                                                            @Qualifier("mawidb") DataSource dataSource1,
                                                                            @Value("${startdb}") String startdb) {
-        //HashMap<String, Object> properties = new HashMap<>();
+        HashMap<String, Object> properties = new HashMap<>();
 
         //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 
@@ -99,9 +99,11 @@ public class MaWiDBConfig extends HikariConfig
 
         if(startdb.equals("h2")) {
             stpersistence = "h2demodb";
+            properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         }
         else if(startdb.equals("derby")) {
             stpersistence = "derbydemodb";
+            properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
         }
         else if(startdb.equals("mysql")) {
             stpersistence = "mysqldemodb";
@@ -112,7 +114,7 @@ public class MaWiDBConfig extends HikariConfig
         }
 
         return builder.dataSource(dataSource1)
-        //.properties(properties)
+                .properties(properties)
                 .packages("de.jgsoftware.landingpage.model.jpa.mawi").persistenceUnit(stpersistence).build();
     }
 

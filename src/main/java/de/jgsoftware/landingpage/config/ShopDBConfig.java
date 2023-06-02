@@ -98,7 +98,7 @@ public class ShopDBConfig extends HikariConfig
     public LocalContainerEntityManagerFactoryBean shopEntityManagerFactory(EntityManagerFactoryBuilder builder,
                                                                            @Qualifier("shopdb") DataSource dataSource2,
                                                                            @Value("${startdb}") String startdb) {
-        //HashMap<String, Object> properties = new HashMap<>();
+        HashMap<String, Object> properties = new HashMap<>();
         //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 
 
@@ -106,9 +106,11 @@ public class ShopDBConfig extends HikariConfig
 
         if(startdb.equals("h2")) {
             stpersistence = "h2demodb";
+            properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         }
         else if(startdb.equals("derby")) {
             stpersistence = "derbydemodb";
+            properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
         }
         else if(startdb.equals("mysql")) {
             stpersistence = "mysqldemodb";
@@ -119,10 +121,10 @@ public class ShopDBConfig extends HikariConfig
         }
 
         return builder.dataSource(dataSource2)
-        //.properties()
-                .packages("de.jgsoftware.landingpage.model")
-                .persistenceUnit(stpersistence)
-                .build();
+        .properties(properties)
+        .packages("de.jgsoftware.landingpage.model")
+        .persistenceUnit(stpersistence)
+        .build();
     }
 
     @Bean(name = "shopTransactionManager")

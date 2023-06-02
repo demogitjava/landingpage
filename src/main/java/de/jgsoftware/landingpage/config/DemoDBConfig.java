@@ -209,15 +209,18 @@ public class DemoDBConfig extends HikariConfig
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
                                                                        @Qualifier("demodb") DataSource dataSource,
                                                                        @Value("${startdb}") String startdb) {
-        //HashMap<String, Object> properties = new HashMap<>();
-        //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+        HashMap<String, Object> properties = new HashMap<>();
+
         String stpersistence = new String("h2demodb");
 
          if(startdb.equals("h2")) {
            stpersistence = "h2demodb";
+           properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
          }
          else if(startdb.equals("derby")) {
            stpersistence = "derbydemodb";
+           // org.hibernate.dialect.DerbyDialect
+           properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
          }
          else if(startdb.equals("mysql")) {
            stpersistence = "mysqldemodb";
@@ -227,10 +230,10 @@ public class DemoDBConfig extends HikariConfig
            stpersistence = "h2demodb";
          }
         return builder.dataSource(dataSource)
-        //.properties(properties)
-                .packages("de.jgsoftware.landingpage.model.jpa.demodb")
-                .persistenceUnit(stpersistence)
-                .build();
+        .properties(properties)
+        .packages("de.jgsoftware.landingpage.model.jpa.demodb")
+        .persistenceUnit(stpersistence)
+        .build();
 
     }
 

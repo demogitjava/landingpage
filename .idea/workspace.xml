@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +47,6 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;graalvm-11&quot;,
     &quot;last_opened_file_path&quot;: &quot;/root/yourcompanydata.csv&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -82,7 +76,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2593795" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23523685" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -98,9 +92,9 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.4967069" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.5582108" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.49772984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42108053" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.5582108" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.49772984" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
@@ -108,7 +102,7 @@
       <window_info anchor="right" id="Notifications" order="0" weight="0.29497623" />
       <window_info anchor="right" id="Database" order="1" weight="0.2520849" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32993674" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32998055" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -273,7 +267,7 @@
       <workItem from="1685602649688" duration="6581000" />
       <workItem from="1685618000716" duration="133000" />
       <workItem from="1685618187947" duration="38000" />
-      <workItem from="1685618308117" duration="1415000" />
+      <workItem from="1685618308117" duration="4160000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -355,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685514318625</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="edit path for jdbc connect for derby db">
+      <option name="closed" value="true" />
+      <created>1685619880496</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685619880496</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +372,8 @@
     <MESSAGE value="." />
     <MESSAGE value="edit DemoDBConfig" />
     <MESSAGE value="edit DemoDBConfig&#10;&#10;edit derbydb version" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig&#10;&#10;edit derbydb version" />
+    <MESSAGE value="edit path for jdbc connect for derby db" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit path for jdbc connect for derby db" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
