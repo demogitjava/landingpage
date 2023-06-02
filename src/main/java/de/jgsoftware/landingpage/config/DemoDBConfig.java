@@ -133,7 +133,7 @@ public class DemoDBConfig extends HikariConfig
             try {
 
                 Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/bin/");
-                Runtime.getRuntime().exec("sh /root/db-derby-10.15.2.0-bin/bin/startNetworkServer");
+                Runtime.getRuntime().exec("java -jar /root/db-derby-10.15.2.0-bin/bin/derbynet.jar start -h 0.0.0.0 -p 1527");
 
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {

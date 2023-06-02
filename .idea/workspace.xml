@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +81,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32795697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25280505" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -97,21 +93,21 @@
       <window_info anchor="bottom" id="Dependencies" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.45361447" />
+      <window_info anchor="bottom" id="Run" weight="0.41461986" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.4967069" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.5361582" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42108053" />
-      <window_info anchor="bottom" id="Services" order="4" visible="true" weight="0.30338985" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.49383408" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42656952" />
+      <window_info anchor="bottom" id="Services" order="4" visible="true" weight="0.49383408" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" sideWeight="0.49920636" side_tool="true" weight="0.2608225" />
       <window_info anchor="right" id="Notifications" order="0" sideWeight="0.5007937" weight="0.2608225" />
-      <window_info anchor="right" id="Database" order="1" weight="0.2841191" />
+      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.20792428" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.2608225" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2228669" />
     </layout>
   </component>
   <component name="RecentsManager">
@@ -277,7 +273,7 @@
       <workItem from="1685618000716" duration="133000" />
       <workItem from="1685618187947" duration="38000" />
       <workItem from="1685618308117" duration="4160000" />
-      <workItem from="1685699616992" duration="1914000" />
+      <workItem from="1685699616992" duration="3887000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -375,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1685699766638</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit derby db path for deb config">
+      <option name="closed" value="true" />
+      <created>1685701740205</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685701740205</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +396,8 @@
     <MESSAGE value="edit DemoDBConfig&#10;&#10;edit derbydb version" />
     <MESSAGE value="edit path for jdbc connect for derby db" />
     <MESSAGE value="add properties to db config" />
-    <option name="LAST_COMMIT_MESSAGE" value="add properties to db config" />
+    <MESSAGE value="edit derby db path for deb config" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit derby db path for deb config" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
