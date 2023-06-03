@@ -12,7 +12,7 @@ services:
 
     build:
       context: ./
-      dockerfile: Dockerfilesshserver
+      dockerfile: Dockerfilesshserverfedora
 
 
     environment:
