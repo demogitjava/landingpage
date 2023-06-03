@@ -1,0 +1,6 @@
+FROM fedora/ssh
+
+RUN echo "root:123456789" | chpasswd
+
+EXPOSE 22
+
