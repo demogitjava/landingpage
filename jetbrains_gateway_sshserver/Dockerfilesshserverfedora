@@ -1,5 +1,8 @@
 FROM fedora/ssh
 
+# yum install tar
+# yum groupinstall "Cinnamon Desktop"
+
 RUN echo "root:123456789" | chpasswd
 
 EXPOSE 22
