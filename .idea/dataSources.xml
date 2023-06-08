@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="demodb@127.0.0.1" uuid="50df12a2-a7c5-4bc6-a0a4-48565cbafcb6">
-      <driver-ref>derby.remote</driver-ref>
+    <data-source source="LOCAL" name="demodb" uuid="96309698-3408-428c-b020-70eed04fbbf8">
+      <driver-ref>derby.embedded</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby://127.0.0.1:1527/root/db-derby-10.15.2.0-bin/bin/demodb;territory=de_DE;collation=TERRITORY_BASED</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="mawi@127.0.0.1" uuid="6a8c857d-7e84-44e8-8b13-bfecb06653b5">
-      <driver-ref>derby.remote</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby://127.0.0.1:1527/~/mawi;create=true</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="shopdb@127.0.0.1" uuid="6b08d933-c8e4-4772-bc63-617cf7430975">
-      <driver-ref>derby.remote</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby://127.0.0.1:1527/~/shopdb;create=true</jdbc-url>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:$USER_HOME$/db-derby-10.15.2.0-bin/bin/demodb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
