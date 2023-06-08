@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,9 +80,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.48056996" side_tool="true" visible="true" weight="0.21050698" />
+      <window_info active="true" id="Persistence" sideWeight="0.4811828" side_tool="true" visible="true" weight="0.21050698" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51943004" visible="true" weight="0.21050698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5188172" visible="true" weight="0.21050698" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -99,18 +91,18 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Dependency Checker" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" visible="true" weight="0.32996812" />
       <window_info anchor="bottom" id="Problems View" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.28533477" />
       <window_info anchor="bottom" id="Build" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.5127524" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.45111585" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.24495217" />
       <window_info anchor="right" id="Maven" weight="0.23916239" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" weight="0.33035713" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.23892857" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.25091845" />
+      <window_info anchor="right" id="Database" order="1" weight="0.25091845" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
     </layout>
   </component>
@@ -269,7 +261,7 @@
       <workItem from="1686213309028" duration="212000" />
       <workItem from="1686213566337" duration="2276000" />
       <workItem from="1686217218929" duration="2638000" />
-      <workItem from="1686224138591" duration="360000" />
+      <workItem from="1686224138591" duration="828000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -350,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685936042759</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server">
+      <created>1686224614454</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686224614454</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +366,8 @@
     <MESSAGE value="edit compose file &#10;to ferdoara/ssh" />
     <MESSAGE value="edit docker compose for &#10;setup a development container" />
     <MESSAGE value="edit Dockerfilesshserverfedora" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfilesshserverfedora" />
+    <MESSAGE value="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

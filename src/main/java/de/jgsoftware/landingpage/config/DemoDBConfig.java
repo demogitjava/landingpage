@@ -134,7 +134,7 @@ public class DemoDBConfig extends HikariConfig
 
                 Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/bin/");
                 Runtime.getRuntime().exec("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
-
+                System.out.print("started derby db local on port 1527" + "\n");
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {
                 System.out.print("Error start derby " + e + "\n");
