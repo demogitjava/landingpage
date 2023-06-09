@@ -22,14 +22,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.InetAddress;
+import java.io.InputStreamReader;
 import java.sql.SQLException;
 import java.util.HashMap;
-
-import org.apache.derby.drda.NetworkServerControl;
 
 
 @Configuration
@@ -114,7 +112,8 @@ public class DemoDBConfig extends HikariConfig
 
               start h2 console
               port 8082
-              if
+
+
               spring.h2.console.enabled=true
 
         */
@@ -133,8 +132,43 @@ public class DemoDBConfig extends HikariConfig
             try {
 
                 Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/bin/");
-                Runtime.getRuntime().exec("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
-                System.out.print("started derby db local on port 1527" + "\n");
+
+                 /*
+                      start derby network server
+                 */
+                Thread thread = new Thread()
+                {
+                    public void run()
+                    {
+                       try {
+                           Runtime rt = Runtime.getRuntime();
+                           String commands = new String("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
+                           Process proc = rt.exec(commands);
+
+                           BufferedReader bufin = new BufferedReader(new
+                                   InputStreamReader(proc.getInputStream()));
+
+                           BufferedReader bufer = new BufferedReader(new
+                                   InputStreamReader(proc.getErrorStream()));
+                           String s = null;
+                           while ((s = bufin.readLine()) != null) {
+                               System.out.println(s);
+                           }
+                           bufin.close();
+                           bufer.close();
+                       } catch(Exception e)
+                       {
+                           System.out.print("Error start derby network server " + e);
+                       }
+                    }
+                };
+
+                thread.setName("DerbyNetworkServerlocal");
+                thread.start();
+
+
+               //Runtime.getRuntime().exec("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
+
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {
                 System.out.print("Error start derby " + e + "\n");
