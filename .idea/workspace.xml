@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit application.properties&#10;&#10;edit properties to start server for derbydb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +84,9 @@
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.37" side_tool="true" visible="true" weight="0.2582968" />
+      <window_info active="true" id="Persistence" sideWeight="0.37077296" side_tool="true" visible="true" weight="0.2582968" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.63" visible="true" weight="0.2582968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62922704" visible="true" weight="0.2582968" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -100,7 +99,7 @@
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.38206142" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.28533477" />
       <window_info anchor="bottom" id="Build" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.6364149" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.451522" />
       <window_info anchor="bottom" id="Services" order="5" weight="0.24495217" />
       <window_info anchor="right" id="Maven" weight="0.23916239" />
       <window_info anchor="right" id="Endpoints" />
@@ -267,7 +266,7 @@
       <workItem from="1686213566337" duration="2276000" />
       <workItem from="1686217218929" duration="2638000" />
       <workItem from="1686224138591" duration="1152000" />
-      <workItem from="1686293357791" duration="1603000" />
+      <workItem from="1686293357791" duration="1953000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -362,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686225203622</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit DemoDBConfig.java &#10;&#10;stated Derby DB local with port 1527">
+      <created>1686296783770</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686296783770</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,15 +386,22 @@
     <MESSAGE value="edit docker compose for &#10;setup a development container" />
     <MESSAGE value="edit Dockerfilesshserverfedora" />
     <MESSAGE value="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server" />
+    <MESSAGE value="edit DemoDBConfig.java &#10;&#10;stated Derby DB local with port 1527" />
+    <MESSAGE value="edit application.properties&#10;&#10;edit properties to start server for derbydb" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit application.properties&#10;&#10;edit properties to start server for derbydb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>233</line>
+          <line>228</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>138</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
