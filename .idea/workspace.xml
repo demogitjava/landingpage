@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit application.properties&#10;&#10;edit properties to start server for derbydb">
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,65 +53,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.6319149&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsDialog.application.dockerConsole&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/root/demodatabase/backupdll/mawi/PUBLIC/ARTIKELSTAMM.sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.6319149",
+    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
+    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;derby&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby"
     ]
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Space Code Reviews" />
       <window_info id="Bookmarks" side_tool="true" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.37077296" side_tool="true" visible="true" weight="0.2582968" />
+      <window_info active="true" id="Persistence" sideWeight="0.1570632" side_tool="true" visible="true" weight="0.29552925" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62922704" visible="true" weight="0.2582968" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8429368" visible="true" weight="0.29552925" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.45377678" />
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Run" weight="0.4966178" />
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.28639746" />
       <window_info anchor="bottom" id="Problems View" order="1" weight="0.38206142" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.28533477" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.4966178" />
       <window_info anchor="bottom" id="Build" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.451522" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.24495217" />
-      <window_info anchor="right" id="Maven" weight="0.23916239" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.3512221" />
+      <window_info anchor="bottom" id="Services" order="5" weight="0.4851222" />
+      <window_info anchor="right" id="Maven" weight="0.24326862" />
       <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="documentation.v2" side_tool="true" />
       <window_info anchor="right" id="Beans" />
       <window_info anchor="right" id="Meet New UI" show_stripe_button="false" side_tool="true" weight="0.33035713" />
       <window_info anchor="right" id="Notifications" order="0" weight="0.23892857" />
-      <window_info anchor="right" id="Database" order="1" weight="0.2244673" />
+      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.273833" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
     </layout>
   </component>
@@ -114,6 +122,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+    </option>
   </component>
   <component name="RunManager" selected="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment">
     <configuration name="Landingapge" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -266,7 +280,7 @@
       <workItem from="1686213566337" duration="2276000" />
       <workItem from="1686217218929" duration="2638000" />
       <workItem from="1686224138591" duration="1152000" />
-      <workItem from="1686293357791" duration="1953000" />
+      <workItem from="1686293357791" duration="7060000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -368,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686296783770</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="edit application.properties&#10;&#10;edit properties to start server for derbydb">
+      <created>1686297236506</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686297236506</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,22 +410,6 @@
     <MESSAGE value="edit DemoDBConfig.java &#10;&#10;stated Derby DB local with port 1527" />
     <MESSAGE value="edit application.properties&#10;&#10;edit properties to start server for derbydb" />
     <option name="LAST_COMMIT_MESSAGE" value="edit application.properties&#10;&#10;edit properties to start server for derbydb" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>228</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
