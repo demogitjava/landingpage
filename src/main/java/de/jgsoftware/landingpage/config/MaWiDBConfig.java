@@ -73,7 +73,7 @@ public class MaWiDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/mawi");
+                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/mawi");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
@@ -98,19 +98,19 @@ public class MaWiDBConfig extends HikariConfig
         String stpersistence = new String("h2demodb");
 
         if(startdb.equals("h2")) {
-            stpersistence = "h2demodb";
+            stpersistence = "h2mawi";
             properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
         }
         else if(startdb.equals("derby")) {
-            stpersistence = "derbydemodb";
+            stpersistence = "derbymawi";
             properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
         }
         else if(startdb.equals("mysql")) {
-            stpersistence = "mysqldemodb";
+            stpersistence = "mysqlmawi";
         }
         else {
-            System.out.print("unknown database startype " + startdb + "\n");
-            stpersistence = "h2demodb";
+            System.out.print("unknown database " + startdb + "\n");
+            stpersistence = "h2mawi";
         }
 
         return builder.dataSource(dataSource1)
@@ -142,7 +142,7 @@ public class MaWiDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/mawi");
+                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/mawi");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }

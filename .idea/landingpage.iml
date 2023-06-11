@@ -4,7 +4,17 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="derbydemodb" value="a74534c6-1160-4559-8b49-5ed44bd5ee28" />
+          <factory-entry name="derbymawi" value="fef977da-e5ac-4e04-81e0-79767d5a1b00" />
+          <factory-entry name="derbyshopdb" value="7d637d24-1579-4821-a9d8-5690c31831b3" />
+          <factory-entry name="entityManagerFactory" />
+          <factory-entry name="h2demodb" />
+          <factory-entry name="h2mawi" />
+          <factory-entry name="h2shopdb " />
+          <factory-entry name="mawiEntityManagerFactory" />
+          <factory-entry name="shopEntityManagerFactory" />
+        </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/META-INF/persistence.xml" />
       </configuration>
