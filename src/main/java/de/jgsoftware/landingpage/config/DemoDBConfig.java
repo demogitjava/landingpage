@@ -131,7 +131,7 @@ public class DemoDBConfig extends HikariConfig
 
             try {
 
-                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/bin/");
+                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/");
 
                  /*
                       start derby network server
@@ -226,8 +226,8 @@ public class DemoDBConfig extends HikariConfig
 
             case "derby":
             {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/~/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
+                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
@@ -256,9 +256,22 @@ public class DemoDBConfig extends HikariConfig
            properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
          }
          else if(startdb.equals("derby")) {
+
+               /*
+
+                 <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenFiveDialect" />
+    <property name="show_sql" value="true" />
+    <property name="hibernate.connection.url" value="jdbc:derby://0.0.0.0:1527/~/demodb;"/>
+    <property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.ClientDriver"/>
+    <property name="hibernate.connection.username" value="root"/>
+    <property name="hibernate.connection.password" value="jj78mvpr52k1"/>
+                */
            stpersistence = "derbydemodb";
            // org.hibernate.dialect.DerbyDialect
-           properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
+           properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyTenFiveDialect");
+           properties.put("hibernate.connection.url", "jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
+           properties.put("hibernate.connection.username", "root");
+           properties.put("hibernate.connection.password", "jj78mvpr52k1");
          }
          else if(startdb.equals("mysql")) {
            stpersistence = "mysqldemodb";
@@ -303,8 +316,8 @@ public class DemoDBConfig extends HikariConfig
 
             case "derby":
             {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://0.0.0.0:1527/root/db-derby-10.15.2.0-bin/bin/demodb;territory=de_DE;collation=TERRITORY_BASED");
+                dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
+                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
