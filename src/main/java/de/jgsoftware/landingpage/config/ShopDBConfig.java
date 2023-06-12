@@ -79,8 +79,8 @@ public class ShopDBConfig extends HikariConfig
 
             case "derby":
             {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/derbyshopdb");
+               dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
+                dataSource.setUrl("jdbc:derby://localhost:1527/derbyshopdb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
@@ -151,8 +151,8 @@ public class ShopDBConfig extends HikariConfig
 
             case "derby":
             {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/derbyshopdb");
+                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
+                dataSource.setUrl("jdbc:derby://localhost:1527/derbyshopdb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
