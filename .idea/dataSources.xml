@@ -30,7 +30,7 @@
 
 /root/landingpage/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:mawi;create=true;</jdbc-url>
+      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../db-derby-10.15.2.0-bin/bin/mawi</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="derbyshopdb/Hibernate" uuid="7d637d24-1579-4821-a9d8-5690c31831b3">
@@ -41,7 +41,7 @@
 
 /root/landingpage/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:shopdb;create=true;</jdbc-url>
+      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../db-derby-10.15.2.0-bin/bin/shopdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="derbydemodb/Hibernate" uuid="a74534c6-1160-4559-8b49-5ed44bd5ee28">
@@ -52,7 +52,7 @@
 
 /root/landingpage/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:demodb</jdbc-url>
+      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../db-derby-10.15.2.0-bin/bin/demodb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

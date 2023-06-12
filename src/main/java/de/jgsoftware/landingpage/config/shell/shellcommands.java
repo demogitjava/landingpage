@@ -151,7 +151,8 @@ public class shellcommands {
     }
 
     @ShellMethod("install derby databases from github with type command --->  derbydemodatabase")
-    public String derbydemodatabase() {
+    public String derbydemodatabase()
+    {
         System.out.print("install databases" + "\n");
         File path = new File(System.getProperty("user.home"));
 
@@ -183,7 +184,7 @@ public class shellcommands {
 
             /*
                 unzip file to
-                / derbydb
+                /root
              */
             ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.15.2.0-bin.zip"));
             ZipEntry entry = zipIn.getNextEntry();
@@ -209,21 +210,6 @@ public class shellcommands {
         {
             System.out.print("Fehler " + e);
         }
-
-
-
-
-       /*
-                copy files to the directory of the user
-                like /root
-        */
-        //Files.copy("/demodatabase-master/demodb.mv.db", path + "/" + "demodb.mv.db");
-
-
-
-
-
-
 
         return "derby installed";
     }
@@ -292,6 +278,21 @@ public class shellcommands {
             bos.write(bytesIn, 0, read);
         }
         bos.close();
+    }
+
+
+    public void copyderbydb()
+    {
+        try
+        {
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/demodb /root/derbydemodb");
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/mawi /root/derbymawi");
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/shopdb /root/derbyshopdb");
+
+        } catch(Exception e)
+        {
+            System.out.print("Fehler " + e);
+        }
     }
 
 

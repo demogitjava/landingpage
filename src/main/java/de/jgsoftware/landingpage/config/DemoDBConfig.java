@@ -81,6 +81,7 @@ public class DemoDBConfig extends HikariConfig
                     System.out.print("install derbydb" + "\n");
                       de.jgsoftware.landingpage.config.shell.shellcommands shellcommands = new de.jgsoftware.landingpage.config.shell.shellcommands();
                       shellcommands.derbydemodatabase();
+                      shellcommands.copyderbydb();
                   }
 
                   startderbydb(startmode, derbyipremote);
