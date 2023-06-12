@@ -228,7 +228,7 @@ public class DemoDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
+                dataSource.setUrl("jdbc:derby:/root/derbydemodb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }
@@ -262,7 +262,7 @@ public class DemoDBConfig extends HikariConfig
            stpersistence = "derbydemodb";
            // org.hibernate.dialect.DerbyDialect
            properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyTenFiveDialect");
-           properties.put("hibernate.connection.url", "jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
+           properties.put("hibernate.connection.url", "jdbc:derby:/root/derbydemodb");
            properties.put("hibernate.connection.username", "root");
            properties.put("hibernate.connection.password", "jj78mvpr52k1");
          }
@@ -310,7 +310,7 @@ public class DemoDBConfig extends HikariConfig
             case "derby":
             {
                 dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-                dataSource.setUrl("jdbc:derby:/root/db-derby-10.15.2.0-bin/bin/demodb");
+                dataSource.setUrl("jdbc:derby:/root/derbydemodb");
                 dataSource.setUsername("root");
                 dataSource.setPassword("jj78mvpr52k1");
             }

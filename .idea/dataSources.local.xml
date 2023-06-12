@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-231.8770.65">
-    <data-source name="demodb" uuid="96309698-3408-428c-b020-70eed04fbbf8">
+    <data-source name="derbydemodb" uuid="96309698-3408-428c-b020-70eed04fbbf8">
       <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -13,8 +13,8 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="mawi" uuid="13ee0317-4d38-44a7-9994-938cc4e44575">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
+    <data-source name="derbymawi" uuid="13ee0317-4d38-44a7-9994-938cc4e44575">
+      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
@@ -26,8 +26,8 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="shopdb" uuid="0593ed71-d4e0-4c97-a0ff-adead1c2b169">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
+    <data-source name="derbyshopdb" uuid="0593ed71-d4e0-4c97-a0ff-adead1c2b169">
+      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />

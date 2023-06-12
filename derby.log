@@ -1,1 +1,13 @@
-Mon Jun 12 07:56:43 CEST 2023 : Apache Derby Network Server - 10.15.2.0 - (1873585) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Mon Jun 12 08:53:24 UTC 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0188-aecf-58c5-000007661bd8 
+on database directory /root/derbydemodb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@30946e09 
+Loaded from file:/root/.config/JetBrains/RemoteDev-IU/_root_landingpage/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=17.0.6+10-b829.9
+user.dir=/root/landingpage
+os.name=Linux
+os.arch=amd64
+os.version=4.18.0-448.el8.x86_64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
