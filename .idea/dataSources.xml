@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="derbydemodb" uuid="96309698-3408-428c-b020-70eed04fbbf8">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbydemodb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="derbymawi" uuid="13ee0317-4d38-44a7-9994-938cc4e44575">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbymawi</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="derbyshopdb" uuid="0593ed71-d4e0-4c97-a0ff-adead1c2b169">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbyshopdb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="derbymawi/Hibernate" uuid="fef977da-e5ac-4e04-81e0-79767d5a1b00">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbymawi</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="derbyshopdb/Hibernate" uuid="7d637d24-1579-4821-a9d8-5690c31831b3">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbyshopdb</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="derbydemodb/Hibernate" uuid="a74534c6-1160-4559-8b49-5ed44bd5ee28">
-      <driver-ref>derby.embedded</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-/root/landingpage/META-INF/persistence.xml</remarks>
-      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
-      <jdbc-url>jdbc:derby:$PROJECT_DIR$/../derbydemodb</jdbc-url>
+    <data-source source="LOCAL" name="derbydemodb@192.168.178.100" uuid="b08c566b-53c9-4381-b3a2-6af8ce1c2ce6">
+      <driver-ref>derby.remote</driver-ref>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://192.168.178.100:1527/derbydemodb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

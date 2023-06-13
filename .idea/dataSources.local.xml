@@ -1,79 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-231.8770.65">
-    <data-source name="derbydemodb" uuid="96309698-3408-428c-b020-70eed04fbbf8">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="derbymawi" uuid="13ee0317-4d38-44a7-9994-938cc4e44575">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+  <component name="dataSourceStorageLocal" created-in="IU-231.9011.34">
+    <data-source name="derbydemodb@192.168.178.100" uuid="b08c566b-53c9-4381-b3a2-6af8ce1c2ce6">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DERBY" exact-version="0" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="derbyshopdb" uuid="0593ed71-d4e0-4c97-a0ff-adead1c2b169">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="derbymawi/Hibernate" uuid="fef977da-e5ac-4e04-81e0-79767d5a1b00">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="derbyshopdb/Hibernate" uuid="7d637d24-1579-4821-a9d8-5690c31831b3">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="derbydemodb/Hibernate" uuid="a74534c6-1160-4559-8b49-5ed44bd5ee28">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <user-name>root</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="APP" />
-        </introspection-scope>
-      </schema-mapping>
+      <schema-mapping />
     </data-source>
   </component>
 </project>
