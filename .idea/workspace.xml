@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit DemoDBConfig&#10;&#10;copy the derby db &#10;demodb&#10;mawi and shopdb &#10;to path /root with &quot;derby&quot; + demodb / mawi / org shopdb&#10;&#10;if file db-derby-10.15.2.0-bin.zip&#10;not exist">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-    </list>
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,11 +25,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/BeanUtils.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" root0="SKIP_INSPECTION" />
-    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.java" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -43,7 +32,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -57,26 +45,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/root/demodatabase/db_landingpage/csv/demodb/yourcompanydata.csv",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6319149",
-    "settings.editor.selected.configurable": "reference.settingsDialog.application.dockerConsole",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -86,60 +65,12 @@
     ]
   }
 }]]></component>
-  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
-    <layout>
-      <window_info id="Space Code Reviews" />
-      <window_info id="Bookmarks" side_tool="true" />
-      <window_info id="Commit_Guest" show_stripe_button="false" />
-      <window_info id="Pull Requests" />
-      <window_info active="true" id="Persistence" sideWeight="0.3397329" side_tool="true" visible="true" weight="0.2318792" />
-      <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6602671" visible="true" weight="0.2318792" />
-      <window_info id="Commit" order="1" sideWeight="0.6127013" weight="0.35404283" />
-      <window_info id="Structure" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="SQL Generator" weight="0.45377678" />
-      <window_info anchor="bottom" id="Profiler" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Run" weight="0.4349046" />
-      <window_info anchor="bottom" id="Dependency Checker" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.48428732" />
-      <window_info anchor="bottom" id="Problems View" order="1" weight="0.38206142" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.49769318" />
-      <window_info anchor="bottom" id="Build" order="3" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.2254902" />
-      <window_info anchor="bottom" id="Services" order="5" weight="0.511534" />
-      <window_info anchor="right" id="Maven" weight="0.19048944" />
-      <window_info anchor="right" id="Endpoints" />
-      <window_info anchor="right" id="documentation.v2" side_tool="true" />
-      <window_info anchor="right" id="Beans" />
-      <window_info anchor="right" id="Meet New UI" side_tool="true" weight="0.32968277" />
-      <window_info anchor="right" id="Notifications" order="0" weight="0.33023703" />
-      <window_info active="true" anchor="right" id="Database" order="1" visible="true" weight="0.34798658" />
-      <window_info anchor="right" id="Gradle" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn clean" />
-      <command value="mvn compile" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment">
-    <configuration name="Landingapge" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="landingpage" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.derbydbdocker/docker-compose_derbydb.yml: Compose Deployment">
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -167,6 +98,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="derbydbdocker/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="derbydbdocker/docker-compose_derbydb.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -177,22 +116,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.derbydbdocker/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
-      <item itemvalue="Spring Boot.Landingapge" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.derbydbdocker/docker-compose_derbydb.yml: Compose Deployment" />
         <item itemvalue="Docker.jetbrains_gateway_sshserver/docker-compose_jetbrains_gateway.yml: Compose Deployment" />
         <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SshConsoleOptionsProvider">
-    <option name="myEncoding" value="ISO-8859-1" />
-    <option name="myConnectionType" value="NONE" />
-  </component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="edit derbydb dockerfile">
       <option name="closed" value="true" />
@@ -273,31 +209,17 @@
       <workItem from="1686148344966" duration="88000" />
       <workItem from="1686155604089" duration="53000" />
       <workItem from="1686155693790" duration="54000" />
-      <workItem from="1686160329801" duration="407000" />
-      <workItem from="1686171918897" duration="29000" />
-      <workItem from="1686172121413" duration="659000" />
-      <workItem from="1686172811389" duration="45000" />
-      <workItem from="1686172888736" duration="846000" />
-      <workItem from="1686173820278" duration="136000" />
-      <workItem from="1686174003570" duration="103000" />
-      <workItem from="1686174253981" duration="144000" />
-      <workItem from="1686174425476" duration="65000" />
-      <workItem from="1686174515193" duration="531000" />
-      <workItem from="1686213309028" duration="212000" />
-      <workItem from="1686213566337" duration="2276000" />
-      <workItem from="1686217218929" duration="2638000" />
-      <workItem from="1686224138591" duration="1152000" />
-      <workItem from="1686293357791" duration="7060000" />
-      <workItem from="1686474310682" duration="4038000" />
-      <workItem from="1686482590398" duration="723000" />
-      <workItem from="1686483348507" duration="375000" />
-      <workItem from="1686483804404" duration="937000" />
-      <workItem from="1686484872365" duration="340000" />
-      <workItem from="1686485739916" duration="883000" />
-      <workItem from="1686486701979" duration="592000" />
-      <workItem from="1686489167718" duration="591000" />
-      <workItem from="1686541074273" duration="3243000" />
-      <workItem from="1686553618290" duration="2004000" />
+      <workItem from="1686160329801" duration="669000" />
+      <workItem from="1686161363795" duration="716000" />
+      <workItem from="1686294113152" duration="154000" />
+      <workItem from="1686387950259" duration="120000" />
+      <workItem from="1686388189544" duration="301000" />
+      <workItem from="1686390311894" duration="330000" />
+      <workItem from="1686391300727" duration="52000" />
+      <workItem from="1686393940021" duration="416000" />
+      <workItem from="1686473419950" duration="169000" />
+      <workItem from="1686648562736" duration="727000" />
+      <workItem from="1686649792084" duration="190000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -378,88 +300,27 @@
       <option name="project" value="LOCAL" />
       <updated>1685936042759</updated>
     </task>
-    <task id="LOCAL-00012" summary="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server">
-      <created>1686224614454</created>
+    <task id="LOCAL-00012" summary="edit Dockerfilesshserverfedora&#10;&#10;edit to fedora/ssh">
+      <created>1686160870588</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1686224614454</updated>
+      <updated>1686160870588</updated>
     </task>
-    <task id="LOCAL-00013" summary="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server">
-      <created>1686225203622</created>
+    <task id="LOCAL-00013" summary="edit docker file for derby db">
+      <created>1686649915753</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1686225203622</updated>
+      <updated>1686649915753</updated>
     </task>
-    <task id="LOCAL-00014" summary="edit DemoDBConfig.java &#10;&#10;stated Derby DB local with port 1527">
-      <created>1686296783770</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1686296783770</updated>
-    </task>
-    <task id="LOCAL-00015" summary="edit application.properties&#10;&#10;edit properties to start server for derbydb">
-      <created>1686297236506</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1686297236506</updated>
-    </task>
-    <task id="LOCAL-00016" summary="edit connction config &#10;for demodb shopdb and mawi&#10;for derby db">
-      <created>1686481579819</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1686481579819</updated>
-    </task>
-    <task id="LOCAL-00017" summary=".">
-      <created>1686483261754</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1686483261754</updated>
-    </task>
-    <task id="LOCAL-00018" summary=".">
-      <created>1686483873484</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1686483873484</updated>
-    </task>
-    <task id="LOCAL-00019" summary=".">
-      <created>1686484649285</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1686484649285</updated>
-    </task>
-    <task id="LOCAL-00020" summary="edit DemoDBConfig&#10;&#10;copy the derby db &#10;demodb&#10;mawi and shopdb &#10;to path /root with &quot;derby&quot; + demodb / mawi / org shopdb&#10;&#10;if file db-derby-10.15.2.0-bin.zip&#10;not exist">
-      <created>1686549536579</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1686549536579</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="edit derbydb dockerfile" />
     <MESSAGE value="edit docker-compose_jetbrains_gateway.yml" />
     <MESSAGE value="edit Dockerfilesshserver" />
@@ -470,13 +331,9 @@
     <MESSAGE value="edit compose file &#10;to ferdoara/ssh" />
     <MESSAGE value="edit docker compose for &#10;setup a development container" />
     <MESSAGE value="edit Dockerfilesshserverfedora" />
-    <MESSAGE value="edit DemoDBConfig.java &#10;&#10;&#10;start Derby Network Server" />
-    <MESSAGE value="edit DemoDBConfig.java &#10;&#10;stated Derby DB local with port 1527" />
-    <MESSAGE value="edit application.properties&#10;&#10;edit properties to start server for derbydb" />
-    <MESSAGE value="edit connction config &#10;for demodb shopdb and mawi&#10;for derby db" />
-    <MESSAGE value="." />
-    <MESSAGE value="edit DemoDBConfig&#10;&#10;copy the derby db &#10;demodb&#10;mawi and shopdb &#10;to path /root with &quot;derby&quot; + demodb / mawi / org shopdb&#10;&#10;if file db-derby-10.15.2.0-bin.zip&#10;not exist" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit DemoDBConfig&#10;&#10;copy the derby db &#10;demodb&#10;mawi and shopdb &#10;to path /root with &quot;derby&quot; + demodb / mawi / org shopdb&#10;&#10;if file db-derby-10.15.2.0-bin.zip&#10;not exist" />
+    <MESSAGE value="edit Dockerfilesshserverfedora&#10;&#10;edit to fedora/ssh" />
+    <MESSAGE value="edit docker file for derby db" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit docker file for derby db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

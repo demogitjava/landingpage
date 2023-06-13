@@ -5,10 +5,10 @@ services:
     image: de_derby:latest
     container_name: de_derby
     ports:
-      - "217.160.255.254:1527:1527"
+      - "0.0.0.0:1527:1527"
     networks:
       192.168.178.0:
-        ipv4_address: 192.168.178.7
+        ipv4_address: 192.168.178.100
 
     build:
       context: ./
