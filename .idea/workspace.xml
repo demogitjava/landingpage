@@ -5,35 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/DESKTOPLAYOUT.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/DNS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/HIBERNATE_SEQUENCE.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/KUNDENSTAMM.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/REPORTS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SHIPPING.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRACHEN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRING_SESSION.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERAGENT.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERDATA.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERDETAIL.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/WEBTEXTLAYOUT.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/YOURCOMPANYDATA.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/ARTIKELSTAMM.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSARTEN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/Belegarten.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/HIBERNATE_SEQUENCE.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derbydb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerderbydb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerderbydb/docker-compose_derbydb.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +63,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/h2db/shopdb",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/h2db/mawi/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,9 +75,9 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "derby",
       "redshift",
-      "h2"
+      "h2",
+      "derby"
     ]
   }
 }]]></component>
@@ -107,7 +86,12 @@
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Unnamed">
+  <component name="RunManager" selected="Database Script.USERS.sql">
+    <configuration name="USERS.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" />
@@ -141,24 +125,6 @@
             </list>
           </option>
           <option name="commandLineOptions" value="--network 192.168.178.0" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="containerName" value="derbydb" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="1527" />
-                <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="1527" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
         </settings>
       </deployment>
       <method v="2" />
@@ -200,39 +166,39 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="derbydb/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+    <configuration name="dockerderbydb/Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
           <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="derbydb/Dockerfile" />
+          <option name="sourceFilePath" value="dockerderbydb/Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="derbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="dockerderbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
-          <option name="sourceFilePath" value="derbydb/docker-compose_derbydb.yml" />
+          <option name="sourceFilePath" value="dockerderbydb/docker-compose_derbydb.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.derbydb/Dockerfile" />
+      <item itemvalue="Database Script.USERS.sql" />
+      <item itemvalue="Docker.dockerderbydb/Dockerfile: Compose Deployment" />
       <item itemvalue="Docker.Docker Image (1)" />
       <item itemvalue="Docker.derbydb" />
-      <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
-      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.dockerderbydb/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
-        <item itemvalue="Docker.derbydb/Dockerfile" />
+        <item itemvalue="Database Script.USERS.sql" />
+        <item itemvalue="Docker.dockerderbydb/docker-compose_derbydb.yml: Compose Deployment" />
+        <item itemvalue="Docker.dockerderbydb/Dockerfile: Compose Deployment" />
         <item itemvalue="Docker.Docker Image (1)" />
         <item itemvalue="Docker.derbydb" />
-        <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +308,7 @@
       <workItem from="1686840551412" duration="77000" />
       <workItem from="1686840647323" duration="3235000" />
       <workItem from="1686844352670" duration="60000" />
-      <workItem from="1686844428617" duration="1085000" />
+      <workItem from="1686844428617" duration="2194000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -458,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686722375938</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb">
+      <created>1686845622426</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686845622426</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +451,8 @@
     <MESSAGE value="edit Dockerfilesshserverfedora&#10;&#10;edit to fedora/ssh" />
     <MESSAGE value="edit docker file for derby db" />
     <MESSAGE value="edit dockerfile for derbydb" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile for derbydb" />
+    <MESSAGE value="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

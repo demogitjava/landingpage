@@ -3,6 +3,13 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/h2db/demodb" dialect="H2" />
     <file url="file://$PROJECT_DIR$/h2db/mawi" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/ARTIKELSTAMM.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSARTEN.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/Belegarten.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/HIBERNATE_SEQUENCE.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION.sql" dialect="Derby" />
+    <file url="file://$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql" dialect="Derby" />
     <file url="PROJECT" dialect="H2" />
   </component>
 </project>

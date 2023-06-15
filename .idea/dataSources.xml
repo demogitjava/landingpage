@@ -29,5 +29,19 @@
       <jdbc-url>jdbc:h2:tcp://192.168.178.4:9092/~/shopdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="derbymawi@192.168.178.100" uuid="c0f84d6a-7642-49b3-83b9-0a15c1da40a5">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://192.168.178.100:1527/root/derbymawi</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="derbyshopdb@192.168.178.100" uuid="24a100e6-eb4f-4099-a700-13d2142aacba">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://192.168.178.100:1527/root/derbyshopdb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
