@@ -1,13 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-231.9011.34">
-    <data-source name="derbydemodb@192.168.178.100" uuid="b08c566b-53c9-4381-b3a2-6af8ce1c2ce6">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="DERBY" exact-version="0" />
+    <data-source name="derbydemodb@192.168.178.100" uuid="af004bcb-6dd1-48f7-8cb8-aea4e29b7673">
+      <database-info product="Apache Derby" version="10.14.2.0 - (1828579)" jdbc-version="4.2" driver-name="Apache Derby Network Client JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.14.2.0" exact-driver-version="10.15">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" negative="1" />
+          <node kind="schema" qname="ROOT" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="demodb" uuid="732814af-3bbc-4a26-8e12-f0aa9a1f6c82">
+      <database-info product="H2" version="1.4.199 (2019-03-13)" jdbc-version="4.1" driver-name="H2 JDBC Driver" driver-version="1.4.199 (2019-03-13)" dbms="H2" exact-version="1.4.199" exact-driver-version="1.4">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="DEMODB">
+            <node kind="schema" qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="mawi" uuid="7b42433b-c0c6-4f63-b087-3c2bd9e98c8e">
+      <database-info product="H2" version="1.4.199 (2019-03-13)" jdbc-version="4.1" driver-name="H2 JDBC Driver" driver-version="1.4.199 (2019-03-13)" dbms="H2" exact-version="1.4.199" exact-driver-version="1.4">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="MAWI">
+            <node kind="schema" qname="PUBLIC" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="shopdb" uuid="974045ee-aef0-41c3-a3c5-835d93fdf4d0">
+      <database-info product="H2" version="1.4.199 (2019-03-13)" jdbc-version="4.1" driver-name="H2 JDBC Driver" driver-version="1.4.199 (2019-03-13)" dbms="H2" exact-version="1.4.199" exact-driver-version="1.4">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="SHOPDB">
+            <node kind="schema" qname="PUBLIC" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

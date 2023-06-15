@@ -4,11 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit docker file for derby db">
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/DESKTOPLAYOUT.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/DNS.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/HIBERNATE_SEQUENCE.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/KUNDENSTAMM.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/REPORTS.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SHIPPING.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRACHEN.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRING_SESSION.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERAGENT.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERDATA.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERDETAIL.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/USERS.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/WEBTEXTLAYOUT.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/demodb/PUBLIC/YOURCOMPANYDATA.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/ARTIKELSTAMM.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSARTEN.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/Belegarten.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/HIBERNATE_SEQUENCE.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derbydb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/derbydb/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +65,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MigrationScriptOptions">
+    <option name="ignoreImplicitObjects" value="true" />
+    <option name="ignoreSourceCode" value="false" />
+  </component>
   <component name="ProjectId" id="2QFTP5IBWBiGYMWxXYOPgdWUwrC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,34 +77,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/h2db/shopdb",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;derby&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby",
+      "redshift",
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.Unnamed">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="landingpage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -163,6 +212,7 @@
     <configuration name="derbydb/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="derbydb/docker-compose_derbydb.yml" />
         </settings>
       </deployment>
@@ -174,6 +224,7 @@
       <item itemvalue="Docker.derbydb" />
       <item itemvalue="Docker.derbydb/docker-compose_derbydb.yml: Compose Deployment" />
       <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Spring Boot.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -283,7 +334,15 @@
       <workItem from="1686653426740" duration="7775000" />
       <workItem from="1686662105211" duration="1056000" />
       <workItem from="1686673977830" duration="188000" />
-      <workItem from="1686674270534" duration="2455000" />
+      <workItem from="1686674270534" duration="6421000" />
+      <workItem from="1686730247190" duration="205000" />
+      <workItem from="1686731104799" duration="177000" />
+      <workItem from="1686732478862" duration="1891000" />
+      <workItem from="1686838244741" duration="267000" />
+      <workItem from="1686840551412" duration="77000" />
+      <workItem from="1686840647323" duration="3235000" />
+      <workItem from="1686844352670" duration="60000" />
+      <workItem from="1686844428617" duration="1085000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -392,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686660169647</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="edit dockerfile for derbydb">
+      <created>1686722375938</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686722375938</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +477,8 @@
     <MESSAGE value="edit Dockerfilesshserverfedora" />
     <MESSAGE value="edit Dockerfilesshserverfedora&#10;&#10;edit to fedora/ssh" />
     <MESSAGE value="edit docker file for derby db" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit docker file for derby db" />
+    <MESSAGE value="edit dockerfile for derbydb" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit dockerfile for derbydb" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
