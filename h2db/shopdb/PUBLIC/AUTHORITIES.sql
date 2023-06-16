@@ -1,10 +1,9 @@
 create table AUTHORITIES
 (
-    USERNAME VARCHAR(50) not null
-        references USERS (USERNAME),
-    ROLE     VARCHAR(50) not null,
-    ID       INT         not null,
-    constraint AUTHORITIES_PK
-        primary key (ID)
-);
+    ID     INTEGER,
+    USERNAME VARCHAR(255),
+    PASSWORD VARCHAR(255),
+    ROLE     VARCHAR(255),
+    ENABLED  INTEGER,
 
+);

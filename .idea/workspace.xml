@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derbydb/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerderbydb/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derbydb/docker-compose_derbydb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerderbydb/docker-compose_derbydb.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/mawi/PUBLIC/BUCHUNGSDATEN.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/AUTHORITIES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/AUTHORITIES.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.toDoOptions",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -308,7 +306,8 @@
       <workItem from="1686840551412" duration="77000" />
       <workItem from="1686840647323" duration="3235000" />
       <workItem from="1686844352670" duration="60000" />
-      <workItem from="1686844428617" duration="2194000" />
+      <workItem from="1686844428617" duration="4842000" />
+      <workItem from="1686898536153" duration="94000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -431,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686845622426</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="edit folder to run dockerdb">
+      <created>1686846644588</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686846644588</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +458,8 @@
     <MESSAGE value="edit docker file for derby db" />
     <MESSAGE value="edit dockerfile for derbydb" />
     <MESSAGE value="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb" />
-    <option name="LAST_COMMIT_MESSAGE" value="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb" />
+    <MESSAGE value="edit folder to run dockerdb" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit folder to run dockerdb" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
