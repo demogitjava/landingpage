@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/AUTHORITIES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/h2db/shopdb/PUBLIC/AUTHORITIES.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/root/IdeaProjects/landingpage/h2db/mawi/PUBLIC/SPRING_SESSION_ATTRIBUTES.sql",
+    "last_opened_file_path": "/root/IdeaProjects/demodatabase",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,7 +67,8 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.toDoOptions",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.splitter.proportion": "0.28184712",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
   },
@@ -84,7 +85,12 @@
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.USERS.sql">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn compile" />
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="USERS.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/h2db/shopdb/PUBLIC/USERS.sql" />
       <script-mode>FILE</script-mode>
@@ -307,7 +313,8 @@
       <workItem from="1686840647323" duration="3235000" />
       <workItem from="1686844352670" duration="60000" />
       <workItem from="1686844428617" duration="4842000" />
-      <workItem from="1686898536153" duration="94000" />
+      <workItem from="1686898536153" duration="506000" />
+      <workItem from="1686899150467" duration="1641000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -437,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686846644588</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="eidt encodings.xml&#10;&#10;ISO-8859-1">
+      <created>1686898719765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686898719765</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +473,8 @@
     <MESSAGE value="edit dockerfile for derbydb" />
     <MESSAGE value="create ddl backup for&#10;demodb&#10;mawi &#10;and shopdb" />
     <MESSAGE value="edit folder to run dockerdb" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit folder to run dockerdb" />
+    <MESSAGE value="eidt encodings.xml&#10;&#10;ISO-8859-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="eidt encodings.xml&#10;&#10;ISO-8859-1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

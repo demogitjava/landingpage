@@ -170,11 +170,11 @@ public class shellcommands {
                 load file from internet to disk
          */
         try {
-            URL url = new URL("https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.15.2.0-bin.zip");
+            URL url = new URL("https://raw.githubusercontent.com/demogitjava/demodatabase/master/db-derby-10.14.2.0-bin.zip");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             InputStream in = connection.getInputStream();
-            FileOutputStream out = new FileOutputStream(path + "/db-derby-10.15.2.0-bin.zip");
+            FileOutputStream out = new FileOutputStream(path + "/db-derby-10.14.2.0-bin.zip");
             copy(in, out, 1024);
 
             in.close();
@@ -186,7 +186,7 @@ public class shellcommands {
                 unzip file to
                 /root
              */
-            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.15.2.0-bin.zip"));
+            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "db-derby-10.14.2.0-bin.zip"));
             ZipEntry entry = zipIn.getNextEntry();
             // iterates over entries in the zip file
             while (entry != null) {

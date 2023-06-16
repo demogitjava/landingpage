@@ -73,7 +73,7 @@ public class DemoDBConfig extends HikariConfig
             }
             case "derby":
             {
-                  File derbyzip = new File("/root/db-derby-10.15.2.0-bin.zip");
+                  File derbyzip = new File("/root/db-derby-10.14.2.0-bin.zip");
                   if(derbyzip.exists()) {
                      System.out.print("derby database exist" + "\n");
                   }
@@ -132,7 +132,7 @@ public class DemoDBConfig extends HikariConfig
 
             try {
 
-                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.15.2.0-bin/");
+                Runtime.getRuntime().exec("bash export DERBY_HOME=/root/db-derby-10.14.2.0-bin/");
 
                  /*
                       start derby network server
@@ -143,7 +143,7 @@ public class DemoDBConfig extends HikariConfig
                     {
                        try {
                            Runtime rt = Runtime.getRuntime();
-                           String commands = new String("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
+                           String commands = new String("java -jar /root/db-derby-10.14.2.0-bin/lib/derbyrun.jar server start");
                            Process proc = rt.exec(commands);
 
                            BufferedReader bufin = new BufferedReader(new
@@ -168,7 +168,7 @@ public class DemoDBConfig extends HikariConfig
                 thread.start();
 
 
-               //Runtime.getRuntime().exec("java -jar /root/db-derby-10.15.2.0-bin/lib/derbyrun.jar server start");
+               //Runtime.getRuntime().exec("java -jar /root/db-derby-10.14.2.0-bin/lib/derbyrun.jar server start");
 
                 // CONNECT 'jdbc:derby:firstdb;create=true';
             } catch (IOException e) {
@@ -257,6 +257,7 @@ public class DemoDBConfig extends HikariConfig
            properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
          }
          else if(startdb.equals("derby")) {
+
 
 
          
