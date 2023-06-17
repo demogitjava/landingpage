@@ -1,5 +1,6 @@
-FROM jgsoftwares/graalce11
+FROM ubuntu:23.10
 
+#yum install vsftpd -y
 
-
-EXPOSE 20 21
+EXPOSE 20
+EXPOSE 21
