@@ -285,6 +285,15 @@ public class shellcommands {
     {
         try
         {
+            /*
+                    for derby db version 14.2.0
+                    edit file java.security in folder
+
+                    path /usr/lib/jvm/javajdk1.8/jre/lib/security
+             */
+            Runtime.getRuntime().exec("export JAVA_HOME1=/usr/lib/jvm/javajdk1.8");
+
+
             Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/demodb /root/derbydemodb");
             Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/mawi /root/derbymawi");
             Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/shopdb /root/derbyshopdb");
