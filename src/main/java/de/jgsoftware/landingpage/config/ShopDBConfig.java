@@ -80,9 +80,9 @@ public class ShopDBConfig extends HikariConfig
             case "derby":
             {
                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://localhost:1527/root/derbyshopdb");
-                dataSource.setUsername("root");
-                dataSource.setPassword("jj78mvpr52k1");
+               dataSource.setUrl("jdbc:derby://localhost:1527/root/derbyshopdb");
+               dataSource.setUsername("root");
+               dataSource.setPassword("jj78mvpr52k1");
             }
             break;
             default:

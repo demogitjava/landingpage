@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit path for derby db &#10;to /root/derbydemodb usw">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +95,8 @@
       <window_info id="Pull Requests" />
       <window_info id="Persistence" side_tool="true" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22211221" />
-      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27480158" />
+      <window_info id="Commit" order="1" weight="0.27425742" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -104,8 +106,9 @@
       <window_info anchor="bottom" id="Dependency Checker" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.34409258" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.26613885" />
       <window_info anchor="bottom" id="Build" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6766139" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Beans" />
@@ -129,9 +132,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Docker.dockerftp/docker-compose_ftp.yml: Compose Deployment">
-    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
-      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
         <option name="IS_SUBST" value="false" />
@@ -245,7 +248,7 @@
       <item itemvalue="Docker.dockerftp/docker-compose_ftp.yml: Compose Deployment" />
       <item itemvalue="Docker.ftpserver" />
       <item itemvalue="Docker.Docker Image (1)" />
-      <item itemvalue="Spring Boot.Unnamed" />
+      <item itemvalue="Spring Boot.Landingpage" />
     </list>
     <recent_temporary>
       <list>
@@ -369,7 +372,7 @@
       <workItem from="1686902725227" duration="7488000" />
       <workItem from="1686987189017" duration="693000" />
       <workItem from="1686987900186" duration="6629000" />
-      <workItem from="1687073264853" duration="318000" />
+      <workItem from="1687073264853" duration="1328000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -520,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686987298897</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="edit path for derby db &#10;to /root/derbydemodb usw">
+      <created>1687073645584</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687073645584</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +555,8 @@
     <MESSAGE value="eidt encodings.xml&#10;&#10;ISO-8859-1" />
     <MESSAGE value="edit path to derby db version &#10;10.14.2.0" />
     <MESSAGE value="edit Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit Dockerfile" />
+    <MESSAGE value="edit path for derby db &#10;to /root/derbydemodb usw" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit path for derby db &#10;to /root/derbydemodb usw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,6 +585,71 @@
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
           <line>155</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>300</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>290</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>250</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>214</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

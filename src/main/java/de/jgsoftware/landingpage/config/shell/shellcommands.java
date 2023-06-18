@@ -294,9 +294,9 @@ public class shellcommands {
             Runtime.getRuntime().exec("export JAVA_HOME1=/usr/lib/jvm/javajdk1.8");
 
 
-            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/demodb /root/derbydemodb");
-            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/mawi /root/derbymawi");
-            Runtime.getRuntime().exec("cp -R /root/db-derby-10.15.2.0-bin/bin/shopdb /root/derbyshopdb");
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.14.2.0-bin/bin/demodb /root/derbydemodb");
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.14.2.0-bin/bin/mawi /root/derbymawi");
+            Runtime.getRuntime().exec("cp -R /root/db-derby-10.14.2.0-bin/bin/shopdb /root/derbyshopdb");
 
         } catch(Exception e)
         {
