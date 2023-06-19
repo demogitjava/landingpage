@@ -1,15 +1,19 @@
 
 package de.jgsoftware.landingpage.config.shell;
 
+import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPClient;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
-import java.net.*;
+
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.file.Files;
-import java.util.zip.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+
 import static org.apache.commons.io.IOUtils.copy;
-
-
 
 @ShellComponent
 public class shellcommands {
@@ -303,6 +307,8 @@ public class shellcommands {
             System.out.print("Fehler " + e);
         }
     }
+
+
 
 
 }

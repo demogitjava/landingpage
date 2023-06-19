@@ -43,7 +43,7 @@
         <State>
           <option name="id" value="b08e0627-b6d9-44c8-9cd4-490d47c3d89d" />
           <option name="name" value="mawi (DDL)" />
-          <option name="dbmsName" value="H2" />
+          <option name="dbmsName" value="DERBY" />
           <option name="urls">
             <array>
               <option value="file://$PROJECT_DIR$/h2db/mawi" />

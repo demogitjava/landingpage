@@ -4,94 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit path for derby db &#10;to /root/derbydemodb usw">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqlDataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/dbex.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/log/log.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/log/log1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/log/logmirror.ctrl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c10.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c101.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c111.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c121.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c130.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c141.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c150.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c161.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c171.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c180.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c191.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1e0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c1f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c20.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c200.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c211.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c221.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c230.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c241.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c251.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c260.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c271.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c281.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c290.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2c1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2d0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c2f0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c300.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c31.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c311.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c321.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c331.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c340.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c351.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c361.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c371.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c380.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c391.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3c0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3d1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3e1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c3f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c400.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c41.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c411.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c421.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c430.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c441.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c451.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c461.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c470.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c481.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c51.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c60.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c71.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c81.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/c90.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/ca1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/cb1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/cc0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/cd1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/ce1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/seg0/cf0.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/service.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +63,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -459,7 +384,7 @@
       <workItem from="1687110194189" duration="1177000" />
       <workItem from="1687156605296" duration="911000" />
       <workItem from="1687158181696" duration="581000" />
-      <workItem from="1687159024455" duration="1203000" />
+      <workItem from="1687159024455" duration="4700000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -617,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687073645584</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="edit copy path for derby db">
+      <created>1687160532701</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687160532701</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,58 +575,8 @@
     <MESSAGE value="edit path to derby db version &#10;10.14.2.0" />
     <MESSAGE value="edit Dockerfile" />
     <MESSAGE value="edit path for derby db &#10;to /root/derbydemodb usw" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit path for derby db &#10;to /root/derbydemodb usw" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="edit copy path for derby db" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit copy path for derby db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
