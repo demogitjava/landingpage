@@ -5,11 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit path for derby db &#10;to /root/derbydemodb usw">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dbex.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/log/log.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/log/logmirror.ctrl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c10.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c101.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c111.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c121.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c130.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c141.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c150.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c161.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c171.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c180.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c191.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1e0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c1f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c20.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c200.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c211.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c221.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c230.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c241.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c251.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c260.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c271.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c281.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c290.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2c1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c2f0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c300.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c31.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c311.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c321.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c331.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c340.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c351.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c361.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c371.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c380.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c391.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3a1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3c0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3d1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c3f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c400.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c41.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c411.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c421.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c430.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c441.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c451.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c461.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c470.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c481.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c51.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c60.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c71.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c81.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/c90.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/ca1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/cb1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/cc0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/cd1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/ce1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/seg0/cf0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/service.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,35 +140,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/IdeaProjects/landingpage&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.28184712&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a2c6b85aab42377462b06a0b2469d280&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/root/landingpage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.reader.mode",
+    "settings.editor.splitter.proportion": "0.28184712",
+    "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redshift&quot;,
-      &quot;h2&quot;,
-      &quot;derby&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redshift",
+      "h2",
+      "derby"
     ]
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Space Code Reviews" />
@@ -131,7 +213,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.dockerftp/docker-compose_ftp.yml: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.Landingpage">
     <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
@@ -373,6 +455,11 @@
       <workItem from="1686987189017" duration="693000" />
       <workItem from="1686987900186" duration="6629000" />
       <workItem from="1687073264853" duration="1328000" />
+      <workItem from="1687107969428" duration="2140000" />
+      <workItem from="1687110194189" duration="1177000" />
+      <workItem from="1687156605296" duration="911000" />
+      <workItem from="1687158181696" duration="581000" />
+      <workItem from="1687159024455" duration="1203000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -562,54 +649,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>121</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
           <line>155</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>300</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>290</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>250</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>214</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>191</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
