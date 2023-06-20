@@ -308,6 +308,66 @@ public class shellcommands {
         }
     }
 
+    @ShellMethod("install installjavajdk8 ---> installjavajdk8")
+    public void installjavajdk8()
+    {
+        /*
+            setting up java jdk 1.8
+            for derby db
+         */
+
+        File path = new File(System.getProperty("user.home"));
+
+        int BUFFER = 2048;
+
+
+        /*
+                load file from internet to disk
+         */
+        try {
+            URL url = new URL("http://demogitjava.ddns.net:8000/javajdk1.8derby.zip");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            InputStream in = connection.getInputStream();
+            FileOutputStream out = new FileOutputStream(path + "/javajdk1.8derby.zip");
+            copy(in, out, 1024);
+
+            in.close();
+            out.close();
+
+
+
+            /*
+                unzip file to
+                /root
+             */
+            ZipInputStream zipIn = new ZipInputStream(new FileInputStream(path + "/" + "javajdk1.8derby.zip"));
+            ZipEntry entry = zipIn.getNextEntry();
+            // iterates over entries in the zip file
+            while (entry != null) {
+
+                String filePath = path + File.separator + entry.getName();
+                if (!entry.isDirectory()) {
+                    // if the entry is a file, extracts it
+                    extractFile(zipIn, filePath);
+                } else {
+                    // if the entry is a directory, make the directory
+                    File dir = new File(filePath);
+                    dir.mkdirs();
+                }
+                zipIn.closeEntry();
+                entry = zipIn.getNextEntry();
+            }
+            zipIn.close();
+
+
+        } catch(Exception e)
+        {
+            System.out.print("Fehler " + e);
+        }
+
+
+    }
 
 
 

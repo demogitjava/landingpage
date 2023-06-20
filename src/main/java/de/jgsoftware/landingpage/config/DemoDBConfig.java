@@ -81,6 +81,13 @@ public class DemoDBConfig extends HikariConfig
                     System.out.print("install derbydb" + "\n");
                       de.jgsoftware.landingpage.config.shell.shellcommands shellcommands = new de.jgsoftware.landingpage.config.shell.shellcommands();
 
+                     /*
+                         install java jdk 1.8
+                         for derbydb
+                      */
+                      shellcommands.installjavajdk8();
+
+
                       /*
                           copy derbydb zip form github
                        */
