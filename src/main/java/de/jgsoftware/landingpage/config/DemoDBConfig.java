@@ -28,7 +28,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.SQLException;
 import java.util.HashMap;
-
+import org.apache.derby.drda.NetworkServerControl;
+import java.net.InetAddress;
 
 @Configuration
 @EnableTransactionManagement
@@ -160,9 +161,11 @@ public class DemoDBConfig extends HikariConfig
                  */
                 Thread thread = new Thread()
                 {
+                    @Override
                     public void run()
                     {
                        try {
+                           /*
                            Runtime rt = Runtime.getRuntime();
                            String commands = new String("java -jar /root/db-derby-10.14.2.0-bin/lib/derbyrun.jar server start");
                            Process proc = rt.exec(commands);
@@ -178,6 +181,10 @@ public class DemoDBConfig extends HikariConfig
                            }
                            bufin.close();
                            bufer.close();
+                            */
+                           
+                           NetworkServerControl server = new NetworkServerControl(InetAddress.getByName("localhost"),1527);
+                           server.start(null);
                        } catch(Exception e)
                        {
                            System.out.print("Error start derby network server " + e);
