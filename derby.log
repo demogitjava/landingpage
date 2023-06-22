@@ -1,1 +1,14 @@
-Tue Jun 20 10:18:37 UTC 2023 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+An exception was thrown during network server startup. 'java.lang.String org.apache.derby.iapi.tools.i18n.LocalizedResource.getTextMessage(java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)'
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.NoSuchMethodError: 'java.lang.String org.apache.derby.iapi.tools.i18n.LocalizedResource.getTextMessage(java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object)'
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.localizeMessage(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
+	... 6 more
