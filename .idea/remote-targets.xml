@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="72b9b457-ea1f-4c36-937e-e0901c8039a9" />
     <targets>
       <target name="de_landingapge:latest" type="docker" uuid="92495e0e-935c-46cb-baac-ad707ea04676">
         <config>
@@ -42,6 +43,22 @@
             </option>
             <option name="javaVersionString" value="11.0.18" />
           </config>
+        </ContributedStateBase>
+      </target>
+      <target name="debugcontainer" type="docker-compose" uuid="72b9b457-ea1f-4c36-937e-e0901c8039a9">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="configurationFiles">
+            <list>
+              <option value="$PROJECT_DIR$/jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml" />
+            </list>
+          </option>
+          <option name="serviceName" value="de_development" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config />
         </ContributedStateBase>
       </target>
     </targets>

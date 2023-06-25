@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="">
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-targets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-targets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
+        <option name="mavenHome" value="Use Maven wrapper" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -66,16 +68,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/root/landingpage",
+    "last_opened_file_path": "/root/IdeaProjects/landingpage/jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "settings.editor.splitter.proportion": "0.28184712",
     "spring.configuration.checksum": "a2c6b85aab42377462b06a0b2469d280",
     "vue.rearranger.settings.migration": "true"
@@ -122,6 +124,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/jetbrains_debugcontainer" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/dockerderbydb" />
       <recent name="$PROJECT_DIR$/jetbrains_gateway_sshserver" />
@@ -135,6 +138,8 @@
   <component name="RunManager" selected="Spring Boot.Landingpage">
     <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
+      <projectPathOnTarget name="projectPathOnTarget" value="/app" />
+      <target name="de_development" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.jgsoftware.landingpage.iDemoLandingPage" />
       <extension name="net.ashald.envfile">
         <option name="IS_ENABLED" value="false" />
@@ -150,25 +155,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+    <configuration name="Docker Image (3)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="de_ftp:latest" />
-          <option name="containerName" value="ftpserver" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="20" />
-                <option name="hostIp" value="217.160.255.254" />
-                <option name="hostPort" value="20" />
-              </DockerPortBindingImpl>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="21" />
-                <option name="hostIp" value="217.160.255.254" />
-                <option name="hostPort" value="21" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
+          <option name="imageTag" value="maven:3.5.2-jdk-8-alpine" />
+          <option name="containerName" value="maven" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="de_debugcontainer:latest" />
+          <option name="containerName" value="de_debugcontainer" />
+          <option name="commandLineOptions" value="--network 192.168.178.0 --ip 192.168.178.253" />
         </settings>
       </deployment>
       <method v="2" />
@@ -191,73 +192,56 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dockerftp/docker-compose_derbydb.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="dockerftp/docker-compose_derbydb.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dockerftp/docker-compose_derbydb.yml.de_ftp: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="de_ftp" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="dockerftp/docker-compose_derbydb.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dockerftp/docker-compose_ftp.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="dockerftp/docker-compose_ftp.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="ftpserver" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+    <configuration name="dockermaven" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="ubuntu:23.10" />
-          <option name="containerName" value="ftpserver" />
+          <option name="imageTag" value="de_dockermaven:latest" />
+          <option name="containerName" value="dockermaven" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
-                <option name="containerPort" value="20" />
+                <option name="containerPort" value="8080" />
                 <option name="hostIp" value="217.160.255.254" />
-                <option name="hostPort" value="20" />
-              </DockerPortBindingImpl>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="21" />
-                <option name="hostIp" value="217.160.255254" />
-                <option name="hostPort" value="21" />
+                <option name="hostPort" value="8080" />
               </DockerPortBindingImpl>
             </list>
           </option>
+          <option name="commandLineOptions" value="--network 192.168.178.0 --ip 192.168.178.101" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dockermaven/Dockerfile: Compose Deployment" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="dockermaven/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.dockerftp/docker-compose_derbydb.yml.de_ftp: Compose Deployment" />
-      <item itemvalue="Docker.dockerftp/docker-compose_derbydb.yml: Compose Deployment" />
-      <item itemvalue="Docker.dockerftp/docker-compose_ftp.yml: Compose Deployment" />
-      <item itemvalue="Docker.ftpserver" />
-      <item itemvalue="Docker.Docker Image (1)" />
+      <item itemvalue="Docker.dockermaven/Dockerfile: Compose Deployment" />
+      <item itemvalue="Docker.jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml: Compose Deployment" />
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Docker Image (3)" />
+      <item itemvalue="Docker.dockermaven" />
       <item itemvalue="Spring Boot.Landingpage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Docker Image (1)" />
-        <item itemvalue="Docker.dockerftp/docker-compose_ftp.yml: Compose Deployment" />
-        <item itemvalue="Docker.dockerftp/docker-compose_derbydb.yml: Compose Deployment" />
-        <item itemvalue="Docker.dockerftp/docker-compose_derbydb.yml.de_ftp: Compose Deployment" />
-        <item itemvalue="Docker.ftpserver" />
+        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml: Compose Deployment" />
+        <item itemvalue="Docker.dockermaven" />
+        <item itemvalue="Docker.dockermaven/Dockerfile: Compose Deployment" />
+        <item itemvalue="Docker.Docker Image (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -383,10 +367,19 @@
       <workItem from="1687428535748" duration="49000" />
       <workItem from="1687428774693" duration="208000" />
       <workItem from="1687428997980" duration="115000" />
-      <workItem from="1687429737835" duration="745000" />
-      <workItem from="1687517074997" duration="46000" />
-      <workItem from="1687517139197" duration="563000" />
-      <workItem from="1687517718334" duration="1835000" />
+      <workItem from="1687429737835" duration="835000" />
+      <workItem from="1687502095951" duration="37000" />
+      <workItem from="1687502213962" duration="82000" />
+      <workItem from="1687502320287" duration="326000" />
+      <workItem from="1687503849851" duration="144000" />
+      <workItem from="1687504008159" duration="119000" />
+      <workItem from="1687504148069" duration="91000" />
+      <workItem from="1687506107920" duration="450000" />
+      <workItem from="1687516175475" duration="65000" />
+      <workItem from="1687592776238" duration="4208000" />
+      <workItem from="1687599880699" duration="752000" />
+      <workItem from="1687682568180" duration="886000" />
+      <workItem from="1687683495128" duration="53000" />
     </task>
     <task id="LOCAL-00002" summary="edit docker-compose_jetbrains_gateway.yml">
       <option name="closed" value="true" />
@@ -558,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687165160472</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary=".">
+      <option name="closed" value="true" />
+      <created>1687430557849</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687430557849</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,153 +588,6 @@
     <MESSAGE value="edit copy path for derby db" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>156</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>242</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>278</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>318</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>328</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>356</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>158</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/ShopDBConfig.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>158</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>317</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/DemoDBConfig.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/shell/shellcommands.java</url>
-          <line>299</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/de/jgsoftware/landingpage/config/MaWiDBConfig.java</url>
-          <line>35</line>
-          <properties field="dataSource" class="de.jgsoftware.landingpage.config.MaWiDBConfig" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

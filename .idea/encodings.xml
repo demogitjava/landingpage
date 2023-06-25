@@ -5,7 +5,8 @@
     <file url="file://$PROJECT_DIR$/Dockerfile" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/Dockerfileremotedebug" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/dockerderbydb/Dockerfile" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/dockerderbydb/Dockerfile" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/dockermaven/Dockerfile" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/jetbrains_debugcontainer/Dockerfile" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/jetbrains_gateway_sshserver/Dockerfilesshserver" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/jetbrains_gateway_sshserver/Dockerfilesshserverfedora" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="ISO-8859-1" />
