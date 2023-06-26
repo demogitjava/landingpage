@@ -140,13 +140,13 @@ public class DemoDBConfig extends HikariConfig
               spring.h2.console.enabled=true
 
         */
-        try {
+        //try {
            // Server h2Server = Server.createTcpServer("-tcpPort", "9092", "-tcpAllowOthers").start();
-            org.h2.tools.Server webh2Server = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082").start();
+            //org.h2.tools.Server webh2Server = Server.createWebServer("-web", "-webAllowOthers", "-webPort", "8082").start();
 
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+       // } catch (SQLException e) {
+         //   throw new RuntimeException(e);
+       // }
 
 
         if(startmode.equals("local"))
@@ -203,7 +203,8 @@ public class DemoDBConfig extends HikariConfig
                 System.out.print("Error start derby " + e + "\n");
             }
         }
-        else if(startmode.equals("remote")) {
+        else if(startmode.equals("remote"))
+        {
             System.out.print("startmode derbydb is remote" + "\n");
         }
 
@@ -273,9 +274,11 @@ public class DemoDBConfig extends HikariConfig
 
     @Primary
     @Bean(name = "entityManagerFactory")
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                       @Qualifier("demodb") DataSource dataSource,
-                                                                       @Value("${startdb}") String startdb) {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(
+            EntityManagerFactoryBuilder builder,
+            @Qualifier("demodb") DataSource dataSource,
+            @Value("${startdb}") String startdb)
+    {
         HashMap<String, Object> properties = new HashMap<>();
 
         String stpersistence = new String("h2demodb");
@@ -296,7 +299,8 @@ public class DemoDBConfig extends HikariConfig
            properties.put("hibernate.connection.username", "root");
            properties.put("hibernate.connection.password", "jj78mvpr52k1");
          }
-         else if(startdb.equals("mysql")) {
+         else if(startdb.equals("mysql"))
+         {
            stpersistence = "mysqldemodb";
          }
          else {
