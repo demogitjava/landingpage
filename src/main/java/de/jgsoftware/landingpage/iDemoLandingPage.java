@@ -2,7 +2,9 @@ package de.jgsoftware.landingpage;
 
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 import java.sql.Timestamp;
 import java.time.ZoneId;
@@ -56,6 +58,9 @@ public interface iDemoLandingPage
         }
         System.out.print(operationsytem + "\n");
 
-        SpringApplication.run(DemoLandingPageApplication.class, args);
+        SpringApplicationBuilder builder = new SpringApplicationBuilder(iDemoLandingPage.class);
+        builder.web(WebApplicationType.SERVLET).headless(false).run();
+       // builder.run(args);
+        //SpringApplication.run(DemoLandingPageApplication.class, args);
     }
 }

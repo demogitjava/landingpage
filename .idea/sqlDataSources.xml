@@ -26,43 +26,4 @@
       </scope>
     </mapping>
   </component>
-  <component name="SqlDataSourceStorage">
-    <option name="dataSources">
-      <list>
-        <State>
-          <option name="id" value="92abfd45-f69e-4e63-9898-c00855c9176e" />
-          <option name="name" value="demodb (DDL)" />
-          <option name="dbmsName" value="H2" />
-          <option name="urls">
-            <array>
-              <option value="file://$PROJECT_DIR$/h2db/demodb" />
-            </array>
-          </option>
-          <option name="outLayout" value="File per object by schema.groovy" />
-        </State>
-        <State>
-          <option name="id" value="b08e0627-b6d9-44c8-9cd4-490d47c3d89d" />
-          <option name="name" value="mawi (DDL)" />
-          <option name="dbmsName" value="DERBY" />
-          <option name="urls">
-            <array>
-              <option value="file://$PROJECT_DIR$/h2db/mawi" />
-            </array>
-          </option>
-          <option name="outLayout" value="File per object by schema.groovy" />
-        </State>
-        <State>
-          <option name="id" value="3e974fa6-9d24-4c98-a5be-ae09a93ab005" />
-          <option name="name" value="shopdb (DDL)" />
-          <option name="dbmsName" value="H2" />
-          <option name="urls">
-            <array>
-              <option value="file://$PROJECT_DIR$/h2db/shopdb" />
-            </array>
-          </option>
-          <option name="outLayout" value="File per object by schema.groovy" />
-        </State>
-      </list>
-    </option>
-  </component>
 </project>

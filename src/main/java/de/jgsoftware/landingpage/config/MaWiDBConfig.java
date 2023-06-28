@@ -11,7 +11,6 @@ import com.zaxxer.hikari.HikariConfig;
 import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
@@ -20,7 +19,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -28,21 +26,19 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces",
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.mawi",
         entityManagerFactoryRef = "mawiEntityManagerFactory",
         transactionManagerRef = "mawiTransactionManager")
 public class MaWiDBConfig extends HikariConfig
 {
-    DriverManagerDataSource dataSource;
-    private String startdb;
-    //@Autowired
-    //@Qualifier(value = "mawiJdbcTemplate")
-    //JdbcTemplate jtm1;
+    @Autowired
+    @Qualifier(value = "mawiJdbcTemplate")
+    JdbcTemplate jtm1;
 
-    
 
-    //@Autowired
-    //DataSource dataSource1;
+
+    @Autowired
+    DataSource dataSource1;
 
 
 
@@ -55,33 +51,8 @@ public class MaWiDBConfig extends HikariConfig
     @Bean("ds2")
     @Qualifier("mawidb")
     @ConfigurationProperties(prefix="app.datasource2")
-    public DataSource secondDS(@Value("${startdb}") String startdb)
+    public DataSource secondDS()
     {
-        dataSource = new DriverManagerDataSource();
-
-        switch(startdb) {
-
-            case "h2":
-            {
-                dataSource.setDriverClassName("org.h2.Driver");
-                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/mawi;AUTO_SERVER=true");
-                dataSource.setUsername("admin");
-                dataSource.setPassword("jj78mvpr52k1");
-            }
-            break;
-
-            case "derby":
-            {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://localhost:1527/root/derbymawi");
-                dataSource.setUsername("root");
-                dataSource.setPassword("jj78mvpr52k1");
-            }
-            break;
-            default:
-                break;
-        }
-
         return DataSourceBuilder.create().build();
     }
 
@@ -89,33 +60,12 @@ public class MaWiDBConfig extends HikariConfig
 
     @Bean(name = "mawiEntityManagerFactory")
     public LocalContainerEntityManagerFactoryBean mawiEntityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                           @Qualifier("mawidb") DataSource dataSource1,
-                                                                           @Value("${startdb}") String startdb) {
+                                                                           @Qualifier("mawidb") DataSource dataSource1) {
         HashMap<String, Object> properties = new HashMap<>();
 
-        //properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-
-        String stpersistence = new String("h2demodb");
-
-        if(startdb.equals("h2")) {
-            stpersistence = "h2mawi";
-            properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-        }
-        else if(startdb.equals("derby")) {
-            stpersistence = "derbymawi";
-            properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
-        }
-        else if(startdb.equals("mysql")) {
-            stpersistence = "mysqlmawi";
-        }
-        else {
-            System.out.print("unknown database " + startdb + "\n");
-            stpersistence = "h2mawi";
-        }
-
-        return builder.dataSource(dataSource1)
-                .properties(properties)
-                .packages("de.jgsoftware.landingpage.model.jpa.mawi").persistenceUnit(stpersistence).build();
+        properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
+        return builder.dataSource(dataSource1).properties(properties)
+                .packages("de.jgsoftware.landingpage.model").persistenceUnit("derbymawi").build();
     }
 
     @Bean(name = "mawiTransactionManager")
@@ -125,38 +75,10 @@ public class MaWiDBConfig extends HikariConfig
     }
 
     @Bean(name = "mawiJdbcTemplate")
-    public JdbcTemplate jdbcTemplate(@Qualifier("ds2") DataSource dataSource1,
-                                     @Value("${startdb}") String startdb)
+    public JdbcTemplate jdbcTemplate(@Qualifier("ds2") DataSource dataSource1)
     {
-        switch(startdb) {
 
-            case "h2":
-            {
-                dataSource.setDriverClassName("org.h2.Driver");
-                dataSource.setUrl("jdbc:h2:tcp://0.0.0.0:9092/~/mawi;AUTO_SERVER=true");
-                dataSource.setUsername("admin");
-                dataSource.setPassword("jj78mvpr52k1");
-            }
-            break;
-
-            case "derby":
-            {
-                dataSource.setDriverClassName("org.apache.derby.jdbc.ClientDriver");
-                dataSource.setUrl("jdbc:derby://localhost:1527/root/derbymawi");
-                dataSource.setUsername("root");
-                dataSource.setPassword("jj78mvpr52k1");
-            }
-            break;
-            default:
-                break;
-        }
-
-        //JdbcTemplate jtm = new JdbcTemplate();
-
-
-        //jtm.setDataSource(dataSource1);
-        //return jtm;
-       return new JdbcTemplate(dataSource1);
+        return new JdbcTemplate(dataSource1);
     }
 
 
