@@ -59,7 +59,8 @@ public interface iDemoLandingPage
         System.out.print(operationsytem + "\n");
 
         SpringApplicationBuilder builder = new SpringApplicationBuilder(iDemoLandingPage.class);
-        builder.web(WebApplicationType.SERVLET).headless(false).run();
+        builder.web(WebApplicationType.SERVLET)
+               .headless(true).run();
        // builder.run(args);
         //SpringApplication.run(DemoLandingPageApplication.class, args);
     }
