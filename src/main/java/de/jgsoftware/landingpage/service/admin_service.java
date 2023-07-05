@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.service;
 
 
+import static de.jgsoftware.landingpage.DemoLandingPageApplication.st_timezones;
 import de.jgsoftware.landingpage.dao.Dao_admin;
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-import static de.jgsoftware.landingpage.iDemoLandingPage.st_timezones;
+
 
 @Service
 public class admin_service implements i_admin_service

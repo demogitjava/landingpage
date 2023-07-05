@@ -21,10 +21,12 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-
+import de.jgsoftware.landingpage.dao.interfaces.*;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 @SpringBootApplication
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 public class DemoLandingPageApplication {
 
 
