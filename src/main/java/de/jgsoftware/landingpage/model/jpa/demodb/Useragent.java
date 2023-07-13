@@ -1,5 +1,7 @@
 package de.jgsoftware.landingpage.model.jpa.demodb;
 
+
+import java.io.Serializable;
 import javax.persistence.Entity;
 
 
@@ -7,9 +9,10 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
+
 @Entity
-@Table(name = "useragent")
-public class Useragent
+@Table(name = "Useragent")
+public class Useragent implements Serializable
 {
 
     @Id
@@ -24,7 +27,7 @@ public class Useragent
 
     private String stlanguage;
 
-    private Date date;
+    private Date datum;
 
     private Timestamp timestamp;
 
@@ -76,14 +79,15 @@ public class Useragent
         this.stlanguage = stlanguage;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDatum() {
+        return datum;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDatum(Date datum) {
+        this.datum = datum;
     }
 
+   
     public Timestamp getTimestamp() {
         return timestamp;
     }

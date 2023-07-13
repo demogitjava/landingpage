@@ -107,8 +107,8 @@ public class Dao_DemoPageController implements IDaoDemoPageController
                 muagent.getStbrowserversion(),
                 muagent.getStsystem(),
                 muagent.getStlanguage(),
-                muagent.getDate(),
-                muagent.getDate());
+                muagent.getDatum(),
+                muagent.getDatum());
 
 
         return muagent;

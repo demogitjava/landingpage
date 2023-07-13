@@ -83,7 +83,7 @@ public class DemoController implements iDemoController
         muagent.setStbrowserversion(stbrowserversion);
         muagent.setStsystem(stsystem);
         muagent.setStlanguage(languagestr);
-        muagent.setDate(date);
+        muagent.setDatum(date);
 
 
         /*
