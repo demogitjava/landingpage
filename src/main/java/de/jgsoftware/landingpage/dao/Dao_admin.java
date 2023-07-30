@@ -2,7 +2,6 @@ package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.demodb.Int_m_webtextlayout;
 import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
-import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.dashboardgraphicline;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import de.jgsoftware.landingpage.model.useragent;
@@ -33,8 +32,6 @@ public class Dao_admin implements i_dao_admin
     Int_m_webtextlayout int_mwebtextlayout;
 
 
-    @Autowired
-    i_jpa_webtextlayout jpashopwebtextlayout;
 
     @Override
     public void saveFormModalData(m_webtextlayout webtextlayout)
@@ -49,8 +46,7 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
-        //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
-        List<m_webtextlayout> webtextlayouts = jpashopwebtextlayout.allentityswebtextlayout();
+        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
 
 
         return webtextlayouts;
