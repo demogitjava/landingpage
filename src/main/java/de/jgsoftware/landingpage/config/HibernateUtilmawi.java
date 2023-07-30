@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package de.jgsoftware.landingpage.config;
 
 
@@ -10,9 +7,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+/**
+ *
+ * @author hoscho
+ */
 
-
-@Configuration
+@org.springframework.context.annotation.Configuration
 public class HibernateUtildemodb {
 
 	private static SessionFactory sessionFactory;
@@ -43,15 +44,11 @@ public class HibernateUtildemodb {
         return sessionFactory;
     }
         
-    public HibernateUtil()
-    {
-        
-      
-    }
+  
     
     public Session openSession()
     {
-        Session session = de.jgsoftwares.hql.HibernateUtil.getSessionFactory().openSession();
+        Session session = HibernateUtildemodb.getSessionFactory().openSession();
         session.beginTransaction();
         return session;
     }
