@@ -22,7 +22,7 @@ import java.util.HashMap;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.web",
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.shop",
         entityManagerFactoryRef = "shopEntityManagerFactory",
         transactionManagerRef = "shopTransactionManager")
 public class ShopDBConfig extends HikariConfig
