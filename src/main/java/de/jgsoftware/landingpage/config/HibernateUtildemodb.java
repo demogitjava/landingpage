@@ -7,12 +7,13 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-
+import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  *
  * @author hoscho
  */
 
+@org.springframework.context.annotation.Configuration
 public class HibernateUtildemodb {
 
 	private static SessionFactory sessionFactory;
