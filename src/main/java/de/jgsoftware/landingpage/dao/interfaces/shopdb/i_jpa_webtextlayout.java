@@ -9,6 +9,6 @@ import java.util.List;
 
 public interface i_jpa_webtextlayout extends JpaRepository<m_webtextlayout, Integer>
 {
-    @Query("FROM m_webtextlayout ")
+    @Query("FROM webtextlayout")
     List<m_webtextlayout> allentityswebtextlayout();
 }
