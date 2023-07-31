@@ -2,7 +2,7 @@ package de.jgsoftware.landingpage.service.mobile;
 
 
 import de.jgsoftware.landingpage.dao.Dao_DemoPageController;
-import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
