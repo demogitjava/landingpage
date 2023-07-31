@@ -1,7 +1,7 @@
 package de.jgsoftware.landingpage.service;
 
 import de.jgsoftware.landingpage.service.interfaces.iWebBuilderService;
-import de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,12 +20,12 @@ public class WebBuilderService implements iWebBuilderService
 
 
     @Override
-    public de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder getiDaoWebBuilder() {
+    public de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder getiDaoWebBuilder() {
         return iDaoWebBuilder;
     }
 
     @Override
-    public void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder iDaoWebBuilder) {
+    public void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder iDaoWebBuilder) {
         this.iDaoWebBuilder = iDaoWebBuilder;
     }
 
