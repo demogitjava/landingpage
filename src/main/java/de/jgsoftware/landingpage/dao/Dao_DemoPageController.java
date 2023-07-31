@@ -1,7 +1,7 @@
 package de.jgsoftware.landingpage.dao;
 
 
-import de.jgsoftware.landingpage.dao.interfaces.web.IDaoDemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
 import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;

@@ -1,7 +1,7 @@
 package de.jgsoftware.landingpage.dao;
 
 
-import de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;

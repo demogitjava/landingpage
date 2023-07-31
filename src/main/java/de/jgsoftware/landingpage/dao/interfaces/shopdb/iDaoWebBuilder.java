@@ -1,4 +1,4 @@
-package de.jgsoftware.landingpage.dao.interfaces.web;
+package de.jgsoftware.landingpage.dao.interfaces.shopdb;
 
 
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
