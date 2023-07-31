@@ -3,8 +3,8 @@ package de.jgsoftware.landingpage.service.interfaces;
 
 public interface iWebBuilderService
 {
-    de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder getiDaoWebBuilder();
-    void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.web.iDaoWebBuilder iDaoWebBuilder);
+    de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder getiDaoWebBuilder();
+    void setiDaoWebBuilder(de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder iDaoWebBuilder);
 
 
 
