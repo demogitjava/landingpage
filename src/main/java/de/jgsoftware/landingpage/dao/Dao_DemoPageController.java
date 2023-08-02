@@ -3,6 +3,7 @@ package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_bootstrap_components;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_laendercodes;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
@@ -64,6 +65,8 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Autowired
     i_jpa_bootstrap_components ijpashopbootstrapcomponents;
   
+    @Autowired
+    i_jpa_laendercodes ijpashoplaendercodes;
 
     // returns all entriys from Table
     @Override
@@ -86,8 +89,11 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     {
 
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
-
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
+        
+
+        
+        // manuel Query over jdbc Tempalte with jtm
         //List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
        
         List<BootstrapComponents> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
@@ -100,7 +106,10 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Override
     public List<areacodes> areacodes_eu()
     {
-        List<areacodes> areacodes = jtm2.query("SELECT * FROM LEANDERCODES where EU = 1", new BeanPropertyRowMapper(areacodes.class));
+        // manuel sql query 
+        // JdbcTemplate jtm
+        //List<areacodes> areacodes = jtm2.query("SELECT * FROM LEANDERCODES where EU = 1", new BeanPropertyRowMapper(areacodes.class));
+        List<areacodes> areacodes = (List) ijpashoplaendercodes.findcodesonlyeu();
         return areacodes;
     }
 
