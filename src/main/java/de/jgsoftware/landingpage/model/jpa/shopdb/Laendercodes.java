@@ -32,7 +32,7 @@ public class Laendercodes
     
     private String eu;
     
-    private String intlangdb;
+    private Integer intlangdb;
 
     public Integer getId() {
         return id;
@@ -74,13 +74,15 @@ public class Laendercodes
         this.eu = eu;
     }
 
-    public String getIntlangdb() {
+    public Integer getIntlangdb() {
         return intlangdb;
     }
 
-    public void setIntlangdb(String intlangdb) {
+    public void setIntlangdb(Integer intlangdb) {
         this.intlangdb = intlangdb;
     }
+
+    
     
     
     
