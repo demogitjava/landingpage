@@ -5,6 +5,7 @@ import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_bootstrap_components;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_laendercodes;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
+import de.jgsoftware.landingpage.dao.interfaces.demodb.j_jpa_useragent;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
 import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
@@ -58,6 +59,10 @@ public class Dao_DemoPageController implements IDaoDemoPageController
    
     @Autowired
     DataSource datasource2;
+    
+    @Autowired
+    j_jpa_useragent ijpauseragent;
+    
     
     @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
@@ -118,9 +123,10 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     public Useragent saveuseragent(Useragent muagent)
     {
 
-
-        Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
-
+       // manuel Query JdbcTempalte jtm
+       // Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
+          
+        Long countid = (Long) ijpauseragent.count();
         if(countid == 0)
         {
             countid = Long.valueOf(1);
