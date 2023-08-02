@@ -99,9 +99,9 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
         
         // manuel Query over jdbc Tempalte with jtm
-        //List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
+        List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
        
-        List<BootstrapComponents> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
+        //List<BootstrapComponents> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
         
         return bootstrap_comonents;
     }
