@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_bootstrap_components;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
@@ -60,7 +61,8 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
 
-    
+    @Autowired
+    i_jpa_bootstrap_components ijpashopbootstrapcomponents;
   
 
     // returns all entriys from Table
@@ -86,7 +88,10 @@ public class Dao_DemoPageController implements IDaoDemoPageController
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
-        List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
+        //List<BootstrapComponents> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(BootstrapComponents.class));
+       
+        List<BootstrapComponents> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
+        
         return bootstrap_comonents;
     }
 
