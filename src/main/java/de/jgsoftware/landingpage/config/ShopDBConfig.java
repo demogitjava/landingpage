@@ -19,10 +19,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.HashMap;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.shopdb.*",
+//@EnableTransactionManagement
+@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.shopdb",
         entityManagerFactoryRef = "shopEntityManagerFactory",
         transactionManagerRef = "shopTransactionManager")
 public class ShopDBConfig extends HikariConfig
@@ -76,6 +77,16 @@ public class ShopDBConfig extends HikariConfig
 
         return new JdbcTemplate(dataSource2);
     }
+
+    public DataSource getDataSource2() {
+        return dataSource2;
+    }
+
+    public void setDataSource2(DataSource dataSource2) {
+        this.dataSource2 = dataSource2;
+    }
+    
+    
 
 
 
