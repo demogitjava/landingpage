@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
 import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
@@ -22,6 +23,13 @@ import java.util.List;
 import de.jgsoftware.landingpage.model.areacodes;
 
 import de.jgsoftware.landingpage.model.useragent;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.sql.DataSource;
+import org.apache.catalina.Manager;
+import org.springframework.transaction.annotation.Transactional;
 
 
 
@@ -44,14 +52,25 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Autowired
     IndexService sdemowebtext;
 
+    
+   
+    @Autowired
+    DataSource datasource2;
+    
+    @Autowired
+    i_jpa_webtextlayout ijpashopwebtextlayout;
 
-
-
+    
+  
 
     // returns all entriys from Table
+    @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
         List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+       
+        List<de.jgsoftware.landingpage.model.m_webtextlayout> webtextlayouts1 = ijpashopwebtextlayout.findAll();
+        
         return webtextlayouts;
     }
 
