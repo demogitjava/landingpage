@@ -67,9 +67,9 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
-        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
        
-        List<de.jgsoftware.landingpage.model.m_webtextlayout> webtextlayouts1 = ijpashopwebtextlayout.findAll();
+        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
         
         return webtextlayouts;
     }
