@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.model.m_webtextlayout;
 import java.util.List;
 import javax.sql.DataSource;
 
+
+/**
+ *
+ * @author hoscho
+ */
 public interface i_dao_admin
 {
 
