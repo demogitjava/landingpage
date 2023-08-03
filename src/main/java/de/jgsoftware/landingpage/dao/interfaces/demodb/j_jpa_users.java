@@ -8,6 +8,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
+
+/**
+ *
+ * @author hoscho
+ */
 public interface j_jpa_users extends JpaRepository<Users, Integer>
 {
 
