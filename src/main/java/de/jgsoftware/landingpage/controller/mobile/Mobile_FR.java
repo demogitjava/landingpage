@@ -7,6 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import de.jgsoftware.landingpage.controller.interfaces.mobile.i_mobile_fr;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class Mobile_FR implements i_mobile_fr
 {
