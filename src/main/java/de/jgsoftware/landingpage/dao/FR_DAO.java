@@ -11,6 +11,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Repository
 public class FR_DAO implements i_DAO_FR
 {
