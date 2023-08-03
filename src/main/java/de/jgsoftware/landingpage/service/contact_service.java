@@ -12,6 +12,11 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class contact_service implements i_contact_service
 {
