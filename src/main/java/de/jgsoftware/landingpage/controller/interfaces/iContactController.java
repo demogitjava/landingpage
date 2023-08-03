@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.mail.internet.AddressException;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @RequestMapping("/contact")
 public interface iContactController
 {
