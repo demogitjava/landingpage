@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 
 import javax.persistence.*;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 public class Authorities {
     @Basic
