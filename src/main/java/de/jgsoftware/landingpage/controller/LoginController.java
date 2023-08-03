@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.controller.interfaces.iLoginController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class LoginController implements iLoginController
 {
