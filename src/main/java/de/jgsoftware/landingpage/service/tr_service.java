@@ -7,6 +7,12 @@ import org.springframework.stereotype.Service;
 
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_TR;
 
+
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class tr_service implements itr_service
 {
@@ -14,10 +20,12 @@ public class tr_service implements itr_service
     @Autowired
     i_DAO_TR iDaoTr;
 
+    @Override
     public i_DAO_TR getiDaoTr() {
         return iDaoTr;
     }
 
+    @Override
     public void setiDaoTr(i_DAO_TR iDaoTr) {
         this.iDaoTr = iDaoTr;
     }
