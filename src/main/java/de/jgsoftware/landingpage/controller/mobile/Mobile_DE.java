@@ -16,6 +16,12 @@ import java.util.Date;
 
 import de.jgsoftware.landingpage.service.interfaces.mobile.i_mobile_service;
 
+
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class Mobile_DE implements de.jgsoftware.landingpage.controller.interfaces.mobile.i_mobile_de
 {
