@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @RequestMapping("/fr")
 public interface iFR_Controller
 {
