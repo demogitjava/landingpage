@@ -27,7 +27,7 @@ public class FR_DAO implements i_DAO_FR
     JdbcTemplate jtm2;
     
     
-     @Autowired
+    @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
     
     @Autowired
