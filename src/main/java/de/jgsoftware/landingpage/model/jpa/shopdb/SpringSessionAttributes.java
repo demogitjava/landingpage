@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 
 import javax.persistence.*;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "SPRING_SESSION_ATTRIBUTES", schema = "PUBLIC", catalog = "SHOPDB")
 @IdClass(SpringSessionAttributesPK.class)
