@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_EN;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,14 +27,23 @@ public class EN_DAO implements i_DAO_EN
     @Autowired
     @Qualifier(value = "shopJdbcTemplate")
     JdbcTemplate jtm2;
+    
+    
+    
+    @Autowired
+    i_jpa_webtextlayout ijpashopwebtextlayout;
 
 
     // returns all entriys from Table
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
-        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        
+        // jdbc Tempalte jtm2 shop manuel query
+        //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
 
+        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
+          
         return webtextlayouts;
     }
 
