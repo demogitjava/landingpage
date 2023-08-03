@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 
 @RequestMapping("/lpagewebbuilder")
 @PreAuthorize("hasAuthority('ROLE_ADMIN','ROLE_USER')")
