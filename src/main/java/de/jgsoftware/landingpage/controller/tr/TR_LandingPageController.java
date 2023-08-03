@@ -8,6 +8,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import de.jgsoftware.landingpage.service.interfaces.itr_service;
 
+
+/**
+ *
+ * @author hoscho
+ */
 @Controller
 public class TR_LandingPageController implements iTR_Controller
 {
