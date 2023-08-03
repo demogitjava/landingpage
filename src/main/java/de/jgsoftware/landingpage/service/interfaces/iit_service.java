@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.service.interfaces;
 
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_IT;
 
+
+/**
+ *
+ * @author hoscho
+ */
 public interface iit_service
 {
     i_DAO_IT getI_dao_it();
