@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 
 import de.jgsoftware.landingpage.service.interfaces.mobile.i_mobile_service;
 
+
+/**
+ *
+ * @author hoscho
+ */
 @Service
 public class de_mobile_service implements i_mobile_service
 {
