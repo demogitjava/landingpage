@@ -26,6 +26,19 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import de.jgsoftware.landingpage.dao.interfaces.*;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
+
+
+
+/**
+ *
+ * @author hoscho
+ */
+
+
+
+
+
+
 @SpringBootApplication
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
