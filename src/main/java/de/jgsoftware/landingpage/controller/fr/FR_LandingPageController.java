@@ -8,7 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
 
-
+/**
+ *
+ * @author hoscho
+ */
 @Controller
 public class FR_LandingPageController implements iFR_Controller
 {
