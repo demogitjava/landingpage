@@ -6,6 +6,11 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
+/**
+ *
+ * @author hoscho
+ */
+
 public interface j_jpa_useragent extends JpaRepository<useragent, Integer>
 {
 
