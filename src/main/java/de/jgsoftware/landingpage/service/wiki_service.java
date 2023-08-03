@@ -9,6 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+
+
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class wiki_service implements i_wiki_service
 {
@@ -16,10 +23,12 @@ public class wiki_service implements i_wiki_service
     @Autowired
     i_dao_wiki iDaoWiki;
 
+    @Override
     public i_dao_wiki getiDaoWiki() {
         return iDaoWiki;
     }
 
+    @Override
     public void setiDaoWiki(i_dao_wiki iDaoWiki) {
         this.iDaoWiki = iDaoWiki;
     }
