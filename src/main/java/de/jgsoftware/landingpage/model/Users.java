@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.model;
 
 import javax.persistence.*;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "users")
 public class Users
