@@ -61,8 +61,13 @@ public class IT_DAO implements i_DAO_IT
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
-        List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+        
+        // manuel Query jdbcTemplate jtm2 shopdb 
+        //List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
 
+         List<m_bootstrap_components> bootstrap_comonents = ijpashopbootstrapcomponents.findAll();
+
+        
         return bootstrap_comonents;
     }
 }
