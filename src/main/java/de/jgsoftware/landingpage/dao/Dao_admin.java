@@ -13,6 +13,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 
+import de.jgsoftware.landingpage.dao.interfaces.demodb.j_jpa_users;
+
 @Repository
 public class Dao_admin implements i_dao_admin
 {
@@ -35,6 +37,11 @@ public class Dao_admin implements i_dao_admin
 
     @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
+    
+    
+    @Autowired
+    j_jpa_users ijpausers;
+    
 
     @Override
     public void saveFormModalData(m_webtextlayout webtextlayout)
@@ -74,8 +81,11 @@ public class Dao_admin implements i_dao_admin
     @Override
     public Integer getusercount()
     {
-
-        Integer usercount = jtm.queryForObject("select count(id) from users", Integer.class);
+        // manuel query demodb
+        //Integer usercount = jtm.queryForObject("select count(id) from users", Integer.class);
+        
+        long lusercount = ijpausers.count();
+        Integer usercount = Long.valueOf(lusercount).intValue();
         return usercount;
     }
 
