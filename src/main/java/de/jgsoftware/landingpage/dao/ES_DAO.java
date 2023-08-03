@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_ES;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_bootstrap_components;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
@@ -30,7 +31,8 @@ public class ES_DAO implements i_DAO_ES
     @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
     
-    
+      @Autowired
+    i_jpa_bootstrap_components ijpashopbootstrapcomponents;
     
 
     // returns all entriys from Table
@@ -57,8 +59,12 @@ public class ES_DAO implements i_DAO_ES
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
 
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
-        List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+        
+        // maneul jdbcTempalte jtm2 shopdb
+        //List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
 
+        List<m_bootstrap_components> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
+        
         return bootstrap_comonents;
     }
 }
