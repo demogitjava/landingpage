@@ -92,7 +92,11 @@ public class Dao_admin implements i_dao_admin
     @Override
     public Integer getconnectsmonth()
     {
-        Integer connectsmonth = jtm.queryForObject("select count(id) from users", Integer.class);
+        // manuel query jdbc Template demodb
+        //Integer connectsmonth = jtm.queryForObject("select count(id) from users", Integer.class);
+       
+         long lconmonth = ijpausers.count();
+        Integer connectsmonth = Long.valueOf(lconmonth).intValue();
         return connectsmonth;
     }
 
