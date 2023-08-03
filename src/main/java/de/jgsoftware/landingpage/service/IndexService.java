@@ -10,6 +10,11 @@ import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class IndexService implements IServiceIndex
 {
