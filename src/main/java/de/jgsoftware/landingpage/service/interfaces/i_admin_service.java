@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.dao.Dao_admin;
 import javax.script.ScriptEngineManager;
 import java.util.List;
 
+
+/**
+ *
+ * @author hoscho
+ */
 public interface i_admin_service
 {
 
