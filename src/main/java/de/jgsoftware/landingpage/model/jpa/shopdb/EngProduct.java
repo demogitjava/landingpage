@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.model.jpa.shopdb;
 
 import javax.persistence.*;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "ENG_PRODUCT", schema = "PUBLIC", catalog = "SHOPDB")
 public class EngProduct {
