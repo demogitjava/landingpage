@@ -6,6 +6,11 @@ import de.jgsoftware.landingpage.service.interfaces.mobile.i_fr_mobile_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class fr_mobile_service implements i_fr_mobile_service
 {
