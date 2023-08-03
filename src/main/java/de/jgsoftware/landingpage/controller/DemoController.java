@@ -30,6 +30,11 @@ import ua_parser.Client;
 import java.util.Date;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class DemoController implements iDemoController
 {
