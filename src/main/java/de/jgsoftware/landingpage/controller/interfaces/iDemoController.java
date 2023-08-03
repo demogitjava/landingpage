@@ -7,7 +7,10 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
-
+/**
+ *
+ * @author hoscho
+ */
 @RequestMapping("/")
 public interface iDemoController {
 
