@@ -9,6 +9,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.mail.internet.AddressException;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class Contract_LandingPageController implements iContactController
 {
