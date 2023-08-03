@@ -35,10 +35,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 
 
-
-
-
-
 @SpringBootApplication
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
