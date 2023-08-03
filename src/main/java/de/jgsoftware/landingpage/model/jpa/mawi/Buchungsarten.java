@@ -3,6 +3,11 @@ package de.jgsoftware.landingpage.model.jpa.mawi;
 import javax.persistence.*;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "buchungsarten", schema = "PUBLIC", catalog = "MAWI")
 public class Buchungsarten
