@@ -5,6 +5,10 @@ import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 
 import java.util.List;
+/**
+ *
+ * @author hoscho
+ */
 
 public interface iDaoWebBuilder
 {
