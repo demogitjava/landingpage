@@ -50,8 +50,8 @@ public class Dao_admin implements i_dao_admin
     public List<m_webtextlayout> getPageLanguageText()
     {
         //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
-        ijpashopwebtextlayout.findAll();
-        List<m_webtextlayout> webtextlayouts = ijpashopwebtextlayout.findAll();
+        //ijpashopwebtextlayout.findAll();
+        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
 
 
         return webtextlayouts;
@@ -62,7 +62,10 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List<m_webtextlayout> getWebtextentriys()
     {
-        List<m_webtextlayout> pagenavbar = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        
+        // manuell query jtm2 shopdb
+        //List<m_webtextlayout> pagenavbar = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        List<m_webtextlayout> pagenavbar = (List) ijpashopwebtextlayout.findAll();
 
         return pagenavbar;
     }
