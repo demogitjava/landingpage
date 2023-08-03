@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
-
+/**
+ *
+ * @author hoscho
+ */
 @Controller
 public class Mobile_ES implements de.jgsoftware.landingpage.controller.interfaces.mobile.i_mobile_es
 {
