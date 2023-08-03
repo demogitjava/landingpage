@@ -7,6 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.mail.internet.AddressException;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @RequestMapping("about")
 public interface iAboutController
 {
