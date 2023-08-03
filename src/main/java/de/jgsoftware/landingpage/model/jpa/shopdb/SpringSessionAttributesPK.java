@@ -7,6 +7,11 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ *
+ * @author hoscho
+ */
+
 public class SpringSessionAttributesPK implements Serializable {
     @Column(name = "SESSION_PRIMARY_ID")
     @Id
