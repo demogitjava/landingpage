@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder;
+import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +31,22 @@ public class DaoWebBuilder implements iDaoWebBuilder
     File fhtml;
 
     private String demopage = null;
+    
+    
+     @Autowired
+    i_jpa_webtextlayout ijpashopwebtextlayout;
+    
 
     // returns all entries from Table
     @Override
     public List<m_webtextlayout> getPageLanguageText()
     {
-        List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+        
+        // manuel Query jdbc Tempalte shopdb
+        //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
+
+        
+        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
 
         return webtextlayouts;
     }
