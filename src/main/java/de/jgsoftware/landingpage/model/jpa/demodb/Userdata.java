@@ -3,6 +3,11 @@ package de.jgsoftware.landingpage.model.jpa.demodb;
 import javax.persistence.*;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "USERDATA", schema = "PUBLIC", catalog = "DEMODB")
 public class Userdata
