@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.model.m_webtextlayout;
 
 import java.util.List;
 
+/**
+ *
+ * @author hoscho
+ */
+
 public interface i_DAO_ES
 {
     // returns all entries from Table
