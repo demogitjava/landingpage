@@ -3,6 +3,11 @@ package de.jgsoftware.landingpage.model.jpa.mawi;
 import javax.persistence.*;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "Belegarten", schema = "PUBLIC", catalog = "MAWI")
 public class Belegarten
