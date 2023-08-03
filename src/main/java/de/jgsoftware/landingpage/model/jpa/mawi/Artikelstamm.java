@@ -4,6 +4,11 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
+
+/**
+ *
+ * @author hoscho
+ */
 @Entity
 @Table(name = "ARTIKELSTAMM", schema = "PUBLIC", catalog = "MAWI")
 public class Artikelstamm
