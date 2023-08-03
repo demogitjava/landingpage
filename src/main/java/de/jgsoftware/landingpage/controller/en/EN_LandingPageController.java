@@ -8,6 +8,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Controller
 public class EN_LandingPageController implements iEN_Controller
 {
