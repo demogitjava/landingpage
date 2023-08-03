@@ -15,6 +15,11 @@ import java.util.List;
 
 import de.jgsoftware.landingpage.dao.interfaces.demodb.j_jpa_users;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Repository
 public class Dao_admin implements i_dao_admin
 {
