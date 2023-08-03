@@ -31,7 +31,7 @@ public class ES_DAO implements i_DAO_ES
     @Autowired
     i_jpa_webtextlayout ijpashopwebtextlayout;
     
-      @Autowired
+    @Autowired
     i_jpa_bootstrap_components ijpashopbootstrapcomponents;
     
 
