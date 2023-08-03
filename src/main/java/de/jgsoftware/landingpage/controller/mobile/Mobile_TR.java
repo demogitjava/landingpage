@@ -7,6 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 import de.jgsoftware.landingpage.service.interfaces.mobile.i_tr_mobile_service;
 
+
+/**
+ *
+ * @author hoscho
+ */
 @Controller
 public class Mobile_TR implements i_mobile_tr
 {
