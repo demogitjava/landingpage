@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.dao.interfaces.shopdb.IDaoDemoPageController;
 
 import java.io.InputStream;
 
+/**
+ *
+ * @author hoscho
+ */
+
 public interface IServiceIndex
 {
     IDaoDemoPageController getDcontroller();
