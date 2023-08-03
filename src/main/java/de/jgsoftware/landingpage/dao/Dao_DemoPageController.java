@@ -34,7 +34,10 @@ import javax.sql.DataSource;
 import org.apache.catalina.Manager;
 import org.springframework.transaction.annotation.Transactional;
 
-
+/**
+ *
+ * @author hoscho
+ */
 
 @Repository
 public class Dao_DemoPageController implements IDaoDemoPageController
