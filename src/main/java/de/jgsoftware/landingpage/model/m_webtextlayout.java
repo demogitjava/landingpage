@@ -3,7 +3,10 @@ package de.jgsoftware.landingpage.model;
 
 import javax.persistence.*;
 
-
+/**
+ *
+ * @author hoscho
+ */
 @Entity
 @Table(name = "webtextlayout")
 public class m_webtextlayout
