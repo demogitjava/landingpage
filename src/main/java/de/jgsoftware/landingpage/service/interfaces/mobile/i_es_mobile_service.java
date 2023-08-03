@@ -2,6 +2,11 @@ package de.jgsoftware.landingpage.service.interfaces.mobile;
 
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_ES;
 
+/**
+ *
+ * @author hoscho
+ */
+
 public interface i_es_mobile_service
 {
    i_DAO_ES getI_dao_es();
