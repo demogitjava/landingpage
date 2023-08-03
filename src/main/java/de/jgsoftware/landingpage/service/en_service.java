@@ -5,6 +5,11 @@ import de.jgsoftware.landingpage.service.interfaces.ien_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class en_service implements ien_service
 {
