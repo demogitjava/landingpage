@@ -17,6 +17,10 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 
+/**
+ *
+ * @author hoscho
+ */
 
 @Service
 public class admin_service implements i_admin_service
@@ -92,7 +96,7 @@ public class admin_service implements i_admin_service
 
         } catch (ScriptException e) {
             e.printStackTrace();
-        };
+        }
 
         return manager;
     }
