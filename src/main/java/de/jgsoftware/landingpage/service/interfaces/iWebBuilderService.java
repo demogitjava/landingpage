@@ -1,6 +1,11 @@
 package de.jgsoftware.landingpage.service.interfaces;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 public interface iWebBuilderService
 {
     de.jgsoftware.landingpage.dao.interfaces.shopdb.iDaoWebBuilder getiDaoWebBuilder();
