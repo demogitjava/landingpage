@@ -5,6 +5,12 @@ import de.jgsoftware.landingpage.service.mobile.it_mobile_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
+
+
+/**
+ *
+ * @author hoscho
+ */
 @Controller
 public class Mobile_IT implements i_mobile_it
 {
