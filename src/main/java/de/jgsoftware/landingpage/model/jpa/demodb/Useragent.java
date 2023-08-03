@@ -10,6 +10,11 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "Useragent")
 public class Useragent implements Serializable
