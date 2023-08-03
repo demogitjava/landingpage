@@ -5,6 +5,11 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Entity
 @Table(name = "useragent")
 public class useragent
