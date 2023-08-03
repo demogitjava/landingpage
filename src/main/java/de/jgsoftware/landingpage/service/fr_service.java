@@ -5,17 +5,27 @@ import de.jgsoftware.landingpage.service.interfaces.ifr_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ *
+ * @author hoscho
+ */
+
 @Service
 public class fr_service implements ifr_service
 {
     @Autowired
     i_DAO_FR i_dao_fr;
 
-
+    /**
+     *
+     * @return
+     */
+    @Override
     public i_DAO_FR getI_dao_fr() {
         return i_dao_fr;
     }
 
+    @Override
     public void setI_dao_fr(i_DAO_FR i_dao_fr) {
         this.i_dao_fr = i_dao_fr;
     }
