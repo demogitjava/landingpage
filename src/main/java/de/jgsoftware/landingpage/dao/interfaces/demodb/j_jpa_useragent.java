@@ -5,12 +5,13 @@ import de.jgsoftware.landingpage.model.useragent;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author hoscho
  */
-
+@Repository
 public interface j_jpa_useragent extends JpaRepository<useragent, Integer>
 {
 
