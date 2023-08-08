@@ -9,7 +9,7 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "BUCHUNGSDATEN", schema = "PUBLIC", catalog = "MAWI")
+//@Table(name = "BUCHUNGSDATEN", schema = "PUBLIC", catalog = "MAWI")
 public class Buchungsdaten
 {
     @Id
