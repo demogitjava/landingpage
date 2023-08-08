@@ -1,5 +1,6 @@
 package de.jgsoftware.landingpage.model.jpa.demodb;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -11,8 +12,8 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "SPRACHEN", schema = "PUBLIC", catalog = "DEMODB")
-public class Sprachen
+//@Table(name = "SPRACHEN", schema = "PUBLIC", catalog = "DEMODB")
+public class Sprachen 
 {
     @Id
     private Integer id;
