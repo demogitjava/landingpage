@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "Belegarten", schema = "PUBLIC", catalog = "MAWI")
+//@Table(name = "Belegarten", schema = "PUBLIC", catalog = "MAWI")
 public class Belegarten
 {
 
