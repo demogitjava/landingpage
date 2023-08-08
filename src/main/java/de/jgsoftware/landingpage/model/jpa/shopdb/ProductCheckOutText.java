@@ -8,7 +8,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "PRODUCT_CHECK_OUT_TEXT", schema = "PUBLIC", catalog = "SHOPDB")
+//@Table(name = "PRODUCT_CHECK_OUT_TEXT", schema = "PUBLIC", catalog = "SHOPDB")
 public class ProductCheckOutText {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
