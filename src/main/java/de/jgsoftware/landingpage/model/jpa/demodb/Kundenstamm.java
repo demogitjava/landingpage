@@ -15,7 +15,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "KUNDENSTAMM", schema = "PUBLIC", catalog = "DEMODB")
+//@Table(name = "KUNDENSTAMM", schema = "ROOT", catalog = "DEMODB")
 public class Kundenstamm
 {
     @Id
