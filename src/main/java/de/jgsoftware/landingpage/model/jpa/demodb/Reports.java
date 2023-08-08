@@ -11,7 +11,7 @@ import javax.persistence.Lob;
  */
 
 @Entity
-@Table(name = "REPORTS", schema = "PUBLIC", catalog = "DEMODB")
+//@Table(name = "REPORTS", schema = "PUBLIC", catalog = "DEMODB")
 public class Reports
 {
     @Id
