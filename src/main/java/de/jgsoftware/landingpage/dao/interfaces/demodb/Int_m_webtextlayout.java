@@ -8,6 +8,8 @@ import org.springframework.data.repository.CrudRepository;
  *
  * @author hoscho
  */
+
+
 public interface Int_m_webtextlayout extends CrudRepository<m_webtextlayout, Integer>
 {
 
