@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package de.jgsoftware.landingpage.dao.interfaces.shopdb;
 
 import de.jgsoftware.landingpage.model.m_webtextlayout;
