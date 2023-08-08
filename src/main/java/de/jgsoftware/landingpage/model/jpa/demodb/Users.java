@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "Users", schema = "PUBLIC", catalog = "DEMODB")
+//@Table(name = "Users", schema = "PUBLIC", catalog = "DEMODB")
 public class Users
 {
     @Id
