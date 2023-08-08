@@ -10,7 +10,7 @@ import java.util.Date;
  * @author hoscho
  */
 @Entity
-@Table(name = "ARTIKELSTAMM", schema = "PUBLIC", catalog = "MAWI")
+//@Table(name = "ARTIKELSTAMM", schema = "PUBLIC", catalog = "MAWI")
 public class Artikelstamm
 {
     @Id
