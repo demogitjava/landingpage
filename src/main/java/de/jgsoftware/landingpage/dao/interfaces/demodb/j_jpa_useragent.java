@@ -1,7 +1,7 @@
 package de.jgsoftware.landingpage.dao.interfaces.demodb;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import de.jgsoftware.landingpage.model.useragent;
+import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
  * @author hoscho
  */
 @Repository
-public interface j_jpa_useragent extends JpaRepository<useragent, Integer>
+public interface j_jpa_useragent extends JpaRepository<Useragent, Integer>
 {
 
     
