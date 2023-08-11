@@ -5,7 +5,7 @@
 package de.jgsoftware.landingpage.dao.interfaces.shopdb;
 
 
-import de.jgsoftware.landingpage.model.Users;
+import de.jgsoftware.landingpage.model.jpa.shopdb.Users;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
