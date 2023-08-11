@@ -115,15 +115,15 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List loadbrowserconnectmonth()
     {
-        /*
+        
         List<useragent> connectsmonth = jtm.query(
                 "select count(datum) as count, \n" +
                         "EXTRACT(MONTH FROM datum) as monat,\n" +
                         "EXTRACT(YEAR FROM datum) as JAHR\n" +
                         "from useragent\n" +
                         "group by monat, jahr", new BeanPropertyRowMapper(useragent.class));
-                        */
-        List<useragent> connectsmonth = (List) ijpauseragent.useragentgroupbyyearmonth();
+                       
+        //List<useragent> connectsmonth = (List) ijpauseragent.useragentgroupbyyearmonth();
         return connectsmonth;
     }
 
@@ -136,10 +136,10 @@ public class Dao_admin implements i_dao_admin
     @Override
     public List countofyear()
     {
-        //List<useragent> countmonth = jtm.query(
-          //      "select count(datum) as count, EXTRACT(MONTH FROM datum) as MONTH, EXTRACT(YEAR FROM datum) as YEAR from useragent group by MONTH, YEAR", new BeanPropertyRowMapper(useragent.class));
+        List<useragent> countmonth = jtm.query(
+                "select count(datum) as count, EXTRACT(MONTH FROM datum) as MONTH, EXTRACT(YEAR FROM datum) as YEAR from useragent group by MONTH, YEAR", new BeanPropertyRowMapper(useragent.class));
         
-        List<useragent> countmonth = (List) ijpauseragent.useragentcountmonth();
+        //List<useragent> countmonth = (List) ijpauseragent.useragentcountmonth();
         
         return countmonth;
     }
