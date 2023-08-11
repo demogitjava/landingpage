@@ -94,7 +94,7 @@ public class DemoDBConfig extends HikariConfig
 
         properties.put("hibernate.dialect", "org.hibernate.dialect.DerbyDialect");
         return builder.dataSource(dataSource).properties(properties)
-                .packages("de.jgsoftware.landingpage.model").persistenceUnit("derbydemodb").build();
+                .packages("de.jgsoftware.landingpage.model.jpa.demodb").persistenceUnit("derbydemodb").build();
 
     }
 
