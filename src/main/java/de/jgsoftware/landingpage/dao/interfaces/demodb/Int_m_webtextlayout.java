@@ -1,6 +1,6 @@
 package de.jgsoftware.landingpage.dao.interfaces.demodb;
 
-import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.demodb.m_webtextlayout;
 import org.springframework.data.repository.CrudRepository;
 
 
