@@ -3,7 +3,7 @@ package de.jgsoftware.landingpage.dao.interfaces.demodb;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import de.jgsoftware.landingpage.model.Users;
+import de.jgsoftware.landingpage.model.jpa.demodb.Users;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
