@@ -22,7 +22,7 @@ public class Useragent implements Serializable
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Integer id;
 
     private String ipAddress;
 
