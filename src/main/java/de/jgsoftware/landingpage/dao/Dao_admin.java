@@ -2,6 +2,7 @@ package de.jgsoftware.landingpage.dao;
 
 import de.jgsoftware.landingpage.dao.interfaces.demodb.Int_m_webtextlayout;
 import de.jgsoftware.landingpage.dao.interfaces.i_dao_admin;
+import de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
 import de.jgsoftware.landingpage.model.dashboardgraphicline;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
@@ -55,7 +56,7 @@ public class Dao_admin implements i_dao_admin
     
 
     @Override
-    public void saveFormModalData(m_webtextlayout webtextlayout)
+    public void saveFormModalData(Webtextlayout webtextlayout)
     {
 
         int_mwebtextlayout.save(webtextlayout);
@@ -65,11 +66,11 @@ public class Dao_admin implements i_dao_admin
 
     // returns all entriys from Table
     @Override
-    public List<m_webtextlayout> getPageLanguageText()
+    public List<Webtextlayout> getPageLanguageText()
     {
         //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
         //ijpashopwebtextlayout.findAll();
-        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
+        List<Webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
 
 
         return webtextlayouts;
@@ -78,12 +79,12 @@ public class Dao_admin implements i_dao_admin
 
     // return Navbar Items to DemoPageController
     @Override
-    public List<m_webtextlayout> getWebtextentriys()
+    public List<Webtextlayout> getWebtextentriys()
     {
         
         // manuell query jtm2 shopdb
         //List<m_webtextlayout> pagenavbar = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
-        List<m_webtextlayout> pagenavbar = (List) ijpashopwebtextlayout.findAll();
+        List<Webtextlayout> pagenavbar = (List) ijpashopwebtextlayout.findAll();
 
         return pagenavbar;
     }
