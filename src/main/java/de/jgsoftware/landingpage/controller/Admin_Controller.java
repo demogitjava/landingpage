@@ -3,7 +3,7 @@ package de.jgsoftware.landingpage.controller;
 
 import de.jgsoftware.landingpage.controller.interfaces.iAdminController;
 import de.jgsoftware.landingpage.model.dashboardgraphicline;
-import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout;
 import de.jgsoftware.landingpage.service.interfaces.i_admin_service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -171,7 +171,7 @@ public class Admin_Controller implements iAdminController
     }
 
     @Override
-    public String submitForm(m_webtextlayout webtextlayout) {
+    public String submitForm(Webtextlayout webtextlayout) {
 
 
 
