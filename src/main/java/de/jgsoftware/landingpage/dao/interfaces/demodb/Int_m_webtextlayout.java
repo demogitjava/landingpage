@@ -12,5 +12,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface Int_m_webtextlayout extends CrudRepository<Webtextlayout, Integer>
 {
-
+ 
 }
