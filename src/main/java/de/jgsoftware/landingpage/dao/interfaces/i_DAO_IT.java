@@ -1,5 +1,6 @@
 package de.jgsoftware.landingpage.dao.interfaces;
 
+import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
 import de.jgsoftware.landingpage.model.m_bootstrap_components;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 
@@ -17,5 +18,5 @@ public interface i_DAO_IT
 
     // returns all entries from stored Bootstrap Compoents
     // with ${ value } for mapping to Theamyleaf
-    List<m_bootstrap_components> getBootstrapComponents();
+    List<BootstrapComponents> getBootstrapComponents();
 }
