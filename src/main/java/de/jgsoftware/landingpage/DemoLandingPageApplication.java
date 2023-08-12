@@ -48,9 +48,9 @@ public class DemoLandingPageApplication {
 
     //@Override
     //public static void main(String[] args) {
-      //  SpringApplication.run(DemoLandingPageApplication.class, args);
-   // }
- public static String st_timezones = "Europe/Berlin";
+    //  SpringApplication.run(DemoLandingPageApplication.class, args);
+    // }
+    public static String st_timezones = "Europe/Berlin";
     public static String operationsytem = null;
 
     public static void main(String[] args)
