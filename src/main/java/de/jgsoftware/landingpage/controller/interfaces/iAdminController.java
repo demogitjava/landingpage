@@ -1,6 +1,7 @@
 package de.jgsoftware.landingpage.controller.interfaces;
 
-import de.jgsoftware.landingpage.model.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.shopdb.m_webtextlayout;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,7 +20,7 @@ public interface iAdminController
     ModelAndView admin();
 
     @PostMapping("/edit/crudlist")
-    String submitForm(m_webtextlayout webtextlayout);
+    public String submitForm(Webtextlayout webtextlayout);
 
 
     /*
