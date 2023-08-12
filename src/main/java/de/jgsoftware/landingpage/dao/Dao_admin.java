@@ -175,13 +175,14 @@ public class Dao_admin implements i_dao_admin
     
     // List allconnectsbymonth();
     @Override
-    public List  allconnectsbymonth()
+    public List allconnectsbymonth()
     {
       
       
-        List<useragent> allconnectsbymonth = jtm.query(
-                "select count(stbrowser), stbrowser, stsystem, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent group by stbrowser, month, year, stsystem order by current_date", new BeanPropertyRowMapper(useragent.class));
+        //List<useragent> allconnectsbymonth = jtm.query(
+          //      "select count(stbrowser), stbrowser, stsystem, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent group by stbrowser, month, year, stsystem order by current_date", new BeanPropertyRowMapper(useragent.class));
         
+         List<useragent> allconnectsbymonth = (List) ijpauseragent.allbrowserconnectsmonth();
         return allconnectsbymonth;
     }
     
