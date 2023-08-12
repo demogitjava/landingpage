@@ -1,5 +1,6 @@
 package de.jgsoftware.landingpage.dao.interfaces;
 
+import de.jgsoftware.landingpage.model.jpa.demodb.Webtextlayout;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 
 import java.util.List;
@@ -13,11 +14,11 @@ import javax.sql.DataSource;
 public interface i_dao_admin
 {
 
-    void saveFormModalData(m_webtextlayout webtextlayout);
+   
+    void saveFormModalData(Webtextlayout webtextlayout);
+    List<Webtextlayout> getPageLanguageText();
 
-    List<m_webtextlayout> getPageLanguageText();
-
-    List<m_webtextlayout> getWebtextentriys();
+    List<Webtextlayout> getWebtextentriys();
 
     Integer getusercount();
 
