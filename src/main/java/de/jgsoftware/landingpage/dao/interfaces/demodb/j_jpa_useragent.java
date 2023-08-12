@@ -27,7 +27,14 @@ public interface j_jpa_useragent extends JpaRepository<Useragent, Integer>
     List<Useragent> useragentcountmonth();
     
  
+    // select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat 
+    // from useragent u 
+    //   group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM
     
+    @Query(value="select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat \n" +
+"from useragent u \n" +
+"group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM", nativeQuery = true)
+    List<Useragent> allbrowserconnects();
     
     
 }
