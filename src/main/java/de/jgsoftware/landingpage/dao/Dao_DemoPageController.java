@@ -129,15 +129,17 @@ public class Dao_DemoPageController implements IDaoDemoPageController
        // manuel Query JdbcTempalte jtm
        // Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
           
-        Long countid = (Long) ijpauseragent.count();
+        Long countid2 = (Long) ijpauseragent.count();
+        Integer countid = countid2.intValue();  // convert long to Integer
         if(countid == 0)
         {
-            countid = Long.valueOf(1);
+           // countid = Long.valueOf(1);
+            countid = 1;
             muagent.setId(countid);
         }
         else if(countid > 0)
         {
-            long l = countid + 1;
+            Integer l = countid + 1;
             muagent.setId(l);
         }
 
