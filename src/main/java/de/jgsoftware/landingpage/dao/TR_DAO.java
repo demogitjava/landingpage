@@ -4,7 +4,7 @@ package de.jgsoftware.landingpage.dao;
 import de.jgsoftware.landingpage.dao.interfaces.i_DAO_TR;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_bootstrap_components;
 import de.jgsoftware.landingpage.dao.interfaces.shopdb.i_jpa_webtextlayout;
-import de.jgsoftware.landingpage.model.m_bootstrap_components;
+import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
 import de.jgsoftware.landingpage.model.m_webtextlayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -52,7 +52,7 @@ public class TR_DAO implements i_DAO_TR
     // returns all entriys from stored Bootstrap Compoents
     // with ${ value } for mapping to Theamyleaf
     @Override
-    public List<m_bootstrap_components> getBootstrapComponents()
+    public List<BootstrapComponents> getBootstrapComponents()
     {
 
         // query("select * from bootstrap_components", new BeanPropertyRowMapper(m_bootstrap_comonents.class));
@@ -62,7 +62,7 @@ public class TR_DAO implements i_DAO_TR
         //maneul Query jdbcTempalte jtm2 shopdb
         //List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
 
-        List<m_bootstrap_components> bootstrap_comonents = ijpashopbootstrapcomponents.findAll();
+        List<BootstrapComponents> bootstrap_comonents = ijpashopbootstrapcomponents.findAll();
         
         return bootstrap_comonents;
     }
