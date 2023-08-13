@@ -16,7 +16,7 @@ import java.util.Date;
  */
 
 @Entity
-@Table(name = "Useragent")
+//@Table(name = "Useragent")
 public class Useragent implements Serializable
 {
 
@@ -36,13 +36,17 @@ public class Useragent implements Serializable
 
     private Timestamp timestamp;
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
+
+    
+
+  
 
     public String getIpAddress() {
         return ipAddress;
