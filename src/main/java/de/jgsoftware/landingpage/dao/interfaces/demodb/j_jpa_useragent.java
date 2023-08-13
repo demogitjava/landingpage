@@ -23,8 +23,8 @@ public interface j_jpa_useragent extends JpaRepository<Useragent, Integer>
     @Query(value="select u.id as ID, count(u.ID) as count, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum)", nativeQuery = true)
     List<Useragent> useragentgroupbyyearmonth();
     
-    @Query(value="select u.id as ID, count(u.ID) as count, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum)", nativeQuery = true)
-    List<Useragent> useragentcountmonth();
+    @Query(value="select count(u.ID) as count, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum)", nativeQuery = true)
+    List useragentcountmonth();
     
  
     // select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat 
@@ -32,8 +32,8 @@ public interface j_jpa_useragent extends JpaRepository<Useragent, Integer>
     //   group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM
     
     @Query(value="select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM", nativeQuery = true)
-    List<Useragent> allbrowserconnects();
+    List allbrowserconnects();
     
     @Query(value="select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM", nativeQuery = true)
-    List<Useragent> allbrowserconnectsmonth();
+    List allbrowserconnectsmonth();
 }
