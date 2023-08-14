@@ -109,7 +109,7 @@ public class Dao_admin implements i_dao_admin
         // manuel query jdbc Template demodb
         //Integer connectsmonth = jtm.queryForObject("select count(id) from users", Integer.class);
        
-         long lconmonth = ijpausers.count();
+        long lconmonth = ijpausers.count();
         Integer connectsmonth = Long.valueOf(lconmonth).intValue();
         return connectsmonth;
     }
@@ -205,8 +205,11 @@ public class Dao_admin implements i_dao_admin
     public Long connectsmonthnavbar(int month, int year)
     {
       
-        
-        long navbarmonth = jtm.queryForObject("select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", Long.class);
+        // manuel query 
+        // demodb h2
+        //long navbarmonth = jtm.queryForObject("select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", Long.class);
+
+         long navbarmonth = ijpauseragent.allconnectsmonthyear(month, year);
 
       
        // List<useragent> connectsmonthnavbar = jtm.query(
