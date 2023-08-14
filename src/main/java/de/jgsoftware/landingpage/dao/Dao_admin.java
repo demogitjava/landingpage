@@ -237,8 +237,12 @@ public class Dao_admin implements i_dao_admin
     public List connectsnavbargraphicalyear(int year)
     {
         
-         List<dashboardgraphicline> connectsnavbargraphicalyear = jtm.query(
-                "select count(stbrowser) as count, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent WHERE year(datum) = " + "'" + year + "'" + " group by month, year order by current_date", new BeanPropertyRowMapper(dashboardgraphicline.class));
+        // manuel query h2 demodb
+        // List<dashboardgraphicline> connectsnavbargraphicalyear = jtm.query(
+        //        "select count(stbrowser) as count, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent WHERE year(datum) = " + "'" + year + "'" + " group by month, year order by current_date", new BeanPropertyRowMapper(dashboardgraphicline.class));
+        
+        List<dashboardgraphicline> connectsnavbargraphicalyear = ijpauseragent.connectsnavbargraphicalyear(year);
+        
         return connectsnavbargraphicalyear;
        
     }
