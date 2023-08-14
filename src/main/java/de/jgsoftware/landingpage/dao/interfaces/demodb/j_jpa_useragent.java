@@ -36,4 +36,8 @@ public interface j_jpa_useragent extends JpaRepository<Useragent, Integer>
     
     @Query(value="select count(u.stbrowser) as count, u.STBROWSER, u.STSYSTEM, YEAR(u.datum) as jahr, MONTH(u.datum) as monat from useragent u group by YEAR(u.datum), MONTH(u.datum), u.STBROWSER, u.STSYSTEM", nativeQuery = true)
     List allbrowserconnectsmonth();
+    
+    
+    @Query(value="select count(u.stbrowser) as count from useragent u where YEAR(u.datum) = :year", nativeQuery = true)
+    Long allconnectsnavbaryear(int year);
 }
