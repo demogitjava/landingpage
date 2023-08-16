@@ -66,10 +66,12 @@ public class DaoWebBuilder implements iDaoWebBuilder
         // SqlRowSet rs = select.queryForRowSet(query, new HashMap<String, Object>());
         
         // jdbc query jdbc Tempalte jtm2 shopdb
-        List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
+        //List<m_bootstrap_components> bootstrap_comonents = jtm2.query("select * from BOOTSTRAP_COMPONENTS", new BeanPropertyRowMapper(m_bootstrap_components.class));
 
+        
+        
         // ijpashopbootstrapcomponents
-        //List<m_bootstrap_components> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
+        List<m_bootstrap_components> bootstrap_comonents = (List) ijpashopbootstrapcomponents.findAll();
 
         return bootstrap_comonents;
     }
