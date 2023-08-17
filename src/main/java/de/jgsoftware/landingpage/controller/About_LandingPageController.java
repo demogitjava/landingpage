@@ -72,7 +72,7 @@ public class About_LandingPageController implements iAboutController
          *   inject text from with webtextcomp[0] fist id of table
          */
         mv.addObject("webtextcomp", iServiceIndex.getDcontroller().getPageLanguageText());
-        mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
+       // mv.addObject("btcomp", iServiceIndex.getDcontroller().getBootstrapComponents());
 
 
 

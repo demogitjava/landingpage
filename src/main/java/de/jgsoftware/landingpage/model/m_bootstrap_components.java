@@ -8,7 +8,7 @@ import javax.persistence.*;
  * @author hoscho
  */
 @Entity
-@Table(name = "bootstrap_components")
+//@Table(name = "bootstrap_components")
 public class m_bootstrap_components
 {
     @Id

@@ -8,7 +8,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "BOOTSTRAP_COMPONENTS", schema = "PUBLIC", catalog = "SHOPDB")
+@Table(name = "BOOTSTRAP_COMPONENTS", schema = "ROOT", catalog = "SHOPDB")
 public class BootstrapComponents {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
