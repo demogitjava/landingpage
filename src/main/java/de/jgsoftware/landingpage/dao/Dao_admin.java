@@ -98,7 +98,7 @@ public class Dao_admin implements i_dao_admin
         // manuel query demodb
         //Integer usercount = jtm.queryForObject("select count(id) from users", Integer.class);
         
-        long lusercount = ijpausers.count();
+        Long lusercount = ijpausers.count();
         Integer usercount = Long.valueOf(lusercount).intValue();
         return usercount;
     }
@@ -184,7 +184,7 @@ public class Dao_admin implements i_dao_admin
         //List<useragent> allconnectsbymonth = jtm.query(
           //      "select count(stbrowser), stbrowser, stsystem, EXTRACT(MONTH FROM datum) as month, EXTRACT(YEAR FROM datum) as year from useragent group by stbrowser, month, year, stsystem order by current_date", new BeanPropertyRowMapper(useragent.class));
         //ijpauseragent.allbrowserconnectsmonth();
-         List<Useragent> allconnectsbymonth = (List<Useragent>) ijpauseragent.allbrowserconnectsmonth();
+        List<Useragent> allconnectsbymonth = (List<Useragent>) ijpauseragent.allbrowserconnectsmonth();
         return allconnectsbymonth;
     }
     
@@ -209,7 +209,8 @@ public class Dao_admin implements i_dao_admin
         // demodb h2
         //long navbarmonth = jtm.queryForObject("select count(id) from useragent WHERE month(datum) = " + "'" + month + "'" + " and year(datum) = " + "'" + year + "'", Long.class);
 
-         long navbarmonth = ijpauseragent.allconnectsmonthyear(month, year);
+         ijpauseragent.allconnectsmonthyear(month, year);
+         Long navbarmonth = ijpauseragent.allconnectsmonthyear(month, year);
 
       
        // List<useragent> connectsmonthnavbar = jtm.query(

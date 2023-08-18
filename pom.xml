@@ -24,6 +24,8 @@
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
         <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
 
@@ -86,7 +88,8 @@
             <version>1.14.3</version>
             <scope>compile</scope>
         </dependency>
-
+        
+       
         <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
         <dependency>
             <groupId>javax.persistence</groupId>
@@ -94,20 +97,21 @@
             <version>2.2</version>
         </dependency>
 
+        <!-- send email -->
+
+
+
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-
-
-
-        <!-- send email -->
-        <dependency>
+        </dependency><dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
 
         <!-- Spring Context Support -->
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
@@ -117,8 +121,7 @@
             <groupId>org.springframework.shell</groupId>
             <artifactId>spring-shell-standard</artifactId>
             <version>2.0.1.RELEASE</version>
-        </dependency>
-        <dependency>
+        </dependency><dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-compress</artifactId>
             <version>1.9</version>
@@ -131,12 +134,12 @@
             <version>1.5.3</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        <dependency>
+        </dependency><dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>

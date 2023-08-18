@@ -59,7 +59,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 						"service",
 						"contact",
 						"wiki",
-						"/h2-console/**",
+						//"/h2-console/**",
 						"static/**").permitAll()
 
 				//.antMatchers("/profile/**").access("hasRole('ROLE_USER')")
@@ -77,11 +77,11 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 	}
 
-	@Override
-	public void configure(WebSecurity web)
-	{
-		web.ignoring().antMatchers("/h2-console/**");
-	}
+	//@Override
+	//public void configure(WebSecurity web)
+	//{
+		//web.ignoring().antMatchers("/h2-console/**");
+	//}
 
 
 
