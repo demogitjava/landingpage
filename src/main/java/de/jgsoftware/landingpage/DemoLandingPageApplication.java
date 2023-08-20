@@ -1,29 +1,12 @@
 package de.jgsoftware.landingpage;
 
-import org.h2.tools.Server;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.sql.DataSource;
-import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-
-import de.jgsoftware.landingpage.dao.interfaces.*;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 
