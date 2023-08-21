@@ -37,9 +37,9 @@ public class dashboardgraphicline
     
     private Integer count;
    
-    private Integer month;
+    private Integer monat;
     
-    private Integer year;
+    private Integer jahr;
 
     public int getId() {
         return id;
@@ -57,24 +57,22 @@ public class dashboardgraphicline
         this.count = count;
     }
 
-    public Integer getMonth() {
-        return month;
+    public Integer getMonat() {
+        return monat;
     }
 
-    public void setMonth(Integer month) {
-        this.month = month;
+    public void setMonat(Integer monat) {
+        this.monat = monat;
     }
 
-    public Integer getYear() {
-        return year;
+    public Integer getJahr() {
+        return jahr;
     }
 
-    public void setYear(Integer year) {
-        this.year = year;
+    public void setJahr(Integer jahr) {
+        this.jahr = jahr;
     }
 
-    
-  
     
     
        
