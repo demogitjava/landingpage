@@ -35,11 +35,11 @@ public class dashboardgraphicline
     private int id;
     
     
-    private Integer count;
+    private int count;
    
-    private Integer monat;
+    private int monat;
     
-    private Integer jahr;
+    private int jahr;
 
     public int getId() {
         return id;
@@ -49,32 +49,30 @@ public class dashboardgraphicline
         this.id = id;
     }
 
-    public Integer getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
-    public Integer getMonat() {
+    public int getMonat() {
         return monat;
     }
 
-    public void setMonat(Integer monat) {
+    public void setMonat(int monat) {
         this.monat = monat;
     }
 
-    public Integer getJahr() {
+    public int getJahr() {
         return jahr;
     }
 
-    public void setJahr(Integer jahr) {
+    public void setJahr(int jahr) {
         this.jahr = jahr;
     }
 
     
-    
-       
     
 }

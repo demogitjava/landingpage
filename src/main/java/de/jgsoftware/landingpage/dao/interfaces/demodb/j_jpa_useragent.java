@@ -1,5 +1,6 @@
 package de.jgsoftware.landingpage.dao.interfaces.demodb;
 
+import de.jgsoftware.landingpage.model.dashboardgraphicline;
 import org.springframework.data.jpa.repository.JpaRepository;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 import org.springframework.data.jpa.repository.Query;

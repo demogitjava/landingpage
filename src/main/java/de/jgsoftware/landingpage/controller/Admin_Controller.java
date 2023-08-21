@@ -204,7 +204,7 @@ public class Admin_Controller implements iAdminController
             System.out.print("not login");
             returntologin();
         } else {
-            connectsyear = (List<dashboardgraphicline>) admin_service.getconnectdatayear();
+            connectsyear = admin_service.getconnectdatayear();
 
             //month day value
             //[1, 1, 23,  1), 17],
@@ -234,10 +234,10 @@ public class Admin_Controller implements iAdminController
 
 
             for(int i = 0; i < indexlist; i++) {
-                Integer obcount = connectsyear.get(i).getCount();
-                Integer obmonth = connectsyear.get(i).getMonat(); // month
+                int obcount = connectsyear.get(i).getCount();
+                int obmonth = connectsyear.get(i).getMonat(); // month
                 
-                Integer obyear = connectsyear.get(i).getJahr(); // year
+                int obyear = connectsyear.get(i).getJahr(); // year
                 //Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
                 //Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
 
