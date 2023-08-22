@@ -234,10 +234,10 @@ public class Admin_Controller implements iAdminController
 
 
             for(int i = 0; i < indexlist; i++) {
-                int obcount = connectsyear.get(i).getCount();
-                int obmonth = connectsyear.get(i).getMonat(); // month
+                int obcount = 1;
+                int obmonth = 2;
                 
-                int obyear = connectsyear.get(i).getJahr(); // year
+                int obyear = 2023;
                 //Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
                 //Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
 

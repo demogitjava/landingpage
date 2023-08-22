@@ -210,11 +210,11 @@
                         <configuration>
 
                             <classifier>spring-boot</classifier>
-                            <mainClass>de.jgsoftware.landingpage.iDemoLandingPage</mainClass>
+                            <mainClass>de.jgsoftware.landingpage.DemoLandingPage</mainClass>
                         </configuration>
                     </execution>
                 </executions>
-                <version>2.1.5.RELEASE</version>
+                <version>3.1.2</version>
             </plugin>
 
 
