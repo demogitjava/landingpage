@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 import org.springframework.stereotype.Repository;
-
+import java.util.ArrayList; 
 /**
  *
  * @author hoscho

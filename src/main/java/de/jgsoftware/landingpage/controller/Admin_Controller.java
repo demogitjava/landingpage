@@ -234,12 +234,23 @@ public class Admin_Controller implements iAdminController
 
 
             for(int i = 0; i < indexlist; i++) {
-                int obcount = 1;
-                int obmonth = 2;
+              
                 
-                int obyear = 2023;
-                //Object obmonth = ((Object[]) connectsyear.get(i))[1]; // month
-                //Object obyear = ((Object[]) connectsyear.get(i))[2]; // year
+                de.jgsoftware.landingpage.model.dashboardgraphicline dashgrafiline = new de.jgsoftware.landingpage.model.dashboardgraphicline();
+                Object objrow = connectsyear.get(i);
+                  
+                Object[] objrowarray = (Object[]) objrow;
+                //System.out.print("count " + objrowarray[0] + "\n");
+                //System.out.print("month" + objrowarray[1] + "\n");
+                //System.out.print("year " + objrowarray[2] + "\n");
+              
+                
+                int obcount = (int) objrowarray[0];
+               
+                int obmonth = (int) objrowarray[1];
+                
+                int obyear = (int) objrowarray[2];
+             
 
                 Integer intmonth = (Integer) obmonth;
 
