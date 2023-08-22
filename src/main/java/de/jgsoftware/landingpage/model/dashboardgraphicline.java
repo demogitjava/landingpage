@@ -32,47 +32,48 @@ public class dashboardgraphicline
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
     
     
-    private int count;
+    private Integer count;
    
-    private int monat;
+    private Integer monat;
     
-    private int jahr;
+    private Integer jahr;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getCount() {
+    public Integer getCount() {
         return count;
     }
 
-    public void setCount(int count) {
+    public void setCount(Integer count) {
         this.count = count;
     }
 
-    public int getMonat() {
+    public Integer getMonat() {
         return monat;
     }
 
-    public void setMonat(int monat) {
+    public void setMonat(Integer monat) {
         this.monat = monat;
     }
 
-    public int getJahr() {
+    public Integer getJahr() {
         return jahr;
     }
 
-    public void setJahr(int jahr) {
+    public void setJahr(Integer jahr) {
         this.jahr = jahr;
     }
 
+    
     
     
 }
