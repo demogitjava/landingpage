@@ -15,7 +15,8 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
-public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
+public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter
+{
 
 
 
@@ -25,7 +26,11 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private DataSource dataSource;
 
-	@Autowired
+        
+      
+	
+        
+        @Autowired
 	public void configAuthentication(AuthenticationManagerBuilder authBuilder) throws Exception {
 		authBuilder.jdbcAuthentication()
 				.dataSource(dataSource)
@@ -42,7 +47,6 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 
 
-	@Override
 	protected void configure(HttpSecurity http) throws Exception
 	{
 
@@ -77,11 +81,10 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 	}
 
-	//@Override
-	//public void configure(WebSecurity web)
-	//{
-		//web.ignoring().antMatchers("/h2-console/**");
-	//}
+	public void configure(WebSecurity web)
+	{
+		web.ignoring().antMatchers("/");
+	}
 
 
 

@@ -191,12 +191,14 @@
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <version>9.0.36</version>
-            <type>jar</type>
-        </dependency>
+        
+     <!-- https://mvnrepository.com/artifact/org.apache.tomcat/jakartaee-migration -->
+<dependency>
+    <groupId>org.apache.tomcat</groupId>
+    <artifactId>jakartaee-migration</artifactId>
+    <version>1.0.7</version>
+</dependency>
+
     </dependencies>
 
     <build>
