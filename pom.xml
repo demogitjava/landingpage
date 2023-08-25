@@ -191,9 +191,12 @@
             <artifactId>commons-net</artifactId>
             <version>3.6</version>
         </dependency>
-
-
-
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.36</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
     <build>
