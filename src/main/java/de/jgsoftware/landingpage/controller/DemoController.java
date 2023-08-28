@@ -3,7 +3,6 @@ package de.jgsoftware.landingpage.controller;
 
 import de.jgsoftware.landingpage.controller.interfaces.iDemoController;
 
-import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 import de.jgsoftware.landingpage.service.interfaces.IServiceIndex;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -14,16 +13,7 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 //import jakarta.servlet.http.HttpServletRequest;
 
-import javax.servlet.http.HttpServletRequest;
-import de.jgsoftware.landingpage.model.areacodes;
-import jakarta.faces.context.FacesContext;
-
-import java.io.IOException;
 import java.security.Principal;
-import java.security.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
 
 
 import ua_parser.Parser;
@@ -31,7 +21,6 @@ import ua_parser.Client;
 
 
 import java.util.Date;
-import java.util.Locale;
 
 
 /**
