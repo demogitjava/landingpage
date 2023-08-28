@@ -6,9 +6,9 @@ import javax.persistence.*;
  *
  * @author hoscho
  */
-
 @Entity
 public class Webtextlayout {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "ID")
