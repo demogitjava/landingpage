@@ -78,13 +78,13 @@ public class Dao_DemoPageController implements IDaoDemoPageController
 
     // returns all entriys from Table
     @Override
-    public List<m_webtextlayout> getPageLanguageText()
+    public List<Webtextlayout> getPageLanguageText()
     {
         
         // manual JdbcTemplate
         //List<m_webtextlayout> webtextlayouts = jtm2.query("select * from webtextlayout", new BeanPropertyRowMapper(m_webtextlayout.class));
        
-        List<m_webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
+        List<Webtextlayout> webtextlayouts = (List) ijpashopwebtextlayout.findAll();
         
         return webtextlayouts;
     }
