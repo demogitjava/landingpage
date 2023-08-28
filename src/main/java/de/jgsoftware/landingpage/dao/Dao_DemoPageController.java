@@ -10,7 +10,7 @@ import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
 import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
 
-import de.jgsoftware.landingpage.model.jpa.shopdb.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.shopdb.Webtextlayout;
 
 import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
