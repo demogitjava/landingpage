@@ -223,6 +223,21 @@
     <build>
         <plugins>
 
+                    <plugin>
+                        <groupId>org.apache.openejb.maven</groupId>
+                        <artifactId>tomee-maven-plugin</artifactId>
+                        <version>1.7.1</version>
+                        <configuration>
+                          <tomeeVersion>1.7.1</tomeeVersion>
+                          <tomeeClassifier>plus</tomeeClassifier>
+                        </configuration>
+                    </plugin>
+                    
+                    <plugin>
+                        <groupId>org.graalvm.buildtools</groupId>
+                        <artifactId>native-maven-plugin</artifactId>
+                    </plugin>
+            
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -238,7 +253,7 @@
                         </configuration>
                     </execution>
                 </executions>
-                <version>3.1.2</version>
+             
             </plugin>
 
 
@@ -251,6 +266,10 @@
                     <debug>false</debug>
                 </configuration>
             </plugin>
+            
+         
+   
+
 
         </plugins>
     </build>
