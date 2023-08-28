@@ -16,6 +16,7 @@ import org.springframework.web.servlet.support.RequestContextUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import de.jgsoftware.landingpage.model.areacodes;
+import jakarta.faces.context.FacesContext;
 
 import java.io.IOException;
 import java.security.Principal;
@@ -30,6 +31,7 @@ import ua_parser.Client;
 
 
 import java.util.Date;
+import java.util.Locale;
 
 
 /**
@@ -48,7 +50,8 @@ public class DemoController implements iDemoController
     IServiceIndex iServiceIndex;
 
     @Autowired
-    HttpServletRequest request;
+    javax.servlet.http.HttpServletRequest request;
+    
     ModelAndView mv;
 
     Principal principal;
@@ -59,6 +62,9 @@ public class DemoController implements iDemoController
     @Override
     public ModelAndView de() {
 
+        
+       
+     
         // ip address client
         String ipAddress = request.getRemoteAddr();
 
@@ -79,9 +85,12 @@ public class DemoController implements iDemoController
         System.out.println(c.os.family);        // => operation system
            */
 
+        
+        // javax.servlet 
         // browser language like "de"
         String languagestr = RequestContextUtils.getLocale(request).getLanguage();
 
+       
         Date date = new Date();
 
         de.jgsoftware.landingpage.model.jpa.demodb.Useragent muagent = new de.jgsoftware.landingpage.model.jpa.demodb.Useragent();
@@ -132,7 +141,7 @@ public class DemoController implements iDemoController
          *   only for this Controller
          */
 
-        mv.addObject("lang", languagestr);
+         mv.addObject("lang", languagestr);
 
 
         /**
