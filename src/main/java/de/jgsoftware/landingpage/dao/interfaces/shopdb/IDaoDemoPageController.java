@@ -2,7 +2,7 @@ package de.jgsoftware.landingpage.dao.interfaces.shopdb;
 
 import de.jgsoftware.landingpage.model.areacodes;
 import de.jgsoftware.landingpage.model.jpa.shopdb.BootstrapComponents;
-import de.jgsoftware.landingpage.model.jpa.shopdb.m_webtextlayout;
+import de.jgsoftware.landingpage.model.jpa.shopdb.Webtextlayout;
 import de.jgsoftware.landingpage.model.jpa.demodb.Useragent;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface IDaoDemoPageController
 {
-    List<m_webtextlayout> getPageLanguageText();
+    List<Webtextlayout> getPageLanguageText();
     List<BootstrapComponents> getBootstrapComponents();
 
     List<areacodes> areacodes_eu();
