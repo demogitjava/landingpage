@@ -4,10 +4,7 @@
 
 |  |  |  
 |--|--|  
-| [mirror 1 -> landingpage.jar](https://c.gmx.net/@628889413098673643/B7eMGuYjQPy7Agors4qo7g) |  2023 05 24|  
-|  [mirror 2 -> landingpage.jar](https://www.dropbox.com/s/cvhaj3tih2892jd/landingpage.jar?dl=0)| 2023 05 24 |  
-|  [mirror 2 -> landingpageh2.jar](http://demogitjava.ddns.net:8000/h2landingpage.jar)| 2023 06 17  http fileserver|
-|  |  |
+| [mirror 1 -> landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
 
 
 
