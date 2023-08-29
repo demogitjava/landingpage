@@ -4,8 +4,8 @@
 
 |  |  |  
 |--|--|  
-| [mirror 1 -> landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
-
+| [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
+ [native - landingpage.jar](http://demogitjava.ddns.net:8000/native-landingpage.jar) |  2023 08 29|  
 
 
 
@@ -20,11 +20,11 @@ The used maven 3.9.1 version
 ![enter image description here](https://raw.githubusercontent.com/demogitjava/demodatabase/master/landingapge.png)
 
 
-H2-CONSOLE  
-used db -> shopdb  
-available with  -**>your-ip/h2-console**
+derbydb 
+jdbc login 
+root
+jj78mvpr52k1
 
-username admin password jj78mvpr52k1
 
 to edit the text in the demo application  
 copy the segment and  
@@ -78,8 +78,11 @@ for bridge network -> 254 Containers
 
 router gateway from my provider is 10.255.255.1
 
+optional:
 `docker network create --driver=bridge --subnet=10.255.255.0/24 --ip-range=10.255.255.0/24 --gateway=10.255.255.1 10.255.255.0`
 
+
+to run a container on desktop pc
 `docker network create --driver=bridge --subnet=192.168.178.0/24 --ip-range=192.168.178.0/24 --gateway=192.168.178.1 192.168.178.0`
 
 **to publish the container over the internet
@@ -110,19 +113,3 @@ to load your image to docker desktop type:
 
 docker load --input landingpage.tar
 
-
-
-
--> for manual setup // Dockerfile ssh server - jetbrains gateway
-----------------------------------------  
-mount directory into docker container:  
-/root/.m2:/root/.m2    
-/root/IdeaProjects/landingpage:/root/IdeaProjects/landingpage    
-/usr/lib/jvm/graalvm-ce-java11-22.0.0.2:/usr/lib/jvm/graalvm-ce-java11-22.0.0.2    
-/root/IdeaProjects/demodatabase:/root/
-
-for jetbrains gateway or jetbrains eap you can alternative run   
-in the folder the docker-compose_jetbrains_gateway.yml as "compose"  
-watch out that the container is running in your network   
-in my case it is the 192.168.178.2 than you can connect.  
-I choose 4096 MB RAM for container debug with maven.
