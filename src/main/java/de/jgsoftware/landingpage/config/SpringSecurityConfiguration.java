@@ -81,10 +81,10 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter
 
 	}
 
-	public void configure(WebSecurity web)
-	{
-		web.ignoring().antMatchers("/");
-	}
+	//public void configure(WebSecurity web)
+	//{
+	//	web.ignoring().antMatchers("/");
+	//}
 
 
 
