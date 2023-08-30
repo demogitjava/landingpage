@@ -23,9 +23,11 @@
         <spring-boot.run.jvmArguments>-Duser.timezone=UTC</spring-boot.run.jvmArguments>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
-        <java.version>11</java.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+    
+        
+        <maven.compiler.release>11</maven.compiler.release>
+	<jakartaee-api.version>10.0.0</jakartaee-api.version>
+	<compiler-plugin.version>3.11.0</compiler-plugin.version>
     </properties>
 
 
