@@ -15,5 +15,7 @@ Any value defined here will override the pom.xml file value but is only applicab
 -->
         <netbeans.compile.on.save>all</netbeans.compile.on.save>
         <netbeans.hint.jdkPlatform>GraalVM20</netbeans.hint.jdkPlatform>
+        <org-netbeans-modules-javascript2-requirejs.enabled>false</org-netbeans-modules-javascript2-requirejs.enabled>
+        <org-netbeans-modules-javascript2-editor.jsversion>ECMA12</org-netbeans-modules-javascript2-editor.jsversion>
     </properties>
 </project-shared-configuration>
