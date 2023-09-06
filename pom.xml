@@ -232,6 +232,9 @@
                         <configuration>
                           <tomeeVersion>1.7.1</tomeeVersion>
                           <tomeeClassifier>plus</tomeeClassifier>
+                        
+                          <tomeeHttpPort>80</tomeeHttpPort>
+                         
                         </configuration>
                     </plugin>
                     
