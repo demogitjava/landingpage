@@ -25,13 +25,13 @@ ENV HTTP_PROXY="http://217.160.255.254:80"
 
 
 # add h2 database to root folder
-ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/demodb.mv.db /root/demodb.mv.db
-ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/mawi.mv.db /root/mawi.mv.db
-ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/shopdb.mv.db /root/shopdb.mv.db
+#ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/demodb.mv.db /root/demodb.mv.db
+#ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/mawi.mv.db /root/mawi.mv.db
+#ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/shopdb.mv.db /root/shopdb.mv.db
 
 
 # add network config for container to path /etc
-ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
+#ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
 
-ADD /target/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
+ADD /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
 ENTRYPOINT ["java", "-jar", "/root/landingpage.jar"]
