@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<header>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="description" content="demogitjava">
+    <meta name="description" content="demogit java">
+    <meta name="description" content="demo git java">
+
+    <meta name="google-site-verification" content="google3bcc7fb369b1dc91.html">
+
+
+    <meta name="keywords" content="Spring Boot, Thymeleaf, Bootstrap, Bootflat, Java, GraalVM" />
+    <meta name="keywords" content="landingpage, docker, webshop,financial accounting" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+    <meta name="description" content="Spring Boot, Docker, Thymeleaf, Bootstrap, Bootflat, Java, GraalVM, MaWi Software, Fibu Software">
+
+    <meta name="keywords" content="Spring Boot, spring boot, Thymeleaf, Bootstrap, Bootflat, Java, GraalVM" />
+    <meta name="keywords" content="landingpage, docker, webshop,financial accounting" />
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+
+
+    <title>mobile de</title>
+
+
+</header>
+
+<body>
+
+<div class="container">
+
+    <!--
+    <div th:insert="de/de_mobile-header.html"></div>
+       -->
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+        <div class="col-lg-7">
+
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-12">
+
+            <h1 class="font-weight-light" th:text="${webtextcomp[6].de}"></h1>
+            <p th:text="${webtextcomp[7].de}"></p>
+            <hr/>
+            <h2 th:text="${webtextcomp[15].de}"></h2><!-- In development !!! -->
+            <hr/>
+
+            <a class="btn btn-primary" th:href="@{/wiki}">More Info</a>
+
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body">
+            <p class="text-white m-0" th:text="${webtextcomp[8].de}"></p>
+        </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title" th:text="${webtextcomp[9].de}"></h2> <!-- landingpage -->
+                    <p class="card-text" th:text="${webtextcomp[10].de}"></p>
+
+                    <pre>
+                        <p>Datenbank -> shopdb</p>
+                    </pre>
+
+                    <p>start h2 jar in Container with:</p>
+                    <hr/>
+                    <pre>java -jar /root/h2/bin/h2-1.4.199.jar -webAllowOthers -tcpAllowOthers</pre>
+                    <hr/>
+                    <p>alternativ ist der Text &uumlber die URL</p>
+
+                    <hr/>
+
+                    <p>/h2-console
+                    </p>
+                    <p>jdbc:h2:tcp://localhost:9092/~/shopdb</p>
+
+                    <hr/>
+                    <p>editierbar</p>
+                    <hr/>
+
+                    <p>Username and password</p>
+                    <hr/>
+                    <pre>admin</pre>
+                    <pre>jj78mvpr52k1</pre>
+                    <p></p>
+                </div>
+                <div class="card-footer">
+                    <a th:href="@{/wiki}" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title" th:text="${webtextcomp[11].de}"></h2><!-- webshop -->
+                    <p class="card-text" th:text="${webtextcomp[12].de}"></p>
+
+
+
+                    <div class="card-footer">
+                        <a th:href="@{http://217.160.255.254:443}" class="btn btn-primary">zum webshop</a>
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    <a th:href="@{/wiki}" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title" th:text="${webtextcomp[13].de}"></h2> <!-- LanServer -->
+                    <p class="card-text" th:text="${webtextcomp[14].de}"></p>
+                    <p class="card-text" th:text="${webtextcomp[16].de}"></p> <!-- jar ausführen -->
+
+                    <hr/>
+                    <p>Username and password</p>
+                    <hr/>
+                    <pre>admin</pre>
+                    <pre>jj78mvpr52k1</pre>
+
+                    <pre th:text="${webtextcomp[17].de}">
+                    </pre>
+
+
+                </div>
+                <div class="card-footer">
+                    <a href="jarclients/JDesktopClient.jar" class="btn btn-primary">download Desktop Client as jar</a>
+                </div>
+                <div class="card-footer">
+                    <a th:href="@{/wiki}" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+</div>
+
+</body>
+
+
+<!-- Bootstrap core CSS -->
+<link th:href="@{/bootflat/css/bootstrap.min.css}" rel="stylesheet" />
+
+
+<!-- Bootstrap core JavaScript -->
+<script th:src="@{/jquery/jquery-3.5.1.min.js}"></script>
+
+<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.js}"></script>
+
+
+<script th:src="@{/bootflat/js/jcheck.min.js}"></script>
+<script th:src="@{/bootflat/js/jquery.fs.selecter.min.js}"></script>
+<script th:src="@{/bootflat/js/jquery.fs.stepper.min.js}"></script>
+<script th:src="@{../static/bootstrap.min.js}"></script>
+
+</html>

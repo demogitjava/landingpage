@@ -1,0 +1,10 @@
+create table USERS
+(
+    ID     LONG not null,
+    USERNAME VARCHAR(255),
+    PASSWORD VARCHAR(255),
+    ROLE     VARCHAR(255),
+    ENABLED  INT,
+    constraint USERDETAILS_PK
+        primary key ("ID")
+);

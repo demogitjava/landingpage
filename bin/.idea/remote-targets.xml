@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="72b9b457-ea1f-4c36-937e-e0901c8039a9" />
+    <targets>
+      <target name="de_landingapge:latest" type="docker" uuid="92495e0e-935c-46cb-baac-ad707ea04676">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="buildImageConfig">
+            <BuildImageConfig>
+              <option name="builtImageTag" value="de_landingapge:latest" />
+              <option name="dockerFile" value="Dockerfileremotedebug" />
+            </BuildImageConfig>
+          </option>
+          <option name="containerConfig">
+            <ContainerConfig>
+              <option name="runCliOptions" value="-p 0.0.0.0:80:80 -p 0.0.0.0:5005:5005 --dns 8.8.8.8 --dns 8.8.4.4 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus=&quot;4&quot; " />
+            </ContainerConfig>
+          </option>
+          <option name="dockerServerName" value="Docker" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="agentFolder">
+              <VolumeState>
+                <option name="targetSpecificBits">
+                  <map>
+                    <entry key="mountAsVolume" value="false" />
+                  </map>
+                </option>
+              </VolumeState>
+            </option>
+            <option name="classpathFolder">
+              <VolumeState>
+                <option name="targetSpecificBits">
+                  <map>
+                    <entry key="mountAsVolume" value="false" />
+                  </map>
+                </option>
+              </VolumeState>
+            </option>
+            <option name="javaVersionString" value="11.0.18" />
+          </config>
+        </ContributedStateBase>
+      </target>
+      <target name="debugcontainer" type="docker-compose" uuid="72b9b457-ea1f-4c36-937e-e0901c8039a9">
+        <config>
+          <option name="targetPlatform">
+            <TargetPlatform />
+          </option>
+          <option name="configurationFiles">
+            <list>
+              <option value="$PROJECT_DIR$/jetbrains_debugcontainer/docker-compose_jetbrains_debugcontainer.yml" />
+            </list>
+          </option>
+          <option name="serviceName" value="de_development" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config />
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

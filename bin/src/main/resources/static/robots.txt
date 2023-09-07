@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://demogitjava.ddns.net/en/
+Sitemap: http://demogitjava.ddns.net/es/
+Sitemap: http://demogitjava.ddns.net/fr/
+Sitemap: http://demogitjava.ddns.net/it/
+Sitemap: http://demogitjava.ddns.net/tk/
+

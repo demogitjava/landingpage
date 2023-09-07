@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  proxy1:
+    image: nginx:latest
+    #container_name: de_nginx
+    ports:
+      - "217.160.255.254:80:80"
+    networks:
+      192.168.178.0:
+        ipv4_address: 192.168.178.2
+    environment:
+      - TZ=Europe/Berlin
+
+networks:
+  192.168.178.0:
+    external: true

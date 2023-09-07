@@ -1,0 +1,30 @@
+FROM jgsoftwares/graalce11
+
+# for debug jetbrains remote
+# dnf groupinstall "Minimal install"
+
+
+RUN (yum update -y; \
+    yum install -y openssh-server openssh-clients initscripts epel-release wget passwd tar screen crontabs unzip; \
+    yum clean all)
+
+RUN (ssh-keygen -A; \
+     sed -i 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config; \
+     sed -i 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config; \
+     sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config; \
+     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config)
+
+RUN (mkdir -p /root/.ssh/; \
+     echo "StrictHostKeyChecking=no" > /root/.ssh/config; \
+     echo "UserKnownHostsFile=/dev/null" >> /root/.ssh/config)
+
+RUN echo "root:123456789" | chpasswd
+
+EXPOSE 22
+EXPOSE 1527
+EXPOSE 3306
+
+EXPOSE 8082
+EXPOSE 9092
+
+CMD ["/usr/sbin/sshd", "-D"]

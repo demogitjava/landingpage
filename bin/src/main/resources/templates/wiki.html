@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml"
+      th:lang="${lang}">
+<header>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Webshop admin Dashboard</title>
+
+
+
+</header>
+
+
+<body class="nav-md">
+
+
+    <div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="index.html" class="site_title">
+
+                        <span>
+
+                        </span>
+
+                    </a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div class="profile clearfix">
+
+
+                </div>
+                <!-- /menu profile quick info -->
+
+                <br />
+
+                <!-- sidebar menu -->
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>General</h3>
+
+                    </div>
+
+
+                </div>
+                <!-- /sidebar menu -->
+
+                <!-- /menu footer buttons -->
+                <div class="sidebar-footer hidden-small">
+                    <a data-toggle="tooltip" data-placement="top" title="Settings">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                    </a>
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="/logout">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- /menu footer buttons -->
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav class="nav navbar-nav">
+                    <ul class=" navbar-right">
+                        <li class="nav-item dropdown open" style="padding-left: 15px;">
+                            <a th:text="${lang}">Sprache</a>
+
+                        </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <!-- top tiles -->
+            <div class="row" style="display: inline-block;" >
+                <div class="tile_count">
+
+                    <div class="row">
+
+                            <!--
+
+                                   centos
+                            -->
+                        <div class="col-md-8 col-sm-8">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Betriebssystem</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <p>
+                                        Das hier verwendete Betriebssystem ist CentOS Stream 9
+                                        und dieses finden Sie unter
+                                    </p>
+                                    <a href="https://centos.org/download/">--> CentOS</a>
+                                    <p>
+                                        Wichtig !!!
+                                        Für das einrichten der Netzwerkverbindung im installer menu
+                                        muss die Netzwerkverbindung auf
+                                    </p>
+                                    <p>100 mBit Half-Duplex</p>
+                                    <p>eingestellt sein</p>
+                                    <p>Das Video sowie die images finden Sie hier unter:</p>
+                                    <a href="https://youtu.be/brqSGwSsYN0">--> install centos</a>
+                                    <a href="https://youtu.be/OPgNyP5Rp08">--> install xrdp</a>
+
+                                    <p>folgende Dateien sind noch zu configurieren:</p>
+                                    <p>networks</p>
+                                    <pre>default 217.160.255.254</pre>
+
+                                    <p>Die Einstellungen der DNS Server</p>
+                                    <p>resolv.conf</p>
+                                    <pre>
+                                        # Generated by NetworkManager
+                                        search demogitjava.ddns.net
+                                        nameserver 208.67.222.222
+                                        nameserver 208.67.220.220
+                                        nameserver 208.67.220.222
+                                        nameserver 208.67.222.220
+                                    </pre>
+
+                                    <p>hosts</p>
+                                    <pre>217.160.255.254	demogitjava.ddns.net
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+
+                                Datenbanken
+
+                        -->
+
+                        <div class="col-md-8 col-sm-8">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Unterstütze Datenbanken</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <p>
+                                        Folgende Datenbanken werden unterstützt
+                                    </p>
+                                    <img class="img-fluid" th:src="@{/dbimages/derbydb.png}" alt="" style="max-width: 100px; max-height: 50px;">
+                                    <br><br />
+                                    <a href="https://db.apache.org/derby/">--> Derby DB</a>
+                                    <p>
+                                        geeignet für Laptop's oder kleinere PCs
+                                    </p>
+
+                                    <img class="img-fluid" th:src="@{/dbimages/h2.jpeg}" alt="" style="max-width: 100px; max-height: 50px;">
+                                    <br><br />
+                                    <a href="https://www.h2database.com/html/main.html">--> H2 DB</a>
+                                    <p>
+                                        geeignet für Laptop's oder kleinere PCs
+                                    </p>
+
+
+                                    <img class="img-fluid" th:src="@{/dbimages/mysql.png}" alt="" style="max-width: 100px; max-height: 50px;">
+                                    <br><br />
+                                    <a href="https://www.mysql.com/de/">--> MySql </a>
+                                    <p>
+                                        für größere Projekt in der Cloud
+                                    </p>
+                                    <p>
+                                        <a href="https://dev.mysql.com/downloads/workbench/">MySql Workbench</a>
+                                    </p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                            <!--
+
+
+                                    nginx
+
+                            -->
+                            <div class="col-md-8 col-sm-8">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2>Nginx // Docker</h2>
+                                        <ul class="nav navbar-right panel_toolbox">
+                                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Settings 1</a>
+                                                    <a class="dropdown-item" href="#">Settings 2</a>
+                                                </div>
+                                            </li>
+                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                            </li>
+                                        </ul>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+                                        <p>
+                                            Das verwendete Docker Image finden sie unter
+                                            https://hub.docker.com/_/nginx.
+
+                                        </p>
+                                        <p>
+                                            Das config File für das
+                                            Port forwarding können Sie hier herunterladen um
+                                            auf den Container de_landingpage zu verweisen.
+                                            In meinem Fall ist es die static IP meines Providers
+                                            -> 217.160.255.254:80
+                                        </p>
+                                        <a href="http://217.160.255.254/default.conf">--> default.conf</a>
+                                        <p></p>
+                                        <p>Der Pfad befindet sich unter /etc/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf</p>
+                                        <p>
+                                           Sollte das aufrufen der Domain nicht funktionieren
+                                           so können Sie ihren eigenen DNS Server aufsetzen,
+                                           in meinem Fall ist das ein debian mit bind9 auf port 53.
+
+                                           Das bereitstellen der Domain wurde über
+                                           https://www.noip.com/de-DE realisiert muss aber
+                                           nach 30 Tagen über email bestätigt bzw erneutert werden.
+                                        </p>
+                                        <a href="http://217.160.255.254/img/noip.jpg">--> noip</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--
+                                Landingpage
+                            -->
+
+                               <div class="x_panel col-md-8 col-sm-8">
+                                <div class="x_title">
+                                    <h2><i class="fa fa-bars"></i> Module Landingpage / H2<small></small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <ul class="nav nav-tabs bar_tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Landingpage</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">commands for Docker</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Videos on Youtube</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <p>Das Module Landingpage soll die Bereitstellung der einzelnen Module
+                                                sowie als aktuelles Wiki für dieses Projekt darstellen.</p>
+
+                                            <p>Das edit der einzelnen config Files im "Docker Container" ist
+                                                über die Shell editierbar.</p>
+
+                                            <p>Da der Container über das Brigde Netzwerk bereitgestellt wird
+                                                ist es nötig die</p>
+                                            <p>Dateien zu ändern.</p>
+                                            <p>Der Docker Container wird mit der IP 192.168.178.4 in dem 
+                                            Netzwerk 192.168.178.0 bereitgestellt.</p> 
+                                             
+
+                                            <p>-networks</p>
+                                            <pre>
+                                                auto ens192
+                                                iface ens192 inet static
+                                                address 192.168.178.4
+                                                netmask 255.255.255.0
+                                                gateway 192.168.178.1
+                                                dns-nameservers 208.67.222.222 208.67.220.220 208.67.220.222 208.67.222.220
+                                                dns-search demogitjava landingpage freewebshop
+                                            </pre>
+                                            <p>-resolv.conf</p>
+                                            <pre>
+                                                search demogitjava freewebshop
+                                                nameserver 208.67.222.222
+                                                nameserver 208.67.220.220
+                                                nameserver 208.67.220.222
+                                                nameserver 208.67.222.220
+                                                options ndots:0
+                                            </pre>
+                                            <p>hosts</p>
+                                            <pre>
+                                                192.168.178.4	de_landingpage
+                                            </pre>        
+                                           
+                                            <a hidden="https://github.com/demogitjava/demodatabase/blob/master/db_landingpage/networkconf/hosts">--> files</a>
+
+
+
+
+                                        </div>
+
+                                        <!--
+
+                                            commands Tab Landingapge
+
+                                        -->
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                                               <p>
+                                                   starten des Containers mit Jetbrains
+                                               </p>
+                                                <p>run Options:</p>
+                                               <pre>-p 0.0.0.0:80:80 --dns 208.67.222.222 --dns 208.67.220.220 --dns 208.67.220.222 --dns 208.67.222.220 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus="4" </pre>
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                            <hr/>
+                                            Container setup.
+                                            Module Landingpage
+
+                                            <hr/>
+                                            <pre>
+                                                <a href="https://www.youtube.com/watch?v=FVMA1k_11Lo"> --> module landingpage</a>
+                                            </pre>
+                                            <hr/>
+
+                                            <iframe width="420" height="315"
+                                                    src="https://www.youtube.com/watch?v=FVMA1k_11Lo">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                                Google search landingpage
+                            -->
+                            <div class="x_panel col-md-4 col-sm-4">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2><i class="fa fa-bars"></i> Google search console <small></small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+
+                                            <p>
+                                                Optimierung der Webseite:
+                                            </p>
+
+                                                <p>
+                                                     <a href="https://search.google.com/search-console">-> Google Console</a>
+                                                </p>
+
+
+                                            <hr>
+                                            <p>Screenshot 2023-03-22</p>
+                                            <p>
+                                                <a th:href="@{/img/googelspeedtest/2023_03_22_sitegoogleindex.png}">Desktop</a>
+                                            </p>
+                                            <p>
+                                                Screenshot 2022-09-27
+                                            </p>
+
+                                                <p>
+                                                      <a th:href="@{/img/googelspeedtest/Bildschirmfoto von 2022-09-27 12-51-27.png}">Desktop</a>
+                                                </p>
+
+                                                <p>
+                                                        <a th:href="@{/img/googelspeedtest/Bildschirmfoto von 2022-09-27 12-52-18.png}">Mobile</a>
+                                                </p>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                            <!--
+                                webshop
+                            -->
+
+                            <div class="x_panel col-md-8 col-sm-8">
+                                <div class="x_title">
+                                    <h2><i class="fa fa-bars"></i> Module Webshop / H2 <small></small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <ul class="nav nav-tabs bar_tabs" id="myTabwebshop" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tabwebshop" data-toggle="tab" href="#homewebshop" role="tab" aria-controls="home" aria-selected="true">Webshop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tabwebshop" data-toggle="tab" href="#profilewebshop" role="tab" aria-controls="profile" aria-selected="false">commands for Docker</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tabwebshop" data-toggle="tab" href="#contactwebshop" role="tab" aria-controls="contact" aria-selected="false">Videos on Youtube</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContentwebshop">
+                                        <div class="tab-pane fade show active" id="homewebshop" role="tabpanel" aria-labelledby="home-tab">
+                                           <p>module Webshop</p>
+                                           <p></p>
+
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="profilewebshop" role="tabpanel" aria-labelledby="profile-tab">
+
+                                            <!--
+                                                 tab command for docker webshop
+                                            -->
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="contactwebshop" role="tabpanel" aria-labelledby="contact-tab">
+                                            <!--
+                                                tab videos on youtube for module
+                                                webshop on docker
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                                Google search webshop
+                            -->
+                            <div class="x_panel col-md-4 col-sm-4">
+                                <div class="x_panel">
+                                    <div class="x_title">
+                                        <h2><i class="fa fa-bars"></i> Google search console <small></small></h2>
+                                        <ul class="nav navbar-right panel_toolbox">
+                                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Settings 1</a>
+                                                    <a class="dropdown-item" href="#">Settings 2</a>
+                                                </div>
+                                            </li>
+                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                            </li>
+                                        </ul>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="x_content">
+
+
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+
+                                                <p>
+                                                    Optimierung der Webseite:
+                                                </p>
+
+                                                <p>
+                                                    <a href="https://search.google.com/search-console">-> Google Console</a>
+                                                </p>
+
+
+                                                <hr>
+                                                <p>Screenshot 2023-04-16</p>
+                                                <p>
+                                                    <a th:href="@{/img/googelspeedtest/2023_13_04_sitegoogleindex_webshop.png}">Desktop</a>
+                                                </p>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+
+
+                            <!--
+                                  h2cluster
+                            -->
+
+                            <div class="x_panel col-md-8 col-sm-8">
+                                <div class="x_title">
+                                    <h2><i class="fa fa-bars"></i> Module H2cluster<small></small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <ul class="nav nav-tabs bar_tabs" id="myTabh2cluster" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tabh2cluster" data-toggle="tab" href="#homeh2cluster" role="tab" aria-controls="home" aria-selected="true">H2 Cluster Module</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tabh2cluster" data-toggle="tab" href="#profileh2cluster" role="tab" aria-controls="profile" aria-selected="false">commands for Docker</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tabh2cluster" data-toggle="tab" href="#contacth2cluster" role="tab" aria-controls="contact" aria-selected="false">Videos on Youtube</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContenth2cluster">
+                                        <div class="tab-pane fade show active" id="homeh2cluster" role="tabpanel" aria-labelledby="home-tab">
+                                            <p>module h2cluster</p>
+                                            <p></p>
+
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="profileh2cluster" role="tabpanel" aria-labelledby="profile-tab">
+
+                                            <!--
+                                                 tab command for docker h2cluster
+                                            -->
+                                            <p>cluster webshop</p>
+                                            <p>webshop ip is 192.168.178.6</p>
+                                            <p>h2cluster ip is 192.168.178.7</p>
+                                            <pre>jdbc:h2:tcp://192.168.178.6:9092/~/demodb jdbc:h2:tcp://localhost:9102/~/demodb h2dbcluster jj78mvpr52k1 192.168.178.6:9092 192.168.178.7:9102</pre>
+
+                                        </div>
+
+                                        <div class="tab-pane fade" id="contacth2cluster" role="tabpanel" aria-labelledby="contact-tab">
+                                            <!--
+                                                tab videos on youtube for module
+                                                h3cluster on docker
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                    <!--
+                        DNS Server Docker setup
+                    -->
+
+                </div>
+            </div>
+            <!-- /top tiles -->
+
+
+            <div class="row">
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+              Demogitjava  <a href="http://217.160.255.254">demogitjava</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+</div>
+</body>
+
+
+
+<!-- Bootstrap -->
+<link th:href="@{/gentella/vendors/bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet">
+<!-- Font Awesome -->
+<link th:href="@{/gentella/vendors/font-awesome/css/font-awesome.min.css}" rel="stylesheet">
+<!-- NProgress -->
+<link th:href="@{/gentella/vendors/nprogress/nprogress.css}" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link th:href="@{/gentella/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css}" rel="stylesheet">
+<!-- bootstrap-daterangepicker -->
+<link th:href="@{/gentella/vendors/bootstrap-daterangepicker/daterangepicker.css}" rel="stylesheet">
+
+<!-- Custom Theme Style -->
+<link th:href="@{/gentella/build/css/custom.min.css}" rel="stylesheet">
+<link th:href="@{/gentella/build/css/custom.css}" rel="stylesheet">
+
+
+
+
+<script th:src="@{/gentella/vendors/jquery/dist/jquery.js}"></script>
+
+<script th:src="@{/gentella/vendors/jquery/external/sizzle/dist/sizzle.js}"></script>
+
+
+
+
+
+<!-- Bootstrap -->
+<script th:src="@{/gentella/vendors/bootstrap/dist/js/bootstrap.bundle.min.js}"></script>
+<!-- FastClick -->
+<script th:src="@{/gentella/vendors/fastclick/lib/fastclick.js}"></script>
+<!-- NProgress -->
+<script th:src="@{/gentella/vendors/nprogress/nprogress.js}"></script>
+<!-- Chart.js -->
+<script th:src="@{/gentella/vendors/Chart.js/dist/Chart.min.js}"></script>
+<!-- jQuery Sparklines -->
+<script th:src="@{/gentella/vendors/jquery-sparkline/dist/jquery.sparkline.min.js}"></script>
+<!-- morris.js -->
+<script th:src="@{/gentella/vendors/raphael/raphael.min.js}"></script>
+<script th:src="@{/gentella/vendors/morris.js/morris.min.js}"></script>
+<!-- gauge.js -->
+<script th:src="@{/gentella/vendors/gauge.js/dist/gauge.min.js}"></script>
+<!-- bootstrap-progressbar -->
+<script th:src="@{/gentella/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js}"></script>
+<!-- Skycons -->
+<script th:src="@{/gentella/vendors/skycons/skycons.js}"></script>
+<!-- Flot -->
+<script th:src="@{/gentella/vendors/Flot/jquery.flot.js}"></script>
+<script th:src="@{/gentella/vendors/Flot/jquery.flot.pie.js}"></script>
+<script th:src="@{/gentella/vendors/Flot/jquery.flot.time.js}"></script>
+<script th:src="@{/gentella/vendors/Flot/jquery.flot.stack.js}"></script>
+<script th:src="@{/gentella/vendors/Flot/jquery.flot.resize.js}"></script>
+<!-- Flot plugins -->
+<script th:src="@{/gentella/vendors/flot.orderbars/js/jquery.flot.orderBars.js}"></script>
+<script th:src="@{/gentella/vendors/flot-spline/js/jquery.flot.spline.min.js}"></script>
+<script th:src="@{/gentella/vendors/flot.curvedlines/curvedLines.js}"></script>
+<!-- DateJS -->
+<script th:src="@{/gentella/vendors/DateJS/build/date.js}"></script>
+<!-- bootstrap-daterangepicker -->
+<script th:src="@{/gentella/vendors/moment/min/moment.min.js}"></script>
+<script th:src="@{/gentella/vendors/bootstrap-daterangepicker/daterangepicker.js}"></script>
+
+
+
+<script th:src="@{/gentella/build/js/custom.js}"></script>
+
+</html>
