@@ -2,8 +2,8 @@ version: '3'
 services:
 
   de_derby:
-    image: de_derby:latest
-    container_name: de_derby
+    image: de_derbycloud:latest
+    container_name: de_derby_cloud
     ports:
       - "0.0.0.0:1527:1527"
     networks:
@@ -26,8 +26,8 @@ services:
       
       
   de_telnetserver:
-    image: de_telnetserver:latest
-    container_name: de_telnetserver
+    image: de_telnetservercloud:latest
+    container_name: de_telnetserver_cloud
     ports:
       - "0.0.0.0:23:23"
     networks:
@@ -47,8 +47,8 @@ services:
   
       
   de_lanserver:
-    image: de_lanserver:latest
-    container_name: de_lanserver
+    image: de_lanservercloud:latest
+    container_name: de_lanserver_cloud
     ports:
       - "0.0.0.0:8443:8443"
     networks:
