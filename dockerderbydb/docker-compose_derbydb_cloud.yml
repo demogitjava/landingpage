@@ -8,7 +8,7 @@ services:
       - "0.0.0.0:1527:1527"
     networks:
       172.17.0.0:
-        ipv4_address: 192.168.178.100
+        ipv4_address: 172.17.0.2
 
     build:
       context: ./
