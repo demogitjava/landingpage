@@ -60,11 +60,13 @@ line
 
 
 to build the image type:
-
--p 0.0.0.0:80:80 --dns 208.67.222.222 --dns 208.67.220.220 --dns 208.67.220.222 --dns 208.67.222.220 --dns-search demogitjava --name de_landingpage --network 192.168.178.0 -it --cpus="4"
-
-
 docker build -f Dockerfile -t landingpage .
+
+run the container with 
+
+-p 0.0.0.0:80:80 --add-host=docker:217.160.255.254 --network 172.17.0.0 --name landingpage 
+
+
 
 <br/>  
 docker for windows are available on https://www.docker.com/products/docker-desktop  
@@ -83,22 +85,12 @@ optional:
 
 
 to run a container on desktop pc
-`docker network create --driver=bridge --subnet=192.168.178.0/24 --ip-range=192.168.178.0/24 --gateway=192.168.178.1 192.168.178.0`
+`docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0`
 
 **to publish the container over the internet
 -> 10.255.255.0
-then 192.168.178.0
+then 172.17.0.1
 docker get the route to the first network -> rate for download is about 500 kb**
-
-
-for ip
-
-`--rm -d --network 192.200.100.254/24`  
-after the network is successfuly created  
-type your run command to deploy your container  
-to the network
-
-
 
 
 
