@@ -328,6 +328,14 @@
                                         -->
                                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
+                                            
+                                            <p>
+                                                erstellen des Netwerks
+                                            </p>
+                                            <pre>
+                                                docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
+                                            </pre>
+                                            
                                                <p>
                                                    starten des Containers 
                                                </p>
