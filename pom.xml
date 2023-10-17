@@ -234,7 +234,10 @@
                           <tomeeClassifier>plus</tomeeClassifier>
                         
                           <tomeeHttpPort>80</tomeeHttpPort>
-                         
+                          <tomeeHost>localhost</tomeeHost>
+                          <user>tomee</user>
+                          <password>tomee</password>
+                          <path>${project.build.directory}/${project.build.finalName}.war</path>
                         </configuration>
                     </plugin>
                     
