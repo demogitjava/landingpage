@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -71,6 +72,7 @@ public class DemoLandingPageApplication {
         }
         System.out.print(operationsytem + "\n");
 
+      
         SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoLandingPageApplication.class);
         builder
                 // none
@@ -79,6 +81,8 @@ public class DemoLandingPageApplication {
                 .web(WebApplicationType.SERVLET)
                .headless(true).run();
        // builder.run(args);
+
+       
         //SpringApplication.run(DemoLandingPageApplication.class, args);
     }
 

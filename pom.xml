@@ -116,7 +116,9 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency><dependency>
+        </dependency>
+        
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
@@ -132,7 +134,9 @@
             <groupId>org.springframework.shell</groupId>
             <artifactId>spring-shell-standard</artifactId>
             <version>2.0.1.RELEASE</version>
-        </dependency><dependency>
+        </dependency>
+        
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-compress</artifactId>
             <version>1.9</version>
@@ -178,12 +182,12 @@
         </dependency>
 -->
 
-<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core-jakarta -->
-<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core-jakarta</artifactId>
-    <version>5.6.15.Final</version>
-</dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core-jakarta -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core-jakarta</artifactId>
+            <version>5.6.15.Final</version>
+        </dependency>
 
 
         <dependency>
@@ -213,13 +217,22 @@
             <version>3.6</version>
         </dependency>
         
-     <!-- https://mvnrepository.com/artifact/org.apache.tomcat/jakartaee-migration -->
-<dependency>
-    <groupId>org.apache.tomcat</groupId>
-    <artifactId>jakartaee-migration</artifactId>
-    <version>1.0.7</version>
-</dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.tomcat/jakartaee-migration -->
+       <dependency>
+           <groupId>org.apache.tomcat</groupId>
+           <artifactId>jakartaee-migration</artifactId>
+           <version>1.0.7</version>
+       </dependency>
 
+
+
+                <dependency>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-starter-tomcat</artifactId>
+                  
+                </dependency>
+                
+                
     </dependencies>
 
     <build>
