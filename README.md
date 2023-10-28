@@ -6,12 +6,13 @@
 |--|--|  
 | [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
  [native - landingpage.jar](http://demogitjava.ddns.net:8000/native-landingpage.jar) |  2023 08 29|  
+ [war - landingpage.war](http://demogitjava.ddns.net:8000/native-landingpage.war) |  2023 10 28|  
 
 
 
 the used timezone is -> UTC Europe/Berlin
 
-The used IDE was Apache Netbeans17  
+The used IDE was Apache Netbeans 
 [download netbeans](https://netbeans.apache.org/download/index.html)
 
 The used maven 3.9.1 version  
@@ -20,17 +21,14 @@ The used maven 3.9.1 version
 ![enter image description here](https://raw.githubusercontent.com/demogitjava/demodatabase/master/landingapge.png)
 
 
+
+
 derbydb 
 jdbc login 
 root
 jj78mvpr52k1
 
 
-to edit the text in the demo application  
-copy the segment and  
-paste it with the editor to save  
-the "text edit" for your  
-language.
 
 *FOR EMAIL*  
 **in class contact_service.java  
