@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit run setup&#10;for docker container in lan network">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/landingpage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/landingpage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/root/git/landingpage&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/root/Dokumente/git/landingpage&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -134,7 +134,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.containerdelandingpage">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="/app" />
@@ -154,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
       <deployment type="docker-image">
         <settings>
           <option name="imageTag" value="jgsoftwares/derbydb:latest" />
@@ -168,6 +168,34 @@
               </DockerPortBindingImpl>
             </list>
           </option>
+          <option name="commandLineOptions" value="--network 172.17.0.0" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image (3)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
+          <option name="command" value="--network 172.17.0.0 --ip 172.17.0.2 --name derbydb" />
+          <option name="containerName" value="derbydb" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="1527" />
+                <option name="hostIp" value="0.0.0.0" />
+                <option name="hostPort" value="1527" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
@@ -209,7 +237,7 @@
             <list>
               <DockerVolumeBindingImpl>
                 <option name="containerPath" value="$USER_HOME$" />
-                <option name="hostPath" value="$USER_HOME$/Dokumente/publishlandingpage/root" />
+                <option name="hostPath" value="$PROJECT_DIR$/../../publishlandingpage/root" />
               </DockerVolumeBindingImpl>
             </list>
           </option>
@@ -237,15 +265,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.Docker Image (3)" />
+      <item itemvalue="Docker.Docker Image (2)" />
       <item itemvalue="Docker.derbydb" />
       <item itemvalue="Docker.containerdelandingpage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.containerdelandingpage" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Docker Image (3)" />
         <item itemvalue="Docker.derbydb" />
-        <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.containerdelandingpage" />
+        <item itemvalue="Docker.Docker Image (2)" />
       </list>
     </recent_temporary>
   </component>

@@ -1,4 +1,4 @@
-FROM jgsoftwares/graalce11
+﻿FROM jgsoftwares/graalce11
 
 #hostname
 ENV HOSTNAME demogitjava
@@ -16,12 +16,15 @@ EXPOSE 80
 # h2 console
 EXPOSE 8082
 
+# derbydb
+EXPOSE 1527
+
 
 # cluster h2 db
 EXPOSE 9101
 EXPOSE 9102
 
-ENV HTTP_PROXY="http://217.160.255.254:80"
+#ENV HTTP_PROXY="http://217.160.255.254:80"
 
 
 # add h2 database to root folder
@@ -33,5 +36,5 @@ ENV HTTP_PROXY="http://217.160.255.254:80"
 # add network config for container to path /etc
 #ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
 
-ADD /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
-ENTRYPOINT ["java", "-jar", "/root/landingpage.jar"]
+ADD http://jgsoftwares.ddns.net:8000/landingpage-0.0.1-SNAPSHOT.war /root/landingpage.war
+ENTRYPOINT ["java", "-jar", "/root/landingpage.war"]
