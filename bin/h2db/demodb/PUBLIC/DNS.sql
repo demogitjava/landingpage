@@ -1,9 +1,0 @@
-create table DNS
-(
-    ID         INTEGER,
-    FORWARDDNS VARCHAR(255),
-    REVERSEDNS VARCHAR(255),
-    DNSZONE    VARCHAR(255),
-    DNSTYPE    VARCHAR(255)
-);
-
