@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit dockerfile" />
+    <list default="true" id="1583aed2-f7d9-4679-bab5-b49f2021aee9" name="Changes" comment="edit dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +132,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Docker.derbydb_lan">
     <configuration name="Landingpage" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="landingpage" />
       <projectPathOnTarget name="projectPathOnTarget" value="/app" />
@@ -148,52 +151,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Docker Image (2)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="containerName" value="derbydb" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="1527" />
-                <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="1527" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="commandLineOptions" value="--network 172.17.0.0" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Docker Image (3)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="command" value="--network 172.17.0.0 --ip 172.17.0.2 --name derbydb" />
-          <option name="containerName" value="derbydb" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="1527" />
-                <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="1527" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
@@ -240,39 +197,53 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="derbydb" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+    <configuration name="derbydb_lan" type="docker-deploy" factoryName="docker-image" activateToolWindowBeforeRun="false" server-name="Docker">
       <deployment type="docker-image">
         <settings>
-          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
-          <option name="command" value="--network brigde --ip 172.17.0.2 --name derbydb" />
-          <option name="containerName" value="derbydb" />
+          <option name="imageTag" value="de_landingpage:latest" />
+          <option name="attachToContainerNeeded" value="true" />
+          <option name="containerName" value="de_landingpage" />
           <option name="portBindings">
             <list>
               <DockerPortBindingImpl>
-                <option name="containerPort" value="1527" />
+                <option name="containerPort" value="80" />
                 <option name="hostIp" value="0.0.0.0" />
-                <option name="hostPort" value="1527" />
+                <option name="hostPort" value="80" />
               </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="-p 0.0.0.0:1527:1527 --add-host=docker:192.200.100.2 --network bridge" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="$USER_HOME$" />
+                <option name="hostPath" value="$PROJECT_DIR$/../../publishlandingpage/root" />
+              </DockerVolumeBindingImpl>
             </list>
           </option>
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="run derbydb_lan" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="jgsoftwares/derbydb:latest" />
+          <option name="containerName" value="derbydb" />
+          <option name="commandLineOptions" value="-p 0.0.0.0:1527:1527 --network 172.17.0.0 --ip 172.17.0.2 --name derbydb" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Docker.Docker Image (3)" />
-      <item itemvalue="Docker.Docker Image (2)" />
-      <item itemvalue="Docker.derbydb" />
+      <item itemvalue="Docker.derbydb_lan" />
+      <item itemvalue="Docker.run derbydb_lan" />
       <item itemvalue="Docker.containerdelandingpage" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.Docker Image (3)" />
-        <item itemvalue="Docker.derbydb" />
+        <item itemvalue="Docker.run derbydb_lan" />
         <item itemvalue="Docker.containerdelandingpage" />
-        <item itemvalue="Docker.Docker Image (2)" />
       </list>
     </recent_temporary>
   </component>
