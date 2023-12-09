@@ -103,6 +103,66 @@
 
                     <div class="row">
 
+
+     						<!--
+
+                                  Open Suse Leap 15.4
+                            -->
+                         <div class="col-md-8 col-sm-8">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Betriebssystem openSUSE Leap 15.4</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <liBetriebssystem class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                   <p>
+									   Die aktuell von mir verwendete Linux Distribution ist für die
+									   Hosting variante
+									 
+									   <p>
+										      <a href="https://get.opensuse.org/leap/15.4/">--> openSUSE Leap 15.4</a>
+									   </p>
+									   <p>
+										   Der Befehl für die Routingtabelle:
+									   </p>
+									   <pre>
+										   ip a show
+									   </pre>
+									   <p>Für die Einträge in der Routingtabelle:</p>
+									   <pre>
+										   ip a add 208.67.222.222/255.255.255.0 dev eth0
+										   ip a add 208.67.220.220/255.255.255.0 dev eth0
+										   ip a add 208.67.220.222/255.255.255.0 dev eth0
+										   ip a add 208.67.222.220/255.255.255.0 dev eth0
+											
+										   ip a add 8.8.8.8/255.255.255.0 dev eth0
+										   ip a add 8.8.4.4/255.255.255.0 dev eth0
+									   </pre>
+									   <br>
+									   <p>und für den Desktop </p>
+									   
+									   <p>
+										      <a href="https://get.opensuse.org/tumbleweed/">--> openSUSE Tumbleweed </a>
+									   </p>
+								   </p>
+								   <p></p>
+                                </div>
+                            </div>
+                        </div>
+
                             <!--
 
                                    centos
@@ -110,7 +170,7 @@
                         <div class="col-md-8 col-sm-8">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Betriebssystem</h2>
+                                    <h2>Betriebssystem CentOS</h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
@@ -128,10 +188,12 @@
                                 </div>
                                 <div class="x_content">
                                     <p>
-                                        Das hier verwendete Betriebssystem ist CentOS Stream 9
+                                        Das hier verwendete Betriebssystem ist CentOS 7
                                         und dieses finden Sie unter
                                     </p>
+                                    <p>Dieses System kann als reines Hosting System genutzt werden um die Docker Container vorkonfiguriert bereit zu stellen.</p>
                                     <a href="https://centos.org/download/">--> CentOS</a>
+                                    <a href="https://hub.docker.com/search?q=jgsoftwares">--> Docker Images</a>
                                     <p>
                                         Wichtig !!!
                                         Für das einrichten der Netzwerkverbindung im installer menu
@@ -143,12 +205,16 @@
                                     <a href="https://youtu.be/brqSGwSsYN0">--> install centos</a>
                                     <a href="https://youtu.be/OPgNyP5Rp08">--> install xrdp</a>
 
+									<br>
+									<p>mit dieser Config können Sie die gesamte Festplatte mit 220 Gigabyte nutzen
+										da ich keine Snapshots verwende.
+									</p>
                                     <p>folgende Dateien sind noch zu configurieren:</p>
                                     <p>networks</p>
                                     <pre>default 217.160.255.254</pre>
 
                                     <p>Die Einstellungen der DNS Server mit der Software</p>
-                                    <a href="https://cockpit-project.org/">Cockpit-Project</a> 
+                                    <a href="https://cockpit-project.org/">verwendete public DNS Server</a> 
                                     <pre>
                                         
                                       
@@ -156,7 +222,34 @@
                                         nameserver 208.67.220.220
                                         nameserver 208.67.220.222
                                         nameserver 208.67.222.220
+                                        
+                                        nameserver 8.8.8.8
+                                        nameserver 8.8.4.4
+                                        
                                     </pre>
+                                    
+                                    <p>
+										<br>
+									</p>
+									
+									<p>Eintrag für routing Tabelle</p>
+									<p>in meinem Fall ist die Router ip 10.255.255.1</p>
+								
+									<div>
+										
+										<pre>
+											ip route add 208.67.222.222/24 via 10.255.255.1 dev ens192
+											ip route add 208.67.220.220/24 via 10.255.255.1 dev ens192
+											ip route add 208.67.220.222/24 via 10.255.255.1 dev ens192
+											ip route add 208.67.222.220/24 via 10.255.255.1 dev ens192
+											ip route add 8.8.8.8/24 via 10.255.255.1 dev ens192
+											ip route add 8.8.4.4/24 via 10.255.255.1 dev ens192
+										
+										</pre>
+									</div>
+									
+                                    
+                                    
 
                                     <p>hosts</p>
                                     <pre>217.160.255.254	demogitjava.ddns.net
@@ -214,8 +307,8 @@
                                     </p>
                                     <p>
                                            <pre>
-                                         yum install -y nvidia-container-toolkit
-                                    </pre>
+                                        	 yum install -y nvidia-container-toolkit
+                                    	</pre>
                                     </p>
                                     <p>
                                         Docker Netzwerk erstellen
