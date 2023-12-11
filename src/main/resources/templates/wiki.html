@@ -135,22 +135,64 @@
 									   <p>
 										      <a href="https://get.opensuse.org/leap/15.4/">--> openSUSE Leap 15.4</a>
 									   </p>
+									   
+									   <br>
+									   <p>
+										   installierte Komponenten 
+									   </p>
+									   <p>xrdp</p>
+									   <br>
+									   <pre>
+zypper addrepo https://download.opensuse.org/repositories/X11:RemoteDesktop/openSUSE_Tumbleweed/X11:RemoteDesktop.repo
+zypper refresh
+zypper install xrdp
+									   </pre>
+									   <p>Kubernetes</p>
+									   <p>
+										   <pre>
+systemctl start kubelet
+										   </pre>
+									   </p>
+									   <p>Docker</p>
+									   <pre>
+systemctl start docker
+									   </pre>
+									   <br>
+									   <p>Die Einstellungen für den Docker daemon wurden geändert</p>
+									   <p>/etc/docker/daemon.json </p>
+										   
+									  
 									   <p>
 										   Der Befehl für die Routingtabelle:
 									   </p>
 									   <pre>
-										   ip a show
+ip a show
 									   </pre>
 									   <p>Für die Einträge in der Routingtabelle:</p>
 									   <pre>
-				yast dns edit nameserver1=208.67.222.222
-				yast dns edit nameserver2=208.67.220.220
-				yast dns edit nameserver3=208.67.220.222
-				yast dns edit nameserver4=208.67.220.222
-				yast dns edit nameserver5=8.8.8.8
-				yast dns edit nameserver6=8.8.4.4
+yast dns edit nameserver1=208.67.222.222
+yast dns edit nameserver2=208.67.220.220
+yast dns edit nameserver3=208.67.220.222
+yast dns edit nameserver4=208.67.220.222
+yast dns edit nameserver5=8.8.8.8
+yast dns edit nameserver6=8.8.4.4
 									   </pre>
+									   <p>alternative kann auch die config für die Schnittstelle</p>
+									   <p>in /etc/sysconfig/network/ifcfg-eth0</p>
 									   <br>
+									   <pre>
+BOOTPROTO='dhcp'
+STARTMODE='auto'
+MTU='1500'
+DNS1=8.8.8.8
+DNS2=208.67.222.222
+DNS2=208.67.220.220
+DNS3=8.8.4.4
+DNS4=208.67.220.222
+DNS4=208.67.220.222
+
+
+									   </pre>
 									   <p>und für den Desktop </p>
 									   
 									   <p>
@@ -214,17 +256,13 @@
 
                                     <p>Die Einstellungen der DNS Server mit der Software</p>
                                     <a href="https://cockpit-project.org/">verwendete public DNS Server</a> 
-                                    <pre>
-                                        
-                                      
-                                        nameserver 208.67.222.222
-                                        nameserver 208.67.220.220
-                                        nameserver 208.67.220.222
-                                        nameserver 208.67.222.220
-                                        
-                                        nameserver 8.8.8.8
-                                        nameserver 8.8.4.4
-                                        
+                                    <pre>                    
+nameserver 208.67.222.222
+nameserver 208.67.220.220
+nameserver 208.67.220.222
+nameserver 208.67.222.220                                     
+nameserver 8.8.8.8
+nameserver 8.8.4.4                                        
                                     </pre>
                                     
                                     <p>
@@ -237,13 +275,12 @@
 									<div>
 										
 										<pre>
-											ip route add 208.67.222.222/24 via 10.255.255.1 dev ens192
-											ip route add 208.67.220.220/24 via 10.255.255.1 dev ens192
-											ip route add 208.67.220.222/24 via 10.255.255.1 dev ens192
-											ip route add 208.67.222.220/24 via 10.255.255.1 dev ens192
-											ip route add 8.8.8.8/24 via 10.255.255.1 dev ens192
-											ip route add 8.8.4.4/24 via 10.255.255.1 dev ens192
-										
+ip route add 208.67.222.222/24 via 10.255.255.1 dev ens192
+ip route add 208.67.220.220/24 via 10.255.255.1 dev ens192
+ip route add 208.67.220.222/24 via 10.255.255.1 dev ens192
+ip route add 208.67.222.220/24 via 10.255.255.1 dev ens192
+ip route add 8.8.8.8/24 via 10.255.255.1 dev ens192
+ip route add 8.8.4.4/24 via 10.255.255.1 dev ens192										
 										</pre>
 									</div>
 									
@@ -423,7 +460,16 @@
                                             <p>Das Module Landingpage soll die Bereitstellung der einzelnen Module
                                                 sowie als aktuelles Wiki für dieses Projekt darstellen.</p>
 
-                                      
+											<p>Die verwendete Datenbank finden Sie im
+												<br>
+												<a href="https://hub.docker.com/r/jgsoftwares/derbydb">--> Docker hub demoderbydb</a>
+											</p>
+                                      		<p>
+											   um den Docker container zu starten  	  
+											</p>
+											<pre>
+docker run --name derbydb --network 172.17.0.0 jgsoftwares/derbydb:latest
+											</pre>
                                           
 
 
@@ -441,14 +487,18 @@
                                                 erstellen des Netwerks
                                             </p>
                                             <pre>
-                                                docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
+ docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
                                             </pre>
                                             
                                                <p>
                                                    starten des Containers 
                                                </p>
                                                 <p>run Options:</p>
-                                               <pre>-p 0.0.0.0:80:80 --add-host=docker:217.160.255.254 --network 172.17.0.0 --name landingpage </pre>
+                                               <pre>
+												   
+docker run -p 0.0.0.0:80:80 --add-host=docker:217.160.255.254 --network 172.17.0.0 --name landingpage jgsoftwares/graalce11:latest
+
+</pre>
 
                                        
 
