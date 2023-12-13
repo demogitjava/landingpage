@@ -295,20 +295,41 @@ ip route add 8.8.4.4/24 via 10.255.255.1 dev ens192
                         </div>
                         
                         <!-- Wireguard Project    --> 
-                           <div class="col-md-8 col-sm-8">
+                         <div class="col-md-8 col-sm-8">
                              <div class="x_panel">
                                   <div class="x_title">
-                                    <h2>WireGuard Project</h2>
-                                    <h2>Docker Container setup</h2>
-                                    
-                                    
-                                    <p>Suse Linux Container</p>
-                                    <p>Wireguard Server</p>
-                                    <p>installation und config über GUI Docker Panel</p>
+                                    <h2>Wireguard Docker Container Project</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Settings 1</a>
+                                                <a class="dropdown-item" href="#">Settings 2</a>
+                                            </div>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                 
+                                  <div class="x_content">
+                                    <p>
+                                        installation und config über GUI Docker Panel.
+                            
+									</p>
+									<img src="https://raw.githubusercontent.com/demogitjava/demodatabase/master/screenshotguiserverpanel.jpg" alt="Docker GUI Panel">
+							
+                                    <p>Docker container Script</p>
                                     <pre>
-										Docker run script
+										
+										docker run ...
 									</pre>
-                                  </div>
+                                    
+                                 
+                                </div>
                              </div>
                          </div>
                         
@@ -364,6 +385,15 @@ ip route add 8.8.4.4/24 via 10.255.255.1 dev ens192
                                     
                                  
                                 </div>
+                                
+                                <div>
+									<p>Docker Daemon konfiguaration:</p>
+									<p>daemon.json</p>
+									<a href="http://demogitjava.ddns.net:8000/docker/daemon.json">Docker daemon.json</a>
+									<p>Die Datei daemon.json in diesen Pfad kopieren  /etc/docker/daemon.json </p>
+								    <p>Netzwerk1 --- docker0 172.20.00</p>
+									<p>Netzwerk2 --- 172.17.0.0</p>
+								</div>
                              </div>
                          </div>
                             
@@ -520,7 +550,7 @@ docker run -p 0.0.0.0:80:80 --add-host=docker:217.160.255.254 --network 172.17.0
 
                                             <hr/>
                                             <pre>
-                                                <a href=""> --> module landingpage</a>
+                                                <a href="https://raw.githubusercontent.com/demogitjava/demodatabase/master/screenshotguiserverpanel.jpg"> --> module landingpage</a>
                                             </pre>
                                             <hr/>
 
