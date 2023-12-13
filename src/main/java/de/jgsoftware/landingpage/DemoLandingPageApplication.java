@@ -79,7 +79,7 @@ public class DemoLandingPageApplication {
                 // none
                 // reactive
                 // servlet
-                .web(WebApplicationType.SERVLET)
+               .web(WebApplicationType.SERVLET)
                .headless(true).run();
        // builder.run(args);
 
