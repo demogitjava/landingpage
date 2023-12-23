@@ -169,12 +169,14 @@ ip a show
 									   </pre>
 									   <p>Für die Einträge in der Routingtabelle:</p>
 									   <pre>
-yast dns edit nameserver1=208.67.222.222
-yast dns edit nameserver2=208.67.220.220
-yast dns edit nameserver3=208.67.220.222
-yast dns edit nameserver4=208.67.222.220
-yast dns edit nameserver5=8.8.8.8
-yast dns edit nameserver6=8.8.4.4
+yast dns edit nameserver=8.8.8.8
+yast dns edit nameserver=208.67.222.222
+yast dns edit nameserver=208.67.220.220
+yast dns edit nameserver=8.8.4.4
+yast dns edit nameserver=208.67.220.222
+yast dns edit nameserver=208.67.222.220
+
+
 									   </pre>
 									   <p>alternative kann auch die config für die Schnittstelle</p>
 									   <p>in /etc/sysconfig/network/ifcfg-eth0</p>
