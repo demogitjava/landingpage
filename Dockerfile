@@ -1,13 +1,13 @@
 #
 #
-# jar config 
+# war config 
 # 
 #
-FROM jgsoftwares/java11-devel
+FROM jgsoftwares/alpinelinuxjava11:latest
 
 
 #hostname
-ENV HOSTNAME demogitjava
+#ENV HOSTNAME demogitjava
 
 # locale to german
 ENV LANG=de_DE.ISO-8859-1
@@ -42,5 +42,5 @@ EXPOSE 9102
 # add network config for container to path /etc
 #ADD https://github.com/demogitjava/demodatabase/raw/master/db_landingpage/networkconf/networks /etc/networks
 
-ADD http://jgsoftwares.ddns.net:8000/landingpage-0.0.1-SNAPSHOT.jar /root/landingpage.jar
-ENTRYPOINT ["java", "-jar", "/root/landingpage.jar"]
+ADD target/landingpage-0.0.1-SNAPSHOT.war /root/landingpage.war
+ENTRYPOINT ["java", "-jar", "/root/landingpage.war"]
