@@ -1,10 +1,20 @@
 FROM amd64/alpine:latest
 
+
+
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
+RUN apk update
+ 
 RUN echo 'root:jj78mvpr52k1' | chpasswd
+
+
 
 # install tools
 RUN apk add --no-cache \
   wget curl sudo vim file tzdata
+
+
 
 
 ARG ARG_TZ="Europe/Berlin"
@@ -24,7 +34,11 @@ RUN apk add --no-cache \
   dbus \
   openssl \
   xrdp \
-  xorgxrdp
+  xorgxrdp \
+  gnome \
+  openssh
+  
+  
 
 
 COPY ./etc/X11/Xwrapper.config /etc/X11/
@@ -52,5 +66,6 @@ RUN apk add firefox
 
 # RDP port
 EXPOSE 3389
+EXPOSE 22
 
 CMD ["bash", "-c", "/usr/bin/supervisord -c /etc/supervisord.conf"]
