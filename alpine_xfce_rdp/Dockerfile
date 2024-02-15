@@ -1,4 +1,4 @@
-ROM amd64/alpine:latest
+FROM amd64/alpine:latest
 
 RUN echo 'root:jj78mvpr52k1' | chpasswd
 
