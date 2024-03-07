@@ -1,0 +1,36 @@
+FROM alpine:3.7 
+
+
+RUN echo 'root:jj78mvpr52k1' | chpasswd
+
+RUN apk add tar
+
+#  graalvm-ce-java11-22.0.0.2
+ENV GLIBC_VERSION=2.27-r0 \
+    GRAALVM_VERSION=22.0.0.2 \
+    JAVA_HOME=/usr/lib/jvm/graalvm-ce-java11-22.0.0.2 \
+    PATH=/usr/lib/jvm/graalvm-ce-java11-22.0.0.2/bin:$PATH
+
+RUN apk --no-cache add ca-certificates wget gcc zlib zlib-dev libc-dev
+
+RUN mkdir /usr/lib/jvm; 
+RUN wget "http://demogitjava.ddns.net:8000/Java_JDK/graalvm-ce-java11-22.0.0.2.tar.gz"
+RUN tar -zxC /usr/lib/jvm -f graalvm-ce-java11-22.0.0.2.tar.gz
+RUN rm -f graalvm-ce-java11-22.0.0.2.tar.gz
+
+RUN ln -s /usr/lib/jvm/graalvm-ce-java11-22.0.0.2 /usr/lib/jvm/current
+
+RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
+    &&  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-$GLIBC_VERSION.apk" \
+    &&  apk --no-cache add "glibc-$GLIBC_VERSION.apk" \
+    &&  rm "glibc-$GLIBC_VERSION.apk" \
+    &&  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-bin-$GLIBC_VERSION.apk" \
+    &&  apk --no-cache add "glibc-bin-$GLIBC_VERSION.apk" \
+    &&  rm "glibc-bin-$GLIBC_VERSION.apk" \
+    &&  wget "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-i18n-$GLIBC_VERSION.apk" \
+    &&  apk --no-cache add "glibc-i18n-$GLIBC_VERSION.apk" \
+    &&  rm "glibc-i18n-$GLIBC_VERSION.apk"
+RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.34-r0/glibc-2.34-r0.apk
+RUN apk add glibc
+
+
