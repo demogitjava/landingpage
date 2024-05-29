@@ -9,7 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>landingpage</name>
     <description>Demo Landingpage</description>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
 
 

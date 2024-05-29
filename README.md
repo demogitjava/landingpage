@@ -5,15 +5,19 @@
 |  |  |  
 |--|--|  
 | [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
- [native - landingpage.jar](http://demogitjava.ddns.net:8000/native-landingpage.jar) |  2023 08 29|  
  [war - landingpage.war](http://demogitjava.ddns.net:8000/native-landingpage.war) |  2023 10 28|  
 
 
 
-the used timezone is -> UTC Europe/Berlin
+the used timezone is -> Europe/Berlin
 
 The used IDE was Apache Netbeans 
 [download netbeans](https://netbeans.apache.org/download/index.html)
+
+edit the port on netbeans to run the project on port 8080
+Project properties -> run -> vm options -> -Dserver.port=8080
+
+
 
 The used maven 3.9.1 version  
 [download maven](https://maven.apache.org/download.cgi)
