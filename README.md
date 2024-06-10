@@ -41,9 +41,13 @@ edit password and username for your smtp account -- hard coded in the moment
 
 
 
-The login for the database over jdbc is  
-`admin  
-jj78mvpr52k1`
+The login for the database over jdbc is
+
+'root'
+'jj78mvpr52k1'
+
+'jdbc:derby://172.17.0.2:1527//root/derbyshopdb'
+
 
 the application url // port is  
 url: https:// "your domain " /

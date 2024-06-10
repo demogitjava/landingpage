@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
-public class DemoLandingPageApplication {
+public class DemoLandingPageApplication 
+{
 
 
     // java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers
@@ -39,7 +40,7 @@ public class DemoLandingPageApplication {
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of(st_timezones));
         //ZonedDateTime now = ZonedDateTime.now();
 
-        // set up to GMT
+        // set up to UTC
         now.withZoneSameInstant( ZoneId.of("Europe/Berlin") )
                 .format( DateTimeFormatter.ISO_OFFSET_DATE_TIME );
         // 1. ZonedDateTime to TimeStamp
