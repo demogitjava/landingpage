@@ -10,7 +10,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 
-    
 
 
 
@@ -25,6 +24,8 @@ public class DemoLandingPageApplication
 {
 
 
+    
+    
     // java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers
 
 
@@ -52,7 +53,6 @@ public class DemoLandingPageApplication
         System.out.println(now);
         System.out.println(timestamp);
         System.out.println(timestamp2);
-
 
         String operationsytem = System.getProperty("os.name").toLowerCase();
         if (operationsytem.contains("win")){
