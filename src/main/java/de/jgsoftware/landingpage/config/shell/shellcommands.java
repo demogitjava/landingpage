@@ -218,6 +218,7 @@ public class shellcommands {
     }
 
 
+    /*
     // 192.168.178.4	f713f62510c9
     @ShellMethod("install hosts ---> ihost")
     public String ihosts()
@@ -240,9 +241,11 @@ public class shellcommands {
         }
         return stresolv;
     }
-
-    @ShellMethod("install resolvconf ---> iresolvconf")
-    public String iresolvconf()
+    */
+    
+    // resolv.conf - google
+    @ShellMethod("install resolvconf1 ---> iresolvconfgoogle")
+    public String iresolvconfgoogle()
     {
         String stresolv = new String("resolvconf installed");
 
@@ -252,12 +255,249 @@ public class shellcommands {
 
             FileWriter fileWriter = new FileWriter(f);
             PrintWriter printWriter = new PrintWriter(fileWriter);
-            printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 8.8.8.8" + "\n");
+            printWriter.print("nameserver 8.8.4.4" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+       // resolv.conf - Control D
+    @ShellMethod("install resolvconf2 ---> iresolvconfcontrold")
+    public String iresolvconfcontrold()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 76.76.2.0" + "\n");
+            printWriter.print("nameserver 76.76.10.0" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+
+    
+      // resolv.conf - Quad9
+    @ShellMethod("install resolvconf3 ---> iresolvconfquad9")
+    public String iresolvconfquad9()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 9.9.9.9" + "\n");
+            printWriter.print("nameserver 149.112.112.112" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+
+    
+      // resolv.conf - OpenDNS Home
+    @ShellMethod("install resolvconf4 ---> iresolvconfopendns")
+    public String iresolvconfopendns()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 208.67.222.222" + "\n");
+            printWriter.print("nameserver 208.67.220.220" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+    // resolv.conf - cisco umbrella
+    @ShellMethod("install resolvconf5 ---> iresolvconfciscoumbrella")
+    public String iresolvconfciscoumbrella()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
             printWriter.print("nameserver 208.67.222.222" + "\n");
             printWriter.print("nameserver 208.67.220.220" + "\n");
             printWriter.print("nameserver 208.67.220.222" + "\n");
-            printWriter.print("ameserver 208.67.222.220" + "\n");
-            printWriter.print("options ndots:0" + "\n");
+            printWriter.print("nameserver 208.67.222.220" + "\n");
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+    
+        // resolv.conf - Cloudflare
+    @ShellMethod("install resolvconf6 ---> iresolvconfcloudflare")
+    public String iresolvconfcloudflare()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 1.1.1.1" + "\n");
+            printWriter.print("nameserver 1.0.0.1" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+         // resolv.conf - AdGuard DNS
+    @ShellMethod("install resolvconf7 ---> iresolvconfadqurddns")
+    public String iresolvconfadqurddns()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 94.140.14.14" + "\n");
+            printWriter.print("nameserver 94.140.15.15" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+        // resolv.conf - CleanBrowsing
+    @ShellMethod("install resolvconf8 ---> iresolvconfcleanbrowsing")
+    public String iresolvconfcleanbrowsing()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 185.228.168.9" + "\n");
+            printWriter.print("nameserver 185.228.169.9" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+        // resolv.conf - Alternate DNS
+    @ShellMethod("install resolvconf9 ---> iresolvconfalternatedns")
+    public String iresolvconfalternatedns()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 76.76.19.19" + "\n");
+            printWriter.print("nameserver 76.223.122.150" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
+
+            printWriter.close();
+        } catch (IOException e)
+        {
+            System.out.print("Fehler " + e);
+        }
+        return stresolv;
+    }
+    
+          // resolv.conf - Alternate DNS
+    @ShellMethod("install resolvconf10 ---> iresolvconfcomodo")
+    public String iresolvconfcomodo()
+    {
+        String stresolv = new String("resolvconf installed");
+
+        File f = new File("/etc/resolv.conf");
+        try
+        {
+
+            FileWriter fileWriter = new FileWriter(f);
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            //printWriter.print("search demogitjava freewebshop free landingpage" + "\n");
+            printWriter.print("nameserver 8.26.56.26" + "\n");
+            printWriter.print("nameserver 8.20.247.20" + "\n");
+          
+           //printWriter.print("options ndots:0" + "\n");
 
             printWriter.close();
         } catch (IOException e)
@@ -369,5 +609,6 @@ public class shellcommands {
     }
 
 
+    
 
 }

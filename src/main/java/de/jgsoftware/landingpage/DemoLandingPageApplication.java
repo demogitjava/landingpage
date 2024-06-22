@@ -5,11 +5,11 @@ import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
-
 
 
 
@@ -21,11 +21,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
 public class DemoLandingPageApplication 
+
 {
-
-
-    
-    
+   
     // java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers
 
 
@@ -69,6 +67,9 @@ public class DemoLandingPageApplication
             operationsytem = "unix-linux";
         }
         System.out.print(operationsytem + "\n");
+
+     
+
 
       
         SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoLandingPageApplication.class);
