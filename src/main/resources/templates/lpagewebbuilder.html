@@ -219,6 +219,16 @@
 
     </div>
 
+    
+     <div class="col-sm-12" id="gjs">
+
+
+            <!--/*@thymesVar id="defaultsite" type="string"*/-->
+            <div th:include="${defaultsite}">
+
+            </div>
+
+        </div>
 
 </div>
 
@@ -286,15 +296,7 @@
 
         </script>
 
-        <div id="gjs">
-
-
-            <!--/*@thymesVar id="defaultsite" type="string"*/-->
-            <div th:include="${defaultsite}">
-
-            </div>
-
-        </div>
+       
 
         <script th:inline="javascript">
 
