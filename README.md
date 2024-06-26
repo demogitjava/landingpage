@@ -98,6 +98,8 @@ to run a container on desktop pc
 then 172.17.0.1
 docker get the route to the first network -> rate for download is about 500 kb**
 
+macvlan docker gateway 
+docker network create -d macvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o parent=eth0.50 macvlan50
 
 
 backup  
