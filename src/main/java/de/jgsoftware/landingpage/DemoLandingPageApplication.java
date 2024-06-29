@@ -21,7 +21,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
 public class DemoLandingPageApplication 
-
 {
    
     // java -jar h2-1.4.199.jar -webAllowOthers -tcpAllowOthers
