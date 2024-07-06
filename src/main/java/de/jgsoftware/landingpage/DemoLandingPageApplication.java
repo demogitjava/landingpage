@@ -47,6 +47,7 @@ public class DemoLandingPageApplication
         // 2. ZonedDateTime to TimeStamp , no different
         Timestamp timestamp2 = Timestamp.from(now.toInstant());
 
+        
         System.out.println(now);
         System.out.println(timestamp);
         System.out.println(timestamp2);
