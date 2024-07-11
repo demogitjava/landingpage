@@ -11,7 +11,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import de.jgsoftware.landingpage.NtpClient1;
+import de.jgsoftware.landingpage.NtpClient2;
+import de.jgsoftware.landingpage.NtpClient3;
 
 /**
  *
@@ -35,6 +40,26 @@ public class DemoLandingPageApplication
 
     public static void main(String[] args)
     {
+        try {
+            // 0.openwrt.pool.ntp.org
+            NtpClient1 ntpclient = new NtpClient1();
+            
+            // 1.openwrt.pool.ntp.org
+            NtpClient2 ntpclient1 = new NtpClient2();
+            
+            // 2.openwrt.pool.ntp.org
+            NtpClient3 ntpclient2 = new NtpClient3();
+            
+            // 3.openwrt.pool.ntp.org
+            NtpClient4 ntpclient3 = new NtpClient4();
+            
+        } catch (Exception ex) {
+            Logger.getLogger(DemoLandingPageApplication.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+
+        
+        
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of(st_timezones));
         //ZonedDateTime now = ZonedDateTime.now();
 
