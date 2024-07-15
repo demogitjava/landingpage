@@ -52,6 +52,8 @@ public class DemoLandingPageApplication
             
             // 3.openwrt.pool.ntp.org
             NtpClient4 ntpclient3 = new NtpClient4();
+
+           
             
         } catch (Exception ex) {
             Logger.getLogger(DemoLandingPageApplication.class.getName()).log(Level.SEVERE, null, ex);
