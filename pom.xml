@@ -239,6 +239,7 @@
     <build>
         <plugins>
 
+              <!-- disable tom ee  
                     <plugin>
                         <groupId>org.apache.openejb.maven</groupId>
                         <artifactId>tomee-maven-plugin</artifactId>
@@ -254,16 +255,18 @@
                           <path>${project.build.directory}/${project.build.finalName}.war</path>
                         </configuration>
                     </plugin>
+                    -->
                     
-                    <plugin>
-                        <groupId>org.graalvm.buildtools</groupId>
-                        <artifactId>native-maven-plugin</artifactId>
-                    </plugin>
-            
+                      <!-- disable native  
+                            <plugin>
+                                <groupId>org.graalvm.buildtools</groupId>
+                                <artifactId>native-maven-plugin</artifactId>
+                            </plugin>
+                    -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
+                <executions> 
                     <execution>
                         <goals>
                             <goal>repackage</goal>
@@ -288,7 +291,13 @@
                     <debug>false</debug>
                 </configuration>
             </plugin>
+                    
             
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
          
    
 
