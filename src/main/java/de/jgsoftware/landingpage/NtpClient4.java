@@ -16,7 +16,7 @@ import org.apache.commons.net.ntp.TimeStamp;
  * @author hoscho
  */
 public class NtpClient4 {
-  private static final String SERVER_NAME = "3.openwrt.pool.ntp.org";
+  private static final String SERVER_NAME = "3.suse.pool.ntp.org";
 
   private volatile TimeInfo timeInfo;
   private volatile Long offset;

@@ -14,9 +14,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import de.jgsoftware.landingpage.NtpClient1;
-import de.jgsoftware.landingpage.NtpClient2;
-import de.jgsoftware.landingpage.NtpClient3;
 
 /**
  *
@@ -40,17 +37,18 @@ public class DemoLandingPageApplication
 
     public static void main(String[] args)
     {
-        try {
-            // 0.openwrt.pool.ntp.org
+        try 
+        {
+            // 0.suse.pool.ntp.org
             NtpClient1 ntpclient = new NtpClient1();
             
-            // 1.openwrt.pool.ntp.org
+            // 1.suse.pool.ntp.org
             NtpClient2 ntpclient1 = new NtpClient2();
             
-            // 2.openwrt.pool.ntp.org
+            // 2.suse.pool.ntp.org
             NtpClient3 ntpclient2 = new NtpClient3();
             
-            // 3.openwrt.pool.ntp.org
+            // 3.suse.pool.ntp.org
             NtpClient4 ntpclient3 = new NtpClient4();
 
            
