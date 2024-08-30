@@ -1,7 +1,7 @@
-FROM jgsoftwares/graalce11
+FROM oraclelinux:8
 
-# for debug jetbrains remote
-# dnf groupinstall "Minimal install"
+
+RUN dnf groupinstall "Minimal install"
 
 
 RUN (yum update -y; \
