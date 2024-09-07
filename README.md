@@ -5,12 +5,12 @@
 |  |  |  
 |--|--|  
 | [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
- [war - landingpage.war](http://demogitjava.ddns.net:8000/native-landingpage.war) |  2023 10 28|  
+ [war - landingpage.war](http://demogitjava.ddns.net:8000/landingpage.war) |  2023 10 28|  
 
 
 
 the used timezone is -> Europe/Berlin
-
+ 
 The used IDE was Apache Netbeans 
 [download netbeans](https://netbeans.apache.org/download/index.html)
 
@@ -70,8 +70,26 @@ docker build -f Dockerfile -t landingpage .
 
 run the container with 
 
--p 0.0.0.0:80:80 --add-host=docker:217.160.255.254 --network 172.17.0.0 --name landingpage 
+docker run -it -p 0.0.0.0:80:80 
+        --add-host=demogitjava.ddns.net:217.160.255.254 
+        --runtime io.containerd.runc.v2 
+        --name oraclelinuxlandingpage 
+        -e TZ=Europe/Berlin 
+        --net=host 
+        --hostname demogitjava.ddns.net 
+        --restart unless-stopped 
+        --cap-add=NET_ADMIN 
+        --platform=linux/amd64 
+        --cpu-quota 2000 
+        --cpu-period 2000 
+        --cpu-shares 1024 
+        --kernel-memory=6M 
+        --cpuset-cpus="1" 
+        -e NTP_SERVER="2.rhel.pool.ntp.org" 
+        jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh
 
+optional 
+--runtime runc
 
 
 <br/>  
