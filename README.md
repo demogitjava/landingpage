@@ -4,8 +4,8 @@
 
 |  |  |  
 |--|--|  
-| [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage.jar) |  2023 08 24|  
- [war - landingpage.war](http://demogitjava.ddns.net:8000/landingpage.war) |  2023 10 28|  
+| [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage-0.0.1-SNAPSHOT.jar) |  2023 08 24|  
+ [war - landingpage.war](http://demogitjava.ddns.net:8000/landingpage-0.0.1-SNAPSHOT.war) |  2023 10 28|  
 
 
 
