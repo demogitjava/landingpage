@@ -5,7 +5,6 @@ import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Map;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -13,6 +12,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+
 
 
 /**
@@ -35,21 +36,23 @@ public class DemoLandingPageApplication
     public static String st_timezones = "Europe/Berlin";
     public static String operationsytem = null;
 
+    
+        
     public static void main(String[] args)
     {
         try 
         {
             // 0.suse.pool.ntp.org
-            NtpClient1 ntpclient = new NtpClient1();
+            de.jgsoftware.landingpage.NtpClient1 ntpclient = new de.jgsoftware.landingpage.NtpClient1();
             
             // 1.suse.pool.ntp.org
-            NtpClient2 ntpclient1 = new NtpClient2();
+            de.jgsoftware.landingpage.NtpClient2 ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
             
             // 2.suse.pool.ntp.org
-            NtpClient3 ntpclient2 = new NtpClient3();
+            de.jgsoftware.landingpage.NtpClient3 ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();
             
             // 3.suse.pool.ntp.org
-            NtpClient4 ntpclient3 = new NtpClient4();
+            de.jgsoftware.landingpage.NtpClient4 ntpclient3 = new de.jgsoftware.landingpage.NtpClient4();
 
            
             
