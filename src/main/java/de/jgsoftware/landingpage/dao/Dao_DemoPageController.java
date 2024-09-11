@@ -16,23 +16,13 @@ import de.jgsoftware.landingpage.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import de.jgsoftware.landingpage.model.areacodes;
 
-import de.jgsoftware.landingpage.model.useragent;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.sql.DataSource;
-import org.apache.catalina.Manager;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  *

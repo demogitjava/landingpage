@@ -14,12 +14,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-
-
 /**
  *
  * @author hoscho
  */
+
 @SpringBootApplication
 //@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
@@ -44,7 +43,7 @@ public class DemoLandingPageApplication
         {
             // 0.suse.pool.ntp.org
             de.jgsoftware.landingpage.NtpClient1 ntpclient = new de.jgsoftware.landingpage.NtpClient1();
-            
+           
             // 1.suse.pool.ntp.org
             de.jgsoftware.landingpage.NtpClient2 ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
             
@@ -54,8 +53,6 @@ public class DemoLandingPageApplication
             // 3.suse.pool.ntp.org
             de.jgsoftware.landingpage.NtpClient4 ntpclient3 = new de.jgsoftware.landingpage.NtpClient4();
 
-           
-            
         } catch (Exception ex) {
             Logger.getLogger(DemoLandingPageApplication.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -103,7 +100,7 @@ public class DemoLandingPageApplication
         SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoLandingPageApplication.class);
         builder
                 // none
-                // reactive
+                // react+ive
                 // servlet
                .web(WebApplicationType.SERVLET)
                .headless(true).run();
