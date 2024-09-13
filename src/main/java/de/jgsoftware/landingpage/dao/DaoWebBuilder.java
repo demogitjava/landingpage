@@ -134,22 +134,22 @@ public class DaoWebBuilder implements iDaoWebBuilder
     {
 
         ///target/classes/templates/  for local debug
-        String fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
+        String fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
 
         String filename = new String(language + "_" + component + ".html");
         if (filename.equals("_about.html"))
         {
-            fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+            fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "about.html";
         }
         if(filename.equals("_service.html"))
         {
-            fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+            fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "service.html";
         }
         if(filename.equals("_contact.html"))
         {
-            fileLocation = new File("root/IdeaProjects/landingpage/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+            fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "contact.html";
         }
         fhtml = new File(filename);

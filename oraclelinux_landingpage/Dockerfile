@@ -1,4 +1,5 @@
-FROM jgsoftwares/oraclelinux_graalvm_landingpage:11
+FROM jgsoftwares/oraclelinux_openjdk:11
+
 
 
 #ENV TZ=Europe/Berlin

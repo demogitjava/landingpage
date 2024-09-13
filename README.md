@@ -19,7 +19,7 @@ Project properties -> run -> vm options -> -Dserver.port=8080
 
 
 
-The used maven 3.9.1 version  
+The used maven 3.5.4 version  
 [download maven](https://maven.apache.org/download.cgi)
 
 ![enter image description here](https://raw.githubusercontent.com/demogitjava/demodatabase/master/landingapge.png)
@@ -61,12 +61,16 @@ look at the application.properties
 # For Docker
 ============================================================  
 <br/>  
-start docker container with   
-line   
+acces to running docker container with 
+<br/>
+docker exec oraclelinuxlandingpagedebug /bin/bash 
+<br/>
+
 
 
 to build the image type:
 docker build -f Dockerfile -t landingpage .
+
 
 run the container with 
 

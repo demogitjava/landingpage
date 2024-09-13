@@ -116,8 +116,8 @@ public class Dao_DemoPageController implements IDaoDemoPageController
     public Useragent saveuseragent(Useragent muagent)
     {
 
-       // manuel Query JdbcTempalte jtm
-       // Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
+        // manuel Query JdbcTempalte jtm
+        // Long countid = jtm.queryForObject("SELECT COUNT (*) FROM useragent", Long.class);
           
         Long countid2 = (Long) ijpauseragent.count();
         Integer countid = countid2.intValue();  // convert long to Integer
