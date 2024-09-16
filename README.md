@@ -71,7 +71,18 @@ copy jar to docker container with
 docker cp container:source_path host_destination_path
 <br/>
 docker cp  oraclelinuxlandingpagedebug:/root /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar
+<br/>
+for the debug image 
+ 
+connect from netbeans with jpda debugger:
+ip - 127.0.0.1
+port = 5005
 
+
+sh file to run the docker container in debug mode
+
+#!/bin/bash \
+java -jar /root/landingpage-0.0.1-SNAPSHOT.jar -J-Dsun.java2d.dpiaware=true\
 
 
 to build the image type:
