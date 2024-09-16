@@ -22,24 +22,24 @@ public class NtpClient2 {
 
   public NtpClient2() {
 
-     try
-{
+   try
+    {
         NTPUDPClient client = new NTPUDPClient();
-    // We want to timeout if a response takes longer than 10 seconds
-    client.setDefaultTimeout(10_000);
+        // We want to timeout if a response takes longer than 10 seconds
+        client.setDefaultTimeout(10_000);
 
-    InetAddress inetAddress = InetAddress.getByName(NTPSERVER_NAME);
-    TimeInfo timeInfo = client.getTime(inetAddress);
-    timeInfo.computeDetails();
-    if (timeInfo.getOffset() != null) {
-        this.timeInfo = timeInfo;
-        this.offset = timeInfo.getOffset();
-    }
+        InetAddress inetAddress = InetAddress.getByName(NTPSERVER_NAME);
+        TimeInfo timeInfo = client.getTime(inetAddress);
+        timeInfo.computeDetails();
+        if (timeInfo.getOffset() != null) {
+            this.timeInfo = timeInfo;
+            this.offset = timeInfo.getOffset();
+        }
 
-    // This system NTP time
-    TimeStamp systemNtpTime = TimeStamp.getCurrentTime();
-    System.out.println("System time:" + "\t" +systemNtpTime + "  " + systemNtpTime.toDateString());
- } catch(Exception e)
+        // This system NTP time
+        TimeStamp systemNtpTime = TimeStamp.getCurrentTime();
+        System.out.println("System time:" + "\t" + systemNtpTime.toDateString() + "  " + systemNtpTime.toDateString());
+    } catch(Exception e)
     {
         System.out.print("Fehler " + e);
     }
