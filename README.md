@@ -61,10 +61,16 @@ look at the application.properties
 # For Docker
 ============================================================  
 <br/>  
-acces to running docker container with 
+
+access to running docker container with 
 <br/>
 docker exec oraclelinuxlandingpagedebug /bin/bash 
 <br/>
+copy jar to docker container with
+<br/>
+docker cp container:source_path host_destination_path
+<br/>
+docker cp  oraclelinuxlandingpagedebug:/root /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar
 
 
 

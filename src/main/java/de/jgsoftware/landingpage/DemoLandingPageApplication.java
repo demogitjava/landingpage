@@ -39,6 +39,15 @@ public class DemoLandingPageApplication
         
     public static void main(String[] args)
     {
+        
+        /*
+        
+            start ntp client 
+            to get system time as string 
+        
+            
+        
+        */
         try 
         {
             // 0.suse.pool.ntp.org
