@@ -10,9 +10,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 /**
  *
@@ -35,38 +32,31 @@ public class DemoLandingPageApplication
     public static String st_timezones = "Europe/Berlin";
     public static String operationsytem = null;
 
+    // 0.suse.pool.ntp.org
+    de.jgsoftware.landingpage.NtpClient1 ntpclient;
+    // 1.suse.pool.ntp.org
+    de.jgsoftware.landingpage.NtpClient2 ntpclient1;
+    // 2.suse.pool.ntp.org
+    de.jgsoftware.landingpage.NtpClient3 ntpclient2;
+    // 3.suse.pool.ntp.org
+    de.jgsoftware.landingpage.NtpClient4 ntpclient3;
     
+    
+    
+    public DemoLandingPageApplication()
+    {
+        /*
+            load ntp clients for time output
+            
+        */
+         ntpclient = new de.jgsoftware.landingpage.NtpClient1();
+         ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
+         ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();
+    }
         
     public static void main(String[] args)
     {
         
-        /*
-        
-            start ntp client 
-            to get system time as string 
-        
-            
-        
-        */
-        try 
-        {
-            // 0.suse.pool.ntp.org
-            de.jgsoftware.landingpage.NtpClient1 ntpclient = new de.jgsoftware.landingpage.NtpClient1();
-           
-            // 1.suse.pool.ntp.org
-            de.jgsoftware.landingpage.NtpClient2 ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
-            
-            // 2.suse.pool.ntp.org
-            de.jgsoftware.landingpage.NtpClient3 ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();
-            
-            // 3.suse.pool.ntp.org
-            de.jgsoftware.landingpage.NtpClient4 ntpclient3 = new de.jgsoftware.landingpage.NtpClient4();
-
-        } catch (Exception ex) {
-            Logger.getLogger(DemoLandingPageApplication.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-
         
         
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of(st_timezones));
