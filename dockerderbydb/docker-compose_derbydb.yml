@@ -1,15 +1,14 @@
 version: '3'
 services:
 
-  app:
-    image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
-    command: 
-    runtime: io.containerd.runc.v2
+  
     
   de_derby:
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
     container_name: de_derby
-    
+    platform: linux/amd64
+    runtime: io.containerd.runc.v2
+    isolation: default
     ports:
       - "0.0.0.0:1527:1527"
     networks:
@@ -23,16 +22,21 @@ services:
     # context: ./
     #  dockerfile: Dockerfile
 
+    devices: 
+       - "/dev/kvm" 
 
     environment:
       - TZ=Europe/Berlin
+      - NTP_SERVERS=2.rhel.pool.ntp.org
+      - NETWORK_IF=eth0 
+      
     dns:
       - 95.85.95.85
       - 2.56.220.2
    
-      
-   
-
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
 
 networks:
   172.17.0.0:
