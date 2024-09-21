@@ -1,4 +1,4 @@
-FROM jgsoftwares/graalce11
+FROM jgsoftwares/oraclelinux_openjdk:11
 
 #hostname
 ENV HOSTNAME demogitjava
