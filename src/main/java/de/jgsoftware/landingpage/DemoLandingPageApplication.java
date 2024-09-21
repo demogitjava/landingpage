@@ -45,10 +45,10 @@ public class DemoLandingPageApplication
     
     public DemoLandingPageApplication()
     {
-        /*
-            load ntp clients for time output
+         /*
+              load ntp clients for time output
             
-        */
+         */
          ntpclient = new de.jgsoftware.landingpage.NtpClient1();
          ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
          ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();

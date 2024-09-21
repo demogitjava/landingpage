@@ -1,4 +1,4 @@
-FROM jgsoftwares/alpinelinux_derbydb:edge
+FROM jgsoftwares/oraclelinux_openjdk:11
 
 
 #ENV JAVA_HOME="/usr/lib/jvm/default-jvm/"
