@@ -1,31 +1,28 @@
-
 version: '3'
 services:
 
    
-  openwrtbackfiregcore:
+  openwrt:
     image: jgsoftwares/openwrt-x86-backfire:gcore
-    container_name: openwrtbackfiregcore
+    container_name: openwrt
     platform: linux/amd64
     runtime: io.containerd.runc.v2
     isolation: default
+    command: /sbin/init
     privileged: true
-    restart: unless-stopped
-    kernel-memory: 6M
+    restart: always
     
-    #volumes:
-     
+    
+    
+    
 
     
-    ports:
-      - "0.0.0.0:123:123"
-      - "0.0.0.0:53:53"
-   
+    #build:
+    # context: ./
+    #  dockerfile: Dockerfile
 
-    extra_hosts:
-        - "demogitjava.ddns.net:217.160.255.254"
-    
-   
+    devices: 
+       - "/dev/kvm" 
 
     environment:
       - TZ=Europe/Berlin
@@ -36,6 +33,4 @@ services:
       - 95.85.95.85
       - 2.56.220.2
    
-    cap_add:
-      - NET_ADMIN
-      - SYS_ADMIN
+  
