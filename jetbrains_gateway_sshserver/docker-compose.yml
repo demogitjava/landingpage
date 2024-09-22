@@ -9,6 +9,13 @@ services:
     runtime: io.containerd.runc.v2
     isolation: default
     
+    volumes:
+      - /root/git:/root/git
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /srv/www/htdocs:/srv/www/htdocs
+      - /etc/resolv.conf:/etc/resolv.conf
+
+    
     ports:
       - "0.0.0.0:22:22"
    
