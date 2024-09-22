@@ -1,0 +1,41 @@
+
+version: '3'
+services:
+
+   
+  openwrtbackfiregcore:
+    image: jgsoftwares/openwrt-x86-backfire:gcore
+    container_name: openwrtbackfiregcore
+    platform: linux/amd64
+    runtime: io.containerd.runc.v2
+    isolation: default
+    privileged: true
+    restart: unless-stopped
+    kernel-memory: 6M
+    
+    #volumes:
+     
+
+    
+    ports:
+      - "0.0.0.0:123:123"
+      - "0.0.0.0:53:53"
+   
+
+    extra_hosts:
+        - "demogitjava.ddns.net:217.160.255.254"
+    
+   
+
+    environment:
+      - TZ=Europe/Berlin
+      - NTP_SERVERS=2.rhel.pool.ntp.org
+      - NETWORK_IF=eth0 
+      
+    dns:
+      - 95.85.95.85
+      - 2.56.220.2
+   
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
