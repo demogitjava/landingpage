@@ -2,18 +2,18 @@ version: '3'
 services:
 
    
-  devssh:
-    image: jgsoftwares/de_developmentx11ssh:kdeworkstation
-    container_name: devssh
+  de_landingpage:
+    image: jgsoftwares/oraclelinux_openjdk_landingpage:debug
+    container_name: de_landingpage
     platform: linux/amd64
     runtime: io.containerd.runc.v2
     isolation: default
     
     ports:
-      - "0.0.0.0:22:22"
-    #networks:
-    #  172.17.0.0:
-     #   ipv4_address: 172.17.0.20
+      - "0.0.0.0:80:80"
+    networks:
+      172.17.0.0:
+        ipv4_address: 172.17.0.20
 
     extra_hosts:
         - "demogitjava.ddns.net:217.160.255.254"
@@ -42,6 +42,6 @@ services:
  # 172.17.0.0:
   #  external: true
 
-#networks:
- # 172.17.0.0:
-  #  external: true
+networks:
+  172.17.0.0:
+    external: true
