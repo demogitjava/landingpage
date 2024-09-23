@@ -1,42 +1,35 @@
 version: '3'
 services:
-
-   
-  landingpage:
-    image: jgsoftwares/oraclelinux_openjdk_landingpage:latest
-    container_name: landingpage
-    platform: linux/amd64
-    runtime: io.containerd.runc.v2
-    isolation: default
-    
-    ports:
-      - "0.0.0.0:80:80"
-    #networks:
-    #  172.17.0.0:
-     #   ipv4_address: 172.17.0.20
-
-    network_mode: "host"
-    
-    #build:
-    # context: ./
-    #  dockerfile: Dockerfile
-
-    devices: 
-       - "/dev/kvm" 
-
-    environment:
-      - TZ=Europe/Berlin
-      - NTP_SERVERS=2.rhel.pool.ntp.org
-      - NETWORK_IF=eth0 
-      
-    dns:
-      - 95.85.95.85
-      - 2.56.220.2
-   
-    cap_add:
-      - NET_ADMIN
-      - SYS_ADMIN
-
-#networks:
- # 172.17.0.0:
-  #  external: true
+    oraclelinux_openjdk_landingpage:
+        stdin_open: true
+        tty: true
+        ports:
+            - 0.0.0.0:80:80
+            - 0.0.0.0:5005:5005
+        environment:
+            - JAVA_DEBUG=true
+            - TZ=Europe/Berlin
+            - NTP_SERVER=2.rhel.pool.ntp.org
+            - NETWORK_IF=eth0
+        blkio_config:
+            weight: 100
+        extra_hosts:
+            - demogitjava.ddns.net:217.160.255.254
+        runtime: io.containerd.runc.v2
+        container_name: oraclelinuxlandingpagedebug
+        network_mode: host
+        hostname: demogitjava.ddns.net
+        volumes:
+            - /etc/resolv.conf:/etc/resolv.conf
+        restart: unless-stopped
+        cap_add:
+            - NET_ADMIN
+        platform: linux/amd64
+        cpu_quota: "2000"
+        cpu_period: "2000"
+        cpu_shares: 1024
+        isolation: default
+        devices:
+            - /dev/kvm
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:debug
+        command: /bin/bash /root/runlandingpage.sh
