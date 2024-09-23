@@ -1,4 +1,5 @@
 version: '3'
+
 services:
     oraclelinux_chrony:
         stdin_open: true
@@ -13,7 +14,7 @@ services:
             - NETWORK_IF=eth0
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
-        platform: linux/amd64,linux/amd64
+        platform: linux/amd64
         network_mode: host
         hostname: demogitjava.ddns.net
         restart: unless-stopped
