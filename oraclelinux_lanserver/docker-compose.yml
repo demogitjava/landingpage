@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+    oraclelinux_openjdk_lanservertcp:
+        stdin_open: true
+        tty: true
+        ports:
+            - 0.0.0.0:8443:8443
+        extra_hosts:
+            - demolanserver.ddns.net:217.160.255.254
+        environment:
+            - TZ=Europe/Berlin
+            - NTP_SERVER=2.rhel.pool.ntp.org
+            - NETWORK_IF=eth0
+        runtime: io.containerd.runc.v2
+        blkio_config:
+            weight: 100
+        platform: linux/amd64
+        hostname: demolanserver.ddns.net
+        networks:
+            172.17.0.0:
+                ipv4_address: 172.17.0.104
+        container_name: oraclelinuxlanservertcp
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /etc/resolv.conf:/etc/resolv.conf
+        restart: unless-stopped
+        devices:
+            - /dev/kvm
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        image: jgsoftwares/oraclelinux_openjdk_lanservertcp:latest
+        command: /bin/bash /root/LanServer.sh
+networks:
+    172.17.0.0:
+        external: true
+        name: 172.17.0.0
