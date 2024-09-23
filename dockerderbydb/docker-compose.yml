@@ -11,12 +11,13 @@ services:
     isolation: default
     ports:
       - "0.0.0.0:1527:1527"
-    networks:
-      172.17.0.0:
-        ipv4_address: 172.17.0.2
+  
+    network_mode: "host"
 
-    extra_hosts:
-        - "demogitjava.ddns.net:217.160.255.254"
+    
+    
+    
+    # build database from dockerfile
     
     #build:
     # context: ./
@@ -30,6 +31,8 @@ services:
       - NTP_SERVERS=2.rhel.pool.ntp.org
       - NETWORK_IF=eth0 
       
+      
+    # dns resovler gcore  
     dns:
       - 95.85.95.85
       - 2.56.220.2
@@ -37,9 +40,7 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
+ 
 
-networks:
-  172.17.0.0:
-    external: true
 
 
