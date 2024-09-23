@@ -1,44 +1,41 @@
 version: '3'
 services:
-
-   
-  devssh:
-    image: jgsoftwares/de_developmentx11ssh:kdeworkstation
-    container_name: devssh
-    platform: linux/amd64
-    runtime: io.containerd.runc.v2
-    isolation: default
-    
-    volumes:
-      - /root/git:/root/git
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /srv/www/htdocs:/srv/www/htdocs
-      - /etc/resolv.conf:/etc/resolv.conf
-
-    
-    ports:
-      - "0.0.0.0:22:22"
-   
-
-    extra_hosts:
-        - "demogitjava.ddns.net:217.160.255.254"
-    
-    #build:
-    # context: ./
-    #  dockerfile: Dockerfile
-
-    devices: 
-       - "/dev/kvm" 
-
-    environment:
-      - TZ=Europe/Berlin
-      - NTP_SERVERS=2.rhel.pool.ntp.org
-      - NETWORK_IF=eth0 
-      
-    dns:
-      - 95.85.95.85
-      - 2.56.220.2
-   
-    cap_add:
-      - NET_ADMIN
-      - SYS_ADMIN
+    de_developmentx11ssh:
+        stdin_open: true
+        tty: true
+        ports:
+            - 0.0.0.0:22:22
+        runtime: io.containerd.runc.v2
+        blkio_config:
+            weight: 100
+        environment:
+            - TZ=Europe/Berlin
+            - NTP_SERVER=2.rhel.pool.ntp.org
+            - NETWORK_IF=eth0
+        extra_hosts:
+            - demogitjava.ddns.net:217.160.255.254
+        platform: linux/amd64,linux/amd64
+        deploy:
+            resources:
+                reservations:
+                    memory: 2048m
+                limits:
+                    memory: 6144m
+        volumes:
+            - /root/git:/root/git
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /srv/www/htdocs:/srv/www/htdocs
+        dns:
+            - 95.85.95.85
+            - 2.56.220.2
+        container_name: devssh
+        network_mode: host
+        hostname: demogitjava.ddns.net
+        cpu_quota: "2000"
+        cpu_period: "2000"
+        cpu_shares: 1024
+        devices:
+            - /dev/kvm
+        privileged: true
+        isolation: default
+        image: jgsoftwares/de_developmentx11ssh:kdeworkstation
