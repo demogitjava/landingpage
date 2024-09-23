@@ -5,17 +5,19 @@ services:
     
   de_derby:
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
+    
+
     container_name: de_derby
     platform: linux/amd64
     runtime: io.containerd.runc.v2
     isolation: default
     ports:
       - "0.0.0.0:1527:1527"
-  
-    network_mode: "host"
+    networks:
+     172.17.0.0:
+        ipv4_address: 172.17.0.2
 
-    
-    
+     
     
     # build database from dockerfile
     
@@ -42,5 +44,9 @@ services:
       - SYS_ADMIN
  
 
+
+networks:
+  172.17.0.0:
+    external: true
 
 

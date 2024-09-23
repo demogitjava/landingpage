@@ -4,7 +4,7 @@ services:
    
   landingpage:
     image: jgsoftwares/oraclelinux_openjdk_landingpage:latest
-    container_name: devssh
+    container_name: landingpage
     platform: linux/amd64
     runtime: io.containerd.runc.v2
     isolation: default
@@ -15,8 +15,7 @@ services:
     #  172.17.0.0:
      #   ipv4_address: 172.17.0.20
 
-    extra_hosts:
-        - "demogitjava.ddns.net:217.160.255.254"
+    network_mode: "host"
     
     #build:
     # context: ./
