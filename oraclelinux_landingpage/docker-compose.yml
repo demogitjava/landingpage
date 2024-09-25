@@ -1,5 +1,7 @@
 version: '3'
+
 services:
+
     oraclelinux_openjdk_landingpage:
         stdin_open: true
         tty: true
@@ -32,4 +34,6 @@ services:
         devices:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debug
-        command: /bin/bash /root/runlandingpage.sh
+        command: /bin/bash /root/runlandingpage.sh 
+        
+   

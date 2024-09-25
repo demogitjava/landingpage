@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+    
     oraclelinux_openjdk_lanservertcp:
         stdin_open: true
         tty: true
@@ -32,6 +33,9 @@ services:
             - SYS_ADMIN
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:latest
         command: /bin/bash /root/LanServer.sh
+        
+        
+        
 networks:
     172.17.0.0:
         external: true
