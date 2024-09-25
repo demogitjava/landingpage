@@ -25,8 +25,6 @@ The used maven 3.6.3 version from netbeans with java opendjk 1.8
 maven executable jar
 mvn package
 
-copy file to runnable docker container form target path
-docker cp /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar oraclelinuxlandingpagedebug:/root
 
 
 
@@ -78,7 +76,7 @@ copy jar to docker container with
 <br/>
 docker cp container:source_path host_destination_path
 <br/>
-docker cp  oraclelinuxlandingpagedebug:/root /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar
+docker cp /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar oraclelinuxlandingpagedebug:/root
 <br/>
 for the debug image 
  
