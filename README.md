@@ -19,8 +19,16 @@ Project properties -> run -> vm options -> -Dserver.port=8080
 
 
 
-The used maven 3.5.4 version  
+The used maven 3.6.3 version from netbeans with java opendjk 1.8
 [download maven](https://maven.apache.org/download.cgi)
+
+maven executable jar
+mvn package
+
+copy file to runnable docker container form target path
+docker cp /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar oraclelinuxlandingpagedebug:/root
+
+
 
 ![enter image description here](https://raw.githubusercontent.com/demogitjava/demodatabase/master/landingapge.png)
 
