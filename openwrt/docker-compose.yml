@@ -28,6 +28,7 @@ services:
         cpu_quota: "1000"
         cpu_period: "1000"
         network_mode: host
+        hostname: demogitjava.ddns.net
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
