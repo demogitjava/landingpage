@@ -36,9 +36,9 @@ services:
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
-        cpu_quota: "2000"
-        cpu_period: "2000"
-        cpu_shares: 1024
+        #cpu_quota: "2000"
+        #cpu_period: "2000"
+        #cpu_shares: 1024
         cap_add:
             - NET_ADMIN
         devices:
