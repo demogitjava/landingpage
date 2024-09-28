@@ -1,8 +1,10 @@
 version: '3'
 
+# debug image 
+
 services:
 
-    oraclelinux_openjdk_landingpage:
+    oraclelinux_openjdk_landingpage_debug:
         stdin_open: true
         tty: true
         ports:
@@ -13,6 +15,8 @@ services:
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=eth0
+            - QEMU_PORTS='80'
+            - QEMU_PORTS='5005'
         blkio_config:
             weight: 100
         extra_hosts:
