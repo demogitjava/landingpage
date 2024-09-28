@@ -8,6 +8,8 @@ services:
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=eth0
+            - QEMU_PORTS='8082'
+            - QEMU_PORTS='9092'
         extra_hosts:
             #- docker:217.160.255.254
              - demogitjava.ddns.net:217.160.255.254
