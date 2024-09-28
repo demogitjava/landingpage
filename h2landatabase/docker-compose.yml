@@ -10,6 +10,8 @@ services:
             - NETWORK_IF=eth0
             - QEMU_PORTS='8082'
             - QEMU_PORTS='9092'
+            - QEMU_CPU=2
+            - QEMU_RAM=1024
         extra_hosts:
             #- docker:217.160.255.254
              - demogitjava.ddns.net:217.160.255.254

@@ -12,6 +12,8 @@ services:
             - TZ=Europe/Berlin
             - NETWORK_IF=eth0
             - QEMU_PORTS='8000'
+            - QEMU_CPU=2
+            - QEMU_RAM=1024
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         platform: linux/amd64
