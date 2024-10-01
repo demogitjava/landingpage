@@ -9,21 +9,17 @@
 
 
 
-the used timezone is -> Europe/Berlin
- 
-The used IDE was Apache Netbeans 
-[download netbeans](https://netbeans.apache.org/download/index.html)
-
-edit the port on netbeans to run the project on port 8080
-Project properties -> run -> vm options -> -Dserver.port=8080
+|  |  |  
+|--|--|  
+| [maven 3.9.8](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.8-bin.tar.gz) |  2024 10 01|  
+ [openjdk11](http://demogitjava.ddns.net:8000/Java_JDK/oracleopenjdk-11.0.2_linux-x64_bin.tar.gz) |  2024 10 01|  
+container path /etc/share/maven
 
 
 
-The used maven 3.6.3 version from netbeans with java opendjk 1.8
-[download maven](https://maven.apache.org/download.cgi)
 
 maven executable jar
-mvn package
+`mvn package`
 
 
 
