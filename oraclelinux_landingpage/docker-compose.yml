@@ -3,6 +3,16 @@ version: '3'
 # debug image landingpage
 #             derbydb
 
+#start container 
+#   - landingpagedebug
+#   - derbydb
+
+# used network is 172.17.0.0
+# create with 
+# docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
+
+# optional for debug is port 5005 - on line 20
+
 services:
     oraclelinux_openjdk_landingpage_debug:
         stdin_open: true

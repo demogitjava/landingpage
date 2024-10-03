@@ -1,6 +1,10 @@
 version: '3'
 
 # debug image 
+# this docker compose starts only the landingapge - debug image
+# network 172.17.0.0 is required
+# runs with derbdb
+
 
 services:
     de_derby:
