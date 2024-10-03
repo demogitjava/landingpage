@@ -1,9 +1,12 @@
 version: '3'
+
+# add host 
+# with static wan ip 217.160.255.254
+
 services:
     openwrt-x86-backfire:
         stdin_open: true
         tty: true
-       
         ports:
             - 0.0.0.0:22:22
             - 0.0.0.0:23:23
@@ -14,8 +17,7 @@ services:
             - 0.0.0.0:8000:8000  
             - 0.0.0.0:8082:8082
             - 0.0.0.0:8443:8443
-            - 0.0.0.0:51820:51820
-            
+            - 0.0.0.0:51820:51820     
         container_name: openwrtbackgcore
         runtime: io.containerd.runc.v2
         isolation: default
@@ -38,3 +40,9 @@ services:
         privileged: true
         image: jgsoftwares/openwrt-x86-backfire:gcore
         command: /bin/ash
+       
+        
+         
+
+
+        
