@@ -15,12 +15,16 @@
  [openjdk11](http://demogitjava.ddns.net:8000/Java_JDK/oracleopenjdk-11.0.2_linux-x64_bin.tar.gz) |  2024 10 01|  
 container path /etc/share/maven
 
+Apache Maven 3.9.8 (36645f6c9b5079805ea5009217e36f2cffd34256)
+Maven home: /usr/share/maven
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/oraclejdk11
+
 
 
 
 maven executable jar
 `mvn package`
-
+`mvn package spring-boot:repackage`
 
 
 
