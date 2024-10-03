@@ -3,11 +3,8 @@ services:
 
   
     
-  de_derby:
-    
+  de_derby:  
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
-    
-
     container_name: de_derby
     platform: linux/amd64
     runtime: io.containerd.runc.v2
@@ -17,18 +14,8 @@ services:
     networks:
      172.17.0.0:
         ipv4_address: 172.17.0.2
-
-     
-    
-    # build database from dockerfile
-    
-    #build:
-    # context: ./
-    #  dockerfile: Dockerfile
-
     devices: 
        - "/dev/kvm" 
-
     environment:
       - TZ=Europe/Berlin
       - NTP_SERVERS=2.rhel.pool.ntp.org
@@ -36,9 +23,6 @@ services:
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
-    
-    
-    # dns resovler gcore  
     dns:
       - 95.85.95.85
       - 2.56.220.2
@@ -46,9 +30,6 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
- 
-
-
 networks:
   172.17.0.0:
     external: true
