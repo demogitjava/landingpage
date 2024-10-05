@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 
 # debug image landingpage
 #             derbydb
@@ -54,7 +54,9 @@ services:
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debug
         command: /bin/bash /root/runlandingpage.sh 
     
-    de_derby:  
+    de_derby: 
+        stdin_open: true
+        tty: true
         image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
         container_name: de_derby
         platform: linux/amd64

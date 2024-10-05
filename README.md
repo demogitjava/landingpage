@@ -119,6 +119,11 @@ optional
 --runtime runc
 
 
+
+for docker compose:
+docker compose build
+docker compose up
+
 <br/>  
 docker for windows are available on https://www.docker.com/products/docker-desktop  
 
