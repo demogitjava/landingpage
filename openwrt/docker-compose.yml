@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 
 # add host 
 # with static wan ip 217.160.255.254
