@@ -33,11 +33,11 @@ public class DemoLandingPageApplication
     public static String st_timezones = "Europe/Berlin";
     public static String operationsytem = null;
 
-    // 0.suse.pool.ntp.org
+    // 0.rhel.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient1 ntpclient;
-    // 1.suse.pool.ntp.org
+    // 1.rhel.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient2 ntpclient1;
-    // 2.suse.pool.ntp.org
+    // 2.rhel.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient3 ntpclient2;
     
     
