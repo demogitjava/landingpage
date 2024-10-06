@@ -48,6 +48,7 @@ services:
         cap_add:
           - NET_ADMIN
           - SYS_ADMIN
+        network_mode: host
     
     oraclelinux_openjdk_landingpage_debug: 
         stdin_open: true
@@ -76,6 +77,7 @@ services:
         hostname: demogitjava.ddns.net
         volumes:
             - /etc/resolv.conf:/etc/resolv.conf
+            - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
         restart: unless-stopped
         cap_add:
             - NET_ADMIN
