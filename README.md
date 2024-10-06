@@ -15,10 +15,21 @@
  [openjdk11](http://demogitjava.ddns.net:8000/Java_JDK/oracleopenjdk-11.0.2_linux-x64_bin.tar.gz) |  2024 10 01|  
 container path /etc/share/maven
 
+change runtime with
+alternatives --config java
+
+  Selection    Command
+-----------------------------------------------
+   1           /usr/lib/jvm/graalvm/bin/java
+*  2           java-1.8.0-openjdk.x86_64 (/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-2.0.1.el8.x86_64/jre/bin/java)
+ + 3           java-11-openjdk.x86_64 (/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-3.0.1.el8.x86_64/bin/java)
+
+---> 3
+
+
 Apache Maven 3.9.8 (36645f6c9b5079805ea5009217e36f2cffd34256)
 Maven home: /usr/share/maven
 Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/oraclejdk11
-
 
 
 

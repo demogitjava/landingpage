@@ -39,8 +39,6 @@ public class DemoLandingPageApplication
     de.jgsoftware.landingpage.NtpClient2 ntpclient1;
     // 2.suse.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient3 ntpclient2;
-    // 3.suse.pool.ntp.org
-    de.jgsoftware.landingpage.NtpClient4 ntpclient3;
     
     
     
