@@ -103,12 +103,12 @@ java -jar /root/landingpage-0.0.1-SNAPSHOT.jar -J-Dsun.java2d.dpiaware=true\
 
 
 to build the image type:
-docker build -f Dockerfile -t landingpage .
+`docker build -f Dockerfile -t landingpage .`
 
 
 run the container with 
 
-docker run -it -p 0.0.0.0:80:80 
+`docker run -it -p 0.0.0.0:80:80 
         --add-host=demogitjava.ddns.net:217.160.255.254 
         --runtime io.containerd.runc.v2 
         --name oraclelinuxlandingpage 
@@ -124,16 +124,16 @@ docker run -it -p 0.0.0.0:80:80
         --kernel-memory=6M 
         --cpuset-cpus="1" 
         -e NTP_SERVER="2.rhel.pool.ntp.org" 
-        jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh
+        jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh`
 
 optional 
---runtime runc
+`--runtime runc`
 
 
 
 for docker compose:
-docker compose build
-docker compose up
+`docker compose build`
+`docker compose up`
 
 <br/>  
 docker for windows are available on https://www.docker.com/products/docker-desktop  
@@ -167,10 +167,10 @@ backup
 load / save  
 ============================================================
 
-docker save -o landingpage.tar jgsoftwares/jgsoftwares
+`docker save -o landingpage.tar jgsoftwares/jgsoftwares`
 
 to load your image to docker desktop type:
 
 
-docker load --input landingpage.tar
+`docker load --input landingpage.tar`
 
