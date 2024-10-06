@@ -24,11 +24,11 @@ services:
         cpu_quota: "2000"
         cpu_period: "2000"
         cpu_shares: 1024
-        networks:
-            172.17.0.0:
-                ipv4_address: 172.17.0.100
+        #networks:
+        #    172.17.0.0:
+        #        ipv4_address: 172.17.0.100
         image: jgsoftwares/httpdfileserver:latest
-networks:
-    172.17.0.0:
-        external: true
-        name: 172.17.0.0
+#networks:
+#   172.17.0.0:
+#      external: true
+#     name: 172.17.0.0
