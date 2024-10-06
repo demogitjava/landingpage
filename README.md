@@ -17,13 +17,7 @@ container path /etc/share/maven
 
 change runtime with
 alternatives --config java
-
-  Selection    Command
------------------------------------------------
-   1           /usr/lib/jvm/graalvm/bin/java
-*  2           java-1.8.0-openjdk.x86_64 (/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.412.b08-2.0.1.el8.x86_64/jre/bin/java)
- + 3           java-11-openjdk.x86_64 (/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-3.0.1.el8.x86_64/bin/java)
-
+(/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-3.0.1.el8.x86_64/bin/java)
 ---> 3
 
 
@@ -64,7 +58,8 @@ The login for the database over jdbc is
 'jj78mvpr52k1'
 
 'jdbc:derby://172.17.0.2:1527//root/derbyshopdb'
-
+or host config edit ip 
+'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
 
 the application url // port is  
 url: https:// "your domain " /
@@ -77,8 +72,6 @@ look at the application.properties
 
 # For Docker
 ============================================================  
-<br/>  
-
 access to running docker container with 
 <br/>
 docker exec oraclelinuxlandingpagedebug /bin/bash 
@@ -154,10 +147,6 @@ optional:
 to run a container on desktop pc
 `docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0`
 
-**to publish the container over the internet
--> 10.255.255.0
-then 172.17.0.1
-docker get the route to the first network -> rate for download is about 500 kb**
 
 macvlan docker gateway 
 docker network create -d macvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o parent=eth0.50 macvlan50
