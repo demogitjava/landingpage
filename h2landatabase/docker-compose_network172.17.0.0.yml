@@ -1,7 +1,17 @@
 #version: '3'
+
+
+# create network with
+# docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
+
+# h2 database stated in network mode
+
+# h2 database ip  - 172.17.0.101
+# h2 lanserver ip - 172.17.0.104
+
 services:
     oraclelinux_openjdk_h2db:
-        network_mode: host
+        
         stdin_open: true
         tty: true
         runtime: runc.io.containerd.runc.v2
@@ -25,9 +35,9 @@ services:
         ports:
             - 0.0.0.0:8082:8082
             - 0.0.0.0:9092:9092
-        #networks:
-        #    172.17.0.0:
-        #        ipv4_address: 172.17.0.101
+        networks:
+            172.17.0.0:
+                ipv4_address: 172.17.0.101
         container_name: oraclelinuxh2db
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
@@ -39,7 +49,7 @@ services:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_openjdk_h2db:1.4.199
         command: /bin/bash /root/landingpageh2db.sh
-#networks:
-#    172.17.0.0:
-#        external: true
-#        name: 172.17.0.0
+networks:
+    172.17.0.0:
+        external: true
+        name: 172.17.0.0

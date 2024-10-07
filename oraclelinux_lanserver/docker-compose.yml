@@ -1,48 +1,16 @@
 #version: '3'
 
 # start h2 db with lanserver tcp
+# with --add-host
+
+# lanserver startet in embedded mode 
+# jgsoftwares/oraclelinux_openjdk_lanservertcp:host
+
 services:
-    
-    oraclelinux_openjdk_h2db:
-        stdin_open: true
-        tty: true
-        runtime: runc.io.containerd.runc.v2
-        environment:
-            - TZ=Europe/Berlin
-            - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=eth0
-            - QEMU_PORTS='8082'
-            - QEMU_PORTS='9092'
-            - QEMU_CPU=2
-            - QEMU_RAM=1024
-        extra_hosts:
-            #- docker:217.160.255.254
-             - demogitjava.ddns.net:217.160.255.254
-        blkio_config:
-            weight: 100
-        platform: linux/amd64
-        cpu_quota: "2000"
-        cpu_period: "2000"
-        cpu_shares: 1024
-        ports:
-            - 0.0.0.0:8082:8082
-            - 0.0.0.0:9092:9092
-        networks:
-            172.17.0.0:
-                ipv4_address: 172.17.0.101
-        container_name: oraclelinuxh2db
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - /etc/resolv.conf:/etc/resolv.conf
-        restart: unless-stopped
-        cap_add:
-            - NET_ADMIN
-        devices:
-            - /dev/kvm
-        image: jgsoftwares/oraclelinux_openjdk_h2db:1.4.199
-        command: /bin/bash /root/landingpageh2db.sh
-    
+      
     oraclelinux_openjdk_lanservertcp:
+        network_mode: host
+        hostname: demogitjava.ddns.net
         stdin_open: true
         tty: true
         ports:
@@ -60,26 +28,25 @@ services:
         blkio_config:
             weight: 100
         platform: linux/amd64
-        hostname: demolanserver.ddns.net
-        networks:
-            172.17.0.0:
-                ipv4_address: 172.17.0.104
+        #networks:
+        #    172.17.0.0:
+        #        ipv4_address: 172.17.0.104
         container_name: oraclelinuxlanservertcp
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - /etc/resolv.conf:/etc/resolv.conf
+        #volumes:
+            #- /var/run/docker.sock:/var/run/docker.sock
+            #- /etc/resolv.conf:/etc/resolv.conf
         restart: unless-stopped
         devices:
             - /dev/kvm
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
-        image: jgsoftwares/oraclelinux_openjdk_lanservertcp:latest
+        image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
         command: /bin/bash /root/LanServer.sh
         
         
         
-networks:
-    172.17.0.0:
-        external: true
-        name: 172.17.0.0
+#networks:
+#    172.17.0.0:
+#        external: true
+#        name: 172.17.0.0
