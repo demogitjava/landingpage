@@ -6,6 +6,9 @@
 # lanserver startet in embedded mode 
 # jgsoftwares/oraclelinux_openjdk_lanservertcp:host
 
+# the h2 console is available over port 8082
+# on host mode close wan port over your provider to disable connect
+# ore 
 services:
       
     oraclelinux_openjdk_lanservertcp:
