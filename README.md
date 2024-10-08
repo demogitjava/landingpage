@@ -23,12 +23,15 @@ alternatives --config java
 
 Apache Maven 3.9.8 (36645f6c9b5079805ea5009217e36f2cffd34256)
 Maven home: /usr/share/maven
-Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/oraclejdk11
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/oracleopenjdk11
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "6.4.0-150600.21-default", arch: "amd64", family: "unix"
+
 
 
 
 maven executable jar
-`mvn package`
+--> `mvn package`
 `mvn package spring-boot:repackage`
 
 
