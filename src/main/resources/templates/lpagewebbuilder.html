@@ -326,20 +326,25 @@
                 }
 
             });
-            
-            
-            editor.BlockManager.add('Bootstrap',
-               {
-                   category: 'Container',
-                   label: '<h1><i class="fa fa-bars"></i></h1> Container',
-                   content: '<!-- Container element -->' +
-                       '<div class="container-fluid">' + '<div class="row">\n' +
-                       '\t\t<div class="col-sm-12">row \n' +
-                       '\t\t</div>\n' +
-                       '\t</div>' +
-                       '</div>' +
-                       '',
-                    category: 'Grid',
+
+            editor.BlockManager.add('Container',
+                {
+                    category: 'Bootstrap',
+                    label: '<h1><i class="fa fa-bars"></i></h1> Container',
+                    content: '<!-- Container element -->' +
+                        '<div class="container-fluid">' + '<div class="row">\n' +
+                        '\t\t<div class="col-sm-12">row \n' +
+                        '\t\t</div>\n' +
+                        '\t</div>' +
+                        '</div>' +
+                        ''
+                }
+              
+            );
+
+            editor.BlockManager.add('row-6-6',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> 6-6',
                     content: '<!-- row  6-6 -->' +
                         '<div class="row">\n' +
@@ -349,7 +354,11 @@
                         '\t\t\t\t</div>\n' +
                         '\t</div>' +
                         '',
-                    category: 'Grid',
+                });
+
+            editor.BlockManager.add('row-4-4-4',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> 4-4-4',
                     content: '<!-- row 4-4-4 -->' +
                         '<div class="row">\n' +
@@ -361,7 +370,11 @@
                         '\t\t\t\t</div>\n' +
                         '\t</div>' +
                         '',
-                    category: 'Grid',
+                });
+
+            editor.BlockManager.add('row-1-12',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> 1 - 12',
                     content: '<!-- row 12 -->' +
                         '<div class="row">\n' +
@@ -369,7 +382,11 @@
                         '\t\t</div>\n' +
                         '\t</div>' +
                         '',
-                    category: 'Grid',
+                });
+
+            editor.BlockManager.add('row-3-9',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> 3 - 9',
                     content: '<!-- row 3 / 9 -->' +
                         '<div class="row">\n' +
@@ -379,7 +396,11 @@
                         '\t\t</div>\n' +
                         '\t</div>' +
                         '',
-                    category: 'Header',
+                });
+
+            editor.BlockManager.add('NavBar_Header',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> MenuNavigation',
                     content: '<!-- Navigation -->' +
                         '' +
@@ -413,8 +434,11 @@
                         '</div>' +
                         '</nav>' +
                         '',
-                        
-                    category: 'Header',
+                });
+
+            editor.BlockManager.add('searchitems',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> textfield search',
                     content: '<div class="row"></div><div class="row">' +
                         '<div class="col-sm-12">' +
@@ -425,8 +449,11 @@
                         '</div>' +
                         '</div></form>' +
                         '</div>',
-                        
-                    category: 'Footer',
+                });
+
+            editor.BlockManager.add('Footer1',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-bars"></i></h1> SmallFooter',
                     content: '<!-- sticky footer -->\n' +
                         '<footer class="footer mt-auto py-3 bg-light">\n' +
@@ -434,8 +461,11 @@
                         '    <span class="text-muted">Place sticky footer content here.</span>\n' +
                         '  </div>\n' +
                         '</footer>',
-                    
-                    category: 'Thymeleaf',
+                });
+
+            editor.BlockManager.add('Container-fluid',
+                {
+                    category: 'Bootstrap',
                     label: '<h1><i class="fa fa-th fa-lg"></i></h1>Container ',
                     content: '<div class="container-fluid">' +
                         '<div class="row">' +
@@ -449,11 +479,7 @@
                         '<div class="col-sm-6"><p>row2</p></div>' +
                         '</div>' +
                         '</div>'
-                       
-               });
-       
-
-       
+                });
 
             editor.getConfig().showDevices = false;
             window.editor = editor;
