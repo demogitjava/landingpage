@@ -1,7 +1,10 @@
-version: '3'
+#version: '3'
 services:
 
-  
+  # start derby db over network
+  # create network with 
+  # the network name is 172.17.0.0
+  # docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
     
   de_derby:  
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
@@ -32,6 +35,6 @@ services:
       - SYS_ADMIN
 networks:
   172.17.0.0:
-    external: true
+   external: true
 
 

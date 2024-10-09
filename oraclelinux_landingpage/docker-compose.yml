@@ -41,9 +41,9 @@ services:
           - QEMU_PORTS='1527'
           - QEMU_CPU=2
           - QEMU_RAM=1024
-        dns:
-          - 95.85.95.85
-          - 2.56.220.2
+        #dns:
+        #  - 95.85.95.85
+        #  - 2.56.220.2
 
         cap_add:
           - NET_ADMIN
@@ -88,7 +88,7 @@ services:
         isolation: default
         devices:
             - /dev/kvm
-        image: jgsoftwares/oraclelinux_openjdk_landingpage:debug
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:host
         command: /bin/bash /root/runlandingpage.sh 
     
     
