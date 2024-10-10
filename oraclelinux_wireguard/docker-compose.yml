@@ -28,3 +28,12 @@ services:
         cpu_shares: 1024
         image: jgsoftwares/oraclelinux_wireguard:latest
         command: /bin/bash
+
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default

@@ -23,3 +23,12 @@ services:
         devices:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_chrony:latest
+        
+        
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default

@@ -33,3 +33,12 @@ services:
         cpu_period: "100000"
         cpu_shares: 1024
         image: jgsoftwares/oraclelinux_sshworkbench:workstation
+
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default

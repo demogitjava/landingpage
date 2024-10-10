@@ -40,6 +40,16 @@ services:
         privileged: true
         image: jgsoftwares/openwrt-x86-backfire:gcore
         command: /bin/ash
+
+
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default
        
         
          

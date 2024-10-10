@@ -36,3 +36,12 @@ services:
 #   172.17.0.0:
 #      external: true
 #     name: 172.17.0.0
+
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default

@@ -47,3 +47,13 @@ services:
         isolation: default
         #command: yum install lightdm-gtk export DISPLAY=127.0.0.1:10.0 systemctl enable lightdm
         image: jgsoftwares/de_developmentx11ssh:kdeworkstation
+
+
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default

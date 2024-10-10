@@ -47,7 +47,14 @@ services:
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
         command: /bin/bash /root/LanServer.sh
         
-        
+
+networks:
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default    
         
 #networks:
 #    172.17.0.0:
