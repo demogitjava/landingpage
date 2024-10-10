@@ -93,10 +93,19 @@ services:
         image: jgsoftwares/oraclelinux_openjdk_landingpage:host
         command: /bin/bash /root/runlandingpage.sh
 
+
 networks:
-  host:
-    name: host
-    external: true
+   eth0:
+      driver: macvlan
+      driver_opts:
+          parent: eth0
+      ipam:
+          driver: default
+
+#networks:
+#  host:
+#    name: host
+#    external: true
     
     
 
