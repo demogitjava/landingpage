@@ -49,6 +49,7 @@ services:
           - NET_ADMIN
           - SYS_ADMIN
         network_mode: host
+      
     
     oraclelinux_openjdk_landingpage_debug: 
         stdin_open: true
@@ -74,6 +75,7 @@ services:
         runtime: io.containerd.runc.v2
         container_name: oraclelinuxlandingpagedebug
         network_mode: host
+       
         hostname: demogitjava.ddns.net
         volumes:
             - /etc/resolv.conf:/etc/resolv.conf
@@ -89,7 +91,12 @@ services:
         devices:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_openjdk_landingpage:host
-        command: /bin/bash /root/runlandingpage.sh 
+        command: /bin/bash /root/runlandingpage.sh
+
+networks:
+  host:
+    name: host
+    external: true
     
     
 

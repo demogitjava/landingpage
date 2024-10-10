@@ -46,7 +46,6 @@ public class DemoLandingPageApplication
     {
          /*
               load ntp clients for time output
-            
          */
          ntpclient = new de.jgsoftware.landingpage.NtpClient1();
          ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
