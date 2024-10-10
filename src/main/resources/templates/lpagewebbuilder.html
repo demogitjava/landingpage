@@ -480,23 +480,24 @@
                         '</div>' +
                         '</div>'
                 });
-               
-                
-             editor.BlockManager.add('hero-unit',
+            
+                editor.BlockManager.add('Hero-Unit',
                 {
                     category: 'Bootstrap',
-                    label: '<h1><i class="fa fa-th fa-lg"></i></h1>Container ',
-                    content: '<div class="hero-unit"> +
-                            '<h1>Heading</h1>' +
-                            '<p>Tagline</p>' +
-                            '<p>' +
-                            '  <a class="btn btn-primary btn-large">' +
-                            '    Learn more' + 
-                            '  </a>' +
-                            '</p>' +
-                          '</div>' 
-                });    
-
+                    label: '<h1><i class="fa fa-th fa-lg"></i></h1>HeroUnit ',
+                    content: '<div class="hero-unit">' +
+                        '<h1>Heading</h1>' +
+                        '<p>Tagline</p>' +
+                        '<p>' +
+                        '   <a class="btn btn-primary btn-large">' +
+                        'Learn more' +
+                        ' </a>' +
+                        '</p>' +
+                        '</div>'
+                });
+               
+                
+             
             editor.getConfig().showDevices = false;
             window.editor = editor;
             window.editor.clearCached();
