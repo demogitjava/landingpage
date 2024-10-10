@@ -34,9 +34,9 @@ public class DemoLandingPageApplication
     public static String operationsytem = null;
 
     // 0.rhel.pool.ntp.org
-    de.jgsoftware.landingpage.NtpClient1 ntpclient;
+    //de.jgsoftware.landingpage.NtpClient1 ntpclient;
     // 1.rhel.pool.ntp.org
-    de.jgsoftware.landingpage.NtpClient2 ntpclient1;
+    //de.jgsoftware.landingpage.NtpClient2 ntpclient1;
     // 2.rhel.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient3 ntpclient2;
     
@@ -47,8 +47,8 @@ public class DemoLandingPageApplication
          /*
               load ntp clients for time output
          */
-         ntpclient = new de.jgsoftware.landingpage.NtpClient1();
-         ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
+        // ntpclient = new de.jgsoftware.landingpage.NtpClient1();
+       //  ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
          ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();
     }
         
