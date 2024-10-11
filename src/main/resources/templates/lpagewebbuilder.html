@@ -466,7 +466,7 @@
             editor.BlockManager.add('Container-fluid',
                 {
                     category: 'Bootstrap',
-                    label: '<h1><i class="fa fa-th fa-lg"></i></h1>Container ',
+                    label: '<h1><i class="fa fa-th fa-lg"></i></h1>Container-Fluid ',
                     content: '<div class="container-fluid">' +
                         '<div class="row">' +
                         '<div class="col-sm-6"><p>row1</p></div>' +
@@ -493,6 +493,19 @@
                         'Learn more' +
                         ' </a>' +
                         '</p>' +
+                        '</div>'
+                });
+                
+                editor.BlockManager.add('Tab',
+                {
+                    category: 'Bootstrap',
+                    label: '<h1><i class="fa fa-th fa-lg"></i></h1>Tab ',
+                    content: '<div>' +
+                        '<ul class="nav nav-tabs">' +
+                        '<li role="presentation" class="active"><a href="#">Home</a></li>' +
+                        '<li role="presentation"><a href="#">Profile</a></li>' +
+                        '<li role="presentation"><a href="#">Messages</a></li>' +
+                        '</ul>' +
                         '</div>'
                 });
                
