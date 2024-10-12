@@ -18,44 +18,11 @@
 
 # optional for debug is port 5005 - on line 20
 
-services:
-    
-    de_derby:
-        stdin_open: true
-        tty: true
-        image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
-        container_name: de_derby
-        platform: linux/amd64
-        runtime: io.containerd.runc.v2
-        isolation: default
-        extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
-        ports:
-          - "0.0.0.0:1527:1527"
-        devices: 
-           - "/dev/kvm" 
-        environment:
-          - TZ=Europe/Berlin
-          - NTP_SERVERS=2.rhel.pool.ntp.org
-          - NETWORK_IF=eth0 
-          - QEMU_PORTS='1527'
-          - QEMU_CPU=2
-          - QEMU_RAM=1024
-        #dns:
-        #  - 95.85.95.85
-        #  - 2.56.220.2
-
-        cap_add:
-          - NET_ADMIN
-          - SYS_ADMIN
-        network_mode: host
-      
+services: 
     
     oraclelinux_openjdk_landingpage_debug: 
         stdin_open: true
         tty: true
-        depends_on:
-            - de_derby
         ports:
             - 0.0.0.0:80:80
             - 0.0.0.0:5005:5005
@@ -75,7 +42,6 @@ services:
         runtime: io.containerd.runc.v2
         container_name: oraclelinuxlandingpagedebug
         network_mode: host
-       
         hostname: demogitjava.ddns.net
         volumes:
             - /etc/resolv.conf:/etc/resolv.conf
@@ -94,13 +60,25 @@ services:
         command: /bin/bash /root/runlandingpage.sh
 
 
+
 networks:
-   eth0:
-      driver: macvlan
-      driver_opts:
-          parent: eth0
-      ipam:
-          driver: default
+  wan:
+    name: wan
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+
+#networks:
+#   eth0:
+#      driver: macvlan
+#      driver_opts:
+#          parent: eth0
+#      ipam:
+#          driver: default
 
 #networks:
 #  host:

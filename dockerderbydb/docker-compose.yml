@@ -14,9 +14,9 @@ services:
     isolation: default
     ports:
       - "0.0.0.0:1527:1527"
-    networks:
-     172.17.0.0:
-        ipv4_address: 172.17.0.2
+    #networks:
+    # 172.17.0.0:
+    #    ipv4_address: 172.17.0.2
     devices: 
        - "/dev/kvm" 
     environment:
@@ -26,15 +26,27 @@ services:
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
-    dns:
-      - 95.85.95.85
-      - 2.56.220.2
-   
+    #dns:
+    #  - 95.85.95.85
+    #  - 2.56.220.2
+    network_mode: host
+    hostname: demogitjava.ddns.net
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
+      
+#networks:
+#  172.17.0.0:
+#   external: true
+
+
 networks:
-  172.17.0.0:
-   external: true
-
-
+  wan:
+    name: wan
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254

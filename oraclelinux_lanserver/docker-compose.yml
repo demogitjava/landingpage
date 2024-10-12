@@ -46,15 +46,26 @@ services:
             - SYS_ADMIN
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
         command: /bin/bash /root/LanServer.sh
+
+networks:
+  wan:
+    name: wan
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254        
         
 # host
-networks:
-   eth0:
-      driver: macvlan
-      driver_opts:
-          parent: eth0
-      ipam:
-          driver: default    
+#networks:
+#   eth0:
+#      driver: macvlan
+#      driver_opts:
+#          parent: eth0
+#      ipam:
+#          driver: default    
 
 # optional bridge network
 #networks:

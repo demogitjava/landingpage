@@ -1,4 +1,4 @@
-version: '3'
+#version: '3'
 services:
     de_developmentx11ssh:
         stdin_open: true
@@ -51,9 +51,12 @@ services:
 
 
 networks:
-   eth0:
-      driver: macvlan
-      driver_opts:
-          parent: eth0
-      ipam:
-          driver: default
+  wan:
+    name: wan
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
