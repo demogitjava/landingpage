@@ -45,16 +45,14 @@ services:
 #          parent: eth0
 #      ipam:
 #          driver: default
-
 networks:
   wan:
     name: wan
-    driver: macvlan
+    driver: ipvlan
+    #driver: macvlan
     driver_opts:
       parent: eth0
     ipam:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
-        
-         
