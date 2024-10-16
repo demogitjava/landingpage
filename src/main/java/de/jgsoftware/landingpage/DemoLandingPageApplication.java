@@ -99,7 +99,7 @@ public class DemoLandingPageApplication
                 // react+ive
                 // servlet
                .web(WebApplicationType.SERVLET)
-               .headless(true).run();
+               .headless(false).run();
        // builder.run(args);
 
        

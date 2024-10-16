@@ -8,8 +8,8 @@ services:
             - 0.0.0.0:8000:8000
         
         #runtime: runc
-        #runtime: io.containerd.runc.v2
         runtime: io.containerd.runc.v2
+        #runtime: io.containerd.kata.v2
         environment:
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
