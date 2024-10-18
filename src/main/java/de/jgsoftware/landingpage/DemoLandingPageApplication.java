@@ -38,6 +38,7 @@ public class DemoLandingPageApplication
     // 2.rhel.pool.ntp.org
     de.jgsoftware.landingpage.NtpClient3 ntpclient2;
     
+  
     
     
     public DemoLandingPageApplication()
@@ -72,7 +73,7 @@ public class DemoLandingPageApplication
         System.out.println(timestamp);
         System.out.println(timestamp2);
 
-        String operationsytem = System.getProperty("os.name").toLowerCase();
+        operationsytem = System.getProperty("os.name").toLowerCase();
         if (operationsytem.contains("win")){
             //Betriebssystem = Windows
             operationsytem = "Windows";
