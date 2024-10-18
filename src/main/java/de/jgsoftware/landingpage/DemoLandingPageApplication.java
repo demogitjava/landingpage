@@ -9,7 +9,6 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
-
 /**
  *
  * @author hoscho
@@ -46,8 +45,8 @@ public class DemoLandingPageApplication
          /*
               load ntp clients for time output
          */
-        // ntpclient = new de.jgsoftware.landingpage.NtpClient1();
-       //  ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
+         // ntpclient = new de.jgsoftware.landingpage.NtpClient1();
+         //  ntpclient1 = new de.jgsoftware.landingpage.NtpClient2();
          ntpclient2 = new de.jgsoftware.landingpage.NtpClient3();
     }
         
@@ -83,7 +82,7 @@ public class DemoLandingPageApplication
             //Betriebssystem = OSX von Apple
             operationsytem = "OSX Apple";
         }
-        else if (operationsytem.contains("nix") || operationsytem.contains("aix") || operationsytem.contains("nux")){
+        else if (operationsytem.contains("unix") || operationsytem.contains("aix") || operationsytem.contains("nux")){
             //Betriebssystem = Unix bzw. Linux basiert
             operationsytem = "unix-linux";
         }
