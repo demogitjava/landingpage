@@ -23,9 +23,10 @@ services:
         deploy:
             resources:
                 reservations:
-                    memory: 2048m
+                    memory: 0m
                 limits:
-                    memory: 6144m
+                    memory: 24576m
+        memswap_limit: 25G
         volumes:
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
@@ -47,7 +48,9 @@ services:
         isolation: default
         #command: yum install lightdm-gtk export DISPLAY=127.0.0.1:10.0 systemctl enable lightdm
         image: jgsoftwares/de_developmentx11ssh:kdeworkstation
-
+        
+ 
+    
 
 
 networks:

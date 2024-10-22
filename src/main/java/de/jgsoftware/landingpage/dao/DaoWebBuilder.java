@@ -142,16 +142,22 @@ public class DaoWebBuilder implements iDaoWebBuilder
             fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "about.html";
         }
-        if(filename.equals("_service.html"))
+        else if(filename.equals("_service.html"))
         {
             fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "service.html";
         }
-        if(filename.equals("_contact.html"))
+        else if(filename.equals("_contact.html"))
         {
             fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "contact.html";
         }
+        else if(filename.equals("contact.html"))
+        {
+            fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+            filename = "contact.html";
+        }
+        
         fhtml = new File(filename);
 
 
