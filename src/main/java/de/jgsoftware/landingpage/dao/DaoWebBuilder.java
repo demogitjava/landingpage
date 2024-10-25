@@ -399,6 +399,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
             FileWriter myWriter = new FileWriter(fileLocation);
             myWriter.write(gjshtml);
+            System.out.print("save file to location in jar " + fileLocation + "\n");
             myWriter.close();
 
         } catch (IOException e)
