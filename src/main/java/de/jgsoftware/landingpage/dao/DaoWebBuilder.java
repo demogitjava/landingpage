@@ -14,6 +14,7 @@ import org.springframework.stereotype.Repository;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -164,7 +165,205 @@ public class DaoWebBuilder implements iDaoWebBuilder
                 filename = "contact.html";
                 break;
             }
+            case "about.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "about.html";
+                break;
+            }
+            case "service.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "service.html";
+                break;
+            }
+            case "wiki.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "wiki.html";
+                break;
+            }
+            
+            
+            
+            
+            /*
+                language pages
+                DESKTOP
+            */
+            
+            /*
+                DE
+            */
+            case "de_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/de").getAbsolutePath() + "/" + component + ".html";
+                filename = "de_body.html";
+                break;
+            }
+            case "de_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/de").getAbsolutePath() + "/" + component + ".html";
+                filename = "de_footer.html";
+                break;
+            }
+            case "de_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/de").getAbsolutePath() + "/" + component + ".html";
+                filename = "de_header.html";
+                break;
+            }
+            case "de_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/de").getAbsolutePath() + "/" + component + ".html";
+                filename = "de_mobile-header.html";
+                break;
+            }
+            
+            /*
+               EN     
+            */
+            case "en_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/en").getAbsolutePath() + "/" + component + ".html";
+                filename = "en_body.html";
+                break;
+            }
+            case "en_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/en").getAbsolutePath() + "/" + component + ".html";
+                filename = "en_footer.html";
+                break;
+            }
+            case "en_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/en").getAbsolutePath() + "/" + component + ".html";
+                filename = "en_header.html";
+                break;
+            }
+            case "en_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/en").getAbsolutePath() + "/" + component + ".html";
+                filename = "en_mobile-header.html";
+                break;
+            }
+            
+            /*
+                ES
+            
+            */
+            case "es_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/es").getAbsolutePath() + "/" + component + ".html";
+                filename = "es_body.html";
+                break;
+            }
+            case "es_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/es").getAbsolutePath() + "/" + component + ".html";
+                filename = "es_footer.html";
+                break;
+            }
+            case "es_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/es").getAbsolutePath() + "/" + component + ".html";
+                filename = "es_header.html";
+                break;
+            }
+            case "es_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/es").getAbsolutePath() + "/" + component + ".html";
+                filename = "es_mobile-header.html";
+                break;
+            }
+            
+            /*
+                FR
+            */
+            
+            case "fr_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/fr").getAbsolutePath() + "/" + component + ".html";
+                filename = "fr_body.html";
+                break;
+            }
+            case "fr_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/fr").getAbsolutePath() + "/" + component + ".html";
+                filename = "fr_footer.html";
+                break;
+            }
+            case "fr_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/fr").getAbsolutePath() + "/" + component + ".html";
+                filename = "fr_header.html";
+                break;
+            }
+            case "fr_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/fr").getAbsolutePath() + "/" + component + ".html";
+                filename = "fr_mobile-header.html";
+                break;
+            }
+            
+            /*
+                IT
+            */
+            case "it_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/it").getAbsolutePath() + "/" + component + ".html";
+                filename = "it_body.html";
+                break;
+            }
+            case "it_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/it").getAbsolutePath() + "/" + component + ".html";
+                filename = "it_footer.html";
+                break;
+            }
+            case "it_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/it").getAbsolutePath() + "/" + component + ".html";
+                filename = "it_header.html";
+                break;
+            }
+            case "it_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/it").getAbsolutePath() + "/" + component + ".html";
+                filename = "it_mobile-header.html";
+                break;
+            }
+            
+            /*
+                TR
+            */
+              case "tr_body.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/tr").getAbsolutePath() + "/" + component + ".html";
+                filename = "tr_body.html";
+                break;
+            }
+            case "tr_footer.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/tr").getAbsolutePath() + "/" + component + ".html";
+                filename = "tr_footer.html";
+                break;
+            }
+            case "tr_header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/tr").getAbsolutePath() + "/" + component + ".html";
+                filename = "tr_header.html";
+                break;
+            }
+            case "tr_mobile-header.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/tr").getAbsolutePath() + "/" + component + ".html";
+                filename = "tr_mobile-header.html";
+                break;
+            }
+            
             default: 
+                System.out.print("no filename set!" + "\n" + "\n");
                 break;
         }
         
@@ -202,7 +401,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
             myWriter.write(gjshtml);
             myWriter.close();
 
-        } catch (Exception e)
+        } catch (IOException e)
         {
             System.out.print("Fehler " +e);
         }
