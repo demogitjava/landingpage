@@ -137,6 +137,38 @@ public class DaoWebBuilder implements iDaoWebBuilder
         String fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + language +  "/" + language + "_" + component + ".html";
 
         String filename = new String(language + "_" + component + ".html");
+        
+        switch(filename)
+        {
+            case "_about.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "about.html";
+                break;
+            }
+            case "_service.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "service.html";
+                break;
+            }
+            case "_contact.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "contact.html";
+                break;
+            }
+            case "contact.html":
+            {
+                fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
+                filename = "contact.html";
+                break;
+            }
+            default: 
+                break;
+        }
+        
+        /**
         if (filename.equals("_about.html"))
         {
             fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/classes/templates/").getAbsolutePath() + "/" + component + ".html";
@@ -157,6 +189,8 @@ public class DaoWebBuilder implements iDaoWebBuilder
             fileLocation = new File("root/landingpage-0.0.1-SNAPSHOT.jar/target/classes/templates/").getAbsolutePath() + "/" + component + ".html";
             filename = "contact.html";
         }
+        */
+        
         
         fhtml = new File(filename);
 
@@ -170,7 +204,7 @@ public class DaoWebBuilder implements iDaoWebBuilder
 
         } catch (Exception e)
         {
-            e.printStackTrace();
+            System.out.print("Fehler " +e);
         }
 
 

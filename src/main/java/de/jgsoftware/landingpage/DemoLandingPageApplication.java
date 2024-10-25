@@ -25,7 +25,7 @@ public class DemoLandingPageApplication {
     //  SpringApplication.run(DemoLandingPageApplication.class, args);
     // }
     public static String st_timezones = "Europe/Berlin";
-    public static String operationsytem = null;
+    public static String operationsytem = null; 
 
     // 0.rhel.pool.ntp.org
     //de.jgsoftware.landingpage.NtpClient1 ntpclient;
