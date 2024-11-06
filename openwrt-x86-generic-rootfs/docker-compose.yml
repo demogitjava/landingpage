@@ -18,7 +18,7 @@ services:
         #    - 0.0.0.0:8082:8082
         #    - 0.0.0.0:8443:8443
         #    - 0.0.0.0:51820:51820     
-        container_name: openwrtgernericrootfs
+        container_name: openwrtgerneric_rootfs
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
@@ -38,7 +38,8 @@ services:
         platform: linux/amd64
         restart: unless-stopped
         privileged: true
-        image: jgsoftwares/openwrt-x86-generic-rootfs:firewall
+        
+        image: jgsoftwares/openwrt-x86-generic-rootfs:blank
         command: /bin/ash
 
 
