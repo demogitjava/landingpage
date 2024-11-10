@@ -1,4 +1,6 @@
 #version: '3'
+
+#podman
 services:
     de_developmentx11ssh:
         stdin_open: true
@@ -29,7 +31,7 @@ services:
         memswap_limit: 25G
         volumes:
             - /root/git:/root/git
-            - /var/run/docker.sock:/var/run/docker.sock
+            - /var/run/podman/podman.sock:/var/run/podman/podman.sock
             - /srv/www/htdocs:/srv/www/htdocs
         dns:
             - 95.85.95.85
@@ -47,7 +49,7 @@ services:
         privileged: true
         isolation: default
         #command: yum install lightdm-gtk export DISPLAY=127.0.0.1:10.0 systemctl enable lightdm
-        image: jgsoftwares/de_developmentx11ssh:lightdm
+        image: jgsoftwares/de_developmentx11ssh:lightdmpodman
         
  
     
