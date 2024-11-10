@@ -25,6 +25,10 @@ services:
             - /srv/www/htdocs:/usr/local/apache2/htdocs/
         cap_add:
             - NET_ADMIN
+        devices:
+            - /dev/kvm
+        privileged: true
+        isolation: default
         cpu_quota: "2000"
         cpu_period: "2000"
         cpu_shares: 1024
