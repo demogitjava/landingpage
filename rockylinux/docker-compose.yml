@@ -2,7 +2,7 @@
 
 
 services:
-    de_devssh:
+    de_rockyx11ssh:
       
         ports:
             - 0.0.0.0:22:22
@@ -32,7 +32,7 @@ services:
         dns:
             - 95.85.95.85
             - 2.56.220.2
-        container_name: devssh
+        container_name: devsshrockylinux
         network_mode: host
         hostname: demogitjava.ddns.net
         #cpu_quota: "2000"
@@ -47,7 +47,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: jgsoftwares/de_developmentx11ssh:lightdm
+        image: jgsoftwares/rocklinuxdevssh:latest
         
  
     
