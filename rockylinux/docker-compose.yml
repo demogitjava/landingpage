@@ -2,7 +2,7 @@
 
 
 services:
-    de_rockyx11ssh:
+    de_rockylinuxx11ssh:
       
         ports:
             - 0.0.0.0:22:22
@@ -28,7 +28,10 @@ services:
                 limits:
                     memory: 24576m
         memswap_limit: 25G
-        
+        volumes:
+            - /root/git:/root/git
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /srv/www/htdocs:/srv/www/htdocs
         dns:
             - 95.85.95.85
             - 2.56.220.2
@@ -46,8 +49,8 @@ services:
         isolation: default
         tty: true
         stdin_open: true
-        #command: sh
-        image: rockylinux:9.3.20231119
+        command: sh
+        image: jgsoftwares/de_devsshrocklinux:9.3
         
  
     

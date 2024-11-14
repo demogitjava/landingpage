@@ -1,7 +1,7 @@
 FROM oraclelinux:8
 
 
-RUN dnf groupinstall "Minimal install"
+RUN dnf group install "Minimal install"
 
 
 RUN (yum update -y; \

@@ -1,24 +1,29 @@
-FROM jgsoftwares/rockylinux_devssh AS BUILDER
+FROM rockylinux:9.3.20231119
+
+RUN dnf group install "Minimal Install"
 
 
-# sshd
-RUN dnf -y install openssh-server openssh-clients; \
-    sed -i 's/^\(UsePAM yes\)/# \1/' /etc/ssh/sshd_config; \
-    ssh-keygen -q -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key -N '' && \
-    ssh-keygen -q -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N '' && \
-    ssh-keygen -t dsa -f /etc/ssh/ssh_host_ed25519_key  -N ''; \
-    sed -i 's/^#\(PermitRootLogin\) .*/\1 yes/' /etc/ssh/sshd_config; \
-    rm -f /run/nologin; \
-    dnf clean all;
+RUN (yum update -y; \
+    yum install -y openssh-server openssh-clients epel-release wget passwd tar screen crontabs unzip; \
+    yum clean all)
 
-ENV TIMEZONE Europe/Berlin
+RUN (ssh-keygen -A; \
+     sed -i 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config; \
+     sed -i 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config; \
+     sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config; \
+     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config)
 
-ENV ROOT_PASSWORD jj78mvpr52k1
+RUN (mkdir -p /root/.ssh/; \
+     echo "StrictHostKeyChecking=no" > /root/.ssh/config; \
+     echo "UserKnownHostsFile=/dev/null" >> /root/.ssh/config)
+
+RUN echo "root:123456789" | chpasswd
 
 EXPOSE 22
 EXPOSE 1527
 EXPOSE 3306
-EXPOSE 80
-EXPOSE 443
 
-CMD ["/usr/sbin/sshd", "-D", "-e"]
+EXPOSE 8082
+EXPOSE 9092
+
+CMD ["/usr/sbin/sshd", "-D"]
