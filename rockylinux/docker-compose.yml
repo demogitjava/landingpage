@@ -49,8 +49,8 @@ services:
         isolation: default
         tty: true
         stdin_open: true
-        command: sh
-        image: jgsoftwares/de_devsshrocklinux:9.3
+        command: /usr/sbin/sshd -D
+        image: jgsoftwares/de_devsshrocklinux:9.3 
         
  
     
