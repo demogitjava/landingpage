@@ -26,14 +26,18 @@ services:
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
-    #dns:
-    #  - 95.85.95.85
-    #  - 2.56.220.2
+    dns:
+      - 95.85.95.85
+      - 2.56.220.2
+    volumes:
+      #- /var/run/docker.sock:/var/run/docker.sock
     network_mode: host
     hostname: demogitjava.ddns.net
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
+    restart: unless-stopped
+       
       
 #networks:
 #  172.17.0.0:
