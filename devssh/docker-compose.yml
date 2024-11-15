@@ -10,6 +10,7 @@ services:
         blkio_config:
             weight: 100
         environment:
+            - VGA 
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=eth0
@@ -18,6 +19,7 @@ services:
             - QEMU_PORTS='22'
             - QEMU_CPU=4
             - QEMU_RAM=6144
+            - QEMU_ARCH=${QEMU_ARCH:-x86_64}
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
@@ -28,18 +30,22 @@ services:
                 limits:
                     memory: 24576m
         memswap_limit: 25G
-        
+        volumes:
+            - /srv/www/htdocs:/srv/www/htdocs
+            - /root/git:/root/git
+            - /var/run/docker.sock:/var/run/docker.sock
         dns:
             - 95.85.95.85
             - 2.56.220.2
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
-        #cpu_quota: "2000"
+        #cpu_quota: "900"
         #cpu_period: "2000"
-        #cpu_shares: 1024
+        #cpu_shares: 512
         cap_add:
             - NET_ADMIN
+            - SYS_ADMIN
         devices:
             - /dev/kvm
         privileged: true
