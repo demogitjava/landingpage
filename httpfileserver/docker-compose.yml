@@ -35,10 +35,14 @@ services:
         volumes:
             - /srv/www/htdocs:/usr/local/apache2/htdocs/
             - /var/run/docker.sock:/var/run/docker.sock
-        cap_add:
-            - NET_ADMIN
         devices:
             - /dev/kvm
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
         privileged: false
         #isolation: default
         #cpu_quota: "2000"
