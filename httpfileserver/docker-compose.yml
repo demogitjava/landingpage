@@ -47,7 +47,7 @@ services:
         #networks:
         #    172.17.0.0:
         #        ipv4_address: 172.17.0.100
-        image: jgsoftwares/httpdfileserver:latest
+        image: jgsoftwares/httpdfileserver:dockercli
 #networks:
 #   172.17.0.0:
 #      external: true
