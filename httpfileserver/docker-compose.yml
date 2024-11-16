@@ -25,8 +25,7 @@ services:
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=eth0
-      
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+            - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
           
             
         extra_hosts:
@@ -45,6 +44,7 @@ services:
             - 2.56.220.2
         privileged: false
         restart: unless-stopped
+        platform: linux/amd64
         #isolation: default
         #cpu_quota: "2000"
         #cpu_period: "2000"

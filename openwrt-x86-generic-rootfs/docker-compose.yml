@@ -24,9 +24,9 @@ services:
         environment:
             - TZ=Europe/Berlin
             - NETWORK_IF=eth0
-            - QEMU_CPU=2
-            - QEMU_RAM=1024
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+            #- QEMU_CPU=2
+            #- QEMU_RAM=1024
+            - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
         blkio_config:
             weight: 100
        # cpu_shares: 1024
@@ -36,7 +36,7 @@ services:
         hostname: demogitjava.ddns.net
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
-        platform: linux/amd64
+        #platform: linux/arm64
         restart: unless-stopped
         privileged: true
         
