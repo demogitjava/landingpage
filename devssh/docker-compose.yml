@@ -15,11 +15,13 @@ services:
             - NETWORK_IF=eth0
             - NETWORK_BRIDGE=vtap0
             - NETWORK=macvtap
+            - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
             - QEMU_CPU=4
             - QEMU_RAM=6144
-            - QEMU_ARCH=${QEMU_ARCH:-x86_64}
-       
+            #- QEMU_CDROM=/tmp/debian.iso
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+            
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
