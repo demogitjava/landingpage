@@ -6,13 +6,14 @@ services:
   # the network name is 172.17.0.0
   # docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
   
-  
   # http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-  # alternative install dockercli to container with
-  # yum install docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-  #   volumes:
-  #    - /var/run/docker.sock:/var/run/docker.sock
-    
+# alternative install dockercli to container with
+# yum install http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+#   volumes:
+#    - /var/run/docker.sock:/var/run/docker.sock
+  
+  
+
   de_derby:  
     
     container_name: de_derby

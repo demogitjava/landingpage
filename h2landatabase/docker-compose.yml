@@ -13,6 +13,7 @@ services:
             - QEMU_PORTS='9092'
             - QEMU_CPU=2
             - QEMU_RAM=1024
+            - QEMU_ARCH=${QEMU_ARCH:-x86_64}
         extra_hosts:
             #- docker:217.160.255.254
              - demogitjava.ddns.net:217.160.255.254
@@ -31,7 +32,7 @@ services:
         container_name: oraclelinuxh2db
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
-            - /etc/resolv.conf:/etc/resolv.conf
+          #  - /etc/resolv.conf:/etc/resolv.conf
         restart: unless-stopped
         cap_add:
             - NET_ADMIN

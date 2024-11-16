@@ -20,10 +20,10 @@
 
 # http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
 # alternative install dockercli to container with
-# yum install docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+# yum install http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
 #   volumes:
 #    - /var/run/docker.sock:/var/run/docker.sock
-
+  
 
 services: 
     
