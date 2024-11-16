@@ -9,6 +9,13 @@
 # the h2 console is available over port 8082
 # on host mode close wan port over your provider to disable connect
 # ore 
+
+# http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+# alternative install dockercli to container with
+# yum install docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+#   volumes:
+#    - /var/run/docker.sock:/var/run/docker.sock
+  
 services:
       
     oraclelinux_openjdk_lanservertcp:
@@ -27,6 +34,7 @@ services:
             - QEMU_PORTS='8443'
             - QEMU_CPU=2
             - QEMU_RAM=1024
+            - QEMU_ARCH=${QEMU_ARCH:-x86_64}
         runtime: io.containerd.runc.v2
         blkio_config:
             weight: 100
@@ -35,8 +43,8 @@ services:
         #    172.17.0.0:
         #        ipv4_address: 172.17.0.104
         container_name: oraclelinuxlanservertcp
-        #volumes:
-            #- /var/run/docker.sock:/var/run/docker.sock
+        volumes:
+             - /var/run/docker.sock:/var/run/docker.sock
             #- /etc/resolv.conf:/etc/resolv.conf
         restart: unless-stopped
         devices:
@@ -44,6 +52,9 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
         command: /bin/bash /root/LanServer.sh
 

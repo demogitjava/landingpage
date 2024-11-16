@@ -18,10 +18,17 @@
 
 # optional for debug is port 5005 - on line 20
 
+# http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+# alternative install dockercli to container with
+# yum install docker-ce-cli-19.03.9-3.el7.x86_64.rpm
+#   volumes:
+#    - /var/run/docker.sock:/var/run/docker.sock
+
+
 services: 
     
     oraclelinux_openjdk_landingpage_debug: 
-        stdin_open: true
+        #stdin_open: true
         tty: true
         ports:
             - 0.0.0.0:80:80
@@ -35,6 +42,7 @@ services:
             - QEMU_PORTS='5005'
             - QEMU_CPU=2
             - QEMU_RAM=1024
+            - QEMU_ARCH=${QEMU_ARCH:-x86_64}
         blkio_config:
             weight: 100
         extra_hosts:
@@ -44,12 +52,13 @@ services:
         network_mode: host
         hostname: demogitjava.ddns.net
         volumes:
-            #- /etc/resolv.conf:/etc/resolv.conf
+           # - /etc/resolv.conf:/etc/resolv.conf
            # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
-           #  - /var/run/docker.sock:/var/run/docker.sock
+             - /var/run/docker.sock:/var/run/docker.sock
         restart: unless-stopped
         cap_add:
             - NET_ADMIN
+            - SYS_ADMIN
         dns: 
             - 95.85.95.85
             - 2.56.220.2

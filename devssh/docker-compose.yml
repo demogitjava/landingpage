@@ -10,7 +10,7 @@ services:
         blkio_config:
             weight: 100
         environment:
-            - VGA 
+            - VGA: "virtio-gpu"
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=eth0
@@ -20,6 +20,7 @@ services:
             - QEMU_CPU=4
             - QEMU_RAM=6144
             - QEMU_ARCH=${QEMU_ARCH:-x86_64}
+          
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
@@ -53,7 +54,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: jgsoftwares/de_developmentx11ssh:lightdm
+        image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredge
         
  
     
