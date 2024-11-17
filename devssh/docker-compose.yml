@@ -21,7 +21,8 @@ services:
             - QEMU_RAM=6144
             #- QEMU_CDROM=/tmp/debian.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC}
-            
+            - QEMU_DISPLAY=qxl-vga
+            - QEMU_VGA=virtio-vga
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
