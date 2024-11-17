@@ -18,7 +18,7 @@ services:
             - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
             - QEMU_CPU=4
-            - QEMU_RAM=6144
+            - QEMU_RAM=20480
             #- QEMU_CDROM=/tmp/debian.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC}
             - QEMU_DISPLAY=qxl-vga
@@ -37,6 +37,7 @@ services:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
+           
         dns:
             - 95.85.95.85
             - 2.56.220.2
