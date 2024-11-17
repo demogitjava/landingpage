@@ -7,18 +7,21 @@ services:
     openwrt-x86-backfire:
         stdin_open: true
         tty: true
-        ports:
-            - 0.0.0.0:8081:8081
+        #ports:
+        #    - 0.0.0.0:8081:8081
         container_name: openwrtbackgcore
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
             - TZ=Europe/Berlin
-            - NETWORK_IF=eth0
-            - QEMU_CPU=2
+            - NETWORK_IF=ens6
+            #- QEMU_CPU=2
             #- QEMU_RAM=1024
             - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
-        
+            # forwarded 
+            - sysctl -w net.ipv4.ip_nonlocal_bind=1
+            - sysctl -w net.ipv4.conf.all.forwarding=1
+            - sysctl -w net.ipv4.ip_forward=1
         blkio_config:
             weight: 100
         #cpu_shares: 1024
@@ -31,7 +34,11 @@ services:
         platform: linux/amd64
         restart: unless-stopped
         cap_add:
-           - NET_ADMIN
+            - NET_ADMIN
+            - SYS_ADMIN
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt-x86-backfire:gcore
@@ -43,7 +50,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: eth0
+      parent: ens6
     ipam:
       config:
         - subnet: 217.160.255.254/32
