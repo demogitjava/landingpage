@@ -35,7 +35,7 @@ services:
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
-      - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+      - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
     dns:
       - 95.85.95.85
       - 2.56.220.2

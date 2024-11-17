@@ -42,7 +42,7 @@ services:
             - QEMU_PORTS='5005'
             - QEMU_CPU=2
             - QEMU_RAM=1024
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
         blkio_config:
             weight: 100
         extra_hosts:

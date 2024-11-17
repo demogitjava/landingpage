@@ -17,10 +17,10 @@ services:
             - NETWORK=macvtap
             - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
-            - QEMU_CPU=4
+            - QEMU_CPU=6
             - QEMU_RAM=20480
-          #  - QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC}
+            - QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
             - QEMU_DISPLAY=qxl-vga
             - QEMU_VGA=virtio-vga
         extra_hosts:
@@ -37,7 +37,7 @@ services:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
-           # - /root/iso/oraclelinux:/dev/dvd
+            - /root/iso/oraclelinux:/dev/dvd
         dns:
             - 95.85.95.85
             - 2.56.220.2
