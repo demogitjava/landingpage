@@ -12,14 +12,14 @@ services:
         environment:
             - TZ=Europe/Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=eth0
+            - NETWORK_IF=ens6
             - NETWORK_BRIDGE=vtap0
             - NETWORK=macvtap
             - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
             - QEMU_CPU=4
             - QEMU_RAM=20480
-            #- QEMU_CDROM=/tmp/debian.iso
+          #  - QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC}
             - QEMU_DISPLAY=qxl-vga
             - QEMU_VGA=virtio-vga
@@ -37,7 +37,7 @@ services:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
-           
+           # - /root/iso/oraclelinux:/dev/dvd
         dns:
             - 95.85.95.85
             - 2.56.220.2
@@ -69,7 +69,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: eth0
+      parent: ens6
     ipam:
       config:
         - subnet: 217.160.255.254/32
