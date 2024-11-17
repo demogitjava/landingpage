@@ -47,7 +47,7 @@ services:
       - NET_ADMIN
       - SYS_ADMIN
     restart: unless-stopped
-    image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemu 
+    image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredge
     # command: 
       
 #networks:

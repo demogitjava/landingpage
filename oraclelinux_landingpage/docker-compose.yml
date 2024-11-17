@@ -69,7 +69,7 @@ services:
         isolation: default
         devices:
             - /dev/kvm
-        image: jgsoftwares/oraclelinux_openjdk_landingpage:host
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredge
         command: /bin/bash /root/runlandingpage.sh
 
 networks:
