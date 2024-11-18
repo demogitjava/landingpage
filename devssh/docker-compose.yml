@@ -19,7 +19,7 @@ services:
             - QEMU_PORTS='22'
             - QEMU_CPU=6
             - QEMU_RAM=20480
-            - QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
+            #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
             - QEMU_DISPLAY=qxl-vga
             - QEMU_VGA=virtio-vga
