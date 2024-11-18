@@ -37,7 +37,7 @@ services:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
-            - /root/iso/oraclelinux:/dev/dvd
+            #- /root/iso/oraclelinux:/dev/dvd
         dns:
             - 95.85.95.85
             - 2.56.220.2

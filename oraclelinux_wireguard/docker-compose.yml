@@ -3,6 +3,7 @@
 services:
    
     oraclelinux_wireguard:
+        tty: true
         stdin_open: true
         ports:
             - 0.0.0.0:51820:51820
@@ -32,7 +33,7 @@ services:
         #cpu_period: "2000"
         #cpu_shares: 1024
         image: jgsoftwares/oraclelinux_wireguard:latest
-        command: /bin/bash
+        #command: /bin/bash
 
 
 networks:
