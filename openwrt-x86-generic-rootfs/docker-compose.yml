@@ -23,9 +23,10 @@ services:
         isolation: default
         environment:
             - TZ=Europe/Berlin
+            - /etc/timezone:/etc/TZ
             - NETWORK_IF=ens6
-            #- QEMU_CPU=2
-            #- QEMU_RAM=1024
+            - QEMU_CPU=4
+            - QEMU_RAM=256
             - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
               # forwarded 
             - sysctl -w net.ipv4.ip_nonlocal_bind=1
