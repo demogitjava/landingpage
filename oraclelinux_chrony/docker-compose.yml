@@ -10,8 +10,11 @@ services:
         runtime: io.containerd.runc.v2
         environment:
             - TZ=Europe/Berlin
-            - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=eth0
+           
+            - NETWORK_IF=ens6
+           
+            - NTP_SERVERS="demogitjava.ddns.net"
+           
             #- QEMU_CPU=2
             #- QEMU_RAM=1024
         extra_hosts:
@@ -20,6 +23,8 @@ services:
         network_mode: host
         hostname: demogitjava.ddns.net
         restart: unless-stopped
+        cap_add:
+            - SYS_TIME
         devices:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_chrony:latest

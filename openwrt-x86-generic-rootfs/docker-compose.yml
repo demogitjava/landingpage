@@ -7,17 +7,17 @@ services:
     openwrt-x86-generic-rootfs:
         stdin_open: true
         tty: true
-        #ports:
-        #    - 0.0.0.0:22:22
-        #    - 0.0.0.0:23:23
-        #    - 0.0.0.0:80:80
-        #    - 0.0.0.0:53:53
-        #    - 0.0.0.0:123:123
-        #    - 0.0.0.0:323:323   
-        #    - 0.0.0.0:8000:8000  
-        #    - 0.0.0.0:8082:8082
-        #    - 0.0.0.0:8443:8443
-        #    - 0.0.0.0:51820:51820     
+        ports: 
+            - 0.0.0.0:22:22
+            - 0.0.0.0:23:23
+            - 0.0.0.0:80:80
+            - 0.0.0.0:53:53
+            - 0.0.0.0:123:123
+            - 0.0.0.0:323:323   
+            - 0.0.0.0:8000:8000  
+            - 0.0.0.0:8082:8082
+            - 0.0.0.0:8443:8443
+            - 0.0.0.0:51820:51820     
         container_name: openwrtgerneric_rootfs
         runtime: io.containerd.runc.v2
         isolation: default
@@ -28,15 +28,16 @@ services:
             - QEMU_CPU=4
             - QEMU_RAM=256
             - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+            - NTP_SERVERS="demogitjava.ddns.net"
               # forwarded 
             - sysctl -w net.ipv4.ip_nonlocal_bind=1
             - sysctl -w net.ipv4.conf.all.forwarding=1
             - sysctl -w net.ipv4.ip_forward=1
-        blkio_config:
-            weight: 100
-       # cpu_shares: 1024
-       # cpu_quota: "1000"
-       # cpu_period: "1000"
+        #blkio_config:
+        #    weight: 100
+        # cpu_shares: 1024
+        # cpu_quota: "1000"
+        # cpu_period: "1000"
         network_mode: host
         hostname: demogitjava.ddns.net
         extra_hosts:
@@ -47,6 +48,7 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
+            - SYS_TIME
         dns: 
             - 95.85.95.85
             - 2.56.220.2
