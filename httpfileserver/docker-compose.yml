@@ -22,7 +22,7 @@ services:
         blkio_config:
             weight: 100
         environment:
-            - TZ=Europe/Berlin
+            - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}

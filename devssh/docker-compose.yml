@@ -1,6 +1,5 @@
 #version: '3'
 
-
 services:
     de_devssh:
       
@@ -9,8 +8,8 @@ services:
         runtime: io.containerd.runc.v2
         blkio_config:
             weight: 100
-        environment:
-            - TZ=Berlin
+        environment:	
+            - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - NETWORK_BRIDGE=vtap0
@@ -58,8 +57,7 @@ services:
         isolation: default
         tty: true
         stdin_open: true
-        command: >
-                sh -c "TZ="Berlin" date"
+        #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredge
       
 

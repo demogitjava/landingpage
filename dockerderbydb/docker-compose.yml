@@ -29,7 +29,7 @@ services:
     devices: 
        - "/dev/kvm" 
     environment:
-      - TZ=Berlin
+      - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
       - NETWORK_IF=ens6
       - QEMU_PORTS='1527'

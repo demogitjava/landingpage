@@ -35,7 +35,7 @@ services:
             - 0.0.0.0:5005:5005
         environment:
             - JAVA_DEBUG=true
-            - TZ=Berlin
+            - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - QEMU_PORTS='80'

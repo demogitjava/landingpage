@@ -22,8 +22,7 @@ services:
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
-            - TZ=Europe/Berlin
-            - /etc/timezone:/etc/TZ
+            - TZ=CET-1
             - NETWORK_IF=ens6
             - QEMU_CPU=4
             - QEMU_RAM=256
