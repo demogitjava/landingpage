@@ -52,6 +52,8 @@ services:
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt-x86-backfire:gcoreedge
+        deploy:
+            mode: global
         command: /bin/ash
 
 
