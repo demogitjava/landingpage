@@ -28,7 +28,7 @@ services:
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         environment:
-            - TZ=Europe/Berlin
+            - TZ=Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - QEMU_PORTS='8443'

@@ -10,7 +10,7 @@ services:
         blkio_config:
             weight: 100
         environment:
-            - TZ=Europe/Berlin
+            - TZ=Berlin
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - NETWORK_BRIDGE=vtap0
@@ -58,13 +58,10 @@ services:
         isolation: default
         tty: true
         stdin_open: true
-        #command: sh
+        command: >
+                sh -c "TZ="Berlin" date"
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredge
       
-            
- 
-    
-
 
 networks:
   wan:
