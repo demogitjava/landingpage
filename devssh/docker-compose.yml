@@ -18,7 +18,7 @@ services:
             - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
             - QEMU_CPU=6
-            - QEMU_RAM=20480
+            #- QEMU_RAM=24576
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
             - QEMU_DISPLAY=qxl-vga
@@ -27,19 +27,20 @@ services:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
         deploy:
-            resources:
-                reservations:
-                    memory: 0m
-                limits:
-                    memory: 24576m
-        memswap_limit: 25G
+            mode: global
+            #resources:
+            #    reservations:
+            #        memory: 0m
+            #    limits:
+            ###        memory: 24577m
+        #memswap_limit: 25G
         volumes:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
             #- /root/iso/oraclelinux:/dev/dvd
         dns:
-            - 95.85.95.85
+            - 95.85.95.85            
             - 2.56.220.2
         container_name: devssh
         network_mode: host
@@ -50,6 +51,7 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
+            - SYS_TIME
         devices:
             - /dev/kvm
         privileged: true
@@ -58,7 +60,8 @@ services:
         stdin_open: true
         #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredge
-        
+      
+            
  
     
 

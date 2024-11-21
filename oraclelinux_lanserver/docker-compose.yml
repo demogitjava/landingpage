@@ -52,10 +52,13 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
+            - SYS_TIME
         dns: 
             - 95.85.95.85
             - 2.56.220.2
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
+        deploy:
+            mode: global
         command: /bin/bash /root/LanServer.sh
 
 

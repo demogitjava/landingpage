@@ -46,8 +46,11 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
+      - SYS_TIME
     restart: unless-stopped
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredge
+    deploy:
+        mode: global
     # command: 
       
 #networks:

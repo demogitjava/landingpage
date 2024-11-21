@@ -59,6 +59,7 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
+            - SYS_TIME
         dns: 
             - 95.85.95.85
             - 2.56.220.2
@@ -70,6 +71,8 @@ services:
         devices:
             - /dev/kvm
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredge
+        deploy:
+            mode: global
         command: /bin/bash /root/runlandingpage.sh
 
 networks:
