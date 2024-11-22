@@ -29,7 +29,11 @@ services:
     
     oraclelinux_openjdk_landingpage_debug: 
         #stdin_open: true
-        tty: true
+        
+        container_name: oraclelinuxlandingpagedebug
+        platform: linux/amd64
+        runtime: io.containerd.runc.v2
+        
         ports:
             - 0.0.0.0:80:80
             - 0.0.0.0:5005:5005
@@ -47,8 +51,8 @@ services:
             weight: 100
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
-        runtime: io.containerd.runc.v2
-        container_name: oraclelinuxlandingpagedebug
+        
+        
         network_mode: host
         hostname: demogitjava.ddns.net
         volumes:
@@ -60,19 +64,21 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
+        devices:
+            - /dev/kvm
+            - /dev/net/tun
+            - ide-hd,bus=sata.4,drive=SystemDisk
         dns: 
             - 95.85.95.85
             - 2.56.220.2
-        platform: linux/amd64
+        privileged: true
         #cpu_quota: "2000"
         #cpu_period: "2000"
         #cpu_shares: 1024
         isolation: default
-        devices:
-            - /dev/kvm
-            - /dev/net/tun
-         
-        image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredge
+        tty: true
+      
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
         deploy:
             mode: global
         command: /bin/bash /root/runlandingpage.sh
