@@ -26,8 +26,6 @@ services:
     #networks:
     # 172.17.0.0:
     #    ipv4_address: 172.17.0.2
-    devices: 
-       - "/dev/kvm" 
     environment:
       - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
@@ -47,7 +45,12 @@ services:
       - NET_ADMIN
       - SYS_ADMIN
       - SYS_TIME
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+     
     restart: unless-stopped
+    pid: "host"
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredge
     deploy:
         mode: global
