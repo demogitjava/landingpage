@@ -49,6 +49,8 @@ services:
         restart: unless-stopped
         devices:
             - /dev/kvm
+            - /dev/net/tun
+            - ide-hd,bus=sata.4,drive=SystemDisk
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
@@ -56,7 +58,8 @@ services:
         dns: 
             - 95.85.95.85
             - 2.56.220.2
-        image: jgsoftwares/oraclelinux_openjdk_lanservertcp:host
+        privileged: true
+        image: jgsoftwares/oraclelinux_openjdk_lanservertcp:vhostdockeredge
         deploy:
             mode: global
         command: /bin/bash /root/LanServer.sh

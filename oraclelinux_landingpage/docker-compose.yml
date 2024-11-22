@@ -42,8 +42,8 @@ services:
             - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
-            - QEMU_PORTS='80'
-            - QEMU_PORTS='5005'
+            #- QEMU_PORTS='80'
+            #- QEMU_PORTS='5005'
             - QEMU_CPU=2
             - QEMU_RAM=1024
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
