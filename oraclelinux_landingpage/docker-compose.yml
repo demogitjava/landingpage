@@ -40,6 +40,7 @@ services:
         environment:
             - JAVA_DEBUG=true
             - TZ=CET-1
+            #- DRINODE=/dev/dri/renderD128 
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             #- QEMU_PORTS='80'
@@ -47,8 +48,8 @@ services:
             - QEMU_CPU=2
             - QEMU_RAM=1024
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
-        blkio_config:
-            weight: 100
+        #blkio_config:
+        #    weight: 100
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         
@@ -67,6 +68,7 @@ services:
         devices:
             - /dev/kvm
             - /dev/net/tun
+            - /dev/dri/renderD128:/dev/dri/renderD128 #optional
             - ide-hd,bus=sata.4,drive=SystemDisk
         dns: 
             - 95.85.95.85
