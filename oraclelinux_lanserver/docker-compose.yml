@@ -62,6 +62,13 @@ services:
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:vhostdockeredge
         deploy:
             mode: global
+            resources:
+                limits:
+                  #cpus: '2'
+                  memory: 1024M
+                reservations:
+                  #cpus: '0.25'
+                  memory: 512M
         command: /bin/bash /root/LanServer.sh
 
 
