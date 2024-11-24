@@ -23,7 +23,9 @@ services:
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
             - QEMU_DISPLAY=qxl-vga
-            - QEMU_VGA=virtio-vga
+            #- QEMU_VGA=virtio-vga
+            - QEMU_VGA=cirrus-vga
+            #- QEMU_VGA=ati-vga
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
@@ -77,4 +79,5 @@ networks:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
+
 
