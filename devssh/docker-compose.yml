@@ -6,10 +6,12 @@ services:
         ports:
             - 0.0.0.0:22:22
         runtime: io.containerd.runc.v2
-        blkio_config:
-            weight: 100
-        environment:	
+        #blkio_config:
+        #    weight: 100
+        environment: 	
             - TZ=CET-1
+            - DRINODE=/dev/dri/renderD128 
+            - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
             - NETWORK_BRIDGE=vtap0
@@ -44,6 +46,7 @@ services:
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
+        shm_size: "2gb" 
         #cpu_quota: "900"
         #cpu_period: "2000"
         #cpu_shares: 512
