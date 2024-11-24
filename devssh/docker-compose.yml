@@ -60,6 +60,8 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - ide-hd,bus=sata.4,drive=SystemDisk 
+            - virtio-scsi-pci,id=scsi 
+            - scsi-hd,drive=hd,drive=hd
         privileged: true
         isolation: default
         tty: true
