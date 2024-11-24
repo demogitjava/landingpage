@@ -58,6 +58,13 @@ services:
         image: jgsoftwares/openwrt-x86-generic-rootfs:edge
         deploy:
             mode: global
+            resources:
+                limits:
+                  #cpus: '2'
+                  memory: 1024M
+                reservations:
+                  #cpus: '0.25'
+                  memory: 512M
         command: /bin/ash
 
 
