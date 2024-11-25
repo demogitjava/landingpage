@@ -26,7 +26,9 @@ services:
             - NETWORK_IF=ens6
             - QEMU_CPU=4
             - QEMU_RAM=256
-            - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+            #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+           
+            - QEMU_ARCH=${cortex-m0plus}
             - NTP_SERVERS="demogitjava.ddns.net"
               # forwarded 
             - sysctl -w net.ipv4.ip_nonlocal_bind=1

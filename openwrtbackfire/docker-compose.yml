@@ -26,11 +26,8 @@ services:
             - NETWORK_IF=ens6
             - QEMU_CPU=4
             - QEMU_RAM=256
-            - QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
-            # forwarded 
-            - sysctl -w net.ipv4.ip_nonlocal_bind=1
-            - sysctl -w net.ipv4.conf.all.forwarding=1
-            - sysctl -w net.ipv4.ip_forward=1
+            #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+            - QEMU_ARCH=${cortex-m0plus}
         blkio_config:
             weight: 100
         #cpu_shares: 1024

@@ -34,7 +34,7 @@ services:
             - QEMU_PORTS='8443'
             - QEMU_CPU=2
             - QEMU_RAM=1024
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
+            - QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
         runtime: io.containerd.runc.v2
         blkio_config:
             weight: 100
