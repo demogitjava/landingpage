@@ -8,7 +8,7 @@ services:
         runtime: io.containerd.runc.v2
         #blkio_config:
         #    weight: 100
-        environment: 	
+        environment:
             - TZ=CET-1
             - DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
@@ -23,8 +23,8 @@ services:
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
             - QEMU_DISPLAY=qxl-vga
-            #- QEMU_VGA=virtio-vga
-            - QEMU_VGA=cirrus-vga
+            - QEMU_VGA=virtio-vga
+            #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
