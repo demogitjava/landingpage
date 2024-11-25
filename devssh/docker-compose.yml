@@ -22,7 +22,9 @@ services:
             #- QEMU_RAM=24576
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             #- QEMU_ARCH=${QEMU_ARCH:-SPARC64}
-            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            #- QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            - QEMU_ARCH=${UltraSparc-IV-plus}
+            #Sun-UltraSparc-IV-plus
             - QEMU_DISPLAY=qxl
             - QEMU_VGA=virtio
             #- QEMU_VGA=cirrus-vga
