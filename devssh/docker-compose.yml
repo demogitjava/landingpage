@@ -22,8 +22,8 @@ services:
             #- QEMU_RAM=24576
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             - QEMU_ARCH=${QEMU_ARCH:-SPARC64}
-            - QEMU_DISPLAY=qxl-vga
-            - QEMU_VGA=virtio-vga
+            - QEMU_DISPLAY=qxl
+            - QEMU_VGA=virtio
             #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
         extra_hosts:
