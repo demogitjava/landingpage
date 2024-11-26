@@ -21,19 +21,18 @@ services:
         container_name: openwrtgerneric_rootfs
         runtime: io.containerd.runc.v2
         isolation: default
+        
         environment:
+           
             - TZ=CET-1
             - NETWORK_IF=ens6
             - QEMU_CPU=4
             - QEMU_RAM=256
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
-           
+            
             - QEMU_ARCH=${cortex-m0plus}
             - NTP_SERVERS="demogitjava.ddns.net"
-              # forwarded 
-            - sysctl -w net.ipv4.ip_nonlocal_bind=1
-            - sysctl -w net.ipv4.conf.all.forwarding=1
-            - sysctl -w net.ipv4.ip_forward=1
+            
         #blkio_config:
         #    weight: 100
         # cpu_shares: 1024
@@ -50,10 +49,11 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
-        devices:
+        devices:  
             - /dev/kvm
             - /dev/net/tun
-            - ide-hd,bus=sata.4,drive=SystemDisk 
+            - virtio-net-pci,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
+            - ide-hd,bus=sata.4,drive=SystemDisk,machine niagara  
         dns: 
             - 95.85.95.85
             - 2.56.220.2

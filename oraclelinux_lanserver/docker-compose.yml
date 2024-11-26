@@ -50,7 +50,8 @@ services:
         devices:
             - /dev/kvm
             - /dev/net/tun
-            - ide-hd,bus=sata.4,drive=SystemDisk
+            - virtio-net-pci,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
+            - ide-hd,bus=sata.4,drive=SystemDisk,machine niagara  
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
