@@ -53,7 +53,7 @@ services:
             - 2.56.220.2
         pid: "host"
         privileged: true
-        image: jgsoftwares/openwrt-x86-backfire:gcoreedge
+        image: jgsoftwares/openwrt-x86-backfire:gcore
         deploy:
             mode: global
             resources:
