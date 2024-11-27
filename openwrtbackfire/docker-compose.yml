@@ -47,8 +47,8 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
-            - ide-hd,bus=sata.4,drive=SystemDisk,cache=none,if=virtio,format=raw, machine niagara  
-            - e1000,netdev=ens6 -netdev user,id=ens6,net=217.160.255.254/32,hostfwd=tcp:127.0.0.1:*-217.160.255.254:* 
+            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host, model=e1000 --import 
+            - netdev=ens6 -netdev user,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
        
         dns: 
             - 95.85.95.85
