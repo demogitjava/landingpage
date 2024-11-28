@@ -46,6 +46,8 @@ services:
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
             - /var/run/docker.sock:/var/run/docker.sock
+            # kvm required
+            - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock
             #- /root/iso/oraclelinux:/dev/dvd
         dns:
             - 95.85.95.85            
@@ -68,16 +70,21 @@ services:
             # maschine rtl8139
             - /dev/kvm
             - /dev/net/tun
+            - sandbox on
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
             - e1000,netdev=wan,net=217.160.255.254/32
-            - scsi-hd,drive=hd,drive=hd
+            # ssd
+            - device.scsi0-0-0-0.rotation_rate=1
+            # scsi
+            #- scsi-hd,drive=hd,drive=hd
           
             # bluetooth
             - bt hci,host:hci0
             # usb
             - usb,host,usb-mouse,usb-kbd
-           
-          
+            # x-pci-proxy-dev
+            - x-pci-proxy-dev,id=lsi0,socket=3
+            
         privileged: true
         isolation: default
         tty: true
