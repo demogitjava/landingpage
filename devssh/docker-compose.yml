@@ -72,6 +72,12 @@ services:
             - e1000,netdev=ens6 -netdev user,id=ens6,net=217.160.255.254/32
             - scsi-hd,drive=hd,drive=hd
           
+            # bluetooth
+            - bt hci,host:hci0
+            # usb
+            - usb,host,usb-mouse,usb-kbd
+           
+          
         privileged: true
         isolation: default
         tty: true
