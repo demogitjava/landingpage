@@ -39,7 +39,7 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - e1000,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
-            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host, machine niagara=kvm:tcg  
+            - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
             
             # x86
             #- /dev/kvm
