@@ -73,6 +73,8 @@ services:
             - sandbox on
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
             - e1000,netdev=wan,net=217.160.255.254/32
+            - virtio-gpu-device
+            - virtio-gpu-pci
             # ssd
             - device.scsi0-0-0-0.rotation_rate=1
             # scsi
@@ -90,7 +92,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredge
+        image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
       
 
 networks:
