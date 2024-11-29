@@ -93,7 +93,7 @@ services:
             #- virtio-gpu-pci
             #- vga qxl
             - vga std
-            - VGA,vgamem_mb=256
+            - VGA,vgamem_mb=128
          
             - enable-kvm 
             - cpu host 
