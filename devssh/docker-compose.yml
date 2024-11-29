@@ -83,14 +83,15 @@ services:
           
             # bluetooth
             - bt hci,host
-     
+            - usb,usbdevice host:127.0.0.1:5900 -bt hci,host
+            - usb-host,bus=xhci.0,port=1,vendorid=0x0a5c,productid=0x21e8
+            
             #  USB 1.1 
             - usb,usb-mouse,usb-kbd
             - usb-ehci,id=ehci                             
             - usb-host,bus=usb-bus.0,hostbus=3,hostport=1  
             - usb-host,bus=ehci.0,hostbus=1,hostport=1
-            # Bluetooth 
-            - usb-host,bus=xhci.0,port=1,vendorid=0x0a5c,productid=0x21e8
+           
             # x-pci-proxy-dev
             - x-pci-proxy-dev,id=lsi0,socket=3
             
