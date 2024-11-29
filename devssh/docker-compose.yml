@@ -10,7 +10,7 @@ services:
         #    weight: 100
         environment:
             - TZ=CET-1
-            - DRINODE=/dev/dri/renderD128 
+            #- DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
@@ -76,6 +76,10 @@ services:
             - virtio-gpu-device
             - virtio-gpu-pci
             - vga qxl
+            
+            - enable-kvm 
+            - cpu host 
+            
             # ssd
             - device.scsi0-0-0-0.rotation_rate=1
             # scsi
@@ -96,10 +100,11 @@ services:
             
             # Spice 
             - graphics spice
-            #- spice port=5900,addr=127.0.0.1,disable-ticketing 
+            - spice port=22,addr=127.0.0.1,disable-ticketing 
             - virtio-serial-pci 
             - virtserialport,chardev=spicechannel0,name=devssh.0 -chardev spicevmc,id=spicechannel0,name=vdagent
             - machine spice=on
+            - monitor stdio
         privileged: true
         isolation: default
         tty: true
