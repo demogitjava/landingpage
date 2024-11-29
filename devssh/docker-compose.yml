@@ -13,9 +13,23 @@ services:
             #- DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=ens6
-            - NETWORK_BRIDGE=vtap0
-            - NETWORK=macvtap
+            
+            
+            # wan over ip
+            # set adapte to 
+            # ip addr add 217.160.255.254/32 dev virbr0
+            # ip addr del 192.168.122.0/24 dev virbr0
+            #5: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+            #    link/ether 52:54:00:bc:e2:12 brd ff:ff:ff:ff:ff:ff
+            #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
+            #    valid_lft forever preferred_lft forever
+
+            - NETWORK_IF=virbr0
+            
+            
+            # bridge network
+            #- NETWORK_BRIDGE=vtap0
+            #- NETWORK=macvtap
             - WORKER_TYPE=qemu
             - QEMU_PORTS='22'
             - QEMU_CPU=6
