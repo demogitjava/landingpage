@@ -27,8 +27,8 @@ services:
             - QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             #Sun-UltraSparc-IIIi-plus
             #Sun-UltraSparc-IV-plus
-            - QEMU_DISPLAY=qxl
-            - QEMU_VGA=virtio
+            - QEMU_DISPLAY=bochs-display
+            - QEMU_VGA=vga
             #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
         extra_hosts:
@@ -73,10 +73,14 @@ services:
             - sandbox on
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
             - e1000,netdev=wan,net=217.160.255.254/32
-            - virtio-gpu-device
-            - virtio-gpu-pci
-            - vga qxl
             
+            # VGA
+            #- virtio-gpu-device
+            #- virtio-gpu-pci
+            #- vga qxl
+            - vga std
+            - VGA,vgamem_mb=256
+         
             - enable-kvm 
             - cpu host 
             
@@ -100,7 +104,7 @@ services:
             
             # Spice 
             - graphics spice
-            - spice port=22,addr=127.0.0.1,disable-ticketing 
+            #- spice port=22,addr=127.0.0.1,disable-ticketing 
             - virtio-serial-pci 
             - virtserialport,chardev=spicechannel0,name=devssh.0 -chardev spicevmc,id=spicechannel0,name=vdagent
             - machine spice=on
