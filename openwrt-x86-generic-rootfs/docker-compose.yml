@@ -27,7 +27,7 @@ services:
             - TZ=CET-1
             - NETWORK_IF=virbr0
             - QEMU_CPU=4
-            - QEMU_RAM=256
+            - QEMU_RAM=2048
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             
             - QEMU_ARCH=${cortex-m0plus}
@@ -54,8 +54,14 @@ services:
             - /dev/net/tun
             - sandbox on
             - mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
-            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,model=e1000 --import 
+            # sata
+            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine bpim2u --import 
             - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
+            
+            # ssd
+            # bpim2u Banana Pi BPI-M2U
+            #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
+            #- e1000,netdev=virbr0,net=217.160.255.254/32
           
         dns: 
             - 95.85.95.85
@@ -66,7 +72,7 @@ services:
             resources:
                 limits:
                   #cpus: '2'
-                  memory: 1024M
+                  memory: 2048M
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
