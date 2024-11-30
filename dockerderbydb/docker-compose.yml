@@ -31,7 +31,7 @@ services:
     environment:
       - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
-      - NETWORK_IF=ens6
+      - NETWORK_IF=virbr0
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
@@ -51,8 +51,8 @@ services:
       - /dev/kvm
       - /dev/net/tun
       - sandbox on
-      - e1000,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
-      - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
+      - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
+      - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
      
     privileged: true
     isolation: default
@@ -82,7 +82,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: ens6
+      parent: virbr0
     ipam:
       config:
         - subnet: 217.160.255.254/32

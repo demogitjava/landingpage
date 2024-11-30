@@ -25,7 +25,7 @@ services:
         environment:
            
             - TZ=CET-1
-            - NETWORK_IF=ens6
+            - NETWORK_IF=virbr0
             - QEMU_CPU=4
             - QEMU_RAM=256
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -52,11 +52,10 @@ services:
         devices:  
             - /dev/kvm
             - /dev/net/tun
-            - netdev=wan
             - sandbox on
-            - mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
+            - mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,model=e1000 --import 
-            - netdev=wan,netdev user,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
+            - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
           
         dns: 
             - 95.85.95.85
@@ -79,7 +78,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: ens6
+      parent: virbr0
     ipam:
       config:
         - subnet: 217.160.255.254/32
