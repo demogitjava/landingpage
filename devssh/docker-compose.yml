@@ -102,7 +102,7 @@ services:
             - cpu host 
             
             # ssd
-            - device.scsi0-0-0-0.rotation_rate=1,cpu host,machine sun4m=kvm:tcg
+            - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine sun4m=kvm:tcg
             - e1000,netdev=virbr0,net=217.160.255.254/32
             # scsi
             #- scsi-hd,drive=hd,drive=hd
