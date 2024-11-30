@@ -25,6 +25,7 @@ services:
         tty: true
         ports:
             - 0.0.0.0:8443:8443
+            - 0.0.0.0:5900:5900
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         environment:

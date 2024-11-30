@@ -85,8 +85,10 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
-            - e1000,netdev=virbr0,net=217.160.255.254/32
+            
+            # sata
+            #- ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
+            #- e1000,netdev=virbr0,net=217.160.255.254/32
             
             # VGA
             #- virtio-gpu-device
@@ -100,7 +102,8 @@ services:
             - cpu host 
             
             # ssd
-            - device.scsi0-0-0-0.rotation_rate=1
+            - device.scsi0-0-0-0.rotation_rate=1,cpu host,machine sun4m=kvm:tcg
+            - e1000,netdev=virbr0,net=217.160.255.254/32
             # scsi
             #- scsi-hd,drive=hd,drive=hd
        
@@ -118,7 +121,7 @@ services:
             - x-pci-proxy-dev,id=lsi0,socket=3
             
             # Spice - remote 
-            - spice port=22,password=jj78mvpr52k1,disable-ticketing
+            - spice port=5900,password=jj78mvpr52k1,disable-ticketing
             - spice gl=on,unix,addr=/run/user/1000/spice.sock
             - virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent 
             - virtserialport,chardev=vdagent,name=demogitjava.0 
