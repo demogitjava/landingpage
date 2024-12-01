@@ -3,6 +3,9 @@
 # add host 
 # with static wan ip 217.160.255.254
 
+# start cotnainer form host system
+# podman compose up -d --build
+
 services:
     openwrt-x86-backfire:
         stdin_open: true
