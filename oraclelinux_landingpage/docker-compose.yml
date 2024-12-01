@@ -24,7 +24,11 @@
 #   volumes:
 #    - /var/run/docker.sock:/var/run/docker.sock
   
+# run container over podman
+#podman compose up -d --build
 
+#run container over docker
+#docker compose up -d --build
 services: 
     
     oraclelinux_openjdk_landingpage_debug: 

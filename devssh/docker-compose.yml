@@ -1,5 +1,11 @@
 #version: '3'
 
+# run container over podman
+#podman compose up -d --build
+
+#run container over docker
+#docker compose up -d --build
+
 services:
     de_devssh:
       

@@ -7,6 +7,12 @@
 # wget http://demogitjava.ddns.net:8000/serverconfig/debian/docker-cli_26.1.5+dfsg1-4_amd64.deb
 # dpkg -i docker-cli_26.1.5+dfsg1-4_amd64.deb
 
+# run container over podman
+#podman compose up -d --build
+
+#run container over docker
+#docker compose up -d --build
+
 services:
     
     httpdfileserver:
