@@ -49,8 +49,8 @@ services:
             - NETWORK_IF=virbr0
             #- QEMU_PORTS='80'
             #- QEMU_PORTS='5005'
-            - QEMU_CPU=2
-            - QEMU_RAM=1024
+            - QEMU_CPU=4
+            - QEMU_RAM=2048
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         #blkio_config:

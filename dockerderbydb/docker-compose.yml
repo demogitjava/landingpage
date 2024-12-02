@@ -37,8 +37,8 @@ services:
       - NTP_SERVERS=2.rhel.pool.ntp.org
       - NETWORK_IF=virbr0
       - QEMU_PORTS='1527'
-      - QEMU_CPU=2
-      - QEMU_RAM=1024
+      - QEMU_CPU=4
+      - QEMU_RAM=2048
       #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
       - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
     dns:
