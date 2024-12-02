@@ -63,7 +63,8 @@ services:
             # sata
             - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg
             # bios path must set
-            - bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            - bios /root/openbios-sparc32
             - virtualization=on
         cap_add:
             - NET_ADMIN

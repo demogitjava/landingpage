@@ -116,7 +116,8 @@ services:
             - maschine SS-600MP=kvm:tcg 
             
               # bios path must set
-            - bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            - bios /root/openbios-sparc32
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
             # scsi
