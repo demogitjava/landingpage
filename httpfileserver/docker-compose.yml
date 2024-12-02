@@ -48,6 +48,8 @@ services:
             - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
             - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
             
+             # network
+            - netdev user,id=virbr0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
             # x86
             #- /dev/kvm
             #- /dev/net/tun

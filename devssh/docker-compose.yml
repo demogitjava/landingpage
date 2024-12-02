@@ -108,6 +108,9 @@ services:
             - enable-kvm 
             - cpu host 
             
+            # network
+            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
+            
             # ssd
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
             #- machine sun4m=kvm:tcg

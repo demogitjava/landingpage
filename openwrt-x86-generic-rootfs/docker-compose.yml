@@ -65,6 +65,17 @@ services:
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine bpim2u --import 
             - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
             
+          
+            # network
+            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::23-:23 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::53-:53 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::123-:123 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::323-:323 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::8082-:8082 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::51820-:51820 -device e1000,netdev=virbr0
             # ssd
             # bpim2u Banana Pi BPI-M2U
             #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u

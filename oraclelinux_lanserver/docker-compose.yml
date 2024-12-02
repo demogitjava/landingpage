@@ -32,7 +32,7 @@ services:
         tty: true
         ports:
             - 0.0.0.0:8443:8443
-            - 0.0.0.0:5900:5900
+           
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         environment:
@@ -60,6 +60,8 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
+            # network
+            - netdev user,id=virbr0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
             # sata
             - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg
             # bios path must set
