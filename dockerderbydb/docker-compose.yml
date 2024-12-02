@@ -39,7 +39,8 @@ services:
       - QEMU_PORTS='1527'
       - QEMU_CPU=2
       - QEMU_RAM=1024
-      - QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+      #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+      - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
     dns:
       - 95.85.95.85
       - 2.56.220.2
@@ -58,7 +59,9 @@ services:
       - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
       # sata
       - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
-     
+      # bios path must set
+      - bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+      - virtualization=on
     privileged: true
     isolation: default
     tty: true

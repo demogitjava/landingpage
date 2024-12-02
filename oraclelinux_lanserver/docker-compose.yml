@@ -42,7 +42,8 @@ services:
             - QEMU_PORTS='8443'
             - QEMU_CPU=2
             - QEMU_RAM=1024
-            - QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+            #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         runtime: io.containerd.runc.v2
         blkio_config:
             weight: 100
@@ -58,10 +59,12 @@ services:
         devices:
             - /dev/kvm
             - /dev/net/tun
-            - sandbox on
             - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
             # sata
-            - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg  
+            - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg
+            # bios path must set
+            - bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            - virtualization=on
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
