@@ -47,7 +47,7 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-        #command: 
+        command: bash -c "net.ipv4.ip_forward = 1"
 
 
 networks:
