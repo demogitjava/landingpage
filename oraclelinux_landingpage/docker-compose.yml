@@ -49,7 +49,7 @@ services:
             - NETWORK_IF=virbr0
             #- QEMU_PORTS='80'
             #- QEMU_PORTS='5005'
-            - QEMU_CPU=4
+            - QEMU_CPU=8
             - QEMU_RAM=2048
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
@@ -80,7 +80,7 @@ services:
             - netdev user,id=virbr0,hostfwd=tcp::80-:80 -device e1000,netdev=virbr0
             - netdev user,id=virbr0,hostfwd=tcp::5005-:5005 -device e1000,netdev=virbr0
             # sata
-            - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine niagara=kvm:tcg
+            - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
