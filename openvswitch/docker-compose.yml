@@ -1,0 +1,67 @@
+#version: '3'
+
+# add host 
+# with static wan ip 217.160.255.254
+
+# run container over podman
+#podman compose up -d --build
+
+#run container over docker
+#docker compose up -d --build
+
+
+services:
+    openswitch:
+        stdin_open: true
+        tty: true    
+        container_name: OpenvSwitch
+        runtime: io.containerd.runc.v2
+        isolation: default
+        
+        environment:
+           
+            - TZ=CET-1
+          
+        network_mode: host
+        hostname: demogitjava.ddns.net
+        extra_hosts:
+            - demogitjava.ddns.net:217.160.255.254
+        #platform: linux/arm64
+        restart: unless-stopped
+        privileged: true
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+            - SYS_TIME
+        #devices:    
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
+        image: jgsoftwares/openvswitch:2.11.2_debian
+        deploy:
+            mode: global
+            resources:
+                limits:
+                  #cpus: '2'
+                  memory: 2048M
+                reservations:
+                  #cpus: '0.25'
+                  memory: 512M
+        #command: 
+
+
+networks:
+  wan:
+    driver: ipvlan
+    #driver: macvlan
+    driver_opts:
+      parent: virbr0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 10.255.255.1
+        
+         
+
+
+        
