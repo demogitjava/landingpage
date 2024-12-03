@@ -23,7 +23,7 @@ services:
             - TZ=CET-1
             - NETWORK_IF=virbr0
             - QEMU_CPU=1
-            - QEMU_RAM=512
+            - QEMU_RAM=256
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
