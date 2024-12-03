@@ -55,6 +55,9 @@ services:
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         #blkio_config:
         #    weight: 100
+        
+            - enable-kvm 
+            - kernel 'bzImage' 
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         

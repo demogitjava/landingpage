@@ -75,6 +75,8 @@ services:
             #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
             #- e1000,console=ttyS0,115200,netdev=virbr0,net=217.160.255.254/32
           
+            - enable-kvm 
+            - kernel 'bzImage' 
        
         dns: 
             - 95.85.95.85

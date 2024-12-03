@@ -68,6 +68,9 @@ services:
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
             - virtualization=on
+            
+            - enable-kvm 
+            - kernel 'bzImage' 
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN

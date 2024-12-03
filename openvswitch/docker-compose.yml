@@ -53,6 +53,10 @@ services:
             - bios /root/openbios-sparc32.bin
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
+            
+            
+            - enable-kvm 
+            - kernel 'bzImage' 
         dns: 
             - 95.85.95.85
             - 2.56.220.2
