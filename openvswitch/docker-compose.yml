@@ -47,7 +47,12 @@ services:
             - mac=02:01:0e:dc:9c:10,netdev=virbr0,net=217.160.255.254/32
             # sata
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg 
-            - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*   
+            - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*
+            # bios path must set
+            #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            - bios /root/openbios-sparc32
+            - e1000,netdev=virbr0,net=217.160.255.254/32
+            - virtualization=on
         dns: 
             - 95.85.95.85
             - 2.56.220.2
