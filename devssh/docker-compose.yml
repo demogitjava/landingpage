@@ -120,7 +120,7 @@ services:
             
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
-            - bios /root/openbios-sparc32
+            - bios /root/openbios-sparc32.bin
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
             # scsi

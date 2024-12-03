@@ -22,7 +22,7 @@ services:
            
             - TZ=CET-1
             - NETWORK_IF=virbr0
-            - QEMU_CPU=4
+            - QEMU_CPU=16
             - QEMU_RAM=2048
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             
@@ -50,7 +50,7 @@ services:
             - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
-            - bios /root/openbios-sparc32
+            - bios /root/openbios-sparc32.bin
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
         dns: 
