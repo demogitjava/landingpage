@@ -17,10 +17,18 @@ services:
         runtime: io.containerd.runc.v2
         isolation: default
         
+         
         environment:
            
             - TZ=CET-1
-          
+            - NETWORK_IF=virbr0
+            - QEMU_CPU=4
+            - QEMU_RAM=2048
+            #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+            
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            - NTP_SERVERS="demogitjava.ddns.net"
+            
         network_mode: host
         hostname: demogitjava.ddns.net
         extra_hosts:
@@ -32,7 +40,14 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
-        #devices:    
+        devices:  
+            - /dev/kvm
+            - /dev/net/tun
+            - sandbox on
+            - mac=02:01:0e:dc:9c:10,netdev=virbr0,net=217.160.255.254/32
+            # sata
+            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg 
+            - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*   
         dns: 
             - 95.85.95.85
             - 2.56.220.2
