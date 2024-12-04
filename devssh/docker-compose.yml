@@ -161,7 +161,7 @@ services:
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
         depends_on:
             - openwrt-x86-generic-rootfs
-            - openswitchd
+            #- openswitchd
         deploy:
             mode: global
             resources:

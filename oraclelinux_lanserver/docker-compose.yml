@@ -80,6 +80,9 @@ services:
             - 2.56.220.2
         privileged: true
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:vhostdockeredge
+        depends_on:
+            - openwrt-x86-generic-rootfs
+            - openswitchd
         deploy:
             mode: global
             resources:
