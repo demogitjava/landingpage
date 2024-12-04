@@ -77,6 +77,10 @@ services:
             - netdev user,id=virbr0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
             - netdev user,id=virbr0,hostfwd=tcp::51820-:51820 -device e1000,netdev=virbr0
             
+              # qemu dns
+            - nic user,dns=95.85.95.85
+            - nic user,dns=2.56.220.2
+            
             - enable-kvm 
             - kernel 'bzImage' 
             
@@ -85,9 +89,9 @@ services:
             #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
             #- e1000,netdev=virbr0,net=217.160.255.254/32
           
-        dns: 
-            - 95.85.95.85
-            - 2.56.220.2
+        #dns: 
+        #    - 95.85.95.85
+        #    - 2.56.220.2
         image: jgsoftwares/openwrt-x86-generic-rootfs:blank
         deploy:
             mode: global

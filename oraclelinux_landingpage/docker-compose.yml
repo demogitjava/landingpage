@@ -84,6 +84,12 @@ services:
             - netdev user,id=virbr0,hostfwd=tcp::5005-:5005 -device e1000,netdev=virbr0
             # sata
             - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
+            
+            
+             # qemu dns
+            - nic user,dns=95.85.95.85
+            - nic user,dns=2.56.220.2
+            
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin

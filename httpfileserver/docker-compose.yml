@@ -59,6 +59,10 @@ services:
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
             
+             # qemu dns
+            - nic user,dns=95.85.95.85
+            - nic user,dns=2.56.220.2
+            
             - enable-kvm 
             - kernel 'bzImage' 
             
@@ -71,9 +75,9 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
-        dns: 
-            - 95.85.95.85
-            - 2.56.220.2
+        #dns: 
+        #    - 95.85.95.85
+        #    - 2.56.220.2
         privileged: true
         restart: unless-stopped
         platform: linux/amd64

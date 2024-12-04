@@ -48,18 +48,22 @@ services:
             # sata
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg 
             - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*
+            
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
             - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
             
+            # qemu dns
+            - nic user,dns=95.85.95.85
+            - nic user,dns=2.56.220.2
             
             - enable-kvm 
             - kernel 'bzImage' 
-        dns: 
-            - 95.85.95.85
-            - 2.56.220.2
+        #dns: 
+        #    - 95.85.95.85
+        #    - 2.56.220.2
         image: jgsoftwares/openvswitch:2.11.2_debian
         deploy:
             mode: global

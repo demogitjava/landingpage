@@ -73,9 +73,9 @@ services:
             # kvm required
             - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock
             #- /root/iso/oraclelinux:/dev/dvd
-        dns:
-            - 95.85.95.85            
-            - 2.56.220.2
+        #dns:
+        #    - 95.85.95.85            
+        #    - 2.56.220.2
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
@@ -95,6 +95,10 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
+            
+             # qemu dns
+            - nic user,dns=95.85.95.85
+            - nic user,dns=2.56.220.2
             
             # sata
             #- ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg

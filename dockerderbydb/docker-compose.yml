@@ -41,9 +41,9 @@ services:
       - QEMU_RAM=2048
       #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
       - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
-    dns:
-      - 95.85.95.85
-      - 2.56.220.2
+    #dns:
+    #  - 95.85.95.85
+    #  - 2.56.220.2
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     network_mode: host
@@ -67,6 +67,10 @@ services:
       - bios /root/openbios-sparc32.bin
       - virtualization=on
       
+      # qemu dns
+      - nic user,dns=95.85.95.85
+      - nic user,dns=2.56.220.2
+            
       
       - enable-kvm 
       - kernel 'bzImage' 
