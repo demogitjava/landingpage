@@ -159,7 +159,18 @@ services:
         stdin_open: true
         #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
-      
+        depends_on:
+            - openwrt-x86-generic-rootfs
+            - openswitchd
+        deploy:
+            mode: global
+            resources:
+                limits:
+                  #cpus: '2'
+                  memory: 2048M
+                reservations:
+                  #cpus: '0.25'
+                  memory: 512M
 
 networks:
   wan:

@@ -36,6 +36,8 @@ services:
         #platform: linux/arm64
         restart: unless-stopped
         privileged: true
+        volumes:
+            - /var/run/openvswitch/db.sock:/var/run/openvswitch/db.sock
         cap_add:
             - NET_ADMIN
             - SYS_TIME

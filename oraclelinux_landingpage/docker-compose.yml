@@ -105,6 +105,11 @@ services:
         tty: true
       
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
+        depends_on:
+            - openwrt-x86-generic-rootfs
+            # derbydb Server
+            - de_derby
+            - openswitchd
         deploy:
             mode: global
             resources:

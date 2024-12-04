@@ -80,6 +80,9 @@ services:
     stdin_open: true
   
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredgevhost
+    depends_on:
+        # docker switch
+        - openswitchd
     deploy:
             mode: global
             resources:

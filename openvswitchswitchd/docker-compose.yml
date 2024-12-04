@@ -11,7 +11,7 @@
 
 
 services:
-    openswitch:
+    openswitchd:
        
         container_name: OpenvSwitchswitchd
         runtime: io.containerd.runc.v2
@@ -36,6 +36,12 @@ services:
         #platform: linux/arm64
         restart: unless-stopped
         privileged: true
+        # required path from host
+        # on hostmaschine create 
+        # file on path /var/run/openvswitch/db.sock
+        # container access form server 
+        volumes:
+            - /var/run/openvswitch/db.sock:/var/run/openvswitch/db.sock
         cap_add:
             - NET_ADMIN
             - SYS_TIME
@@ -66,6 +72,9 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         image: jgsoftwares/openvswitch:ovs-vswitchd
+        depends_on:
+            # Server
+            - openswitch
         deploy:
             mode: global
             resources:
@@ -75,8 +84,6 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-        
-        #command: ovsdb-server
         command: ovs-vswitchd
 
 networks:
