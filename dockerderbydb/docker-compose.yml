@@ -80,9 +80,10 @@ services:
     stdin_open: true
   
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredgevhost
-    depends_on:
+    depends_on:  
         # docker switch
         - openswitchd
+        - openwrt-x86-generic-rootfs
     deploy:
             mode: global
             resources:
