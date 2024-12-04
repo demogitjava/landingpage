@@ -13,7 +13,7 @@
 services:
     openswitch:
        
-        container_name: OpenvSwitch
+        container_name: OpenvSwitchServer
         runtime: io.containerd.runc.v2
         isolation: default
         
@@ -38,8 +38,9 @@ services:
         privileged: true
         cap_add:
             - NET_ADMIN
-            - SYS_ADMIN
             - SYS_TIME
+            - SYS_NICE
+            - SYS_MODULE
         devices:  
             - /dev/kvm
             - /dev/net/tun
@@ -64,7 +65,7 @@ services:
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
-        image: jgsoftwares/openvswitch:2.11.2_debian
+        image: jgsoftwares/openvswitch:ovsdb-server
         deploy:
             mode: global
             resources:
@@ -74,8 +75,9 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-        command: ovs-vswitchd
+        
         command: ovsdb-server
+        #command: ovs-vswitchd
 
 networks:
   wan:
