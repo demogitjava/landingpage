@@ -102,7 +102,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: virbr0
+      parent: lanserver
     ipam:
       config:
         - subnet: 217.160.255.254/32
