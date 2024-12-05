@@ -31,7 +31,7 @@ services:
             #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
             #    valid_lft forever preferred_lft forever
 
-            - NETWORK_IF=virbr0
+            - NETWORK_IF=cni-podman0
             
             
             # bridge network
@@ -116,7 +116,7 @@ services:
             - cpu host 
             
             # network
-            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
+            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=cni-podman0
             
             # ssd
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host

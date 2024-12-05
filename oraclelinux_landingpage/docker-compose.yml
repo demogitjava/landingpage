@@ -50,7 +50,7 @@ services:
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=virbr0
+            - NETWORK_IF=cni-podman0
             #- QEMU_PORTS='80'
             #- QEMU_PORTS='5005'
             - QEMU_CPU=8
@@ -80,14 +80,14 @@ services:
         devices:
             - /dev/kvm
             - /dev/net/tun
-            - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
+            - e1000,mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
             
            
              # network
-            - netdev user,id=virbr0,hostfwd=tcp::80-:80 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::5005-:5005 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::80-:80 -device e1000,netdev=cni-podman0
+            - netdev user,id=cni-podman0,hostfwd=tcp::5005-:5005 -device e1000,netdev=cni-podman0
             # sata
-            - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
+            - ide-hd,netdev=cni-podman0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             
             
              # qemu dns
@@ -111,9 +111,10 @@ services:
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
         depends_on:
             - openwrt-x86-generic-rootfs
+            - openswitchd
             # derbydb Server
             - de_derby
-            - openswitchd
+            
         deploy:
             mode: global
             resources:
