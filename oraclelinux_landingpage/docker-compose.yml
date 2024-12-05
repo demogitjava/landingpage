@@ -29,6 +29,10 @@
 
 #run container over docker
 #docker compose up -d --build
+
+# create docker vlan 
+#docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 landingpagevlan
+
 services: 
     
     oraclelinux_openjdk_landingpage_debug: 
@@ -127,7 +131,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: virbr0
+      parent: landingpagevlan
     ipam:
       config:
         - subnet: 217.160.255.254/32
