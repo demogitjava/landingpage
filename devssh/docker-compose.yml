@@ -134,6 +134,9 @@ services:
             #- scsi-hd,drive=hd,drive=hd
        
             # bluetooth // Print 
+            - netdev bridge,id=hci0 
+            - device virtio-net-pci,netdev=hci0,id=nic1
+            - usbdevice host:zzzz:zzzz -bt hci0
             - bt host:hci0
             #- bt hci,usb-host,hostbus=1,hostport=5
             - machine bt=on
