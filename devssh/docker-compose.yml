@@ -116,7 +116,7 @@ services:
             - cpu host 
             
             # network
-            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=cni-podman0
+            - netdev user,id=cni-podman0,hostfwd=tcp::22-:22 -device e1000,netdev=cni-podman0
             
             # ssd
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
@@ -128,13 +128,14 @@ services:
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
-            - e1000,netdev=virbr0,net=217.160.255.254/32
+            - e1000,netdev=cni-podman0,net=217.160.255.254/32
             - virtualization=on
             # scsi
             #- scsi-hd,drive=hd,drive=hd
        
             # bluetooth // Print 
-            - bt hci,host:hci0
+            - bt host:hci0
+            #- bt hci,usb-host,hostbus=1,hostport=5
             - machine bt=on
             
             #  USB 1.1 // Print
