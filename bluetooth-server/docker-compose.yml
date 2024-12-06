@@ -108,7 +108,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: kvaps/pulseaudio-bluetooth
+        image: jgsoftwares/pulseaudio-bluetooth:latest
         depends_on:
             - openwrt-x86-generic-rootfs
             - openswitchd
