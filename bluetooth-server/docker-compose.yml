@@ -51,7 +51,10 @@ services:
             - QEMU_DISPLAY=bochs-display
             #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
-            
+            - PIN=123321
+            - NAME=Some-bluetooth
+            - DEVICE=40:EF:4C:C3:9C:CE
+            - DEVICE_PIN=0000
             - enable-kvm 
             - kernel 'bzImage' 
         extra_hosts:
