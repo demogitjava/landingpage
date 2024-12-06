@@ -37,7 +37,7 @@ services:
             #- NETWORK_BRIDGE=vtap0
             #- NETWORK=macvtap
             - WORKER_TYPE=qemu
-            - QEMU_PORTS='22'
+            #- QEMU_PORTS='22'
             - QEMU_CPU=2
             - QEMU_RAM=1024
             #- QEMU_RAM=24576
