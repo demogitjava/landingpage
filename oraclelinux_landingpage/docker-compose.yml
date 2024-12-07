@@ -50,10 +50,10 @@ services:
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=cni-podman0
+            - NETWORK_IF=ens6
             #- QEMU_PORTS='80'
             #- QEMU_PORTS='5005'
-            - QEMU_CPU=8
+            - QEMU_CPU=4
             - QEMU_RAM=2048
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
@@ -63,9 +63,7 @@ services:
             - enable-kvm 
             - kernel 'bzImage' 
         extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
-        
-        
+            - demogitjava.ddns.net:217.160.255.254  
         network_mode: host
         hostname: demogitjava.ddns.net
         volumes:
@@ -80,15 +78,15 @@ services:
         devices:
             - /dev/kvm
             - /dev/net/tun
-            - e1000,mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
+            - e1000,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
             
            
              # network
-            - netdev user,id=cni-podman0,hostfwd=tcp::80-:80 
-            - netdev user,id=cni-podman0,hostfwd=tcp::5005-:5005
-            - device e1000,netdev=cni-podman0
+            - netdev user,id=ens6,hostfwd=tcp::80-:80 
+            - netdev user,id=ens6,hostfwd=tcp::5005-:5005
+            - device e1000,netdev=ens6
             # sata
-            - ide-hd,netdev=cni-podman0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
+            - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             
             
              # qemu dns
@@ -131,7 +129,7 @@ networks:
   wan:
     name: wan
     driver: ipvlan
-    #driver: macvlan
+    # vlan name
     driver_opts:
       parent: landingpagevlan
     ipam:

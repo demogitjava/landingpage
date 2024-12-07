@@ -21,7 +21,7 @@ services:
         environment:
            
             - TZ=CET-1
-            - NETWORK_IF=cni-podman0
+            - NETWORK_IF=ens6
             - QEMU_CPU=1
             - QEMU_RAM=64
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -47,15 +47,15 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - mac=02:01:0e:dc:9c:10,netdev=cni-podman0,net=217.160.255.254/32
+            - mac=02:01:0e:dc:9c:10,netdev=ens6,net=217.160.255.254/32
             # sata
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg 
-            - netdev=cni-podman0,id=cni-podman0,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*
+            - netdev=ens6,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:*
             
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
-            - e1000,netdev=cni-podman0,net=217.160.255.254/32
+            - e1000,netdev=ens6,net=217.160.255.254/32
             - virtualization=on
             
             # qemu dns
@@ -86,13 +86,34 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: cni-podman0
+      # public 
+      parent: landingpagevlan
     ipam:
       config:
         - subnet: 217.160.255.254/32
-          gateway: 10.255.255.1
-        
-         
+          gateway: 217.160.255.254
+          
+          
+  # dev ssh docker container
+  vlan_devssh:
+    driver: ipvlan
+    driver_opts:
+      parent: devssh
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+
+  # lanserver
+  vlan_lanserver:
+    driver: ipvlan
+    driver_opts:
+      parent: lanserver
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+    
 
 
         

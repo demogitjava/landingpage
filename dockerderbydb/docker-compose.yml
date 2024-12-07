@@ -36,7 +36,7 @@ services:
     environment:
       - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
-      - NETWORK_IF=cni-podman0
+      - NETWORK_IF=ens6
       - QEMU_PORTS='1527'
       - QEMU_CPU=8
       - QEMU_RAM=2048
@@ -59,10 +59,10 @@ services:
       - sandbox on
       
       # network
-      - netdev user,id=virbr0,hostfwd=tcp::1527-:1527 -device e1000,netdev=cni-podman0
-      - e1000,mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
+      - netdev user,id=ens6,hostfwd=tcp::1527-:1527 -device e1000,netdev=ens6
+      - e1000,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
       # sata
-      - ide-hd,netdev=cni-podman0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg   
+      - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg   
       # bios path must set
       #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
       - bios /root/openbios-sparc32.bin

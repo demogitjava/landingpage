@@ -30,7 +30,7 @@ services:
         environment:
             - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - NETWORK_IF=virbr0
+            - NETWORK_IF=ens6
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
@@ -45,18 +45,18 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - e1000,mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
-            - ide-hd,netdev=virbr0,bus=sata.4,drive=SystemDisk,cpu host,
+            - e1000,mac=02:01:0e:dc:9c:00,netdev=ens6,net=217.160.255.254/32
+            - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,
             #machine niagara=kvm:tcg  
             #server
             - maschine SS-600MP=kvm:tcg 
              # network
-            - netdev user,id=virbr0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
+            - netdev user,id=ens6,hostfwd=tcp::8000-:8000 -device e1000,netdev=ens6
             
                # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
-            - e1000,netdev=virbr0,net=217.160.255.254/32
+            - e1000,netdev=ens6,net=217.160.255.254/32
             - virtualization=on
             
              # qemu dns

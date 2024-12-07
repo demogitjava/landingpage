@@ -30,7 +30,7 @@ services:
             #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
             #    valid_lft forever preferred_lft forever
 
-            - NETWORK_IF=cni-podman0
+            - NETWORK_IF=ens6
             
             
             # bridge network
@@ -52,7 +52,7 @@ services:
             #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
             - PIN=123321
-            - NAME=Some-bluetooth
+            - NAME=demogitjava_bt
             - DEVICE=40:EF:4C:C3:9C:CE
             - DEVICE_PIN=0000
             - enable-kvm 
@@ -98,7 +98,7 @@ services:
             - cpu host 
             
             # network
-            - netdev user,id=cni-podman0,hostfwd=tcp::22-:22 -device e1000,netdev=cni-podman0
+            - netdev user,id=ens6,hostfwd=tcp::22-:22 -device e1000,netdev=ens6
             
             # ssd
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
@@ -129,7 +129,7 @@ networks:
   wan:
     name: wan
     driver: ipvlan
-    #driver: macvlan
+    # vlan name 
     driver_opts:
       parent: devssh
     ipam:
