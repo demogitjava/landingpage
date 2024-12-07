@@ -7,6 +7,7 @@
 #docker compose up -d --build
 
 services:
+    
     de_devssh:
       
         ports:
@@ -135,7 +136,11 @@ services:
        
             # bluetooth // Print 
             #Bus 001 Device 002: ID 0627:0001 Adomax Technology Co., Ltd 
-            - bt host:hci0
+            #- bt host:hci0
+            - bt hci,vlan=5 
+            - bt vhci,vlan=5
+            - bt device:dev,vlan=5
+            - usb-host,vendorid=0x06cd,productid=0x0110 
             - usb-host,hostbus=001,id=0627:0001
             #- bt hci,usb-host,hostbus=1,hostport=5
             - machine bt=on
@@ -175,9 +180,11 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-
+  
+    
 networks:
   wan:
+    external: true
     name: wan
     driver: ipvlan
     #driver: macvlan

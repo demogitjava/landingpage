@@ -32,7 +32,7 @@ services:
         environment:
            
             - TZ=CET-1
-            - NETWORK_IF=virbr0
+            - NETWORK_IF=cni-podman0
             - QEMU_CPU=1
             - QEMU_RAM=4
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -60,22 +60,22 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - mac=02:01:0e:dc:9c:00,netdev=virbr0,net=217.160.255.254/32
+            - mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
             # sata
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine bpim2u --import 
-            - netdev=virbr0,id=ens6,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
+            - netdev=cni-podman0,id=cni-podman0,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
             
           
             # network
-            - netdev user,id=virbr0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::23-:23 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::53-:53 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::123-:123 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::323-:323 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::8082-:8082 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
-            - netdev user,id=virbr0,hostfwd=tcp::51820-:51820 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::23-:23 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::53-:53 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::123-:123 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::323-:323 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::8082-:8082 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
+            - netdev user,id=cni-podman0,hostfwd=tcp::51820-:51820 -device e1000,netdev=virbr0
             
               # qemu dns
             - nic user,dns=95.85.95.85
@@ -83,7 +83,7 @@ services:
             
             - enable-kvm 
             - kernel 'bzImage' 
-            
+            - device e1000,netdev=cni-podman0
             # ssd
             # bpim2u Banana Pi BPI-M2U
             #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
@@ -93,6 +93,9 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         image: jgsoftwares/openwrt-x86-generic-rootfs:blank
+        depends_on:
+            # switch
+            - openswitchd
         deploy:
             mode: global
             resources:
@@ -110,13 +113,34 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: virbr0
+      # public 
+      parent: landingpagevlan
     ipam:
       config:
         - subnet: 217.160.255.254/32
-          gateway: 10.255.255.1
-        
-         
+          gateway: 217.160.255.254
+          
+          
+  # dev ssh docker container
+  vlan_devssh:
+    driver: ipvlan
+    driver_opts:
+      parent: devssh
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+
+  # lanserver
+  vlan_lanserver:
+    driver: ipvlan
+    driver_opts:
+      parent: lanserver
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+    
 
 
         

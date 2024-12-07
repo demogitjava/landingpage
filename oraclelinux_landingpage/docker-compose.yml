@@ -84,8 +84,9 @@ services:
             
            
              # network
-            - netdev user,id=cni-podman0,hostfwd=tcp::80-:80 -device e1000,netdev=cni-podman0
-            - netdev user,id=cni-podman0,hostfwd=tcp::5005-:5005 -device e1000,netdev=cni-podman0
+            - netdev user,id=cni-podman0,hostfwd=tcp::80-:80 
+            - netdev user,id=cni-podman0,hostfwd=tcp::5005-:5005
+            - device e1000,netdev=cni-podman0
             # sata
             - ide-hd,netdev=cni-podman0,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             
