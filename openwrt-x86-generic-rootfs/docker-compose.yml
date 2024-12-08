@@ -14,17 +14,17 @@ services:
     openwrt-x86-generic-rootfs:
         stdin_open: true
         tty: true
-        #ports: 
-        #    - 0.0.0.0:22:22
-        #    - 0.0.0.0:23:23
-        #    - 0.0.0.0:80:80
-        #    - 0.0.0.0:53:53
-        #    - 0.0.0.0:123:123
-        #    - 0.0.0.0:323:323   
-        #    - 0.0.0.0:8000:8000  
-        #    - 0.0.0.0:8082:8082
-        #    - 0.0.0.0:8443:8443
-        #    - 0.0.0.0:51820:51820     
+        ports: 
+            - 0.0.0.0:22:22
+            - 0.0.0.0:23:23
+            - 0.0.0.0:80:80
+            - 0.0.0.0:53:53
+            - 0.0.0.0:123:123
+            - 0.0.0.0:323:323   
+            - 0.0.0.0:8000:8000  
+            - 0.0.0.0:8082:8082
+            - 0.0.0.0:8443:8443
+            - 0.0.0.0:51820:51820     
         container_name: openwrtgerneric_rootfs
         runtime: io.containerd.runc.v2
         isolation: default
@@ -32,7 +32,7 @@ services:
         environment:
            
             - TZ=CET-1
-            - NETWORK_IF=cni-podman0
+            - NETWORK_IF=ens6
             - QEMU_CPU=1
             - QEMU_RAM=4
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -60,34 +60,22 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
-            # sata
-            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine bpim2u --import 
-            - netdev=cni-podman0,id=cni-podman0,net=217.160.255.254/32,hostfwd=tcp:0.0.0.0:*-217.160.255.254:* 
             
           
-            # network
-            - netdev user,id=cni-podman0,hostfwd=tcp::22-:22 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::23-:23 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::53-:53 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::123-:123 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::323-:323 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::8000-:8000 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::8082-:8082 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::8443-:8443 -device e1000,netdev=virbr0
-            - netdev user,id=cni-podman0,hostfwd=tcp::51820-:51820 -device e1000,netdev=virbr0
+           
             
-              # qemu dns
+            # qemu dns
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
             
             - enable-kvm 
-            - kernel 'bzImage' 
-            - device e1000,netdev=cni-podman0
+          
+           
             # ssd
-            # bpim2u Banana Pi BPI-M2U
-            #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
-            #- e1000,netdev=virbr0,net=217.160.255.254/32
+            - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1
+            - cpu host
+            - machine virt
+            - netdev=ens6,net=217.160.255.254/32
           
         #dns: 
         #    - 95.85.95.85
