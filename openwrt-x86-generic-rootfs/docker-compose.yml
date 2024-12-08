@@ -80,7 +80,7 @@ services:
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
-        image: jgsoftwares/openwrt-x86-generic-rootfs:blank
+        image: jgsoftwares/openwrt-x86-generic-rootfs:adsl
         depends_on:
             # switch
             - openswitchd
