@@ -74,13 +74,15 @@ services:
             # ssd
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1
             - cpu host
-            - machine virt
+            
+            - machine q35
+            - id=d0,if=none,bus=0,unit=0
             - netdev=ens6,net=217.160.255.254/32
-          
-        #dns: 
+            - device ide-hd,drive=d0,bus=ide.0
+        
         #    - 95.85.95.85
         #    - 2.56.220.2
-        image: jgsoftwares/openwrt-x86-generic-rootfs:adsl
+        image: jgsoftwares/openwrt-x86-generic-rootfs:blank
         depends_on:
             # switch
             - openswitchd
