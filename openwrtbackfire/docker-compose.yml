@@ -78,7 +78,7 @@ services:
         #    - 2.56.220.2
         pid: "host"
         privileged: true
-        image: jgsoftwares/openwrt-x86-backfire:blank
+        image: jgsoftwares/openwrt-x86-backfire:adsl
         deploy:
             mode: global
             resources:
