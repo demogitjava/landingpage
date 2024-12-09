@@ -32,7 +32,7 @@ services:
             #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
             #    valid_lft forever preferred_lft forever
 
-            - NETWORK_IF=ens6
+            - NETWORK_IF=virbr0
             
             
             # bridge network
@@ -130,7 +130,7 @@ services:
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
-            - e1000,netdev=ens6,net=217.160.255.254/32
+            - e1000,netdev=virbr0,net=217.160.255.254/32
             - virtualization=on
             # scsi
             #- scsi-hd,drive=hd,drive=hd
@@ -170,8 +170,12 @@ services:
         #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
         depends_on:
+            # openwrt backfire 
             - openwrt-x86-backfire
+            #Switch 
             - openswitchd
+            # Server
+            - openswitch
         deploy:
             mode: global
             resources:
@@ -190,7 +194,7 @@ networks:
     driver: ipvlan
     # vlan name is devssh
     driver_opts:
-      parent: devssh
+      parent: openwrtdevssh
     ipam:
       config:
         - subnet: 217.160.255.254/32

@@ -29,7 +29,7 @@ services:
         isolation: default
         environment:
             - TZ=CET-1
-            - NETWORK_IF=ens6
+            - NETWORK_IF=virbr0
             - QEMU_CPU=1
             - QEMU_RAM=4
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -53,7 +53,7 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - mac=02:01:0e:dc:9c:01,netdev=ens6,net=217.160.255.254/32
+            - mac=02:01:0e:dc:9c:01,netdev=virbr0,net=217.160.255.254/32
            
             # sata
             - ide-hd,bus=sata.4,drive=SystemDisk,cpu host
@@ -96,7 +96,8 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: virbr0
+       # vlan 
+      parent: openwrtdevssh
     ipam:
       config:
         - subnet: 217.160.255.254/32
