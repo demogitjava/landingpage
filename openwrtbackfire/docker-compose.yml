@@ -13,17 +13,17 @@ services:
     openwrt-x86-backfire:
         stdin_open: true
         tty: true
-        #ports: 
-        #    - 0.0.0.0:22:22
-        #    - 0.0.0.0:23:23
-        #    - 0.0.0.0:80:80
-        #    - 0.0.0.0:53:53
-        #    - 0.0.0.0:123:123
-        #    - 0.0.0.0:323:323   
-        #    - 0.0.0.0:8000:8000  
-        #    - 0.0.0.0:8082:8082
-        #    - 0.0.0.0:8443:8443
-        #    - 0.0.0.0:51820:51820 
+        ports: 
+            - 0.0.0.0:22:22
+            - 0.0.0.0:23:23
+            - 0.0.0.0:80:80
+            - 0.0.0.0:53:53
+            - 0.0.0.0:123:123
+            - 0.0.0.0:323:323   
+            - 0.0.0.0:8000:8000  
+            - 0.0.0.0:8082:8082
+            - 0.0.0.0:8443:8443
+            - 0.0.0.0:51820:51820 
         container_name: openwrtbackgcore
         runtime: io.containerd.runc.v2
         isolation: default
@@ -53,26 +53,23 @@ services:
             - /dev/kvm
             - /dev/net/tun
             - sandbox on
-            - mac=02:01:0e:dc:9c:01,netdev=virbr0,net=217.160.255.254/32
-           
-            # sata
-            - ide-hd,bus=sata.4,drive=SystemDisk,cpu host
-            - machine virt --import 
-           
-         
+
             
-            # ssd
-            # bpim2u Banana Pi BPI-M2U
-            #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host,machine bpim2u
-            #- e1000,console=ttyS0,115200,netdev=virbr0,net=217.160.255.254/32
-          
-              # qemu dns
+            # qemu dns
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
-          
+            
             - enable-kvm 
-            - kernel 'bzImage' 
-       
+          
+           
+            # ssd
+            - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1
+            - cpu host
+            
+            - machine q35
+            - id=d0,if=none,bus=0,unit=0
+            - netdev=ens6,net=217.160.255.254/32
+            - device ide-hd,drive=d0,bus=ide.0
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
