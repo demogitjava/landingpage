@@ -61,6 +61,8 @@ services:
             
             - enable-kvm 
           
+            # optional vga
+            - vga qxl 
            
             - M pc-q35-2.0 
             - drive file=openwrt-x86_64-combined-ext4.vdi,id=d0,if=none 

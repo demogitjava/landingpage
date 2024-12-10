@@ -67,6 +67,10 @@ services:
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
             
+            # optional vga
+            - vga qxl 
+            
+            
             - enable-kvm 
             - kernel 'bzImage' 
         #dns: 

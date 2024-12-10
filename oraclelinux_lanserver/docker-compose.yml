@@ -67,6 +67,10 @@ services:
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
+            
+             # optional vga
+            - vga qxl 
+            
             - virtualization=on
             
             - enable-kvm 

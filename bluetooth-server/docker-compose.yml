@@ -94,6 +94,9 @@ services:
             - nic user,dns=2.56.220.2
             
           
+            # optional vga
+            - vga qxl 
+            
             - enable-kvm 
             - cpu host 
             

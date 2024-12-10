@@ -62,7 +62,8 @@ services:
             - sandbox on
             
           
-           
+            # optional vga
+            - vga qxl 
             
             # qemu dns
             - nic user,dns=95.85.95.85
