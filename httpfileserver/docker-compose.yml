@@ -70,6 +70,9 @@ services:
             - enable-kvm 
             - kernel 'bzImage' 
             
+            # Accelerator
+            - accel kvm
+            
             # x86
             #- /dev/kvm
             #- /dev/net/tun

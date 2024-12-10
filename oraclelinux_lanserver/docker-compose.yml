@@ -77,6 +77,9 @@ services:
             
             - virtualization=on
             
+            # Accelerator
+            - accel kvm
+            
             - enable-kvm 
             - kernel 'bzImage' 
         cap_add:

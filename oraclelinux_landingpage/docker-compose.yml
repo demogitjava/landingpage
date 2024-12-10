@@ -98,6 +98,9 @@ services:
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
             
+            # Accelerator
+            - accel kvm
+            
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin

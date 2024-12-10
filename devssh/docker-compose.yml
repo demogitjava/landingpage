@@ -128,6 +128,8 @@ services:
             #server
             - maschine SS-600MP=kvm:tcg 
             
+            # Accelerator
+            - accel kvm
             
             # network card
             - display gtk 

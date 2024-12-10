@@ -107,6 +107,9 @@ services:
             - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
             #- machine sun4m=kvm:tcg
             
+            # Accelerator
+            - accel kvm
+            
             - monitor stdio
             - console=ttyS0
         privileged: true

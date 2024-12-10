@@ -69,7 +69,8 @@ services:
             - display gtk 
             - g 1024x768x8 -net nic,model=lance
             
-            
+            # Accelerator
+            - accel kvm
             
             - enable-kvm 
             - kernel 'bzImage' 
