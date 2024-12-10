@@ -62,14 +62,15 @@ services:
             - enable-kvm 
           
            
-            # ssd
-            - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1
-            - cpu host
-            
-            - machine q35
-            - id=d0,if=none,bus=0,unit=0
-            - netdev=ens6,net=217.160.255.254/32
-            - device ide-hd,drive=d0,bus=ide.0
+            - M pc-q35-2.0 
+            - drive file=openwrt-x86_64-combined-ext4.vdi,id=d0,if=none 
+            - device ide-hd,drive=d0,bus=ide.0 
+            - device ide-hd,drive=d1,bus=ide.1 
+            - soundhw ac97 
+            - netdev bridge,br=ens6,id=hn0 
+            - device e1000,netdev=hn0,id=nic1 
+            - netdev user,id=hn1 
+            - device e1000,netdev=hn1,id=nic2
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
