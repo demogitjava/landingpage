@@ -109,9 +109,10 @@ services:
             #- virtio-gpu-device
             #- virtio-gpu-pci
             #- vga qxl
-            - virtio-vga,virgl=on 
-            - vga std
-            - VGA,vgamem_mb=128
+            
+            #- virtio-vga,virgl=on 
+            #- vga std
+            #- VGA,vgamem_mb=128
          
             - enable-kvm 
             - cpu host 
@@ -156,13 +157,12 @@ services:
             - x-pci-proxy-dev,id=lsi0,socket=3
             
             # Spice - remote 
-            - spice port=5900,password=jj78mvpr52k1,disable-ticketing
-            - spice gl=on,unix,addr=/run/user/1000/spice.sock
-            - virtio-serial,chardev spicevmc,id=vdagent,debug=0,name=vdagent 
-            - virtserialport,chardev=vdagent,name=demogitjava.0 
-            - machine spice=on
-            - monitor stdio
-            - console=ttyS0
+            - machine vmport=off 
+            - order=dc 
+            - vga qxl 
+            - spice port=3001
+            - virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent 
+            - virtserialport,chardev=vdagent,name=com.redhat.spice.0 
         privileged: true
         isolation: default
         tty: true
