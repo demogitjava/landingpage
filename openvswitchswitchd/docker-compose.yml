@@ -70,8 +70,9 @@ services:
             # optional vga
             - vga qxl 
             
-            # net
-            - net nic,model=rtl8139
+             # network card
+            - display gtk 
+            - g 1024x768x8 -net nic,model=lance
             
             - enable-kvm 
             - kernel 'bzImage' 
