@@ -62,8 +62,14 @@ services:
             - e1000,mac=02:01:0e:dc:9c:00,netdev=cni-podman0,net=217.160.255.254/32
             # network
             - netdev user,id=cni-podman0,hostfwd=tcp::8443-:8443 -device e1000,netdev=cni-podman0
+            
             # sata
-            - ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg   
+            #- ide-hd,netdev=wan,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg  
+            
+             # nvme
+            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            
+            
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin

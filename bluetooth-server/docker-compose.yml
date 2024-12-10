@@ -104,8 +104,12 @@ services:
             - netdev user,id=ens6,hostfwd=tcp::22-:22 -device e1000,netdev=ens6
             
             # ssd
-            - scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
+            #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
             #- machine sun4m=kvm:tcg
+            
+             # nvme
+            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            
             
             # Accelerator
             - accel kvm

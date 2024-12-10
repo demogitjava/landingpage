@@ -87,8 +87,13 @@ services:
             - netdev user,id=ens6,hostfwd=tcp::80-:80 
             - netdev user,id=ens6,hostfwd=tcp::5005-:5005
             - device e1000,netdev=ens6
+            
             # sata
-            - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
+            #- ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
+            
+            # nvme
+            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            
             
             # network card
             - display gtk 
