@@ -70,6 +70,8 @@ services:
             # optional vga
             - vga qxl 
             
+            # net
+            - net nic,model=rtl8139
             
             - enable-kvm 
             - kernel 'bzImage' 

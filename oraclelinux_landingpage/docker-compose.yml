@@ -90,6 +90,9 @@ services:
             # sata
             - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             
+            # network card
+            - display gtk 
+            - g 1024x768x8 -net nic,model=lance
             
              # qemu dns
             - nic user,dns=95.85.95.85

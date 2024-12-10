@@ -71,6 +71,10 @@ services:
              # optional vga
             - vga qxl 
             
+            # network card
+            - display gtk 
+            - g 1024x768x8 -net nic,model=lance
+            
             - virtualization=on
             
             - enable-kvm 

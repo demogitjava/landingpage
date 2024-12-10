@@ -68,6 +68,11 @@ services:
       - bios /root/openbios-sparc32.bin
       - virtualization=on
       
+      
+      # network card
+      - display gtk 
+      - g 1024x768x8 -net nic,model=lance
+      
       # qemu dns
       - nic user,dns=95.85.95.85
       - nic user,dns=2.56.220.2

@@ -65,6 +65,9 @@ services:
             # optional vga
             - vga qxl 
             
+            # net
+            - net nic,model=rtl8139
+            
             # qemu dns
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
