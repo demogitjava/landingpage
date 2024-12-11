@@ -6,6 +6,12 @@
 #run container over docker
 #docker compose up -d --build
 
+# vlan required
+#
+# used vlan 
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 virbr0
+
+
 services:
     
     de_devssh:
@@ -130,9 +136,8 @@ services:
             
             # memory 
             - nvdimm,memdev=md1,id=nvdimm1
-            - m 4G,maxmem=8G,slots=4 -object memory-backend-ram
-            
-            - nvdimm -m 32G,maxmem=100G,slots=10 -object memory-backend-ram,
+            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
+            - nvdimm -m 8G,maxmem=16G,slots=4 -object memory-backend-ram
            
             #server
             - maschine SS-600MP=kvm:tcg 
@@ -144,6 +149,7 @@ services:
             - display gtk 
             - g 1024x768x8 -net nic,model=lance
 
+            
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
