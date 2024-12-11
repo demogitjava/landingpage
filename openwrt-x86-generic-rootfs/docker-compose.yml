@@ -32,7 +32,7 @@ services:
         environment:
            
             - TZ=CET-1
-            - NETWORK_IF=ens6
+            - NETWORK_IF=virbr0
             - QEMU_CPU=1
             - QEMU_RAM=4
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
@@ -81,13 +81,14 @@ services:
             
             - M pc-q35-2.0 
             #- drive file=openwrt-x86_64-combined-ext4.vdi,id=d0,if=none 
-            - device ide-hd,drive=d0,bus=ide.0 
-            - device ide-hd,drive=d1,bus=ide.1 
-            - soundhw ac97 
-            - netdev bridge,br=ens6,id=hn0 
-            - device e1000,netdev=hn0,id=nic1 
-            - netdev user,id=hn1 
-            - device e1000,netdev=hn1,id=nic2
+            # nvme
+            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            #- machine sun4m=kvm:tcg
+            
+            # memory 
+            - nvdimm,memdev=md1,id=nvdimm1
+            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
+            - nvdimm -m 0.1G,maxmem=0.2G,slots=4 -object memory-backend-ram
         
         #    - 95.85.95.85
         #    - 2.56.220.2
