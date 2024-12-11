@@ -130,7 +130,10 @@ services:
             
             # memory 
             - nvdimm,memdev=md1,id=nvdimm1
-            - m 4G,maxmem=6.144G,slots=4
+            - m 4G,maxmem=8G,slots=4 -object memory-backend-ram
+            
+            - nvdimm -m 32G,maxmem=100G,slots=10 -object memory-backend-ram,
+           
             #server
             - maschine SS-600MP=kvm:tcg 
             
