@@ -30,7 +30,7 @@ services:
             #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
             #    valid_lft forever preferred_lft forever
 
-            - NETWORK_IF=ens6
+            - NETWORK_IF=virbr0
             
             
             # bridge network
@@ -100,8 +100,7 @@ services:
             - enable-kvm 
             - cpu host 
             
-            # network
-            - netdev user,id=ens6,hostfwd=tcp::22-:22 -device e1000,netdev=ens6
+           
             
             # ssd
             #- scsi-hd,drive=hd,drive=hd,device.scsi0-0-0-0.rotation_rate=1,cpu host
@@ -109,7 +108,12 @@ services:
             
              # nvme
             - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            #- machine sun4m=kvm:tcg
             
+            # memory 
+            - nvdimm,memdev=md1,id=nvdimm1
+            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
+            - nvdimm -m 0.5G,maxmem=1G,slots=4 -object memory-backend-ram
             
             # Accelerator
             - accel kvm
