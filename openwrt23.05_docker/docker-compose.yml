@@ -15,7 +15,7 @@ services:
             - 0.0.0.0:8082:8082
             - 0.0.0.0:8443:8443
             - 0.0.0.0:51820:51820     
-        container_name: openwrt23docker
+        #container_name: openwrt23docker
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
@@ -79,6 +79,7 @@ services:
         privileged: true
         image: jgsoftwares/openwrt23.05:docker
         deploy:
+            replicas: 2
             mode: global
             resources:
                 limits:
