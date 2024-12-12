@@ -145,7 +145,7 @@ networks:
     driver: ipvlan
     # vlan name 
     driver_opts:
-      parent: devssh
+      parent: virbr0
     ipam:
       config:
         - subnet: 217.160.255.254/32
