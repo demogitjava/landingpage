@@ -15,15 +15,6 @@ services:
         tty: true
         ports: 
             - 0.0.0.0:22:22
-            - 0.0.0.0:23:23
-            - 0.0.0.0:80:80
-            - 0.0.0.0:53:53
-            - 0.0.0.0:123:123
-            - 0.0.0.0:323:323   
-            - 0.0.0.0:8000:8000  
-            - 0.0.0.0:8082:8082
-            - 0.0.0.0:8443:8443
-            - 0.0.0.0:51820:51820 
         container_name: openwrtbackgcore
         runtime: io.containerd.runc.v2
         isolation: default
@@ -103,7 +94,7 @@ networks:
     #driver: macvlan
     driver_opts:
        # vlan 
-      parent: openwrtdevssh
+      parent: virbr0
     ipam:
       config:
         - subnet: 217.160.255.254/32
