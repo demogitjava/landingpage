@@ -16,8 +16,9 @@ services:
     
     de_devssh:
       
-        ports:
-            - 0.0.0.0:22:22
+        #ports:
+        #    - 0.0.0.0:22:22
+        
         runtime: io.containerd.runc.v2
         #blkio_config:
         #    weight: 100
