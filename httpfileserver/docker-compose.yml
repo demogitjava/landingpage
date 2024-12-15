@@ -97,8 +97,7 @@ services:
         #        ipv4_address: 172.17.0.100
         image: jgsoftwares/httpdfileserver:dockercli
         depends_on:
-           - openwrt-x86-generic-rootfs
-           - openswitchd
+             - openwrt23docker
         deploy:
             mode: global
 #networks:

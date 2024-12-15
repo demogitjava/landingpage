@@ -127,8 +127,7 @@ services:
         #command: sh
         image: jgsoftwares/pulseaudio-bluetooth:latest
         depends_on:
-            - openwrt-x86-generic-rootfs
-            - openswitchd
+             - openwrt23docker
         deploy:
             mode: global
             resources:

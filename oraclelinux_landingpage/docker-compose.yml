@@ -129,11 +129,8 @@ services:
       
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
         depends_on:
-            - openwrt-x86-generic-rootfs
-            - openswitchd
-            # derbydb Server
-            - de_derby
-            
+            - openwrt23docker
+          
         deploy:
             mode: global
             resources:

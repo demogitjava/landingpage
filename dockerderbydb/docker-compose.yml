@@ -107,9 +107,7 @@ services:
   
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredgevhost
     depends_on:  
-        # docker switch
-        - openswitchd
-        - openwrt-x86-generic-rootfs
+        - openwrt23docker
     deploy:
             mode: global
             resources:

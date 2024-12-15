@@ -80,9 +80,7 @@ services:
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt23.05:docker
-        depends_on:
-            # Server
-            - openswitch
+     
             
        
         deploy:

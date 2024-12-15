@@ -98,8 +98,7 @@ services:
         privileged: true
         image: jgsoftwares/oraclelinux_openjdk_lanservertcp:vhostdockeredge
         depends_on:
-            - openwrt-x86-generic-rootfs
-            - openswitchd
+            - openwrt23docker
         deploy:
             mode: global
             resources:
