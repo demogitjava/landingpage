@@ -30,8 +30,8 @@ services:
     platform: linux/amd64
     runtime: io.containerd.runc.v2
   
-    ports:
-      - "0.0.0.0:1527:1527"
+    #ports:
+    #  - "0.0.0.0:1527:1527"
    
     #networks:
     # 172.17.0.0:

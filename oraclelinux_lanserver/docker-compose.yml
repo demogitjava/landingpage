@@ -30,8 +30,8 @@ services:
         hostname: demogitjava.ddns.net
         stdin_open: true
         tty: true
-        ports:
-            - 0.0.0.0:8443:8443
+        #ports:
+        #    - 0.0.0.0:8443:8443
            
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254

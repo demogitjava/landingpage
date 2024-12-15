@@ -45,9 +45,9 @@ services:
         platform: linux/amd64
         runtime: io.containerd.runc.v2
         
-        ports:
-            - 0.0.0.0:80:80
-            - 0.0.0.0:5005:5005
+        #ports:
+        #    - 0.0.0.0:80:80
+        #    - 0.0.0.0:5005:5005
         environment:
             - JAVA_DEBUG=true
             - TZ=CET-1

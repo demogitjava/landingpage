@@ -20,8 +20,8 @@ services:
         tty: true
         container_name: httpfileserver
         network_mode: host
-        ports:
-            - 0.0.0.0:8000:8000
+        #ports:
+        #    - 0.0.0.0:8000:8000
         #runtime: runc
         runtime: io.containerd.runc.v2
         #runtime: io.containerd.kata.v2
