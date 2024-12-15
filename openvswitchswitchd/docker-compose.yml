@@ -96,6 +96,9 @@ services:
         depends_on:
             # Server
             - openswitch
+            
+            # openwrtv23
+            - openwrt23docker
         deploy:
             mode: global
             resources:

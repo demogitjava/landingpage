@@ -15,7 +15,7 @@ services:
             - 0.0.0.0:8082:8082
             - 0.0.0.0:8443:8443
             - 0.0.0.0:51820:51820     
-        #container_name: openwrt23docker
+        container_name: openwrt23docker
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
@@ -80,8 +80,13 @@ services:
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt23.05:docker
+        depends_on:
+            # Server
+            - openswitch
+            
+       
         deploy:
-            replicas: 2
+            #replicas: 2
             mode: global
             resources:
                 limits:
@@ -94,18 +99,49 @@ services:
 
 
 networks:
+
+        
+         
+
+networks:
+    
+
+    
   wan:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-       # vlan 
-      parent: virbr0
+      # public 
+      parent: landingpagevlan
     ipam:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
+          
+          
+  # dev ssh docker container
+  vlan_devssh:
+    driver: ipvlan
+    driver_opts:
+      parent: devssh
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+
+  # lanserver
+  vlan_lanserver:
+    driver: ipvlan
+    driver_opts:
+      parent: lanserver
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+    
+
+
         
-         
 
 
         
