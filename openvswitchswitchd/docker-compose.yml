@@ -29,7 +29,8 @@ services:
             
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
             - NTP_SERVERS="demogitjava.ddns.net"
-            
+        blkio_config:
+            weight: 800
         network_mode: host
         hostname: demogitjava.ddns.net
         extra_hosts:
@@ -94,11 +95,13 @@ services:
         #    - 2.56.220.2
         image: jgsoftwares/openvswitch:ovs-vswitchd
         depends_on:
+            # openwrtv23
+            - openwrt23docker
+            
             # Server
             - openswitch
             
-            # openwrtv23
-            - openwrt23docker
+          
         deploy:
             mode: global
             resources:
