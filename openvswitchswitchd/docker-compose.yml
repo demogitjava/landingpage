@@ -81,7 +81,7 @@ services:
             # optional vga
             - vga qxl 
             
-             # network card
+            # network card
             - display gtk 
             - g 1024x768x8 -net nic,model=lance
             
