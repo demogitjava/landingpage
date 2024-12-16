@@ -15,9 +15,9 @@ services:
     oraclelinux_openjdk_landingpage_debug:
         stdin_open: true
         tty: true
-        ports:
-            - 0.0.0.0:80:80
-            - 0.0.0.0:5005:5005
+        #ports:
+        #    - 0.0.0.0:80:80
+        #    - 0.0.0.0:5005:5005
         environment:
             - JAVA_DEBUG=true
             - TZ=Europe/Berlin
