@@ -33,6 +33,9 @@ services:
         #cpu_period: "2000"
         #cpu_shares: 1024
         image: jgsoftwares/oraclelinux_wireguard:latest
+        security_opt:
+            #- apparmor=docker-default
+            - no-new-privileges=true
         #command: /bin/bash
 
 

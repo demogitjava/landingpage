@@ -84,8 +84,10 @@ services:
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt23.05:docker
-     
-            
+        security_opt:
+             #- apparmor=docker-default
+             - no-new-privileges=true
+
        
         deploy:
             # optional 

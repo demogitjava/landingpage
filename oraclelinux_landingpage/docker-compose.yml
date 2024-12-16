@@ -41,7 +41,7 @@ services:
     oraclelinux_openjdk_landingpage_debug: 
         #stdin_open: true
         
-        #container_name: oraclelinuxlandingpagedebug
+        container_name: oraclelinuxlandingpagedebug
         platform: linux/amd64
         runtime: io.containerd.runc.v2
         
@@ -120,6 +120,9 @@ services:
         dns: 
             - 95.85.95.85
             - 2.56.220.2
+        security_opt:
+            #- apparmor=docker-default
+            - no-new-privileges=true
         privileged: true
         #cpu_quota: "2000"
         #cpu_period: "2000"
@@ -128,10 +131,13 @@ services:
         tty: true
       
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
+        security_opt:
+            #- apparmor=docker-default
+            - no-new-privileges=true
         depends_on:
             - openwrt23docker
         deploy:
-            replicas: 2
+            #replicas: 2
             mode: global
             resources:
                 limits:

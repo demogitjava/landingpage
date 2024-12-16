@@ -106,6 +106,9 @@ services:
     stdin_open: true
   
     image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredgevhost
+    security_opt:
+      #- apparmor=docker-default
+      - no-new-privileges=true
     depends_on:  
         - openwrt23docker
     deploy:

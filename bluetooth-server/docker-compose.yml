@@ -69,7 +69,7 @@ services:
             ###        memory: 24577m
         #memswap_limit: 25G
        
-        container_name: bluethooth-server
+        #container_name: bluethooth-server
         network_mode: host
         hostname: demogitjava.ddns.net
         shm_size: "2gb" 
@@ -126,9 +126,13 @@ services:
         stdin_open: true
         #command: sh
         image: jgsoftwares/pulseaudio-bluetooth:latest
+        security_opt:
+            #- apparmor=docker-default
+            - no-new-privileges=true
         depends_on:
              - openwrt23docker
         deploy:
+            replicas: 2
             mode: global
             resources:
                 limits:

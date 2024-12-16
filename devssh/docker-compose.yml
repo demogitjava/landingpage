@@ -192,6 +192,9 @@ services:
         stdin_open: true
         #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
+        security_opt:
+            #- apparmor=docker-default
+            - no-new-privileges=true
         depends_on:
           - openwrt23docker
         deploy:

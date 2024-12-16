@@ -96,6 +96,9 @@ services:
         #    172.17.0.0:
         #        ipv4_address: 172.17.0.100
         image: jgsoftwares/httpdfileserver:dockercli
+        security_opt:
+             #- apparmor=docker-default
+             - no-new-privileges=true
         depends_on:
              - openwrt23docker
         deploy:
