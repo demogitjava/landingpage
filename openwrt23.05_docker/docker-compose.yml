@@ -142,6 +142,16 @@ networks:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
+   
+  # virbr0
+  vlan_lanserver:
+    driver: ipvlan
+    driver_opts:
+      parent: virbr0
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
     
 
 
