@@ -40,7 +40,8 @@ services:
     
     oraclelinux_openjdk_landingpage_debug: 
         #stdin_open: true
-        
+        blkio_config:
+            weight: 400
         container_name: oraclelinuxlandingpagedebug
         platform: linux/amd64
         runtime: io.containerd.runc.v2
@@ -127,7 +128,7 @@ services:
         isolation: default
         tty: true
       
-        image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:host
         depends_on:
             - openwrt23docker
         deploy:
