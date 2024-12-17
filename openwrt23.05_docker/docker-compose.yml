@@ -85,10 +85,9 @@ services:
         privileged: true
         image: jgsoftwares/openwrt23.05:docker
         security_opt:
-            #- apparmor=docker-default
-            - no-new-privileges=true
-            - seccomp=unconfined
-            - apparmor=unconfined
+             #- apparmor=docker-default
+             - no-new-privileges=true
+             - apparmor:unconfined
 
        
         deploy:

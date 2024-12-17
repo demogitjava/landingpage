@@ -193,10 +193,11 @@ services:
         #command: sh
         image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
         security_opt:
-            #- apparmor=docker-default
+            
             - no-new-privileges=true
-            - seccomp=unconfined
-            - apparmor=unconfined
+            - apparmor:unconfined
+            #- seccomp=/root/git/seccompprofile.json
+            #- apparmor=docker-default
        
         depends_on:
           - openwrt23docker
