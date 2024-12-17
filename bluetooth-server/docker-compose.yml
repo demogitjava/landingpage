@@ -131,7 +131,7 @@ services:
             - no-new-privileges=true
             - apparmor:unconfined
         depends_on:
-             - openwrt23docker
+            - openwrt23docker
         deploy:
             #replicas: 2
             mode: global

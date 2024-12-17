@@ -21,7 +21,8 @@ services:
             - 0.0.0.0:51820:51820     
         container_name: openwrt23docker
         runtime: io.containerd.runc.v2
-        isolation: default
+        #isolation: default
+        isolation: hyperv
         environment:
             - TZ=CET-1
             - NETWORK_IF=virbr0

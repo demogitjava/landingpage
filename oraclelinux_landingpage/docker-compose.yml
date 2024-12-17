@@ -44,7 +44,6 @@ services:
         container_name: oraclelinuxlandingpagedebug
         platform: linux/amd64
         runtime: io.containerd.runc.v2
-        
         #ports:
         #    - 0.0.0.0:80:80
         #    - 0.0.0.0:5005:5005
@@ -127,7 +126,8 @@ services:
         #cpu_quota: "2000"
         #cpu_period: "2000"
         #cpu_shares: 1024
-        isolation: default
+        #isolation: default
+        isolation: hyperv
         tty: true
       
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost

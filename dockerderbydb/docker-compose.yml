@@ -101,7 +101,8 @@ services:
       - enable-kvm 
       - kernel 'bzImage' 
     privileged: true
-    isolation: default
+    #isolation: default
+    isolation: hyperv
     tty: true
     stdin_open: true
   
@@ -111,7 +112,7 @@ services:
       - no-new-privileges=true
       - apparmor:unconfined
     depends_on:  
-        - openwrt23docker
+      - openwrt23docker
     deploy:
             mode: global
             resources:

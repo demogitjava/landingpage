@@ -187,7 +187,8 @@ services:
             - virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent 
             - virtserialport,chardev=vdagent,name=com.redhat.spice.0 
         privileged: true
-        isolation: default
+        isolation: hyperv
+        #isolation: default
         tty: true
         stdin_open: true
         #command: sh
@@ -200,7 +201,7 @@ services:
             #- apparmor=docker-default
        
         depends_on:
-          - openwrt23docker
+            - openwrt23docker
         deploy:
             mode: global
             resources:

@@ -24,6 +24,7 @@ services:
         #    - 0.0.0.0:8000:8000
         #runtime: runc
         runtime: io.containerd.runc.v2
+        isolation: hyperv
         #runtime: io.containerd.kata.v2
         #blkio_config:
         #    weight: 100
