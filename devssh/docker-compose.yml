@@ -195,6 +195,9 @@ services:
         security_opt:
             #- apparmor=docker-default
             - no-new-privileges=true
+            - seccomp=unconfined
+            - apparmor=unconfined
+       
         depends_on:
           - openwrt23docker
         deploy:
