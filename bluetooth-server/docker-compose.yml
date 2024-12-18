@@ -115,8 +115,11 @@ services:
             - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
            
             #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
-            - nvdimm -m 0.5G,maxmem=1G,slots=4 -object memory-backend-ram
-            
+            - nvdimm -m 0.5G,maxmem=2G,slots=4 -object memory-backend-ram
+            - object memory-backend-ram,size=0.5G,id=ram0 
+            - object memory-backend-ram,size=0.5G,id=ram1 
+            - object memory-backend-ram,size=0.5G,id=ram2 
+            - object memory-backend-ram,size=0.5G,id=ram3 
             # Accelerator
             - accel kvm
             
