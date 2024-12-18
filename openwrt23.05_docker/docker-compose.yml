@@ -73,7 +73,9 @@ services:
            
             - M pc-q35-2.0 
             # nvme
-            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            #- nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
+           
             #- machine sun4m=kvm:tcg
             
             # memory 

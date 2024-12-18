@@ -23,6 +23,7 @@ services:
         #blkio_config:
         #    weight: 100
         environment:
+            
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -62,6 +63,7 @@ services:
             #- QEMU_VGA=ati-vga
             
             - enable-kvm 
+           
             #- kernel 'bzImage' 
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
@@ -103,7 +105,7 @@ services:
             # machine sun4m
             # maschine niagara
             # maschine rtl8139
-            - /dev/kvm
+            - "/dev/kvm:/dev/kvm"
             - /dev/net/tun
             - sandbox on
             
@@ -135,7 +137,8 @@ services:
             #- scsi-hd,drive=drive0,bus=scsi0.0,channel=0,scsi-id=0,lun=0
             
             # nvme
-            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
+           
             #- machine sun4m=kvm:tcg
             
             # memory 

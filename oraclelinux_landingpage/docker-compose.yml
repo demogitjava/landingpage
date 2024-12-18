@@ -93,7 +93,9 @@ services:
             #- ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,machine SS-600MP=kvm:tcg
             
              # nvme
-            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            #- nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
+           
             #- machine sun4m=kvm:tcg
             
             # memory 
