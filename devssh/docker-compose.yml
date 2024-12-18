@@ -77,8 +77,8 @@ services:
         volumes:
             # X 
             # unix sockets
-            - /srv/www/htdocs:/srv/www/htdocs
-            - /root/git:/root/git
+            - /srv/www/htdocs:/srv/www/htdocs:X
+            - /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
             - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X

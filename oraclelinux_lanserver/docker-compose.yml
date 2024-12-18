@@ -54,7 +54,7 @@ services:
         #        ipv4_address: 172.17.0.104
         container_name: oraclelinuxlanservertcp
         volumes:
-             - /var/run/docker.sock:/var/run/docker.sock
+             - /var/run/docker.sock:/var/run/docker.sock:X
             #- /etc/resolv.conf:/etc/resolv.conf
         restart: unless-stopped
         devices:

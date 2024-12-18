@@ -71,7 +71,7 @@ services:
         volumes:
            # - /etc/resolv.conf:/etc/resolv.conf
            # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
-             - /var/run/docker.sock:/var/run/docker.sock
+             - /var/run/docker.sock:/var/run/docker.sock:X
         restart: unless-stopped
         cap_add:
             - NET_ADMIN

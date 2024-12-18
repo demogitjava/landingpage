@@ -42,9 +42,9 @@ services:
         platform: linux/amd64
         restart: unless-stopped
         volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-            - /opt/docker/:/var/lib/docker/
-            - /etc/docker/daemon.json:/etc/docker/daemon.json
+            - /var/run/docker.sock:/var/run/docker.sock:X
+            - /opt/docker/:/var/lib/docker:X
+            - /etc/docker/daemon.json:/etc/docker/daemon.json:X
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN

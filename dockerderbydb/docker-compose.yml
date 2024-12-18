@@ -49,7 +49,7 @@ services:
     #  - 95.85.95.85
     #  - 2.56.220.2
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock:X
     network_mode: host
     hostname: demogitjava.ddns.net
     cap_add:

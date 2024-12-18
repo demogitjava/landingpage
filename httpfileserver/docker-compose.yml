@@ -39,8 +39,8 @@ services:
             - demogitjava.ddns.net:217.160.255.254
        # platform: linux/amd64
         volumes:
-            - /srv/www/htdocs:/usr/local/apache2/htdocs/
-            - /var/run/docker.sock:/var/run/docker.sock
+            - /srv/www/htdocs:/usr/local/apache2/htdocs:X
+            - /var/run/docker.sock:/var/run/docker.sock:X
         devices:
             # sun sparc
             - /dev/kvm
