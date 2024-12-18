@@ -35,6 +35,7 @@ services:
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            - enable-kvm 
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
        # platform: linux/amd64

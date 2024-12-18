@@ -30,6 +30,7 @@ services:
             - QEMU_RAM=8
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             - QEMU_ARCH=${cortex-m0plus}
+            - enable-kvm 
         blkio_config:
             weight: 1000
         #cpu_shares: 1024

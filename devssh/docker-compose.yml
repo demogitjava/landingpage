@@ -62,7 +62,7 @@ services:
             #- QEMU_VGA=ati-vga
             
             - enable-kvm 
-            - kernel 'bzImage' 
+            #- kernel 'bzImage' 
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64

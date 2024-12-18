@@ -45,6 +45,7 @@ services:
       - QEMU_RAM=2048
       #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
       - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+      - enable-kvm 
     #dns:
     #  - 95.85.95.85
     #  - 2.56.220.2
