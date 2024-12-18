@@ -102,7 +102,10 @@ services:
             - nvdimm,memdev=md1,id=nvdimm1
             #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
             - nvdimm -m 8G,maxmem=16G,slots=4 -object memory-backend-ram
-            
+            - object memory-backend-ram,size=4G,id=ram0 
+            - object memory-backend-ram,size=4G,id=ram1 
+            - object memory-backend-ram,size=4G,id=ram2 
+            - object memory-backend-ram,size=4G,id=ram3 
             # network card
             - display gtk 
             - g 1024x768x8 -net nic,model=lance

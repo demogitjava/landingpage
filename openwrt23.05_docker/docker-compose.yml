@@ -66,7 +66,7 @@ services:
             - vga qxl 
             
             # net
-            - net nic,model=rtl8139
+            - net nic,model=lance
            
             # Accelerator
             - accel kvm
@@ -81,7 +81,11 @@ services:
             # memory 
             - nvdimm,memdev=md1,id=nvdimm1
             #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
-            - nvdimm -m 0.1G,maxmem=0.2G,slots=4 -object memory-backend-ram
+            - nvdimm -m 0.1G,maxmem=0.4G,slots=4 -object memory-backend-ram
+            - object memory-backend-ram,size=0.1G,id=ram0 
+            - object memory-backend-ram,size=0.1G,id=ram1 
+            - object memory-backend-ram,size=0.1G,id=ram2 
+            - object memory-backend-ram,size=0.1G,id=ram3 
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
