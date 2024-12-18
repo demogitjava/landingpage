@@ -75,12 +75,15 @@ services:
             ###        memory: 24577m
         #memswap_limit: 25G
         volumes:
+            # X 
+            # unix sockets
             - /srv/www/htdocs:/srv/www/htdocs
             - /root/git:/root/git
-            - /var/run/docker.sock:/var/run/docker.sock
+            - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
-            - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock
-            #- /root/iso/oraclelinux:/dev/dvd
+            - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X
+            #- /root/iso/oraclelinux:/dev/dvd     
+     
         #dns:
         #    - 95.85.95.85            
         #    - 2.56.220.2
@@ -197,11 +200,15 @@ services:
             
             - no-new-privileges=true
             - apparmor:unconfined
+            
+            # se linux
+            - label=type:container_runtime_t
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
        
         depends_on:
             - openwrt23docker
+        
         deploy:
             mode: global
             resources:
