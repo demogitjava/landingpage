@@ -103,6 +103,7 @@ services:
              
       # optional vga
       - vga qxl 
+      - vlan=landingpagevlan
       
       - enable-kvm 
       - kernel 'bzImage' 

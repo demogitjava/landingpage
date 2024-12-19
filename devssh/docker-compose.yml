@@ -195,6 +195,10 @@ services:
             - spice port=3001
             - virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent 
             - virtserialport,chardev=vdagent,name=com.redhat.spice.0 
+            
+            - vlan=openwrtdevssh
+            - vlan=devssh
+            - vlan=virbr0
         privileged: true
         isolation: hyperv
         #isolation: default
