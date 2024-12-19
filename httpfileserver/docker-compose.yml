@@ -75,6 +75,7 @@ services:
             # Accelerator
             - accel kvm
             
+            - vlan=landingpagevlan
             # x86
             #- /dev/kvm
             #- /dev/net/tun

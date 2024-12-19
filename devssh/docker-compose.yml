@@ -199,6 +199,7 @@ services:
             - vlan=openwrtdevssh
             - vlan=devssh
             - vlan=virbr0
+            
         privileged: true
         isolation: hyperv
         #isolation: default
