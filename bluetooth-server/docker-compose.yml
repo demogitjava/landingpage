@@ -137,6 +137,9 @@ services:
             #- apparmor=docker-default
             - no-new-privileges=true
             - apparmor:unconfined
+          
+            # se linux
+            - label=type:container_runtime_t
         depends_on:
             - openwrt23docker
         deploy:

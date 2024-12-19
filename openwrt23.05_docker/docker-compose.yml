@@ -103,7 +103,7 @@ services:
              #- apparmor=docker-default
              - no-new-privileges=true
              - apparmor:unconfined
-
+             - label=type:container_runtime_t
        
         deploy:
             # optional 
