@@ -76,15 +76,31 @@ look at the application.properties
 # For Docker
 ============================================================  
 run the container with openwrt
+
 https://hub.docker.com/r/jgsoftwares/openwrt23.05
+
 if the container is running get access with
 
-docker exec -it openwrt23docker /bin/ash
+    docker exec -it openwrt23docker /bin/ash
+
+get access to the docker container 
 cd /root
 run with derbydb
-cd dockerderbydb
-docker-compose up -d --build
--> start derby db container form the openwrt - contianer
+	
+    cd /root
+    cd dockerderbydb
+    docker-compose up -d --build
+    
+    start the derbydb database
+
+    cd /root
+    cd oraclelinux_landingpage_debug
+    docker-compse up -d --build
+    start the landingpage container 
+    
+    JPDA socket connect on port 5005 is available
+     
+
 cd oraclelinux_landingpage_debug
 -> start landingpage_debug from the openwrt -container
 
@@ -179,4 +195,5 @@ to load your image to docker desktop type:
 
 
 `docker load --input landingpage.tar`
+
 
