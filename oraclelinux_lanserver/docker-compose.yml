@@ -96,8 +96,8 @@ services:
             
             # Accelerator
             - accel kvm
-            
-            - vlan=lanserver
+            - net nic,vlan=lanserver
+         
             - enable-kvm 
             - kernel 'bzImage' 
         cap_add:

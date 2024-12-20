@@ -117,8 +117,8 @@ services:
             # Accelerator
             - accel kvm
             
-            - vlan=landingpagevlan
-            
+           
+            - net nic,vlan=landingpagevlan
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin

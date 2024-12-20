@@ -123,7 +123,7 @@ services:
             # Accelerator
             - accel kvm
             
-            - vlan=virbr0 
+            - net nic,vlan=virbr0
             
             - monitor stdio
             - console=ttyS0

@@ -88,11 +88,11 @@ services:
             - object memory-backend-ram,size=0.1G,id=ram2 
             - object memory-backend-ram,size=0.1G,id=ram3 
            
-            - vlan=landingpagevlan
-            - vlan=devssh
-            - vlan=lanserver
-            - vlan=virbr0
             
+            - net nic,vlan=landingpagevlan
+            - net nic,vlan=devssh
+            - net nic,vlan=lanserver
+            - net nic,vlan=virbr0
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
