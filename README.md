@@ -75,6 +75,20 @@ look at the application.properties
 
 # For Docker
 ============================================================  
+run the container with openwrt
+https://hub.docker.com/r/jgsoftwares/openwrt23.05
+if the container is running get access with
+
+docker exec -it openwrt23docker /bin/ash
+cd /root
+run with derbydb
+cd dockerderbydb
+docker-compose up -d --build
+-> start derby db container form the openwrt - contianer
+cd oraclelinux_landingpage_debug
+-> start landingpage_debug from the openwrt -container
+
+
 access to running docker container with 
 <br/>
 docker exec oraclelinuxlandingpagedebug /bin/bash 
