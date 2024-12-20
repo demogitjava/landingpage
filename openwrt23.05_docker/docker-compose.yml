@@ -82,11 +82,11 @@ services:
             # memory 
             - nvdimm,memdev=md1,id=nvdimm1
             #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
-            - nvdimm -m 0.1G,maxmem=0.4G,slots=4 -object memory-backend-ram
-            - object memory-backend-ram,size=0.1G,id=ram0 
-            - object memory-backend-ram,size=0.1G,id=ram1 
-            - object memory-backend-ram,size=0.1G,id=ram2 
-            - object memory-backend-ram,size=0.1G,id=ram3 
+            - nvdimm -m 0.1024G,maxmem=0.4096G,slots=4 -object memory-backend-ram
+            - object memory-backend-ram,size=0.1024G,id=ram0 
+            - object memory-backend-ram,size=0.1024G,id=ram1 
+            - object memory-backend-ram,size=0.1024G,id=ram2 
+            - object memory-backend-ram,size=0.1024G,id=ram3 
            
             
             - net nic,vlan=landingpagevlan
