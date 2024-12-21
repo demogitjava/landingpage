@@ -141,6 +141,7 @@ networks:
     #driver: macvlan
     driver_opts:
       parent: lanserver
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32

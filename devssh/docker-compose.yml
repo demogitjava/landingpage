@@ -245,6 +245,7 @@ networks:
     # vlan name is devssh
     driver_opts:
       parent: devssh
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32

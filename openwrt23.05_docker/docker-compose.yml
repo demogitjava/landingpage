@@ -149,7 +149,7 @@ networks:
     driver_opts:
       # public 
       parent: landingpagevlan
-      ipvlan_mode: 802.1q
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -161,7 +161,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: devssh
-      ipvlan_mode: 802.1q
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -172,7 +172,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: lanserver
-      ipvlan_mode: 802.1q
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -184,7 +184,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: virbr0
-      ipvlan_mode: 802.1q
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32

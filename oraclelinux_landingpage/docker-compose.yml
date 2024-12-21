@@ -164,7 +164,7 @@ networks:
     # vlan name
     driver_opts:
       parent: landingpagevlan
-      ipvlan_mode: 802.1q
+      ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
