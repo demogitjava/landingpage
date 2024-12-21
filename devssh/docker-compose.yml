@@ -24,6 +24,8 @@ services:
         #    weight: 100
         environment:
             
+            
+            - VLAN=20
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -236,13 +238,13 @@ services:
     
 networks:
   # remote 
-  vlan30: 
+  vlan20: 
     
     name: wan
     driver: ipvlan
     # vlan name is devssh
     driver_opts:
-      parent: openwrtdevssh devssh virbr0
+      parent: devssh
     ipam:
       config:
         - subnet: 217.160.255.254/32

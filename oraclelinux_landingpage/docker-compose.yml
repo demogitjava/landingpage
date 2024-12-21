@@ -48,6 +48,7 @@ services:
         #    - 0.0.0.0:80:80
         #    - 0.0.0.0:5005:5005
         environment:
+            - VLAN=10
             - JAVA_DEBUG=true
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -163,6 +164,7 @@ networks:
     # vlan name
     driver_opts:
       parent: landingpagevlan
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32

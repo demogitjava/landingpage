@@ -14,6 +14,9 @@ services:
         #blkio_config:
         #    weight: 100
         environment:
+            
+            - VLAN=30
+            
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -162,6 +165,7 @@ networks:
     # vlan name 
     driver_opts:
       parent: virbr0
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32

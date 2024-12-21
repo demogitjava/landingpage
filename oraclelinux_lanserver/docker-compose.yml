@@ -36,6 +36,7 @@ services:
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         environment:
+            - VLAN=20
             - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=virbr0
@@ -131,8 +132,8 @@ services:
 
 
 networks:
-  # remote 
-  vlan30: 
+  # backend
+  vlan20: 
     name: wan
     driver: ipvlan
     #driver: macvlan

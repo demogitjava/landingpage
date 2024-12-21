@@ -95,6 +95,7 @@ networks:
     driver_opts:
        # vlan 
       parent: virbr0
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32

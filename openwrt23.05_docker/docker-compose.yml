@@ -24,7 +24,13 @@ services:
         #isolation: default
         isolation: hyperv
         environment:
+            # router backend is set to 
+            # 10
+            - VLAN=10
+            # Timzeone
+            # Berlin
             - TZ=CET-1
+            
             - NETWORK_IF=virbr0
             - QEMU_CPU=4
             - QEMU_RAM=8
@@ -143,6 +149,7 @@ networks:
     driver_opts:
       # public 
       parent: landingpagevlan
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -150,10 +157,11 @@ networks:
           
           
   # dev ssh docker container
-  vlan30:
+  vlan20:
     driver: ipvlan
     driver_opts:
       parent: devssh
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -164,6 +172,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: lanserver
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32
@@ -175,6 +184,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: virbr0
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32

@@ -29,6 +29,7 @@ services:
         #blkio_config:
         #    weight: 100
         environment:
+            - VLAN=10
             - TZ=CET-1
             - NTP_SERVER=2.rhel.pool.ntp.org
             - NETWORK_IF=ens6
@@ -128,6 +129,7 @@ networks:
     #driver: macvlan
     driver_opts:
       parent: landingpagevlan
+      ipvlan_mode: 802.1q
     ipam:
       config:
         - subnet: 217.160.255.254/32
