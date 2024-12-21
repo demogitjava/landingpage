@@ -22,7 +22,7 @@ services:
         container_name: openwrt23docker
         runtime: io.containerd.runc.v2
         #isolation: default
-        isolation: hyperv
+        isolation: "hyperv"
         environment:
             # router backend is set to 
             # 20
