@@ -204,7 +204,7 @@ services:
             - net nic,vlan=virbr0
             
         privileged: true
-        isolation: hyperv
+        isolation: "hyperv"
         #isolation: default
         tty: true
         stdin_open: true
@@ -219,7 +219,8 @@ services:
             - label=type:container_runtime_t
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
-       
+        networks:
+            - devssh
         depends_on:
             - openwrt23docker
         
