@@ -25,7 +25,7 @@ services:
         isolation: hyperv
         environment:
             # router backend is set to 
-            # 10
+            # 20
             - VLAN=20
             # Timzeone
             # Berlin

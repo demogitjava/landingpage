@@ -25,7 +25,7 @@ services:
         environment:
             
             
-            - VLAN=20
+            - VLAN=10
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
