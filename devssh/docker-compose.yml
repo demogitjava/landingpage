@@ -13,9 +13,8 @@
 
 
 services:
-    
+   
     de_devssh:
-      
         #ports:
         #    - 0.0.0.0:22:22
         
@@ -25,7 +24,7 @@ services:
         environment:
             
             
-            - VLAN=10
+            - VLAN=30
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -230,7 +229,7 @@ services:
     
 networks:
   # remote 
-  vlan20: 
+  vlan30: 
     
     name: wan
     driver: ipvlan
