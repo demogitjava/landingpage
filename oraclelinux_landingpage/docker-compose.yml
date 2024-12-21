@@ -156,7 +156,8 @@ services:
         command: /bin/bash /root/runlandingpage.sh
 
 networks:
-  wan:
+  # frontend
+  vlan10:
     name: wan
     driver: ipvlan
     # vlan name

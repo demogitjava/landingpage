@@ -121,7 +121,8 @@ services:
 #      ipam:
 #          driver: default
 networks:
-  wan:
+ # frontend
+ vlan10:
     name: wan
     driver: ipvlan
     #driver: macvlan

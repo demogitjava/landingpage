@@ -154,7 +154,9 @@ services:
                   memory: 512M
 
 networks:
-  wan:
+  # remote 
+  vlan30: 
+    
     name: wan
     driver: ipvlan
     # vlan name 

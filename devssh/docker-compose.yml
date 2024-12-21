@@ -219,8 +219,7 @@ services:
             - label=type:container_runtime_t
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
-        networks:
-            - devssh
+     
         depends_on:
             - openwrt23docker
         
@@ -236,8 +235,9 @@ services:
   
     
 networks:
-  wan: 
-    external: true
+  # remote 
+  vlan30: 
+    
     name: wan
     driver: ipvlan
     # vlan name is devssh
