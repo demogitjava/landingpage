@@ -70,14 +70,6 @@ services:
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
-        deploy:
-            mode: global
-            #resources:
-            #    reservations:
-            #        memory: 0m
-            #    limits:
-            ###        memory: 24577m
-        #memswap_limit: 25G
         volumes:
             # X 
             # unix sockets
