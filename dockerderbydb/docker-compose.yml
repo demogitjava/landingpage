@@ -110,6 +110,7 @@ services:
       - enable-kvm 
       - kernel 'bzImage' 
     privileged: true
+    isolation: "hyperv"
     #isolation: default
     isolation: hyperv
     tty: true

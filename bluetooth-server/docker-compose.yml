@@ -131,6 +131,7 @@ services:
             - monitor stdio
             - console=ttyS0
         privileged: true
+        isolation: "hyperv"
         isolation: default
         tty: true
         stdin_open: true

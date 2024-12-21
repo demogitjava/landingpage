@@ -89,6 +89,7 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         privileged: true
+        isolation: "hyperv"
         restart: unless-stopped
         platform: linux/amd64
         #isolation: default

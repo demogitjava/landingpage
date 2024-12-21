@@ -46,7 +46,7 @@ services:
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         runtime: io.containerd.runc.v2
-        isolation: hyperv
+        isolation: "hyperv"
         blkio_config:
             weight: 100
         platform: linux/amd64
