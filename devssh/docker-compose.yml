@@ -226,8 +226,23 @@ services:
                   #cpus: '0.25'
                   memory: 512M
   
-    
+ 
+
 networks:
+    
+  vlan10:
+    driver: ipvlan
+    #driver: macvlan
+    driver_opts:
+      # public 
+      parent: landingpagevlan
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254  
+    
+    
   # remote 
   vlan30: 
     
@@ -241,5 +256,7 @@ networks:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
+    
+    
 
 
