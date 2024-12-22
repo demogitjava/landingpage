@@ -112,7 +112,7 @@ services:
     privileged: true
     isolation: "hyperv"
     #isolation: default
-    isolation: hyperv
+    
     tty: true
     stdin_open: true
   
@@ -123,6 +123,7 @@ services:
       - apparmor:unconfined
       - label=type:container_runtime_t
     depends_on:  
+      # container must started
       - openwrt23docker
     deploy:
             mode: global

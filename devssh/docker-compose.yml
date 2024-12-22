@@ -235,7 +235,7 @@ networks:
     #driver: macvlan
     driver_opts:
       # public 
-      parent: landingpagevlan
+      parent: openwrtdevssh
       ipvlan_mode: l3
     ipam:
       config:
@@ -258,5 +258,6 @@ networks:
           gateway: 217.160.255.254
     
     
+
 
 

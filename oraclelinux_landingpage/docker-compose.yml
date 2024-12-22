@@ -143,6 +143,7 @@ services:
             - apparmor:unconfined
             - label=type:container_runtime_t
         depends_on:
+            # container must started      
             - openwrt23docker
         deploy:
             #replicas: 2
