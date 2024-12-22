@@ -149,7 +149,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: landingpagevlan
+      parent: landingpagedbvlan
       ipvlan_mode: l3
     ipam:
       config:
