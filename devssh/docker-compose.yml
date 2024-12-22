@@ -240,7 +240,21 @@ networks:
     ipam:
       config:
         - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254  
+          gateway: 217.160.255.254 
+          
+  vlan20:
+    driver: ipvlan
+    #driver: macvlan
+    driver_opts:
+      # public 
+      parent: virbr0
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254 
+    
+   
     
     
   # remote 
