@@ -123,7 +123,10 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-        command: /bin/ash
+                  # on host 
+                  # vzctl exec 101 iptables -t mangle -L
+                  #vzctl set 101 --iptables iptable_mangle
+        command: /bin/ash vzctl exec 101 iptables -t mangle -L
 
 
 networks:
