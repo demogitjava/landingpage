@@ -26,7 +26,7 @@ services:
         environment:
             # router backend is set to 
             # 20
-            - VLAN=20
+            - VLAN=30
             # Timzeone
             # Berlin
             - TZ=CET-1
@@ -52,6 +52,8 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock:X
             - /opt/docker/:/var/lib/docker:X
             - /etc/docker/daemon.json:/etc/docker/daemon.json:X
+           
+
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN
@@ -104,7 +106,7 @@ services:
         #    - 2.56.220.2
         pid: "host"
         privileged: true
-        image: jgsoftwares/openwrt23.05:docker
+        image: jgsoftwares/openwrt23.05:dockermwan3
         security_opt:
              #- apparmor=docker-default
              - no-new-privileges=true
@@ -123,10 +125,9 @@ services:
                 reservations:
                   #cpus: '0.25'
                   memory: 512M
-                  # on host 
-                  # vzctl exec 101 iptables -t mangle -L
-                  #vzctl set 101 --iptables iptable_mangle
-        command: /bin/ash vzctl exec 101 iptables -t mangle -L
+                
+        command: /bin/ash /etc/init.d/sshtunnel start 
+
 
 
 networks:
