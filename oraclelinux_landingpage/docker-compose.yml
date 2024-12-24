@@ -47,6 +47,12 @@ services:
         #ports:
         #    - 0.0.0.0:80:80
         #    - 0.0.0.0:5005:5005
+        ports:
+        - target: 80
+          host_ip: 127.0.0.1
+          published: 80
+          protocol: tcp
+          mode: host
         environment:
             - VLAN=10
             - JAVA_DEBUG=true

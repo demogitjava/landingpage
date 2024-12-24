@@ -23,6 +23,12 @@ services:
         network_mode: host
         #ports:
         #    - 0.0.0.0:8000:8000
+        ports:
+        - target: 8000
+          host_ip: 127.0.0.1
+          published: 8000
+          protocol: tcp
+          mode: host
         #runtime: runc
         runtime: io.containerd.runc.v2
         isolation: hyperv
@@ -106,6 +112,7 @@ services:
              - no-new-privileges=true
              - apparmor:unconfined
              - label=type:container_runtime_t
+           
         depends_on:
              - openwrt23docker
         deploy:

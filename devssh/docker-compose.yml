@@ -17,7 +17,13 @@ services:
     de_devssh:
         #ports:
         #    - 0.0.0.0:22:22
-        
+        ports:
+        # - "127.0.0.1:6060:6060/udp"
+        - target: 22
+          host_ip: 127.0.0.1
+          published: 22
+          protocol: tcp
+          mode: host
         runtime: io.containerd.runc.v2
         #blkio_config:
         #    weight: 100
@@ -210,6 +216,11 @@ services:
             
             # se linux
             - label=type:container_runtime_t
+            
+            
+            # for access to 
+            # /usr/var/ a
+            #- label=type:svirt_sandbox_file_t
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
      

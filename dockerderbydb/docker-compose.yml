@@ -32,7 +32,12 @@ services:
   
     #ports:
     #  - "0.0.0.0:1527:1527"
-   
+    ports:
+        - target: 1527
+          host_ip: 127.0.0.1
+          published: 1527
+          protocol: tcp
+          mode: host
     #networks:
     # 172.17.0.0:
     #    ipv4_address: 172.17.0.2

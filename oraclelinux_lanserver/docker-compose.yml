@@ -32,7 +32,12 @@ services:
         tty: true
         #ports:
         #    - 0.0.0.0:8443:8443
-           
+        ports:
+        - target: 8443
+          host_ip: 127.0.0.1
+          published: 8443
+          protocol: tcp
+          mode: host
         extra_hosts:
             - demolanserver.ddns.net:217.160.255.254
         environment:
