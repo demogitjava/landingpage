@@ -12,6 +12,7 @@
 
 #run container over docker
 #docker compose up -d --build
+# docker compose --compatibility up -d --build
 
 services:
     
