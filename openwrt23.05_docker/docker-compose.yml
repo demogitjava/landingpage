@@ -35,11 +35,11 @@ services:
             
            # - NETWORK_IF=virbr0
             - QEMU_CPU=4
-            - QEMU_RAM=8
+            - QEMU_RAM=256
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             
-            # intel xeon
-            - QEMU_ARCH=${IvyBridge-v2}
+            
+            - QEMU_ARCH=${cortex-a7}
             - enable-kvm 
         blkio_config:
             weight: 1000
@@ -133,12 +133,6 @@ services:
                 
         command: /bin/ash
 
-
-
-networks:
-
-        
-         
 
 networks:
     
