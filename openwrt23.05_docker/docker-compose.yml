@@ -31,11 +31,13 @@ services:
             # Berlin
             - TZ=CET-1
             
-            - NETWORK_IF=virbr0
+           # - NETWORK_IF=virbr0
             - QEMU_CPU=4
             - QEMU_RAM=8
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
-            - QEMU_ARCH=${cortex-m0plus}
+            
+            # intel xeon
+            - QEMU_ARCH=${IvyBridge-v2}
             - enable-kvm 
         blkio_config:
             weight: 1000
@@ -63,8 +65,9 @@ services:
             - /dev/net/tun
             - sandbox on
 
-            - kernel /root/openwrt-23.05.5-armsr-armv8-generic-kernel.bin
+            #- kernel /root/openwrt-23.05.5-armsr-armv8-generic-kernel.bin
             # qemu dns
+            
             - nic user,dns=95.85.95.85
             - nic user,dns=2.56.220.2
             
@@ -126,7 +129,7 @@ services:
                   #cpus: '0.25'
                   memory: 512M
                 
-        command: /bin/ash /etc/init.d/sshtunnel start 
+        command: /bin/ash
 
 
 
