@@ -59,27 +59,7 @@ services:
            
 
         cap_add:
-            - NET_ADMIN
-            - SYS_ADMIN
-            - SYS_TIME
-        devices:
-            - /dev/kvm
-            - /dev/net/tun
-            - sandbox on
-
-            #- kernel /root/openwrt-23.05.5-armsr-armv8-generic-kernel.bin
-            # qemu dns
             
-            - nic user,dns=95.85.95.85
-            - nic user,dns=2.56.220.2
-            
-            - enable-kvm 
-          
-            # optional vga
-            - vga qxl 
-            
-            # net
-            - net nic,model=lance
            
             # Accelerator
             - accel kvm
