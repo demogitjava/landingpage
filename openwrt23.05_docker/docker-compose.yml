@@ -121,7 +121,7 @@ services:
         deploy:
             # optional 
             # for frontend and backend
-            replicas: 3
+            replicas: 4
             mode: global
             resources:
                 limits:
