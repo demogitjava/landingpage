@@ -27,8 +27,8 @@
 # run container over podman
 #podman compose up -d --build
 
-#run container over docker
-#docker compose up -d --build
+# docker compose up -d --build
+# docker compose --compatibility up -d --build
 
 # create docker vlan 
 #docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 landingpagevlan

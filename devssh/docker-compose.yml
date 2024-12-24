@@ -3,8 +3,8 @@
 # run container over podman
 #podman compose up -d --build
 
-#run container over docker
-#docker compose up -d --build
+# docker compose up -d --build
+# docker compose --compatibility up -d --build
 
 # vlan required
 #

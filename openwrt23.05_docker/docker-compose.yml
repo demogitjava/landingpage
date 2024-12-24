@@ -3,6 +3,8 @@
 # volumes mounted from 
 # rocky linux 8.6 
 
+# docker compose up -d --build
+# docker compose --compatibility up -d --build
 
 services:
     openwrt23docker:
@@ -19,10 +21,10 @@ services:
             - 0.0.0.0:8082:8082
             - 0.0.0.0:8443:8443
             - 0.0.0.0:51820:51820     
-        container_name: openwrt23docker
+        #container_name: openwrt23docker
         runtime: io.containerd.runc.v2
         #isolation: default
-        isolation: "hyperv"
+        isolation: hyperv
         environment:
             # router backend is set to 
             # 20
@@ -119,7 +121,7 @@ services:
         deploy:
             # optional 
             # for frontend and backend
-            #replicas: 2
+            replicas: 3
             mode: global
             resources:
                 limits:
