@@ -31,6 +31,7 @@ services:
           mode: host
         #runtime: runc
         runtime: io.containerd.runc.v2
+        
         isolation: hyperv
         #runtime: io.containerd.kata.v2
         #blkio_config:
