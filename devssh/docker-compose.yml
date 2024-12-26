@@ -30,7 +30,12 @@ services:
         environment:
             
             
+            # set container vlan
             - VLAN=30
+            
+            # Java memory to 2GB
+            - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
+            
             # Time Zone Berlin
             - TZ=CET-1
             #- DRINODE=/dev/dri/renderD128 
@@ -74,11 +79,18 @@ services:
             #- kernel 'bzImage' 
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
-        platform: linux/amd64
+         
+        #platform: linux/amd64
+        platform: linux/x86_64
         volumes:
+
             # X 
             # unix sockets
             - /srv/www/htdocs:/srv/www/htdocs:X
+              
+            
+         
+            
             - /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
@@ -99,6 +111,7 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
+            - SYS_PTRACE
         devices:
           
             
@@ -203,7 +216,7 @@ services:
             - net nic,vlan=virbr0
             
         privileged: true
-        isolation: "hyperv"
+        isolation: hyperv
         #isolation: default
         tty: true
         stdin_open: true
@@ -212,9 +225,10 @@ services:
         security_opt:
             
             - no-new-privileges=true
+            - seccomp:unconfined
             - apparmor:unconfined
             
-            # se linux
+            
             - label=type:container_runtime_t
             
             
