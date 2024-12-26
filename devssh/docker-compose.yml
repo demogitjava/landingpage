@@ -30,7 +30,9 @@ services:
         
         # katha containers
         #runtime: io.containerd.kata.v2
-        runtime: io.containerd.kata.v2
+        #runtime: io.containerd.kata.v2
+        
+        runtime: containerd-shim-runc-v2
        
         #blkio_config:
         #    weight: 100
