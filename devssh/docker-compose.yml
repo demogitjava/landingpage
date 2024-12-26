@@ -89,8 +89,8 @@ services:
         extra_hosts:
             - demogitjava.ddns.net:217.160.255.254
          
-        #platform: linux/amd64
-        platform: linux/x86_64
+        platform: linux/amd64
+        #platform: linux/x86_64
         
         volumes:
 
