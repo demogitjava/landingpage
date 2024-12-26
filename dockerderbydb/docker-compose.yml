@@ -28,8 +28,12 @@ services:
     
     container_name: de_derby
     platform: linux/amd64
-    runtime: io.containerd.runc.v2
+    
+    # default 
+    #runtime: io.containerd.runc.v2
   
+    #backend
+    runtime: containerd-shim-runc-v2
     #ports:
     #  - "0.0.0.0:1527:1527"
     ports:
@@ -115,7 +119,7 @@ services:
       - enable-kvm 
       - kernel 'bzImage' 
     privileged: true
-    isolation: "hyperv"
+    isolation:  hyperv
     #isolation: default
     
     tty: true

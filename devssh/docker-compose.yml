@@ -25,12 +25,13 @@ services:
           protocol: tcp
           mode: host
         #runtime: io.containerd.runc.v2
+        
         #gvisor 
         #runtime: io.containerd.runsc.v1
         
         # katha containers
         #runtime: io.containerd.kata.v2
-        #runtime: io.containerd.kata.v2
+       
         
         runtime: containerd-shim-runc-v2
        

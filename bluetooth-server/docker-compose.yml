@@ -10,8 +10,11 @@
 services:
     de_blueth-server:
       
-       
-        runtime: io.containerd.runc.v2
+        # default
+        #runtime: io.containerd.runc.v2
+        
+        #backend
+        runtime: containerd-shim-runc-v2
         #blkio_config:
         #    weight: 100
         environment:
