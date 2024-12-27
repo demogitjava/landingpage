@@ -46,7 +46,9 @@ services:
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
             - enable-kvm 
         extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
+            - "host.docker.internal:host-gateway"
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
        # platform: linux/amd64
         volumes:
             - /srv/www/htdocs:/usr/local/apache2/htdocs:X
@@ -97,7 +99,7 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         privileged: true
-        isolation: "hyperv"
+        isolation: hyperv
         restart: unless-stopped
         platform: linux/amd64
         #isolation: default

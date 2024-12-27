@@ -71,8 +71,10 @@ services:
         
             - enable-kvm 
             - kernel 'bzImage' 
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254  
         extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254  
+            - "host.docker.internal:host-gateway"
         network_mode: host
         hostname: demogitjava.ddns.net
         volumes:

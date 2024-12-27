@@ -121,8 +121,11 @@ services:
         #cpu_period: "1000"
         network_mode: host
         hostname: demogitjava.ddns.net
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
         extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
+             - "host.docker.internal:host-gateway" 
+      
         platform: linux/amd64
         restart: unless-stopped
         volumes:
@@ -198,7 +201,7 @@ networks:
   # remote 
   #vlan30: 
 
-    
+  # web
   vlan10:
     driver: ipvlan
     #driver: macvlan

@@ -38,8 +38,10 @@ services:
           published: 8443
           protocol: tcp
           mode: host
+        #extra_hosts:
+        #    - demolanserver.ddns.net:217.160.255.254
         extra_hosts:
-            - demolanserver.ddns.net:217.160.255.254
+            - "host.docker.internal:host-gateway"
         environment:
             - VLAN=20
             - TZ=CET-1
