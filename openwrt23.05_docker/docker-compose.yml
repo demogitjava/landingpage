@@ -10,25 +10,98 @@ services:
     openwrt23docker:
         stdin_open: true
         tty: true
-        ports: 
-            - 0.0.0.0:22:22
-            - 0.0.0.0:23:23
-            - 0.0.0.0:80:80
-            - 0.0.0.0:53:53
-            - 0.0.0.0:123:123
-            - 0.0.0.0:323:323   
-            - 0.0.0.0:8000:8000  
-            - 0.0.0.0:8082:8082
-            - 0.0.0.0:8443:8443
-            - 0.0.0.0:51820:51820     
-        #container_name: openwrt23docker
+        #ports:     
+           #- 0.0.0.0:22:22
+           #- 0.0.0.0:23:23
+           #- 0.0.0.0:80:80
+           #- 0.0.0.0:53:53
+           #- 0.0.0.0:123:123
+           #- 0.0.0.0:323:323   
+           #- 0.0.0.0:8000:8000  
+           #- 0.0.0.0:8082:8082
+           #- 0.0.0.0:8443:8443
+           #- 0.0.0.0:51820:51820   
+        ports:   
+            
+        # ssh
+        - target: 22
+          host_ip: 127.0.0.1
+          published: 22
+          protocol: tcp
+          mode: host
+   
+        # telnet
+        - target: 23
+          host_ip: 127.0.0.1
+          published: 23
+          protocol: tcp
+          mode: host
+   
+        # web
+        - target: 80
+          host_ip: 127.0.0.1
+          published: 80
+          protocol: tcp
+          mode: host
+   
+        # dns
+        - target: 53
+          host_ip: 127.0.0.1
+          published: 53
+          protocol: tcp
+          mode: host
+          
+        # ntp time server
+        - target: 123
+          host_ip: 127.0.0.1
+          published: 123
+          protocol: tcp
+          mode: host  
+          
+         # chrony
+        - target: 323
+          host_ip: 127.0.0.1
+          published: 323
+          protocol: tcp
+          mode: host  
+        
+        # http fileserver
+        - target: 8000
+          host_ip: 127.0.0.1
+          published: 8000
+          protocol: tcp
+          mode: host  
+          
+         # web console h2 server
+        - target: 8082
+          host_ip: 127.0.0.1
+          published: 8082
+          protocol: tcp
+          mode: host
+          
+          # lanserver
+        - target: 8443
+          host_ip: 127.0.0.1
+          published: 8443
+          protocol: tcp
+          mode: host
+       
+        # wireguard
+        - target: 51820
+          host_ip: 127.0.0.1
+          published: 51820
+          protocol: tcp
+          mode: host
+          
+        container_name: openwrt23docker
         runtime: io.containerd.runc.v2
         #isolation: default
         isolation: hyperv
         environment:
             # router backend is set to 
-            # 20
+            # 30
             - VLAN=30
+            
             # Timzeone
             # Berlin
             - TZ=CET-1
@@ -101,7 +174,7 @@ services:
         deploy:
             # optional 
             # for frontend and backend
-            replicas: 4
+            #replicas: 4
             mode: global
             resources:
                 limits:
