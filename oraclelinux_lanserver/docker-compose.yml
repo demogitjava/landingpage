@@ -58,8 +58,8 @@ services:
         #backend
         runtime: containerd-shim-runc-v2
         isolation: hyperv
-        blkio_config:
-            weight: 100
+        #blkio_config:
+        #    weight: 100
         platform: linux/amd64
         #networks:
         #    172.17.0.0:
