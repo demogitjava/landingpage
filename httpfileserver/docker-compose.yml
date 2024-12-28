@@ -32,7 +32,7 @@ services:
         #runtime: runc
         runtime: io.containerd.runc.v2
         
-        isolation: hyperv
+        
         #runtime: io.containerd.kata.v2
         #blkio_config:
         #    weight: 100
@@ -62,7 +62,7 @@ services:
             - ide-hd,netdev=ens6,bus=sata.4,drive=SystemDisk,cpu host,
             #machine niagara=kvm:tcg  
             #server
-            - maschine SS-600MP=kvm:tcg 
+            - maschine SS-600MP
              # network
             - netdev user,id=ens6,hostfwd=tcp::8000-:8000 -device e1000,netdev=ens6
             
@@ -99,7 +99,7 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         privileged: true
-        isolation: hyperv
+        isolation: default
         restart: unless-stopped
         platform: linux/amd64
         #isolation: default
@@ -116,8 +116,8 @@ services:
              - apparmor:unconfined
              - label=type:container_runtime_t
            
-        depends_on:
-             - openwrt23docker
+        #depends_on:
+        #     - openwrt23docker
         deploy:
             mode: global
 #networks:
