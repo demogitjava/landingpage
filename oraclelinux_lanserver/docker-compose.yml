@@ -53,11 +53,11 @@ services:
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         # default
-        #runtime: io.containerd.runc.v2
+        runtime: io.containerd.runc.v2
        
         #backend
-        runtime: containerd-shim-runc-v2
-        isolation: hyperv
+        #runtime: containerd-shim-runc-v2
+        isolation: default
         #blkio_config:
         #    weight: 100
         platform: linux/amd64
@@ -125,10 +125,10 @@ services:
             #- apparmor=docker-default
             - no-new-privileges=true
             - apparmor:unconfined
-            # se linux 
+            
             - label=type:container_runtime_t
-        depends_on:
-            - openwrt23docker
+        #depends_on:
+        #   - openwrt23docker
         deploy:
             mode: global
             resources:
