@@ -24,7 +24,7 @@ services:
           published: 22
           protocol: tcp
           mode: host
-        #runtime: io.containerd.runc.v2
+        runtime: io.containerd.runc.v2
         
         #gvisor 
         #runtime: io.containerd.runsc.v1
@@ -33,7 +33,7 @@ services:
         #runtime: io.containerd.kata.v2
        
         
-        runtime: containerd-shim-runc-v2
+        #runtime: containerd-shim-runc-v2
        
         #blkio_config:
         #    weight: 100
@@ -178,7 +178,7 @@ services:
             - object memory-backend-ram,size=4G,id=ram2 
             - object memory-backend-ram,size=4G,id=ram3 
             #server
-            - maschine SS-600MP=kvm:tcg 
+            - maschine SS-600MP
             
             # Accelerator
             - accel kvm
@@ -196,17 +196,7 @@ services:
             # scsi
             #- scsi-hd,drive=hd,drive=hd
        
-            # bluetooth // Print 
-            #Bus 001 Device 002: ID 0627:0001 Adomax Technology Co., Ltd 
-            #- bt host:hci0
-            - bt hci,vlan=5 
-            - bt vhci,vlan=5
-            - bt device:dev,vlan=5
-            - usb-host,vendorid=0x06cd,productid=0x0110 
-            - usb-host,hostbus=001,id=0627:0001
-            #- bt hci,usb-host,hostbus=1,hostport=5
-            - machine bt=on
-            
+          
             #  USB 1.1 // Print
             - usb,usb-mouse,usb-kbd
             - usb-ehci,id=ehci                             
@@ -228,8 +218,8 @@ services:
             - net nic,vlan=virbr0
             
         privileged: true
-        isolation: hyperv
-        #isolation: default
+        #isolation: hyperv
+        isolation: default
         tty: true
         stdin_open: true
         #command: sh
@@ -250,8 +240,8 @@ services:
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
      
-        depends_on:
-            - openwrt23docker
+        #depends_on:
+        #    - openwrt23docker
         
         deploy:
             mode: global
