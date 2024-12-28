@@ -30,10 +30,10 @@ services:
     platform: linux/amd64
     
     # default 
-    #runtime: io.containerd.runc.v2
+    runtime: io.containerd.runc.v2
   
-    #backend
-    runtime: containerd-shim-runc-v2
+    
+    #runtime: containerd-shim-runc-v2
     #ports:
     #  - "0.0.0.0:1527:1527"
     ports:
@@ -122,8 +122,8 @@ services:
       - enable-kvm 
       - kernel 'bzImage' 
     privileged: true
-    isolation:  hyperv
-    #isolation: default
+    #isolation:  hyperv
+    isolation: default
     
     tty: true
     stdin_open: true
@@ -134,9 +134,9 @@ services:
       - no-new-privileges=true
       - apparmor:unconfined
       - label=type:container_runtime_t
-    depends_on:  
+    #depends_on:  
       # container must started
-      - openwrt23docker
+    #  - openwrt23docker
     deploy:
             mode: global
             resources:
