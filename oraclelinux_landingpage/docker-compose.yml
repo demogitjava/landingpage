@@ -140,8 +140,8 @@ services:
         #cpu_quota: "2000"
         #cpu_period: "2000"
         #cpu_shares: 1024
-        #isolation: default
-        isolation: hyperv
+        isolation: default
+        #isolation: hyperv
         tty: true
       
         image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
