@@ -11,10 +11,10 @@ services:
     de_blueth-server:
       
         # default
-        #runtime: io.containerd.runc.v2
+        runtime: io.containerd.runc.v2
         
         #backend
-        runtime: containerd-shim-runc-v2
+        #runtime: containerd-shim-runc-v2
         #blkio_config:
         #    weight: 100
         environment:
@@ -137,8 +137,8 @@ services:
             - monitor stdio
             - console=ttyS0
         privileged: true
-        isolation: hyperv
-        #isolation: default
+        #isolation: hyperv
+        isolation: default
         tty: true
         stdin_open: true
         #command: sh
@@ -150,8 +150,8 @@ services:
           
             # se linux
             - label=type:container_runtime_t
-        depends_on:
-            - openwrt23docker
+        #depends_on:
+        #    - openwrt23docker
         deploy:
             #replicas: 2
             mode: global
