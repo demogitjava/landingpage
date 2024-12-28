@@ -95,8 +95,8 @@ services:
           
         container_name: openwrt23docker
         runtime: io.containerd.runc.v2
-        #isolation: default
-        isolation: hyperv
+        isolation: default
+        #isolation: hyperv
         environment:
             # router backend is set to 
             # 30
@@ -131,10 +131,10 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock:X
             - /opt/docker/:/var/lib/docker:X
-            - /etc/docker/daemon.json:/etc/docker/daemon.json:X
+           # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
            
 
-        cap_add:
+        devices:
             
            
             # Accelerator
