@@ -153,6 +153,8 @@ services:
         depends_on:
             # container must started      
             - openwrt23docker
+        
+
         deploy:
             #replicas: 2
             mode: global
@@ -172,7 +174,7 @@ networks:
     driver: ipvlan
     # vlan name
     driver_opts:
-      parent: landingpagevlan
+      parent: vlan10
       ipvlan_mode: l3
     ipam:
       config:

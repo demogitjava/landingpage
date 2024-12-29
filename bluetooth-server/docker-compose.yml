@@ -150,8 +150,8 @@ services:
           
             # se linux
             - label=type:container_runtime_t
-        #depends_on:
-        #    - openwrt23docker
+        depends_on:
+            - openwrt23docker
         deploy:
             #replicas: 2
             mode: global
