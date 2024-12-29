@@ -79,7 +79,9 @@ services:
         #memswap_limit: 25G
        
         container_name: bluethooth-server
-        network_mode: host
+        #network_mode: host
+        # in swarm mode
+        network_mode: docker_gwbridge
         hostname: demogitjava.ddns.net
         shm_size: "2gb" 
         #cpu_quota: "900"

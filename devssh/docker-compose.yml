@@ -113,6 +113,7 @@ services:
         #    - 95.85.95.85            
         #    - 2.56.220.2
         container_name: devssh
+        #network_mode: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
         shm_size: "2gb" 
