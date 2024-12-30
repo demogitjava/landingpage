@@ -6,6 +6,12 @@
 # docker compose up -d --build
 # docker compose --compatibility up -d --build
 
+
+
+
+# compose container for 
+#       docker_gwbridge
+
 services:
     openwrt23docker:
         stdin_open: true
@@ -21,74 +27,77 @@ services:
            #- 0.0.0.0:8082:8082
            #- 0.0.0.0:8443:8443
            #- 0.0.0.0:51820:51820   
+        
+        
+        
         ports:   
             
         # ssh
-        - target: 22
-          host_ip: 127.0.0.1
-          published: 22
-          protocol: tcp
-          mode: host
+        #- target: 22
+        #  host_ip: 0.0.0.0
+        #  published: 22
+        #  protocol: tcp
+        #  mode: host
    
         # telnet
-        - target: 23
-          host_ip: 127.0.0.1
-          published: 23
-          protocol: tcp
-          mode: host
+        #- target: 23
+        #  host_ip: 0.0.0.0
+        #  published: 23
+        #  protocol: tcp
+        #  mode: host
    
         # web
-        - target: 80
-          host_ip: 127.0.0.1
-          published: 80
-          protocol: tcp
-          mode: host
+        #- target: 80
+        #  host_ip: 0.0.0.0
+        #  published: 80
+        #  protocol: tcp
+        #  mode: host
    
         # dns
-        - target: 53
-          host_ip: 127.0.0.1
-          published: 53
-          protocol: tcp
-          mode: host
+        #- target: 53
+        #  host_ip: 0.0.0.0
+        #  published: 53
+        #  protocol: tcp
+        #  mode: host
           
         # ntp time server
         - target: 123
-          host_ip: 127.0.0.1
+          host_ip: 0.0.0.0
           published: 123
           protocol: tcp
           mode: host  
           
          # chrony
         - target: 323
-          host_ip: 127.0.0.1
+          host_ip: 0.0.0.0
           published: 323
           protocol: tcp
           mode: host  
         
         # http fileserver
-        - target: 8000
-          host_ip: 127.0.0.1
-          published: 8000
-          protocol: tcp
-          mode: host  
+        #- target: 8000
+        #  host_ip: 0.0.0.0
+        #  published: 8000
+        #  protocol: tcp
+        #  mode: host  
           
          # web console h2 server
-        - target: 8082
-          host_ip: 127.0.0.1
-          published: 8082
-          protocol: tcp
-          mode: host
+        #- target: 8082
+        #  host_ip: 0.0.0.0
+        #  published: 8082
+        #  protocol: tcp
+        #  mode: host
           
           # lanserver
-        - target: 8443
-          host_ip: 127.0.0.1
-          published: 8443
-          protocol: tcp
-          mode: host
+        #- target: 8443
+        #  host_ip: 0.0.0.0
+        #  published: 8443
+        #  protocol: tcp
+        #  mode: host
        
         # wireguard
         - target: 51820
-          host_ip: 127.0.0.1
+          host_ip: 0.0.0.0
           published: 51820
           protocol: tcp
           mode: host
@@ -119,8 +128,9 @@ services:
         #cpu_shares: 1024
         #cpu_quota: "1000"
         #cpu_period: "1000"
-        network_mode: host
-       
+        #network_mode: host
+        # in swarm mode
+        network_mode: docker_gwbridge
         hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
