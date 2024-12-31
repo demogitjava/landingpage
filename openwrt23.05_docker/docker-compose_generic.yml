@@ -1,0 +1,249 @@
+#version: '3'
+
+# volumes mounted from 
+# rocky linux 8.6 
+
+# docker compose up -d --build
+# docker compose --compatibility up -d --build
+
+# run file with 
+# docker compose -f docker-compose_generic.yml --compatibility up -d --build
+
+
+
+services:
+    openwrt23dockergeneric:
+        stdin_open: true
+        tty: true
+        #ports:
+        #    - 0.0.0.0:22:22
+        ports:
+        
+        # ssh
+        - target: 22
+          host_ip: 127.0.0.1
+          published: 22
+          protocol: tcp
+          mode: host
+
+        # telnet
+        - target: 23
+          host_ip: 127.0.0.1
+          published: 23
+          protocol: tcp
+          mode: host 
+         
+        # ntp
+        - target: 123
+          host_ip: 127.0.0.1
+          published: 123
+          protocol: tcp
+          mode: host  
+        - target: 323
+          host_ip: 127.0.0.1
+          published: 323
+          protocol: tcp
+          mode: host   
+        
+        # http fileserver
+        - target: 8000
+          host_ip: 127.0.0.1
+          published: 8000
+          protocol: tcp
+          mode: host  
+        
+        # lanserver
+        - target: 8443
+          host_ip: 127.0.0.1
+          published: 8443
+          protocol: tcp
+          mode: host  
+        
+        # wireguard
+        - target: 51820
+          host_ip: 127.0.0.1
+          published: 51820
+          protocol: tcp
+          mode: host  
+          
+        # h2 database web console 
+        #- target: 8082
+        #  host_ip: 127.0.0.1
+        #  published: 8082
+        #  protocol: tcp
+        #  mode: host 
+        
+        container_name: openwrtgerneric_rootfs
+        runtime: io.containerd.runc.v2
+        isolation: default
+        #isolation: hyperv
+        environment:
+            # router backend is set to 
+            # 30
+            - VLAN=30
+            
+            # Timzeone
+            # Berlin
+            - TZ=CET-1
+            
+           # - NETWORK_IF=virbr0
+            - QEMU_CPU=4
+            - QEMU_RAM=256
+            #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
+            
+            
+            - QEMU_ARCH=${cortex-a7}
+            - enable-kvm 
+        blkio_config:
+            weight: 1000
+        #cpu_shares: 1024
+        #cpu_quota: "1000"
+        #cpu_period: "1000"
+        #network_mode: host
+        # in swarm mode
+        # create docker network in swarm mode with 
+        #
+        # docker network create -d overlay landingpage
+        #
+        # in swarm mode
+        network_mode: host
+        hostname: demogitjava.ddns.net
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
+        extra_hosts:
+             - "host.docker.internal:host-gateway" 
+      
+        platform: linux/amd64
+        restart: unless-stopped
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:X
+            - /opt/docker/:/var/lib/docker:X
+            # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
+ 
+        devices:
+            
+           
+            # Accelerator
+            - accel kvm
+           
+            - M pc-q35-2.0 
+            
+            # nvme
+            #- nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
+            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
+           
+            #- machine sun4m=kvm:tcg
+            - nographic
+            # memory 
+            - nvdimm,memdev=md1,id=nvdimm1
+            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
+            - nvdimm -m 0.1024G,maxmem=0.4096G,slots=4 -object memory-backend-ram
+            - object memory-backend-ram,size=0.1024G,id=ram0 
+            - object memory-backend-ram,size=0.1024G,id=ram1 
+            - object memory-backend-ram,size=0.1024G,id=ram2 
+            - object memory-backend-ram,size=0.1024G,id=ram3 
+           
+            
+            - net nic,vlan=landingpagevlan
+            - net nic,vlan=devssh
+            - net nic,vlan=lanserver
+            - net nic,vlan=virbr0
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
+        cap_add:
+            - NET_ADMIN
+        volumes:
+           # - /etc/resolv.conf:/etc/resolv.conf
+           # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
+             - /var/run/docker.sock:/var/run/docker.sock:X
+             
+        pid: "host"
+        privileged: true
+        image: openwrt-x86-generic-rootfs:latest
+        security_opt:
+             #- apparmor=docker-default
+             - no-new-privileges=true
+             - apparmor:unconfined
+             - label=type:container_runtime_t
+       
+        deploy:
+            # optional 
+            # for frontend and backend
+            #replicas: 2
+            mode: global
+            resources:
+                limits:
+                  #cpus: '2'
+                  memory: 2048M
+                reservations:
+                  #cpus: '0.25'
+                  memory: 512M
+                
+        command: /bin/ash
+
+networks:
+    
+  # frontend
+  #vlan10:
+      
+  # backend
+  #vlan20:
+    
+  # remote 
+  #vlan30: 
+
+  # web
+  vlan10:
+    driver: ipvlan
+    #driver: macvlan
+    driver_opts:
+      # public 
+      parent: landingpagevlan
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+          
+          
+  # dev ssh docker container
+  vlan20:
+    driver: ipvlan
+    driver_opts:
+      parent: devssh
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+
+  # lanserver
+  vlan30: 
+    driver: ipvlan
+    driver_opts:
+      parent: lanserver
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+   
+  # vpn
+  # virbr0
+  vlan30: 
+    driver: ipvlan
+    driver_opts:
+      parent: virbr0
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254
+    
+
+
+        
+
+
+        
