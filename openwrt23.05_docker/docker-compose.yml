@@ -53,7 +53,7 @@ services:
         # docker network create -d overlay landingpage
         #
         # in swarm mode
-        network_mode: landingpage
+        network_mode: host
         hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
@@ -65,9 +65,10 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock:X
             - /opt/docker/:/var/lib/docker:X
-           # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
+            # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
            
-
+            # firewall 
+            - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
         devices:
             
            
@@ -96,9 +97,13 @@ services:
             - net nic,vlan=devssh
             - net nic,vlan=lanserver
             - net nic,vlan=virbr0
-        #dns: 
-        #    - 95.85.95.85
-        #    - 2.56.220.2
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
+        volumes:
+           # - /etc/resolv.conf:/etc/resolv.conf
+           # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
+             - /var/run/docker.sock:/var/run/docker.sock:X
         pid: "host"
         privileged: true
         image: jgsoftwares/openwrt23.05:dockermwan3
