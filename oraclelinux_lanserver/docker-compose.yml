@@ -112,6 +112,7 @@ services:
          
             - enable-kvm 
             - kernel 'bzImage' 
+      
         cap_add:
             - NET_ADMIN
             - SYS_ADMIN

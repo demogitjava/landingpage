@@ -133,6 +133,7 @@ services:
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
             - virtualization=on
+   
         dns: 
             - 95.85.95.85
             - 2.56.220.2

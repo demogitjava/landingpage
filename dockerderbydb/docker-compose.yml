@@ -27,6 +27,7 @@ services:
   de_derby:  
     
     container_name: de_derby
+           
     platform: linux/amd64
     
     # default 

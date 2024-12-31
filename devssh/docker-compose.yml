@@ -100,7 +100,10 @@ services:
             # unix sockets
             - /srv/www/htdocs:/srv/www/htdocs:X
               
-            
+            # firewall 
+            # optional for config install
+            # yum install firewall-config
+            - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
          
             
             - /root/git:/root/git:X
@@ -124,6 +127,7 @@ services:
             - SYS_ADMIN
             - SYS_TIME
             - SYS_PTRACE
+           
         devices:
           
             
