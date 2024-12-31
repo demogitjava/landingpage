@@ -9,7 +9,14 @@
 # vlan required
 #
 # used vlan 
-# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 virbr0
+# landingpage
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 landingpage
+
+# lanserver
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 lanserver
+
+# devssh
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 devssh
 
 
 services:
