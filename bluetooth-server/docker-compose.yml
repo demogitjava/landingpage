@@ -83,7 +83,7 @@ services:
           # in swarm mode
           # create docker network in swarm mode with 
           # docker network create -d overlay landingpage
-        network_mode: landingpage
+        network_mode: none
         # in swarm mode
         #network_mode: docker_gwbridge
         hostname: demogitjava.ddns.net
