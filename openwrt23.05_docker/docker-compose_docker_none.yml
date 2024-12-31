@@ -9,13 +9,33 @@
 
 
 
+# compose container for 
+#       docker_gwbridge
+
+# run file with 
+# docker compose -f docker-compose_docker_none.yml --compatibility up -d --build
 
 services:
-    openwrt23docker:
+    openwrt23dockernone:
         stdin_open: true
         tty: true
-     
-        container_name: openwrt23docker
+        # x11 
+        #ports:
+        #    - 0.0.0.0:8443:8443
+        ports:
+        - target: 6010
+          host_ip: 127.0.0.1
+          published: 6010
+          protocol: tcp
+          mode: none
+          
+        # ssh
+        - target: 22
+          host_ip: 127.0.0.1
+          published: 22
+          protocol: tcp
+          mode: none
+        container_name: openwrt23none
         runtime: io.containerd.runc.v2
         isolation: default
         #isolation: hyperv
@@ -48,7 +68,7 @@ services:
         # docker network create -d overlay landingpage
         #
         # in swarm mode
-        network_mode: host
+        network_mode: none
         hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
