@@ -45,11 +45,7 @@ services:
         #blkio_config:
         #    weight: 100
         environment:
-            
-            
-            # set container vlan
-            - VLAN=30
-            
+           
             # Java memory to 2GB
             - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
             
@@ -61,22 +57,15 @@ services:
             
             
             # wan over ip
-            # set adapte to 
-            # ip addr add 217.160.255.254/32 dev virbr0
-            # ip addr del 192.168.122.0/24 dev virbr0
-            #5: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
-            #    link/ether 52:54:00:bc:e2:12 brd ff:ff:ff:ff:ff:ff
-            #    inet 217.160.255.255/32 brd 217.160.255.255 scope global virbr0
-            #    valid_lft forever preferred_lft forever
-
-            - NETWORK_IF=virbr0
+            # openwrt
+            - NETWORK_IF=eth0
             
             
             # bridge network
             #- NETWORK_BRIDGE=vtap0
             #- NETWORK=macvtap
             - WORKER_TYPE=qemu
-            - QEMU_PORTS='22'
+            #- QEMU_PORTS='22'
             - QEMU_CPU=16
             - QEMU_RAM=6144
             #- QEMU_RAM=24576
@@ -91,13 +80,13 @@ services:
             #- QEMU_VGA=cirrus-vga
             #- QEMU_VGA=ati-vga
             
-            - enable-kvm 
+            #- enable-kvm 
            
             #- kernel 'bzImage' 
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
-        extra_hosts:
-             - "host.docker.internal:host-gateway" 
+        #extra_hosts:
+        #     - "host.docker.internal:host-gateway" 
         platform: linux/amd64
         #platform: linux/x86_64
         
@@ -110,18 +99,18 @@ services:
             # firewall 
             # optional for config install
             # yum install firewall-config
-            - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
+            #- /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
          
             
-            - /root/git:/root/git:X
+            #- /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
-            - /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X
+            #- /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X
             #- /root/iso/oraclelinux:/dev/dvd     
      
-        #dns:
-        #    - 95.85.95.85            
-        #    - 2.56.220.2
+        dns:
+            - 95.85.95.85            
+            - 2.56.220.2
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
@@ -142,15 +131,15 @@ services:
             # machine sun4m
             # maschine niagara
             # maschine rtl8139
-            - "/dev/kvm:/dev/kvm"
-            - /dev/net/tun
-            - sandbox on
+            #- "/dev/kvm:/dev/kvm"
+            #- /dev/net/tun
+            #- sandbox on
             
            
             
-             # qemu dns
-            - nic user,dns=95.85.95.85
-            - nic user,dns=2.56.220.2
+            # qemu dns
+            #- nic user,dns=95.85.95.85
+            #- nic user,dns=2.56.220.2
             
             # sata
             #- ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
@@ -165,7 +154,7 @@ services:
             #- vga std
             #- VGA,vgamem_mb=128
          
-            - enable-kvm 
+           
             - cpu host 
             
             #forwarding port
@@ -192,7 +181,7 @@ services:
             - maschine SS-600MP
             
             # Accelerator
-            - accel kvm
+            #- accel kvm
             
             # network card
             - display gtk 
@@ -202,31 +191,11 @@ services:
             # bios path must set
             #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
             - bios /root/openbios-sparc32.bin
-            - e1000,netdev=virbr0,net=217.160.255.254/32
+            - e1000,netdev=eth0,net=217.160.255.254/32
             - virtualization=on
             # scsi
             #- scsi-hd,drive=hd,drive=hd
        
-          
-            #  USB 1.1 // Print
-            - usb,usb-mouse,usb-kbd
-            - usb-ehci,id=ehci                             
-            - usb-host,bus=usb-bus.0,hostbus=3,hostport=1  
-            - usb-host,bus=ehci.0,hostbus=1,hostport=1
-            - machine usb=on
-            # x-pci-proxy-dev
-            - x-pci-proxy-dev,id=lsi0,socket=3
-            
-            # Spice - remote 
-            - machine vmport=off 
-            - order=dc 
-            - vga qxl 
-            - spice port=3001
-            - virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent 
-            - virtserialport,chardev=vdagent,name=com.redhat.spice.0 
-            
-            - net nic,vlan=devssh
-            - net nic,vlan=virbr0
             
         privileged: true
         #isolation: hyperv
@@ -234,7 +203,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: jgsoftwares/de_developmentx11ssh:lightdm_dockeredgemaven
+        image: jgsoftwares/de_developmentx11ssh:openwrtext4
         security_opt:
             
             - no-new-privileges=true
