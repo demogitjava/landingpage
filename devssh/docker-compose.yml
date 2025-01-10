@@ -101,7 +101,7 @@ services:
             # yum install firewall-config
             #- /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
          
-            
+             
             #- /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
