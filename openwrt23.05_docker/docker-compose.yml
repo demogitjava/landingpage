@@ -8,7 +8,8 @@
 
 
 
-
+# start docker container 
+# network --- none ---
 
 services:
     openwrt23docker:
@@ -72,15 +73,12 @@ services:
         #  protocol: tcp
         #  mode: host 
         
-        container_name: openwrt23docker
+        container_name: openwrt2305dockernone
         runtime: io.containerd.runc.v2
         isolation: default
         #isolation: hyperv
         environment:
-            # router backend is set to 
-            # 30
-            - VLAN=30
-            
+          
             # Timzeone
             # Berlin
             - TZ=CET-1
@@ -92,7 +90,7 @@ services:
             
             
             - QEMU_ARCH=${cortex-a7}
-            - enable-kvm 
+          
         blkio_config:
             weight: 1000
         #cpu_shares: 1024
@@ -109,21 +107,21 @@ services:
         hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
-        extra_hosts:
-             - "host.docker.internal:host-gateway" 
+        #extra_hosts:
+        #     - "host.docker.internal:host-gateway" 
       
         platform: linux/amd64
         restart: unless-stopped
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock:X
-            - /opt/docker/:/var/lib/docker:X
+            #- /opt/docker/:/var/lib/docker:X
             # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
  
         devices:
             
            
             # Accelerator
-            - accel kvm
+            #- accel kvm
            
             - M pc-q35-2.0 
             
@@ -159,7 +157,7 @@ services:
              
         pid: "host"
         privileged: true
-        image: jgsoftwares/openwrt23.05:dockermwan3
+        image: jgsoftwares/openwrt23.05:dockerext4
         security_opt:
              #- apparmor=docker-default
              - no-new-privileges=true
