@@ -103,7 +103,7 @@ services:
         # docker network create -d overlay landingpage
         #
         # in swarm mode
-        network_mode: host
+        network_mode: none
         hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
@@ -155,7 +155,7 @@ services:
            # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
              - /var/run/docker.sock:/var/run/docker.sock:X
              
-        pid: "host"
+        #pid: "host"
         privileged: true
         image: jgsoftwares/openwrt23.05:dockerext4
         security_opt:
