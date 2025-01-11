@@ -112,10 +112,7 @@ services:
       
         platform: linux/amd64
         restart: unless-stopped
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock:X
-            #- /opt/docker/:/var/lib/docker:X
-            # - /etc/docker/daemon.json:/etc/docker/daemon.json:X
+       
  
         devices:
             
@@ -215,16 +212,7 @@ networks:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
 
-  # lanserver
-  vlan30: 
-    driver: ipvlan
-    driver_opts:
-      parent: lanserver
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
+ 
    
   # vpn
   # virbr0
