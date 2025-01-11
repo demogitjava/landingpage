@@ -115,8 +115,6 @@ services:
        
  
         devices:
-            
-           
             # Accelerator
             #- accel kvm
            
@@ -136,12 +134,7 @@ services:
             - object memory-backend-ram,size=0.1024G,id=ram1 
             - object memory-backend-ram,size=0.1024G,id=ram2 
             - object memory-backend-ram,size=0.1024G,id=ram3 
-           
-            
-            - net nic,vlan=landingpagevlan
-            - net nic,vlan=devssh
-            - net nic,vlan=lanserver
-            - net nic,vlan=virbr0
+
         dns: 
             - 95.85.95.85
             - 2.56.220.2
@@ -161,18 +154,18 @@ services:
              - apparmor:unconfined
              - label=type:container_runtime_t
        
-        deploy:
+        #deploy:
             # optional 
             # for frontend and backend
             #replicas: 2
-            mode: global
-            resources:
-                limits:
-                  cpus: '2'
-                  memory: 2048M
-                reservations:
-                  cpus: '2'
-                  memory: 2048M
+        #    mode: global
+        #    resources:
+        #        limits:
+        #          cpus: '2'
+        #          memory: 2048M
+        #        reservations:
+        #          cpus: '2'
+        #          memory: 2048M
                 
         command: /bin/ash
 
