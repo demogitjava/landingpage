@@ -91,8 +91,8 @@ services:
             
             - QEMU_ARCH=${cortex-a7}
           
-        blkio_config:
-            weight: 1000
+        #blkio_config:
+        #    weight: 1000
         #cpu_shares: 1024
         #cpu_quota: "1000"
         #cpu_period: "1000"
