@@ -154,7 +154,7 @@ services:
             - label=type:container_runtime_t
         depends_on:
             # container must started      
-            - openwrt23docker
+            - openwrt23dockernone
         deploy:
             #replicas: 2
             mode: global
