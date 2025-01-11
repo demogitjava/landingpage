@@ -146,15 +146,15 @@ services:
         isolation: default
         tty: true
       
-        image: jgsoftwares/oraclelinux_openjdk_landingpage:debughostdockeredgevhost
+        image: jgsoftwares/oraclelinux_openjdk_landingpage:hostopenwrtext4
         security_opt:
             #- apparmor=docker-default
             - no-new-privileges=true
             - apparmor:unconfined
             - label=type:container_runtime_t
-        depends_on:
+        #depends_on:
             # container must started      
-            - openwrt23dockernone
+        #    - openwrt2305dockernone
         deploy:
             #replicas: 2
             mode: global
