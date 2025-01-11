@@ -49,7 +49,7 @@ services:
             - NETWORK_IF=virbr0
             - QEMU_PORTS='8443'
             - QEMU_CPU=8
-            - QEMU_RAM=2048
+            - QEMU_RAM=16384
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         # default
@@ -134,11 +134,11 @@ services:
             mode: global
             resources:
                 limits:
-                  #cpus: '2'
-                  memory: 1024M
+                  cpus: '2'
+                  memory: 16384M
                 reservations:
-                  #cpus: '0.25'
-                  memory: 512M
+                  cpus: '2'
+                  memory: 16384M
         command: /bin/bash /root/LanServer.sh
 
 

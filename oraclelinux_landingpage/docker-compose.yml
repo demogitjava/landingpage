@@ -62,8 +62,8 @@ services:
             - NETWORK_IF=virbr0
             #- QEMU_PORTS='80'
             #- QEMU_PORTS='5005'
-            - QEMU_CPU=4
-            - QEMU_RAM=2048
+            #- QEMU_CPU=4
+            #- QEMU_RAM=2048
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
         #blkio_config:
@@ -71,10 +71,10 @@ services:
         
             - enable-kvm 
             - kernel 'bzImage' 
-        #extra_hosts:
-        #    - demogitjava.ddns.net:217.160.255.254  
         extra_hosts:
-            - "host.docker.internal:host-gateway"
+            - demogitjava.ddns.net:217.160.255.254  
+        #extra_hosts:
+        #   - "host.docker.internal:host-gateway"
         network_mode: host
        
         hostname: demogitjava.ddns.net
@@ -160,11 +160,11 @@ services:
             mode: global
             resources:
                 limits:
-                  #cpus: '2'
-                  memory: 1024M
+                  cpus: '2'
+                  memory: 16384M
                 reservations:
-                  #cpus: '0.25'
-                  memory: 512M
+                  cpus: '2'
+                  memory: 16384M
         command: /bin/bash /root/runlandingpage.sh
 
 networks:

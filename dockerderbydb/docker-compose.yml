@@ -59,8 +59,8 @@ services:
     #dns:
     #  - 95.85.95.85
     #  - 2.56.220.2
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:X
+    #volumes:
+    #  - /var/run/docker.sock:/var/run/docker.sock:X
     network_mode: host
     
     extra_hosts:
@@ -142,11 +142,11 @@ services:
             mode: global
             resources:
                 limits:
-                  #cpus: '2'
-                  memory: 1024M
+                  cpus: '2'
+                  memory: 16384M
                 reservations:
-                  #cpus: '0.25'
-                  memory: 512M
+                  cpus: '2'
+                  memory: 16384M
     # command: 
       
 #networks:
