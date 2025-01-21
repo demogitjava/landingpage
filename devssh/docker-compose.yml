@@ -25,6 +25,7 @@
 
 services:
    
+
     de_devssh:
         #ports:
         #    - 0.0.0.0:22:22
@@ -34,7 +35,7 @@ services:
           host_ip: 127.0.0.1
           published: 22
           protocol: tcp
-          mode: host
+          mode: ingress
         runtime: io.containerd.runc.v2
         
         #gvisor 
@@ -106,7 +107,7 @@ services:
             #- /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
          
              
-            #- /root/git:/root/git:X
+            - /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
             # kvm required
             #- /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X
@@ -207,7 +208,7 @@ services:
         tty: true
         stdin_open: true
         #command: sh
-        image: jgsoftwares/de_developmentx11ssh:openwrtext4
+        image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
         security_opt:
             
             - no-new-privileges=true
@@ -224,17 +225,17 @@ services:
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
      
-        depends_on:
-            - openwrt2305dockernone
-        deploy:
-            mode: global
-            resources:
-                limits:
-                  cpus: '4'
-                  memory: 16384M
-                reservations:
-                  cpus: '4'
-                  memory: 16384M
+        #depends_on:
+        #    - openwrt2305dockernone
+        #deploy:
+        #    mode: global
+        #    resources:
+        #        limits:
+        #          cpus: '4'
+        #          memory: 16384M
+        #        reservations:
+        #          cpus: '4'
+        #          memory: 16384M
   
  
 
