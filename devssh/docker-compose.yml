@@ -35,7 +35,7 @@ services:
           host_ip: 127.0.0.1
           published: 22
           protocol: tcp
-          mode: ingress
+          mode: none
         runtime: io.containerd.runc.v2
         
         #gvisor 
