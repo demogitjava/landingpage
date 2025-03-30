@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="GitSelectRepositoryPage.lastRepository" value="/root/git/landingpage/.git"/>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="372"/>
+		<item key="DIALOG_Y_ORIGIN" value="153"/>
+		<item key="DIALOG_WIDTH" value="656"/>
+		<item key="DIALOG_HEIGHT" value="458"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10.0|0|GTK|1|"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+</section>
