@@ -32,7 +32,17 @@ services:
     # default 
     runtime: io.containerd.runc.v2
   
-    
+    dns:
+       # no ip
+      - "194.62.181.53" 
+      - "194.62.180.53" 
+      - "204.16.255.53" 
+      - "204.16.254.53" 
+       # google 
+      - "8.8.8.8" 
+      - "8.8.4.4" 
+  
+    dns_search: demogitjava.ddns.net
     #runtime: containerd-shim-runc-v2
     #ports:
     #  - "0.0.0.0:1527:1527"
@@ -46,7 +56,7 @@ services:
     # 172.17.0.0:
     #    ipv4_address: 172.17.0.2
     environment:
-      - VLAN=20
+      #- VLAN=20
       - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
       - NETWORK_IF=virbr0
@@ -55,7 +65,7 @@ services:
       - QEMU_RAM=2048
       #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
       - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
-      - enable-kvm 
+      #- enable-kvm 
     #dns:
     #  - 95.85.95.85
     #  - 2.56.220.2
@@ -109,8 +119,8 @@ services:
       - g 1024x768x8 -net nic,model=lance
       
       # qemu dns
-      - nic user,dns=95.85.95.85
-      - nic user,dns=2.56.220.2
+      #- nic user,dns=95.85.95.85
+      #- nic user,dns=2.56.220.2
       
       # Accelerator
       - accel kvm
@@ -129,7 +139,7 @@ services:
     tty: true
     stdin_open: true
   
-    image: jgsoftwares/oraclelinux_openjdk_derbydb:1.8qemudockeredgevhost
+    image: jgsoftwares/oraclelinux_openjdk_derbydb:openwrtext4 
     security_opt:
       #- apparmor=docker-default
       - no-new-privileges=true
@@ -143,10 +153,10 @@ services:
             resources:
                 limits:
                   cpus: '2'
-                  memory: 16384M
+                  memory: 2048M
                 reservations:
                   cpus: '2'
-                  memory: 16384M
+                  memory: 2048M
     # command: 
       
 #networks:
@@ -162,7 +172,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: landingpagedbvlan
+      parent: eth0.10
       ipvlan_mode: l3
     ipam:
       config:

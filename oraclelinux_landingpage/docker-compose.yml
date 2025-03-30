@@ -134,9 +134,17 @@ services:
             - bios /root/openbios-sparc32.bin
             - virtualization=on
    
-        dns: 
-            - 95.85.95.85
-            - 2.56.220.2
+        dns:
+            # no ip
+           - "194.62.181.53" 
+           - "194.62.180.53" 
+           - "204.16.255.53" 
+           - "204.16.254.53" 
+            # google 
+           - "8.8.8.8" 
+           - "8.8.4.4" 
+  
+        dns_search: demogitjava.ddns.net
       
         privileged: true
         #cpu_quota: "2000"
@@ -174,7 +182,7 @@ networks:
     driver: ipvlan
     # vlan name
     driver_opts:
-      parent: landingpagevlan
+      parent: eth0.10
       ipvlan_mode: l3
     ipam:
       config:
