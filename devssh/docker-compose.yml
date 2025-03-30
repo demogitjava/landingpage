@@ -245,44 +245,13 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      # public 
-      parent: openwrtdevssh
+       
+      parent: eth0.30
       ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254 
-          
-  vlan20:
-    driver: ipvlan
-    #driver: macvlan
-    driver_opts:
-      # public 
-      parent: virbr0
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254 
-    
-   
-    
-    
-  # remote 
-  vlan30: 
-    
-    name: wan
-    driver: ipvlan
-    # vlan name is devssh
-    driver_opts:
-      parent: devssh
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-    
-    
-
+ 
 
 

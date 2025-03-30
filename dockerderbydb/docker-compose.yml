@@ -172,7 +172,7 @@ networks:
     driver: ipvlan
     #driver: macvlan
     driver_opts:
-      parent: eth0.10
+      parent: eth0.20
       ipvlan_mode: l3
     ipam:
       config:
