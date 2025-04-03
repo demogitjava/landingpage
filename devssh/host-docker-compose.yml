@@ -1,0 +1,263 @@
+#version: '3'
+
+# run container over podman
+#podman compose up -d --build
+
+# docker compose up -d --build
+# docker compose --compatibility up -d --build
+
+# vlan required
+#
+# used vlan 
+# landingpage
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 landingpage
+
+# lanserver
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 lanserver
+
+# devssh
+# docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l3 -o parent=ens6 devssh
+
+
+# config for openwrt 
+# memory swap has to be enabled 
+# system / Mount Points
+
+services:
+   
+
+    de_devssh:
+        #ports:
+        #    - 0.0.0.0:22:22
+        ports:
+        
+        - target: 22
+          host_ip: 127.0.0.1
+          published: 22
+          protocol: tcp
+          mode: none
+        runtime: io.containerd.runc.v2
+        
+        #gvisor 
+        #runtime: io.containerd.runsc.v1
+        
+        # katha containers
+        #runtime: io.containerd.kata.v2
+       
+        
+        #runtime: containerd-shim-runc-v2
+       
+        #blkio_config:
+        #    weight: 100
+        environment:
+           
+            # Java memory to 2GB
+            - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
+            
+            # Time Zone Berlin
+            - TZ=CET-1
+            #- DRINODE=/dev/dri/renderD128 
+            - DISABLE_IPV6=true 
+            - NTP_SERVER=2.rhel.pool.ntp.org
+            
+            
+            # wan over ip
+            # openwrt
+            - NETWORK_IF=eth0
+            
+            
+            # bridge network
+            #- NETWORK_BRIDGE=vtap0
+            #- NETWORK=macvtap
+            - WORKER_TYPE=qemu
+            #- QEMU_PORTS='22'
+            - QEMU_CPU=16
+            - QEMU_RAM=6144
+            #- QEMU_RAM=24576
+            #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
+            #- QEMU_ARCH=${QEMU_ARCH:-SPARC64}
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            #- QEMU_ARCH=${UltraSparc-IV-plus}
+            #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+            #Sun-UltraSparc-IIIi-plus
+            #Sun-UltraSparc-IV-plus
+            - QEMU_DISPLAY=bochs-display
+            #- QEMU_VGA=cirrus-vga
+            #- QEMU_VGA=ati-vga
+            
+            #- enable-kvm 
+           
+            #- kernel 'bzImage' 
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
+        #extra_hosts:
+        #     - "host.docker.internal:host-gateway" 
+        platform: linux/amd64
+        #platform: linux/x86_64
+        
+        volumes:
+
+            # X 
+            # unix sockets
+            - /srv/www/htdocs:/srv/www/htdocs:X
+              
+            # firewall 
+            # optional for config install
+            # yum install firewall-config
+            #- /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket:X
+         
+             
+            - /root/git:/root/git:X
+            - /var/run/docker.sock:/var/run/docker.sock:X
+            # kvm required
+            #- /var/run/libvirt/libvirt-sock:/var/run/libvirt/libvirt-sock:X
+            #- /root/iso/oraclelinux:/dev/dvd     
+     
+        dns:
+            # no ip
+            - "194.62.181.53" 
+            - "194.62.180.53" 
+            - "204.16.255.53" 
+            - "204.16.254.53" 
+            # google 
+            - "8.8.8.8" 
+            - "8.8.4.4" 
+        container_name: devssh
+        network_mode: host
+        hostname: demogitjava.ddns.net
+        shm_size: "2gb" 
+        #cpu_quota: "900"
+        #cpu_period: "2000"
+        #cpu_shares: 512
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+            - SYS_TIME
+            - SYS_PTRACE
+           
+        devices:
+          
+            
+            # spac maschine
+            # machine sun4m
+            # maschine niagara
+            # maschine rtl8139
+            #- "/dev/kvm:/dev/kvm"
+            #- /dev/net/tun
+            #- sandbox on
+            
+           
+            
+            # qemu dns
+            #- nic user,dns=95.85.95.85
+            #- nic user,dns=2.56.220.2
+            
+            # sata
+            #- ide-hd,bus=sata.4,drive=SystemDisk,cpu host,machine sun4m=kvm:tcg
+            #- e1000,netdev=virbr0,net=217.160.255.254/32
+            
+            # VGA
+            #- virtio-gpu-device
+            #- virtio-gpu-pci
+            #- vga qxl
+            
+            #- virtio-vga,virgl=on 
+            #- vga std
+            #- VGA,vgamem_mb=128
+         
+           
+            - cpu host 
+            
+            #forwarding port
+            # network
+            #- netdev user,id=ens6,hostfwd=tcp::22-:22 -device e1000,netdev=ens6
+            
+            # ssd
+            #- scsi-hd,drive=drive0,bus=scsi0.0,channel=0,scsi-id=0,lun=0
+            
+            # nvme
+            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
+           
+            #- machine sun4m=kvm:tcg
+            
+            # memory 
+            - nvdimm,memdev=md1,id=nvdimm1
+            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
+            - nvdimm -m 8G,maxmem=16G,slots=4 -object memory-backend-ram
+            - object memory-backend-ram,size=4G,id=ram0 
+            - object memory-backend-ram,size=4G,id=ram1 
+            - object memory-backend-ram,size=4G,id=ram2 
+            - object memory-backend-ram,size=4G,id=ram3 
+            #server
+            - maschine SS-600MP
+            
+            # Accelerator
+            #- accel kvm
+            
+            # network card
+            - display gtk 
+            - g 1024x768x8 -net nic,model=lance
+
+            
+            # bios path must set
+            #- bios http://demogitjava.ddns.net:8000/qemu/bios/openbios-sparc32
+            - bios /root/openbios-sparc32.bin
+            - e1000,netdev=eth0,net=217.160.255.254/32
+            - virtualization=on
+            # scsi
+            #- scsi-hd,drive=hd,drive=hd
+       
+            
+        privileged: true
+        #isolation: hyperv
+        isolation: default
+        tty: true
+        stdin_open: true
+        #command: sh
+        image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
+        security_opt:
+            
+            - no-new-privileges=true
+            - seccomp:unconfined
+            - apparmor:unconfined
+            
+            
+            - label=type:container_runtime_t
+            
+            
+            # for access to 
+            # /usr/var/ a
+            #- label=type:svirt_sandbox_file_t
+            #- seccomp=/root/git/seccompprofile.json
+            #- apparmor=docker-default
+     
+        #depends_on:
+        #    - openwrt2305dockernone
+        #deploy:
+        #    mode: global
+        #    resources:
+        #        limits:
+        #          cpus: '4'
+        #          memory: 16384M
+        #        reservations:
+        #          cpus: '4'
+        #          memory: 16384M
+  
+ 
+
+networks:
+    
+  vlan10:
+    driver: ipvlan
+    #driver: macvlan
+    driver_opts:
+       
+      parent: eth0.30
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254 
+ 
+
+
