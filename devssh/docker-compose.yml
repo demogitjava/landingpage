@@ -2,16 +2,28 @@ services:
     de_developmentx11ssh_openwrt:
         stdin_open: true
         tty: true
+        #ports:
+        #    - 0.0.0.0:22:22
         ports:
-            - 0.0.0.0:22:22
+        - target: 22
+          host_ip: 192.168.10.56
+          published: 22
+          protocol: tcp
+          mode: none
         platform: linux/amd64
         volumes:
-            - /root/git:/root/git
-            - /var/run/docker.sock:/var/run/docker.sock
-            - /srv/www/htdocs:/srv/www/htdocs
+            - /root/git:/root/git:X
+            - /var/run/docker.sock:/var/run/docker.sock:X
+            - /srv/www/htdocs:/srv/www/htdocs:X
+        #dns:
+            # router ip over vpn wireguard
+            #- "192.168.10.56"
         container_name: devssh
         network_mode: bridge      
         environment:
+            # Proxy Server 
+            - PROXY_SERVER=192.168.10.56
+            
             # Java memory to 2GB
             - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
             
@@ -34,6 +46,12 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_MODULE
+        
+        security_opt:
+            - no-new-privileges=true
+            - seccomp:unconfined
+            - apparmor:unconfined    
+            - label=type:container_runtime_t
         sysctls:
             - net.ipv4.conf.all.src_valid_mark=1
             - net.ipv4.ip_forward=1
