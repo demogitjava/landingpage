@@ -9,14 +9,16 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 // de.jgsoftware.websitebuilder.DemoWebsitebuilderApplication
-                                         
+
+
 
 /**
  *
  * @author hoscho
  */
+
 @SpringBootApplication
-//@EnableJpaRepositories(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
+//@EnableJpaRepositori+es(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement
 public class DemoLandingPageApplication {
 

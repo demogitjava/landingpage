@@ -46,7 +46,7 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_MODULE
-        
+        privileged: true     
         security_opt:
             - no-new-privileges=true
             - seccomp:unconfined
@@ -56,3 +56,29 @@ services:
             - net.ipv4.conf.all.src_valid_mark=1
             - net.ipv4.ip_forward=1
         image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
+
+
+networks:
+  # remote 
+  vlan30: 
+    
+    name: wan
+    driver: ipvlan
+    # vlan name 
+    driver_opts:
+      parent: eth0
+      ipvlan_mode: l3
+    ipam:
+      config:
+        - subnet: 192.168.10.2/24
+          gateway: 192.168.10.1 
+          
+
+                                                                                       
+                                                                                                 
+                                                                                      
+                                                                                 
+                                                                          
+                                                                                                                                                                            
+                                                                        
+
