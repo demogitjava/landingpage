@@ -33,8 +33,8 @@ services:
             #- DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
-            - QEMU_CPU=4
-            - QEMU_RAM=2048
+            - QEMU_CPU=2
+            - QEMU_RAM=16
             #- QEMU_RAM=24576
             #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
             #- QEMU_ARCH=${QEMU_ARCH:-SPARC64}
