@@ -25,15 +25,15 @@ services:
             - QEMU_RAM=4
             #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
             - QEMU_ARCH=${cortex-m0plus}
-        blkio_config:
-            weight: 100
+        #blkio_config:
+        #    weight: 100
         #cpu_shares: 1024
         #cpu_quota: "1000"
         #cpu_period: "1000"
-        network_mode: host
+        network_mode: none
         hostname: demogitjava.ddns.net
-        extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
         restart: unless-stopped
         cap_add:
@@ -73,35 +73,18 @@ services:
         #dns: 
         #    - 95.85.95.85
         #    - 2.56.220.2
-        pid: "host"
+        #pid: "host"
         privileged: true
         image: jgsoftwares/openwrt-x86-backfire:gcore
-        deploy:
-            mode: global
-            resources:
-                limits:
-                  #cpus: '2'
-                  memory: 2048M
-                reservations:
-                  #cpus: '0.25'
-                  memory: 512M
+        #deploy:
+        #    mode: global
+        #    resources:
+        #        limits:
+        #          #cpus: '2'
+        #          memory: 2048M
+        #        reservations:
+        #          #cpus: '0.25'
+        #          memory: 512M
         command: /bin/ash
 
 
-networks:
-  wan:
-    driver: ipvlan
-    #driver: macvlan
-    driver_opts:
-       # vlan 
-      parent: virbr0
-      ipvlan_mode: 802.1q
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-        
-         
-
-
-        

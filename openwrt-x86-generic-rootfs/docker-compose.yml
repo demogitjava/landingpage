@@ -1,7 +1,7 @@
 #version: '3'
 
-# add host 
-# with static wan ip 217.160.255.254
+# network none 
+
 
 # run container over podman
 #podman compose up -d --build
@@ -45,10 +45,10 @@ services:
         # cpu_shares: 1024
         # cpu_quota: "1000"
         # cpu_period: "1000"
-        network_mode: host
-        hostname: demogitjava.ddns.net
-        extra_hosts:
-            - demogitjava.ddns.net:217.160.255.254
+        network_mode: none
+        #hostname: demogitjava.ddns.net
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
         #platform: linux/arm64
         restart: unless-stopped
         privileged: true
@@ -93,9 +93,9 @@ services:
         #    - 95.85.95.85
         #    - 2.56.220.2
         image: jgsoftwares/openwrt-x86-generic-rootfs:gcore
-        depends_on:
-            # switch
-            - openswitchd
+        #depends_on:
+        #    # switch
+        #    - openswitchd
         deploy:
             mode: global
             resources:
@@ -107,40 +107,3 @@ services:
                   memory: 512M
         command: /bin/ash
 
-
-networks:
-  wan:
-    driver: ipvlan
-    #driver: macvlan
-    driver_opts:
-      # public 
-      parent: landingpagevlan
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-          
-          
-  # dev ssh docker container
-  vlan_devssh:
-    driver: ipvlan
-    driver_opts:
-      parent: devssh
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-
-  # lanserver
-  vlan_lanserver:
-    driver: ipvlan
-    driver_opts:
-      parent: lanserver
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-    
-
-
-        
