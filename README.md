@@ -13,21 +13,12 @@
 |--|--|  
 | [maven 3.9.8](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.8-bin.tar.gz) |  2024 10 01|  
  [openjdk11](http://demogitjava.ddns.net:8000/Java_JDK/oracleopenjdk-11.0.2_linux-x64_bin.tar.gz) |  2024 10 01|  
-container path /etc/share/maven
+
 
 change runtime with
 alternatives --config java
-(/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-3.0.1.el8.x86_64/bin/java)
----> 3
 
-
-Apache Maven 3.9.8 (36645f6c9b5079805ea5009217e36f2cffd34256)
-Maven home: /usr/share/maven
-Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/oracleopenjdk11
-Default locale: en_US, platform encoding: ANSI_X3.4-1968
-OS name: "linux", version: "6.4.0-150600.21-default", arch: "amd64", family: "unix"
-
-
+/usr/lib/jvm/java-11-openjdk-11.0.23.0.9-3.0.1.el8.x86_64/bin/java) ---> 3
 
 
 maven executable jar
@@ -41,11 +32,6 @@ maven executable jar
 
 
 
-derbydb 
-jdbc login 
-root
-jj78mvpr52k1
-
 
 
 *FOR EMAIL*  
@@ -57,15 +43,13 @@ edit password and username for your smtp account -- hard coded in the moment
 
 The login for the database over jdbc is
 
-'root'
-'jj78mvpr52k1'
+> 'root' 'jj78mvpr52k1'
+>
+> jdbc:derby://217.160.255.254:1527//root/derbydemodb 
+> 'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
+> 'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
 
-'jdbc:derby://172.17.0.2:1527//root/derbyshopdb'
-or host config edit ip 
-'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
 
-the application url // port is  
-url: https:// "your domain " /
 
 to edit the port of the tomcat server  
 look at the application.properties  
@@ -75,65 +59,40 @@ look at the application.properties
 
 # For Docker
 ============================================================  
-run the container with openwrt
 
-https://hub.docker.com/r/jgsoftwares/openwrt23.05
 
-if the container is running get access with
-
-    docker exec -it openwrt23docker /bin/ash
-
-get access to the docker container 
-cd /root
-run with derbydb
 	
-    cd /root
-    cd dockerderbydb
     docker-compose up -d --build
-    
-    start the derbydb database
-
-    cd /root
-    cd oraclelinux_landingpage_debug
-    docker-compse up -d --build
-    start the landingpage container 
     
     JPDA socket connect on port 5005 is available
      
 
-cd oraclelinux_landingpage_debug
--> start landingpage_debug from the openwrt -container
-
 
 access to running docker container with 
-<br/>
-docker exec oraclelinuxlandingpagedebug /bin/bash 
-<br/>
-copy jar to docker container with
-<br/>
-docker cp container:source_path host_destination_path
-<br/>
-docker cp /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar oraclelinuxlandingpagedebug:/root
-<br/>
-for the debug image 
- 
-connect from netbeans with jpda debugger:
-ip - 127.0.0.1
-port = 5005
 
+    docker exec oraclelinuxlandingpagedebug /bin/bash 
+
+copy jar to docker container with
+
+> docker cp container:source_path host_destination_path
+
+
+    docker cp /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar oraclelinuxlandingpagedebug:/root
 
 sh file to run the docker container in debug mode
+the runlandingpage.sh
 
-#!/bin/bash \
-java -jar /root/landingpage-0.0.1-SNAPSHOT.jar -J-Dsun.java2d.dpiaware=true\
+    #!/bin/bash \
+    java -jar /root/landingpage-0.0.1-SNAPSHOT.jar -J-Dsun.java2d.dpiaware=true\
 
 
-to build the image type:
+to build the image over dockerfile:
+[https://github.com/demogitjava/landingpage/blob/master/oraclelinux_landingpage/Dockerfile]
 `docker build -f Dockerfile -t landingpage .`
 
 
-run the container with 
 
+run the container  - host network:
 `docker run -it -p 0.0.0.0:80:80 
         --add-host=demogitjava.ddns.net:217.160.255.254 
         --runtime io.containerd.runc.v2 
@@ -144,14 +103,45 @@ run the container with
         --restart unless-stopped 
         --cap-add=NET_ADMIN 
         --platform=linux/amd64 
-        --cpu-quota 2000 
-        --cpu-period 2000 
-        --cpu-shares 1024 
         --kernel-memory=6M 
-        --cpuset-cpus="1" 
         -e NTP_SERVER="2.rhel.pool.ntp.org" 
         jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh`
 
+run the container on a bridge network
+`docker run -it -p 0.0.0.0:80:80 
+        --add-host=demogitjava.ddns.net:217.160.255.254 
+        --runtime io.containerd.runc.v2 
+        --name oraclelinuxlandingpage 
+        -e TZ=Europe/Berlin 
+        --net=bridge
+        --hostname demogitjava.ddns.net 
+        --restart unless-stopped 
+        --cap-add=NET_ADMIN 
+        --platform=linux/amd64 
+        --kernel-memory=6M 
+        -e NTP_SERVER="2.rhel.pool.ntp.org" 
+        jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh`
+ 
+ to start the container with a ip like 192.168.10.100 create a bridge network
+ optional:
+`docker network create --driver=bridge --subnet=192.168.10.0/24 --ip-range=192.168.10.0/24 --gateway=192.168.10.1 192.168.10.0`
+
+run the container on a bridge network with ip 
+`docker run -it -p 0.0.0.0:80:80 
+        --add-host=demogitjava.ddns.net:217.160.255.254 
+        --runtime io.containerd.runc.v2 
+        --name oraclelinuxlandingpage 
+        -e TZ=Europe/Berlin 
+        --net=bridge
+        -- ip 192.168.10.100
+        --hostname demogitjava.ddns.net 
+        --restart unless-stopped 
+        --cap-add=NET_ADMIN 
+        --platform=linux/amd64 
+        --kernel-memory=6M 
+        -e NTP_SERVER="2.rhel.pool.ntp.org" 
+        jgsoftwares/oraclelinux_openjdk_landingpage:latest /bin/bash /root/runlandingpage.sh`
+        
 optional 
 `--runtime runc`
 
@@ -159,7 +149,7 @@ optional
 
 for docker compose:
 `docker compose build`
-`docker compose up`
+`docker compose up -d --build`
 
 <br/>  
 docker for windows are available on https://www.docker.com/products/docker-desktop  
@@ -171,18 +161,41 @@ run options
 
 for bridge network -> 254 Containers
 
-router gateway from my provider is 10.255.255.1
-
 optional:
-`docker network create --driver=bridge --subnet=10.255.255.0/24 --ip-range=10.255.255.0/24 --gateway=10.255.255.1 10.255.255.0`
+`docker network create --driver=bridge --subnet=192.168.10.0/24 --ip-range=192.168.10.0/24 --gateway=192.168.10.1 192.168.10.0`
+
+or edit bridge network if openwrt as host installed 
 
 
-to run a container on desktop pc
-`docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0`
+install openwrt as host - system:  
+[http://demogitjava.ddns.net:8000/openwrt/openwrt_installwithgparted?](http://demogitjava.ddns.net:8000/openwrt/openwrt_installwithgparted)
+
+run docker container over the bridge with 192.168.10.0 Network edit
+
+```bash
+/etc/config/dockerd
+	config globals 'globals'
+        option alt_config_file '/etc/docker/daemon.json'
+
+```
+
+and the daemon.json looks like
+
+```bash
+{
+  "iptables": true,
+  "mtu":1500,
+  "bip": "192.160.10.1/24",
+  "data-root": "/opt/docker",
+  "default-runtime": "io.containerd.runc.v2",
+  "default-address-pools": [
+    { "base": "192.168.10.0/24", "size": 254 }
+  ]
+}
+
+```
 
 
-macvlan docker gateway 
-docker network create -d macvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o parent=eth0.50 macvlan50
 
 
 backup  
@@ -192,8 +205,11 @@ load / save
 `docker save -o landingpage.tar jgsoftwares/jgsoftwares`
 
 to load your image to docker desktop type:
-
-
 `docker load --input landingpage.tar`
+
+
+
+
+
 
 
