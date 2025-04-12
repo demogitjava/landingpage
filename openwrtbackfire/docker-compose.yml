@@ -15,7 +15,7 @@ services:
         tty: true
         ports: 
             - 0.0.0.0:22:22
-        container_name: openwrtbackgcore
+        container_name: openwrtbackfire
         runtime: io.containerd.runc.v2
         isolation: default
         environment:
@@ -31,7 +31,7 @@ services:
         #cpu_quota: "1000"
         #cpu_period: "1000"
         network_mode: none
-        hostname: demogitjava.ddns.net
+        #hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
         platform: linux/amd64
@@ -40,41 +40,8 @@ services:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_TIME
-        devices:
-            - /dev/kvm
-            - /dev/net/tun
-            - sandbox on
-
-            
-            # qemu dns
-            - nic user,dns=95.85.95.85
-            - nic user,dns=2.56.220.2
-            
-            - enable-kvm 
-          
-            # optional vga
-            - vga qxl 
-            
-            # net
-            - net nic,model=rtl8139
-           
-            # Accelerator
-            - accel kvm
-           
-            - M pc-q35-2.0 
-            # nvme
-            - nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
-            #- machine sun4m=kvm:tcg
-            
-            # memory 
-            - nvdimm,memdev=md1,id=nvdimm1
-            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
-            - nvdimm -m 0.1G,maxmem=0.2G,slots=4 -object memory-backend-ram
-        #dns: 
-        #    - 95.85.95.85
-        #    - 2.56.220.2
-        #pid: "host"
-        privileged: true
+        
+        privileged: false
         image: jgsoftwares/openwrt-x86-backfire:gcore
         #deploy:
         #    mode: global

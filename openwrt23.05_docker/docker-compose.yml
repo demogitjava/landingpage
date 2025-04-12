@@ -8,103 +8,43 @@
 
 
 
+
 # start docker container 
 # network --- none ---
+#  add volume from the hostsystem - openwrt 23.05.50
+
 
 services:
     openwrt23docker:
         stdin_open: true
-        tty: true
-        #ports:
-        #    - 0.0.0.0:22:22
-        ports:
-        
-        # ssh
-        - target: 22
-          host_ip: 127.0.0.1
-          published: 22
-          protocol: tcp
-          mode: host
-
-        # telnet
-        - target: 23
-          host_ip: 127.0.0.1
-          published: 23
-          protocol: tcp
-          mode: host 
-         
-        # ntp
-        - target: 123
-          host_ip: 127.0.0.1
-          published: 123
-          protocol: tcp
-          mode: host  
-        - target: 323
-          host_ip: 127.0.0.1
-          published: 323
-          protocol: tcp
-          mode: host   
-        
-        # http fileserver
-        - target: 8000
-          host_ip: 127.0.0.1
-          published: 8000
-          protocol: tcp
-          mode: host  
-        
-        # lanserver
-        - target: 8443
-          host_ip: 127.0.0.1
-          published: 8443
-          protocol: tcp
-          mode: host  
-        
-        # wireguard
-        - target: 51820
-          host_ip: 127.0.0.1
-          published: 51820
-          protocol: tcp
-          mode: host  
-          
-        # h2 database web console 
-        #- target: 8082
-        #  host_ip: 127.0.0.1
-        #  published: 8082
-        #  protocol: tcp
-        #  mode: host 
-        
+        tty: true 
         container_name: openwrt2305dockernone
         runtime: io.containerd.runc.v2
         isolation: default
         #isolation: hyperv
+       
         environment:
-          
-            # Timzeone
-            # Berlin
+
+            # Java memory to 2GB
+            - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
+            
+            # Time Zone Berlin
             - TZ=CET-1
-            
-            - NETWORK_IF=eth0
+            #- DRINODE=/dev/dri/renderD128 
+            - DISABLE_IPV6=true 
+            - NTP_SERVER=2.rhel.pool.ntp.org
             - QEMU_CPU=4
-            - QEMU_RAM=256
-            #- QEMU_ARCH=${QEMU_ARCH:-cortex-a72}
-            
-            
-            - QEMU_ARCH=${cortex-a7}
-          
-        #blkio_config:
-        #    weight: 1000
-        #cpu_shares: 1024
-        #cpu_quota: "1000"
-        #cpu_period: "1000"
-        #network_mode: host 
-        # in swarm mode
-        # create docker network in swarm mode with 
-        #
-        # docker network create -d overlay landingpage
-        #
-        # in swarm mode
+            - QEMU_RAM=2048
+            #- QEMU_RAM=24576
+            #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
+            #- QEMU_ARCH=${QEMU_ARCH:-SPARC64}
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            #- QEMU_ARCH=${UltraSparc-IV-plus}
+            #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+            #Sun-UltraSparc-IIIi-plus
+            #Sun-UltraSparc-IV-plus
         network_mode: none
-        hostname: demogitjava.ddns.net
+        #hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
         #extra_hosts:
@@ -113,27 +53,6 @@ services:
         platform: linux/amd64
         restart: unless-stopped
        
- 
-        devices:
-            # Accelerator
-            #- accel kvm
-           
-            - M pc-q35-2.0 
-            
-            # nvme
-            #- nvme,drive=nvme0,serial=deadbeaf1,num_queues=8
-            - nvme,serial=deadbeef1,drive=nvm,nvme-subsys,id=nvme-subsys-0,nqn=subsys0,num_queues=8
-           
-            #- machine sun4m=kvm:tcg
-            - nographic
-            # memory 
-            - nvdimm,memdev=md1,id=nvdimm1
-            #- m 2G,maxmem=8G,slots=4 -object memory-backend-ram
-            - nvdimm -m 0.1024G,maxmem=0.4096G,slots=4 -object memory-backend-ram
-            - object memory-backend-ram,size=0.1024G,id=ram0 
-            - object memory-backend-ram,size=0.1024G,id=ram1 
-            - object memory-backend-ram,size=0.1024G,id=ram2 
-            - object memory-backend-ram,size=0.1024G,id=ram3 
 
         dns: 
             - 95.85.95.85
@@ -144,9 +63,9 @@ services:
            # - /etc/resolv.conf:/etc/resolv.conf
            # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
              - /var/run/docker.sock:/var/run/docker.sock:X
-             
+             - /etc/config/:/etc/config/:X
         #pid: "host"
-        privileged: true
+        privileged: false
         image: jgsoftwares/openwrt23.05:dockerext4
         security_opt:
              #- apparmor=docker-default
@@ -168,60 +87,3 @@ services:
         #          memory: 2048M
                 
         command: /bin/ash
-
-networks:
-    
-  # frontend
-  #vlan10:
-      
-  # backend
-  #vlan20:
-    
-  # remote 
-  #vlan30: 
-
-  # web
-  vlan10:
-    driver: ipvlan
-    #driver: macvlan
-    driver_opts:
-      # public 
-      parent: landingpagevlan
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-          
-          
-  # dev ssh docker container
-  vlan20:
-    driver: ipvlan
-    driver_opts:
-      parent: devssh
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-
- 
-   
-  # vpn
-  # virbr0
-  vlan30: 
-    driver: ipvlan
-    driver_opts:
-      parent: virbr0
-      ipvlan_mode: l3
-    ipam:
-      config:
-        - subnet: 217.160.255.254/32
-          gateway: 217.160.255.254
-    
-
-
-        
-
-
-        
