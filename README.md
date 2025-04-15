@@ -47,9 +47,13 @@ The login for the database over jdbc is
 >
 > jdbc:derby://217.160.255.254:1527//root/derbydemodb 
 > 'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
-> 'jdbc:derby://217.160.255.254:1527//root/derbyshopdb'
+> 'jdbc:derby://217.160.255.254:1527//root/derbymawi'
 
+or over vpn
 
+> jdbc:derby://192.168.10.56:1527//root/derbydemodb 
+> 'jdbc:derby://192.168.10.56:1527//root/derbyshopdb'
+> 'jdbc:derby://192.168.10.56:1527//root/derbymawi'
 
 to edit the port of the tomcat server  
 look at the application.properties  
