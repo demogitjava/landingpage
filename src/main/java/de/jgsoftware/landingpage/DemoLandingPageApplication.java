@@ -16,7 +16,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  * @author hoscho
  */
-
 @SpringBootApplication
 //@EnableJpaRepositori+es(basePackages = "de.jgsoftware.landingpage.dao.interfaces.*") 
 @EnableTransactionManagement

@@ -10,7 +10,7 @@ services:
           published: 22
           protocol: tcp
           mode: none
-        platform: linux/amd64
+        platform: linux/amd64   
         volumes:
             - /root/git:/root/git:X
             - /var/run/docker.sock:/var/run/docker.sock:X
@@ -67,6 +67,7 @@ networks:
     # vlan name 
     driver_opts:
       parent: eth0
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
       ipvlan_mode: l3
     ipam:
       config:
