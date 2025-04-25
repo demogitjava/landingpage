@@ -109,7 +109,7 @@ services:
         #networks:
         #    172.17.0.0:
         #        ipv4_address: 172.17.0.100
-        image: jgsoftwares/httpdfileserver:dockercli
+        image: jgsoftwares/httpdfileserver:openwrtext4
         security_opt:
              #- apparmor=docker-default
              - no-new-privileges=true
@@ -151,6 +151,7 @@ networks:
     #driver: macvlan
     driver_opts:
       parent: eth0.10
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
       ipvlan_mode: l3
     ipam:
       config:

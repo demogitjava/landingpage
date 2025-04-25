@@ -1,26 +1,13 @@
 #version: '3'
   # start derby db over network
   # create network with 
-  # the network name is 172.17.0.0
-  # docker network create --driver=bridge --subnet=172.17.0.0/24 --ip-range=172.17.0.0/24 --gateway=172.17.0.1 172.17.0.0
-  
-  # http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-# alternative install dockercli to container with
-# yum install http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-#   volumes:
-#    - /var/run/docker.sock:/var/run/docker.sock
-  
+
 # run container over podman
 #podman compose up -d --build
 
 # docker compose up -d --build
 # docker compose --compatibility up -d --build
 
-# creeate docker vlan
-#docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 landingpagevlandocker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 landingpagevlan
-
-# create a second vlan for qemu - virbr0
-#docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 virbr0
 
 services:
 
@@ -59,7 +46,7 @@ services:
       #- VLAN=20
       - TZ=CET-1
       - NTP_SERVERS=2.rhel.pool.ntp.org
-      - NETWORK_IF=virbr0
+      - NETWORK_IF=eth0
       - QEMU_PORTS='1527'
       - QEMU_CPU=8
       - QEMU_RAM=2048
@@ -173,8 +160,9 @@ networks:
     #driver: macvlan
     driver_opts:
       parent: eth0.20
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
       ipvlan_mode: l3
     ipam:
       config:
-        - subnet: 217.160.255.1/32
-          gateway: 217.160.255.1
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254

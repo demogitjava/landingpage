@@ -16,25 +16,12 @@
 #   - derbydb
 
 
-# optional for debug is port 5005 - on line 20
 
-# http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-# alternative install dockercli to container with
-# yum install http://demogitjava.ddns.net:8000/serverconfig/rockylinux/docker-ce-edge-stable_rpm/docker-ce-cli-19.03.9-3.el7.x86_64.rpm
-#   volumes:
-#    - /var/run/docker.sock:/var/run/docker.sock
-  
 # run container over podman
 #podman compose up -d --build
 
 # docker compose up -d --build
 # docker compose --compatibility up -d --build
-
-# create docker vlan 
-#docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 landingpagevlan
-
-# create a second vlan for qemu - virbr0
-#docker network create -d ipvlan --subnet=217.160.255.254/32 --gateway=217.160.255.254 -o ipvlan_mode=l2 -o parent=ens6 virbr0
 
 services: 
     
@@ -183,29 +170,10 @@ networks:
     # vlan name
     driver_opts:
       parent: eth0.10
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
       ipvlan_mode: l3
     ipam:
       config:
         - subnet: 217.160.255.254/32
           gateway: 217.160.255.254
 
-
-#networks:
-#   eth0:
-#      driver: macvlan
-#      driver_opts:
-#          parent: eth0
-#      ipam:
-#          driver: default
-
-#networks:
-#  host:
-#    name: host
-#    external: true
-    
-    
-
-
-
-
-    
