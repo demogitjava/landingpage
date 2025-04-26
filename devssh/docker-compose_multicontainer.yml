@@ -1,4 +1,77 @@
 services:
+
+    openwrt23docker:
+        stdin_open: true
+        tty: true 
+        container_name: openwrt2305dockernone
+        runtime: io.containerd.runc.v2
+        isolation: default
+        #isolation: hyperv
+        environment:
+
+            # Java memory to 2GB
+            - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
+            
+            # Time Zone Berlin
+            - TZ=CET-1
+            #- DRINODE=/dev/dri/renderD128 
+            - DISABLE_IPV6=true 
+            - NTP_SERVER=2.rhel.pool.ntp.org
+            - QEMU_CPU=2
+            - QEMU_RAM=16
+            #- QEMU_RAM=24576
+            #- QEMU_CDROM=/dev/dvd/OracleLinux-R8-U8-x86_64-dvd.iso
+            #- QEMU_ARCH=${QEMU_ARCH:-SPARC64}
+            - QEMU_ARCH=${QEMU_ARCH:-SPARC32PLUS}
+            #- QEMU_ARCH=${UltraSparc-IV-plus}
+            #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
+            #Sun-UltraSparc-IIIi-plus
+            #Sun-UltraSparc-IV-plus
+        network_mode: none
+        #hostname: demogitjava.ddns.net
+        #extra_hosts:
+        #    - demogitjava.ddns.net:217.160.255.254
+        #extra_hosts:
+        #     - "host.docker.internal:host-gateway" 
+      
+        platform: linux/amd64
+        restart: unless-stopped
+       
+
+        dns: 
+            - 95.85.95.85
+            - 2.56.220.2
+        cap_add:
+            - NET_ADMIN
+        volumes:
+           # - /etc/resolv.conf:/etc/resolv.conf
+           # - /root/git/landingpage/target/landingpage-0.0.1-SNAPSHOT.jar:/root/landingpage-0.0.1-SNAPSHOT.jar
+             - /var/run/docker.sock:/var/run/docker.sock:X
+             - /etc/config/:/etc/config/:X
+        #pid: "host"
+        privileged: false
+        image: jgsoftwares/openwrt23.05:dockerext4
+        security_opt:
+             #- apparmor=docker-default
+             - no-new-privileges=true
+             - apparmor:unconfined
+             - label=type:container_runtime_t
+       
+        #deploy:
+            # optional 
+            # for frontend and backend
+            #replicas: 2
+        #    mode: global
+        #    resources:
+        #        limits:
+        #          cpus: '2'
+        #          memory: 2048M
+        #        reservations:
+        #          cpus: '2'
+        #          memory: 2048M
+                
+        command: /bin/ash
+
     de_developmentx11ssh_openwrt:
         stdin_open: true
         tty: true
@@ -57,7 +130,7 @@ services:
             - label=type:container_runtime_t
         sysctls:
             - net.ipv4.conf.all.src_valid_mark=1
-            - net.ipv4.ip_forward=1
+            - net.ipv4.ip_forward=0
         image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
 
 
@@ -82,4 +155,3 @@ networks:
       config:
         - subnet: 192.168.10.2/24
           gateway: 192.168.10.1 
-      
