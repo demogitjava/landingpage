@@ -8,12 +8,11 @@ services:
         isolation: default
         #isolation: hyperv
         environment:
-
             # Java memory to 2GB
             - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
             
             # Time Zone Berlin
-            - TZ=CET-1
+            - TZ=CET-2
             #- DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
@@ -101,7 +100,7 @@ services:
             - JVM_OPTS=-Xmx2g -Xms2g -XX:MaxPermSize=1024m
             
             # Time Zone Berlin
-            - TZ=CET-1
+            - TZ=CET-2
             #- DRINODE=/dev/dri/renderD128 
             - DISABLE_IPV6=true 
             - NTP_SERVER=2.rhel.pool.ntp.org
