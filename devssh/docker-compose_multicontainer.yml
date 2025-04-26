@@ -1,3 +1,7 @@
+# run compose file with
+# docker compose -f docker-compose_multicontainer.yml up
+
+
 services:
 
     openwrt23docker:
