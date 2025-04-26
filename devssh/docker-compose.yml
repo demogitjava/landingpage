@@ -46,7 +46,10 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_MODULE
-        privileged: true     
+        privileged: true  
+        # vpn gateway
+        extra_hosts:
+            - "host.docker.internal:192.168.10.56"
         security_opt:
             - no-new-privileges=true
             - seccomp:unconfined
