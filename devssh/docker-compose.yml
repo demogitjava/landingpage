@@ -1,3 +1,9 @@
+# only in host mode 
+# the network speed can be changed 
+
+# run container 
+# docker compose up -d --build 
+
 services:
     de_developmentx11ssh_openwrt:
         stdin_open: true
@@ -19,7 +25,7 @@ services:
             # router ip over vpn wireguard
             #- "192.168.10.56"
         container_name: devssh
-        network_mode: bridge      
+        network_mode: host     
         environment:
             # Proxy Server 
             - PROXY_SERVER=192.168.10.56
@@ -55,9 +61,10 @@ services:
             - seccomp:unconfined
             - apparmor:unconfined    
             - label=type:container_runtime_t
-        sysctls:
-            - net.ipv4.conf.all.src_valid_mark=1
-            - net.ipv4.ip_forward=1
+        # bridge network
+        #sysctls:
+        #    - net.ipv4.conf.all.src_valid_mark=1
+        #    - net.ipv4.ip_forward=1
         image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
 
 
