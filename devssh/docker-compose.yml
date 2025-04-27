@@ -24,7 +24,7 @@ services:
         #dns:
             # router ip over vpn wireguard
             #- "192.168.10.56"
-        container_name: devssh
+        container_name: devssh 
         network_mode: host     
         environment:
             # Proxy Server 
