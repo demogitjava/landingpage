@@ -30,7 +30,7 @@ services:
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             #Sun-UltraSparc-IIIi-plus
             #Sun-UltraSparc-IV-plus
-        network_mode: none
+        network_mode: host
         #hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
@@ -39,8 +39,6 @@ services:
       
         platform: linux/amd64
         restart: unless-stopped
-       
-
         dns: 
             - 95.85.95.85
             - 2.56.220.2
@@ -52,14 +50,13 @@ services:
              - /var/run/docker.sock:/var/run/docker.sock:X
              - /etc/config/:/etc/config/:X
         #pid: "host"
-        privileged: false
+        privileged: true
         image: jgsoftwares/openwrt23.05:dockerext4
         security_opt:
              #- apparmor=docker-default
              - no-new-privileges=true
              - apparmor:unconfined
              - label=type:container_runtime_t
-       
         #deploy:
             # optional 
             # for frontend and backend
@@ -72,7 +69,6 @@ services:
         #        reservations:
         #          cpus: '2'
         #          memory: 2048M
-                
         command: /bin/ash
 
     de_developmentx11ssh_openwrt:
@@ -95,7 +91,7 @@ services:
             # router ip over vpn wireguard
             #- "192.168.10.56"
         container_name: devssh
-        network_mode: bridge      
+        network_mode: host      
         environment:
             # Proxy Server 
             - PROXY_SERVER=192.168.10.56
@@ -122,7 +118,7 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_MODULE
-        privileged: true  
+        privileged: false
         # vpn gateway
         extra_hosts:
             - "host.docker.internal:192.168.10.56"
@@ -131,9 +127,10 @@ services:
             - seccomp:unconfined
             - apparmor:unconfined    
             - label=type:container_runtime_t
-        sysctls:
-            - net.ipv4.conf.all.src_valid_mark=1
-            - net.ipv4.ip_forward=0
+        # bridge network
+	#sysctls:
+        #    - net.ipv4.conf.all.src_valid_mark=1
+        #    - net.ipv4.ip_forward=0
         image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
 
 
