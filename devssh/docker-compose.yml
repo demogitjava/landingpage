@@ -15,7 +15,7 @@ services:
           host_ip: 192.168.10.56
           published: 22
           protocol: tcp
-          mode: bridge
+          mode: none
         platform: linux/amd64   
         volumes:
             - /root/git:/root/git:X
