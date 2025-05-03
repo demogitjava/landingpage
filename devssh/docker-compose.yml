@@ -59,7 +59,8 @@ services:
         security_opt:
             - no-new-privileges=true
             - seccomp:unconfined
-            - apparmor:unconfined    
+            - apparmor=docker-default
+            #- apparmor:unconfined    
             - label=type:container_runtime_t
         # bridge network
         #sysctls:
