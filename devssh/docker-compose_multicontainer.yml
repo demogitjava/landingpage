@@ -34,7 +34,9 @@ services:
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             #Sun-UltraSparc-IIIi-plus
             #Sun-UltraSparc-IV-plus
-        network_mode: host
+        #network_mode: host
+        links:
+            - "de_developmentx11ssh_openwrt:devssh"
         #hostname: demogitjava.ddns.net
         #extra_hosts:
         #    - demogitjava.ddns.net:217.160.255.254
