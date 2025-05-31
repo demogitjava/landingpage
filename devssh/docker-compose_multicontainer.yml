@@ -1,5 +1,9 @@
 # run compose file with
-# docker compose -f docker-compose_multicontainer.yml up
+
+# docker compose -f docker-compose_multicontainer.yml up 
+
+# run mutli container app
+# docker compose -f docker-compose_multicontainer.yml up -d --build
 
 
 services:
@@ -7,7 +11,7 @@ services:
     openwrt23docker:
         stdin_open: true
         tty: true 
-        container_name: openwrt2305dockernone
+        container_name: openwrt2305dockerhost
         runtime: io.containerd.runc.v2
         isolation: default
         #isolation: hyperv
@@ -91,7 +95,7 @@ services:
             # router ip over vpn wireguard
             #- "192.168.10.56"
         container_name: devssh
-        network_mode: host      
+        network_mode: host     
         environment:
             # Proxy Server 
             - PROXY_SERVER=192.168.10.56
@@ -118,12 +122,12 @@ services:
         cap_add:
             - NET_ADMIN
             - SYS_MODULE
-        privileged: false
+        privileged: true
         # vpn gateway
         extra_hosts:
             - "host.docker.internal:192.168.10.56"
         security_opt:
-            - no-new-privileges=true
+           
             - seccomp:unconfined
             - apparmor:unconfined    
             - label=type:container_runtime_t
@@ -134,24 +138,19 @@ services:
         image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
 
 
+
 networks:
-  # remote 
-  vlan30: 
+ # backend db
+ vlan10:
     
     name: wan
     driver: ipvlan
-    # vlan name 
+    #driver: macvlan
     driver_opts:
-      parent: eth0
+      parent: eth0.10
       com.docker.network.bridge.gateway_mode_ipv4: isolated
-      # wireguard vpn
-      com.docker.network.driver.mtu: 1420
-      # --icc=false
-      # no communction
-      com.docker.network.bridge.enable_icc: "false"
-      com.docker.network.bridge.enable_ip_masquerade: "false"
       ipvlan_mode: l3
     ipam:
       config:
-        - subnet: 192.168.10.2/24
-          gateway: 192.168.10.1 
+        - subnet: 217.160.255.254/32
+          gateway: 217.160.255.254

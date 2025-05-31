@@ -77,7 +77,7 @@ networks:
     driver: ipvlan
     # vlan name 
     driver_opts:
-      parent: eth0
+      parent: eth0.20
       com.docker.network.bridge.gateway_mode_ipv4: isolated
       # wireguard vpn
       com.docker.network.driver.mtu: 1420
