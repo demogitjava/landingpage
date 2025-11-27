@@ -1,0 +1,27 @@
+services:
+    ipfire:
+        stdin_open: true
+        tty: true
+        #ports:
+        #    - 0.0.0.0:444:444
+        #security_opt:
+        #    - seccomp=unconfined
+        #    - apparmor=docker-default
+        #    - seccomp=unconfined
+        platform: linux/amd64
+        container_name: ipfire
+        restart: unless-stopped
+        network_mode: host
+        #networks:
+        #    - host
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+        privileged: true
+        tmpfs: /opt/docker
+        image: jgsoftwares/ipfire:cloud
+        command: /bin/bash
+#networks:
+#    host:
+#        external: true
+#        name: host
