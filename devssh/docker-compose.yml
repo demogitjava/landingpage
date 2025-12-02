@@ -25,7 +25,7 @@ services:
             # router ip over vpn wireguard
             #- "192.168.10.56"
         container_name: devssh 
-        network_mode: host     
+        network_mode: host   
         environment:
             # Proxy Server 
             - PROXY_SERVER=192.168.10.56
@@ -48,6 +48,7 @@ services:
             #- QEMU_ARCH=${Sun-UltraSparc-IIIi-plus}
             #Sun-UltraSparc-IIIi-plus
             #Sun-UltraSparc-IV-plus
+            - netdev tap,id=eth0,ifname=eth0
         runtime: io.containerd.runc.v2
         cap_add:
             - NET_ADMIN
