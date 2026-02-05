@@ -1,0 +1,41 @@
+services:
+  traefik:
+    image: traefik:v3.6.7                             
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:X      # It's not recommended mounting the docker socket into a container -> see https://github.com/wollomatic/traefik2-hardened
+      #- ./config/traefik.yaml:/etc/traefik/traefik.yaml:ro  # static traefik configuration
+      #- ./config/dynamic.yaml:/etc/traefik/dynamic.yaml:ro  # dynamic traefik configuration
+      #- ./config/acme.json:/etc/traefik/acme.json           # TLS certificate storage
+    #labels:
+    #  - "traefik.enable=true"
+    #  - "traefik.http.routers.redirect-router.entrypoints=web"
+    #  - "traefik.http.routers.redirect-router.rule=Host(`redirect.localhost`)"
+    #  - "traefik.http.routers.redirect-router.middlewares=redirect-regex"
+    #  - "traefik.http.middlewares.redirect-regex.redirectRegex.regex=(.)*"
+    #  - "traefik.http.middlewares.redirect-regex.redirectRegex.replacement=http://demogitjava.ddns.net"
+    #  - "traefik.http.middlewares.redirect-regex.redirectRegex.permanent=fa
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.apache1.rule: Host(`demogitjava.ddns.net`)"
+    network_mode: host
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.network=host"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.websecure.http.tls=true"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "22:22"
+      - "6010:6010"	
+      - "80:80"
+      - "443:443"
+      - "8000:8000"
+      - "8080:8080"
+      - "8443:8443"
+      - "1527:1527"
+      - "9092:9092"
+      - "8082:8082"
+      - "51820:51820"

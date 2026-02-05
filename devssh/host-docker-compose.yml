@@ -115,13 +115,15 @@ services:
      
         dns:
             # no ip
-            - "194.62.181.53" 
-            - "194.62.180.53" 
-            - "204.16.255.53" 
-            - "204.16.254.53" 
+            #- "194.62.181.53" 
+            #- "194.62.180.53" 
+            #- "204.16.255.53" 
+            #- "204.16.254.53" 
             # google 
-            - "8.8.8.8" 
-            - "8.8.4.4" 
+            #- "8.8.8.8" 
+            #- "8.8.4.4" 
+	    - "95.85.95.85"
+            - "2.56.220.2"
         container_name: devssh
         network_mode: host
         hostname: demogitjava.ddns.net
@@ -213,24 +215,19 @@ services:
         isolation: default
         tty: true
         stdin_open: true
-        #command: sh
-        image: jgsoftwares/de_developmentx11ssh_openwrt:baseXopenwrtext4
+        command: firejail --noprofile --x11=xvfb --overlay --seccomp.keep=transmission-gtk --net=orange0 /usr/sbin/sshd -D
+        image: jgsoftwares/de_developmentx11ssh_openwrt:firejailxvfb
         security_opt:
             
             - no-new-privileges=true
             - seccomp:unconfined
             - apparmor:unconfined
-            
-            
             - label=type:container_runtime_t
-            
-            
             # for access to 
             # /usr/var/ a
             #- label=type:svirt_sandbox_file_t
             #- seccomp=/root/git/seccompprofile.json
             #- apparmor=docker-default
-     
         #depends_on:
         #    - openwrt2305dockernone
         #deploy:

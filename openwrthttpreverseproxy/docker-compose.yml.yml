@@ -1,0 +1,23 @@
+
+# run container with                                                                                                                                                
+# docker-compose -p apache2reverseproxy up                                                                                                                          
+ 
+# edit /etc/apache2/httpd.conf
+# edit /etc/host
+
+                                                                                                                                                                    
+services:                                                                                                                                                           
+    openwrhttpreverseproxy:                                                                                                                                         
+        stdin_open: true                                                                                                                                            
+        tty: true                                                                                                                                                   
+        platform: linux/amd64                                                                                                                                       
+        runtime: io.containerd.runc.v2                                                                                                                              
+        container_name: openwrhttpreverseproxy                                                                                                                      
+        network_mode: host                                                                                                                                          
+        privileged: true                                                                                                                                            
+        tmpfs: /opt/docker                                                                                                                                          
+        image: jgsoftwares/openwrthttpfileserver:firejailreverseproxy                                                                                               
+        command: /bin/ash                                                                                                                                           
+        # apachectl restart                                                                                                                                         
+~                                                                                                                                                                   
+~                            
