@@ -330,12 +330,6 @@
 
     </repositories>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>maven2-repository.dev.java.net</id>
-            <url>http://download.java.net/maven/2/</url>
-        </pluginRepository>
-
-    </pluginRepositories>
+ 
 
 </project>
