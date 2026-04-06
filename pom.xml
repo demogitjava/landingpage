@@ -27,6 +27,9 @@
         
         <maven.compiler.release>11</maven.compiler.release>
 	<jakartaee-api.version>10.0.0</jakartaee-api.version>
+        
+        <!-- enable http3 over utp -->
+        <reactor-bom.version>2024.0.0</reactor-bom.version>
 	
         <!-- <compiler-plugin.version>3.11.0</compiler-plugin.version> -->
     </properties>
@@ -228,10 +231,18 @@
 
        <dependency>
            <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-tomcat</artifactId>                
+           <artifactId>spring-boot-starter-tomcat</artifactId>    
+                  
         </dependency>
         
         
+         <!-- http3 -->
+          <dependency>
+        <groupId>io.netty.incubator</groupId>
+        <artifactId>netty-incubator-codec-http3</artifactId>
+        <version>0.0.28.Final</version>
+        
+    </dependency>
   
                  
      
