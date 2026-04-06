@@ -25,7 +25,7 @@
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
     
         
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
 	<jakartaee-api.version>10.0.0</jakartaee-api.version>
         
         <!-- enable http3 over utp -->
@@ -251,29 +251,13 @@
     
 </dependency>
   
-
-     
                 
     </dependencies>
 
     <build>
         <plugins>
 
-             <plugin>
-                        <groupId>org.apache.openejb.maven</groupId>
-                        <artifactId>tomee-maven-plugin</artifactId>
-                        <version>1.7.1</version>
-                        <configuration>
-                          <tomeeVersion>1.7.1</tomeeVersion>
-                          <tomeeClassifier>plus</tomeeClassifier>
-                        
-                          <tomeeHttpPort>80</tomeeHttpPort>
-                          <tomeeHost>localhost</tomeeHost>
-                          <user>tomee</user>
-                          <password>tomee</password>
-                          <path>${project.build.directory}/${project.build.finalName}.war</path>
-                        </configuration>
-                    </plugin>
+         
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
