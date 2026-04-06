@@ -244,7 +244,7 @@
         
     </dependency> 
   
-                 
+
      
                 
     </dependencies>
@@ -252,8 +252,7 @@
     <build>
         <plugins>
 
-              <!-- disable tom ee  
-                    <plugin>
+             <plugin>
                         <groupId>org.apache.openejb.maven</groupId>
                         <artifactId>tomee-maven-plugin</artifactId>
                         <version>1.7.1</version>
@@ -268,14 +267,6 @@
                           <path>${project.build.directory}/${project.build.finalName}.war</path>
                         </configuration>
                     </plugin>
-                    -->
-                    
-                      <!-- disable native  
-                            <plugin>
-                                <groupId>org.graalvm.buildtools</groupId>
-                                <artifactId>native-maven-plugin</artifactId>
-                            </plugin>
-                    -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
