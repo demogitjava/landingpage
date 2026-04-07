@@ -2,23 +2,26 @@ package de.jgsoftware.landingpage.config;
 
 
 
-import org.eclipse.jetty.http3.server.HTTP3ServerConnectionFactory;
 import org.eclipse.jetty.http3.server.HTTP3ServerConnector;
 import org.eclipse.jetty.server.HttpConfiguration;
 import org.eclipse.jetty.server.SecureRequestCustomizer;
-import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.boot.ssl.DefaultSslBundleRegistry;
 import org.springframework.boot.web.embedded.jetty.JettyServerCustomizer;
 import org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.context.annotation.Configuration;
-import java.nio.file.Paths;
+
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.ServerConnector;
+import org.eclipse.jetty.alpn.server.ALPNServerConnectionFactory;
+import org.eclipse.jetty.http3.server.HTTP3ServerConnectionFactory;
+import org.eclipse.jetty.quic.server.QuicServerConnector;
 
 @Configuration
-public class JettyConfiguration implements WebServerFactoryCustomizer<JettyServletWebServerFactory> {
+public class JettyConfiguration {
+        //implements WebServerFactoryCustomizer<JettyServletWebServerFactory> {
 
     //@Autowired
     //private DefaultSslBundleRegistry defaultSslBundleRegistry;
@@ -27,25 +30,29 @@ public class JettyConfiguration implements WebServerFactoryCustomizer<JettyServl
     private Integer serverPort;
 
     JettyServerCustomizer jettyServerCustomizer;
+  
     
-    //@Value("${server.jetty.connection-idle-timeout}")
-    //private Integer idleTimeout;
 
     public JettyConfiguration()
     {
-        org.eclipse.jetty.server.Server server = new org.eclipse.jetty.server.Server();
+          org.eclipse.jetty.server.Server server = new org.eclipse.jetty.server.Server();
         try {
+            customize();
             server.start();
+           
         } catch (Exception ex) {
             System.getLogger(JettyConfiguration.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
-        } 
+        }
+        
+       
+        
     }
     
     
-    @Override
-    public void customize(JettyServletWebServerFactory factory) {
+    public void customize() {
 
-        jettyServerCustomizer = new JettyServerCustomizer() {
+        jettyServerCustomizer = new JettyServerCustomizer() 
+        {
             @Override
             public void customize(Server server) 
             {
@@ -73,7 +80,7 @@ public class JettyConfiguration implements WebServerFactoryCustomizer<JettyServl
             }
         };
 
-        factory.addServerCustomizers(jettyServerCustomizer);
+        //factory.addServerCustomizers(jettyServerCustomizer);
     }
     
   
