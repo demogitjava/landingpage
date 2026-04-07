@@ -1,6 +1,12 @@
 # Demo Landingpage with Spring Boot + Thymeleaf + Grapesjs + Bootstrap/Bootflat ui kit
 
+to this project the jetty server is implements with http3 support over upd on port 53
+for older version remove file de.jgsoftwares.landingpage.config.JettyConfiguration
 
+on openjdk26 http3 is supported
+
+on dockerhub image over 
+ > jgsoftwares/openwrtlandingpage:java25
 
 |  |  |  
 |--|--|  
