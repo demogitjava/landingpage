@@ -38,7 +38,7 @@ public class JettyConfiguration implements WebServerFactoryCustomizer<JettyServl
             server.start();
         } catch (Exception ex) {
             System.getLogger(JettyConfiguration.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
-        }
+        } 
     }
     
     
