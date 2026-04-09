@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
-import org.eclipse.jetty.alpn.server.ALPNServerConnectionFactory;
+//import org.eclipse.jetty.alpn.server.ALPNServerConnectionFactory;
 import org.eclipse.jetty.http3.server.HTTP3ServerConnectionFactory;
 import org.eclipse.jetty.quic.server.QuicServerConnector;
 
