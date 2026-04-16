@@ -74,13 +74,7 @@
             <version>4.0.5</version>
             <scope>runtime</scope>
         </dependency>
-        <!-- Source: https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
-<dependency>
-    <groupId>org.apache.tomcat.embed</groupId>
-    <artifactId>tomcat-embed-core</artifactId>
-    <version>11.0.21</version>
-    <scope>runtime</scope>
-</dependency>
+
         
         <!-- Use Jetty instead -->
         <dependency>

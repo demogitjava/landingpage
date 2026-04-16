@@ -47,8 +47,7 @@ public class JettyConfiguration {
        
         
     }
-    
-    
+       
     public void customize() {
 
         jettyServerCustomizer = new JettyServerCustomizer() 
