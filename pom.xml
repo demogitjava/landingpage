@@ -24,7 +24,7 @@
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
         <project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
         
-        <maven.compiler.release>25</maven.compiler.release>
+        <maven.compiler.release>26</maven.compiler.release>
 	<jakartaee-api.version>10.0.0</jakartaee-api.version>
         
         <!-- enable http3 over utp -->
@@ -66,20 +66,12 @@
 		</exclusion>
 	</exclusions>
         </dependency>
-        <!-- Source: https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat -->
+       
+       
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <version>4.0.5</version>
-            <scope>runtime</scope>
-        </dependency>
-
-         
-        <!-- Use Jetty instead -->
-        <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-jetty</artifactId>
-        </dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-undertow</artifactId>
+</dependency>
         
         
 
@@ -239,12 +231,7 @@
            <version>1.0.7</version>
        </dependency>
 
-       <dependency>
-           <groupId>org.springframework.boot</groupId>
-           <artifactId>spring-boot-starter-tomcat</artifactId>    
-                  
-        </dependency>
-        
+     
         
          <!-- http3 -->
           <dependency>
@@ -273,12 +260,7 @@
             <type>jar</type>
         </dependency>
         
-        <!-- Source: https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
-<dependency>
-    <groupId>org.apache.tomcat.embed</groupId>
-    <artifactId>tomcat-embed-core</artifactId>
- 
-</dependency>
+    
         
       
     </dependencies>
