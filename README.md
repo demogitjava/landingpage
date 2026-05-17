@@ -25,7 +25,7 @@ server.address=10.255.255.1
 
 |  |  |  
 |--|--|  
-| [maven 3.9.8](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.15-bin.tar.gz) |  2026 05|  
+| [maven 3.9.15](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.15-bin.tar.gz) |  2026 05|  
  [openjdk25](http://demogitjava.ddns.net:8000/java-ide/openjdk-25.0.2_linux-x64_bin.tar.gz) |  2026 05|  
 
 
