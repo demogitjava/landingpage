@@ -8,6 +8,13 @@ on openjdk26 http3 is supported
 on dockerhub image over 
  > jgsoftwares/openwrtlandingpage:java25
 
+
+
+the web application is set to dmz 
+application.properties
+# listen to ip 
+server.address=10.255.255.1
+
 |  |  |  
 |--|--|  
 | [landingpage.jar](http://demogitjava.ddns.net:8000/landingpage-0.0.1-SNAPSHOT.jar) |  2023 08 24|  
@@ -17,8 +24,8 @@ on dockerhub image over
 
 |  |  |  
 |--|--|  
-| [maven 3.9.8](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.8-bin.tar.gz) |  2024 10 01|  
- [openjdk11](http://demogitjava.ddns.net:8000/Java_JDK/oracleopenjdk-11.0.2_linux-x64_bin.tar.gz) |  2024 10 01|  
+| [maven 3.9.8](http://demogitjava.ddns.net:8000/java-ide/apache-maven-3.9.15-bin.tar.gz) |  2026 05|  
+ [openjdk11](http://demogitjava.ddns.net:8000/java-ide/openjdk-25.0.2_linux-x64_bin.tar.gz) |  2026 05|  
 
 
 change runtime with

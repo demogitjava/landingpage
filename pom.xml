@@ -36,6 +36,15 @@
 
 
     <dependencies>
+        
+        
+        <!-- Source: https://mvnrepository.com/artifact/org.apache.maven.wrapper/maven-wrapper -->
+<dependency>
+    <groupId>org.apache.maven.wrapper</groupId>
+    <artifactId>maven-wrapper</artifactId>
+    <version>3.3.4</version>
+    <scope>compile</scope>
+</dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -52,9 +61,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
-        <dependency>
+        </dependency><dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             
@@ -66,19 +73,26 @@
 		</exclusion>
 	</exclusions>
         </dependency>
-       
-       
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-             
-        </dependency>
         
-        <dependency>
-            <groupId>io.undertow</groupId>
-            <artifactId>undertow-servlet</artifactId>
-            <version>2.0.30.Final</version>
-        </dependency>
+             <!-- jetty http2 -->
+         <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jetty</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-alpn-server</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-alpn-conscrypt-server</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.jetty.http2</groupId>
+        <artifactId>http2-server</artifactId>
+    </dependency>
+
+
 
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
@@ -160,14 +174,14 @@
             <groupId>com.github.ua-parser</groupId>
             <artifactId>uap-java</artifactId>
             <version>1.5.3</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-        
-        <dependency>
+        </dependency><dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
-        </dependency><dependency>
+        </dependency><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        
+        
+
+        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
@@ -240,7 +254,7 @@
 
      
         
-         <!-- http3 -->
+        
           <dependency>
         <groupId>io.netty.incubator</groupId>
         <artifactId>netty-incubator-codec-http3</artifactId>
@@ -252,23 +266,6 @@
 
 
 
-
-
-        <dependency>
-            <groupId>org.eclipse.jetty.http3</groupId>
-            <artifactId>http3-server</artifactId>
-            <version>11.0.26</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-alpn-server</artifactId>
-            <version>12.0.21</version>
-            <type>jar</type>
-        </dependency>
-        
-    
-        
       
     </dependencies>
 
@@ -302,7 +299,7 @@
                 <configuration>
                     <release>11</release>
                     <showDeprecation>false</showDeprecation>
-                    <debug>false</debug>
+                    <debug>true</debug>
                 </configuration>
             </plugin>
                     

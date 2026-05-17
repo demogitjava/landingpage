@@ -1,0 +1,35 @@
+#version: '3'
+
+# add host 
+# with static wan ip 217.160.255.254
+
+# run container over podman
+#podman compose up -d --build
+
+#run container over docker
+#docker compose up -d --build
+
+services:
+    openwrt-landingpage:
+        stdin_open: true
+        tty: true
+        ports: 
+            - 0.0.0.0:80:80
+            - 0.0.0.0:1527:1527
+        container_name: openwrtlandingpagedebug
+        runtime: io.containerd.runc.v2
+        isolation: default
+        environment:
+            - NETWORK_IF=vlan20
+        network_mode: host
+        platform: linux/amd64
+        restart: unless-stopped
+        cap_add:
+            - NET_ADMIN
+            - SYS_ADMIN
+            - SYS_TIME
+        privileged: false
+        image: jgsoftwares/openwrt23.05landingpage:java25
+        command: /bin/ash
+
+
