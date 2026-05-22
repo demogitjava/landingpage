@@ -16,7 +16,9 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.15.RELEASE</version>
+          <!--
+        <version>2.1.15.RELEASE</version> -->
+         <version>2.1.15.RELEASE</version>
     </parent>
 
     <properties>
@@ -66,18 +68,20 @@
             <artifactId>spring-boot-starter-web</artifactId>
             
             <exclusions>
-		<!-- Exclude the Tomcat dependency -->
+		 <!-- Exclude the Tomcat dependency  -->
 		<exclusion>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 		</exclusion>
-	</exclusions>
+                  
+	</exclusions> 
         </dependency>
         
              <!-- jetty http2 -->
          <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jetty</artifactId>
+       
     </dependency>
     <dependency>
         <groupId>org.eclipse.jetty</groupId>
@@ -93,6 +97,13 @@
         <artifactId>http2-server</artifactId>
     </dependency>
     -->
+    <!-- Source: https://mvnrepository.com/artifact/org.eclipse.jetty.http2/http2-server -->
+<dependency>
+    <groupId>org.eclipse.jetty.http2</groupId>
+    <artifactId>http2-server</artifactId>
+    <version>11.0.26</version>
+    <scope>compile</scope>
+</dependency>
 
 <dependency>
   <groupId>org.eclipse.jetty.http3</groupId>
