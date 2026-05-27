@@ -36,7 +36,7 @@
                 <exec.workingdir>/root/git/landingpage/target</exec.workingdir>
                 <exec.mainClass>de.jgsoftware.landingpage.DemoLandingPageApplication</exec.mainClass>
                 <exec.vmArgs></exec.vmArgs>
-                <exec.appArgs>--add-to-start=http,http2c</exec.appArgs>
+                <exec.appArgs></exec.appArgs>
             </properties>
         </action>
         <action>
@@ -55,7 +55,7 @@
                 <exec.workingdir>/root/git/landingpage/target</exec.workingdir>
                 <exec.mainClass>de.jgsoftware.landingpage.DemoLandingPageApplication</exec.mainClass>
                 <exec.vmArgs>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
-                <exec.appArgs>--add-to-start=http,http2c</exec.appArgs>
+                <exec.appArgs></exec.appArgs>
             </properties>
         </action>
         <action>
@@ -73,7 +73,7 @@
                 <exec.workingdir>/root/git/landingpage/target</exec.workingdir>
                 <exec.mainClass>de.jgsoftware.landingpage.DemoLandingPageApplication</exec.mainClass>
                 <exec.vmArgs></exec.vmArgs>
-                <exec.appArgs>--add-to-start=http,http2c</exec.appArgs>
+                <exec.appArgs></exec.appArgs>
             </properties>
         </action>
         

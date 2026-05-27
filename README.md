@@ -3,10 +3,12 @@
 to this project the jetty server is implements with http3 support over upd on port 53
 for older version remove file de.jgsoftwares.landingpage.config.JettyConfiguration
 
-on openjdk26 http3 is supported
 
-on dockerhub image over 
- > jgsoftwares/openwrtlandingpage:java25
+on openjdk17 the login session over jdbc works
+on openjdk25 the login session over jdbc doesnt work -> openjdk17 or opendjk26
+on openjdk26 the login session over jdbc works
+
+
 
 
 
@@ -171,50 +173,6 @@ for docker compose:
 
 <br/>  
 docker for windows are available on https://www.docker.com/products/docker-desktop  
-
-
-networkconfig  
-run options  
-============================================================
-
-for bridge network -> 254 Containers
-
-optional:
-`docker network create --driver=bridge --subnet=192.168.10.0/24 --ip-range=192.168.10.0/24 --gateway=192.168.10.1 192.168.10.0`
-
-or edit bridge network if openwrt as host installed 
-
-
-install openwrt as host - system:  
-[http://demogitjava.ddns.net:8000/openwrt/openwrt_installwithgparted?](http://demogitjava.ddns.net:8000/openwrt/openwrt_installwithgparted)
-
-run docker container over the bridge with 192.168.10.0 Network edit
-
-```bash
-/etc/config/dockerd
-	config globals 'globals'
-        option alt_config_file '/etc/docker/daemon.json'
-
-```
-
-and the daemon.json looks like
-
-```bash
-{
-  "iptables": true,
-  "mtu":1500,
-  "bip": "192.160.10.1/24",
-  "data-root": "/opt/docker",
-  "default-runtime": "io.containerd.runc.v2",
-  "default-address-pools": [
-    { "base": "192.168.10.0/24", "size": 254 }
-  ]
-}
-
-```
-
-
-
 
 backup  
 load / save  
