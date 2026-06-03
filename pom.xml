@@ -77,7 +77,9 @@
 	</exclusions> 
         </dependency>
         
-             <!-- jetty http2 
+
+        
+<!-- jetty http2 -->
          <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-jetty</artifactId>
@@ -111,11 +113,8 @@
   <version>12.1.9</version>
 </dependency>
 
-  -->
-<dependency>
-			<groupId>org.springframework.kafka</groupId>
-			<artifactId>spring-kafka</artifactId>
-		</dependency>
+
+
 
 
         <dependency>
@@ -324,13 +323,13 @@
                 <configuration>
                     <release>11</release>
                     <showDeprecation>false</showDeprecation>
-                    <debug>true</debug>
+                    <debug>false</debug>
                 </configuration>
             </plugin>
                     
           
              
-                <!-- license-check -->
+                <!-- license-check 
                 
               
                <plugin>
@@ -347,7 +346,7 @@
                     </executions>
                 </plugin>
 
-
+-->
 
         </plugins>
     </build>
