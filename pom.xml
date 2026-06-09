@@ -99,13 +99,7 @@
         <artifactId>http2-server</artifactId>
     </dependency>
   
-   
-<dependency>
-    <groupId>org.eclipse.jetty.http2</groupId>
-    <artifactId>http2-server</artifactId>
-    <version>11.0.26</version>
-    <scope>compile</scope>
-</dependency>
+
 
 <dependency>
   <groupId>org.eclipse.jetty.http3</groupId>
@@ -197,7 +191,8 @@
             <groupId>com.github.ua-parser</groupId>
             <artifactId>uap-java</artifactId>
             <version>1.5.3</version>
-        </dependency><dependency>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
         </dependency><!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -311,8 +306,7 @@
                         </configuration>
                     </execution>
                 </executions>
-                <version>4.0.6</version>
-             
+               
             </plugin>
 
 
